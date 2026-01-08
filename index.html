@@ -1,405 +1,305 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-AR">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sergio Landoni · Sommelier de Territorio | Blog</title>
-  <meta name="description" content="Sergio Landoni, Sommelier de Territorio en Patagonia Argentina. Blog sobre vino patagónico, territorio, cultura, gastronomía y proyectos en Neuquén." />
-  <meta name="keywords" content="Sergio Landoni, sommelier, vino, Patagonia, Neuquén, San Martín de los Andes, vino patagónico, turismo, gastronomía, cultura, blog" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Sergio Landoni | Sommelier de Territorio (Patagonia) · Vino & Cultura</title>
+  <meta name="description" content="Sergio Landoni — Sommelier de Territorio en Patagonia (Neuquén). Comunicación del vino, experiencias, curaduría, eventos y proyectos culturales vinculados al vino patagónico." />
+
   <meta name="author" content="Sergio Landoni" />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://sergiolandoni.com.ar/" />
+  <meta name="theme-color" content="#111111" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sergio Landoni · Sommelier de Territorio" />
-  <meta property="og:description" content="Vino, territorio y cultura desde la Patagonia. Blog y proyectos vinculados al vino patagónico y Neuquén." />
+  <meta property="og:title" content="Sergio Landoni | Sommelier de Territorio (Patagonia)" />
+  <meta property="og:description" content="Comunicación del vino, experiencias, curaduría y proyectos culturales. Patagonia · Neuquén." />
   <meta property="og:url" content="https://sergiolandoni.com.ar/" />
-  <meta property="og:locale" content="es_AR" />
 
-  <!-- JSON-LD: Person -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Sergio Landoni",
-    "jobTitle": "Sommelier de Territorio",
-    "description": "Sommelier de Territorio en Patagonia Argentina. Comunicación, proyectos y desarrollo vinculados al vino patagónico y Neuquén.",
-    "email": "mailto:sergiolandoni.somm@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "San Martín de los Andes",
-      "addressRegion": "Neuquén",
-      "addressCountry": "AR"
-    },
-    "url": "https://sergiolandoni.com.ar/"
-  }
-  </script>
+  <!-- Favicon (opcional: si luego agregás /favicon.ico) -->
+  <link rel="icon" href="/favicon.ico" />
 
   <style>
     :root{
-      --bg:#fafafa;
-      --card:#ffffff;
-      --text:#111827;
-      --muted:#4b5563;
-      --line:#e5e7eb;
-      --accent:#0f766e;
-      --accent-2:#115e59;
-      --radius:14px;
-      --shadow: 0 10px 30px rgba(0,0,0,.06);
-      --max: 1060px;
+      --bg:#0f0f10;
+      --card:#151517;
+      --text:#f3f3f3;
+      --muted:#b9b9bd;
+      --line:#2a2a2e;
+      --accent:#d7b46a; /* dorado suave */
+      --max:980px;
+      --radius:18px;
     }
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background:var(--bg);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 700px at 20% -10%, rgba(215,180,106,.16), transparent 55%),
+                  radial-gradient(1000px 600px at 90% 0%, rgba(215,180,106,.10), transparent 60%),
+                  var(--bg);
       color:var(--text);
       line-height:1.6;
     }
-    a{color:inherit; text-decoration:none}
-    a:hover{color:var(--accent)}
-    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+    a{color:inherit}
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:40px 18px 60px;
+    }
     header{
-      position:sticky; top:0; z-index:50;
-      background:rgba(250,250,250,.92);
-      backdrop-filter: blur(10px);
-      border-bottom:1px solid var(--line);
-    }
-    .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:14px 0;
-      gap:16px;
-    }
-    .brand{
-      display:flex; flex-direction:column; gap:2px;
-    }
-    .brand strong{font-size:16px; letter-spacing:.2px}
-    .brand span{font-size:13px; color:var(--muted)}
-    .menu{
-      display:flex; gap:14px; flex-wrap:wrap; align-items:center; justify-content:flex-end;
-    }
-    .menu a{
-      font-size:14px;
-      color:var(--muted);
-      padding:8px 10px;
-      border-radius:10px;
-    }
-    .menu a:hover{background:#ffffff; border:1px solid var(--line); color:var(--accent)}
-    .hero{
-      padding:38px 0 14px;
-    }
-    .hero-grid{
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
       gap:18px;
-      align-items:stretch;
-    }
-    @media (max-width: 900px){
-      .hero-grid{grid-template-columns:1fr}
-    }
-    .card{
-      background:var(--card);
+      padding:22px 22px;
       border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
       border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:20px;
     }
-    .kicker{
-      display:inline-flex; gap:8px; align-items:center;
-      font-size:13px; color:var(--accent-2);
-      background:rgba(15,118,110,.08);
-      border:1px solid rgba(15,118,110,.12);
-      padding:6px 10px; border-radius:999px;
-      margin-bottom:12px;
+    .brand h1{
+      margin:0 0 8px 0;
+      font-size: clamp(28px, 4vw, 44px);
+      letter-spacing:.2px;
     }
-    h1{margin:0 0 10px; font-size:32px; line-height:1.2}
-    h2{margin:0 0 10px; font-size:22px; line-height:1.25}
-    h3{margin:0 0 8px; font-size:18px}
-    p{margin:10px 0; color:var(--muted)}
-    .hero p{font-size:15px}
-    .cta{
-      display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;
+    .brand p{
+      margin:0;
+      color:var(--muted);
+      font-size: clamp(14px, 2vw, 16px);
+    }
+    .tag{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding:8px 12px;
+      border:1px solid rgba(215,180,106,.35);
+      border-radius:999px;
+      color:var(--text);
+      background: rgba(215,180,106,.10);
+      font-size:13px;
+      white-space:nowrap;
+      height: fit-content;
+    }
+    nav{
+      margin:22px 0 0;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
     }
     .btn{
-      display:inline-flex; align-items:center; justify-content:center;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
       padding:10px 14px;
-      border-radius:12px;
-      font-size:14px;
+      border-radius:999px;
       border:1px solid var(--line);
-      background:#fff;
+      background: rgba(255,255,255,.03);
+      text-decoration:none;
+      font-size:14px;
       color:var(--text);
-      cursor:pointer;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+    }
+    .btn:hover{
+      transform: translateY(-1px);
+      background: rgba(255,255,255,.06);
+      border-color: rgba(215,180,106,.35);
     }
     .btn.primary{
-      background:var(--accent);
-      border-color:var(--accent);
-      color:#fff;
+      border-color: rgba(215,180,106,.45);
+      background: rgba(215,180,106,.16);
     }
-    .btn.primary:hover{background:var(--accent-2); border-color:var(--accent-2)}
-    .btn:hover{border-color:#cbd5e1}
-    main{padding:10px 0 44px}
-    section{scroll-margin-top:84px; margin-top:18px}
-    .grid-2{
-      display:grid; grid-template-columns:1fr 1fr; gap:18px;
+    main{
+      margin-top:22px;
+      display:grid;
+      grid-template-columns: 1.3fr .7fr;
+      gap:18px;
     }
-    @media (max-width: 900px){
-      .grid-2{grid-template-columns:1fr}
+    @media (max-width: 860px){
+      main{grid-template-columns: 1fr;}
+      header{flex-direction:column;}
+      .tag{align-self:flex-start}
     }
-    .post-list{
+    section{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.02);
+      border-radius:var(--radius);
+      padding:20px 20px;
+    }
+    h2{
+      margin:0 0 10px 0;
+      font-size:18px;
+      letter-spacing:.2px;
+    }
+    .muted{color:var(--muted)}
+    ul{
+      margin:10px 0 0 0;
+      padding-left:18px;
+    }
+    li{margin:6px 0}
+    .grid{
       display:grid;
       gap:12px;
     }
-    .post{
-      padding:14px;
+    .card{
       border:1px solid var(--line);
-      border-radius:12px;
-      background:#fff;
+      border-radius:16px;
+      padding:14px 14px;
+      background: rgba(255,255,255,.02);
     }
-    .post small{color:var(--muted)}
-    .tag{
-      display:inline-block;
-      font-size:12px;
-      color:var(--accent-2);
-      background:rgba(15,118,110,.08);
-      border:1px solid rgba(15,118,110,.12);
-      padding:4px 8px;
-      border-radius:999px;
-      margin-right:8px;
-    }
-    form{
-      display:grid; gap:10px;
-    }
-    label{font-size:13px; color:var(--muted)}
-    input, textarea{
-      width:100%;
-      font: inherit;
-      padding:10px 12px;
-      border:1px solid var(--line);
-      border-radius:12px;
-      background:#fff;
-      outline:none;
-    }
-    input:focus, textarea:focus{border-color:rgba(15,118,110,.5); box-shadow:0 0 0 3px rgba(15,118,110,.12)}
-    textarea{min-height:120px; resize:vertical}
-    .note{
-      font-size:13px;
-      color:var(--muted);
-      margin-top:8px;
-    }
+    .card strong{display:block; margin-bottom:6px}
     footer{
-      border-top:1px solid var(--line);
-      padding:22px 0 28px;
+      margin-top:18px;
+      text-align:center;
       color:var(--muted);
       font-size:13px;
+      padding-top:18px;
     }
-    .split{
-      display:flex; gap:14px; justify-content:space-between; flex-wrap:wrap;
+    .divider{
+      height:1px;
+      background: linear-gradient(90deg, transparent, rgba(215,180,106,.45), transparent);
+      margin:18px 0;
+      opacity:.7;
     }
-    .muted{color:var(--muted)}
-    .sr-only{
-      position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;
+    .kpi{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:10px;
     }
+    .pill{
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:7px 10px;
+      font-size:13px;
+      color:var(--muted);
+      background: rgba(255,255,255,.02);
+    }
+    .pill b{color:var(--text)}
   </style>
 </head>
 
 <body>
-  <header>
-    <div class="wrap">
-      <div class="nav">
-        <a class="brand" href="#inicio" aria-label="Ir a inicio">
-          <strong>Sergio Landoni</strong>
-          <span>Sommelier de Territorio · Patagonia Argentina</span>
-        </a>
-        <nav class="menu" aria-label="Menú principal">
-          <a href="#inicio">Inicio</a>
-          <a href="#sobre-mi">Sobre mí</a>
-          <a href="#blog">Blog</a>
-          <a href="#contacto">Contacto</a>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1>Sergio Landoni</h1>
+        <p>Sommelier de Territorio · Patagonia (Neuquén) · Vino & Cultura</p>
+
+        <nav aria-label="Accesos rápidos">
+          <!-- Cambiá estos links por los tuyos cuando quieras -->
+          <a class="btn primary" href="#contacto">Contactar</a>
+          <a class="btn" href="#proyectos">Proyectos</a>
+          <a class="btn" href="#servicios">Trabajo</a>
         </nav>
       </div>
-    </div>
-  </header>
 
-  <main class="wrap">
-    <!-- INICIO -->
-    <section id="inicio" class="hero" aria-label="Inicio">
-      <div class="hero-grid">
-        <div class="card">
-          <div class="kicker">Vino · Territorio · Cultura</div>
-          <h1>Vino, territorio y cultura desde la Patagonia</h1>
-          <p>
-            El vino no es solo una bebida. Es paisaje, identidad y una forma de narrar un lugar.
-            Desde la Patagonia —y particularmente desde Neuquén— este espacio propone una mirada que integra
-            vino, gastronomía, turismo y cultura, poniendo en valor los territorios emergentes y a las personas que los construyen.
-          </p>
-          <p>
-            Aquí el vino se piensa como una expresión cultural, una herramienta de desarrollo y un puente entre
-            productores, cocineros, viajeros y comunidades.
-          </p>
-          <div class="cta">
-            <a class="btn primary" href="#blog">Ver el blog</a>
-            <a class="btn" href="#contacto">Escribirme</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h2>Una mirada desde el territorio</h2>
-          <p>
-            Mi trabajo como sommelier está atravesado por una idea central:
-            <strong>el vino necesita contexto para decir algo</strong>.
-          </p>
-          <p>
-            Impulso proyectos donde el vino patagónico encuentra relato, público y sentido.
-            No se trata solo de describir vinos, sino de contar desde dónde nacen, quiénes los hacen y qué territorio representan.
-          </p>
-          <div class="note">
-            📍 San Martín de los Andes · Neuquén · Patagonia Argentina
-          </div>
-        </div>
+      <div class="tag" title="Ubicación y enfoque">
+        Patagonia · San Martín de los Andes
       </div>
-    </section>
+    </header>
 
-    <!-- SOBRE MI -->
-    <section id="sobre-mi" aria-label="Sobre mí">
-      <div class="grid-2">
-        <div class="card">
+    <main>
+      <div class="grid">
+        <section id="sobre-mi">
           <h2>Sobre mí</h2>
-          <p>
-            Me formé como sommelier en la <strong>Escuela Gourmet Argentina (EGA)</strong> y complementé mi recorrido con capacitaciones
-            en el <strong>Centro Argentino de Vinos y Espirituosas (CAVE)</strong>, además de un proceso de formación continua en
-            negocios del vino y comunicación, siempre orientado a proyectos reales y territoriales.
+          <p class="muted">
+            Trabajo el vino desde el territorio: viviendo en Patagonia, conociendo productores, bodegas, restaurantes y público.
+            Mi diferencial no es “hablar difícil”, sino construir un relato claro, honesto y útil para que el vino patagónico —y especialmente el neuquino— gane lugar en las mesas y en la conversación.
           </p>
-          <p>
-            Vengo trabajando de manera sostenida en propuestas de desarrollo, comunicación y posicionamiento junto a bodegas patagónicas,
-            acompañando procesos que integran vino, identidad y territorio, tanto en ámbitos productivos como turísticos y culturales.
-          </p>
-        </div>
 
-        <div class="card">
-          <h3>Proyectos y experiencias</h3>
-          <p>
-            Soy creador e impulsor de la idea original del evento <strong>Vino a la Montaña</strong>, una feria de vinos patagónicos
-            que se desarrolla en San Martín de los Andes, llevada adelante junto a un equipo especializado en organización y comunicación.
-          </p>
-          <p>
-            En ese mismo recorrido, trabajo en el diseño y la conceptualización de iniciativas orientadas a fortalecer la representación del
-            vino neuquino, con una mirada institucional, territorial y de largo plazo, entendiendo al vino como parte del patrimonio cultural
-            y una herramienta estratégica para el desarrollo regional.
-          </p>
-          <div class="note">
-            <strong>Contacto:</strong> <a href="mailto:sergiolandoni.somm@gmail.com">sergiolandoni.somm@gmail.com</a>
+          <div class="kpi" aria-label="Ejes">
+            <span class="pill"><b>Territorio</b> · identidad y cultura</span>
+            <span class="pill"><b>Experiencias</b> · hospitalidad y servicio</span>
+            <span class="pill"><b>Comunicación</b> · contenido y estrategia</span>
+            <span class="pill"><b>Eventos</b> · curaduría y producción</span>
           </div>
-        </div>
+        </section>
+
+        <section id="servicios">
+          <h2>En qué puedo ayudarte</h2>
+          <ul class="muted">
+            <li><b>Comunicación del vino</b>: relato de marca, presentación de líneas, copys, guiones y contenidos.</li>
+            <li><b>Experiencias y hospitalidad</b>: degustaciones, visitas, propuestas gastronómicas y servicio.</li>
+            <li><b>Curaduría y eventos</b>: selección, armado de experiencias, organización y producción.</li>
+            <li><b>Capacitación</b>: equipos de sala, ventas, storytelling y entrenamiento para atención al público.</li>
+          </ul>
+          <div class="divider"></div>
+          <p class="muted">
+            Si querés, armamos una primera conversación de diagnóstico (breve) y te propongo un plan simple por etapas.
+          </p>
+        </section>
+
+        <section id="proyectos">
+          <h2>Proyectos</h2>
+
+          <div class="card">
+            <strong>Vino a la Montaña</strong>
+            <div class="muted">Encuentro enológico y cultural en San Martín de los Andes para conectar territorio, productores, vino, turismo y cultura.</div>
+          </div>
+
+          <div class="card">
+            <strong>Impulso del vino neuquino</strong>
+            <div class="muted">Trabajo territorial para fortalecer presencia, relato y maridaje del vino de Neuquén en gastronomía y turismo.</div>
+          </div>
+
+          <div class="card">
+            <strong>Patagonian Lifestyle</strong>
+            <div class="muted">Contenido audiovisual sobre Patagonia: viajes, gastronomía, estilo de vida y experiencias con vino.</div>
+          </div>
+
+          <p class="muted" style="margin-top:12px">
+            (Podemos actualizar esta sección con links y materiales cuando quieras.)
+          </p>
+        </section>
       </div>
-    </section>
 
-    <!-- BLOG -->
-    <section id="blog" aria-label="Blog">
-      <div class="card">
-        <h2>Blog</h2>
-        <p>
-          Este blog reúne textos, crónicas y reflexiones sobre vino patagónico, bodegas, territorio, gastronomía, turismo y cultura.
-          Es un espacio para pensar el vino desde el lugar donde sucede, con una mirada cercana, honesta y situada.
-        </p>
-
-        <div class="post-list" id="post-list" aria-label="Listado de artículos">
-          <!-- Post demo 1 -->
-          <article class="post" data-post>
-            <div>
-              <span class="tag">Territorio</span>
-              <span class="tag">Neuquén</span>
-            </div>
-            <h3 style="margin-top:10px">Qué significa ser sommelier de territorio</h3>
-            <small>Próximamente · Enero 2026</small>
-            <p>
-              Una idea simple: el vino necesita contexto. Y ese contexto se construye viviendo el lugar, conociendo productores,
-              servicios, públicos y relatos que hacen identidad.
-            </p>
-          </article>
-
-          <!-- Post demo 2 -->
-          <article class="post" data-post>
-            <div>
-              <span class="tag">Patagonia</span>
-              <span class="tag">Cultura</span>
-            </div>
-            <h3 style="margin-top:10px">Vino, gastronomía y paisaje: por qué el relato importa</h3>
-            <small>Próximamente</small>
-            <p>
-              Cuando el vino se integra a un plato regional, a un viaje y a una conversación, deja de ser un producto y se vuelve cultura.
-            </p>
-          </article>
-        </div>
-
-        <p class="note">
-          Nota: estos artículos son de ejemplo. Podés reemplazarlos por tus posts reales (o mantenerlos como “Próximamente”).
-        </p>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" aria-label="Contacto">
-      <div class="grid-2">
-        <div class="card">
+      <aside class="grid">
+        <section id="contacto">
           <h2>Contacto</h2>
-          <p><strong>El vino es diálogo, territorio y encuentro.</strong></p>
-          <p>
-            Si querés conversar sobre proyectos vinculados al vino patagónico, comunicación, eventos o propuestas culturales,
-            este es el espacio.
-          </p>
-          <p class="note">
-            También podés escribirme directo a:
-            <a href="mailto:sergiolandoni.somm@gmail.com">sergiolandoni.somm@gmail.com</a>
-          </p>
-        </div>
+          <p class="muted">Escribime y contame qué querés lograr. Te respondo con una propuesta clara y práctica.</p>
 
-        <div class="card">
-          <h3>Enviarme un mensaje</h3>
-          <!-- IMPORTANTE: GitHub Pages no envía formularios por sí solo. Este form usa "mailto" como solución simple. -->
-          <form action="mailto:sergiolandoni.somm@gmail.com" method="post" enctype="text/plain">
-            <div>
-              <label for="nombre">Nombre (obligatorio)</label>
-              <input id="nombre" name="Nombre" type="text" required placeholder="Tu nombre" />
-            </div>
-            <div>
-              <label for="email">Correo electrónico (obligatorio)</label>
-              <input id="email" name="Email" type="email" required placeholder="tu@email.com" />
-            </div>
-            <div>
-              <label for="mensaje">Mensaje</label>
-              <textarea id="mensaje" name="Mensaje" placeholder="Contame en qué te puedo ayudar"></textarea>
-            </div>
-            <button class="btn primary" type="submit">Enviar</button>
-            <p class="note">
-              Si preferís un formulario “real” (sin abrir el mail), se integra con Formspree / Netlify Forms más adelante.
-            </p>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
+          <!-- Reemplazá por tus datos reales -->
+          <div class="card">
+            <strong>Email</strong>
+            <div class="muted"><a href="mailto:sergiolandoni.somm@gmail.com">sergiolandoni.somm@gmail.com</a></div>
+          </div>
 
-  <footer>
-    <div class="wrap split">
-      <div>
-        <strong>Sergio Landoni</strong><br />
-        <span class="muted">Sommelier de Territorio · Patagonia Argentina</span>
-      </div>
-      <div>
-        <span class="muted">San Martín de los Andes, Neuquén · </span>
-        <a href="mailto:sergiolandoni.somm@gmail.com">sergiolandoni.somm@gmail.com</a>
-      </div>
-    </div>
-  </footer>
+          <div class="card">
+            <strong>Instagram</strong>
+            <div class="muted">
+              <a href="#" onclick="alert('Pegá aquí tu link de Instagram'); return false;">(agregar link)</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <strong>LinkedIn</strong>
+            <div class="muted">
+              <a href="#" onclick="alert('Pegá aquí tu link de LinkedIn'); return false;">(agregar link)</a>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+          <p class="muted" style="margin:0">
+            San Martín de los Andes · Neuquén · Patagonia
+          </p>
+        </section>
+
+        <section>
+          <h2>Nota</h2>
+          <p class="muted">
+            Este sitio está pensado para crecer por etapas: primero presencia clara, después portfolio, luego formulario/agenda y contenidos.
+          </p>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Sergio Landoni · sergiolandoni.com.ar
+    </footer>
+  </div>
 
   <script>
-    // Mantener el sitio liviano y sin dependencias externas.
-    // Si querés, luego agregamos:
-    // - buscador de posts
-    // - loader de posts desde JSON
-    // - modo oscuro/claro
+    document.getElementById("y").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
