@@ -92,8 +92,6 @@
       padding:14px 0;
       gap:16px;
     }
-
-    /* BRAND + LOGO */
     .brand{
       display:flex;
       align-items:center;
@@ -112,7 +110,6 @@
     .brand-text{display:flex; flex-direction:column; gap:2px}
     .brand-text strong{font-size:16px; letter-spacing:.2px}
     .brand-text span{font-size:13px; color:var(--muted)}
-
     .menu{
       display:flex; gap:14px; flex-wrap:wrap; align-items:center; justify-content:flex-end;
     }
@@ -126,7 +123,6 @@
 
     .hero{padding:26px 0 14px}
 
-    /* HERO IMAGE */
     .hero-media{
       margin-bottom:18px;
       border-radius:var(--radius);
@@ -169,6 +165,7 @@
     h3{margin:0 0 8px; font-size:18px}
     p{margin:10px 0; color:var(--muted)}
     .hero p{font-size:15px}
+
     .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
     .btn{
       display:inline-flex; align-items:center; justify-content:center;
@@ -192,9 +189,10 @@
     section{scroll-margin-top:84px; margin-top:18px}
     .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:18px}
     @media (max-width: 900px){ .grid-2{grid-template-columns:1fr} }
+
     .post-list{display:grid; gap:12px}
     .post{
-      padding:14px;
+      padding:16px;
       border:1px solid var(--line);
       border-radius:12px;
       background:#fff;
@@ -209,9 +207,10 @@
       padding:4px 8px;
       border-radius:999px;
       margin-right:8px;
+      margin-bottom:8px;
     }
+    .post-body p{color:var(--muted); margin:10px 0}
 
-    /* RETRATO */
     .portrait{
       width:100%;
       border-radius:var(--radius);
@@ -273,7 +272,7 @@
     <section id="inicio" class="hero" aria-label="Inicio">
 
       <div class="hero-media" aria-label="Imagen Patagonia">
-        <img src="assets/img/hero.JPEG" alt="Patagonia: vino, territorio y cultura" />
+        <img src="assets/img/hero.JPEG" alt="Patagonia: vino, territorio y cultura" loading="lazy" />
       </div>
 
       <div class="hero-grid">
@@ -282,7 +281,7 @@
           <h1>Vino, territorio y cultura desde la Patagonia</h1>
           <p>
             El vino no es solo una bebida. Es paisaje, identidad y una forma de narrar un lugar.
-            Desde la Patagonia —y particularmente desde Neuquén— este espacio propone una mirada que integra
+            Desde la Patagonia, y particularmente desde Neuquén, este espacio propone una mirada que integra
             vino, gastronomía, turismo y cultura, poniendo en valor los territorios emergentes y a las personas que los construyen.
           </p>
           <p>
@@ -290,7 +289,7 @@
             productores, cocineros, viajeros y comunidades.
           </p>
           <div class="cta">
-            <a class="btn primary" href="#blog">Ir al blog</a>
+            <a class="btn primary" href="#blog">Leer el primer post</a>
             <a class="btn" href="#contacto">Contacto</a>
             <a class="btn" href="https://www.linkedin.com/in/sergiolandoni" target="_blank" rel="noopener">LinkedIn</a>
           </div>
@@ -299,12 +298,12 @@
         <div class="card">
           <h2>Una mirada desde el territorio</h2>
           <p>
-            Mi trabajo como sommelier está atravesado por una idea central:
+            Mi trabajo como sommelier está atravesado por una idea central,
             <strong>el vino necesita contexto para decir algo</strong>.
           </p>
           <p>
-            Impulso proyectos donde el vino patagónico encuentra relato, público y sentido.
-            No se trata solo de describir vinos, sino de contar desde dónde nacen, quiénes los hacen y qué territorio representan.
+            Impulso proyectos donde el vino patagónico encuentra relato, público y sentido,
+            no se trata solo de describir vinos, sino de contar desde dónde nacen, quiénes los hacen y qué territorio representan.
           </p>
           <div class="note">
             📍 San Martín de los Andes · Neuquén · Patagonia Argentina
@@ -333,15 +332,15 @@
           <h3>Proyectos y experiencias</h3>
           <p>
             Soy creador e impulsor de la idea original del evento <strong>Vino a la Montaña</strong>, una feria de vinos patagónicos
-            que se desarrolla en San Martín de los Andes, desarrollada y llevada adelante en conjunto con un equipo de trabajo especializado en organización y comunicación,
+            que se desarrolla en San Martín de los Andes, llevada adelante junto a un equipo especializado en organización y comunicación,
             concebida como un espacio donde el vino encuentra contexto, público y relato, integrando bodegas, gastronomía, turismo y paisaje.
           </p>
           <p>
-            En ese mismo recorrido, trabajo en el diseño y la conceptualización de iniciativas orientadas a fortalecer la representación del vino neuquino,
-            con una mirada institucional, territorial y de largo plazo, entendiendo al vino como parte del patrimonio cultural y una herramienta estratégica para el desarrollo regional.
+            También trabajo en iniciativas orientadas a fortalecer la representación del vino neuquino con una mirada institucional,
+            territorial y de largo plazo, entendiendo al vino como patrimonio cultural y herramienta estratégica de desarrollo regional.
           </p>
 
-          <img class="portrait" src="assets/img/retrato.JPEG" alt="Sergio Landoni, Sommelier de Territorio" />
+          <img class="portrait" src="assets/img/retrato.JPEG" alt="Sergio Landoni, Sommelier de Territorio" loading="lazy" />
 
           <div class="note">
             <strong>Email:</strong> <a href="mailto:sergiolandoni.somm@gmail.com">sergiolandoni.somm@gmail.com</a><br/>
@@ -361,17 +360,50 @@
         </p>
 
         <div class="post-list" aria-label="Listado de artículos">
+          <!-- POST 1 -->
+          <article class="post" id="encontrar-un-camino">
+            <div>
+              <span class="tag">Patagonia</span>
+              <span class="tag">Neuquén</span>
+              <span class="tag">Vino patagónico</span>
+              <span class="tag">Sommelier de territorio</span>
+            </div>
+
+            <h3 style="margin-top:6px">Encontrar un camino</h3>
+            <small>Publicado</small>
+
+            <div class="post-body">
+              <p>Encontrar un camino no siempre es una decisión racional. A veces es una suma de intuiciones, de preguntas internas, de cosas que te conmueven y a las que volvés una y otra vez, incluso sin darte cuenta.</p>
+
+              <p>En mi caso, ese camino se fue trazando de manera natural, casi inevitable, entre dos pasiones que se fueron encontrando con el tiempo, la Patagonia y el vino. Y, dentro de ese recorrido, una provincia que no deja de sorprenderme, Neuquén.</p>
+
+              <p>Los vinos neuquinos me interpelan porque no buscan parecerse a otros. Se expresan distintos, marcados por un clima extremo, por la amplitud térmica, por el viento constante, por las horas de insolación y por una geografía diversa que se traduce en identidad. Neuquén es una provincia con regiones vitivinícolas claras y muy diferentes entre sí, y esa diversidad se siente en la copa.</p>
+
+              <p>Son vinos honestos, de calidad, con carácter, que sorprenden sin necesidad de exagerar. Vinos que emocionan.</p>
+
+              <p>Año tras año veo cómo la calidad crece, cómo los proyectos se afianzan, cómo los vinos ganan precisión sin perder frescura y cómo quienes los prueban, muchas veces por primera vez, se sorprenden genuinamente.</p>
+
+              <p>Y ahí aparece algo que disfruto profundamente, sorprender a las personas con estos vinos. Descorchar un vino de la Patagonia, contar desde dónde viene, servirlo sin prejuicios y ver cómo cambia la percepción en la primera copa.</p>
+
+              <p>Cuando a esos vinos les sumamos el paisaje, la experiencia se potencia. Montañas, bosques, lagos, ríos. Una gastronomía regional de excelencia, cada vez más consciente del territorio que habita. El vino deja de ser solo una bebida y pasa a formar parte de un momento, de un recuerdo, de una vivencia que queda. La experiencia se vuelve inolvidable.</p>
+
+              <p>Ahí aparece también uno de mis grandes desafíos personales y profesionales, lograr que la gastronomía regional dialogue de manera natural con los vinos de la zona, que los platos del territorio se acompañen con vinos que nacen en el mismo suelo, bajo el mismo cielo, atravesados por el mismo clima. No como una imposición, sino como una coherencia cultural.</p>
+
+              <p>Comunicar estos vinos es, para mí, mucho más que un trabajo. Es compromiso, es disfrute, es pasión. Es contar historias reales, poner en valor a los productores, al paisaje y a las personas que hacen posible que estos vinos existan.</p>
+
+              <p>Por eso elegí este camino. Porque desde la Patagonia, y especialmente desde Neuquén, el vino se cuenta distinto. Y porque creo profundamente que esos relatos, cuando nacen del territorio, tienen la capacidad de emocionar, sorprender y dejar huella.</p>
+            </div>
+          </article>
+
+          <!-- (Dejamos placeholders para próximos posts) -->
           <article class="post">
             <div>
               <span class="tag">Territorio</span>
-              <span class="tag">Neuquén</span>
+              <span class="tag">Gastronomía</span>
             </div>
-            <h3 style="margin-top:10px">Qué significa ser sommelier de territorio</h3>
+            <h3 style="margin-top:10px">Gastronomía regional y vinos de Neuquén, una misma conversación</h3>
             <small>Próximamente</small>
-            <p>
-              Una idea simple: el vino necesita contexto. Ese contexto se construye viviendo el lugar, conociendo productores,
-              servicios, públicos y relatos que hacen identidad.
-            </p>
+            <p>El desafío de acompañar platos del territorio con vinos del territorio, y cómo esa coherencia cultural mejora la experiencia.</p>
           </article>
 
           <article class="post">
@@ -379,16 +411,14 @@
               <span class="tag">Patagonia</span>
               <span class="tag">Cultura</span>
             </div>
-            <h3 style="margin-top:10px">Vino, gastronomía y paisaje: por qué el relato importa</h3>
+            <h3 style="margin-top:10px">Vino, paisaje y memoria, por qué una copa puede volverse inolvidable</h3>
             <small>Próximamente</small>
-            <p>
-              Cuando el vino se integra a un plato regional, a un viaje y a una conversación, deja de ser un producto y se vuelve cultura.
-            </p>
+            <p>Cuando el vino se integra a un viaje y a una conversación, deja de ser producto y se vuelve experiencia.</p>
           </article>
         </div>
 
         <p class="note">
-          Si querés, en el próximo paso reemplazamos “Próximamente” por tus 3 primeros posts reales (título + fecha + 2 párrafos).
+          Próximo paso, cuando quieras, publicamos el Post 2 y Post 3 con fecha, y armamos un índice de posts para SEO.
         </p>
       </div>
     </section>
