@@ -6,7 +6,487 @@
 
   <title>Sergio Landoni · Sommelier de Territorio | Patagonia</title>
   <meta name="description" content="Sergio Landoni, Sommelier de Territorio en San Martín de los Andes, Neuquén. Vino patagónico, territorio, gastronomía, turismo y cultura." />
+  <meta nam<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Sergio Landoni · Sommelier de Territorio | Patagonia</title>
+  <meta name="description" content="Sergio Landoni, Sommelier de Territorio en San Martín de los Andes (Neuquén, Patagonia Argentina). Blog sobre vino patagónico, territorio, gastronomía, turismo y cultura." />
+  <meta name="keywords" content="Sergio Landoni, sommelier, sommelier de territorio, vino patagónico, vino Neuquén, San Martín de los Andes, Patagonia, turismo, gastronomía, cultura, blog de vinos" />
+  <meta name="author" content="Sergio Landoni" />
   <meta name="robots" content="index,follow" />
+
+  <link rel="canonical" href="https://sergiolandoni.com.ar/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sergio Landoni · Sommelier de Territorio" />
+  <meta property="og:description" content="Vino, territorio y cultura desde la Patagonia. Blog y proyectos vinculados al vino patagónico y Neuquén." />
+  <meta property="og:url" content="https://sergiolandoni.com.ar/" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:image" content="https://sergiolandoni.com.ar/assets/img/hero.JPEG" />
+  <meta property="og:image:alt" content="Vino, territorio y cultura desde la Patagonia" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sergio Landoni · Sommelier de Territorio" />
+  <meta name="twitter:description" content="Blog sobre vino patagónico, territorio, gastronomía, turismo y cultura." />
+  <meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/hero.JPEG" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Sergio Landoni · Sommelier de Territorio",
+        "url": "https://sergiolandoni.com.ar/",
+        "inLanguage": "es-AR"
+      },
+      {
+        "@type": "Person",
+        "name": "Sergio Landoni",
+        "jobTitle": "Sommelier de Territorio",
+        "description": "Sommelier de Territorio en Patagonia Argentina. Comunicación, proyectos y desarrollo vinculados al vino patagónico y Neuquén.",
+        "email": "mailto:sergiolandoni.somm@gmail.com",
+        "url": "https://sergiolandoni.com.ar/",
+        "sameAs": [
+          "https://www.linkedin.com/in/sergiolandoni"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Martín de los Andes",
+          "addressRegion": "Neuquén",
+          "addressCountry": "AR"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#fafafa;
+      --card:#ffffff;
+      --text:#111827;
+      --muted:#4b5563;
+      --line:#e5e7eb;
+      --accent:#0f766e;
+      --accent-2:#115e59;
+      --radius:14px;
+      --shadow: 0 10px 30px rgba(0,0,0,.06);
+      --max: 1060px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:inherit; text-decoration:none}
+    a:hover{color:var(--accent)}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+    header{
+      position:sticky; top:0; z-index:50;
+      background:rgba(250,250,250,.92);
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:16px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width: 220px;
+    }
+    .brand-logo{
+      width:40px;
+      height:40px;
+      border-radius:10px;
+      border:1px solid var(--line);
+      background:#fff;
+      object-fit:contain;
+      display:block;
+    }
+    .brand-text{display:flex; flex-direction:column; gap:2px}
+    .brand-text strong{font-size:16px; letter-spacing:.2px}
+    .brand-text span{font-size:13px; color:var(--muted)}
+    .menu{
+      display:flex; gap:14px; flex-wrap:wrap; align-items:center; justify-content:flex-end;
+    }
+    .menu a{
+      font-size:14px;
+      color:var(--muted);
+      padding:8px 10px;
+      border-radius:10px;
+    }
+    .menu a:hover{background:#ffffff; border:1px solid var(--line); color:var(--accent)}
+    .hero{padding:26px 0 14px}
+    .hero-media{
+      margin-bottom:18px;
+      border-radius:var(--radius);
+      overflow:hidden;
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+      background:#fff;
+    }
+    .hero-media img{width:100%; height:auto; display:block}
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    @media (max-width: 900px){ .hero-grid{grid-template-columns:1fr} }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:20px;
+    }
+    .kicker{
+      display:inline-flex; gap:8px; align-items:center;
+      font-size:13px; color:var(--accent-2);
+      background:rgba(15,118,110,.08);
+      border:1px solid rgba(15,118,110,.12);
+      padding:6px 10px; border-radius:999px;
+      margin-bottom:12px;
+    }
+    h1{margin:0 0 10px; font-size:32px; line-height:1.2}
+    h2{margin:0 0 10px; font-size:22px; line-height:1.25}
+    h3{margin:0 0 8px; font-size:18px}
+    h4{margin:16px 0 6px; font-size:15px; color:var(--text)}
+    p{margin:10px 0; color:var(--muted)}
+    .hero p{font-size:15px}
+    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px;
+      border-radius:12px;
+      font-size:14px;
+      border:1px solid var(--line);
+      background:#fff;
+      color:var(--text);
+      cursor:pointer;
+    }
+    .btn.primary{
+      background:var(--accent);
+      border-color:var(--accent);
+      color:#fff;
+    }
+    .btn.primary:hover{background:var(--accent-2); border-color:var(--accent-2)}
+    .btn:hover{border-color:#cbd5e1}
+    main{padding:10px 0 44px}
+    section{scroll-margin-top:84px; margin-top:18px}
+    .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+    @media (max-width: 900px){ .grid-2{grid-template-columns:1fr} }
+    .post-list{display:grid; gap:12px}
+    .post{
+      padding:14px;
+      border:1px solid var(--line);
+      border-radius:12px;
+      background:#fff;
+    }
+    .post small{color:var(--muted)}
+    .tag{
+      display:inline-block;
+      font-size:12px;
+      color:var(--accent-2);
+      background:rgba(15,118,110,.08);
+      border:1px solid rgba(15,118,110,.12);
+      padding:4px 8px;
+      border-radius:999px;
+      margin-right:8px;
+    }
+    .post-body p{color:var(--muted)}
+    .portrait{
+      width:100%;
+      border-radius:var(--radius);
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+      display:block;
+      margin-top:12px;
+    }
+    form{display:grid; gap:10px}
+    label{font-size:13px; color:var(--muted)}
+    input, textarea{
+      width:100%;
+      font: inherit;
+      padding:10px 12px;
+      border:1px solid var(--line);
+      border-radius:12px;
+      background:#fff;
+      outline:none;
+    }
+    input:focus, textarea:focus{border-color:rgba(15,118,110,.5); box-shadow:0 0 0 3px rgba(15,118,110,.12)}
+    textarea{min-height:120px; resize:vertical}
+    .note{font-size:13px; color:var(--muted); margin-top:8px}
+    footer{
+      border-top:1px solid var(--line);
+      padding:22px 0 28px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .split{display:flex; gap:14px; justify-content:space-between; flex-wrap:wrap}
+    .muted{color:var(--muted)}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="#inicio" aria-label="Ir a inicio">
+          <img class="brand-logo" src="assets/img/logo.jpg" alt="Logo Sergio Landoni" />
+          <div class="brand-text">
+            <strong>Sergio Landoni</strong>
+            <span>Sommelier de Territorio · Patagonia Argentina</span>
+          </div>
+        </a>
+
+        <nav class="menu" aria-label="Menú principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#blog">Blog</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- INICIO -->
+    <section id="inicio" class="hero" aria-label="Inicio">
+      <div class="hero-media" aria-label="Imagen Patagonia">
+        <img src="assets/img/hero.JPEG" alt="Patagonia: vino, territorio y cultura" />
+      </div>
+
+      <div class="hero-grid">
+        <div class="card">
+          <div class="kicker">Vino · Territorio · Cultura</div>
+          <h1>Vino, territorio y cultura desde la Patagonia</h1>
+          <p>
+            El vino no es solo una bebida. Es paisaje, identidad y una forma de narrar un lugar.
+            Desde la Patagonia —y particularmente desde Neuquén— este espacio propone una mirada que integra
+            vino, gastronomía, turismo y cultura, poniendo en valor los territorios emergentes y a las personas que los construyen.
+          </p>
+          <p>
+            Aquí el vino se piensa como una expresión cultural, una herramienta de desarrollo y un puente entre
+            productores, cocineros, viajeros y comunidades.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#encontrar-un-camino">Post destacado: Encontrar un camino</a>
+            <a class="btn" href="#blog">Ir al blog</a>
+            <a class="btn" href="#contacto">Contacto</a>
+            <a class="btn" href="https://www.linkedin.com/in/sergiolandoni" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Una mirada desde el territorio</h2>
+          <p>
+            Mi trabajo como sommelier está atravesado por una idea central:
+            <strong>el vino necesita contexto para decir algo</strong>.
+          </p>
+          <p>
+            Impulso proyectos donde el vino patagónico encuentra relato, público y sentido.
+            No se trata solo de describir vinos, sino de contar desde dónde nacen, quiénes los hacen y qué territorio representan.
+          </p>
+          <div class="note">
+            📍 San Martín de los Andes · Neuquén · Patagonia Argentina
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobre-mi" aria-label="Sobre mí">
+      <div class="grid-2">
+        <div class="card">
+          <h2>Sobre mí</h2>
+          <p>
+            Me formé como sommelier en la <strong>Escuela Gourmet Argentina (EGA)</strong> y complementé mi recorrido con capacitaciones
+            en el <strong>Centro Argentino de Vinos y Espirituosas (CAVE)</strong>, además de un proceso de formación continua en
+            negocios del vino y comunicación, orientado a proyectos reales y territoriales.
+          </p>
+          <p>
+            Vengo trabajando de manera sostenida en propuestas de desarrollo, comunicación y posicionamiento junto a bodegas patagónicas,
+            integrando vino, identidad y territorio en ámbitos productivos, turísticos y culturales.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Proyectos y experiencias</h3>
+          <p>
+            Soy creador e impulsor de la idea original del evento <strong>Vino a la Montaña</strong>, una feria de vinos patagónicos
+            que se desarrolla en San Martín de los Andes, llevada adelante junto a un equipo especializado en organización y comunicación.
+          </p>
+          <p>
+            También trabajo en iniciativas orientadas a fortalecer la representación del vino neuquino con una mirada institucional,
+            territorial y de largo plazo, entendiendo al vino como patrimonio cultural y herramienta estratégica de desarrollo regional.
+          </p>
+
+          <img class="portrait" src="assets/img/retrato.JPEG" alt="Sergio Landoni, Sommelier de Territorio" />
+
+          <div class="note">
+            <strong>Email:</strong> <a href="mailto:sergiolandoni.somm@gmail.com">sergiolandoni.somm@gmail.com</a><br/>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sergiolandoni" target="_blank" rel="noopener">linkedin.com/in/sergiolandoni</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" aria-label="Blog">
+      <div class="card">
+        <h2>Blog</h2>
+        <p>
+          Textos, crónicas y reflexiones sobre vino patagónico, bodegas, territorio, gastronomía, turismo y cultura.
+          Un espacio para pensar el vino desde el lugar donde sucede, con una mirada cercana y situada.
+        </p>
+
+        <div class="post-list" aria-label="Listado de artículos">
+
+          <!-- POST 1 -->
+          <article class="post" id="encontrar-un-camino">
+            <div>
+              <span class="tag">Patagonia</span>
+              <span class="tag">Neuquén</span>
+              <span class="tag">Sommelier de territorio</span>
+            </div>
+
+            <h3 style="margin-top:10px">Encontrar un camino</h3>
+            <small>Publicado: 8 de enero de 2026</small>
+
+            <div class="post-body">
+              <p>Encontrar un camino no siempre es una decisión racional. A veces es una suma de intuiciones, de preguntas internas, de cosas que te conmueven y a las que volvés una y otra vez.</p>
+
+              <p>En mi caso, ese camino se fue trazando de manera natural, casi inevitable, entre dos pasiones que se fueron encontrando con el tiempo: la Patagonia y el vino. Y, dentro de ese recorrido, una provincia que no deja de sorprenderme: Neuquén.</p>
+
+              <p>Los vinos neuquinos me interpelan porque no buscan parecerse a otros. Se expresan distintos, marcados por un clima extremo, por la amplitud térmica, por el viento constante, por las horas de insolación y por regiones claras y diversas que se traducen en identidad.</p>
+
+              <p>Son vinos honestos, de calidad, con carácter, que sorprenden sin necesidad de exagerar. Vinos que emocionan.</p>
+
+              <p>Año tras año veo cómo la calidad crece, cómo los proyectos se afianzan, cómo los vinos ganan precisión sin perder frescura y cómo quienes los prueban, muchas veces por primera vez, se sorprenden genuinamente.</p>
+
+              <p>Y ahí aparece algo que disfruto profundamente: sorprender a las personas con estos vinos. Descorchar un vino de la Patagonia, contar desde dónde viene, servirlo sin prejuicios y ver cómo cambia la percepción.</p>
+
+              <p>Cuando a esos vinos les sumamos el paisaje, la experiencia se potencia. Montañas, bosques, lagos, ríos. Una gastronomía regional de excelencia, cada vez más consciente del territorio que habita. El vino se vuelve parte de algo inolvidable.</p>
+
+              <p>Ahí aparece también uno de mis grandes desafíos personales y profesionales: lograr que la gastronomía regional dialogue de manera natural con los vinos de la zona, que los platos del territorio se acompañen con vinos del territorio.</p>
+
+              <p>Comunicar estos vinos es, para mí, mucho más que un trabajo. Es compromiso, es disfrute, es pasión. Es contar historias reales, poner en valor a los productores, al paisaje y a las personas que hacen posible estos vinos.</p>
+
+              <h4>Patagonia y Neuquén como identidad vitivinícola</h4>
+              <p>La Patagonia, y especialmente Neuquén, proponen una forma distinta de entender el vino. Clima extremo, amplitud térmica, viento, horas de insolación y regiones bien definidas construyen vinos con identidad propia, honestos y expresivos, que reflejan con claridad el lugar donde nacen.</p>
+
+              <h4>El vino como experiencia cultural y territorial</h4>
+              <p>Cuando el vino se integra al paisaje, a la gastronomía regional y a la experiencia del viaje, deja de ser solo un producto. Se transforma en cultura, en memoria y en una vivencia que conecta a las personas con el territorio.</p>
+
+              <p><strong>En síntesis:</strong> trabajar y comunicar el vino patagónico, y en especial el neuquino, es apostar por una identidad auténtica. Es poner en valor productores, paisaje y cultura, y ofrecer experiencias que sorprenden, emocionan y dejan huella.</p>
+            </div>
+          </article>
+
+          <!-- POST 2 -->
+          <article class="post" id="vino-gastronomia-paisaje">
+            <div>
+              <span class="tag">Patagonia</span>
+              <span class="tag">Gastronomía</span>
+              <span class="tag">Territorio</span>
+            </div>
+
+            <h3 style="margin-top:10px">Vino, gastronomía y paisaje: cuando el territorio se sirve en la mesa</h3>
+            <small>Publicado: 8 de enero de 2026</small>
+
+            <div class="post-body">
+              <p>En la Patagonia, el vino rara vez camina solo. Cuando aparece en la mesa, suele hacerlo acompañado de un paisaje, de una cocina con identidad y de una experiencia que va más allá de la copa.</p>
+
+              <p>Montañas, bosques, lagos, ríos. Productos nobles, estaciones marcadas y una gastronomía regional que, en sus mejores expresiones, entiende el valor del territorio que habita. En ese contexto, el vino encuentra su lugar natural.</p>
+
+              <p>Acompañar un plato regional con un vino nacido en el mismo entorno no es una moda ni una consigna forzada. Es una coherencia cultural. Es permitir que el relato sea completo, que lo que sucede en el plato dialogue con lo que hay en la copa.</p>
+
+              <p>En la Patagonia, y particularmente en Neuquén, esa coherencia todavía está en construcción. Y ahí aparece uno de los grandes desafíos: lograr que los vinos de la región estén presentes en la gastronomía local, no como excepción, sino como parte natural de la experiencia.</p>
+
+              <p>Cuando eso sucede, el impacto es inmediato. El visitante comprende mejor el lugar que recorre. El comensal se sorprende. El vino deja de ser un acompañamiento genérico y se transforma en una herramienta de identidad.</p>
+
+              <p>Pensar el vino desde el territorio es entender que la experiencia no termina en la botella. Continúa en la mesa, en la conversación, en el paisaje que rodea y en la memoria que queda después.</p>
+
+              <p>Ese es el camino que vale la pena construir: una mesa donde gastronomía, vino y paisaje hablen el mismo idioma.</p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" aria-label="Contacto">
+      <div class="grid-2">
+        <div class="card">
+          <h2>Contacto</h2>
+          <p><strong>El vino es diálogo, territorio y encuentro.</strong></p>
+          <p>
+            Si querés conversar sobre proyectos vinculados al vino patagónico, comunicación, eventos o propuestas culturales,
+            este es el espacio.
+          </p>
+          <p class="note">
+            Email directo: <a href="mailto:sergiolandoni.somm@gmail.com">sergiolandoni.somm@gmail.com</a><br/>
+            LinkedIn: <a href="https://www.linkedin.com/in/sergiolandoni" target="_blank" rel="noopener">linkedin.com/in/sergiolandoni</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Enviarme un mensaje</h3>
+          <form action="mailto:sergiolandoni.somm@gmail.com" method="post" enctype="text/plain">
+            <div>
+              <label for="nombre">Nombre (obligatorio)</label>
+              <input id="nombre" name="Nombre" type="text" required placeholder="Tu nombre" />
+            </div>
+            <div>
+              <label for="email">Correo electrónico (obligatorio)</label>
+              <input id="email" name="Email" type="email" required placeholder="tu@email.com" />
+            </div>
+            <div>
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="Mensaje" placeholder="Contame en qué te puedo ayudar"></textarea>
+            </div>
+            <button class="btn primary" type="submit">Enviar</button>
+          </form>
+          <p class="note">
+            Si tu navegador bloquea el envío por mail, escribime directo a <a href="mailto:sergiolandoni.somm@gmail.com">sergiolandoni.somm@gmail.com</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap split">
+      <div>
+        <strong>Sergio Landoni</strong><br />
+        <span class="muted">Sommelier de Territorio · Patagonia Argentina</span>
+      </div>
+      <div>
+        <span class="muted">San Martín de los Andes, Neuquén · </span>
+        <a href="mailto:sergiolandoni.somm@gmail.com">sergiolandoni.somm@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+e="robots" content="index,follow" />
   <link rel="canonical" href="https://sergiolandoni.com.ar/" />
 
   <!-- Open Graph -->
