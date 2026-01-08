@@ -2,57 +2,304 @@
 <html lang="es-AR">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sergio Landoni — Blog</title>
-  <meta name="description" content="Blog de Sergio Landoni, sommelier de territorio en San Martín de los Andes (Neuquén)." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Sergio Landoni | Sommelier de Territorio (Patagonia) · Vino & Cultura</title>
+  <meta name="description" content="Sergio Landoni — Sommelier de Territorio en Patagonia (Neuquén). Comunicación del vino, experiencias, curaduría, eventos y proyectos culturales vinculados al vino patagónico." />
+
+  <meta name="author" content="Sergio Landoni" />
+  <meta name="theme-color" content="#111111" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sergio Landoni | Sommelier de Territorio (Patagonia)" />
+  <meta property="og:description" content="Comunicación del vino, experiencias, curaduría y proyectos culturales. Patagonia · Neuquén." />
+  <meta property="og:url" content="https://sergiolandoni.com.ar/" />
+
+  <!-- Favicon (opcional: si luego agregás /favicon.ico) -->
+  <link rel="icon" href="/favicon.ico" />
+
   <style>
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; background:#fbfaf7; color:#121417}
-    .wrap{max-width:980px;margin:0 auto;padding:28px 18px}
-    header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-    a{color:#7a1f2b;text-decoration:none}
-    a:hover{text-decoration:underline}
-    h1{margin:18px 0 8px; font-size:34px; line-height:1.1}
-    p{line-height:1.6}
-    .card{background:#fff;border:1px solid #e8e2d7;border-radius:16px;padding:16px;margin-top:16px}
-    .post{padding:12px;border:1px solid #e8e2d7;border-radius:14px;margin-top:10px;background:#fbfaf7}
-    .muted{color:#5d6773}
+    :root{
+      --bg:#0f0f10;
+      --card:#151517;
+      --text:#f3f3f3;
+      --muted:#b9b9bd;
+      --line:#2a2a2e;
+      --accent:#d7b46a; /* dorado suave */
+      --max:980px;
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 700px at 20% -10%, rgba(215,180,106,.16), transparent 55%),
+                  radial-gradient(1000px 600px at 90% 0%, rgba(215,180,106,.10), transparent 60%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:inherit}
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:40px 18px 60px;
+    }
+    header{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:18px;
+      padding:22px 22px;
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border-radius:var(--radius);
+    }
+    .brand h1{
+      margin:0 0 8px 0;
+      font-size: clamp(28px, 4vw, 44px);
+      letter-spacing:.2px;
+    }
+    .brand p{
+      margin:0;
+      color:var(--muted);
+      font-size: clamp(14px, 2vw, 16px);
+    }
+    .tag{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding:8px 12px;
+      border:1px solid rgba(215,180,106,.35);
+      border-radius:999px;
+      color:var(--text);
+      background: rgba(215,180,106,.10);
+      font-size:13px;
+      white-space:nowrap;
+      height: fit-content;
+    }
+    nav{
+      margin:22px 0 0;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      text-decoration:none;
+      font-size:14px;
+      color:var(--text);
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+    }
+    .btn:hover{
+      transform: translateY(-1px);
+      background: rgba(255,255,255,.06);
+      border-color: rgba(215,180,106,.35);
+    }
+    .btn.primary{
+      border-color: rgba(215,180,106,.45);
+      background: rgba(215,180,106,.16);
+    }
+    main{
+      margin-top:22px;
+      display:grid;
+      grid-template-columns: 1.3fr .7fr;
+      gap:18px;
+    }
+    @media (max-width: 860px){
+      main{grid-template-columns: 1fr;}
+      header{flex-direction:column;}
+      .tag{align-self:flex-start}
+    }
+    section{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.02);
+      border-radius:var(--radius);
+      padding:20px 20px;
+    }
+    h2{
+      margin:0 0 10px 0;
+      font-size:18px;
+      letter-spacing:.2px;
+    }
+    .muted{color:var(--muted)}
+    ul{
+      margin:10px 0 0 0;
+      padding-left:18px;
+    }
+    li{margin:6px 0}
+    .grid{
+      display:grid;
+      gap:12px;
+    }
+    .card{
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:14px 14px;
+      background: rgba(255,255,255,.02);
+    }
+    .card strong{display:block; margin-bottom:6px}
+    footer{
+      margin-top:18px;
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+      padding-top:18px;
+    }
+    .divider{
+      height:1px;
+      background: linear-gradient(90deg, transparent, rgba(215,180,106,.45), transparent);
+      margin:18px 0;
+      opacity:.7;
+    }
+    .kpi{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+    .pill{
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:7px 10px;
+      font-size:13px;
+      color:var(--muted);
+      background: rgba(255,255,255,.02);
+    }
+    .pill b{color:var(--text)}
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <header>
-      <strong>Sergio Landoni</strong>
-      <nav>
-        <a href="#articulos">Artículos</a> ·
-        <a href="#sobre-mi">Sobre mí</a> ·
-        <a href="#contacto">Contacto</a>
-      </nav>
+      <div class="brand">
+        <h1>Sergio Landoni</h1>
+        <p>Sommelier de Territorio · Patagonia (Neuquén) · Vino & Cultura</p>
+
+        <nav aria-label="Accesos rápidos">
+          <!-- Cambiá estos links por los tuyos cuando quieras -->
+          <a class="btn primary" href="#contacto">Contactar</a>
+          <a class="btn" href="#proyectos">Proyectos</a>
+          <a class="btn" href="#servicios">Trabajo</a>
+        </nav>
+      </div>
+
+      <div class="tag" title="Ubicación y enfoque">
+        Patagonia · San Martín de los Andes
+      </div>
     </header>
 
-    <h1>Blog de vino y territorio</h1>
-    <p class="muted">Sommelier de territorio en San Martín de los Andes (Neuquén). Vino neuquino, gastronomía, maridaje y turismo del vino.</p>
+    <main>
+      <div class="grid">
+        <section id="sobre-mi">
+          <h2>Sobre mí</h2>
+          <p class="muted">
+            Trabajo el vino desde el territorio: viviendo en Patagonia, conociendo productores, bodegas, restaurantes y público.
+            Mi diferencial no es “hablar difícil”, sino construir un relato claro, honesto y útil para que el vino patagónico —y especialmente el neuquino— gane lugar en las mesas y en la conversación.
+          </p>
 
-    <section id="articulos" class="card">
-      <h2>Últimos artículos</h2>
-      <div class="post">
-        <strong>Primer post (ejemplo)</strong>
-        <p class="muted">Cuando quieras, lo convertimos en un post real y armamos la plantilla.</p>
+          <div class="kpi" aria-label="Ejes">
+            <span class="pill"><b>Territorio</b> · identidad y cultura</span>
+            <span class="pill"><b>Experiencias</b> · hospitalidad y servicio</span>
+            <span class="pill"><b>Comunicación</b> · contenido y estrategia</span>
+            <span class="pill"><b>Eventos</b> · curaduría y producción</span>
+          </div>
+        </section>
+
+        <section id="servicios">
+          <h2>En qué puedo ayudarte</h2>
+          <ul class="muted">
+            <li><b>Comunicación del vino</b>: relato de marca, presentación de líneas, copys, guiones y contenidos.</li>
+            <li><b>Experiencias y hospitalidad</b>: degustaciones, visitas, propuestas gastronómicas y servicio.</li>
+            <li><b>Curaduría y eventos</b>: selección, armado de experiencias, organización y producción.</li>
+            <li><b>Capacitación</b>: equipos de sala, ventas, storytelling y entrenamiento para atención al público.</li>
+          </ul>
+          <div class="divider"></div>
+          <p class="muted">
+            Si querés, armamos una primera conversación de diagnóstico (breve) y te propongo un plan simple por etapas.
+          </p>
+        </section>
+
+        <section id="proyectos">
+          <h2>Proyectos</h2>
+
+          <div class="card">
+            <strong>Vino a la Montaña</strong>
+            <div class="muted">Encuentro enológico y cultural en San Martín de los Andes para conectar territorio, productores, vino, turismo y cultura.</div>
+          </div>
+
+          <div class="card">
+            <strong>Impulso del vino neuquino</strong>
+            <div class="muted">Trabajo territorial para fortalecer presencia, relato y maridaje del vino de Neuquén en gastronomía y turismo.</div>
+          </div>
+
+          <div class="card">
+            <strong>Patagonian Lifestyle</strong>
+            <div class="muted">Contenido audiovisual sobre Patagonia: viajes, gastronomía, estilo de vida y experiencias con vino.</div>
+          </div>
+
+          <p class="muted" style="margin-top:12px">
+            (Podemos actualizar esta sección con links y materiales cuando quieras.)
+          </p>
+        </section>
       </div>
-    </section>
 
-    <section id="sobre-mi" class="card">
-      <h2>Sobre mí</h2>
-      <p class="muted">Soy Sergio Landoni. Vivo en San Martín de los Andes y comunico el vino desde el territorio y la experiencia.</p>
-    </section>
+      <aside class="grid">
+        <section id="contacto">
+          <h2>Contacto</h2>
+          <p class="muted">Escribime y contame qué querés lograr. Te respondo con una propuesta clara y práctica.</p>
 
-    <section id="contacto" class="card">
-      <h2>Contacto</h2>
-      <p>Email: <a href="mailto:sergiolandoni.somm@gmail.com">sergiolandoni.somm@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/sergiolandoni" target="_blank" rel="noopener">sergiolandoni</a></p>
-    </section>
+          <!-- Reemplazá por tus datos reales -->
+          <div class="card">
+            <strong>Email</strong>
+            <div class="muted"><a href="mailto:sergiolandoni.somm@gmail.com">sergiolandoni.somm@gmail.com</a></div>
+          </div>
 
-    <p class="muted" style="margin-top:20px;font-size:12px">© <span id="y"></span> Sergio Landoni</p>
+          <div class="card">
+            <strong>Instagram</strong>
+            <div class="muted">
+              <a href="#" onclick="alert('Pegá aquí tu link de Instagram'); return false;">(agregar link)</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <strong>LinkedIn</strong>
+            <div class="muted">
+              <a href="#" onclick="alert('Pegá aquí tu link de LinkedIn'); return false;">(agregar link)</a>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+          <p class="muted" style="margin:0">
+            San Martín de los Andes · Neuquén · Patagonia
+          </p>
+        </section>
+
+        <section>
+          <h2>Nota</h2>
+          <p class="muted">
+            Este sitio está pensado para crecer por etapas: primero presencia clara, después portfolio, luego formulario/agenda y contenidos.
+          </p>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Sergio Landoni · sergiolandoni.com.ar
+    </footer>
   </div>
-  <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
