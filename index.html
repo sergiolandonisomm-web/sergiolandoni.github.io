@@ -187,4 +187,298 @@
     .post{
       padding:14px;
       border-radius:16px;
-      border:1px solid va
+      border:1px solid var(--line);
+      background:rgba(251,250,247,.8);
+      display:flex; gap:14px; align-items:flex-start; justify-content:space-between;
+    }
+    .post h3{margin:0; font-size:15.5px}
+    .post p{margin:6px 0 0; color:var(--muted); font-size:13.5px}
+    .meta{margin-top:8px; font-size:12.5px; color:var(--muted)}
+    .tag{
+      display:inline-block;
+      padding:4px 8px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#fff;
+      font-size:12px;
+      color:var(--muted);
+      margin-right:6px;
+    }
+    .post a{
+      color:inherit;
+      text-decoration:none;
+    }
+    .post a:hover h3{color:var(--accent)}
+    .read{white-space:nowrap; font-weight:700; font-size:13px; color:var(--accent); text-decoration:none}
+    .read:hover{text-decoration:underline}
+
+    /* Sidebar */
+    .sideList{list-style:none; padding:0; margin:0; display:grid; gap:10px}
+    .sideItem{
+      padding:12px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      background:rgba(251,250,247,.8);
+    }
+    .sideItem strong{display:block; font-size:13.5px}
+    .sideItem span{display:block; font-size:12.5px; color:var(--muted); margin-top:2px}
+    .hr{height:1px; background:var(--line); margin:14px 0}
+
+    footer{
+      max-width:var(--max);
+      margin:28px auto 0;
+      padding:18px 18px 0;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:space-between;
+      font-size:12.5px;
+    }
+
+    @media (max-width: 980px){
+      .heroCard{grid-template-columns:1fr}
+      .side{border-left:none; padding-left:0; border-top:1px solid var(--line); padding-top:14px}
+      .span8,.span4{grid-column: span 12}
+      h1{font-size:38px}
+    }
+  </style>
+
+  <!-- SEO + IA: Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "name":"Sergio Landoni — Blog",
+        "url":"https://sergiolandoni.com.ar/",
+        "inLanguage":"es-AR"
+      },
+      {
+        "@type":"Person",
+        "@id":"https://sergiolandoni.com.ar/#sergio-landoni",
+        "name":"Sergio Landoni",
+        "jobTitle":"Sommelier de territorio",
+        "url":"https://sergiolandoni.com.ar/",
+        "email":"mailto:sergiolandoni.somm@gmail.com",
+        "address":{
+          "@type":"PostalAddress",
+          "addressLocality":"San Martín de los Andes",
+          "addressRegion":"Neuquén",
+          "addressCountry":"AR"
+        },
+        "sameAs":[
+          "https://www.linkedin.com/in/sergiolandoni"
+        ]
+      },
+      {
+        "@type":"Blog",
+        "name":"Sergio Landoni — Blog",
+        "url":"https://sergiolandoni.com.ar/",
+        "inLanguage":"es-AR",
+        "author":{"@id":"https://sergiolandoni.com.ar/#sergio-landoni"}
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="topbar">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <div class="logo" aria-hidden="true">
+          <!-- Subí tu logo a /assets/logo.png -->
+          <img src="assets/logo.png" alt="" onerror="this.style.display='none'; this.parentElement.textContent='SL'; this.parentElement.style.fontWeight='800'; this.parentElement.style.color='#121417';" />
+        </div>
+        <div>
+          <strong>Sergio Landoni</strong>
+          <span>Sommelier de territorio · San Martín de los Andes (Neuquén)</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navegación">
+        <a href="#articulos">Artículos</a>
+        <a href="#temas">Temas</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a class="btn" href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero" id="inicio">
+    <div class="heroCard">
+      <div>
+        <div class="kicker"><span class="dot"></span> Blog editorial · Vino neuquino · Territorio</div>
+
+        <h1>
+          Vino y territorio desde <em>San Martín de los Andes</em>
+        </h1>
+
+        <p class="lead">
+          Escribo sobre vino neuquino, identidad, gastronomía y turismo del vino. Una mirada de sommelier de territorio:
+          el vino contado desde el lugar, el servicio y la experiencia real.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn" href="#articulos">Ver últimos artículos</a>
+          <a class="ghost" href="https://www.linkedin.com/in/sergiolandoni" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="ghost" href="mailto:sergiolandoni.somm@gmail.com">Email</a>
+        </div>
+
+        <div class="pillRow" aria-label="Etiquetas principales">
+          <span class="pill">Vino neuquino</span>
+          <span class="pill">Maridaje & gastronomía</span>
+          <span class="pill">Turismo del vino</span>
+          <span class="pill">Cultura & territorio</span>
+        </div>
+      </div>
+
+      <div class="side">
+        <div class="author">
+          <div class="avatar" aria-hidden="true">
+            <!-- Subí tu foto a /assets/sergio.jpg -->
+            <img src="assets/sergio.jpg" alt="Sergio Landoni" onerror="this.style.display='none';" />
+          </div>
+          <div>
+            <strong>Sergio Landoni</strong>
+            <span>Sommelier de territorio · Patagonia (Neuquén)</span>
+            <div class="miniLinks">
+              <a href="#sobre-mi">Bio</a>
+              <a href="#contacto">Contacto</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <strong style="font-size:13.5px;">Enfoque editorial</strong>
+          <p class="muted" style="margin-top:6px; font-size:13.5px;">
+            Textos claros, útiles y con mirada local. El objetivo: construir autoridad sobre vino neuquino y experiencia
+            gastronómica en el destino.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="grid">
+      <!-- Artículos -->
+      <section class="card span8" id="articulos" aria-label="Últimos artículos">
+        <h2>Últimos artículos</h2>
+        <p class="muted">
+          Publicaciones recientes. (Por ahora están “a mano”; luego en WordPress esto se vuelve automático.)
+        </p>
+
+        <div class="posts">
+          <!-- POST 1 (ejemplo) -->
+          <article class="post">
+            <div>
+              <a href="posts/primer-post.html">
+                <h3>Cómo elegir un vino neuquino para platos de la Patagonia</h3>
+                <p>Guía práctica de maridaje para cordero, trucha y carnes a la parrilla, con enfoque de territorio.</p>
+              </a>
+              <div class="meta">
+                <span class="tag">Maridaje</span>
+                <span class="tag">Vino neuquino</span>
+                <span>· <time datetime="2026-01-08">8 ene 2026</time></span>
+              </div>
+            </div>
+            <a class="read" href="posts/primer-post.html">Leer →</a>
+          </article>
+
+          <!-- POST 2 (placeholder) -->
+          <article class="post">
+            <div>
+              <a href="#">
+                <h3>Ruta del Vino en Neuquén: cómo contar territorio (sin humo)</h3>
+                <p>Qué tiene que tener un relato que funcione en turismo: simple, real y repetible.</p>
+              </a>
+              <div class="meta">
+                <span class="tag">Turismo del vino</span>
+                <span class="tag">Territorio</span>
+                <span>· Próximamente</span>
+              </div>
+            </div>
+            <span class="read" style="opacity:.45;">Pronto</span>
+          </article>
+
+          <!-- POST 3 (placeholder) -->
+          <article class="post">
+            <div>
+              <a href="#">
+                <h3>La carta local en San Martín de los Andes: por dónde empezar</h3>
+                <p>Cómo integrar vinos neuquinos en restaurantes y hoteles con criterio comercial.</p>
+              </a>
+              <div class="meta">
+                <span class="tag">Gastronomía</span>
+                <span class="tag">Servicio</span>
+                <span>· Próximamente</span>
+              </div>
+            </div>
+            <span class="read" style="opacity:.45;">Pronto</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="card span4" aria-label="Barra lateral">
+        <h2 id="temas">Temas</h2>
+        <ul class="sideList">
+          <li class="sideItem">
+            <strong>Vino neuquino</strong>
+            <span>Bodegas, estilos, identidad y consumo.</span>
+          </li>
+          <li class="sideItem">
+            <strong>Maridaje & gastronomía</strong>
+            <span>Platos regionales, servicio y experiencia.</span>
+          </li>
+          <li class="sideItem">
+            <strong>Turismo del vino</strong>
+            <span>Hospitalidad, ruta del vino y relatos del destino.</span>
+          </li>
+          <li class="sideItem">
+            <strong>Cultura & territorio</strong>
+            <span>Vino como paisaje, memoria y comunidad.</span>
+          </li>
+        </ul>
+
+        <div class="hr"></div>
+
+        <h2 id="sobre-mi">Sobre mí</h2>
+        <p class="muted">
+          Soy Sergio Landoni, sommelier de territorio. Vivo en San Martín de los Andes (Neuquén) y trabajo conectando
+          vino local, gastronomía y turismo a través de experiencias, contenidos y asesoría.
+        </p>
+      </aside>
+
+      <!-- Contacto -->
+      <section class="card span12" id="contacto" aria-label="Contacto">
+        <h2>Contacto</h2>
+        <p class="muted">
+          Si querés proponer una colaboración, una cata, un evento o una nota, escribime por email.
+        </p>
+
+        <p style="margin:10px 0 0;">
+          <strong>Email:</strong>
+          <a href="mailto:sergiolandoni.somm@gmail.com" style="color:var(--accent); text-decoration:none;">
+            sergiolandoni.somm@gmail.com
+          </a>
+        </p>
+
+        <p style="margin:6px 0 0; color:var(--muted); font-size:12.5px;">
+          Consejo SEO: cuando subamos fotos, siempre agregamos <em>alt</em> descriptivo (ayuda a Google y a la búsqueda con IA).
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> Sergio Landoni · San Martín de los Andes (Neuquén)</div>
+    <div><a href="#inicio" style="color:var(--accent); text-decoration:none;">Volver arriba</a></div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
