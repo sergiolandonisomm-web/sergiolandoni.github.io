@@ -66,6 +66,12 @@
       color:var(--muted);
       font-size: clamp(14px, 2vw, 16px);
     }
+    .logo{
+      max-width:150px;
+      height:auto;
+      display:block;
+      margin:0 0 12px 0;
+    }
     .tag{
       display:inline-flex;
       gap:10px;
@@ -108,8 +114,22 @@
       border-color: rgba(215,180,106,.45);
       background: rgba(215,180,106,.16);
     }
+
+    .hero{
+      margin-top:18px;
+      border-radius:var(--radius);
+      border:1px solid var(--line);
+      overflow:hidden;
+      background: rgba(255,255,255,.02);
+    }
+    .hero img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+
     main{
-      margin-top:22px;
+      margin-top:18px;
       display:grid;
       grid-template-columns: 1.3fr .7fr;
       gap:18px;
@@ -119,6 +139,7 @@
       header{flex-direction:column;}
       .tag{align-self:flex-start}
     }
+
     section{
       border:1px solid var(--line);
       background: rgba(255,255,255,.02);
@@ -147,13 +168,6 @@
       background: rgba(255,255,255,.02);
     }
     .card strong{display:block; margin-bottom:6px}
-    footer{
-      margin-top:18px;
-      text-align:center;
-      color:var(--muted);
-      font-size:13px;
-      padding-top:18px;
-    }
     .divider{
       height:1px;
       background: linear-gradient(90deg, transparent, rgba(215,180,106,.45), transparent);
@@ -175,6 +189,31 @@
       background: rgba(255,255,255,.02);
     }
     .pill b{color:var(--text)}
+
+    /* Retrato */
+    .portrait{
+      float:right;
+      width:min(240px, 45%);
+      border-radius:16px;
+      border:1px solid var(--line);
+      margin:0 0 12px 16px;
+      display:block;
+    }
+    @media (max-width: 520px){
+      .portrait{
+        float:none;
+        width:100%;
+        margin:0 0 12px 0;
+      }
+    }
+
+    footer{
+      margin-top:18px;
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+      padding-top:18px;
+    }
   </style>
 </head>
 
@@ -182,11 +221,15 @@
   <div class="wrap">
     <header>
       <div class="brand">
+        <!-- LOGO -->
+        <img class="logo"
+             src="assets/img/logo-sergio-landoni.png"
+             alt="Sergio Landoni · Sommelier de Territorio" />
+
         <h1>Sergio Landoni</h1>
         <p>Sommelier de Territorio · Patagonia (Neuquén) · Vino & Cultura</p>
 
         <nav aria-label="Accesos rápidos">
-          <!-- Cambiá estos links por los tuyos cuando quieras -->
           <a class="btn primary" href="#contacto">Contactar</a>
           <a class="btn" href="#proyectos">Proyectos</a>
           <a class="btn" href="#servicios">Trabajo</a>
@@ -198,10 +241,22 @@
       </div>
     </header>
 
+    <!-- HERO -->
+    <div class="hero" aria-label="Imagen principal">
+      <img src="assets/img/hero-patagonia.jpg"
+           alt="Patagonia · territorio, vino y paisaje" />
+    </div>
+
     <main>
       <div class="grid">
         <section id="sobre-mi">
           <h2>Sobre mí</h2>
+
+          <!-- RETRATO -->
+          <img class="portrait"
+               src="assets/img/retrato-sergio.jpg"
+               alt="Sergio Landoni · Sommelier de Territorio en Patagonia" />
+
           <p class="muted">
             Trabajo el vino desde el territorio: viviendo en Patagonia, conociendo productores, bodegas, restaurantes y público.
             Mi diferencial no es “hablar difícil”, sino construir un relato claro, honesto y útil para que el vino patagónico —y especialmente el neuquino— gane lugar en las mesas y en la conversación.
@@ -258,24 +313,28 @@
           <h2>Contacto</h2>
           <p class="muted">Escribime y contame qué querés lograr. Te respondo con una propuesta clara y práctica.</p>
 
-          <!-- Reemplazá por tus datos reales -->
           <div class="card">
             <strong>Email</strong>
             <div class="muted"><a href="mailto:sergiolandoni.somm@gmail.com">sergiolandoni.somm@gmail.com</a></div>
           </div>
 
+          <!-- Opcional: WhatsApp (podés activarlo cuando quieras) -->
+          <div class="card">
+            <strong>WhatsApp</strong>
+            <div class="muted">
+              <a href="https://wa.me/5492944668508" target="_blank" rel="noopener">+54 9 2944 668508</a>
+            </div>
+          </div>
+
+          <!-- Reemplazá estos links por los reales -->
           <div class="card">
             <strong>Instagram</strong>
-            <div class="muted">
-              <a href="#" onclick="alert('Pegá aquí tu link de Instagram'); return false;">(agregar link)</a>
-            </div>
+            <div class="muted"><a href="https://instagram.com/sergiolandoni.somm" target="_blank" rel="noopener">@sergiolandoni.somm</a></div>
           </div>
 
           <div class="card">
             <strong>LinkedIn</strong>
-            <div class="muted">
-              <a href="#" onclick="alert('Pegá aquí tu link de LinkedIn'); return false;">(agregar link)</a>
-            </div>
+            <div class="muted"><span class="muted">Agregaremos el link cuando quieras</span></div>
           </div>
 
           <div class="divider"></div>
