@@ -1519,7 +1519,7 @@
       <p class="note">
         Para propuestas institucionales, proyectos vitivinícolas y acciones territoriales:
         <br/>
-        📩 <a href="mailto:contacto@sergiolandoni.com.ar?subject=Contacto%20desde%20sergiolandoni.com.ar">
+        <a href="mailto:contacto@sergiolandoni.com.ar?subject=Contacto%20desde%20sergiolandoni.com.ar">
           contacto@sergiolandoni.com.ar
         </a>
         <br/>
@@ -1533,32 +1533,32 @@
     <div class="card">
       <h3>Enviarme un mensaje</h3>
 
-     <form id="contact-form" action="https://formspree.io/f/mpqpknvd" method="POST">
-  <input type="hidden" name="_subject" value="Nuevo mensaje desde sergiolandoni.com.ar" />
-  <input type="text" name="_gotcha" style="display:none">
+      <form id="contact-form" action="https://formspree.io/f/mpqpknvd" method="POST">
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde sergiolandoni.com.ar" />
+        <input type="text" name="_gotcha" style="display:none">
 
-  <div>
-    <label for="nombre">Nombre (obligatorio)</label>
-    <input id="nombre" name="name" type="text" required placeholder="Tu nombre" />
-  </div>
+        <div>
+          <label for="nombre">Nombre (obligatorio)</label>
+          <input id="nombre" name="name" type="text" required placeholder="Tu nombre" />
+        </div>
 
-  <div>
-    <label for="email">Correo electrónico (obligatorio)</label>
-    <input id="email" name="email" type="email" required placeholder="tu@email.com" />
-  </div>
+        <div>
+          <label for="email">Correo electrónico (obligatorio)</label>
+          <input id="email" name="email" type="email" required placeholder="tu@email.com" />
+        </div>
 
-  <div>
-    <label for="mensaje">Mensaje</label>
-    <textarea id="mensaje" name="message" placeholder="Contame en qué te puedo ayudar"></textarea>
-  </div>
+        <div>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="message" placeholder="Contame en qué te puedo ayudar"></textarea>
+        </div>
 
-  <button class="btn primary" type="submit">Enviar</button>
+        <button class="btn primary" type="submit">Enviar</button>
 
-  <p id="form-status" class="note" role="status" aria-live="polite" style="margin-top:10px;"></p>
-</form>
+        <p id="form-status" class="note" role="status" aria-live="polite" style="margin-top:10px;"></p>
+      </form>
 
       <p class="note">
-        Si tu navegador bloquea el envío por mail, escribime directo a
+        Si tu navegador bloquea el envío, escribime directo a
         <a href="mailto:contacto@sergiolandoni.com.ar?subject=Contacto%20desde%20sergiolandoni.com.ar">
           contacto@sergiolandoni.com.ar
         </a>.
@@ -1567,3 +1567,36 @@
 
   </div>
 </section>
+</section>
+
+<script>
+  const form = document.getElementById("contact-form");
+  const statusEl = document.getElementById("form-status");
+
+  if (form) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      statusEl.textContent = "Enviando...";
+
+      try {
+        const res = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: { "Accept": "application/json" }
+        });
+
+        if (res.ok) {
+          form.reset();
+          statusEl.textContent = "¡Listo! Mensaje enviado. Gracias.";
+        } else {
+          statusEl.textContent = "No se pudo enviar. Probá de nuevo o escribime por mail.";
+        }
+      } catch (err) {
+        statusEl.textContent = "Error de conexión. Probá de nuevo o escribime por mail.";
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
