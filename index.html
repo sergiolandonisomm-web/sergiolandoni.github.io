@@ -1506,85 +1506,82 @@
 
     <!-- CONTACTO -->
 <!-- CONTACTO -->
-<section id="contacto" aria-label="Contacto">
-  <div class="grid-2">
+ <section id="contacto" aria-label="Contacto">
+      <div class="grid-2">
 
-    <!-- Card izquierda -->
-    <div class="card">
-      <h2>Contacto</h2>
-      <p><strong>El vino es diálogo, territorio y encuentro.</strong></p>
-      <p>
-        Si querés conversar sobre proyectos vinculados al vino patagónico, comunicación, eventos o propuestas culturales,
-        este es el espacio.
-      </p>
+        <div class="card">
+          <h2>Contacto</h2>
+          <p><strong>El vino es diálogo, territorio y encuentro.</strong></p>
+          <p>
+            Si querés conversar sobre proyectos vinculados al vino patagónico, comunicación, eventos o propuestas culturales,
+            este es el espacio.
+          </p>
 
-      <p class="note">
-        Para propuestas institucionales, proyectos vitivinícolas y acciones territoriales:
-        <br/>
-        📩 <a href="mailto:contacto@sergiolandoni.com.ar?subject=Contacto%20desde%20sergiolandoni.com.ar">
-          contacto@sergiolandoni.com.ar
-        </a>
-        <br/>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/sergio-landoni-sommelier/" target="_blank" rel="noopener noreferrer">
-          linkedin.com/in/sergio-landoni-sommelier
-        </a>
-      </p>
+          <p class="note">
+            Para propuestas institucionales, proyectos vitivinícolas y acciones territoriales:
+            <br/>
+            📩 <a href="mailto:contacto@sergiolandoni.com.ar?subject=Contacto%20desde%20sergiolandoni.com.ar">
+              contacto@sergiolandoni.com.ar
+            </a>
+            <br/>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/sergio-landoni-sommelier/" target="_blank" rel="noopener noreferrer">
+              linkedin.com/in/sergio-landoni-sommelier
+            </a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Enviarme un mensaje</h3>
+
+          <!-- FORM (Formspree) -->
+          <form action="https://formspree.io/f/mpqpknvd" method="POST">
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde sergiolandoni.com.ar" />
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="hidden" name="_next" value="https://sergiolandoni.com.ar/#contacto">
+
+            <div>
+              <label for="nombre">Nombre (obligatorio)</label>
+              <input id="nombre" name="name" type="text" required placeholder="Tu nombre" />
+            </div>
+
+            <div>
+              <label for="email">Correo electrónico (obligatorio)</label>
+              <input id="email" name="email" type="email" required placeholder="tu@email.com" />
+            </div>
+
+            <div>
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="message" placeholder="Contame en qué te puedo ayudar"></textarea>
+            </div>
+
+            <button class="btn primary" type="submit">Enviar</button>
+          </form>
+
+          <p class="note">
+            Si tu navegador bloquea el envío por mail, escribime directo a
+            <a href="mailto:contacto@sergiolandoni.com.ar?subject=Contacto%20desde%20sergiolandoni.com.ar">
+              contacto@sergiolandoni.com.ar
+            </a>.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap split">
+      <div>
+        <strong>Sergio Landoni</strong><br />
+        <span class="muted">Sommelier de Territorio · Patagonia Argentina</span>
+      </div>
+      <div>
+        <span class="muted">San Martín de los Andes, Neuquén · </span>
+        <a href="mailto:contacto@sergiolandoni.com.ar">contacto@sergiolandoni.com.ar</a>
+      </div>
     </div>
-
-    <!-- Card derecha -->
-    <div class="card">
-      <h3>Enviarme un mensaje</h3>
-
-      <form action="https://formspree.io/f/mpqpknvd" method="POST">
-
-  <input type="hidden" name="_subject" value="Nuevo mensaje desde sergiolandoni.com.ar" />
-  <input type="text" name="_gotcha" style="display:none">
-  <input type="hidden" name="_next" value="https://sergiolandoni.com.ar/#contacto">
-
-  <div>
-    <label for="nombre">Nombre (obligatorio)</label>
-    <input id="nombre" name="name" type="text" required placeholder="Tu nombre" />
-  </div>
-
-  <div>
-    <label for="email">Correo electrónico (obligatorio)</label>
-    <input id="email" name="email" type="email" required placeholder="tu@email.com" />
-  </div>
-
-  <div>
-    <label for="mensaje">Mensaje</label>
-    <textarea id="mensaje" name="message" placeholder="Contame en qué te puedo ayudar"></textarea>
-  </div>
-
-  <button class="btn primary" type="submit">Enviar</button>
-</form>
-<input type="hidden" name="_subject" value="Nuevo mensaje desde sergiolandoni.com.ar" />
-<input type="text" name="_gotcha" style="display:none">
-      <p class="note">
-        Si tu navegador bloquea el envío por mail, escribime directo a
-        <a href="mailto:contacto@sergiolandoni.com.ar?subject=Contacto%20desde%20sergiolandoni.com.ar">
-          contacto@sergiolandoni.com.ar
-        </a>.
-      </p>
-    </div>
-
-  </div> <!-- /grid-2 -->
-</section>  <!-- /contacto -->
-
-</main>
-
-<footer>
-  <div class="wrap split">
-    <div>
-      <strong>Sergio Landoni</strong><br />
-      <span class="muted">Sommelier de Territorio · Patagonia Argentina</span>
-    </div>
-    <div>
-      <span class="muted">San Martín de los Andes, Neuquén · </span>
-      <a href="mailto:contacto@sergiolandoni.com.ar">contacto@sergiolandoni.com.ar</a>
-    </div>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
