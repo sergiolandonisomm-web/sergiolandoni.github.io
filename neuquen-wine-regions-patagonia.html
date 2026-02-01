@@ -81,7 +81,7 @@
       --bg:#fafafa;
       --card:#ffffff;
       --text:#111827;
-      --muted:#4b5563;
+      --muted:#374151;
       --line:#e5e7eb;
       --accent:#0f766e;
       --radius:14px;
@@ -149,7 +149,29 @@
     nav.toc ul{margin:0; padding-left:18px; color:var(--muted)}
     nav.toc li{margin:6px 0}
     .hr{height:1px;background:var(--line);margin:18px 0}
-
+/* QUICK SUMMARY */
+.quick-summary{
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:16px 18px;
+  margin:16px 0 22px;
+  background:#fff;
+}
+.quick-summary h2{
+  margin:0 0 10px;
+  font-size:1.1rem;
+}
+.quick-summary ul{
+  margin:0;
+  padding-left:18px;
+  color:var(--muted);
+}
+.quick-summary li{
+  margin:6px 0;
+}
+.quick-summary strong{
+  color:var(--text);
+}
     /* MAP */
     .map-figure{
       margin:18px 0 10px;
@@ -208,14 +230,31 @@
       <p class="note">A territorial perspective on landscape, lifestyle, gastronomy and wine in Argentine Patagonia</p>
       <p><strong>By Sergio Landoni</strong>, Sommelier de Territorio</p>
 
-      <div class="hero-media" aria-label="Article cover image">
-        <img src="assets/img/zonas-vitivinicolas-neuquen.jpg" alt="Neuquén wine regions, Argentine Patagonia" />
-      </div>
+   <figure class="hero-media">
+  <img
+    src="assets/img/zonas-vitivinicolas-neuquen.jpg"
+    alt="Neuquén wine regions in Argentine Patagonia: landscape, wind and vineyards"
+    width="1600"
+    height="900"
+    fetchpriority="high"
+    decoding="async"
+  />
+</figure>
 
       <p class="lead">
         Neuquén Province, in Argentine Patagonia, is an emerging wine territory shaped by wind, desert landscapes and Andean rivers, and also by a distinctive quality of life.
         Here, wine is not separate from place, it is connected to gastronomy, tourism, outdoor culture and everyday life, and that connection gives Neuquén wines their voice.
       </p>
+<section class="quick-summary" aria-label="Quick overview of Neuquén wine regions">
+  <h2>Quick overview of Neuquén wine regions</h2>
+  <ul>
+    <li><strong>San Patricio del Chañar:</strong> The modern engine—scale, precision and high-tech irrigation.</li>
+    <li><strong>Confluencia:</strong> Riverside memory—small vineyards, balance and everyday gastronomy.</li>
+    <li><strong>Limay River (Senillosa & Picún Leufú):</strong> Freshness—natural acidity, clarity, often Pinot-friendly.</li>
+    <li><strong>Cutral Co & Plaza Huincul:</strong> The plateau—intensity, structure and resilient desert conditions.</li>
+    <li><strong>Alto Neuquén:</strong> Heritage—old vines, mountain air, small-scale identity.</li>
+  </ul>
+</section>
 
       <p>
         What makes Neuquén fascinating is diversity. The same grape can speak in very different tones depending on where it grows.
@@ -233,7 +272,12 @@
         Read the Spanish version,
         <a href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html">Regiones Vitivinícolas de Neuquén</a>
       </p>
-
+<p class="note">
+  Institutional context:
+  <a href="https://www.winesofargentina.com/" target="_blank" rel="noopener noreferrer">
+    Wines of Argentina
+  </a>
+</p>
       <nav class="toc" aria-label="Table of contents">
         <h2>Table of contents</h2>
         <ul>
@@ -394,7 +438,7 @@
       <!-- MAP AT THE END -->
       <h2 id="map">Map, Neuquén wine regions</h2>
       <figure class="map-figure" aria-label="Map of Neuquén wine regions">
-        <a href="assets/img/wine-regions-neuquen.webp" target="_blank" rel="noopener">
+        <a href="assets/img/wine-regions-neuquen.webp" target="_blank"rel="noopener noreferrer">
           <img
             src="assets/img/wine-regions-neuquen.webp"
             alt="Map, Neuquén wine regions in Argentine Patagonia"
