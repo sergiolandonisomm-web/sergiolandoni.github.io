@@ -97,10 +97,19 @@
       color:var(--text);
       line-height:1.65;
     }
-    a{color:inherit; text-decoration:none}
-    a:hover{color:var(--accent)}
-    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
-    header{
+       a{color:inherit; text-decoration:none}
+a:hover{color:var(--accent)}
+
+.inline-link{
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.inline-link:hover{
+  opacity:.85;
+}
+
+.wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+header{
       position:sticky; top:0; z-index:50;
       background:rgba(250,250,250,.92);
       backdrop-filter: blur(10px);
@@ -228,7 +237,7 @@
 
       <h1>Neuquén Wine Regions, Patagonia’s Emerging Wine Territory</h1>
       <p class="note">A territorial perspective on landscape, lifestyle, gastronomy and wine in Argentine Patagonia</p>
-      <p><strong>By Sergio Landoni</strong>, Sommelier de Territorio</p>
+      <p><strong>By Sergio Landoni</strong>, <a href="index.html#sobre-mi" class="inline-link">Sommelier de Territorio</a></p>
 
    <figure class="hero-media">
   <img
