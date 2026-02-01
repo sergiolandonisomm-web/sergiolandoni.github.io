@@ -97,19 +97,20 @@
       color:var(--text);
       line-height:1.65;
     }
-       a{color:inherit; text-decoration:none}
-a:hover{color:var(--accent)}
 
-.inline-link{
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-.inline-link:hover{
-  opacity:.85;
-}
+    a{color:inherit; text-decoration:none; transition: color .2s ease, opacity .2s ease;}
+    a:hover{color:var(--accent)}
 
-.wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
-header{
+    .inline-link{
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .inline-link:hover{
+      opacity:.85;
+    }
+
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+    header{
       position:sticky; top:0; z-index:50;
       background:rgba(250,250,250,.92);
       backdrop-filter: blur(10px);
@@ -151,36 +152,36 @@ header{
     .lead{font-size:1.05rem; color:#111827}
     .geo{margin:6px 0 12px;color:var(--muted)}
     .note{font-size:13px;color:var(--muted)}
+
     .hero-media{margin:14px 0 16px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
-    .hero-media img{width:100%;display:block}
+    .hero-media img{width:100%; height:auto; display:block}
+
     nav.toc{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:16px 0;background:#fff}
     nav.toc h2{margin:0 0 10px; font-size:1.05rem}
     nav.toc ul{margin:0; padding-left:18px; color:var(--muted)}
     nav.toc li{margin:6px 0}
     .hr{height:1px;background:var(--line);margin:18px 0}
-/* QUICK SUMMARY */
-.quick-summary{
-  border:1px solid var(--line);
-  border-radius:12px;
-  padding:16px 18px;
-  margin:16px 0 22px;
-  background:#fff;
-}
-.quick-summary h2{
-  margin:0 0 10px;
-  font-size:1.1rem;
-}
-.quick-summary ul{
-  margin:0;
-  padding-left:18px;
-  color:var(--muted);
-}
-.quick-summary li{
-  margin:6px 0;
-}
-.quick-summary strong{
-  color:var(--text);
-}
+
+    /* QUICK SUMMARY */
+    .quick-summary{
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:16px 18px;
+      margin:16px 0 22px;
+      background:#fff;
+    }
+    .quick-summary h2{
+      margin:0 0 10px;
+      font-size:1.1rem;
+    }
+    .quick-summary ul{
+      margin:0;
+      padding-left:18px;
+      color:var(--muted);
+    }
+    .quick-summary li{ margin:6px 0; }
+    .quick-summary strong{ color:var(--text); }
+
     /* MAP */
     .map-figure{
       margin:18px 0 10px;
@@ -239,31 +240,33 @@ header{
       <p class="note">A territorial perspective on landscape, lifestyle, gastronomy and wine in Argentine Patagonia</p>
       <p><strong>By Sergio Landoni</strong>, <a href="index.html#sobre-mi" class="inline-link">Sommelier de Territorio</a></p>
 
-   <figure class="hero-media">
-  <img
-    src="assets/img/zonas-vitivinicolas-neuquen.jpg"
-    alt="Neuquén wine regions in Argentine Patagonia: landscape, wind and vineyards"
-    width="1600"
-    height="900"
-    fetchpriority="high"
-    decoding="async"
-  />
-</figure>
+      <figure class="hero-media">
+        <img
+          src="assets/img/zonas-vitivinicolas-neuquen.jpg"
+          alt="Neuquén wine regions in Argentine Patagonia: landscape, wind and vineyards"
+          width="1600"
+          height="900"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
+        />
+      </figure>
 
       <p class="lead">
         Neuquén Province, in Argentine Patagonia, is an emerging wine territory shaped by wind, desert landscapes and Andean rivers, and also by a distinctive quality of life.
         Here, wine is not separate from place, it is connected to gastronomy, tourism, outdoor culture and everyday life, and that connection gives Neuquén wines their voice.
       </p>
-<section class="quick-summary" aria-label="Quick overview of Neuquén wine regions">
-  <h2>Quick overview of Neuquén wine regions</h2>
-  <ul>
-    <li><strong>San Patricio del Chañar:</strong> The modern engine—scale, precision and high-tech irrigation.</li>
-    <li><strong>Confluencia:</strong> Riverside memory—small vineyards, balance and everyday gastronomy.</li>
-    <li><strong>Limay River (Senillosa & Picún Leufú):</strong> Freshness—natural acidity, clarity, often Pinot-friendly.</li>
-    <li><strong>Cutral Co & Plaza Huincul:</strong> The plateau—intensity, structure and resilient desert conditions.</li>
-    <li><strong>Alto Neuquén:</strong> Heritage—old vines, mountain air, small-scale identity.</li>
-  </ul>
-</section>
+
+      <section class="quick-summary" aria-label="Quick overview of Neuquén wine regions">
+        <h2>Quick overview of Neuquén wine regions</h2>
+        <ul>
+          <li><strong>San Patricio del Chañar:</strong> The modern engine—scale, precision and high-tech irrigation.</li>
+          <li><strong>Confluencia:</strong> Riverside memory—small vineyards, balance and everyday gastronomy.</li>
+          <li><strong>Limay River (Senillosa & Picún Leufú):</strong> Freshness—natural acidity, clarity, often Pinot-friendly.</li>
+          <li><strong>Cutral Co & Plaza Huincul:</strong> The plateau—intensity, structure and resilient desert conditions.</li>
+          <li><strong>Alto Neuquén:</strong> Heritage—old vines, mountain air, small-scale identity.</li>
+        </ul>
+      </section>
 
       <p>
         What makes Neuquén fascinating is diversity. The same grape can speak in very different tones depending on where it grows.
@@ -279,25 +282,25 @@ header{
 
       <p class="note">
         Read the Spanish version,
-        <a href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html">Regiones Vitivinícolas de Neuquén</a>
+        <a class="inline-link" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html">Regiones Vitivinícolas de Neuquén</a>
       </p>
-<p class="note">
-  Institutional context:
-  <a href="https://www.winesofargentina.com/" target="_blank" rel="noopener noreferrer">
-    Wines of Argentina
-  </a>
-</p>
+
+      <p class="note">
+        Institutional context:
+        <a class="inline-link" href="https://www.winesofargentina.com/" target="_blank" rel="noopener noreferrer">Wines of Argentina</a>
+      </p>
+
       <nav class="toc" aria-label="Table of contents">
         <h2>Table of contents</h2>
         <ul>
-          <li><a href="#why-zones">Why zones matter in Neuquén</a></li>
-          <li><a href="#chanar">1. San Patricio del Chañar</a></li>
-          <li><a href="#confluencia">2. Confluencia, near Neuquén city</a></li>
-          <li><a href="#limay">3. Limay River, Senillosa and Picún Leufú</a></li>
-          <li><a href="#comarca">4. Cutral Co and Plaza Huincul, the plateau</a></li>
-          <li><a href="#norte">5. Alto Neuquén, the northern valleys</a></li>
-          <li><a href="#closing">Closing, an invitation to taste Neuquén</a></li>
-          <li><a href="#map">Map, Neuquén wine regions</a></li>
+          <li><a class="inline-link" href="#why-zones">Why zones matter in Neuquén</a></li>
+          <li><a class="inline-link" href="#chanar">1. San Patricio del Chañar</a></li>
+          <li><a class="inline-link" href="#confluencia">2. Confluencia, near Neuquén city</a></li>
+          <li><a class="inline-link" href="#limay">3. Limay River, Senillosa and Picún Leufú</a></li>
+          <li><a class="inline-link" href="#comarca">4. Cutral Co and Plaza Huincul, the plateau</a></li>
+          <li><a class="inline-link" href="#norte">5. Alto Neuquén, the northern valleys</a></li>
+          <li><a class="inline-link" href="#closing">Closing, an invitation to taste Neuquén</a></li>
+          <li><a class="inline-link" href="#map">Map, Neuquén wine regions</a></li>
         </ul>
       </nav>
 
@@ -308,9 +311,7 @@ header{
         Water does not behave the same in a river influenced vineyard as it does on a plateau fed by deep wells.
         Altitude, soil, night temperatures and scale change everything.
       </p>
-      <p>
-        Speaking about zones does not divide Neuquén, it helps us understand it.
-      </p>
+      <p>Speaking about zones does not divide Neuquén, it helps us understand it.</p>
 
       <div class="hr" aria-hidden="true"></div>
 
@@ -447,12 +448,12 @@ header{
       <!-- MAP AT THE END -->
       <h2 id="map">Map, Neuquén wine regions</h2>
       <figure class="map-figure" aria-label="Map of Neuquén wine regions">
-      <a href="assets/img/wine-regions-neuquen.webp" target="_blank" rel="noopener noreferrer">
-     <img
-      src="assets/img/wine-regions-neuquen.webp"
-      alt="Map of the five wine regions of Neuquén, Argentine Patagonia: San Patricio del Chañar, Confluencia, Limay River, Cutral Co and Alto Neuquén"
-      loading="lazy"
-      decoding="async"
+        <a href="assets/img/wine-regions-neuquen.webp" target="_blank" rel="noopener noreferrer">
+          <img
+            src="assets/img/wine-regions-neuquen.webp"
+            alt="Map of the five wine regions of Neuquén, Argentine Patagonia: San Patricio del Chañar, Confluencia, Limay River, Cutral Co and Alto Neuquén"
+            loading="lazy"
+            decoding="async"
           />
         </a>
         <figcaption class="map-caption">
@@ -464,12 +465,12 @@ header{
 
       <p class="note">
         Share this article,
-        <a href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html">sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html</a>
+        <a class="inline-link" href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html">sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html</a>
       </p>
 
       <p class="note">
         Spanish version,
-        <a href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html">Regiones Vitivinícolas de Neuquén</a>
+        <a class="inline-link" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html">Regiones Vitivinícolas de Neuquén</a>
       </p>
 
     </article>
