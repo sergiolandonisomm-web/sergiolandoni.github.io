@@ -50,8 +50,10 @@
     "author":{"@type":"Person","name":"Sergio Landoni"},
     "publisher":{"@type":"Person","name":"Sergio Landoni"},
     "mainEntityOfPage":{"@type":"WebPage","@id":"https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html"},
-    "image":"https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg",
-    "keywords":[
+    "image":[
+  "https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg",
+  "https://sergiolandoni.com.ar/assets/img/mapa-regiones-vitivinicolas-neuquen.jpg"
+],
       "vino neuquino",
       "zonas vitivinícolas",
       "San Patricio del Chañar",
@@ -176,7 +178,25 @@
       padding:22px 0 28px;
       color:var(--muted);
       font-size:13px;
-    }
+    .map-figure{
+    margin:16px 0 18px;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+    background:#fff;
+    box-shadow:var(--shadow);
+  }
+  .map-figure a{display:block}
+  .map-figure img{width:100%; height:auto; display:block}
+  .map-caption{
+    padding:10px 14px;
+    font-size:13px;
+    color:var(--muted);
+    border-top:1px solid var(--line);
+    background:#fff;
+  }
+  .map-caption strong{color:var(--text)}
+</style>
   </style>
 </head>
 
@@ -212,7 +232,21 @@
       <div class="hero-media" aria-label="Imagen del artículo">
         <img src="assets/img/zonas-vitivinicolas-neuquen.jpg" alt="Zonas vitivinícolas de Neuquén, Patagonia Argentina" />
       </div>
-
+<figure class="map-figure" aria-label="Mapa de regiones vitivinícolas de Neuquén">
+  <a href="assets/img/mapa-regiones-vitivinicolas-neuquen.webp" target="_blank" rel="noopener">
+    <img
+      src="assets/img/mapa-regiones-vitivinicolas-neuquen.webp"
+      alt="Mapa: Regiones Vitivinícolas de Neuquén, Patagonia Argentina"
+      loading="lazy"
+      decoding="async"
+      width="1060"
+      height="1500"
+    />
+  </a>
+  <figcaption class="map-caption">
+    <strong>Regiones Vitivinícolas de Neuquén.</strong> Mapa de referencia para ubicar las cinco zonas del artículo. Crédito: Sergio Landoni, Sommelier de Territorio.
+  </figcaption>
+</figure>
       <p>
         Neuquén hoy muestra una calidad sostenida, una sanidad natural muy alta y una diversidad que ya no se puede explicar como una sola cosa.
         El viento, la amplitud térmica marcada y el trabajo constante en los viñedos hacen que los vinos tengan frescura, identidad y carácter propio.
