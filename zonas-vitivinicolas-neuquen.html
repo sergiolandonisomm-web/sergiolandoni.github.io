@@ -79,117 +79,72 @@
 </script>
 
 
-  <style>
-    :root{
-      --bg:#fafafa;
-      --card:#ffffff;
-      --text:#111827;
-      --muted:#4b5563;
-      --line:#e5e7eb;
-      --accent:#0f766e;
-      --accent-2:#115e59;
-      --radius:14px;
-      --shadow: 0 10px 30px rgba(0,0,0,.06);
-      --max: 1060px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.6;
-    }
-    a{color:inherit; text-decoration:none}
-    a:hover{color:var(--accent)}
-    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
-    header{
-      position:sticky; top:0; z-index:50;
-      background:rgba(250,250,250,.92);
-      backdrop-filter: blur(10px);
-      border-bottom:1px solid var(--line);
-    }
-    .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:14px 0;
-      gap:16px;
-    }
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      min-width: 220px;
-    }
-    .brand-logo{
-      width:40px;
-      height:40px;
-      border-radius:10px;
-      border:1px solid var(--line);
-      background:#fff;
-      object-fit:contain;
-      display:block;
-    }
-    .brand-text{display:flex; flex-direction:column; gap:2px}
-    .brand-text strong{font-size:16px; letter-spacing:.2px}
-    .brand-text span{font-size:13px; color:var(--muted)}
-    .menu{
-      display:flex; gap:14px; flex-wrap:wrap; align-items:center; justify-content:flex-end;
-    }
-    .menu a{
-      font-size:14px;
-      color:var(--muted);
-      padding:8px 10px;
-      border-radius:10px;
-    }
-    .menu a:hover{background:#ffffff; border:1px solid var(--line); color:var(--accent)}
-    main{padding:22px 0 44px}
-    .card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:20px;
-    }
-    .kicker{
-      display:inline-flex; gap:8px; align-items:center;
-      font-size:13px; color:var(--accent-2);
-      background:rgba(15,118,110,.08);
-      border:1px solid rgba(15,118,110,.12);
-      padding:6px 10px; border-radius:999px;
-      margin-bottom:12px;
-    }
-    h1{margin:0 0 10px; font-size:32px; line-height:1.2}
-    h2{margin:26px 0 10px; font-size:22px; line-height:1.25}
-    p{margin:10px 0; color:var(--muted)}
-    .hero-media{
-      margin:14px 0 16px;
-      border-radius:var(--radius);
-      overflow:hidden;
-      border:1px solid var(--line);
-      box-shadow:var(--shadow);
-      background:#fff;
-    }
-    .hero-media img{width:100%; height:auto; display:block}
-    nav.toc{
-      border:1px solid var(--line);
-      border-radius:12px;
-      padding:14px 16px;
-      margin:16px 0 10px;
-      background:#fff;
-    }
-    nav.toc h2{font-size:15px; margin:0 0 8px; color:var(--text)}
-    nav.toc ul{margin:0; padding-left:18px}
-    nav.toc li{margin:6px 0}
-    .geo{margin:6px 0 12px; color:var(--muted)}
-    .geo strong{color:var(--text)}
-    .note{font-size:13px; color:var(--muted); margin-top:10px}
-    footer{
-      border-top:1px solid var(--line);
-      padding:22px 0 28px;
-      color:var(--muted);
-      font-size:13px;
-    .map-figure{
+ <style>
+  :root{
+    --bg:#fafafa;
+    --card:#ffffff;
+    --text:#111827;
+    --muted:#4b5563;
+    --line:#e5e7eb;
+    --accent:#0f766e;
+    --accent-2:#115e59;
+    --radius:14px;
+    --shadow: 0 10px 30px rgba(0,0,0,.06);
+    --max: 1060px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+  }
+  a{color:inherit; text-decoration:none}
+  a:hover{color:var(--accent)}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(250,250,250,.92);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 0;
+    gap:16px;
+  }
+  .brand{display:flex; align-items:center; gap:12px; min-width:220px}
+  .brand-logo{
+    width:40px;height:40px;border-radius:10px;
+    border:1px solid var(--line);
+    background:#fff;object-fit:contain
+  }
+  .brand-text strong{font-size:16px}
+  .brand-text span{font-size:13px;color:var(--muted)}
+  main{padding:22px 0 44px}
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:20px;
+  }
+  .hero-media{margin:14px 0 16px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+  .hero-media img{width:100%;display:block}
+  nav.toc{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:16px 0;background:#fff}
+  .geo{margin:6px 0 12px;color:var(--muted)}
+  .note{font-size:13px;color:var(--muted)}
+  footer{
+    border-top:1px solid var(--line);
+    padding:22px 0 28px;
+    color:var(--muted);
+    font-size:13px;
+  }
+
+  /* MAPA */
+  .map-figure{
     margin:16px 0 18px;
     border:1px solid var(--line);
     border-radius:var(--radius);
@@ -197,18 +152,16 @@
     background:#fff;
     box-shadow:var(--shadow);
   }
-  .map-figure a{display:block}
-  .map-figure img{width:100%; height:auto; display:block}
+  .map-figure img{width:100%;display:block}
   .map-caption{
     padding:10px 14px;
     font-size:13px;
     color:var(--muted);
     border-top:1px solid var(--line);
-    background:#fff;
   }
   .map-caption strong{color:var(--text)}
 </style>
-  </style>
+
 </head>
 
 <body>
