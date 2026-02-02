@@ -14,6 +14,10 @@
 
   <link rel="canonical" href="https://sergiolandoni.com.ar/" />
 
+  <!-- Preload (Performance) -->
+  <!-- Nota: el nombre del archivo debe coincidir EXACTO (Linux distingue mayúsculas/minúsculas) -->
+  <link rel="preload" as="image" href="assets/img/hero.JPEG" fetchpriority="high" />
+
   <!-- Icons -->
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
@@ -44,7 +48,12 @@
         "name": "Sergio Landoni · Sommelier de Territorio",
         "url": "https://sergiolandoni.com.ar/",
         "inLanguage": "es-AR",
-        "publisher": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni-sommelier" }
+        "publisher": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni-sommelier" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://sergiolandoni.com.ar/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       },
       {
         "@type": "WebPage",
@@ -78,6 +87,7 @@
         "description": "Sommelier de territorio con base en San Martín de los Andes (Neuquén, Patagonia Argentina). Desarrollo, comunicación y posicionamiento para bodegas patagónicas. Presentaciones y degustaciones de vinos de Neuquén y vinculación comercial con importadores de Canadá y el Reino Unido.",
         "email": "mailto:contacto@sergiolandoni.com.ar",
         "url": "https://sergiolandoni.com.ar/",
+        "image": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG",
         "knowsAbout": [
           "Sommelier",
           "Vino patagónico",
@@ -216,43 +226,76 @@
       --bg:#fafafa;
       --card:#ffffff;
       --text:#111827;
-      --muted:#4b5563;
+
+      /* más contraste (accesibilidad) */
+      --muted:#374151;
+
       --line:#e5e7eb;
       --accent:#0f766e;
+      --accent-hover:#134e4a;
       --accent-2:#115e59;
+
       --radius:14px;
       --shadow: 0 10px 30px rgba(0,0,0,.06);
       --max: 1060px;
+
+      /* “premium feel” */
+      --transition: all .25s cubic-bezier(.4,0,.2,1);
     }
+
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
+
     body{
       margin:0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
       background:var(--bg);
       color:var(--text);
-      line-height:1.6;
+      line-height:1.7;
+      text-rendering:optimizeLegibility;
     }
+
+    a, .btn, .card, input, textarea{transition:var(--transition)}
     a{color:inherit; text-decoration:none}
     a:hover{color:var(--accent)}
+
+    /* foco visible (accesibilidad real) */
+    a:focus-visible, .btn:focus-visible, input:focus-visible, textarea:focus-visible{
+      outline: 3px solid rgba(15,118,110,.28);
+      outline-offset: 3px;
+      border-radius: 12px;
+    }
+
+    /* respeta reduce motion */
+    @media (prefers-reduced-motion: reduce){
+      html{scroll-behavior:auto}
+      a, .btn, .card, input, textarea{transition:none}
+      .card:hover{transform:none}
+      .btn.primary:hover{transform:none}
+    }
+
     .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+
     header{
       position:sticky; top:0; z-index:50;
       background:rgba(250,250,250,.92);
       backdrop-filter: blur(10px);
       border-bottom:1px solid var(--line);
     }
+
     .nav{
       display:flex; align-items:center; justify-content:space-between;
       padding:14px 0;
       gap:16px;
     }
+
     .brand{
       display:flex;
       align-items:center;
       gap:12px;
       min-width: 220px;
     }
+
     .brand-logo{
       width:40px;
       height:40px;
@@ -262,20 +305,30 @@
       object-fit:contain;
       display:block;
     }
+
     .brand-text{display:flex; flex-direction:column; gap:2px}
     .brand-text strong{font-size:16px; letter-spacing:.2px}
     .brand-text span{font-size:13px; color:var(--muted)}
+
     .menu{
       display:flex; gap:14px; flex-wrap:wrap; align-items:center; justify-content:flex-end;
     }
+
     .menu a{
       font-size:14px;
       color:var(--muted);
       padding:8px 10px;
       border-radius:10px;
     }
-    .menu a:hover{background:#ffffff; border:1px solid var(--line); color:var(--accent)}
+
+    .menu a:hover{
+      background:#ffffff;
+      border:1px solid var(--line);
+      color:var(--accent);
+    }
+
     .hero{padding:26px 0 14px}
+
     .hero-media{
       margin-bottom:18px;
       border-radius:var(--radius);
@@ -284,13 +337,20 @@
       box-shadow:var(--shadow);
       background:#fff;
     }
-    .hero-media img{width:100%; height:auto; display:block}
+
+    .hero-media img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+
     .hero-grid{
       display:grid;
       grid-template-columns: 1.2fr .8fr;
       gap:18px;
       align-items:stretch;
     }
+
     @media (max-width: 760px){ .hero-grid{grid-template-columns:1fr} }
 
     .card{
@@ -300,6 +360,13 @@
       box-shadow:var(--shadow);
       padding:20px;
     }
+
+    /* Efecto premium en hover */
+    .card:hover{
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.10);
+    }
+
     .kicker{
       display:inline-flex; gap:8px; align-items:center;
       font-size:13px; color:var(--accent-2);
@@ -308,13 +375,17 @@
       padding:6px 10px; border-radius:999px;
       margin-bottom:12px;
     }
+
     h1{margin:0 0 10px; font-size:32px; line-height:1.2}
     h2{margin:0 0 10px; font-size:22px; line-height:1.25}
     h3{margin:0 0 8px; font-size:18px}
     h4{margin:16px 0 6px; font-size:15px; color:var(--text)}
+
     p{margin:10px 0; color:var(--muted)}
     .hero p{font-size:15px}
+
     .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+
     .btn{
       display:inline-flex; align-items:center; justify-content:center;
       padding:10px 14px;
@@ -325,25 +396,39 @@
       color:var(--text);
       cursor:pointer;
     }
+
     .btn.primary{
       background:var(--accent);
-      border-color:var(--accent);
+      border:none;
       color:#fff;
+      font-weight:600;
+      letter-spacing:.3px;
     }
-    .btn.primary:hover{background:var(--accent-2); border-color:var(--accent-2)}
+
+    .btn.primary:hover{
+      background:var(--accent-hover);
+      transform: scale(1.02);
+    }
+
     .btn:hover{border-color:#cbd5e1}
+
     main{padding:10px 0 44px}
     section{scroll-margin-top:84px; margin-top:18px}
+
     .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:18px}
     @media (max-width: 900px){ .grid-2{grid-template-columns:1fr} }
+
     .post-list{display:grid; gap:12px}
+
     .post{
       padding:14px;
       border:1px solid var(--line);
       border-radius:12px;
       background:#fff;
     }
+
     .post small{color:var(--muted)}
+
     .tag{
       display:inline-block;
       font-size:12px;
@@ -354,7 +439,9 @@
       border-radius:999px;
       margin-right:8px;
     }
+
     .post-body p{color:var(--muted)}
+
     .portrait{
       width:100%;
       border-radius:var(--radius);
@@ -362,9 +449,12 @@
       box-shadow:var(--shadow);
       display:block;
       margin-top:12px;
+      height:auto;
     }
+
     form{display:grid; gap:10px}
     label{font-size:13px; color:var(--muted)}
+
     input, textarea{
       width:100%;
       font: inherit;
@@ -374,9 +464,16 @@
       background:#fff;
       outline:none;
     }
-    input:focus, textarea:focus{border-color:rgba(15,118,110,.5); box-shadow:0 0 0 3px rgba(15,118,110,.12)}
+
+    input:focus, textarea:focus{
+      border-color:rgba(15,118,110,.5);
+      box-shadow:0 0 0 3px rgba(15,118,110,.12)
+    }
+
     textarea{min-height:120px; resize:vertical}
+
     .note{font-size:13px; color:var(--muted); margin-top:8px}
+
     footer{
       border-top:1px solid var(--line);
       padding:22px 0 28px;
@@ -392,7 +489,7 @@
     <div class="wrap">
       <div class="nav">
         <a class="brand" href="#inicio" aria-label="Ir a inicio">
-          <img class="brand-logo" src="assets/img/logo.jpg" alt="Logo Sergio Landoni" />
+          <img class="brand-logo" src="assets/img/logo.jpg" alt="Logo Sergio Landoni" width="40" height="40" decoding="async" />
           <div class="brand-text">
             <strong>Sergio Landoni</strong>
             <span>Sommelier de Territorio · Patagonia Argentina</span>
@@ -413,7 +510,15 @@
     <!-- INICIO -->
     <section id="inicio" class="hero" aria-label="Inicio">
       <div class="hero-media" aria-label="Imagen Patagonia">
-        <img src="assets/img/hero.JPEG" alt="Patagonia: vino, territorio y cultura" />
+        <img
+          src="assets/img/hero.JPEG"
+          alt="Patagonia: vino, territorio y cultura"
+          width="1600"
+          height="900"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
+        />
       </div>
 
       <div class="hero-grid">
@@ -459,7 +564,8 @@
 
         <!-- CARD 2 -->
         <div class="card">
-          <h3>Proyectos y experiencias</h3>
+          <!-- Ajuste de estructura: era h3, ahora h2 (mejor jerarquía/SEO) -->
+          <h2 style="font-size:18px; margin-bottom:12px;">Proyectos y experiencias</h2>
 
           <p>
             Soy co-creador e impulsor de la idea original del evento <strong>Vino a la Montaña</strong>, una feria de vinos patagónicos
@@ -542,7 +648,15 @@
         </div>
 
         <div class="card">
-          <img class="portrait" src="assets/img/retrato.JPEG" alt="Sergio Landoni, Sommelier de Territorio" />
+          <img
+            class="portrait"
+            src="assets/img/retrato.JPEG"
+            alt="Sergio Landoni, Sommelier de Territorio"
+            width="1200"
+            height="1200"
+            loading="lazy"
+            decoding="async"
+          />
 
           <div class="note">
             <strong>Email:</strong> <a href="mailto:contacto@sergiolandoni.com.ar">contacto@sergiolandoni.com.ar</a><br/>
@@ -698,7 +812,7 @@
             <h3 style="margin-top:10px">Plato regional, vino del mismo territorio</h3>
             <small>Publicado: 13 de enero de 2026</small>
 
-            <img class="portrait" src="assets/img/cordero.jpg" alt="Plato regional y vino del mismo territorio en la gastronomía patagónica" />
+            <img class="portrait" src="assets/img/cordero.jpg" alt="Plato regional y vino del mismo territorio en la gastronomía patagónica" loading="lazy" decoding="async" />
 
             <div class="post-body">
               <h4>Una reflexión sobre la coherencia entre gastronomía patagónica y vinos locales</h4>
@@ -728,7 +842,7 @@
             <h3 style="margin-top:10px">Neuquén no es una promesa: es un territorio en construcción</h3>
             <small>Publicado: 18 de enero de 2026</small>
 
-            <img class="portrait" src="assets/img/vinedos-neuquen.jpeg" alt="Viñedos en Neuquén, Patagonia Argentina" />
+            <img class="portrait" src="assets/img/vinedos-neuquen.jpeg" alt="Viñedos en Neuquén, Patagonia Argentina" loading="lazy" decoding="async" />
 
             <div class="post-body">
               <p>Durante años, el vino neuquino fue presentado como una curiosidad.<br/>Hoy ya no alcanza con eso.</p>
@@ -756,7 +870,7 @@
             </h3>
             <small>Publicado: 23 de enero de 2026</small>
 
-            <img class="portrait" src="assets/img/sergio-sillon.jpeg" alt="Sergio Landoni, Sommelier de Territorio en Patagonia" />
+            <img class="portrait" src="assets/img/sergio-sillon.jpeg" alt="Sergio Landoni, Sommelier de Territorio en Patagonia" loading="lazy" decoding="async" />
 
             <div class="post-body">
               <p>
@@ -765,119 +879,4 @@
               </p>
 
               <p>
-                <a class="btn" href="sommelier-de-territorio.html">Leer el artículo completo</a>
-              </p>
-            </div>
-          </article>
-
-        </div><!-- /post-list -->
-      </div><!-- /card (Blog) -->
-    </section><!-- /blog -->
-
-    <!-- CONTACTO -->
-    <section id="contacto" aria-label="Contacto">
-      <div class="grid-2">
-
-        <div class="card">
-          <h2>Contacto</h2>
-          <p><strong>El vino es diálogo, territorio y encuentro.</strong></p>
-          <p>
-            Si querés conversar sobre proyectos vinculados al vino patagónico, comunicación, eventos o propuestas culturales,
-            este es el espacio.
-          </p>
-
-          <p class="note">
-            Para propuestas institucionales, proyectos vitivinícolas y acciones territoriales:
-            <br/>
-            <a href="mailto:contacto@sergiolandoni.com.ar?subject=Contacto%20desde%20sergiolandoni.com.ar">
-              contacto@sergiolandoni.com.ar
-            </a>
-            <br/>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/sergio-landoni-sommelier/" target="_blank" rel="noopener noreferrer">
-              linkedin.com/in/sergio-landoni-sommelier
-            </a>
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Enviarme un mensaje</h3>
-
-          <form id="contact-form" action="https://formspree.io/f/mpqpknvd" method="POST">
-            <input type="hidden" name="_subject" value="Nuevo mensaje desde sergiolandoni.com.ar" />
-            <input name="_gotcha" type="text" style="display:none" tabindex="-1" autocomplete="off" />
-
-            <div>
-              <label for="nombre">Nombre (obligatorio)</label>
-              <input id="nombre" name="name" type="text" required placeholder="Tu nombre" />
-            </div>
-
-            <div>
-              <label for="email">Correo electrónico (obligatorio)</label>
-              <input id="email" name="email" type="email" required placeholder="tu@email.com" />
-            </div>
-
-            <div>
-              <label for="mensaje">Mensaje</label>
-              <textarea id="mensaje" name="message" placeholder="Contame en qué te puedo ayudar"></textarea>
-            </div>
-
-            <button class="btn primary" type="submit">Enviar</button>
-
-            <p id="form-status" class="note" role="status" aria-live="polite" style="margin-top:10px;"></p>
-          </form>
-
-          <p class="note">
-            Si tu navegador bloquea el envío, escribime directo a
-            <a href="mailto:contacto@sergiolandoni.com.ar?subject=Contacto%20desde%20sergiolandoni.com.ar">
-              contacto@sergiolandoni.com.ar
-            </a>.
-          </p>
-        </div>
-
-      </div>
-    </section><!-- /contacto -->
-
-  </main><!-- ✅ CIERRE CORRECTO DE MAIN -->
-
-  <footer>
-    © 2026 Sergio Landoni · Sommelier de Territorio · Patagonia Argentina
-  </footer>
-
-  <script>
-    const form = document.getElementById("contact-form");
-    const statusEl = document.getElementById("form-status");
-
-    if (form) {
-      form.addEventListener("submit", async (e) => {
-        e.preventDefault();
-        statusEl.textContent = "Enviando...";
-
-        try {
-          const res = await fetch(form.action, {
-            method: "POST",
-            body: new FormData(form),
-            headers: { "Accept": "application/json" }
-          });
-
-          if (res.ok) {
-            form.reset();
-            statusEl.textContent = "¡Listo! Mensaje enviado. Gracias.";
-          } else {
-            statusEl.textContent = "No se pudo enviar. Probá de nuevo o escribime por mail.";
-          }
-        } catch (err) {
-          statusEl.textContent = "Error de conexión. Probá de nuevo o escribime por mail.";
-        }
-      });
-    }
-  </script>
-
-  <!-- Señal SEO sutil (no visible) -->
-  <span style="display:none;" aria-hidden="true">
-    Sergio Landoni · Sommelier de Territorio en San Martín de los Andes (Neuquén, Patagonia Argentina).
-    Degustaciones privadas de vino para grupos pequeños y experiencias personalizadas.
-  </span>
-
-</body>
-</html>
+                <a class="btn" href="sommelier-de-territorio.html">Leer el artí
