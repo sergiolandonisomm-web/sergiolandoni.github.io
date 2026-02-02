@@ -40,238 +40,305 @@
   <meta name="twitter:description" content="Una mirada desde el territorio para ordenar y contar cinco zonas vitivinícolas de Neuquén." />
   <meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg" />
 
-  <!-- Schema.org -->
+  <!-- Schema.org (pro / completo) -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"BlogPosting",
-    "@id":"https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#post",
-    "headline":"Las cinco zonas vitivinícolas de Neuquén",
-    "description":"Una mirada desde el territorio para ordenar y contar las cinco zonas vitivinícolas de Neuquén: San Patricio del Chañar, Confluencia, Senillosa y ribera del Limay, Comarca Petrolera y Norte Neuquino.",
-    "datePublished":"2026-01-29",
-    "dateModified":"2026-01-29",
-    "inLanguage":"es-AR",
-    "author":{"@type":"Person","name":"Sergio Landoni"},
-    "publisher":{"@type":"Person","name":"Sergio Landoni"},
-    "mainEntityOfPage":{"@type":"WebPage","@id":"https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html"},
-    "image":[
-      "https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg",
-      "https://sergiolandoni.com.ar/assets/img/regiones-vitivinicolas-neuquen.jpg"
-    ],
-    "keywords":[
-      "vino neuquino",
-      "zonas vitivinícolas",
-      "San Patricio del Chañar",
-      "Confluencia",
-      "Senillosa",
-      "río Limay",
-      "Cutral Co",
-      "Plaza Huincul",
-      "Chos Malal",
-      "Taquimilán"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://sergiolandoni.com.ar/#website",
+        "url": "https://sergiolandoni.com.ar/",
+        "name": "Sergio Landoni · Sommelier de Territorio",
+        "inLanguage": "es-AR",
+        "publisher": { "@id": "https://sergiolandoni.com.ar/#publisher" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://sergiolandoni.com.ar/#author",
+        "name": "Sergio Landoni",
+        "url": "https://sergiolandoni.com.ar/",
+        "jobTitle": "Sommelier de Territorio",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/sergio-landoni-sommelier",
+          "https://www.instagram.com/sergiolandoni.somm/"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://sergiolandoni.com.ar/#publisher",
+        "name": "Sergio Landoni",
+        "url": "https://sergiolandoni.com.ar/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#webpage",
+        "url": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html",
+        "name": "Las cinco zonas vitivinícolas de Neuquén",
+        "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
+        "inLanguage": "es-AR",
+        "about": { "@id": "https://sergiolandoni.com.ar/#author" },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg"
+        }
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#post",
+        "mainEntityOfPage": { "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#webpage" },
+        "headline": "Las cinco zonas vitivinícolas de Neuquén",
+        "description": "Una mirada desde el territorio para ordenar y contar las cinco zonas vitivinícolas de Neuquén: San Patricio del Chañar, Confluencia, Senillosa y ribera del Limay, Comarca Petrolera y Norte Neuquino.",
+        "inLanguage": "es-AR",
+        "datePublished": "2026-01-29",
+        "dateModified": "2026-01-29",
+        "author": { "@id": "https://sergiolandoni.com.ar/#author" },
+        "publisher": { "@id": "https://sergiolandoni.com.ar/#publisher" },
+        "image": [
+          {
+            "@type": "ImageObject",
+            "url": "https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg",
+            "width": 1600,
+            "height": 900
+          },
+          {
+            "@type": "ImageObject",
+            "url": "https://sergiolandoni.com.ar/assets/img/regiones-vitivinicolas-neuquen.jpg",
+            "width": 1200,
+            "height": 1200
+          }
+        ],
+        "keywords": [
+          "vino neuquino",
+          "zonas vitivinícolas",
+          "San Patricio del Chañar",
+          "Confluencia",
+          "Senillosa",
+          "río Limay",
+          "Cutral Co",
+          "Plaza Huincul",
+          "Chos Malal",
+          "Taquimilán",
+          "vino Patagonia"
+        ],
+        "articleSection": "Vino · Territorio · Neuquén",
+        "wordCount": 2350,
+        "timeRequired": "PT9M"
+      }
     ]
   }
   </script>
 
   <style>
-   :root {
-  /* token:layout */
-  --max: 1060px;
-  --radius: 14px;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    :root {
+      /* token:layout */
+      --max: 1060px;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 
-  /* token:color */
-  --bg: #fafafa;
-  --card: #ffffff;
-  --text: #111827;
-  --muted: #374151; /* texto secundario / párrafos */
-  --line: #e5e7eb;
-  --accent: #0f766e;
+      /* token:color */
+      --bg: #fafafa;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #374151; /* texto secundario / párrafos */
+      --line: #e5e7eb;
+      --accent: #0f766e;
     }
-     * { box-sizing: border-box; }
 
-  html { scroll-behavior: smooth; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
-  body {
-    margin: 0;
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.65;
-  }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
 
-  a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.2s ease, opacity 0.2s ease;
-  }
-  a:hover { color: var(--accent); }
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease, opacity 0.2s ease;
+    }
+    a:hover { color: var(--accent); }
 
-  .inline-link {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-  }
-  .inline-link:hover { opacity: 0.85; }
+    .inline-link {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .inline-link:hover { opacity: 0.85; }
 
-  .wrap {
-    max-width: var(--max);
-    margin: 0 auto;
-    padding: 0 18px;
-  }
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 18px;
+    }
 
-  header {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: rgba(250, 250, 250, 0.92);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--line);
-  }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(250, 250, 250, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
 
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 0;
-    gap: 16px;
-  }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 16px;
+    }
 
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    min-width: 220px;
-  }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 220px;
+    }
 
-  .brand-logo {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid var(--line);
-    background: #fff;
-    object-fit: contain;
-  }
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: #fff;
+      object-fit: contain;
+      display: block;
+    }
 
-  .brand-text strong { font-size: 16px; }
-  .brand-text span { font-size: 13px; color: var(--muted); }
+    .brand-text strong { font-size: 16px; }
+    .brand-text span { font-size: 13px; color: var(--muted); }
 
-  .menu {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    font-size: 14px;
-    color: var(--muted);
-  }
+    .menu {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: var(--muted);
+    }
 
-  main { padding: 22px 0 44px; }
+    main { padding: 22px 0 44px; }
 
-  .card {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    padding: 22px;
-  }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
 
-  .kicker {
-    font-size: 13px;
-    color: var(--muted);
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-  }
+    .card:hover { transform: translateY(-2px); }
 
-  h1 {
-    line-height: 1.15;
-    letter-spacing: -0.02em;
-    margin: 0 0 10px;
-    font-size: clamp(1.75rem, 3.2vw, 2.4rem);
-  }
+    .kicker {
+      font-size: 13px;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
 
-  h2 { margin: 22px 0 10px; font-size: 1.35rem; }
-  h3 { margin: 16px 0 8px; font-size: 1.1rem; }
-  p { margin: 0 0 14px; }
+    h1 {
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin: 0 0 10px;
+      font-size: clamp(1.75rem, 3.2vw, 2.4rem);
+    }
 
-  .geo {
-    margin: 6px 0 12px;
-    color: var(--muted);
-    font-size: 0.95rem;
-  }
+    h2 { margin: 22px 0 10px; font-size: 1.35rem; }
+    h3 { margin: 16px 0 8px; font-size: 1.1rem; }
+    p { margin: 0 0 14px; }
 
-  .note { font-size: 13px; color: var(--muted); }
+    .geo {
+      margin: 6px 0 12px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
 
-  .hr {
-    height: 1px;
-    background: var(--line);
-    margin: 18px 0;
-  }
+    .note { font-size: 13px; color: var(--muted); }
 
-  .hero-media {
-    margin: 14px 0 16px;
-    border-radius: var(--radius);
-    overflow: hidden;
-    border: 1px solid var(--line);
-  }
+    .hr {
+      height: 1px;
+      background: var(--line);
+      margin: 18px 0;
+    }
 
-  .hero-media img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+    .hero-media {
+      margin: 14px 0 16px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
 
-  nav.toc {
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 14px 16px;
-    margin: 16px 0;
-    background: #fff;
-  }
+    .hero-media img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-  nav.toc h2 { margin: 0 0 10px; font-size: 1.05rem; }
+    nav.toc {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 16px 0;
+      background: #fff;
+    }
 
-  nav.toc ul {
-    margin: 0;
-    padding-left: 18px;
-    color: var(--muted);
-  }
+    nav.toc h2 { margin: 0 0 10px; font-size: 1.05rem; }
 
-  nav.toc li { margin: 6px 0; }
+    nav.toc ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
 
-  footer {
-    border-top: 1px solid var(--line);
-    padding: 22px 0 28px;
-    color: var(--muted);
-    font-size: 13px;
-  }
+    nav.toc li { margin: 6px 0; }
 
-  /* MAPA */
-  .map-figure {
-    margin: 18px 0 10px;
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    overflow: hidden;
-    background: #fff;
-    box-shadow: var(--shadow);
-  }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 22px 0 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
 
-  .map-figure a { display: block; }
+    /* MAPA */
+    .map-figure {
+      margin: 18px 0 10px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
 
-  .map-figure img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+    .map-figure a { display: block; }
 
-  .map-caption {
-    padding: 10px 14px;
-    font-size: 13px;
-    color: var(--muted);
-    border-top: 1px solid var(--line);
-    background: #fff;
-  }
+    .map-figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-  .map-caption strong { color: var(--text); }
+    .map-caption {
+      padding: 10px 14px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      background: #fff;
+    }
 
+    .map-caption strong { color: var(--text); }
   </style>
 </head>
 
@@ -279,8 +346,8 @@
   <header>
     <div class="wrap">
       <div class="nav">
-        <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
-          <img class="brand-logo" src="assets/img/logo.jpg" alt="Logo Sergio Landoni" />
+        <a class="brand" href="/#inicio" aria-label="Ir al inicio">
+          <img class="brand-logo" src="assets/img/logo.jpg" alt="Logo Sergio Landoni" loading="lazy" decoding="async" />
           <div class="brand-text">
             <strong>Sergio Landoni</strong>
             <span>Sommelier de Territorio · Patagonia Argentina</span>
@@ -288,10 +355,10 @@
         </a>
 
         <nav class="menu" aria-label="Menú principal">
-          <a href="index.html#inicio">Inicio</a>
-          <a href="index.html#sobre-mi">Sobre mí</a>
-          <a href="index.html#blog">Blog</a>
-          <a href="index.html#contacto">Contacto</a>
+          <a href="/#inicio">Inicio</a>
+          <a href="/#sobre-mi">Sobre mí</a>
+          <a href="/#blog">Blog</a>
+          <a href="/#contacto">Contacto</a>
         </nav>
       </div>
     </div>
@@ -302,7 +369,7 @@
       <div class="kicker">Neuquén · Vino · Territorio</div>
 
       <h1>Las cinco zonas vitivinícolas de Neuquén</h1>
-      <p><strong>Por Sergio Landoni</strong>, <a href="index.html#sobre-mi" class="inline-link">Sommelier de Territorio</a></p>
+      <p><strong>Por Sergio Landoni</strong>, <a href="/#sobre-mi" class="inline-link">Sommelier de Territorio</a></p>
 
       <div class="hero-media" aria-label="Imagen del artículo">
         <img
@@ -568,54 +635,53 @@
 
       <h2 id="comarca">4. Comarca Petrolera – Cutral Co y Plaza Huincul</h2>
 
-<p class="geo">
-  <strong>Referencia geográfica:</strong> Cutral Co y Plaza Huincul, en el centro de la provincia de Neuquén, sobre la meseta, lejos de los grandes cursos de agua.
-</p>
+      <p class="geo">
+        <strong>Referencia geográfica:</strong> Cutral Co y Plaza Huincul, en el centro de la provincia de Neuquén, sobre la meseta, lejos de los grandes cursos de agua.
+      </p>
 
-<p>
-  La <strong>Comarca Petrolera</strong> representa una de las expresiones más singulares del vino neuquino.
-  Aquí la vitivinicultura se desarrolla en <strong>condiciones exigentes</strong>, en plena meseta,
-  con <strong>viento constante</strong>, gran <strong>amplitud térmica</strong> y un paisaje que no concede facilidades,
-  pero que imprime una identidad clara y reconocible.
-</p>
+      <p>
+        La <strong>Comarca Petrolera</strong> representa una de las expresiones más singulares del vino neuquino.
+        Aquí la vitivinicultura se desarrolla en <strong>condiciones exigentes</strong>, en plena meseta,
+        con <strong>viento constante</strong>, gran <strong>amplitud térmica</strong> y un paisaje que no concede facilidades,
+        pero que imprime una identidad clara y reconocible.
+      </p>
 
-<p>
-  En Cutral Co y Plaza Huincul no hay ríos cercanos.
-  El riego se realiza con <strong>agua de pozo profundo</strong>, lo que exige un
-  <strong>manejo hídrico preciso</strong> y permite obtener uvas de marcada concentración,
-  sin perder frescura cuando el trabajo en viñedo está bien interpretado.
-</p>
+      <p>
+        En Cutral Co y Plaza Huincul no hay ríos cercanos.
+        El riego se realiza con <strong>agua de pozo profundo</strong>, lo que exige un
+        <strong>manejo hídrico preciso</strong> y permite obtener uvas de marcada concentración,
+        sin perder frescura cuando el trabajo en viñedo está bien interpretado.
+      </p>
 
-<p>
-  Los vinos de la zona expresan carácter y tipicidad, pero también una
-  <strong>diversidad de estilos</strong>.
-  Son vinos que no buscan suavizar el lugar del que provienen, sino
-  <strong>interpretarlo y expresarlo con precisión</strong>.
-</p>
+      <p>
+        Los vinos de la zona expresan carácter y tipicidad, pero también una
+        <strong>diversidad de estilos</strong>.
+        Son vinos que no buscan suavizar el lugar del que provienen, sino
+        <strong>interpretarlo y expresarlo con precisión</strong>.
+      </p>
 
-<p>
-  En este contexto, el <strong>Cabernet Franc</strong> aparece hoy como uno de los varietales que mejor explica la zona,
-  con perfiles intensos, especiados y de <strong>gran profundidad</strong>.
-  El <strong>Syrah</strong> muestra un potencial enorme, tanto en cortes como en expresiones más protagónicas,
-  y el <strong>Malbec</strong> se expresa con potencia y volumen, conservando su identidad varietal.
-</p>
+      <p>
+        En este contexto, el <strong>Cabernet Franc</strong> aparece hoy como uno de los varietales que mejor explica la zona,
+        con perfiles intensos, especiados y de <strong>gran profundidad</strong>.
+        El <strong>Syrah</strong> muestra un potencial enorme, tanto en cortes como en expresiones más protagónicas,
+        y el <strong>Malbec</strong> se expresa con potencia y volumen, conservando su identidad varietal.
+      </p>
 
-<p>
-  Proyectos como <strong>Bodega Municipal Cutral Co</strong> interpretan la fuerza de este suelo
-  a través de una gama que va desde vinos jóvenes, directos y aromáticos,
-  con buena acidez y perfil franco, hasta vinos de guarda que suman
-  <strong>estructura, complejidad y elegancia</strong>.
-  A la par, propuestas de autor como <strong>P&amp;F (Principios y Finales)</strong> exploran una lectura más refinada del lugar,
-  trabajando sobre esa potencia natural para encontrar <strong>equilibrio y fineza</strong>.
-</p>
+      <p>
+        Proyectos como <strong>Bodega Municipal Cutral Co</strong> interpretan la fuerza de este suelo
+        a través de una gama que va desde vinos jóvenes, directos y aromáticos,
+        con buena acidez y perfil franco, hasta vinos de guarda que suman
+        <strong>estructura, complejidad y elegancia</strong>.
+        A la par, propuestas de autor como <strong>P&amp;F (Principios y Finales)</strong> exploran una lectura más refinada del lugar,
+        trabajando sobre esa potencia natural para encontrar <strong>equilibrio y fineza</strong>.
+      </p>
 
-<p>
-  Son vinos de carácter y de identidad marcada.
-  Vinos que evocan <strong>jarilla</strong>, viento y <strong>estepa</strong>,
-  sin caer en la rusticidad forzada.
-  Vinos que aportan una voz propia y necesaria dentro del mapa vitivinícola neuquino.
-</p>
-
+      <p>
+        Son vinos de carácter y de identidad marcada.
+        Vinos que evocan <strong>jarilla</strong>, viento y <strong>estepa</strong>,
+        sin caer en la rusticidad forzada.
+        Vinos que aportan una voz propia y necesaria dentro del mapa vitivinícola neuquino.
+      </p>
 
       <div class="hr" aria-hidden="true"></div>
 
@@ -711,7 +777,7 @@
 
       <!-- MAPA FINAL -->
       <figure class="map-figure" aria-label="Mapa de regiones vitivinícolas de Neuquén">
-        <a href="assets/img/regiones-vitivinicolas-neuquen.jpg" target="_blank" rel="noopener">
+        <a href="assets/img/regiones-vitivinicolas-neuquen.jpg" target="_blank" rel="noopener noreferrer">
           <img
             src="assets/img/regiones-vitivinicolas-neuquen.jpg"
             alt="Mapa: Regiones Vitivinícolas de Neuquén, Patagonia Argentina"
