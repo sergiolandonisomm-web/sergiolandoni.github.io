@@ -214,8 +214,7 @@
     p{margin:10px 0; color:var(--muted)}
     .hero p{font-size:15px}
 
-    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
-    .btn{
+       .btn{
       display:inline-flex; align-items:center; justify-content:center;
       padding:10px 14px;
       border-radius:12px;
@@ -304,19 +303,7 @@
       font-size:13px;
       text-align:center;
     }
-    /* FIX CTA: evita que desaparezcan botones por estilos cruzados */
-.cta{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:14px;
-}
-.cta .btn{ display:inline-flex; }
-.cta .btn.primary{
-  width:100%;
-  justify-content:center;
-  text-align:center;
-}
+ 
   </style>
 </head>
 
@@ -403,7 +390,8 @@
      rel="noopener noreferrer">
     LinkedIn
   </a>
-        </div><!-- /CARD 1 -->
+</div><!-- /.cta -->
+      </div><!-- /CARD 1 -->
 
         <!-- CARD 2 -->
         <div class="card">
