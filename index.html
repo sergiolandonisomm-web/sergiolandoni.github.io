@@ -304,6 +304,19 @@
       font-size:13px;
       text-align:center;
     }
+    /* FIX CTA: evita que desaparezcan botones por estilos cruzados */
+.cta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:14px;
+}
+.cta .btn{ display:inline-flex; }
+.cta .btn.primary{
+  width:100%;
+  justify-content:center;
+  text-align:center;
+}
   </style>
 </head>
 
@@ -365,29 +378,31 @@
             y <strong>puente</strong> entre productores, cocineros, viajeros y comunidades.
           </p>
 
-          <div class="cta">
-            <a class="btn primary"
-   href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html"
-   target="_blank"
-   rel="noopener noreferrer">
-  Acceder al post destacado: Regiones del vino en Neuquén
-</a>
+      <div class="cta">
+  <a class="btn primary"
+     href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html"
+     target="_blank"
+     rel="noopener noreferrer">
+    Acceder al post destacado: Regiones del vino en Neuquén
+  </a>
 
+  <a class="btn" href="neuquen-wine-regions-patagonia.html">
+    English: Neuquén Wine Regions
+  </a>
 
-            <a class="btn" href="neuquen-wine-regions-patagonia.html">
-              English: Neuquén Wine Regions
-            </a>
+  <a class="btn" href="sommelier-de-territorio.html">
+    Qué es Sommelier de Territorio
+  </a>
 
-            <a class="btn" href="sommelier-de-territorio.html">
-              Qué es Sommelier de Territorio
-            </a>
+  <a class="btn" href="#blog">Ir al blog</a>
+  <a class="btn" href="#contacto">Contacto</a>
 
-            <a class="btn" href="#blog">Ir al blog</a>
-            <a class="btn" href="#contacto">Contacto</a>
-            <a class="btn" href="https://www.linkedin.com/in/sergio-landoni-sommelier/" target="_blank" rel="noopener noreferrer">
-              LinkedIn
-            </a>
-          </div>
+  <a class="btn"
+     href="https://www.linkedin.com/in/sergio-landoni-sommelier/"
+     target="_blank"
+     rel="noopener noreferrer">
+    LinkedIn
+  </a>
         </div><!-- /CARD 1 -->
 
         <!-- CARD 2 -->
