@@ -19,8 +19,8 @@
   <link rel="alternate" href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html" hreflang="x-default" />
 
   <!-- Icons -->
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="article" />
@@ -28,17 +28,21 @@
   <meta property="og:description" content="A territorial perspective on landscape, lifestyle, gastronomy and wine in Neuquén, Argentine Patagonia." />
   <meta property="og:url" content="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:site_name" content="Sergio Landoni, Sommelier de Territorio" />
+  <meta property="og:site_name" content="Sergio Landoni · Sommelier de Territorio" />
 
   <!-- HERO PHOTO -->
   <meta property="og:image" content="https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg" />
   <meta property="og:image:alt" content="Neuquén wine regions in Argentine Patagonia: landscape, wind and vineyards" />
   <meta property="og:image:type" content="image/jpeg" />
 
+  <!-- Article times -->
+  <meta property="article:published_time" content="2026-02-01" />
+  <meta property="article:modified_time" content="2026-02-01" />
+
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Neuquén Wine Regions, Patagonia’s Emerging Wine Territory" />
-  <meta name="twitter:description" content="Discover Neuquén wine regions in Argentine Patagonia, landscape, gastronomy, lifestyle and wines." />
+  <meta name="twitter:description" content="Discover Neuquén wine regions in Argentine Patagonia: landscape, gastronomy, lifestyle and wines." />
   <meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg" />
 
   <!-- Schema.org -->
@@ -72,7 +76,12 @@
       "Plaza Huincul",
       "Alto Neuquén",
       "Norte Neuquino"
-    ]
+    ],
+    "isPartOf":{
+      "@type":"Blog",
+      "name":"Blog · Sergio Landoni",
+      "url":"https://sergiolandoni.com.ar/#blog"
+    }
   }
   </script>
 
@@ -105,9 +114,7 @@
       text-decoration: underline;
       text-underline-offset: 3px;
     }
-    .inline-link:hover{
-      opacity:.85;
-    }
+    .inline-link:hover{opacity:.85}
 
     .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
     header{
@@ -125,7 +132,7 @@
     .brand-logo{
       width:40px;height:40px;border-radius:10px;
       border:1px solid var(--line);
-      background:#fff;object-fit:contain
+      background:#fff;object-fit:contain; display:block;
     }
     .brand-text strong{font-size:16px}
     .brand-text span{font-size:13px;color:var(--muted)}
@@ -152,8 +159,13 @@
     .lead{font-size:1.05rem; color:#111827}
     .geo{margin:6px 0 12px;color:var(--muted)}
     .note{font-size:13px;color:var(--muted)}
+    .meta{
+      font-size:13px;
+      color:var(--muted);
+      margin:6px 0 0;
+    }
 
-    .hero-media{margin:14px 0 16px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+    .hero-media{margin:14px 0 16px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line); background:#fff}
     .hero-media img{width:100%; height:auto; display:block}
 
     nav.toc{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:16px 0;background:#fff}
@@ -170,15 +182,8 @@
       margin:16px 0 22px;
       background:#fff;
     }
-    .quick-summary h2{
-      margin:0 0 10px;
-      font-size:1.1rem;
-    }
-    .quick-summary ul{
-      margin:0;
-      padding-left:18px;
-      color:var(--muted);
-    }
+    .quick-summary h2{margin:0 0 10px; font-size:1.1rem;}
+    .quick-summary ul{margin:0; padding-left:18px; color:var(--muted);}
     .quick-summary li{ margin:6px 0; }
     .quick-summary strong{ color:var(--text); }
 
@@ -214,19 +219,19 @@
   <header>
     <div class="wrap">
       <div class="nav">
-        <a class="brand" href="index.html#inicio" aria-label="Go to home">
-          <img class="brand-logo" src="assets/img/logo.jpg" alt="Sergio Landoni logo" />
+        <a class="brand" href="https://sergiolandoni.com.ar/#inicio" aria-label="Go to home">
+          <img class="brand-logo" src="/assets/img/logo.jpg" alt="Sergio Landoni logo" width="40" height="40" />
           <div class="brand-text">
             <strong>Sergio Landoni</strong>
-            <span>Sommelier de Territorio, Argentine Patagonia</span>
+            <span>Sommelier de Territorio · Argentine Patagonia</span>
           </div>
         </a>
 
         <nav class="menu" aria-label="Main menu">
-          <a href="index.html#inicio">Home</a>
-          <a href="index.html#sobre-mi">About</a>
-          <a href="index.html#blog">Blog</a>
-          <a href="index.html#contacto">Contact</a>
+          <a href="https://sergiolandoni.com.ar/#inicio">Home</a>
+          <a href="https://sergiolandoni.com.ar/#sobre-mi">About</a>
+          <a href="https://sergiolandoni.com.ar/#blog">Blog</a>
+          <a href="https://sergiolandoni.com.ar/#contacto">Contact</a>
         </nav>
       </div>
     </div>
@@ -234,15 +239,21 @@
 
   <main class="wrap">
     <article class="card">
-      <div class="kicker">Neuquén, Patagonia, Wine, Territory</div>
+      <div class="kicker">Neuquén · Patagonia · Wine · Territory</div>
 
       <h1>Neuquén Wine Regions, Patagonia’s Emerging Wine Territory</h1>
-      <p class="note">A territorial perspective on landscape, lifestyle, gastronomy and wine in Argentine Patagonia</p>
-      <p><strong>By Sergio Landoni</strong>, <a href="index.html#sobre-mi" class="inline-link">Sommelier de Territorio</a></p>
+      <p class="note">A territorial perspective on landscape, lifestyle, gastronomy and wine in Argentine Patagonia.</p>
+
+      <p><strong>By Sergio Landoni</strong>, <a href="https://sergiolandoni.com.ar/#sobre-mi" class="inline-link">Sommelier de Territorio</a></p>
+
+      <p class="meta">
+        Published: <time datetime="2026-02-01">February 1, 2026</time> ·
+        Updated: <time datetime="2026-02-01">February 1, 2026</time>
+      </p>
 
       <figure class="hero-media">
         <img
-          src="assets/img/zonas-vitivinicolas-neuquen.jpg"
+          src="/assets/img/zonas-vitivinicolas-neuquen.jpg"
           alt="Neuquén wine regions in Argentine Patagonia: landscape, wind and vineyards"
           width="1600"
           height="900"
@@ -253,8 +264,9 @@
       </figure>
 
       <p class="lead">
-        Neuquén Province, in Argentine Patagonia, is an emerging wine territory shaped by wind, desert landscapes and Andean rivers, and also by a distinctive quality of life.
-        Here, wine is not separate from place, it is connected to gastronomy, tourism, outdoor culture and everyday life, and that connection gives Neuquén wines their voice.
+        Neuquén Province, in Argentine Patagonia, is an emerging wine territory shaped by wind, desert landscapes and Andean rivers,
+        and also by a distinctive quality of life. Here, wine is not separate from place: it is connected to gastronomy, tourism,
+        outdoor culture and everyday life, and that connection gives Neuquén wines their voice.
       </p>
 
       <section class="quick-summary" aria-label="Quick overview of Neuquén wine regions">
@@ -271,17 +283,18 @@
       <p>
         What makes Neuquén fascinating is diversity. The same grape can speak in very different tones depending on where it grows.
         Pinot Noir does not feel the same in San Patricio del Chañar as it does along the Limay River.
-        Malbec changes completely between the central plateau of Cutral Co and the northern valleys near Chos Malal.
+        Malbec changes between the central plateau of Cutral Co and the northern valleys near Chos Malal.
         Whites often shine across the province, with natural acidity and clarity supported by dry air, sunlight and cool nights.
       </p>
 
       <p>
-        Behind all of this there is something essential, people. Producers, vineyard teams and winemakers, large projects and small family stories, learning harvest after harvest, adjusting decisions, understanding the wind, the water and the rhythm of their land.
-        This is not a technical encyclopedia, it is a territorial view, built from the road, from conversations, from the vineyard and from the glass.
+        Behind all of this there is something essential: people. Producers, vineyard teams and winemakers, large projects and small family stories,
+        learning harvest after harvest, adjusting decisions, understanding the wind, the water and the rhythm of their land.
+        This is not a technical encyclopedia—it is a territorial view, built from the road, from conversations, from the vineyard and from the glass.
       </p>
 
       <p class="note">
-        Read the Spanish version,
+        Read the Spanish version:
         <a class="inline-link" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html">Regiones Vitivinícolas de Neuquén</a>
       </p>
 
@@ -306,12 +319,12 @@
 
       <h2 id="why-zones">Why zones matter in Neuquén</h2>
       <p>
-        Because wine is not explained by the province alone, it is explained by the exact place where it is born.
+        Because wine is not explained by the province alone—it is explained by the exact place where it is born.
         Wind does not blow the same way in San Patricio del Chañar as it does in the north.
-        Water does not behave the same in a river influenced vineyard as it does on a plateau fed by deep wells.
-        Altitude, soil, night temperatures and scale change everything.
+        Water does not behave the same in a river-influenced vineyard as it does on a plateau fed by deep wells.
+        Altitude, soils, night temperatures and scale change everything.
       </p>
-      <p>Speaking about zones does not divide Neuquén, it helps us understand it.</p>
+      <p>Speaking about zones does not divide Neuquén—it helps us understand it.</p>
 
       <div class="hr" aria-hidden="true"></div>
 
@@ -320,7 +333,7 @@
 
       <p>
         San Patricio del Chañar is the starting point of modern Neuquén wine. It is an oasis created on the plateau, where irrigation turned arid land into one of Patagonia’s most important wine poles.
-        Wine here is born from contrast, stony soils, constant wind, wide thermal range, long sunlight hours, and a clear, dry atmosphere.
+        Wine here is born from contrast: stony soils, constant wind, wide thermal range, long sunlight hours, and a clear, dry atmosphere.
         When these conditions are read with precision, they translate into wines with freshness, tension and a distinctly Patagonian edge.
       </p>
 
@@ -332,13 +345,9 @@
 
       <h3>Soils, climate and a Patagonian profile</h3>
       <p>
-        Gravelly soils with low organic matter and excellent drainage force vines to root deep and regulate vigor naturally. Persistent wind and strong day to night temperature shifts help preserve acidity and build fine, firm tannins.
-        Pinot Noir can show tension and clarity, Cabernet Franc can be structured and aromatic, Chardonnay can be vivid and gastronomic, Malbec tends to appear firmer and more defined than in warmer zones.
-      </p>
-
-      <h3>Wine, tourism and gastronomy</h3>
-      <p>
-        Tasting wines where they are born changes the way you read the glass. El Chañar is a place where wine is lived as an experience, with restaurants and tastings that frame the wines in their own landscape.
+        Gravelly soils with low organic matter and excellent drainage force vines to root deep and regulate vigor naturally.
+        Persistent wind and strong day-to-night temperature shifts help preserve acidity and build fine, firm tannins.
+        Pinot Noir can show tension and clarity, Cabernet Franc can be structured and aromatic, Chardonnay can be vivid and gastronomic.
       </p>
 
       <div class="hr" aria-hidden="true"></div>
@@ -352,14 +361,8 @@
       </p>
 
       <p>
-        This zone carries memory. It is linked to immigrant agriculture, orchards and small scale farming, long before wine became visible in provincial identity.
-        That background shapes the human scale and the style, wines that feel close to everyday life, fresh, direct, honest, often very gastronomic.
-      </p>
-
-      <h3>Styles that make sense here</h3>
-      <p>
-        Merlot can be especially expressive, Chardonnay can show tension and a clean line, Cabernet Franc and Pinot Noir can appear subtle and precise.
-        The point is not power, the point is definition, a wine that pairs naturally with food.
+        This zone carries memory. It is linked to immigrant agriculture, orchards and small-scale farming—long before wine became visible in provincial identity.
+        That background shapes the human scale and the style: wines that feel close to everyday life, fresh, direct and often highly gastronomic.
       </p>
 
       <div class="hr" aria-hidden="true"></div>
@@ -373,13 +376,8 @@
       </p>
 
       <p>
-        Wines from the Limay corridor tend to feel clear and direct. Pinot Noir can be delicate, aromatic and precise, whites can be vibrant and clean, and the overall profile often privileges tension and drinkability over heaviness.
-        This is also a zone where projects are often human scale, strongly connected to the landscape, and increasingly focused on wine as an experience.
-      </p>
-
-      <h3>A corridor in evolution</h3>
-      <p>
-        Senillosa and Picún Leufú are still building their public identity, yet the potential is evident. Dry air, wind and river influence support wines that feel fresh, contemporary and place driven.
+        Wines from the Limay corridor tend to feel clear and direct. Pinot Noir can be delicate, aromatic and precise, whites can be vibrant and clean,
+        and the overall profile often privileges tension and drinkability over heaviness.
       </p>
 
       <div class="hr" aria-hidden="true"></div>
@@ -389,55 +387,45 @@
 
       <p>
         This is Neuquén’s frontier wine zone, a landscape better known for energy towns and the oil industry, yet increasingly capable of expressing wine as a cultural and territorial statement.
-        Viticulture happens under extreme conditions, open plateau, strong winds, low rainfall and a harsher sense of desert.
+        Viticulture happens under extreme conditions: open plateau, strong winds, low rainfall and a harsher sense of desert.
       </p>
 
       <p>
-        There are no nearby rivers, irrigation depends on deep wells, and that changes everything. Water management becomes essential, vines face stronger hydric stress, fruit concentrates naturally, and wines can show depth, structure and intensity.
-        Cabernet Franc often fits this place beautifully, Syrah can have enormous potential, Malbec tends to be powerful and full bodied, yet can keep a Patagonian line when handled with restraint.
-      </p>
-
-      <p>
-        What makes Cutral Co and Plaza Huincul special is not only the wine, it is the story. Wine becomes a symbol of diversification, resilience and identity in a territory long defined by energy.
+        There are no nearby rivers: irrigation depends on deep wells, and that changes everything. Water management becomes essential, vines face stronger hydric stress,
+        fruit concentrates naturally, and wines can show depth, structure and intensity.
       </p>
 
       <div class="hr" aria-hidden="true"></div>
 
       <h2 id="norte">5. Alto Neuquén, the northern valleys</h2>
-      <p class="geo"><strong>Geographic reference:</strong> around Chos Malal and Taquimilán, northern Neuquén, pre Andean landscapes and higher altitude valleys.</p>
+      <p class="geo"><strong>Geographic reference:</strong> around Chos Malal and Taquimilán, northern Neuquén, pre-Andean landscapes and higher altitude valleys.</p>
 
       <p>
-        Alto Neuquén is root and memory. Wine here is not lived as a pole, it is lived as a story, old pergolas, small scale vineyards, clean air, colder nights, a landscape that sets the pace.
-        This is not a volume region, it is a meaning region.
+        Alto Neuquén is root and memory. Wine here is not lived as a pole—it is lived as a story: old pergolas, small-scale vineyards, clean air, colder nights, a landscape that sets the pace.
+        This is not a volume region. It is a meaning region.
       </p>
 
       <p>
         The north preserves heritage and identity. Varieties can show lighter, more floral and tense profiles, and when whites appear, natural acidity and freshness feel perfectly at home.
-        Standardization does not matter here, what matters is place, continuity and the human hand behind each decision.
-      </p>
-
-      <p>
-        Alto Neuquén also holds potential. Beyond what is already planted, surrounding valleys invite careful exploration, always with respect for scale.
-        In the northern landscape, wine becomes personal, and that is exactly where its value begins.
+        Standardization does not matter here—what matters is place, continuity and the human hand behind each decision.
       </p>
 
       <div class="hr" aria-hidden="true"></div>
 
       <h2 id="closing">Closing, an invitation to taste Neuquén</h2>
       <p>
-        Neuquén is not one wine region, and it does not need to be. It is a province where wine changes with landscape, with water, with wind, with altitude and with the decisions of those who work the vines.
-        Understanding these zones is not about fixing a definitive map, it is about seeing better, understanding why a wine feels different depending on where it comes from, and recognizing that territory matters.
+        Neuquén is not one wine region, and it does not need to be. It is a province where wine changes with landscape, water, wind, altitude and the decisions of those who work the vines.
+        Understanding these zones is not about fixing a definitive map—it is about seeing better, and understanding why a wine feels different depending on where it comes from.
       </p>
 
       <p>
         Neuquén wines are best discovered slowly, paired with regional cuisine and the rhythm of the place.
-        A glass of Pinot Noir, Malbec or Cabernet Franc gains new meaning alongside Patagonian lamb, fresh river trout, seasonal dishes, and also a traditional Argentine beef cut, cooked simply and respectfully.
-        In Neuquén, where high quality beef is part of the culture, and even Wagyu is produced under Patagonian conditions, wine and food meet in a shared language of balance, texture and flavor.
+        In Neuquén—where high-quality beef is part of everyday culture—wine and food meet naturally in a shared language of balance, texture and flavor.
       </p>
 
       <p>
         Beyond geography and climate, Neuquén offers a way of life where nature, gastronomy and wine coexist naturally.
-        It is also a place shaped by people, open, generous and deeply connected to their land, where visitors often feel welcomed and well cared for, not as a service, but as a genuine attitude.
+        It is also a place shaped by people: open, generous and deeply connected to their land.
       </p>
 
       <p>
@@ -448,9 +436,9 @@
       <!-- MAP AT THE END -->
       <h2 id="map">Map, Neuquén wine regions</h2>
       <figure class="map-figure" aria-label="Map of Neuquén wine regions">
-        <a href="assets/img/wine-regions-neuquen.webp" target="_blank" rel="noopener noreferrer">
+        <a href="/assets/img/wine-regions-neuquen.webp" target="_blank" rel="noopener noreferrer">
           <img
-            src="assets/img/wine-regions-neuquen.webp"
+            src="/assets/img/wine-regions-neuquen.webp"
             alt="Map of the five wine regions of Neuquén, Argentine Patagonia: San Patricio del Chañar, Confluencia, Limay River, Cutral Co and Alto Neuquén"
             loading="lazy"
             decoding="async"
@@ -459,17 +447,17 @@
         <figcaption class="map-caption">
           <strong>Neuquén Wine Regions.</strong>
           Reference map locating the main zones featured in this article.
-          Credit, Sergio Landoni, Sommelier de Territorio.
+          Credit: Sergio Landoni, Sommelier de Territorio.
         </figcaption>
       </figure>
 
       <p class="note">
-        Share this article,
+        Share this article:
         <a class="inline-link" href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html">sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html</a>
       </p>
 
       <p class="note">
-        Spanish version,
+        Spanish version:
         <a class="inline-link" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html">Regiones Vitivinícolas de Neuquén</a>
       </p>
 
@@ -478,7 +466,7 @@
 
   <footer>
     <div class="wrap">
-      <div>© Sergio Landoni, Sommelier de Territorio</div>
+      <div>© Sergio Landoni · Sommelier de Territorio</div>
     </div>
   </footer>
 </body>
