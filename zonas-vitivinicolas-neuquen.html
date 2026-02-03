@@ -22,17 +22,22 @@
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
 
+  <!-- Preload hero (performance / LCP) -->
+  <link rel="preload" as="image" href="assets/img/zonas-vitivinicolas-neuquen.jpg" fetchpriority="high" />
+
   <!-- Open Graph -->
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Las cinco zonas vitivinícolas de Neuquén" />
   <meta property="og:description" content="Neuquén no es una sola región vitivinícola. Una mirada desde el territorio para ordenar cinco zonas distintas y sus perfiles de vino." />
   <meta property="og:url" content="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html" />
   <meta property="og:locale" content="es_AR" />
-  <meta property="og:site_name" content="Sergio Landoni, Sommelier de Territorio" />
+  <meta property="og:site_name" content="Sergio Landoni · Sommelier de Territorio" />
 
   <meta property="og:image" content="https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg" />
   <meta property="og:image:alt" content="Zonas vitivinícolas de Neuquén, Patagonia Argentina" />
   <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -64,7 +69,7 @@
           "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg"
         },
         "sameAs": [
-          "https://www.linkedin.com/in/sergio-landoni-sommelier",
+          "https://www.linkedin.com/in/sergio-landoni-sommelier/",
           "https://www.instagram.com/sergiolandoni.somm/"
         ]
       },
@@ -88,7 +93,9 @@
         "about": { "@id": "https://sergiolandoni.com.ar/#author" },
         "primaryImageOfPage": {
           "@type": "ImageObject",
-          "url": "https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg"
+          "url": "https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg",
+          "width": 1600,
+          "height": 900
         }
       },
       {
@@ -130,7 +137,6 @@
           "vino Patagonia"
         ],
         "articleSection": "Vino · Territorio · Neuquén",
-        "wordCount": 2350,
         "timeRequired": "PT9M"
       }
     ]
@@ -139,23 +145,18 @@
 
   <style>
     :root {
-      /* token:layout */
       --max: 1060px;
       --radius: 14px;
       --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-
-      /* token:color */
       --bg: #fafafa;
       --card: #ffffff;
       --text: #111827;
-      --muted: #374151; /* texto secundario / párrafos */
+      --muted: #374151;
       --line: #e5e7eb;
       --accent: #0f766e;
     }
-
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-
     body {
       margin: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
@@ -163,26 +164,15 @@
       color: var(--text);
       line-height: 1.65;
     }
-
     a {
       color: inherit;
       text-decoration: none;
       transition: color 0.2s ease, opacity 0.2s ease;
     }
     a:hover { color: var(--accent); }
-
-    .inline-link {
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
+    .inline-link { text-decoration: underline; text-underline-offset: 3px; }
     .inline-link:hover { opacity: 0.85; }
-
-    .wrap {
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 0 18px;
-    }
-
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 18px; }
     header {
       position: sticky;
       top: 0;
@@ -191,7 +181,6 @@
       backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--line);
     }
-
     .nav {
       display: flex;
       align-items: center;
@@ -199,14 +188,12 @@
       padding: 14px 0;
       gap: 16px;
     }
-
     .brand {
       display: flex;
       align-items: center;
       gap: 12px;
       min-width: 220px;
     }
-
     .brand-logo {
       width: 40px;
       height: 40px;
@@ -216,7 +203,6 @@
       object-fit: contain;
       display: block;
     }
-
     .brand-text strong { font-size: 16px; }
     .brand-text span { font-size: 13px; color: var(--muted); }
 
@@ -229,7 +215,6 @@
     }
 
     main { padding: 22px 0 44px; }
-
     .card {
       background: var(--card);
       border: 1px solid var(--line);
@@ -238,7 +223,6 @@
       padding: 22px;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
-
     .card:hover { transform: translateY(-2px); }
 
     .kicker {
@@ -248,31 +232,19 @@
       text-transform: uppercase;
       margin-bottom: 6px;
     }
-
     h1 {
       line-height: 1.15;
       letter-spacing: -0.02em;
       margin: 0 0 10px;
       font-size: clamp(1.75rem, 3.2vw, 2.4rem);
     }
-
     h2 { margin: 22px 0 10px; font-size: 1.35rem; }
     h3 { margin: 16px 0 8px; font-size: 1.1rem; }
     p { margin: 0 0 14px; }
 
-    .geo {
-      margin: 6px 0 12px;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
+    .geo { margin: 6px 0 12px; color: var(--muted); font-size: 0.95rem; }
     .note { font-size: 13px; color: var(--muted); }
-
-    .hr {
-      height: 1px;
-      background: var(--line);
-      margin: 18px 0;
-    }
+    .hr { height: 1px; background: var(--line); margin: 18px 0; }
 
     .hero-media {
       margin: 14px 0 16px;
@@ -280,12 +252,7 @@
       overflow: hidden;
       border: 1px solid var(--line);
     }
-
-    .hero-media img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+    .hero-media img { width: 100%; height: auto; display: block; }
 
     nav.toc {
       border: 1px solid var(--line);
@@ -294,15 +261,8 @@
       margin: 16px 0;
       background: #fff;
     }
-
     nav.toc h2 { margin: 0 0 10px; font-size: 1.05rem; }
-
-    nav.toc ul {
-      margin: 0;
-      padding-left: 18px;
-      color: var(--muted);
-    }
-
+    nav.toc ul { margin: 0; padding-left: 18px; color: var(--muted); }
     nav.toc li { margin: 6px 0; }
 
     footer {
@@ -321,15 +281,8 @@
       background: #fff;
       box-shadow: var(--shadow);
     }
-
     .map-figure a { display: block; }
-
-    .map-figure img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
+    .map-figure img { width: 100%; height: auto; display: block; }
     .map-caption {
       padding: 10px 14px;
       font-size: 13px;
@@ -337,7 +290,6 @@
       border-top: 1px solid var(--line);
       background: #fff;
     }
-
     .map-caption strong { color: var(--text); }
   </style>
 </head>
@@ -346,8 +298,9 @@
   <header>
     <div class="wrap">
       <div class="nav">
-        <a class="brand" href="/#inicio" aria-label="Ir al inicio">
-          <img class="brand-logo" src="assets/img/logo.jpg" alt="Logo Sergio Landoni" loading="lazy" decoding="async" />
+        <!-- Links PRO: absolutos (evita comportamientos raros en subpáginas / previews) -->
+        <a class="brand" href="https://sergiolandoni.com.ar/#inicio" aria-label="Ir al inicio">
+          <img class="brand-logo" src="assets/img/logo.jpg" alt="Logo Sergio Landoni" width="40" height="40" decoding="async" />
           <div class="brand-text">
             <strong>Sergio Landoni</strong>
             <span>Sommelier de Territorio · Patagonia Argentina</span>
@@ -355,10 +308,10 @@
         </a>
 
         <nav class="menu" aria-label="Menú principal">
-          <a href="/#inicio">Inicio</a>
-          <a href="/#sobre-mi">Sobre mí</a>
-          <a href="/#blog">Blog</a>
-          <a href="/#contacto">Contacto</a>
+          <a href="https://sergiolandoni.com.ar/#inicio">Inicio</a>
+          <a href="https://sergiolandoni.com.ar/#sobre-mi">Sobre mí</a>
+          <a href="https://sergiolandoni.com.ar/#blog">Blog</a>
+          <a href="https://sergiolandoni.com.ar/#contacto">Contacto</a>
         </nav>
       </div>
     </div>
@@ -369,7 +322,7 @@
       <div class="kicker">Neuquén · Vino · Territorio</div>
 
       <h1>Las cinco zonas vitivinícolas de Neuquén</h1>
-      <p><strong>Por Sergio Landoni</strong>, <a href="/#sobre-mi" class="inline-link">Sommelier de Territorio</a></p>
+      <p><strong>Por Sergio Landoni</strong>, <a href="https://sergiolandoni.com.ar/#sobre-mi" class="inline-link">Sommelier de Territorio</a></p>
 
       <div class="hero-media" aria-label="Imagen del artículo">
         <img
