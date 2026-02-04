@@ -41,68 +41,114 @@
   <meta name="twitter:image" content="https://sergiolandoni.com.ar/hero.jpg" />
 
   <!-- Schema.org (limpio + consistente con rutas reales) -->
-  <script type="application/ld+json">
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://sergiolandoni.com.ar/#website",
+      "name": "Sergio Landoni · Sommelier de Territorio",
+      "url": "https://sergiolandoni.com.ar/",
+      "inLanguage": "es-AR",
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sergiolandoni.com.ar/#webpage",
+      "url": "https://sergiolandoni.com.ar/",
+      "name": "Sergio Landoni · Sommelier de Territorio en Patagonia",
+      "description": "Sergio Landoni, Sommelier de Territorio. Especialista en vino patagónico, consultoría para bodegas y experiencias de cata en San Martín de los Andes.",
+      "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
+      "about": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
+      "primaryImageOfPage": { "@id": "https://sergiolandoni.com.ar/#image-hero" },
+      "inLanguage": "es-AR"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://sergiolandoni.com.ar/#image-hero",
+      "url": "https://sergiolandoni.com.ar/hero.jpg",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://sergiolandoni.com.ar/#image-portrait",
+      "url": "https://sergiolandoni.com.ar/retrato.jpg",
+      "width": 1200,
+      "height": 1200
+    },
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://sergiolandoni.com.ar/#website",
-        "name": "Sergio Landoni · Sommelier de Territorio",
-        "url": "https://sergiolandoni.com.ar/",
-        "inLanguage": "es-AR",
-        "publisher": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" }
+  "@type": "Person",
+  "@id": "https://sergiolandoni.com.ar/#sergio-landoni",
+  "name": "Sergio Landoni",
+  "alternateName": "Sergio Landoni Somm",
+  "jobTitle": "Sommelier de Territorio",
+  "description": "Sommelier de territorio con base en San Martín de los Andes (Neuquén, Patagonia Argentina). Desarrollo, comunicación y posicionamiento para bodegas patagónicas. Presentaciones y degustaciones de vinos de Neuquén.",
+  "knowsAbout": [
+    "Vino patagónico",
+    "Vino de Neuquén",
+    "Territorio vitivinícola",
+    "Comunicación del vino",
+    "Enoturismo",
+    "Degustaciones de vino",
+    "Cultura del vino"
+  ],
+  "email": "mailto:contacto@sergiolandoni.com.ar",
+  "url": "https://sergiolandoni.com.ar/",
+  "image": { "@id": "https://sergiolandoni.com.ar/#image-portrait" },
+  "sameAs": [
+    "https://maps.app.goo.gl/EQeLmEJvErdPFrxV6",
+    "https://www.instagram.com/sergiolandoni.somm/",
+    "https://www.linkedin.com/in/sergio-landoni-sommelier/"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Martín de los Andes",
+    "addressRegion": "Neuquén",
+    "addressCountry": "AR"
+  },
+      "worksFor": { "@id": "https://sergiolandoni.com.ar/#business" }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://sergiolandoni.com.ar/#business",
+      "name": "Sergio Landoni · Sommelier de Territorio",
+      "url": "https://sergiolandoni.com.ar/",
+      "image": { "@id": "https://sergiolandoni.com.ar/#image-portrait" },
+      "email": "mailto:contacto@sergiolandoni.com.ar",
+      "telephone": "+54 9 294 4668508",
+      "hasMap": "https://maps.app.goo.gl/EQeLmEJvErdPFrxV6",
+      "areaServed": [
+        { "@type": "City", "name": "San Martín de los Andes" },
+        { "@type": "AdministrativeArea", "name": "Neuquén" },
+        { "@type": "Country", "name": "AR" }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Martín de los Andes",
+        "addressRegion": "Neuquén",
+        "addressCountry": "AR"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://sergiolandoni.com.ar/#webpage",
-        "url": "https://sergiolandoni.com.ar/",
-        "name": "Sergio Landoni · Sommelier de Territorio en Patagonia",
-        "description": "Sergio Landoni, Sommelier de Territorio. Especialista en vino patagónico, consultoría para bodegas y experiencias de cata en San Martín de los Andes.",
-        "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
-        "about": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
-        "primaryImageOfPage": { "@id": "https://sergiolandoni.com.ar/#image-hero" },
-        "inLanguage": "es-AR"
-      },
-      {
-        "@type": "ImageObject",
-        "@id": "https://sergiolandoni.com.ar/#image-hero",
-        "url": "https://sergiolandoni.com.ar/hero.jpg",
-        "width": 1600,
-        "height": 900
-      },
-      {
-        "@type": "Person",
-        "@id": "https://sergiolandoni.com.ar/#sergio-landoni",
-        "name": "Sergio Landoni",
-        "alternateName": "Sergio Landoni Somm",
-        "jobTitle": "Sommelier de Territorio",
-        "description": "Sommelier de territorio con base en San Martín de los Andes (Neuquén, Patagonia Argentina). Desarrollo, comunicación y posicionamiento para bodegas patagónicas. Presentaciones y degustaciones de vinos de Neuquén.",
-        "email": "mailto:contacto@sergiolandoni.com.ar",
-        "url": "https://sergiolandoni.com.ar/",
-        "sameAs": [
-          "https://www.instagram.com/sergiolandoni.somm/",
-          "https://www.linkedin.com/in/sergio-landoni-sommelier/"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "San Martín de los Andes",
-          "addressRegion": "Neuquén",
-          "addressCountry": "AR"
-        }
-      },
-      {
-        "@type": "Blog",
-        "@id": "https://sergiolandoni.com.ar/#blog",
-        "name": "Blog · Sergio Landoni",
-        "url": "https://sergiolandoni.com.ar/#blog",
-        "inLanguage": "es-AR",
-        "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
-        "publisher": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" }
-      }
-    ]
-  }
-  </script>
+      "founder": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
+      "sameAs": [
+        "https://maps.app.goo.gl/EQeLmEJvErdPFrxV6",
+        "https://www.instagram.com/sergiolandoni.somm/",
+        "https://www.linkedin.com/in/sergio-landoni-sommelier/"
+      ]
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://sergiolandoni.com.ar/#blog",
+      "name": "Blog · Sergio Landoni",
+      "url": "https://sergiolandoni.com.ar/#blog",
+      "inLanguage": "es-AR",
+      "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
+    }
+  ]
+}
+</script>
 
   <style>
     :root{
@@ -345,7 +391,7 @@
         <!-- hero real en raíz: hero.jpg -->
         <img
           src="hero.jpg"
-          alt="Patagonia: vino, territorio y cultura"
+          alt=“Sergio Landoni · Sommelier de Territorio: vino, territorio y cultura en Patagonia”
           width="1600"
           height="900"
           loading="eager"
