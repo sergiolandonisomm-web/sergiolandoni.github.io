@@ -6,7 +6,7 @@
   <meta name="format-detection" content="telephone=no" />
 
   <title>Sergio Landoni · Sommelier de Territorio en Patagonia</title>
-  <meta name="description" content="Sergio Landoni, Sommelier de Territorio. Especialista en vino patagónico, consultoría para bodegas y experiencias de cata en San Martín de los Andes." />
+  <meta name="description" content="Sergio Landoni, Sommelier de Territorio. Especialista en vino patagónico, consultoría para bodegas y experiencias de cata en San Martín de los Andes. Co-creador de Vino a la Montaña." />
   <meta name="keywords" content="Sergio Landoni, sommelier, sommelier de territorio, vino patagónico, vino Neuquén, San Martín de los Andes, Patagonia, turismo, gastronomía, cultura, blog de vinos" />
   <meta name="author" content="Sergio Landoni" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
@@ -16,6 +16,7 @@
   <link rel="alternate" href="https://sergiolandoni.com.ar/" hreflang="es-AR" />
   <link rel="alternate" href="https://sergiolandoni.com.ar/" hreflang="x-default" />
 
+  <link rel="external" href="https://www.vinoalamontana.com.ar" />
   <!-- Performance: preload hero (tu archivo real está en raíz: hero.jpg) -->
   <link rel="preload" as="image" href="hero.jpg" fetchpriority="high" />
 
@@ -103,8 +104,10 @@
     "https://www.instagram.com/sergiolandoni.somm/",
     "https://www.linkedin.com/in/sergio-landoni-sommelier/"
   ],
+  "creator": { "@id": "https://vinoalamontana.com.ar/#eventseries" },
   "address": {
     "@type": "PostalAddress",
+
     "addressLocality": "San Martín de los Andes",
     "addressRegion": "Neuquén",
     "addressCountry": "AR"
@@ -119,7 +122,7 @@
       "image": { "@id": "https://sergiolandoni.com.ar/#image-portrait" },
       "email": "mailto:contacto@sergiolandoni.com.ar",
       "telephone": "+54 9 294 4668508",
-     "hasMap": "https://www.google.com/maps/place/Sergio+Landoni+·+Sommelier+de+Territorio/@-40.1430288,-71.2817179,17z/data=!3m1!4b1!4m6!3m5!1s0x9611091b6dc6f071:0xcc1e682993259a42!8m2!3d-40.1430288!4d-71.2817179!16s%2Fg%2F11yvy71l0b"
+     "hasMap": "https://www.google.com/maps/place/Sergio+Landoni+·+Sommelier+de+Territorio/@-40.1430288,-71.2817179,17z/data=!3m1!4b1!4m6!3m5!1s0x9611091b6dc6f071:0xcc1e682993259a42!8m2!3d-40.1430288!4d-71.2817179!16s%2Fg%2F11yvy71l0b",
       "areaServed": [
         { "@type": "City", "name": "San Martín de los Andes" },
         { "@type": "AdministrativeArea", "name": "Neuquén" },
@@ -136,8 +139,7 @@
         "https://maps.app.goo.gl/EQeLmEJvErdPFrxV6",
         "https://www.instagram.com/sergiolandoni.somm/",
         "https://www.linkedin.com/in/sergio-landoni-sommelier/"
-      ]
-    },
+     },
     {
       "@type": "Blog",
       "@id": "https://sergiolandoni.com.ar/#blog",
@@ -146,6 +148,24 @@
       "inLanguage": "es-AR",
       "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
       "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
+    },
+    {
+      "@type": "EventSeries",
+      "@id": "https://vinoalamontana.com.ar/#eventseries",
+      "name": "Vino a la Montaña",
+      "url": "https://www.vinoalamontana.com.ar/",
+      "inLanguage": "es-AR",
+      "location": {
+        "@type": "City",
+        "name": "San Martín de los Andes",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Martín de los Andes",
+          "addressRegion": "Neuquén",
+          "addressCountry": "AR"
+        }
+      },
+      "organizer": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" }
     }
   ]
 }
