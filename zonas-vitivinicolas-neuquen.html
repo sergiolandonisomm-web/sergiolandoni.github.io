@@ -46,105 +46,107 @@
   <meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg" />
 
   <!-- Schema.org (pro / completo) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://sergiolandoni.com.ar/#website",
-        "url": "https://sergiolandoni.com.ar/",
-        "name": "Sergio Landoni · Sommelier de Territorio",
-        "inLanguage": "es-AR",
-        "publisher": { "@id": "https://sergiolandoni.com.ar/#publisher" }
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://sergiolandoni.com.ar/#website",
+      "url": "https://sergiolandoni.com.ar/",
+      "name": "Sergio Landoni · Sommelier de Territorio",
+      "inLanguage": "es-AR",
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://sergiolandoni.com.ar/#blog",
+      "name": "Blog · Sergio Landoni",
+      "url": "https://sergiolandoni.com.ar/#blog",
+      "inLanguage": "es-AR",
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sergiolandoni.com.ar/#author",
+      "name": "Sergio Landoni",
+      "url": "https://sergiolandoni.com.ar/",
+      "jobTitle": "Sommelier de Territorio",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG"
       },
-      {
-        "@type": "Person",
-        "@id": "https://sergiolandoni.com.ar/#author",
-        "name": "Sergio Landoni",
-        "url": "https://sergiolandoni.com.ar/",
-        "jobTitle": "Sommelier de Territorio",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/in/sergio-landoni-sommelier/",
-          "https://www.instagram.com/sergiolandoni.somm/"
-        ]
+      "sameAs": [
+        "https://www.linkedin.com/in/sergio-landoni-sommelier/",
+        "https://www.instagram.com/sergiolandoni.somm/"
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://sergiolandoni.com.ar/#business",
+      "name": "Sergio Landoni · Sommelier de Territorio",
+      "url": "https://sergiolandoni.com.ar/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg"
       },
-      {
-        "@type": "Organization",
-        "@id": "https://sergiolandoni.com.ar/#publisher",
-        "name": "Sergio Landoni",
-        "url": "https://sergiolandoni.com.ar/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg"
-        }
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#webpage",
-        "url": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html",
-        "name": "Las cinco zonas vitivinícolas de Neuquén",
-        "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
-        "inLanguage": "es-AR",
-        "about": { "@id": "https://sergiolandoni.com.ar/#author" },
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "url": "https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg",
-          "width": 1600,
-          "height": 900
-        }
-      },
-      {
-        "@type": "BlogPosting",
-        "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#post",
-        "mainEntityOfPage": { "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#webpage" },
-        "headline": "Las cinco zonas vitivinícolas de Neuquén",
-        "description": "Una mirada desde el territorio para ordenar y contar las cinco zonas vitivinícolas de Neuquén: San Patricio del Chañar, Confluencia (Neuquén capital y Centenario), Senillosa y ribera del Limay, Comarca Petrolera y Norte Neuquino – Alto Neuquén.",
-        "inLanguage": "es-AR",
-        "datePublished": "2026-01-29",
-        "dateModified": "2026-02-06",
-        "author": { "@id": "https://sergiolandoni.com.ar/#author" },
-        "publisher": { "@id": "https://sergiolandoni.com.ar/#publisher" },
-        "image": [
-          {
-            "@type": "ImageObject",
-            "url": "https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg",
-            "width": 1600,
-            "height": 900
-          },
-          {
-            "@type": "ImageObject",
-            "url": "https://sergiolandoni.com.ar/assets/img/regiones-vitivinicolas-neuquen.jpg",
-            "width": 1200,
-            "height": 1200
-          }
-        ],
-        "keywords": [
-          "vino neuquino",
-          "zonas vitivinícolas",
-          "San Patricio del Chañar",
-          "Confluencia",
-          "Centenario",
-          "río Neuquén",
-          "Senillosa",
-          "río Limay",
-          "Cutral Co",
-          "Plaza Huincul",
-          "Chos Malal",
-          "Taquimilán",
-          "Buta Ranquil",
-          "vino Patagonia"
-        ],
-        "articleSection": "Vino · Territorio · Neuquén",
-        "timeRequired": "PT9M"
-      }
-    ]
-  }
-  </script>
+      "email": "mailto:contacto@sergiolandoni.com.ar",
+      "telephone": "+54 9 294 4668508",
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Neuquén" },
+        { "@type": "Country", "name": "AR" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#webpage",
+      "url": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html",
+      "name": "Las cinco zonas vitivinícolas de Neuquén",
+      "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
+      "inLanguage": "es-AR",
+      "about": { "@id": "https://sergiolandoni.com.ar/#author" },
+      "primaryImageOfPage": { "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#img-hero" }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#img-hero",
+      "url": "https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#img-map",
+      "url": "https://sergiolandoni.com.ar/assets/img/regiones-vitivinicolas-neuquen.jpg",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#blogposting",
+      "mainEntityOfPage": { "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#webpage" },
+      "isPartOf": { "@id": "https://sergiolandoni.com.ar/#blog" },
+      "headline": "Las cinco zonas vitivinícolas de Neuquén",
+      "description": "Una mirada desde el territorio para ordenar y contar las cinco zonas vitivinícolas de Neuquén: San Patricio del Chañar, Confluencia, Senillosa y ribera del Limay, Comarca Petrolera y Norte Neuquino – Alto Neuquén.",
+      "inLanguage": "es-AR",
+      "datePublished": "2026-01-29",
+      "dateModified": "2026-02-06",
+      "author": { "@id": "https://sergiolandoni.com.ar/#author" },
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
+      "image": [
+        { "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#img-hero" },
+        { "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#img-map" }
+      ],
+      "articleSection": "Vino · Territorio · Neuquén",
+      "timeRequired": "PT9M"
+    }
+  ]
+}
+</script>
 
   <style>
     :root {
@@ -323,8 +325,19 @@
     <article class="card">
       <div class="kicker">Neuquén · Vino · Territorio</div>
 
-      <h1>Las cinco zonas vitivinícolas de Neuquén</h1>
-      <p><strong>Por Sergio Landoni</strong>, <a href="https://sergiolandoni.com.ar/#sobre-mi" class="inline-link">Sommelier de Territorio</a></p>
+    <h1>Las cinco zonas vitivinícolas de Neuquén</h1>
+
+<p>
+  <strong>Por Sergio Landoni</strong>,
+  <a href="https://sergiolandoni.com.ar/#sobre-mi" class="inline-link">
+    Sommelier de Territorio
+  </a>
+</p>
+
+<p class="note">
+  Publicado: <time datetime="2026-01-29">29 de enero de 2026</time> ·
+  Actualizado: <time datetime="2026-02-06">6 de febrero de 2026</time>
+</p>
 
       <div class="hero-media" aria-label="Imagen del artículo">
         <img
