@@ -41,31 +41,55 @@
 
   <!-- Schema.org -->
   <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"BlogPosting",
-    "@id":"https://sergiolandoni.com.ar/sommelier-de-territorio.html#post",
-    "headline":"Sommelier de Territorio: cuando el vino se cuenta desde el lugar",
-    "description":"Qué es un Sommelier de Territorio y por qué el vino se cuenta mejor desde el lugar, la historia y las personas. Patagonia, Neuquén.",
-    "datePublished":"2026-01-23",
-    "dateModified":"2026-01-23",
-    "inLanguage":"es-AR",
-    "author":{"@type":"Person","name":"Sergio Landoni"},
-    "publisher":{"@type":"Person","name":"Sergio Landoni"},
-    "mainEntityOfPage":{"@type":"WebPage","@id":"https://sergiolandoni.com.ar/sommelier-de-territorio.html"},
-    "image":[
-      "https://sergiolandoni.com.ar/assets/img/sergio-sillon.jpeg"
-    ],
-    "keywords":[
-      "sommelier de territorio",
-      "vino patagónico",
-      "vino de Neuquén",
-      "storytelling del vino",
-      "Patagonia",
-      "San Martín de los Andes"
-    ]
-  }
-  </script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#webpage",
+      "url": "https://sergiolandoni.com.ar/sommelier-de-territorio.html",
+      "name": "Sommelier de Territorio: cuando el vino se cuenta desde el lugar",
+      "inLanguage": "es-AR",
+      "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
+      "primaryImageOfPage": { "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#img-hero" }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#img-hero",
+      "url": "https://sergiolandoni.com.ar/assets/img/sergio-sillon.jpeg",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#blogposting",
+      "mainEntityOfPage": { "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#webpage" },
+      "isPartOf": { "@id": "https://sergiolandoni.com.ar/blog.html#blog" },
+      "headline": "Sommelier de Territorio: cuando el vino se cuenta desde el lugar",
+      "description": "Qué es un Sommelier de Territorio y por qué el vino se cuenta mejor desde el lugar, la historia y las personas. Patagonia, Neuquén.",
+      "datePublished": "2026-01-23",
+      "dateModified": "2026-01-23",
+      "inLanguage": "es-AR",
+      "author": { "@id": "https://sergiolandoni.com.ar/#author" },
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
+      "image": [
+        { "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#img-hero" }
+      ],
+      "keywords": [
+        "sommelier de territorio",
+        "Sergio Landoni",
+        "vino patagónico",
+        "vino de Neuquén",
+        "storytelling del vino",
+        "Patagonia",
+        "San Martín de los Andes"
+      ],
+      "articleSection": "Vino · Territorio · Patagonia"
+    }
+  ]
+}
+</script>
+
 
   <style>
     :root{
@@ -187,7 +211,7 @@
         <nav class="menu" aria-label="Menú principal">
           <a href="https://sergiolandoni.com.ar/#inicio">Inicio</a>
           <a href="https://sergiolandoni.com.ar/#sobre-mi">Sobre mí</a>
-          <a href="https://sergiolandoni.com.ar/#blog">Blog</a>
+          <a href="https://sergiolandoni.com.ar/blog.html">Blog</a>
           <a href="https://sergiolandoni.com.ar/#contacto">Contacto</a>
         </nav>
       </div>
@@ -280,7 +304,7 @@
 
       <p class="note">
         Volver al inicio:
-        <a class="inline-link" href="https://sergiolandoni.com.ar/#blog">ir al Blog</a>
+        <a class="inline-link" href="https://sergiolandoni.com.ar/blog.html">ir al Blog</a>
       </p>
     </article>
   </main>
