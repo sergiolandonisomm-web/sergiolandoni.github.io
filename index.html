@@ -60,7 +60,7 @@
       "@id": "https://sergiolandoni.com.ar/#webpage",
       "url": "https://sergiolandoni.com.ar/",
       "name": "Sergio Landoni · Sommelier de Territorio en Patagonia",
-      "description": "Sergio Landoni, Sommelier de Territorio. Especialista en vino patagónico, consultoría para bodegas y experiencias de cata en San Martín de los Andes. Co-creador de Vino a la Montaña.",
+      "description": "Sergio Landoni, Sommelier de Territorio. Especialista en vino patagónico y vino neuquino. Consultoría para bodegas y experiencias de cata en San Martín de los Andes. Co-creador de Vino a la Montaña.",
       "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
       "about": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
       "mainEntity": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
@@ -85,16 +85,42 @@
       "@type": "Person",
       "@id": "https://sergiolandoni.com.ar/#sergio-landoni",
       "name": "Sergio Landoni",
-      "alternateName": "Sergio Landoni Somm",
+      "alternateName": [
+        "Sergio Landoni Somm",
+        "Sergio Landoni · Sommelier de Territorio"
+      ],
       "jobTitle": "Sommelier de Territorio",
-      "description": "Sommelier de territorio con base en San Martín de los Andes (Neuquén, Patagonia Argentina). Desarrollo, comunicación y posicionamiento para bodegas patagónicas. Presentaciones y degustaciones de vinos de Neuquén.",
+      "description": "Sommelier de territorio con base en San Martín de los Andes (Neuquén, Patagonia Argentina). Especialista en vino neuquino y comunicación del vino patagónico. Desarrollo, comunicación y posicionamiento para bodegas. Presentaciones, degustaciones y proyectos territoriales.",
+      "disambiguatingDescription": "Comunicador del vino desde el territorio, con foco en la vitivinicultura de Neuquén y la Patagonia.",
+      "hasOccupation": [
+        {
+          "@type": "Occupation",
+          "name": "Sommelier",
+          "occupationLocation": {
+            "@type": "City",
+            "name": "San Martín de los Andes"
+          }
+        },
+        {
+          "@type": "Occupation",
+          "name": "Consultor en comunicación y posicionamiento de bodegas",
+          "occupationLocation": {
+            "@type": "AdministrativeArea",
+            "name": "Neuquén"
+          }
+        }
+      ],
       "knowsAbout": [
+        "Vino neuquino",
+        "Vitivinicultura de Neuquén",
+        "Regiones vitivinícolas de Neuquén",
         "Vino patagónico",
-        "Vino de Neuquén",
         "Territorio vitivinícola",
         "Comunicación del vino",
         "Enoturismo",
         "Degustaciones de vino",
+        "Gastronomía regional",
+        "Turismo gastronómico",
         "Cultura del vino"
       ],
       "email": "mailto:contacto@sergiolandoni.com.ar",
@@ -105,14 +131,24 @@
         "https://www.instagram.com/sergiolandoni.somm/",
         "https://www.linkedin.com/in/sergio-landoni-sommelier/"
       ],
-      "creator": { "@id": "https://www.vinoalamontana.com.ar/#eventseries" },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "San Martín de los Andes",
         "addressRegion": "Neuquén",
         "addressCountry": "AR"
       },
-      "worksFor": { "@id": "https://sergiolandoni.com.ar/#business" }
+      "worksFor": { "@id": "https://sergiolandoni.com.ar/#business" },
+      "memberOf": [
+        { "@id": "https://www.vinoalamontana.com.ar/#eventseries" }
+      ],
+      "subjectOf": [
+        {
+          "@type": "WebPage",
+          "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#webpage",
+          "url": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html",
+          "name": "Las cinco zonas vitivinícolas de Neuquén"
+        }
+      ]
     },
     {
       "@type": "ProfessionalService",
@@ -142,14 +178,14 @@
       ]
     },
     {
-  "@type": "Blog",
-  "@id": "https://sergiolandoni.com.ar/blog.html#blog",
-  "name": "Blog · Sergio Landoni",
-  "url": "https://sergiolandoni.com.ar/blog.html",
-  "inLanguage": "es-AR",
-  "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
-  "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
-},
+      "@type": "Blog",
+      "@id": "https://sergiolandoni.com.ar/blog.html#blog",
+      "name": "Blog · Sergio Landoni",
+      "url": "https://sergiolandoni.com.ar/blog.html",
+      "inLanguage": "es-AR",
+      "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
+    },
     {
       "@type": "EventSeries",
       "@id": "https://www.vinoalamontana.com.ar/#eventseries",
@@ -157,6 +193,7 @@
       "url": "https://www.vinoalamontana.com.ar/",
       "inLanguage": "es-AR",
       "eventStatus": "https://schema.org/EventScheduled",
+      "organizer": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
       "location": {
         "@type": "City",
         "name": "San Martín de los Andes",
@@ -166,8 +203,7 @@
           "addressRegion": "Neuquén",
           "addressCountry": "AR"
         }
-      },
-      "organizer": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" }
+      }
     }
   ]
 }
