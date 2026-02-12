@@ -15,9 +15,10 @@
   <link rel="canonical" href="https://sergiolandoni.com.ar/" />
   <link rel="alternate" href="https://sergiolandoni.com.ar/" hreflang="es-AR" />
   <link rel="alternate" href="https://sergiolandoni.com.ar/" hreflang="x-default" />
-
+  <link rel="alternate" href="https://sergiolandoni.com.ar/" hreflang="en" />
+  
     <!-- Performance: preload hero (tu archivo real está en raíz: hero.jpg) -->
-  <link rel="preload" as="image" href="hero.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="hero.jpg" />
 
   <!-- Icons (estos sí suelen vivir en assets/img) -->
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
@@ -138,9 +139,10 @@
         "addressCountry": "AR"
       },
       "worksFor": { "@id": "https://sergiolandoni.com.ar/#business" },
-      "memberOf": [
-        { "@id": "https://www.vinoalamontana.com.ar/#eventseries" }
-      ],
+     "affiliation": [
+  { "@id": "https://www.vinoalamontana.com.ar/#eventseries" }
+],
+
       "subjectOf": [
         {
           "@type": "WebPage",
@@ -178,14 +180,14 @@
       ]
     },
     {
-      "@type": "Blog",
-      "@id": "https://sergiolandoni.com.ar/blog.html#blog",
-      "name": "Blog · Sergio Landoni",
-      "url": "https://sergiolandoni.com.ar/blog.html",
-      "inLanguage": "es-AR",
-      "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
-      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
-    },
+   "@type": "Blog",
+  "@id": "https://sergiolandoni.com.ar/#blog",
+  "name": "Blog · Sergio Landoni",
+  "url": "https://sergiolandoni.com.ar/#blog",
+  "inLanguage": "es-AR",
+  "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
+  "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
+},
     {
       "@type": "EventSeries",
       "@id": "https://www.vinoalamontana.com.ar/#eventseries",
@@ -818,9 +820,7 @@
           </article>
 
         </div><!-- /post-list -->
-        <p style="display:none">
-  Actualidad del vino neuquino, bodegas de Neuquén, exportación de vinos patagónicos y presencia internacional.
-</p>
+ 
       </div><!-- /card (Blog) -->
     </section><!-- /blog -->
 
