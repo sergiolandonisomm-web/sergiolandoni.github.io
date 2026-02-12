@@ -3,83 +3,385 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
 
-  <title>Blog · Sergio Landoni | Vino, territorio y Patagonia</title>
-  <meta name="description" content="Blog de Sergio Landoni, Sommelier de Territorio. Artículos sobre vino neuquino y patagónico, regiones vitivinícolas, bodegas, territorio, gastronomía y cultura." />
+  <title>Blog · Sergio Landoni | Vino neuquino, territorio y Patagonia</title>
+  <meta name="description" content="Blog de Sergio Landoni, Sommelier de Territorio. Artículos sobre vino neuquino y patagónico, regiones vitivinícolas, bodegas, territorio, gastronomía, turismo y cultura, escritos desde San Martín de los Andes." />
+  <meta name="author" content="Sergio Landoni" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#0f766e" />
 
   <link rel="canonical" href="https://sergiolandoni.com.ar/blog.html" />
+  <link rel="alternate" href="https://sergiolandoni.com.ar/blog.html" hreflang="es-AR" />
+  <link rel="alternate" href="https://sergiolandoni.com.ar/blog.html" hreflang="x-default" />
 
-  <meta name="robots" content="index,follow" />
+  <!-- Icons -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
 
-  <!-- JSON-LD Blog -->
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sergio Landoni · Sommelier de Territorio" />
+  <meta property="og:title" content="Blog · Sergio Landoni | Vino neuquino, territorio y Patagonia" />
+  <meta property="og:description" content="Artículos sobre vino neuquino y patagónico, regiones vitivinícolas, bodegas, territorio, gastronomía, turismo y cultura." />
+  <meta property="og:url" content="https://sergiolandoni.com.ar/blog.html" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:image" content="https://sergiolandoni.com.ar/hero.jpg" />
+  <meta property="og:image:alt" content="Sergio Landoni · Sommelier de Territorio en Patagonia" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blog · Sergio Landoni | Vino neuquino, territorio y Patagonia" />
+  <meta name="twitter:description" content="Artículos sobre vino neuquino y patagónico, territorio, gastronomía, turismo y cultura." />
+  <meta name="twitter:image" content="https://sergiolandoni.com.ar/hero.jpg" />
+
+  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Blog",
-    "@id": "https://sergiolandoni.com.ar/blog.html#blog",
-    "name": "Blog · Sergio Landoni",
-    "url": "https://sergiolandoni.com.ar/blog.html",
-    "inLanguage": "es-AR",
-    "publisher": {
-      "@id": "https://sergiolandoni.com.ar/#business"
-    }
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://sergiolandoni.com.ar/blog.html#webpage",
+        "url": "https://sergiolandoni.com.ar/blog.html",
+        "name": "Blog · Sergio Landoni | Vino neuquino, territorio y Patagonia",
+        "description": "Blog de Sergio Landoni, Sommelier de Territorio. Artículos sobre vino neuquino y patagónico, regiones vitivinícolas, bodegas, territorio, gastronomía, turismo y cultura, escritos desde San Martín de los Andes.",
+        "inLanguage": "es-AR",
+        "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
+        "about": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" }
+      },
+      {
+        "@type": "Blog",
+        "@id": "https://sergiolandoni.com.ar/blog.html#blog",
+        "name": "Blog · Sergio Landoni",
+        "url": "https://sergiolandoni.com.ar/blog.html",
+        "inLanguage": "es-AR",
+        "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
+        "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
+        "mainEntityOfPage": { "@id": "https://sergiolandoni.com.ar/blog.html#webpage" }
+      }
+    ]
   }
   </script>
+
+  <style>
+    :root{
+      --bg:#fafafa;
+      --card:#ffffff;
+      --text:#111827;
+      --muted:#374151;
+      --line:#e5e7eb;
+      --accent:#0f766e;
+      --accent-hover:#134e4a;
+      --radius:14px;
+      --shadow: 0 10px 30px rgba(0,0,0,.06);
+      --max: 980px;
+      --transition: all .25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+    a, .btn, .card{transition:var(--transition)}
+
+    header{
+      position:sticky; top:0; z-index:50;
+      background:rgba(250,250,250,.92);
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:16px;
+    }
+    .brand{display:flex; align-items:center; gap:12px; min-width:220px}
+    .brand-logo{
+      width:40px; height:40px; border-radius:10px;
+      border:1px solid var(--line);
+      background:#fff; object-fit:contain; display:block;
+    }
+    .brand-text{display:flex; flex-direction:column; gap:2px}
+    .brand-text strong{font-size:16px; letter-spacing:.2px}
+    .brand-text span{font-size:13px; color:var(--muted)}
+    .menu{display:flex; gap:14px; flex-wrap:wrap; align-items:center; justify-content:flex-end}
+    .menu a{
+      font-size:14px; color:var(--muted);
+      padding:8px 10px; border-radius:10px;
+      border:1px solid transparent;
+    }
+    .menu a:hover{
+      background:#fff;
+      border-color:var(--line);
+      color:var(--accent);
+    }
+
+    main{padding:18px 0 46px}
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:20px;
+    }
+    .card:hover{
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.10);
+    }
+    .kicker{
+      display:inline-flex; gap:8px; align-items:center;
+      font-size:13px; color:var(--accent);
+      background:rgba(15,118,110,.08);
+      border:1px solid rgba(15,118,110,.12);
+      padding:6px 10px; border-radius:999px;
+      margin-bottom:12px;
+    }
+    h1{margin:0 0 10px; font-size:30px; line-height:1.2}
+    h2{margin:0 0 10px; font-size:20px; line-height:1.25}
+    h3{margin:0 0 8px; font-size:18px}
+    p{margin:10px 0; color:var(--muted)}
+
+    .list{display:grid; gap:12px; margin-top:14px}
+    article.post{
+      padding:14px;
+      border:1px solid var(--line);
+      border-radius:12px;
+      background:#fff;
+    }
+    article.post:hover{
+      border-color:#cbd5e1;
+    }
+    .meta{font-size:13px; color:var(--muted); margin-top:6px}
+    .tags{margin-bottom:10px}
+    .tag{
+      display:inline-block;
+      font-size:12px;
+      color:var(--accent);
+      background:rgba(15,118,110,.08);
+      border:1px solid rgba(15,118,110,.12);
+      padding:4px 8px;
+      border-radius:999px;
+      margin-right:8px;
+      margin-bottom:6px;
+    }
+
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px;
+      border-radius:12px;
+      font-size:14px;
+      border:1px solid var(--line);
+      background:#fff;
+      color:var(--text);
+      cursor:pointer;
+      line-height:1.2;
+    }
+    .btn:hover{border-color:#cbd5e1}
+    .btn.primary{
+      background:var(--accent);
+      border-color:var(--accent);
+      color:#fff;
+      font-weight:600;
+      letter-spacing:.3px;
+    }
+    .btn.primary:hover{
+      background:var(--accent-hover);
+      border-color:var(--accent-hover);
+      transform: scale(1.02);
+    }
+    footer{
+      border-top:1px solid var(--line);
+      padding:22px 0 28px;
+      color:var(--muted);
+      font-size:13px;
+      text-align:center;
+    }
+  </style>
 </head>
 
 <body>
-  <main style="max-width:960px;margin:40px auto;padding:0 16px;">
-
-    <h1>Blog</h1>
-
-    <p>
-      Artículos y reflexiones sobre vino patagónico, regiones vitivinícolas,
-      territorio, gastronomía y cultura, escritos desde San Martín de los Andes.
-    </p>
-
-    <hr />
-
-    <h2>Artículos</h2>
-
-    <ul>
-      <li>
-        <a href="zonas-vitivinicolas-neuquen.html">
-          Las cinco zonas vitivinícolas de Neuquén
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Volver al inicio">
+          <img class="brand-logo" src="logo.jpg" alt="Logo Sergio Landoni" width="40" height="40" />
+          <div class="brand-text">
+            <strong>Sergio Landoni</strong>
+            <span>Sommelier de Territorio · Patagonia Argentina</span>
+          </div>
         </a>
-        <br />
-        <small>29 de enero de 2026</small>
-      </li>
 
-      <li>
-        <a href="neuquen-wine-paris-2026.html">
-          Neuquén en Wine Paris 2026: cinco bodegas que llevan la Patagonia al mundo
-        </a>
-        <br />
-        <small>4 de febrero de 2026</small>
-      </li>
+        <nav class="menu" aria-label="Menú principal">
+          <a href="index.html#inicio">Inicio</a>
+          <a href="index.html#sobre-mi">Sobre mí</a>
+          <a href="blog.html" aria-current="page">Blog</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-      <li>
-        <a href="sommelier-de-territorio.html">
-          Sommelier de Territorio: cuando el vino se cuenta desde el lugar
-        </a>
-        <br />
-        <small>23 de enero de 2026</small>
-      </li>
+  <main class="wrap">
+    <section class="card" aria-label="Encabezado del blog">
+      <div class="kicker">Vino · Territorio · Patagonia</div>
+      <h1>Blog</h1>
+      <p>
+        Artículos y reflexiones sobre <strong>vino neuquino</strong> y <strong>vino patagónico</strong>, regiones vitivinícolas,
+        territorio, gastronomía, turismo y cultura, escritos desde <strong>San Martín de los Andes</strong>.
+      </p>
+      <p style="margin-top:14px">
+        <a class="btn" href="index.html">← Volver al inicio</a>
+      </p>
+    </section>
 
-      <li>
-        <a href="wine-bar-michel-rolland-bariloche.html">
-          El Wine Bar de Michel Rolland en Bariloche
-        </a>
-        <br />
-        <small>3 de febrero de 2026</small>
-      </li>
-    </ul>
+    <section class="card" style="margin-top:18px" aria-label="Listado de artículos">
+      <h2>Artículos</h2>
 
-    <p style="margin-top:32px;">
-      <a href="index.html">← Volver al inicio</a>
-    </p>
+      <div class="list">
 
+        <!-- AÑADIDO: Página estratégica -->
+        <article class="post" id="referentes-vino-neuquino">
+          <div class="tags">
+            <span class="tag">Neuquén</span>
+            <span class="tag">Vino neuquino</span>
+            <span class="tag">Referentes</span>
+          </div>
+
+          <h3>
+            <a href="referentes-vino-neuquino.html">
+              Referentes del vino neuquino: productores, enólogos y comunicadores clave
+            </a>
+          </h3>
+
+          <div class="meta">
+            <time datetime="2026-02-12">12 de febrero de 2026</time>
+          </div>
+
+          <p>
+            Un mapa actual del ecosistema del vino en Neuquén: protagonistas, estilos y construcción de identidad territorial.
+          </p>
+
+          <p>
+            <a class="btn primary" href="referentes-vino-neuquino.html">Leer</a>
+          </p>
+        </article>
+
+        <article class="post" id="zonas-vitivinicolas-neuquen">
+          <div class="tags">
+            <span class="tag">Neuquén</span>
+            <span class="tag">Territorio</span>
+            <span class="tag">Regiones</span>
+          </div>
+
+          <h3>
+            <a href="zonas-vitivinicolas-neuquen.html">Las cinco zonas vitivinícolas de Neuquén</a>
+          </h3>
+
+          <div class="meta">
+            <time datetime="2026-01-29">29 de enero de 2026</time>
+          </div>
+
+          <p>
+            Neuquén no es una sola región vitivinícola: es un mosaico de zonas, climas y expresiones. Una guía clara para entender el territorio.
+          </p>
+
+          <p>
+            <a class="btn primary" href="zonas-vitivinicolas-neuquen.html">Leer</a>
+          </p>
+        </article>
+
+        <article class="post" id="neuquen-wine-paris-2026">
+          <div class="tags">
+            <span class="tag">Neuquén</span>
+            <span class="tag">Patagonia</span>
+            <span class="tag">Exportación</span>
+          </div>
+
+          <h3>
+            <a href="neuquen-wine-paris-2026.html">Neuquén en Wine Paris 2026: cinco bodegas que llevan la Patagonia al mundo</a>
+          </h3>
+
+          <div class="meta">
+            <time datetime="2026-02-04">4 de febrero de 2026</time>
+          </div>
+
+          <p>
+            Presencia provincial, bodegas protagonistas y la Patagonia como palabra que abre puertas en el trade global.
+          </p>
+
+          <p>
+            <a class="btn primary" href="neuquen-wine-paris-2026.html">Leer</a>
+          </p>
+        </article>
+
+        <article class="post" id="wine-bar-michel-rolland-bariloche">
+          <div class="tags">
+            <span class="tag">Bariloche</span>
+            <span class="tag">Patagonia</span>
+            <span class="tag">Wine Bar</span>
+          </div>
+
+          <h3>
+            <a href="wine-bar-michel-rolland-bariloche.html">El Wine Bar de Michel Rolland en Bariloche: un lugar para que el vino suceda</a>
+          </h3>
+
+          <div class="meta">
+            <time datetime="2026-02-03">3 de febrero de 2026</time>
+          </div>
+
+          <p>
+            Un espacio pensado para el vino, con el Nahuel Huapi como testigo: servicio, paisaje y puentes con la Patagonia vitivinícola.
+          </p>
+
+          <p>
+            <a class="btn primary" href="wine-bar-michel-rolland-bariloche.html">Leer</a>
+          </p>
+        </article>
+
+        <article class="post" id="sommelier-de-territorio">
+          <div class="tags">
+            <span class="tag">Sommelier de territorio</span>
+            <span class="tag">Neuquén</span>
+            <span class="tag">Patagonia</span>
+          </div>
+
+          <h3>
+            <a href="sommelier-de-territorio.html">Sommelier de Territorio: cuando el vino se cuenta desde el lugar</a>
+          </h3>
+
+          <div class="meta">
+            <time datetime="2026-01-23">23 de enero de 2026</time>
+          </div>
+
+          <p>
+            Una mirada situada: contar el vino desde territorio, historia y personas, más allá de la técnica.
+          </p>
+
+          <p>
+            <a class="btn primary" href="sommelier-de-territorio.html">Leer</a>
+          </p>
+        </article>
+
+      </div><!-- /.list -->
+
+      <p style="margin-top:18px">
+        <a class="btn" href="index.html">← Volver al inicio</a>
+      </p>
+    </section>
   </main>
+
+  <footer>
+    © 2026 Sergio Landoni · Sommelier de Territorio · Patagonia Argentina
+  </footer>
 </body>
 </html>
-
