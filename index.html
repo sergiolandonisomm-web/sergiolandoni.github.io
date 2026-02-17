@@ -18,7 +18,7 @@
 
   
     <!-- Performance: preload hero (tu archivo real está en raíz: hero.jpg) -->
-  <link rel="preload" as="image" href="hero.jpg" />
+  <link rel="preload" as="image" href="/hero.jpg" fetchpriority="high" />
 
   <!-- Icons (estos sí suelen vivir en assets/img) -->
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
@@ -385,7 +385,7 @@
       <div class="nav">
         <a class="brand" href="#inicio" aria-label="Ir a inicio">
           <!-- tu logo real está en raíz: logo.jpg -->
-          <img class="brand-logo" src="logo.jpg" alt="Logo Sergio Landoni" width="40" height="40" />
+          <img class="brand-logo" src="/logo.jpg" alt="Logo Sergio Landoni" width="40" height="40" />
           <div class="brand-text">
             <strong>Sergio Landoni</strong>
             <span>Sommelier de Territorio · Patagonia Argentina</span>
@@ -408,7 +408,7 @@
       <div class="hero-media" aria-label="Imagen Patagonia">
         <!-- hero real en raíz: hero.jpg -->
         <img
-          src="hero.jpg"
+           src="/hero.jpg"
           alt="Sergio Landoni · Sommelier de Territorio: vino, territorio y cultura en Patagonia"
           width="1600"
           height="900"
@@ -439,12 +439,19 @@
             y <strong>puente</strong> entre productores, cocineros, viajeros y comunidades.
           </p>
 
-  <div class="cta">
+<div class="cta">
+  <a class="btn"
+     href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html"
+     target="_blank"
+     rel="noopener noreferrer">
+    Nuevo post: Cómo se define el vino patagónico
+  </a>
+
   <a class="btn primary"
      href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html"
      target="_blank"
      rel="noopener noreferrer">
-    Acceder al post destacado: Regiones del vino en Neuquén
+    Regiones del vino en Neuquén
   </a>
 
   <a class="btn"
@@ -462,7 +469,6 @@
     Qué es Sommelier de Territorio
   </a>
 
-
   <a class="btn" href="#blog">Ir al blog</a>
   <a class="btn" href="#contacto">Contacto</a>
 
@@ -473,6 +479,7 @@
     LinkedIn
   </a>
 </div><!-- /.cta -->
+
       </div><!-- /CARD 1 -->
 
         <!-- CARD 2 -->
@@ -544,7 +551,7 @@
           <!-- retrato real en raíz: retrato.jpg -->
           <img
             class="portrait"
-            src="retrato.jpg"
+             src="/retrato.jpg"
             alt="Sergio Landoni, Sommelier de Territorio"
             width="1200"
             height="1200"
@@ -574,7 +581,37 @@
 </p>
 
         <div class="post-list" aria-label="Listado de artículos">
-<!-- POST NUEVO: REFERENTES DEL VINO NEUQUINO -->
+<!-- POST NUEVO: CÓMO SE DEFINE EL VINO PATAGÓNICO -->
+<article class="post" id="vino-patagonico-regiones-y-paisajes">
+  <div>
+    <span class="tag">Patagonia</span>
+    <span class="tag">Regiones</span>
+    <span class="tag">Territorio</span>
+    <span class="tag">Vino patagónico</span>
+  </div>
+
+  <h3 style="margin-top:10px">
+    <a href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html">
+      Cómo se define el vino patagónico: regiones y paisajes de la Patagonia vitivinícola
+    </a>
+  </h3>
+
+  <small>Publicado: <time datetime="2026-02-17">17 de febrero de 2026</time></small>
+
+  <div class="post-body">
+    <p>
+      Latitud, viento y frío. Un recorrido claro por las regiones del vino patagónico, sus paisajes y las historias que hoy el mundo busca.
+    </p>
+
+    <p>
+      <a class="btn" href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html">
+        Leer el artículo completo
+      </a>
+    </p>
+  </div>
+</article>
+
+          <!-- POST NUEVO: REFERENTES DEL VINO NEUQUINO -->
 <article class="post" id="referentes-vino-neuquen">
   <div>
     <span class="tag">Neuquén</span>
@@ -763,7 +800,7 @@
             <small>Publicado: 13 de enero de 2026</small>
 
             <!-- tu cordero real está en raíz: cordero.jpg -->
-            <img class="portrait" src="cordero.jpg" alt="Plato regional y vino del mismo territorio en la gastronomía patagónica" width="1200" height="900" loading="lazy" decoding="async" />
+           <img class="portrait" src="/cordero.jpg" alt="Plato regional y vino del mismo territorio en la gastronomía patagónica" width="1200" height="900" loading="lazy" decoding="async" />
 
             <div class="post-body">
               <p>Si el plato es regional, el vino también debería serlo. No como consigna: como coherencia cultural.</p>
