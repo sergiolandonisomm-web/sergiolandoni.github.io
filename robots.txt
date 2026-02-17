@@ -1,4 +1,20 @@
 User-agent: *
 Allow: /
 
+# Evita crawleo de anclas y parámetros vacíos
+Disallow: /*?*
+Disallow: /*#*
+
+# Archivos internos (si aparecen en el futuro)
+Disallow: /assets/tmp/
+Disallow: /private/
+
+# Mejora lectura del sitio
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
+
+# Sitemap
 Sitemap: https://sergiolandoni.com.ar/sitemap.xml
+
+# Host preferido
+Host: sergiolandoni.com.ar
+
