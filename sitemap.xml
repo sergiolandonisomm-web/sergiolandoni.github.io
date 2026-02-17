@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Home -->
   <url>
     <loc>https://sergiolandoni.com.ar/</loc>
-    <lastmod>2026-02-10</lastmod>
+    <lastmod>2026-02-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- Blog index -->
   <url>
     <loc>https://sergiolandoni.com.ar/blog.html</loc>
-    <lastmod>2026-02-10</lastmod>
+    <lastmod>2026-02-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -39,5 +39,11 @@
     <priority>0.8</priority>
   </url>
 
-</urlset>
+  <url>
+    <loc>https://sergiolandoni.com.ar/referentes-vino-neuquen.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
+</urlset>
