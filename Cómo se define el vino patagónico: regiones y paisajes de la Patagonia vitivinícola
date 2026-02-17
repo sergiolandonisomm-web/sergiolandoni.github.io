@@ -1,1 +1,523 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
 
+  <title>Cómo se define el vino patagónico: regiones y paisajes de la Patagonia vitivinícola | Sergio Landoni</title>
+  <meta name="description" content="Descubre cómo la latitud y el viento definen el vino patagónico. Un viaje por los tesoros rescatados de Río Negro, la audacia de Neuquén y el hielo de Chubut." />
+  <meta name="author" content="Sergio Landoni" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#0f766e" />
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html" />
+  <link rel="alternate" href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html" hreflang="es-AR" />
+  <link rel="alternate" href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html" hreflang="x-default" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+
+  <!-- Preload hero (performance / LCP) -->
+  <link rel="preload" as="image" href="assets/img/patagonia-el-hoyo-vinedo-montana.webp" fetchpriority="high" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cómo se define el vino patagónico: regiones y paisajes de la Patagonia vitivinícola" />
+  <meta property="og:description" content="Descubre cómo la latitud y el viento definen el vino patagónico. Un viaje por los tesoros rescatados de Río Negro, la audacia de Neuquén y el hielo de Chubut." />
+  <meta property="og:url" content="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="Sergio Landoni · Sommelier de Territorio" />
+  <meta property="og:image" content="https://sergiolandoni.com.ar/assets/img/patagonia-el-hoyo-vinedo-montana.webp" />
+  <meta property="og:image:alt" content="Viñedo en El Hoyo, Chubut, con montaña patagónica de fondo" />
+  <meta property="og:image:type" content="image/webp" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cómo se define el vino patagónico: regiones y paisajes de la Patagonia vitivinícola" />
+  <meta name="twitter:description" content="Descubre cómo la latitud y el viento definen el vino patagónico. Un viaje por Río Negro, Neuquén y Chubut." />
+  <meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/patagonia-el-hoyo-vinedo-montana.webp" />
+  <meta name="twitter:image:alt" content="Viñedo en El Hoyo, Chubut, con montaña patagónica de fondo" />
+
+  <!-- Schema.org (pro / completo) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://sergiolandoni.com.ar/#website",
+      "url": "https://sergiolandoni.com.ar/",
+      "name": "Sergio Landoni · Sommelier de Territorio",
+      "inLanguage": "es-AR",
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://sergiolandoni.com.ar/blog.html#blog",
+      "name": "Blog · Sergio Landoni",
+      "url": "https://sergiolandoni.com.ar/blog.html",
+      "inLanguage": "es-AR",
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sergiolandoni.com.ar/#author",
+      "name": "Sergio Landoni",
+      "url": "https://sergiolandoni.com.ar/",
+      "jobTitle": "Sommelier de Territorio",
+      "image": { "@type": "ImageObject", "url": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG" },
+      "sameAs": [
+        "https://www.linkedin.com/in/sergio-landoni-sommelier/",
+        "https://www.instagram.com/sergiolandoni.somm/"
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://sergiolandoni.com.ar/#business",
+      "name": "Sergio Landoni · Sommelier de Territorio",
+      "url": "https://sergiolandoni.com.ar/",
+      "logo": { "@type": "ImageObject", "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg" },
+      "image": { "@type": "ImageObject", "url": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG" },
+      "email": "mailto:contacto@sergiolandoni.com.ar",
+      "telephone": "+54 9 294 4668508",
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Neuquén" },
+        { "@type": "Country", "name": "AR" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html#webpage",
+      "url": "https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html",
+      "name": "Cómo se define el vino patagónico: regiones y paisajes de la Patagonia vitivinícola",
+      "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
+      "inLanguage": "es-AR",
+      "about": { "@id": "https://sergiolandoni.com.ar/#author" },
+      "primaryImageOfPage": { "@id": "https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html#img-hero" }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html#img-hero",
+      "url": "https://sergiolandoni.com.ar/assets/img/patagonia-el-hoyo-vinedo-montana.webp",
+      "width": 1600,
+      "height": 900,
+      "inLanguage": "es-AR"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html#blogposting",
+      "mainEntityOfPage": { "@id": "https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html#webpage" },
+      "isPartOf": { "@id": "https://sergiolandoni.com.ar/blog.html#blog" },
+      "headline": "Cómo se define el vino patagónico: regiones y paisajes de la Patagonia vitivinícola",
+      "description": "Descubre cómo la latitud y el viento definen el vino patagónico. Un viaje por los tesoros rescatados de Río Negro, la audacia de Neuquén y el hielo de Chubut.",
+      "inLanguage": "es-AR",
+      "datePublished": "2026-02-17",
+      "dateModified": "2026-02-17",
+      "author": { "@id": "https://sergiolandoni.com.ar/#author" },
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
+      "image": [ { "@id": "https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html#img-hero" } ],
+      "articleSection": "Vino, Patagonia, Territorio",
+      "timeRequired": "PT8M"
+    }
+  ]
+}
+</script>
+
+  <style>
+    :root {
+      --max: 1060px;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      --bg: #fafafa;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #374151;
+      --line: #e5e7eb;
+      --accent: #0f766e; /* excelente contraste sobre blanco */
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease, opacity 0.2s ease;
+    }
+    a:hover { color: var(--accent); }
+    .inline-link { text-decoration: underline; text-underline-offset: 3px; }
+    .inline-link:hover { opacity: 0.85; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 18px; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(250, 250, 250, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 16px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 220px;
+    }
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: #fff;
+      object-fit: contain;
+      display: block;
+    }
+    .brand-text strong { font-size: 16px; }
+    .brand-text span { font-size: 13px; color: var(--muted); }
+
+    .menu {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    main { padding: 22px 0 44px; }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card:hover { transform: translateY(-2px); }
+
+    .kicker {
+      font-size: 13px;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    h1 {
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin: 0 0 10px;
+      font-size: clamp(1.75rem, 3.2vw, 2.4rem);
+    }
+    h2 { margin: 22px 0 10px; font-size: 1.35rem; }
+    h3 { margin: 16px 0 8px; font-size: 1.1rem; }
+
+    /* Evita que el header sticky tape las anclas */
+    h2, h3 { scroll-margin-top: 90px; }
+
+    p { margin: 0 0 14px; }
+
+    .note { font-size: 13px; color: var(--muted); }
+    .hr { height: 1px; background: var(--line); margin: 18px 0; }
+
+    .hero-media {
+      margin: 14px 0 16px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+    .hero-media img { width: 100%; height: auto; display: block; }
+
+    nav.toc {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 16px 0;
+      background: #fff;
+    }
+    nav.toc h2 { margin: 0 0 10px; font-size: 1.05rem; }
+    nav.toc ul { margin: 0; padding-left: 18px; color: var(--muted); }
+    nav.toc li { margin: 6px 0; }
+
+    .callout {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 14px 0;
+      background: #fff;
+    }
+    .callout strong { display: inline-block; margin-bottom: 6px; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 22px 0 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="https://sergiolandoni.com.ar/#inicio" aria-label="Ir al inicio">
+          <img class="brand-logo" src="assets/img/logo.jpg" alt="Logo Sergio Landoni" width="40" height="40" decoding="async" />
+          <div class="brand-text">
+            <strong>Sergio Landoni</strong>
+            <span>Sommelier de Territorio · Patagonia Argentina</span>
+          </div>
+        </a>
+
+        <nav class="menu" aria-label="Menú principal">
+          <a href="https://sergiolandoni.com.ar/#inicio">Inicio</a>
+          <a href="https://sergiolandoni.com.ar/#sobre-mi">Sobre mí</a>
+          <a href="https://sergiolandoni.com.ar/#blog">Blog</a>
+          <a href="https://sergiolandoni.com.ar/#contacto">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="card">
+      <div class="kicker">Patagonia · Vino patagónico · Territorio</div>
+
+      <h1>Cómo se define el vino patagónico: regiones y paisajes de la Patagonia vitivinícola</h1>
+
+      <p>
+        <strong>Por Sergio Landoni</strong>,
+        <a href="https://sergiolandoni.com.ar/#sobre-mi" class="inline-link">Sommelier de Territorio</a>
+      </p>
+
+      <p class="note">
+        Publicado: <time datetime="2026-02-17">17 de febrero de 2026</time> ·
+        Actualizado: <time datetime="2026-02-17">17 de febrero de 2026</time>
+      </p>
+
+      <div class="hero-media" aria-label="Imagen del artículo">
+        <img
+          src="assets/img/patagonia-el-hoyo-vinedo-montana.webp"
+          alt="Viñedo en El Hoyo, Chubut, con montaña patagónica de fondo"
+          width="1600"
+          height="900"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+
+      <p class="note">
+        Patagonia vitivinícola, cordillera y viñedos: el paisaje no decora, participa.
+      </p>
+
+      <p>
+        Durante mucho tiempo el vino argentino se explicó desde el calor. Madurez plena, concentración, potencia.
+        Era la forma lógica de entender un país soleado.
+      </p>
+
+      <p>
+        Pero el mundo cambió. Hoy se buscan vinos más bebibles, más frescos, más precisos.
+        Vinos que acompañen y no saturen. En ese cambio de mirada la Patagonia dejó de ser una promesa
+        para convertirse en una respuesta presente. No porque haya cambiado, sino porque el gusto internacional
+        llegó a un lugar donde el equilibrio siempre fue natural.
+      </p>
+
+      <div class="callout" aria-label="Puente editorial">
+        <strong>En pocas palabras</strong>
+        <p class="note" style="margin: 0;">
+          La Patagonia se define por latitud y viento. Maduración lenta, acidez natural, sanidad, tensión.
+          Y un mapa que hoy se expande del valle a la cordillera, del desierto al mar, y hasta el extremo austral.
+          Si te interesa el vino patagónico, este es el mapa base.
+        </p>
+      </div>
+
+      <nav class="toc" aria-label="Índice">
+        <h2>Índice</h2>
+        <ul>
+          <li><a class="inline-link" href="#latitud">Latitud, viento y tiempo</a></li>
+          <li><a class="inline-link" href="#mapa">El mapa patagónico: un recorrido</a></li>
+          <li><a class="inline-link" href="#rio-negro">Río Negro: memoria viva</a></li>
+          <li><a class="inline-link" href="#neuquen">Neuquén: creación y decisión</a></li>
+          <li><a class="inline-link" href="#chubut">Chubut: el límite y la helada</a></li>
+          <li><a class="inline-link" href="#austral">Frontera austral: posibilidad</a></li>
+          <li><a class="inline-link" href="#variedades">Variedades: lo que hoy busca el mundo</a></li>
+          <li><a class="inline-link" href="#paisaje">El paisaje participa</a></li>
+          <li><a class="inline-link" href="#cierre">Cierre</a></li>
+          <li><a class="inline-link" href="#seguir">Seguir leyendo</a></li>
+        </ul>
+      </nav>
+
+      <h2 id="latitud">Latitud, viento y tiempo</h2>
+      <p>
+        Entre los 39° y los 45° de latitud sur, la vid madura de otra manera. Las noches enfrían la planta incluso en verano,
+        el azúcar avanza lento y los ácidos se conservan. El vino no necesita correcciones porque la madurez no se acelera.
+      </p>
+      <p>
+        El viento completa la ecuación. Seca el viñedo, reduce enfermedades y permite trabajar con mínima intervención.
+        La piel se vuelve más firme, los taninos más finos, los aromas más nítidos. El clima no empuja la uva hacia la potencia,
+        la sostiene en el equilibrio.
+      </p>
+      <p>
+        La Patagonia no hace vinos livianos. Hace vinos con tensión.
+      </p>
+
+      <div class="hr" aria-hidden="true"></div>
+
+      <h2 id="mapa">El mapa patagónico: un recorrido</h2>
+      <p>
+        La Patagonia vitivinícola no es una sola. Es un recorrido. Y hoy ese recorrido se expande:
+        del valle a la cordillera, del desierto al mar, y hacia el sur.
+      </p>
+
+      <h2 id="rio-negro">Río Negro: memoria viva</h2>
+      <p>
+        En Río Negro el vino se apoya en la memoria. Viñedos plantados hace casi un siglo siguen dando uvas que hoy explican,
+        mejor que cualquier teoría, qué significa elegancia. La Semillón sobrevivió por desinterés comercial y terminó convertida
+        en un tesoro rescatado, uno de los blancos más profundos del país. La Trousseau quedó mezclada en parrales viejos hasta
+        que alguien decidió escucharla. El Pinot Noir encontró un lugar donde puede ser delicado sin perder estructura.
+      </p>
+      <p>
+        En tiempos de vendimia el aroma a mosto fermentando recorría los pueblos y no hacía falta entrar a una bodega para saber
+        qué momento del año era.
+      </p>
+
+      <h2 id="neuquen">Neuquén: creación y decisión</h2>
+      <p>
+        En Neuquén el vino fue una decisión. Primero llegó el agua, después la planta. El desierto irrigado permitió crear un
+        paisaje nuevo donde cada variedad se probó con intención. Durante las primeras plantaciones el viento levantaba arena y
+        obligó a plantar kilómetros de álamos para proteger los brotes. El viento no solo levantaba arena; esculpía la voluntad
+        de los hombres y la piel de las uvas.
+      </p>
+
+      <p>
+        En el norte neuquino, en Chos Malal, el vino nunca desapareció, solo quedó en los patios. Des de la Torre recuperó parrales
+        familiares cosechando casa por casa. Cada racimo tenía historia y los vecinos veían su uva transformada en vino. No era
+        producción, era pertenencia. Y reveló algo importante: plantas criollas adaptadas al frío y al viento podían dar frescura
+        sin intervención.
+      </p>
+
+      <div class="hero-media" aria-label="Imagen sobre cortinas rompeviento en Patagonia">
+        <img
+          src="assets/img/patagonia-alamos-cortinas-rompeviento.webp"
+          alt="Hileras de viñedo con álamos de fondo, cortinas rompeviento en Patagonia"
+          width="1600"
+          height="900"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      <p class="note">
+        Las alamedas no son decorado: son parte de la viticultura. Rompen el viento, protegen brotes, y marcan el paisaje.
+      </p>
+
+      <h2 id="chubut">Chubut: el límite y la helada</h2>
+      <p>
+        En Chubut el vino se volvió resistencia. Las heladas pueden aparecer en pleno verano y la noche obliga a vigilar el viñedo.
+        Cuando la temperatura cae a cero comienzan los aspersores y la planta queda cubierta por una cápsula de hielo que mantiene vivo
+        el tejido mientras afuera la temperatura sigue bajando. Al amanecer las hileras parecen de cristal hasta que el sol revela el
+        brote intacto. De esa tensión nacen blancos filosos y Pinot Noir transparente.
+      </p>
+
+      <div class="hero-media" aria-label="Imagen de uvas cubiertas de hielo en Trevelin">
+        <img
+          src="assets/img/patagonia-trevelin-uvas-hielo.webp"
+          alt="Uvas cubiertas de hielo en Trevelin, Chubut, durante una noche de control de heladas"
+          width="1600"
+          height="900"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      <p class="note">
+        Trevelin, Valle 16 de Octubre: helada como amenaza latente, y técnica como forma de sobrevivir.
+      </p>
+
+      <h2 id="austral">Frontera austral: posibilidad</h2>
+      <p>
+        Más al sur la viticultura todavía es una pregunta. En Santa Cruz la planta busca microclimas y en Tierra del Fuego se prueba
+        si la luz alcanza para completar el ciclo. La nieve cubre la vid y la aísla del frío extremo, permitiendo que sobreviva al invierno.
+        La planta no crece para producir: crece para demostrar que puede.
+      </p>
+
+      <div class="hr" aria-hidden="true"></div>
+
+      <h2 id="variedades">Variedades: lo que hoy busca el mundo</h2>
+      <p>
+        El vino cambia en la copa. El Malbec se vuelve floral y largo, sin peso. El Merlot gana protagonismo por su textura natural.
+        El Cabernet Franc muestra frescura y definición. El Pinot Noir alcanza nivel internacional sin exagerar madurez. Las variedades
+        blancas mantienen acidez vibrante porque el frío no permite perderla.
+      </p>
+      <p>
+        Ninguna domina a las otras. Todas responden a una misma lógica: madurar sin apuro.
+      </p>
+
+      <h2 id="paisaje">El paisaje participa</h2>
+      <p>
+        El territorio no se explica solo por el clima. En algunos viñedos las ovejas limpian las hileras durante el invierno,
+        aves anuncian la cosecha antes que el calendario y en la costa el mar incluso participa en la crianza de algunas botellas.
+        El paisaje no es decorado: es parte activa.
+      </p>
+
+      <div class="hr" aria-hidden="true"></div>
+
+      <h2 id="cierre">Cierre</h2>
+      <p>
+        Lo que aparece entonces no es una nueva zona productiva sino una forma distinta de entender el vino.
+        La calidad ya no depende de extraer más sino de intervenir menos.
+      </p>
+      <p>
+        Mientras muchas regiones del mundo buscan lugares cada vez más frescos, la Patagonia simplemente continúa siendo lo que siempre fue.
+        Un lugar donde la naturaleza marca el ritmo y el hombre aprendió a acompañarlo.
+      </p>
+      <p>
+        La Patagonia no es solo una región fría del vino argentino. Es el lugar donde el tiempo de la naturaleza todavía define el vino.
+      </p>
+
+      <div class="hr" aria-hidden="true"></div>
+
+      <h3 id="seguir">Seguir leyendo</h3>
+      <ul>
+        <li>
+          <a class="inline-link" href="sommelier-de-territorio.html">Sommelier de Territorio: cuando el vino se cuenta desde el lugar</a>
+        </li>
+        <li>
+          <a class="inline-link" href="https://sergiolandoni.com.ar/#blog">Volver al blog</a>
+        </li>
+      </ul>
+
+      <p class="note">
+        Link directo:
+        <a class="inline-link" href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html">
+          sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html
+        </a>
+      </p>
+
+    </article>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>© Sergio Landoni · Sommelier de Territorio</div>
+    </div>
+  </footer>
+</body>
+</html>
