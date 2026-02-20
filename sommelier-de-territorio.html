@@ -12,14 +12,18 @@
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <meta name="theme-color" content="#0f766e" />
 
- <link rel="canonical" href="https://sergiolandoni.com.ar/sommelier-de-territorio.html" />
-<link rel="alternate" href="https://sergiolandoni.com.ar/sommelier-de-territorio.html" hreflang="es-AR" />
-<link rel="alternate" href="https://sergiolandoni.com.ar/sommelier-de-territorio.html" hreflang="x-default" />
-<meta property="og:url" content="https://sergiolandoni.com.ar/sommelier-de-territorio.html" />
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://sergiolandoni.com.ar/sommelier-de-territorio.html" />
+  <link rel="alternate" href="https://sergiolandoni.com.ar/sommelier-de-territorio.html" hreflang="es-AR" />
+  <link rel="alternate" href="https://sergiolandoni.com.ar/sommelier-de-territorio.html" hreflang="x-default" />
+  <meta property="og:url" content="https://sergiolandoni.com.ar/sommelier-de-territorio.html" />
 
   <!-- Icons -->
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
+
+  <!-- Preload hero (LCP) -->
+  <link rel="preload" as="image" href="/assets/img/sergio-sillon.jpeg" fetchpriority="high" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="article" />
@@ -43,59 +47,103 @@
   <meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/sergio-sillon.jpeg" />
   <meta name="twitter:image:alt" content="Sergio Landoni, Sommelier de Territorio en Patagonia" />
 
-  <!-- Schema.org -->
+  <!-- Schema.org (PRO, consistente con tu sistema) -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebPage",
-      "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#webpage",
-      "url": "https://sergiolandoni.com.ar/sommelier-de-territorio.html",
-      "name": "Sommelier de Territorio: cuando el vino se cuenta desde el lugar",
-      "inLanguage": "es-AR",
-      "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
-      "primaryImageOfPage": { "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#img-hero" }
-    },
-    {
-      "@type": "ImageObject",
-      "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#img-hero",
-      "url": "https://sergiolandoni.com.ar/assets/img/sergio-sillon.jpeg",
-      "width": 1600,
-      "height": 900
-    },
-    {
-      "@type": "BlogPosting",
-      "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#blogposting",
-      "mainEntityOfPage": { "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#webpage" },
-      "isPartOf": { "@id": "https://sergiolandoni.com.ar/blog.html#blog" },
-      "headline": "Sommelier de Territorio: cuando el vino se cuenta desde el lugar",
-      "url": "https://sergiolandoni.com.ar/sommelier-de-territorio.html",
-      "description": "Qué es un Sommelier de Territorio: una forma de contar el vino desde el lugar, conectando paisaje, productores, gastronomía y cultura en Patagonia y Neuquén.",
-      "datePublished": "2026-01-23",
-      "dateModified": "2026-02-16",
-      "inLanguage": "es-AR",
-      "author": { "@id": "https://sergiolandoni.com.ar/#author" },
-      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
-      "image": [
-        { "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#img-hero" }
-      ],
-      "keywords": [
-        "sommelier de territorio",
-        "Sergio Landoni",
-        "vino neuquino",
-        "vino patagónico",
-        "comunicación del vino",
-        "Patagonia",
-        "Neuquén",
-        "San Martín de los Andes",
-        "enoturismo"
-      ],
-      "articleSection": "Vino · Territorio · Patagonia"
-    }
-  ]
-}
-</script>
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://sergiolandoni.com.ar/#website",
+        "url": "https://sergiolandoni.com.ar/",
+        "name": "Sergio Landoni · Sommelier de Territorio",
+        "inLanguage": "es-AR",
+        "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
+      },
+      {
+        "@type": "Blog",
+        "@id": "https://sergiolandoni.com.ar/blog.html#blog",
+        "name": "Blog · Sergio Landoni",
+        "url": "https://sergiolandoni.com.ar/blog.html",
+        "inLanguage": "es-AR",
+        "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://sergiolandoni.com.ar/#author",
+        "name": "Sergio Landoni",
+        "url": "https://sergiolandoni.com.ar/",
+        "jobTitle": "Sommelier de Territorio",
+        "image": { "@type": "ImageObject", "url": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG" },
+        "sameAs": [
+          "https://www.linkedin.com/in/sergio-landoni-sommelier/",
+          "https://www.instagram.com/sergiolandoni.somm/"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://sergiolandoni.com.ar/#business",
+        "name": "Sergio Landoni · Sommelier de Territorio",
+        "url": "https://sergiolandoni.com.ar/",
+        "logo": { "@type": "ImageObject", "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg" },
+        "image": { "@type": "ImageObject", "url": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG" },
+        "email": "mailto:contacto@sergiolandoni.com.ar",
+        "telephone": "+54 9 294 4668508",
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Neuquén" },
+          { "@type": "Country", "name": "AR" }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#webpage",
+        "url": "https://sergiolandoni.com.ar/sommelier-de-territorio.html",
+        "name": "Sommelier de Territorio: cuando el vino se cuenta desde el lugar",
+        "inLanguage": "es-AR",
+        "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
+        "about": { "@id": "https://sergiolandoni.com.ar/#author" },
+        "primaryImageOfPage": { "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#img-hero" }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#img-hero",
+        "url": "https://sergiolandoni.com.ar/assets/img/sergio-sillon.jpeg",
+        "width": 1600,
+        "height": 900,
+        "inLanguage": "es-AR"
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#blogposting",
+        "mainEntityOfPage": { "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#webpage" },
+        "isPartOf": { "@id": "https://sergiolandoni.com.ar/blog.html#blog" },
+        "headline": "Sommelier de Territorio: cuando el vino se cuenta desde el lugar",
+        "description": "Qué es un Sommelier de Territorio: una forma de contar el vino desde el lugar, conectando paisaje, productores, gastronomía y cultura en Patagonia y Neuquén.",
+        "datePublished": "2026-01-23",
+        "dateModified": "2026-02-16",
+        "inLanguage": "es-AR",
+        "author": { "@id": "https://sergiolandoni.com.ar/#author" },
+        "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
+        "image": [
+          { "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#img-hero" }
+        ],
+        "keywords": [
+          "sommelier de territorio",
+          "Sergio Landoni",
+          "vino neuquino",
+          "vino patagónico",
+          "comunicación del vino",
+          "Patagonia",
+          "Neuquén",
+          "San Martín de los Andes",
+          "enoturismo"
+        ],
+        "articleSection": "Vino · Territorio · Patagonia",
+        "timeRequired": "PT5M"
+      }
+    ]
+  }
+  </script>
 
   <style>
     :root{
@@ -182,6 +230,15 @@
     .hr{height:1px;background:var(--line);margin:18px 0}
     .note{font-size:13px;color:var(--muted)}
 
+    .callout{
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:14px 16px;
+      margin:14px 0;
+      background:#fff;
+    }
+    .callout strong{display:inline-block; margin-bottom:6px}
+
     .related{
       margin-top:18px;
       padding:14px;
@@ -207,7 +264,7 @@
     <div class="wrap">
       <div class="nav">
         <a class="brand" href="https://sergiolandoni.com.ar/#inicio" aria-label="Ir al inicio">
-          <img class="brand-logo" src="/assets/img/logo.jpg" alt="Logo Sergio Landoni" width="40" height="40" />
+          <img class="brand-logo" src="/assets/img/logo.jpg" alt="Logo Sergio Landoni" width="40" height="40" decoding="async" />
           <div class="brand-text">
             <strong>Sergio Landoni</strong>
             <span>Sommelier de Territorio · Patagonia Argentina</span>
@@ -230,7 +287,10 @@
 
       <h1>Sommelier de Territorio: cuando el vino se cuenta desde el lugar</h1>
 
-      <p><strong>Por Sergio Landoni</strong>, <a href="https://sergiolandoni.com.ar/#sobre-mi" class="inline-link">Sommelier de Territorio</a></p>
+      <p>
+        <strong>Por Sergio Landoni</strong>,
+        <a href="https://sergiolandoni.com.ar/#sobre-mi" class="inline-link">Sommelier de Territorio</a>
+      </p>
 
       <p class="meta">
         Publicado: <time datetime="2026-01-23">23 de enero de 2026</time> ·
@@ -251,14 +311,14 @@
 
       <p>
         Durante años, el vino se explicó desde la técnica, y la técnica importa.
-        Pero hoy, sobre todo en regiones emergentes, el vino también necesita leerse desde el lugar,
+        Pero hoy, sobre todo en regiones emergentes, el vino también necesita leerse desde el lugar:
         desde el paisaje, la gente y la experiencia real de tomarlo.
       </p>
 
       <p>
-        En Patagonia suele pasar al revés que en las zonas clásicas, primero conocés la montaña, el viento, la luz, la cocina,
-        la forma de vivir, después aparece la botella.
-        Ahí empieza mi trabajo, unir esas dos cosas para que el vino se entienda en presente,
+        En Patagonia suele pasar al revés que en las zonas clásicas: primero conocés la montaña, el viento, la luz, la cocina,
+        la forma de vivir. Después aparece la botella.
+        Ahí empieza mi trabajo: unir esas dos cosas para que el vino se entienda en presente,
         sin solemnidad y sin frases vacías.
       </p>
 
@@ -267,48 +327,51 @@
       <h2>Qué es “Sommelier de Territorio”</h2>
       <p>
         No es un título académico ni un rótulo para la bio.
-        Es una forma de ejercer la sommellerie, estar en el territorio, caminarlo, conocer a productores, cocineros, anfitriones y público.
+        Es una forma de ejercer la sommellerie: estar en el territorio, caminarlo, conocer a productores, cocineros, anfitriones y público.
         Y desde ahí, traducir el vino en un relato cercano, con información útil y con emoción verdadera.
       </p>
 
-      <p>
-        Dicho simple, no trabajo solo con etiquetas, trabajo con contexto.
-      </p>
+      <div class="callout" aria-label="Definición corta">
+        <strong>Dicho simple</strong>
+        <p class="note" style="margin:0;">
+          No trabajo solo con etiquetas: trabajo con contexto.
+        </p>
+      </div>
 
       <h2>Qué cambia cuando el vino se cuenta desde el lugar</h2>
-     <p>
-  Un mismo varietal puede decir cosas distintas según el suelo, el agua, la amplitud térmica y el viento.
-  En Neuquén eso se siente, no como discurso, se siente en la copa.
-  Contar el vino desde el lugar ayuda a entender por qué un vino es como es,
-  y por qué tiene sentido tomarlo con cierta comida, en cierta mesa, en cierta época del año.
-  Esa coherencia entre cocina regional y vino local forma parte de la experiencia completa
-  <a class="inline-link" href="https://sergiolandoni.com.ar/vino-regional-patagonia-gastronomia.html">
-    que desarrollo en esta reflexión sobre vino y gastronomía del territorio
-  </a>.
-</p>
+      <p>
+        Un mismo varietal puede decir cosas distintas según el suelo, el agua, la amplitud térmica y el viento.
+        En Neuquén eso se siente, no como discurso: se siente en la copa.
+        Contar el vino desde el lugar ayuda a entender por qué un vino es como es,
+        y por qué tiene sentido tomarlo con cierta comida, en cierta mesa, en cierta época del año.
+        Esa coherencia entre cocina regional y vino local forma parte de la experiencia completa,
+        <a class="inline-link" href="https://sergiolandoni.com.ar/vino-regional-patagonia-gastronomia.html">
+          como desarrollo en esta reflexión sobre vino y gastronomía del territorio
+        </a>.
+      </p>
 
       <p>
         Mi foco no es dar cátedra, es conectar.
-        La técnica ordena, el territorio le da sentido.
+        La técnica ordena; el territorio le da sentido.
       </p>
 
       <h2>El rol del sommelier hoy</h2>
       <p>
         El sommelier no es solo quien recomienda en un restaurante.
-        También es quien arma puentes, productor y mesa, vino y gastronomía, turismo y cultura.
-        Si esa conexión está bien hecha, la experiencia cambia,
+        También es quien arma puentes: productor y mesa, vino y gastronomía, turismo y cultura.
+        Si esa conexión está bien hecha, la experiencia cambia:
         la copa se vuelve clara, el vino se vuelve memorable y el lugar se vuelve parte del recuerdo.
       </p>
 
       <h2>Neuquén, un territorio en construcción</h2>
       <p>
-        Neuquén no promete, Neuquén está sucediendo.
-        El mundo ya conoció a Argentina por una cepa, ahora quiere conocer sus lugares.
+        Neuquén no promete: Neuquén está sucediendo.
+        El mundo ya conoció a Argentina por una cepa; ahora quiere conocer sus lugares.
         En ese mapa, Neuquén necesita ser leído, comprendido y comunicado en presente.
       </p>
 
       <p>
-        Eso es lo que hacemos cuando hablamos de vino neuquino con identidad,
+        Eso es lo que hacemos cuando hablamos de vino neuquino con identidad:
         dejamos que el territorio sea protagonista.
         El vino no compite por volumen, compite por significado.
       </p>
@@ -322,13 +385,13 @@
             </a>
           </li>
           <li>
-            <a class="inline-link" href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html">
-              Neuquén Wine Regions, Patagonia’s Emerging Wine Territory (English)
+            <a class="inline-link" href="https://sergiolandoni.com.ar/referentes-vino-neuquen.html">
+              Referentes del vino neuquino: pioneros, enólogos y consultores
             </a>
           </li>
           <li>
-            <a class="inline-link" href="https://sergiolandoni.com.ar/referentes-vino-neuquen.html">
-              Referentes del vino neuquino: pioneros, enólogos y consultores
+            <a class="inline-link" href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html">
+              Cómo se define el vino patagónico: regiones y paisajes
             </a>
           </li>
         </ul>
@@ -342,8 +405,8 @@
       </p>
 
       <p class="note">
-        Volver al inicio:
-        <a class="inline-link" href="https://sergiolandoni.com.ar/blog.html">ir al Blog</a>
+        Volver al blog:
+        <a class="inline-link" href="https://sergiolandoni.com.ar/blog.html">sergiolandoni.com.ar/blog.html</a>
       </p>
     </article>
   </main>
