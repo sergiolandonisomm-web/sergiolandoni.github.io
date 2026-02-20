@@ -114,15 +114,13 @@
         "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
         "inLanguage": "es-AR",
         "about": { "@id": "https://sergiolandoni.com.ar/#author" },
-        "primaryImageOfPage": { "@id": "https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html#img-hero" }
-      },
-      {
-        "@type": "ImageObject",
-        "@id": "https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html#img-hero",
-        "url": "https://sergiolandoni.com.ar/assets/img/patagonia-el-hoyo-vinedo-montana.webp",
-        "width": 1600,
-        "height": 900,
-        "inLanguage": "es-AR"
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "@id": "https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html#img-hero",
+          "url": "https://sergiolandoni.com.ar/assets/img/patagonia-el-hoyo-vinedo-montana.webp",
+          "width": 1600,
+          "height": 900
+        }
       },
       {
         "@type": "BlogPosting",
@@ -138,6 +136,18 @@
         "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
         "image": [
           { "@id": "https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html#img-hero" }
+        ],
+        "keywords": [
+          "vino patagónico",
+          "Patagonia vitivinícola",
+          "Río Negro",
+          "Neuquén",
+          "Chubut",
+          "Trevelin",
+          "El Hoyo",
+          "Semillón",
+          "Pinot Noir",
+          "Malbec"
         ],
         "articleSection": "Vino, Patagonia, Territorio",
         "isBasedOn": "https://sergiolandoni.com.ar/patagonian-wine-regions-landscape-argentina.html",
@@ -174,6 +184,11 @@
       transition: color 0.2s ease, opacity 0.2s ease;
     }
     a:hover { color: var(--accent); }
+    a:focus-visible{
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
     .inline-link { text-decoration: underline; text-underline-offset: 3px; }
     .inline-link:hover { opacity: 0.85; }
     .wrap { max-width: var(--max); margin: 0 auto; padding: 0 18px; }
@@ -436,7 +451,7 @@
       </p>
 
       <p>
-        En el norte neuquino, en Chos Malal, el vino nunca desapareció, solo quedó en los patios. Des de la Torre recuperó parrales
+        En el norte neuquino, en Chos Malal, el vino nunca desapareció: solo quedó en los patios. Des de la Torre recuperó parrales
         familiares cosechando casa por casa. Cada racimo tenía historia y los vecinos veían su uva transformada en vino. No era
         producción, era pertenencia. Y reveló algo importante: plantas criollas adaptadas al frío y al viento podían dar frescura
         sin intervención.
