@@ -11,28 +11,26 @@
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <meta name="theme-color" content="#0f766e" />
 
-  <link rel="canonical" href="https://sergiolandoni.com.ar/blog.html" />
-  <link rel="alternate" href="https://sergiolandoni.com.ar/blog.html" hreflang="es-AR" />
-  <link rel="alternate" href="https://sergiolandoni.com.ar/blog.html" hreflang="x-default" />
-  <meta property="og:url" content="https://sergiolandoni.com.ar/blog.html" />
-
+   <link rel="alternate" href="https://sergiolandoni.com.ar/blog.html" hreflang="x-default" />
+  
   <!-- Icons -->
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Sergio Landoni · Sommelier de Territorio" />
-  <meta property="og:title" content="Blog · Sergio Landoni | Vino neuquino, territorio y Patagonia" />
-  <meta property="og:description" content="Artículos sobre vino neuquino y patagónico, regiones vitivinícolas, bodegas, territorio, gastronomía, turismo y cultura." />
-  <meta property="og:url" content="https://sergiolandoni.com.ar/blog.html" />
-  <meta property="og:locale" content="es_AR" />
-  <!-- Imagen OG: usar una ruta existente y estable -->
-  <meta property="og:image" content="https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg" />
-  <meta property="og:image:alt" content="Sergio Landoni · Sommelier de Territorio en Patagonia" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="1600" />
-  <meta property="og:image:height" content="900" />
+ <!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Sergio Landoni · Sommelier de Territorio" />
+<meta property="og:title" content="Blog · Sergio Landoni | Vino neuquino, territorio y Patagonia" />
+<meta property="og:description" content="Artículos sobre vino neuquino y patagónico, regiones vitivinícolas, bodegas, territorio, gastronomía, turismo y cultura." />
+<meta property="og:url" content="https://sergiolandoni.com.ar/blog.html" />
+<meta property="og:locale" content="es_AR" />
+
+<!-- Imagen Open Graph del blog -->
+<meta property="og:image" content="https://sergiolandoni.com.ar/hero.jpg" />
+<meta property="og:image:alt" content="Blog de Sergio Landoni sobre vino neuquino y Patagonia" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1600" />
+<meta property="og:image:height" content="900" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -41,33 +39,153 @@
   <meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg" />
 
   <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebPage",
-        "@id": "https://sergiolandoni.com.ar/blog.html#webpage",
-        "url": "https://sergiolandoni.com.ar/blog.html",
-        "name": "Blog · Sergio Landoni | Vino neuquino, territorio y Patagonia",
-        "description": "Blog de Sergio Landoni, Sommelier de Territorio. Artículos sobre vino neuquino y patagónico, regiones vitivinícolas, bodegas, territorio, gastronomía, turismo y cultura, escritos desde San Martín de los Andes.",
-        "inLanguage": "es-AR",
-        "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
-        "about": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" }
-      },
-      {
-        "@type": "Blog",
-        "@id": "https://sergiolandoni.com.ar/blog.html#blog",
-        "name": "Blog · Sergio Landoni",
-        "url": "https://sergiolandoni.com.ar/blog.html",
-        "inLanguage": "es-AR",
-        "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
-        "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
-        "mainEntityOfPage": { "@id": "https://sergiolandoni.com.ar/blog.html#webpage" }
-      }
-    ]
-  }
-  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://sergiolandoni.com.ar/blog.html#webpage",
+      "url": "https://sergiolandoni.com.ar/blog.html",
+      "name": "Blog · Sergio Landoni | Vino neuquino, territorio y Patagonia",
+      "description": "Blog de Sergio Landoni, Sommelier de Territorio. Artículos sobre vino neuquino y patagónico, regiones vitivinícolas, bodegas, territorio, gastronomía, turismo y cultura, escritos desde San Martín de los Andes.",
+      "inLanguage": "es-AR",
+      "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
+      "about": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
+      "primaryImageOfPage": { "@id": "https://sergiolandoni.com.ar/blog.html#primaryimage" },
+      "breadcrumb": { "@id": "https://sergiolandoni.com.ar/blog.html#breadcrumb" }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://sergiolandoni.com.ar/blog.html#primaryimage",
+      "url": "https://sergiolandoni.com.ar/hero.jpg",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sergiolandoni.com.ar/blog.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://sergiolandoni.com.ar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://sergiolandoni.com.ar/blog.html"
+        }
+      ]
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://sergiolandoni.com.ar/blog.html#blog",
+      "name": "Blog · Sergio Landoni",
+      "url": "https://sergiolandoni.com.ar/blog.html",
+      "inLanguage": "es-AR",
+      "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
+      "mainEntityOfPage": { "@id": "https://sergiolandoni.com.ar/blog.html#webpage" },
+      "blogPost": [
+        { "@id": "https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html#blogposting" },
+        { "@id": "https://sergiolandoni.com.ar/referentes-vino-neuquen.html#blogposting" },
+        { "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#blogposting" },
+        { "@id": "https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html#blogposting" },
+        { "@id": "https://sergiolandoni.com.ar/wine-bar-michel-rolland-bariloche.html#blogposting" },
+        { "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#blogposting" }
+      ]
+    },
+
+    {
+      "@type": "BlogPosting",
+      "@id": "https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html#blogposting",
+      "headline": "Vinos de la Patagonia: identidad, clima y productores que empujan el mapa hacia el sur",
+      "datePublished": "2026-02-17",
+      "dateModified": "2026-02-17",
+      "inLanguage": "es-AR",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html#webpage" },
+      "url": "https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html",
+      "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
+      "image": { "@id": "https://sergiolandoni.com.ar/blog.html#primaryimage" },
+      "isPartOf": { "@id": "https://sergiolandoni.com.ar/blog.html#blog" }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://sergiolandoni.com.ar/referentes-vino-neuquen.html#blogposting",
+      "headline": "Referentes del vino neuquino: pioneros, enólogos y consultores",
+      "datePublished": "2026-02-12",
+      "dateModified": "2026-02-12",
+      "inLanguage": "es-AR",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sergiolandoni.com.ar/referentes-vino-neuquen.html#webpage" },
+      "url": "https://sergiolandoni.com.ar/referentes-vino-neuquen.html",
+      "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
+      "image": { "@id": "https://sergiolandoni.com.ar/blog.html#primaryimage" },
+      "isPartOf": { "@id": "https://sergiolandoni.com.ar/blog.html#blog" }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#blogposting",
+      "headline": "Las cinco zonas vitivinícolas de Neuquén",
+      "datePublished": "2026-01-29",
+      "dateModified": "2026-01-29",
+      "inLanguage": "es-AR",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#webpage" },
+      "url": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html",
+      "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
+      "image": { "@id": "https://sergiolandoni.com.ar/blog.html#primaryimage" },
+      "isPartOf": { "@id": "https://sergiolandoni.com.ar/blog.html#blog" }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html#blogposting",
+      "headline": "Neuquén en Wine Paris 2026: cinco bodegas que llevan la Patagonia al mundo",
+      "datePublished": "2026-02-04",
+      "dateModified": "2026-02-04",
+      "inLanguage": "es-AR",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html#webpage" },
+      "url": "https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html",
+      "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
+      "image": { "@id": "https://sergiolandoni.com.ar/blog.html#primaryimage" },
+      "isPartOf": { "@id": "https://sergiolandoni.com.ar/blog.html#blog" }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://sergiolandoni.com.ar/wine-bar-michel-rolland-bariloche.html#blogposting",
+      "headline": "El Wine Bar de Michel Rolland en Bariloche: un lugar para que el vino suceda",
+      "datePublished": "2026-02-03",
+      "dateModified": "2026-02-03",
+      "inLanguage": "es-AR",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sergiolandoni.com.ar/wine-bar-michel-rolland-bariloche.html#webpage" },
+      "url": "https://sergiolandoni.com.ar/wine-bar-michel-rolland-bariloche.html",
+      "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
+      "image": { "@id": "https://sergiolandoni.com.ar/blog.html#primaryimage" },
+      "isPartOf": { "@id": "https://sergiolandoni.com.ar/blog.html#blog" }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#blogposting",
+      "headline": "Sommelier de Territorio: cuando el vino se cuenta desde el lugar",
+      "datePublished": "2026-01-23",
+      "dateModified": "2026-01-23",
+      "inLanguage": "es-AR",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#webpage" },
+      "url": "https://sergiolandoni.com.ar/sommelier-de-territorio.html",
+      "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
+      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
+      "image": { "@id": "https://sergiolandoni.com.ar/blog.html#primaryimage" },
+      "isPartOf": { "@id": "https://sergiolandoni.com.ar/blog.html#blog" }
+    }
+  ]
+}
+</script>
 
   <style>
     :root{
@@ -215,20 +333,20 @@
   <header>
     <div class="wrap">
       <div class="nav">
-        <a class="brand" href="/index.html" aria-label="Volver al inicio">
-          <img class="brand-logo" src="/assets/img/logo.jpg" alt="Logo Sergio Landoni" width="40" height="40" />
+        <a class="brand" href="/" aria-label="Volver al inicio">
+          <img class="brand-logo" src="/logo.jpg" alt="Logo Sergio Landoni" width="40" height="40" />
           <div class="brand-text">
             <strong>Sergio Landoni</strong>
             <span>Sommelier de Territorio · Patagonia Argentina</span>
           </div>
         </a>
 
-        <nav class="menu" aria-label="Menú principal">
-          <a href="/index.html#inicio">Inicio</a>
-          <a href="/index.html#sobre-mi">Sobre mí</a>
-          <a href="/blog.html" aria-current="page">Blog</a>
-          <a href="/index.html#contacto">Contacto</a>
-        </nav>
+       <nav class="menu" aria-label="Menú principal">
+  <a href="/#inicio">Inicio</a>
+  <a href="/#sobre-mi">Sobre mí</a>
+  <a href="/blog.html" aria-current="page">Blog</a>
+  <a href="/#contacto">Contacto</a>
+</nav>
       </div>
     </div>
   </header>
@@ -242,7 +360,7 @@
         territorio, gastronomía, turismo y cultura, escritos desde <strong>San Martín de los Andes</strong>.
       </p>
       <p style="margin-top:14px">
-        <a class="btn" href="/index.html">← Volver al inicio</a>
+       <a class="btn" href="/">← Volver al inicio</a>
       </p>
     </section>
 
@@ -404,7 +522,7 @@
       </div><!-- /.list -->
 
       <p style="margin-top:18px">
-        <a class="btn" href="/index.html">← Volver al inicio</a>
+        <a class="btn" href="/">← Volver al inicio</a>
       </p>
     </section>
   </main>
