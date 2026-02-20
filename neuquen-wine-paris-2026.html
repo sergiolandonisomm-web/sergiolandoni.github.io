@@ -16,13 +16,16 @@
   <link rel="canonical" href="https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html" />
   <link rel="alternate" href="https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html" hreflang="es-AR" />
   <link rel="alternate" href="https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html" hreflang="x-default" />
-<meta property="og:url" content="https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html" />
+
+  <!-- Open Graph base -->
+  <meta property="og:url" content="https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html" />
+
   <!-- Icons -->
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
 
   <!-- Preload hero (performance / LCP) -->
-  <link rel="preload" as="image" href="assets/img/wine-paris-2026-feria-vino-paris.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="/assets/img/wine-paris-2026-feria-vino-paris.webp" fetchpriority="high" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="article" />
@@ -38,13 +41,18 @@
   <meta property="og:image:width" content="1600" />
   <meta property="og:image:height" content="900" />
 
+  <!-- Article times (OG) -->
+  <meta property="article:published_time" content="2026-02-04" />
+  <meta property="article:modified_time" content="2026-02-14" />
+
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Neuquén en VinExpo París 2026" />
   <meta name="twitter:description" content="Cinco bodegas neuquinas en VinExpo París 2026: Del Fin del Mundo con stand propio y cuatro junto al espacio institucional." />
   <meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/wine-paris-2026-feria-vino-paris.webp" />
+  <meta name="twitter:image:alt" content="VinExpo París 2026, feria internacional del vino en París" />
 
-  <!-- Schema.org (pro / completo) -->
+  <!-- Schema.org (PRO / consistente con tu sitio) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -55,7 +63,15 @@
         "url": "https://sergiolandoni.com.ar/",
         "name": "Sergio Landoni · Sommelier de Territorio",
         "inLanguage": "es-AR",
-        "publisher": { "@id": "https://sergiolandoni.com.ar/#publisher" }
+        "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
+      },
+      {
+        "@type": "Blog",
+        "@id": "https://sergiolandoni.com.ar/blog.html#blog",
+        "name": "Blog · Sergio Landoni",
+        "url": "https://sergiolandoni.com.ar/blog.html",
+        "inLanguage": "es-AR",
+        "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
       },
       {
         "@type": "Person",
@@ -65,7 +81,7 @@
         "jobTitle": "Sommelier de Territorio",
         "image": {
           "@type": "ImageObject",
-          "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg"
+          "url": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG"
         },
         "sameAs": [
           "https://www.linkedin.com/in/sergio-landoni-sommelier/",
@@ -73,54 +89,66 @@
         ]
       },
       {
-        "@type": "Organization",
-        "@id": "https://sergiolandoni.com.ar/#publisher",
-        "name": "Sergio Landoni",
+        "@type": "ProfessionalService",
+        "@id": "https://sergiolandoni.com.ar/#business",
+        "name": "Sergio Landoni · Sommelier de Territorio",
         "url": "https://sergiolandoni.com.ar/",
         "logo": {
           "@type": "ImageObject",
           "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg"
-        }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG"
+        },
+        "email": "mailto:contacto@sergiolandoni.com.ar",
+        "telephone": "+54 9 294 4668508",
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Neuquén" },
+          { "@type": "Country", "name": "AR" }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html#img-hero",
+        "url": "https://sergiolandoni.com.ar/assets/img/wine-paris-2026-feria-vino-paris.webp",
+        "width": 1600,
+        "height": 900,
+        "inLanguage": "es-AR"
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html#img-mabellini",
+        "url": "https://sergiolandoni.com.ar/assets/img/mabellini-wines-neuquen-patagonia.webp",
+        "width": 900,
+        "height": 1200,
+        "inLanguage": "es-AR"
       },
       {
         "@type": "WebPage",
         "@id": "https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html#webpage",
         "url": "https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html",
         "name": "Neuquén en VinExpo París 2026: cinco bodegas, presencia y resultados",
-        "isPartOf": { "@id": "https://sergiolandoni.com.ar/blog.html#blog" },
+        "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
         "inLanguage": "es-AR",
         "about": { "@id": "https://sergiolandoni.com.ar/#author" },
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "url": "https://sergiolandoni.com.ar/assets/img/wine-paris-2026-feria-vino-paris.webp",
-          "width": 1600,
-          "height": 900
-        }
+        "primaryImageOfPage": { "@id": "https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html#img-hero" }
       },
       {
         "@type": "BlogPosting",
-        "@id": "https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html#post",
+        "@id": "https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html#blogposting",
         "mainEntityOfPage": { "@id": "https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html#webpage" },
+        "isPartOf": { "@id": "https://sergiolandoni.com.ar/blog.html#blog" },
         "headline": "Neuquén en VinExpo París 2026: cinco bodegas, presencia y resultados",
         "description": "Neuquén dijo presente en VinExpo París 2026 con cinco bodegas: Del Fin del Mundo con stand propio y cuatro junto al espacio institucional. Resultados, protagonistas y posicionamiento del vino neuquino en Europa.",
         "inLanguage": "es-AR",
         "datePublished": "2026-02-04",
         "dateModified": "2026-02-14",
         "author": { "@id": "https://sergiolandoni.com.ar/#author" },
-        "publisher": { "@id": "https://sergiolandoni.com.ar/#publisher" },
+        "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
         "image": [
-          {
-            "@type": "ImageObject",
-            "url": "https://sergiolandoni.com.ar/assets/img/wine-paris-2026-feria-vino-paris.webp",
-            "width": 1600,
-            "height": 900
-          },
-          {
-            "@type": "ImageObject",
-            "url": "https://sergiolandoni.com.ar/assets/img/mabellini-wines-neuquen-patagonia.webp",
-            "width": 900,
-            "height": 1200
-          }
+          { "@id": "https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html#img-hero" },
+          { "@id": "https://sergiolandoni.com.ar/neuquen-wine-paris-2026.html#img-mabellini" }
         ],
         "keywords": [
           "VinExpo París 2026",
@@ -137,6 +165,7 @@
           "Familia Schroeder",
           "Bodega Malma",
           "Mabellini Wines",
+          "Patritti",
           "Primogénito"
         ],
         "articleSection": "Vino · Territorio · Neuquén",
@@ -175,6 +204,7 @@
     a:hover { color: var(--accent); }
     .inline-link { text-decoration: underline; text-underline-offset: 3px; }
     .inline-link:hover { opacity: 0.85; }
+
     .wrap { max-width: var(--max); margin: 0 auto; padding: 0 18px; }
     header {
       position: sticky;
@@ -244,7 +274,9 @@
     h2 { margin: 22px 0 10px; font-size: 1.35rem; }
     p { margin: 0 0 14px; }
 
+    .lead { font-size: 1.05rem; color: var(--text); }
     .note { font-size: 13px; color: var(--muted); }
+    .meta { font-size: 13px; color: var(--muted); margin: 6px 0 0; }
     .hr { height: 1px; background: var(--line); margin: 18px 0; }
 
     .hero-media {
@@ -252,6 +284,7 @@
       border-radius: var(--radius);
       overflow: hidden;
       border: 1px solid var(--line);
+      background: #fff;
     }
     .hero-media img { width: 100%; height: auto; display: block; }
 
@@ -279,10 +312,6 @@
       color: var(--muted);
       font-size: 13px;
     }
-    .lead {
-      font-size: 1.05rem;
-      color: var(--text);
-    }
   </style>
 </head>
 
@@ -291,7 +320,7 @@
     <div class="wrap">
       <div class="nav">
         <a class="brand" href="https://sergiolandoni.com.ar/#inicio" aria-label="Ir al inicio">
-          <img class="brand-logo" src="assets/img/logo.jpg" alt="Logo Sergio Landoni" width="40" height="40" decoding="async" />
+          <img class="brand-logo" src="/assets/img/logo.jpg" alt="Logo Sergio Landoni" width="40" height="40" decoding="async" />
           <div class="brand-text">
             <strong>Sergio Landoni</strong>
             <span>Sommelier de Territorio · Patagonia Argentina</span>
@@ -313,11 +342,20 @@
       <div class="kicker">Neuquén · Vino · Territorio</div>
 
       <h1>Neuquén en VinExpo París 2026: cinco bodegas, presencia y resultados</h1>
-      <p><strong>Por Sergio Landoni</strong>, <a href="https://sergiolandoni.com.ar/#sobre-mi" class="inline-link">Sommelier de Territorio</a></p>
+
+      <p>
+        <strong>Por Sergio Landoni</strong>,
+        <a href="https://sergiolandoni.com.ar/#sobre-mi" class="inline-link">Sommelier de Territorio</a>
+      </p>
+
+      <p class="meta">
+        Publicado: <time datetime="2026-02-04">4 de febrero de 2026</time> ·
+        Actualizado: <time datetime="2026-02-14">14 de febrero de 2026</time>
+      </p>
 
       <div class="hero-media" aria-label="Imagen del artículo">
         <img
-          src="assets/img/wine-paris-2026-feria-vino-paris.webp"
+          src="/assets/img/wine-paris-2026-feria-vino-paris.webp"
           alt="VinExpo París 2026, feria internacional del vino en París"
           width="1600"
           height="900"
@@ -332,26 +370,32 @@
       </p>
 
       <p>
-        Del 9 al 11 de febrero de 2026, Neuquén tuvo presencia con cinco bodegas. Aquí hay un punto importante para contar bien: <strong>Bodega Del Fin del Mundo participó con stand propio</strong>, por trayectoria, escala y posicionamiento internacional. En paralelo, una delegación provincial viajó con apoyo institucional para fortalecer la presencia neuquina y abrir nuevos contactos.
+        Del 9 al 11 de febrero de 2026, Neuquén tuvo presencia con cinco bodegas. Aquí hay un punto importante para contar bien:
+        <strong>Bodega Del Fin del Mundo participó con stand propio</strong>, por trayectoria, escala y posicionamiento internacional.
+        En paralelo, una delegación provincial viajó con apoyo institucional para fortalecer la presencia neuquina y abrir nuevos contactos.
       </p>
 
       <p>
-        En la misión articulada por el <strong>Centro PyME-ADENEU</strong>, junto a <strong>Wines of Argentina (WofA)</strong> y con financiamiento del <strong>CFI</strong>, participaron <strong>Mabellini Wines</strong>, <strong>Malma</strong>, <strong>Familia Schroeder</strong> y <strong>Patritti</strong>. En términos simples: Del Fin del Mundo con su propio espacio, y cuatro bodegas neuquinas dentro del esquema de misión.
+        En la misión articulada por el <strong>Centro PyME-ADENEU</strong>, junto a <strong>Wines of Argentina (WofA)</strong> y con financiamiento del <strong>CFI</strong>, participaron
+        <strong>Mabellini Wines</strong>, <strong>Malma</strong>, <strong>Familia Schroeder</strong> y <strong>Patritti</strong>.
+        En términos simples: Del Fin del Mundo con su propio espacio, y cuatro bodegas neuquinas dentro del esquema de misión.
       </p>
 
       <h2>Qué dejó la feria</h2>
 
       <p>
-        Lo más valioso, según comentaron exportadores y representantes del sector, fue la calidad del trade. Hubo receptividad hacia vinos de clima frío, frescura natural y estilos con identidad. Pinot Noir y espumosos aparecieron de manera recurrente en las conversaciones, especialmente con compradores del canal gastronómico europeo.
+        Lo más valioso, según comentaron exportadores y representantes del sector, fue la calidad del trade. Hubo receptividad hacia vinos de clima frío, frescura natural y estilos con identidad.
+        Pinot Noir y espumosos aparecieron de manera recurrente en las conversaciones, especialmente con compradores del canal gastronómico europeo.
       </p>
 
       <p>
-        En ese marco, quiero destacar el debut internacional de <strong>Mabellini Wines</strong>. Estuvo representada por su propietaria <strong>Lorena Nicolás Creide</strong>, junto a <strong>Anabella Alcuaz (WSET)</strong>. Para una bodega de escala familiar, estar en París no es una foto: es un paso estratégico, con reuniones de nivel y un termómetro real del mercado europeo.
+        En ese marco, quiero destacar el debut internacional de <strong>Mabellini Wines</strong>. Estuvo representada por su propietaria <strong>Lorena Nicolás Creide</strong>, junto a <strong>Anabella Alcuaz (WSET)</strong>.
+        Para una bodega de escala familiar, estar en París no es una foto: es un paso estratégico, con reuniones de nivel y un termómetro real del mercado europeo.
       </p>
 
       <figure class="media" aria-label="Mabellini Wines en Neuquén">
         <img
-          src="assets/img/mabellini-wines-neuquen-patagonia.webp"
+          src="/assets/img/mabellini-wines-neuquen-patagonia.webp"
           alt="Botella de Mabellini Wines en viñedo de Neuquén, Patagonia argentina"
           loading="lazy"
           decoding="async"
@@ -366,26 +410,27 @@
       <h2>Una industria neuquina con base sólida</h2>
 
       <p>
-        Neuquén cuenta con <strong>1.500 hectáreas</strong> implantadas con uva para vino, <strong>13 bodegas</strong> y <strong>20 elaboradores</strong> activos de vino casero y artesanal. El <strong>90%</strong> de la superficie se concentra en el departamento de Añelo (San Patricio del Chañar y Añelo), y luego Confluencia.
+        Neuquén cuenta con <strong>1.500 hectáreas</strong> implantadas con uva para vino, <strong>13 bodegas</strong> y <strong>20 elaboradores</strong> activos de vino casero y artesanal.
+        El <strong>90%</strong> de la superficie se concentra en el departamento de Añelo (San Patricio del Chañar y Añelo), y luego Confluencia.
       </p>
 
       <p>
-        Las variedades con mayor superficie cultivada son: <strong>Malbec (37%)</strong>, <strong>Cabernet Sauvignon (14,9%)</strong>, <strong>Pinot Negro (14,3%)</strong> y <strong>Merlot (13,4%)</strong>. Entre las blancas se destacan <strong>Chardonnay (7,8%)</strong> y <strong>Sauvignon Blanc (4,6%)</strong>.
+        Las variedades con mayor superficie cultivada son: <strong>Malbec (37%)</strong>, <strong>Cabernet Sauvignon (14,9%)</strong>, <strong>Pinot Negro (14,3%)</strong> y <strong>Merlot (13,4%)</strong>.
+        Entre las blancas se destacan <strong>Chardonnay (7,8%)</strong> y <strong>Sauvignon Blanc (4,6%)</strong>.
       </p>
 
       <h2>Más que presencia</h2>
 
       <p>
-        A mí me pasa algo simple. En cada viaje, cuando me cruzo con un vino de Neuquén, siento que el territorio está ahí. Puede ser una etiqueta en una vinoteca, una carta de restaurante o una góndola inesperada. Detrás de esa botella hay años de trabajo y decisión.
+        A mí me pasa algo simple. En cada viaje, cuando me cruzo con un vino de Neuquén, siento que el territorio está ahí. Puede ser una etiqueta en una vinoteca, una carta de restaurante o una góndola inesperada.
+        Detrás de esa botella hay años de trabajo y decisión.
       </p>
 
       <p>
         VinExpo París 2026 dejó una confirmación: Neuquén no participa para “estar”. Participa para posicionarse. Y cada paso suma, desde los proyectos grandes que sostienen mercados hasta las bodegas jóvenes que empiezan a abrir su camino.
       </p>
 
-      <p>
-        Hoy el mundo quiere conocer provincias.
-      </p>
+      <p>Hoy el mundo quiere conocer provincias.</p>
 
       <p>
         Neuquén no es una promesa.<br />
@@ -394,7 +439,8 @@
       </p>
 
       <p class="note">
-        También puede interesarte: <a class="inline-link" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html">Las cinco zonas vitivinícolas de Neuquén</a>.
+        También puede interesarte:
+        <a class="inline-link" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html">Las cinco zonas vitivinícolas de Neuquén</a>.
       </p>
 
       <p class="note">
