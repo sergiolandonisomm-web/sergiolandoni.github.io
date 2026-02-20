@@ -7,33 +7,27 @@
 
   <title>Neuquén Wine Regions, Patagonia’s Emerging Wine Territory | Sergio Landoni</title>
   <meta name="description" content="A territorial perspective on Neuquén wine regions in Argentine Patagonia: San Patricio del Chañar, Confluencia (including Centenario on the Neuquén River), Limay River (Senillosa and Picún Leufú), Cutral Co and Plaza Huincul, and Alto Neuquén." />
-  <meta name="keywords" content="Neuquén wine regions, Patagonia wine, Argentine Patagonia wines, Patagonian wines, wine tourism Patagonia, San Patricio del Chañar wines, Confluencia Neuquén wines, Centenario wine, Neuquén River vineyards, Limay River wine, Senillosa wine, Picún Leufú wine, Cutral Co wines, Plaza Huincul wines, Alto Neuquén wines, Norte Neuquino wines, Chos Malal wine, Taquimilán wine, Buta Ranquil wine, old vines Criolla, Refosco Argentina, Cabernet Franc Neuquén, Pinot Noir Patagonia, Malbec Neuquén" />
   <meta name="author" content="Sergio Landoni" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <meta name="theme-color" content="#0f766e" />
 
-  <!-- Canonical and language targeting -->
- <link rel="canonical" href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html" />
-<link rel="alternate" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html" hreflang="es-AR" />
-<link rel="alternate" href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html" hreflang="en" />
-<link rel="alternate" href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html" hreflang="x-default" />
-<meta property="og:url" content="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html" />
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html" />
+  <link rel="alternate" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html" hreflang="es-AR" />
+  <link rel="alternate" href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html" hreflang="en" />
+  <link rel="alternate" href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html" hreflang="x-default" />
 
   <!-- Icons -->
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
 
-  <!-- Preload hero -->
-  <link rel="preload" as="image" href="/assets/img/zonas-vitivinicolas-neuquen.jpg" fetchpriority="high" />
-
   <!-- Open Graph -->
   <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Sergio Landoni · Sommelier de Territorio" />
   <meta property="og:title" content="Neuquén Wine Regions, Patagonia’s Emerging Wine Territory" />
   <meta property="og:description" content="A territorial perspective on landscape, lifestyle, gastronomy and wine in Neuquén, Argentine Patagonia." />
   <meta property="og:url" content="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:site_name" content="Sergio Landoni · Sommelier de Territorio" />
-
   <meta property="og:image" content="https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg" />
   <meta property="og:image:alt" content="Neuquén wine regions in Argentine Patagonia, landscape, wind and vineyards" />
   <meta property="og:image:type" content="image/jpeg" />
@@ -51,123 +45,96 @@
   <meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg" />
   <meta name="twitter:image:alt" content="Neuquén wine regions in Argentine Patagonia, landscape, wind and vineyards" />
 
-  <!-- Schema.org -->
- <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://sergiolandoni.com.ar/#website",
-      "url": "https://sergiolandoni.com.ar/",
-      "name": "Sergio Landoni · Sommelier de Territorio",
-      "inLanguage": "es-AR",
-      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
-    },
-    {
-      "@type": "Blog",
-      "@id": "https://sergiolandoni.com.ar/blog.html#blog",
-      "name": "Blog · Sergio Landoni",
-      "url": "https://sergiolandoni.com.ar/blog.html",
-      "inLanguage": "es-AR",
-      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://sergiolandoni.com.ar/#author",
-      "name": "Sergio Landoni",
-      "url": "https://sergiolandoni.com.ar/",
-      "jobTitle": "Sommelier de Territorio",
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG"
+  <!-- Preload hero (LCP) -->
+  <link rel="preload" as="image" href="/assets/img/zonas-vitivinicolas-neuquen.jpg" fetchpriority="high" />
+
+  <!-- Schema.org (PRO / clean: avoids duplicating WebSite/Person/Business on every page) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#webpage",
+        "url": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html",
+        "name": "Neuquén Wine Regions, Patagonia’s Emerging Wine Territory",
+        "description": "A territorial perspective on Neuquén wine regions in Argentine Patagonia: San Patricio del Chañar, Confluencia (including Centenario on the Neuquén River), Limay River (Senillosa and Picún Leufú), Cutral Co and Plaza Huincul, and Alto Neuquén.",
+        "inLanguage": "en",
+        "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
+        "about": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
+        "primaryImageOfPage": { "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#img-hero" },
+        "mainEntity": { "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#blogposting" },
+        "breadcrumb": { "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#breadcrumb" }
       },
-      "sameAs": [
-        "https://www.linkedin.com/in/sergio-landoni-sommelier/",
-        "https://www.instagram.com/sergiolandoni.somm/"
-      ]
-    },
-    {
-      "@type": "ProfessionalService",
-      "@id": "https://sergiolandoni.com.ar/#business",
-      "name": "Sergio Landoni · Sommelier de Territorio",
-      "url": "https://sergiolandoni.com.ar/",
-      "logo": {
+      {
         "@type": "ImageObject",
-        "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg"
+        "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#img-hero",
+        "url": "https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg",
+        "width": 1600,
+        "height": 900,
+        "inLanguage": "en"
       },
-      "image": {
+      {
         "@type": "ImageObject",
-        "url": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG"
+        "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#img-map",
+        "url": "https://sergiolandoni.com.ar/assets/img/wine-regions-neuquen.webp",
+        "inLanguage": "en"
       },
-      "email": "mailto:contacto@sergiolandoni.com.ar",
-      "telephone": "+54 9 294 4668508",
-      "areaServed": [
-        { "@type": "AdministrativeArea", "name": "Neuquén" },
-        { "@type": "Country", "name": "AR" }
-      ]
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#webpage",
-      "url": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html",
-      "name": "Neuquén Wine Regions, Patagonia’s Emerging Wine Territory",
-      "inLanguage": "en",
-      "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
-      "about": { "@id": "https://sergiolandoni.com.ar/#author" },
-      "primaryImageOfPage": { "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#img-hero" }
-    },
-    {
-      "@type": "ImageObject",
-      "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#img-hero",
-      "url": "https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg",
-      "width": 1600,
-      "height": 900
-    },
-    {
-      "@type": "ImageObject",
-      "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#img-map",
-      "url": "https://sergiolandoni.com.ar/assets/img/wine-regions-neuquen.webp"
-    },
-    {
-      "@type": "BlogPosting",
-      "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#blogposting",
-      "mainEntityOfPage": { "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#webpage" },
-      "isPartOf": { "@id": "https://sergiolandoni.com.ar/blog.html#blog" },
-      "headline": "Neuquén Wine Regions, Patagonia’s Emerging Wine Territory",
-      "description": "A territorial perspective on Neuquén wine regions in Argentine Patagonia: San Patricio del Chañar, Confluencia (including Centenario on the Neuquén River), Limay River (Senillosa and Picún Leufú), Cutral Co and Plaza Huincul, and Alto Neuquén.",
-      "inLanguage": "en",
-     "datePublished": "2026-02-01",
-"dateModified": "2026-02-13",
-"author": { "@id": "https://sergiolandoni.com.ar/#author" },
-      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
-      "image": [
-        { "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#img-hero" },
-        { "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#img-map" }
-      ],
-      "articleSection": "Wine · Territory · Patagonia",
-      "keywords": [
-        "Neuquén wine regions",
-        "Patagonia wine",
-        "San Patricio del Chañar",
-        "Confluencia",
-        "Centenario",
-        "Neuquén River",
-        "Limay River",
-        "Senillosa",
-        "Picún Leufú",
-        "Cutral Co",
-        "Plaza Huincul",
-        "Alto Neuquén",
-        "Chos Malal",
-        "Taquimilán",
-        "Buta Ranquil"
-      ],
-      "timeRequired": "PT10M"
-    }
-  ]
-}
-</script>
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sergiolandoni.com.ar/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sergiolandoni.com.ar/blog.html" },
+          { "@type": "ListItem", "position": 3, "name": "Neuquén Wine Regions", "item": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html" }
+        ]
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#blogposting",
+        "mainEntityOfPage": { "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#webpage" },
+        "isPartOf": { "@id": "https://sergiolandoni.com.ar/blog.html#blog" },
+        "headline": "Neuquén Wine Regions, Patagonia’s Emerging Wine Territory",
+        "description": "A territorial perspective on Neuquén wine regions in Argentine Patagonia: San Patricio del Chañar, Confluencia (including Centenario on the Neuquén River), Limay River (Senillosa and Picún Leufú), Cutral Co and Plaza Huincul, and Alto Neuquén.",
+        "inLanguage": "en",
+        "datePublished": "2026-02-01",
+        "dateModified": "2026-02-13",
+        "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
+        "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
+        "image": [
+          { "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#img-hero" },
+          { "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html#img-map" }
+        ],
+        "articleSection": "Wine · Territory · Patagonia",
+        "keywords": [
+          "Neuquén wine regions",
+          "Patagonia wine",
+          "Argentine Patagonia wines",
+          "San Patricio del Chañar",
+          "Confluencia",
+          "Centenario",
+          "Neuquén River",
+          "Limay River",
+          "Senillosa",
+          "Picún Leufú",
+          "Cutral Co",
+          "Plaza Huincul",
+          "Alto Neuquén",
+          "Chos Malal",
+          "Taquimilán",
+          "Buta Ranquil",
+          "Criolla old vines",
+          "Refosco Argentina",
+          "Cabernet Franc Neuquén",
+          "Pinot Noir Patagonia",
+          "Malbec Neuquén"
+        ],
+        "timeRequired": "PT10M",
+        "url": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html"
+      }
+    ]
+  }
+  </script>
 
   <style>
     :root{
@@ -180,6 +147,7 @@
       --radius:14px;
       --shadow: 0 10px 30px rgba(0,0,0,.06);
       --max: 1060px;
+      --transition: all .25s cubic-bezier(0.4, 0, 0.2, 1);
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
@@ -215,6 +183,8 @@
     .brand-text strong{font-size:16px}
     .brand-text span{font-size:13px;color:var(--muted)}
     .menu{display:flex; gap:16px; flex-wrap:wrap; font-size:14px; color:var(--muted)}
+    .menu a{padding:8px 10px; border-radius:10px; border:1px solid transparent; transition:var(--transition)}
+    .menu a:hover{background:#fff; border-color:var(--line)}
 
     main{padding:22px 0 44px}
     .card{
@@ -296,8 +266,8 @@
   <header>
     <div class="wrap">
       <div class="nav">
-        <a class="brand" href="https://sergiolandoni.com.ar/#inicio" aria-label="Go to home">
-          <img class="brand-logo" src="/assets/img/logo.jpg" alt="Sergio Landoni logo" width="40" height="40" />
+        <a class="brand" href="/#inicio" aria-label="Go to home">
+          <img class="brand-logo" src="/logo.jpg" alt="Sergio Landoni logo" width="40" height="40" decoding="async" />
           <div class="brand-text">
             <strong>Sergio Landoni</strong>
             <span>Sommelier de Territorio · Argentine Patagonia</span>
@@ -305,10 +275,10 @@
         </a>
 
         <nav class="menu" aria-label="Main menu">
-          <a href="https://sergiolandoni.com.ar/#inicio">Home</a>
-          <a href="https://sergiolandoni.com.ar/#sobre-mi">About</a>
-          <a href="https://sergiolandoni.com.ar/blog.html">Blog</a>
-          <a href="https://sergiolandoni.com.ar/#contacto">Contact</a>
+          <a href="/#inicio">Home</a>
+          <a href="/#sobre-mi">About</a>
+          <a href="/blog.html">Blog</a>
+          <a href="/#contacto">Contact</a>
         </nav>
       </div>
     </div>
@@ -321,13 +291,13 @@
       <h1>Neuquén Wine Regions, Patagonia’s Emerging Wine Territory</h1>
       <p class="note">A territorial perspective on landscape, lifestyle, gastronomy, and wine in Argentine Patagonia.</p>
 
-      <p><strong>By Sergio Landoni</strong>, <a href="https://sergiolandoni.com.ar/#sobre-mi" class="inline-link">Sommelier de Territorio</a></p>
+      <p><strong>By Sergio Landoni</strong>, <a href="/#sobre-mi" class="inline-link">Sommelier de Territorio</a></p>
 
       <p class="meta">
-        Published: <time datetime="2026-02-01">February 1, 2026</time>, Updated: <time datetime="2026-02-13">February 13, 2026</time>
+        Published: <time datetime="2026-02-01">February 1, 2026</time> · Updated: <time datetime="2026-02-13">February 13, 2026</time>
       </p>
 
-      <figure class="hero-media">
+      <figure class="hero-media" aria-label="Hero image">
         <img
           src="/assets/img/zonas-vitivinicolas-neuquen.jpg"
           alt="Neuquén wine regions in Argentine Patagonia, landscape, wind and vineyards"
@@ -364,14 +334,14 @@
       </p>
 
       <p>
-        And then there is what matters most, the people. Producers, vineyard teams, winemakers, large projects, small family stories.
+        And then there is what matters most: the people. Producers, vineyard teams, winemakers, large projects, small family stories.
         They learn year after year, they adapt, they read the wind and the water, they build identity harvest by harvest.
         This is not a technical encyclopedia. It is a view from the territory, built from conversations, from the road, from the vineyard, and from the glass.
       </p>
 
       <p class="note">
         Spanish version:
-        <a class="inline-link" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html">Neuquén wine regions (ES)</a>
+        <a class="inline-link" href="/zonas-vitivinicolas-neuquen.html">Neuquén wine regions (ES)</a>
       </p>
 
       <nav class="toc" aria-label="Table of contents">
@@ -426,15 +396,17 @@
         El Chañar is also a corridor where wine is lived on site. Vineyard visits, restaurants, and experiences in the open plateau landscape
         complete the story: the place is not just a backdrop, it is part of the taste.
       </p>
-<h3>Recent restructuring and evolution</h3>
-<p>
-In recent years, San Patricio del Chañar has also gone through a productive restructuring.
-In 2021, Grupo Peñaflor acquired the facilities and a significant portion of the historic vineyards of Bodega Patritti,
-marking a new phase for the original estate.
-Meanwhile, the Patritti family continued producing their traditional labels — including Primogénito and Sangre Azul —
-at boutique scale, while the former property began operating as Bodega Marantiqua.
-This coexistence of large-scale investment and family-driven precision confirms the maturity and diversity of the Chañar wine pole.
-</p>
+
+      <h3>Recent restructuring and evolution</h3>
+      <p>
+        In recent years, San Patricio del Chañar has also gone through a productive restructuring.
+        In 2021, Grupo Peñaflor acquired the facilities and a significant portion of the historic vineyards of Bodega Patritti,
+        marking a new phase for the original estate.
+        Meanwhile, the Patritti family continued producing their traditional labels — including Primogénito and Sangre Azul —
+        at boutique scale, while the former property began operating as Bodega Marantiqua.
+        This coexistence of large-scale investment and family-driven precision confirms the maturity and diversity of the Chañar wine pole.
+      </p>
+
       <div class="hr" aria-hidden="true"></div>
 
       <h2 id="confluencia">2. Confluencia, near Neuquén city</h2>
@@ -459,12 +431,14 @@ This coexistence of large-scale investment and family-driven precision confirms 
         The landscape opens, agriculture becomes visible again, and vineyards fit into a corridor of chacras on the way toward <strong>Cinco Saltos</strong>.
         It is a more “valley and farm” expression: less about the city edge, more about continuity of productive land.
       </p>
-<p>
-Along the Neuquén River bank, small artisanal projects also contribute to the area’s identity.
-In Vista Alegre Sur, Costa Oculta (Ojo del Río wines) works at a minimal-intervention scale,
-with limited production of Malbec, Cabernet Franc and Chardonnay.
-The focus is on low-intervention farming and honest expression of place, rather than volume or visibility.
-</p>
+
+      <p>
+        Along the Neuquén River bank, small artisanal projects also contribute to the area’s identity.
+        In Vista Alegre Sur, Costa Oculta (Ojo del Río wines) works at a minimal-intervention scale,
+        with limited production of Malbec, Cabernet Franc and Chardonnay.
+        The focus is on low-intervention farming and honest expression of place, rather than volume or visibility.
+      </p>
+
       <p>
         Projects like <strong>Viñas Constanza</strong> represent that continuity. A family story planted in <strong>2006</strong> on a reconverted orchard property,
         with first harvests from <strong>2008</strong> onwards. Their choice of <strong>Refosco</strong> as a signature variety also says a lot:
@@ -536,12 +510,11 @@ The focus is on low-intervention farming and honest expression of place, rather 
         there is also small production around <strong>Buta Ranquil</strong>, where the vineyard story continues in a quieter, local rhythm.
       </p>
 
-     <p>
-       Old <strong>Criolla</strong> vines are part of that living memory. Some vines are locally reported to be <strong>more than 150 years old</strong>.
-       Here, Criolla isn’t used to chase trends. It’s used to keep culture alive: wines with identity, honest fruit,
-       natural freshness, and a sense of continuity—wine rooted in northern life, not a passing fashion.
-     </p>
-
+      <p>
+        Old <strong>Criolla</strong> vines are part of that living memory. Some vines are locally reported to be <strong>more than 150 years old</strong>.
+        Here, Criolla isn’t used to chase trends. It’s used to keep culture alive: wines with identity, honest fruit,
+        natural freshness, and a sense of continuity—wine rooted in northern life, not a passing fashion.
+      </p>
 
       <p>
         Malbec also takes a different shape in Alto Neuquén. It can show a lighter, more floral and tense profile,
