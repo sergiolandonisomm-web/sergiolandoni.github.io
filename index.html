@@ -327,20 +327,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   line-height:1.2;
 }
 
-    .btn:hover{border-color:#cbd5e1}
+.btn.primary{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:#fff;
+  font-weight:600;
+  letter-spacing:.3px;
+}
 
-    .btn.primary{
-      background:var(--accent);
-      border-color:var(--accent);
-      color:#fff;
-      font-weight:600;
-      letter-spacing:.3px;
-    }
-    .btn.primary:hover{
-      background:var(--accent-hover);
-      border-color:var(--accent-hover);
-      transform: scale(1.02);
-    }
+/* Hover SOLO en dispositivos con puntero fino (mouse) */
+@media (hover: hover) and (pointer: fine){
+
+  .btn:hover{
+    border-color:#cbd5e1;
+  }
+
+  .btn.primary:hover{
+    background:var(--accent-hover);
+    border-color:var(--accent-hover);
+    transform: scale(1.02);
+  }
+
+}
 
     main{padding:10px 0 44px}
     section{scroll-margin-top:84px; margin-top:18px}
@@ -499,23 +507,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <em>Mi mirada nace en el territorio y se proyecta al mundo.</em>
       </p>
 
-      <div class="cta" style="margin-top:16px;">
-        <a class="btn primary" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html">>
-          Regiones del vino en Neuquén
-        </a>
+     <div class="cta" style="margin-top:16px;">
+  <a class="btn primary" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html">
+    Regiones del vino en Neuquén
+  </a>
 
-      <a class="btn" href="#blog">
-  Lecturas destacadas
-</a>
+  <a class="btn" href="#blog">
+    Lecturas destacadas
+  </a>
 
-        <a class="btn" href="#sobre-mi">
-          Experiencias y asesoramiento
-        </a>
+  <a class="btn" href="#sobre-mi">
+    Experiencias y asesoramiento
+  </a>
 
-        <a class="btn" href="#contacto">
-          Contacto
-        </a>
-      </div><!-- /.cta -->
+  <a class="btn" href="#contacto">
+    Contacto
+  </a>
+</div><!-- /.cta -->
+      
     </div><!-- /CARD 1 -->
 
     <!-- CARD 2 -->
