@@ -255,15 +255,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color:var(--accent);
     }
 
-    .hero{padding:26px 0 14px}
-    .hero-media{
-      margin-bottom:18px;
-      border-radius:var(--radius);
-      overflow:hidden;
-      border:1px solid var(--line);
-      box-shadow:var(--shadow);
-      background:#fff;
-    }
+    .hero{padding:30px 0 18px}
+   .hero-media{
+  margin-bottom:28px;
+  border-radius:18px;
+  overflow:hidden;
+  border:none;
+  box-shadow: 0 20px 50px rgba(0,0,0,.08);
+}
     .hero-media img{width:100%; height:auto; display:block}
 
     .hero-grid{
@@ -295,7 +294,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       margin-bottom:12px;
     }
 
-    h1{margin:0 0 10px; font-size:32px; line-height:1.2}
+    h1{
+  margin:0 0 12px;
+  font-size:38px;
+  line-height:1.15;
+  letter-spacing:-0.5px;
+}
     h2{margin:0 0 10px; font-size:22px; line-height:1.25}
     h3{margin:0 0 8px; font-size:18px}
     h4{margin:16px 0 6px; font-size:15px; color:var(--text)}
@@ -399,8 +403,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-size:13px;
       text-align:center;
     }
- 
+    
+ @media (max-width: 600px){
+  h1{
+    font-size:30px;
+    line-height:1.2;
+    letter-spacing:-0.3px;
+  }
+}
+    
   </style>
+
 </head>
 
 <body>
@@ -447,168 +460,212 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
 
       <div class="hero-grid">
-        <!-- CARD 1 -->
-        <div class="card">
-          <div class="kicker">Vino · Territorio · Cultura</div>
+      <!-- CARD 1 -->
+<div class="card">
+  .kicker{
+  display:inline-flex;
+  gap:8px;
+  align-items:center;
+  font-size:12px;
+  letter-spacing:.8px;
+  text-transform:uppercase;
+  color:var(--accent);
+  background:rgba(15,118,110,.06);
+  border:1px solid rgba(15,118,110,.15);
+  padding:6px 12px;
+  border-radius:999px;
+  margin-bottom:16px;
+}
 
-          <h1>Vino, territorio y cultura desde la Patagonia</h1>
+  <h1>Sommelier de Territorio</h1>
 
-          <p><em>Contar el vino desde el lugar donde nace.</em></p>
-<p class="note">
-  Con foco en <strong>vino neuquino</strong> y en el mapa de sus protagonistas, este espacio reúne trabajo territorial, experiencias y comunicación: una referencia real para entender el presente del <strong>vino neuquino</strong>.
-</p>
-      <p>
-  Desde la <strong>Patagonia vitivinícola</strong>, y especialmente desde Neuquén, este espacio propone una mirada situada que integra
-  vino, gastronomía, turismo y cultura, poniendo en valor los territorios emergentes y a las personas que los construyen.
-</p>
+  <p style="font-size:16px; margin-top:10px;">
+    Vino, identidad y cultura desde el corazón de la Patagonia.
+  </p>
 
-          <p>
-            Aquí el vino se entiende como <strong>expresión cultural</strong>, <strong>herramienta de desarrollo regional</strong>,
-            y <strong>puente</strong> entre productores, cocineros, viajeros y comunidades.
-          </p>
-<p>
-  El archivo completo de artículos vive en el blog del sitio, con lecturas sobre vino neuquino y vino patagónico,
-  regiones, productores y territorio.
-</p>
+  <p class="note" style="margin-top:8px;">
+    Comunicación estratégica, experiencias y consultoría con foco en <strong>Neuquén</strong>.
+  </p>
 
-<div class="cta">
-  <a class="btn"
-     href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html"
-     target="_blank"
-     rel="noopener noreferrer">
-    Nuevo post: Cómo se define el vino patagónico
-  </a>
+  <hr style="border:0; border-top:1px solid var(--line); margin:14px 0;" />
 
-  <a class="btn primary"
-     href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html"
-     target="_blank"
-     rel="noopener noreferrer">
-    Regiones del vino en Neuquén
-  </a>
+  <h2 style="font-size:18px; margin:0 0 8px;">Vino, territorio y cultura</h2>
 
-  <a class="btn"
-     href="https://sergiolandoni.com.ar/referentes-vino-neuquen.html"
-     target="_blank"
-     rel="noopener noreferrer">
-    Nuevo post: Referentes del vino neuquino
-  </a>
+  <p>
+    Contar el vino desde el lugar donde nace.<br/>
+    Desde el paisaje, el clima y el trabajo de quienes lo hacen posible.<br/>
+    Desde la identidad profunda de cada región.
+  </p>
 
-  <a class="btn"
-   href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html"
-   target="_blank"
-   rel="noopener noreferrer"
-   hreflang="en">
-    English: Neuquén Wine Regions
-  </a>
-<a class="btn"
-   href="https://sergiolandoni.com.ar/patagonian-wine-regions-landscape-argentina.html"
-   target="_blank"
-   rel="noopener noreferrer"
-   hreflang="en">
-  English version
-</a>
-  <a class="btn" href="https://sergiolandoni.com.ar/sommelier-de-territorio.html">
-    Qué es Sommelier de Territorio
-  </a>
+  <p>
+    Trabajo en y desde la Patagonia, con foco en Neuquén, integrando comunicación, territorio y estrategia
+    para posicionar el vino como expresión cultural y motor de desarrollo.
+  </p>
 
- <a class="btn" href="blog.html">Ir al blog</a>
-  <a class="btn" href="#contacto">Contacto</a>
+  <p>
+    Mi enfoque integra experiencia profesional y vida en territorio, conectando vino, gastronomía y paisaje
+    en una misma narrativa.
+  </p>
 
-  <a class="btn"
-     href="https://www.linkedin.com/in/sergio-landoni-sommelier/"
-     target="_blank"
-     rel="noopener noreferrer">
-    LinkedIn
-  </a>
-</div><!-- /.cta -->
+  <p style="margin-top:12px;">
+    <em>Mi mirada nace en el territorio y se proyecta al mundo.</em>
+  </p>
 
-      </div><!-- /CARD 1 -->
+  <div class="cta" style="margin-top:16px;">
+    <a class="btn primary" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html" target="_blank" rel="noopener noreferrer">
+      Regiones del vino en Neuquén
+    </a>
 
-        <!-- CARD 2 -->
-        <div class="card">
-          <h2 style="font-size:18px; margin-bottom:12px;">Proyectos y experiencias</h2>
+    <a class="btn" href="blog.html">
+      Blog · Crónicas de territorio
+    </a>
 
-         <p>
-           Soy co-creador e impulsor de la idea original del evento <strong>Vino a la Montaña</strong>, una feria de vinos patagónicos
-           que se desarrolla en <strong>San Martín de los Andes</strong>. Es un proyecto pensado desde el territorio, como un espacio
-           de encuentro real entre productores, vino, turismo y cultura.
-           Luego de la edición 2025, estamos trabajando en el desarrollo y la curaduría de la <strong>edición 2026</strong>, con la idea
-           de profundizar la experiencia y seguir construyendo el proyecto sobre lo ya realizado.
-           Sitio web: <a href="https://www.vinoalamontana.com.ar" target="_blank" rel="noopener">www.vinoalamontana.com.ar</a>
-         </p>
+    <a class="btn" href="#contacto">
+      Experiencias y asesoramiento
+    </a>
 
+    <a class="btn" href="#contacto">
+      Contacto
+    </a>
+  </div><!-- /.cta -->
+</div><!-- /CARD 1 -->
 
-          <p>
-            Actualmente me desempeño como <strong>head sommelier y asesor de comunicación y capacitación de Bodega Cutral Co (Neuquén)</strong>.
-            En este rol trabajo en el desarrollo del relato enoturístico de la bodega, la formación del equipo y la articulación entre
-            vino, gastronomía y territorio, acompañando acciones que fortalecen la identidad del proyecto y su vínculo con el lugar.
-          </p>
+<!-- CARD 2 -->
+<div class="card">
+  <h2 style="font-size:18px; margin-bottom:14px;">Proyectos y experiencias</h2>
 
-          <p>
-            De manera complementaria, realizo <strong>experiencias de degustación privadas</strong> en
-            <strong>San Martín de los Andes</strong>, pensadas para grupos pequeños y contextos específicos,
-            con una mirada personalizada y anclada en el territorio.
-          </p>
+  <!-- VINO A LA MONTAÑA (DESTACADO) -->
+  <div style="border:1px solid rgba(15,118,110,.20); background:rgba(15,118,110,.06); border-radius:12px; padding:14px; margin-bottom:16px;">
+    <h3 style="margin:0 0 8px; font-size:16px;">Vino a la Montaña</h3>
 
-          <div class="note">
-            📍 San Martín de los Andes · Neuquén · Patagonia Argentina
-          </div>
-        </div><!-- /CARD 2 -->
+    <p style="margin:0 0 10px;">
+      Soy co-creador e impulsor de la idea original de <strong>Vino a la Montaña</strong>, una feria de vinos patagónicos
+      que se desarrolla en <strong>San Martín de los Andes</strong>. Un proyecto pensado desde el territorio como espacio
+      de encuentro real entre productores, vino, turismo y cultura.
+    </p>
+
+    <p style="margin:0 0 12px;">
+      Tras la edición 2025, trabajamos en la consolidación de la <strong>edición 2026</strong>, profundizando la experiencia
+      y fortaleciendo el proyecto sobre lo ya construido.
+    </p>
+
+    <a class="btn primary"
+       href="https://www.vinoalamontana.com.ar"
+       target="_blank"
+       rel="noopener noreferrer">
+      Visitar vinoalamontana.com.ar
+    </a>
+  </div>
+
+  <!-- BODEGA CUTRAL CO -->
+  <div style="margin-bottom:14px;">
+    <h3 style="margin:0 0 6px; font-size:16px;">Bodega Cutral Co</h3>
+
+    <p>
+      Me desempeño como <strong>head sommelier</strong> y asesor en <strong>comunicación y capacitación</strong> de
+      <strong>Bodega Cutral Co (Neuquén)</strong>, trabajando en el desarrollo del relato enoturístico,
+      la formación del equipo y la articulación entre vino, gastronomía y territorio.
+    </p>
+  </div>
+
+  <!-- EXPERIENCIAS PRIVADAS -->
+  <div>
+    <h3 style="margin:0 0 6px; font-size:16px;">Experiencias privadas</h3>
+
+    <p>
+      Realizo <strong>degustaciones privadas</strong> en <strong>San Martín de los Andes</strong>,
+      diseñadas para grupos reducidos y contextos específicos, con una mirada personalizada
+      y anclada en el territorio.
+    </p>
+  </div>
+
+  <div class="note" style="margin-top:14px;">
+    San Martín de los Andes · Neuquén · Patagonia Argentina
+  </div>
+</div><!-- /CARD 2 -->
+
+  <div class="note" style="margin-top:14px;">
+    San Martín de los Andes · Neuquén · Patagonia Argentina
+  </div>
+</div><!-- /CARD 2 -->
+        
       </div><!-- /hero-grid -->
     </section><!-- /inicio -->
 
-    <!-- SOBRE MI -->
-    <section id="sobre-mi" aria-label="Sobre mí">
-      <div class="grid-2">
-        <div class="card">
-          <h2>Sobre mí</h2>
+<!-- SOBRE MI -->
+<section id="sobre-mi" aria-label="Sobre mí">
+  <div class="grid-2">
+    <div class="card">
+      <h2>Sobre mí</h2>
 
-<p>
-  Soy <strong>Sergio Landoni</strong>, <strong>Sommelier de Territorio y comunicador del vino</strong>, con base en
-  <strong>San Martín de los Andes</strong>. Mi trabajo se desarrolla en la <strong>Patagonia vitivinícola</strong>, con
-  <strong>especial dedicación al vino neuquino</strong> y diálogo permanente con los distintos territorios del sur argentino.
-</p>
+      <p>
+        Soy <strong>Sergio Landoni</strong>, <strong>Sommelier de Territorio</strong>, con base en
+        <strong>San Martín de los Andes</strong>, Patagonia Argentina.
+      </p>
 
-<p>
-  Mi trabajo se desarrolla en la intersección entre <strong>vino, territorio, gastronomía y turismo</strong>,
-  acompañando procesos de <strong>desarrollo, comunicación y posicionamiento</strong> junto a bodegas patagónicas,
-  espacios gastronómicos e iniciativas que buscan construir identidad desde el origen y no solo desde el mercado.
-</p>
+      <p>
+        Trabajo en la <strong>Patagonia vitivinícola</strong>, con especial dedicación al
+        <strong>vino neuquino</strong>, integrando vino, territorio, gastronomía y cultura
+        desde una mirada situada y comprometida con el origen.
+      </p>
 
-<p>
-  En el plano internacional, participo en instancias de vinculación e intercambio con redes de importadores de vinos
-  en <strong>Europa</strong> y en <strong>Canadá</strong>, acompañando la proyección de proyectos patagónicos en
-  mercados externos desde una mirada realista y de largo plazo.
-</p>
+      <p>
+        Acompaño bodegas, proyectos e instituciones en procesos de
+        <strong>desarrollo, comunicación y posicionamiento</strong>,
+        articulando estrategia y experiencia territorial real.
+      </p>
 
-<p>
-  Vivo en el lugar que comunico. Camino sus bodegas, sus cocinas y sus mesas.<br/>
-  Desde ahí trabajo, escribo y acompaño procesos.
-</p>
+      <p>
+        En el plano internacional, participo en instancias de vinculación con redes de
+        importadores en <strong>Europa</strong> y <strong>Canadá</strong>,
+        promoviendo una proyección responsable y de largo plazo para el vino patagónico.
+      </p>
 
+      <p style="margin-top:12px;">
+        <em>Mi mirada nace en el territorio y se proyecta al mundo.</em>
+      </p>
 
-        </div>
+    </div>
 
-        <div class="card">
-          <!-- retrato real en raíz: retrato.jpg -->
-          <img
-            class="portrait"
-             src="/retrato.jpg"
-            alt="Sergio Landoni, Sommelier de Territorio"
-            width="1200"
-            height="1200"
-            loading="lazy"
-            decoding="async"
-          />
+       <div class="card">
+  <!-- retrato real en raíz: retrato.jpg -->
+  <img
+    class="portrait"
+    src="/retrato.jpg"
+    alt="Sergio Landoni, Sommelier de Territorio en Patagonia Argentina"
+    width="1200"
+    height="1200"
+    loading="lazy"
+    decoding="async"
+  />
 
-          <div class="note">
-            <strong>Email:</strong> <a href="mailto:contacto@sergiolandoni.com.ar">contacto@sergiolandoni.com.ar</a><br/>
-            <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/sergio-landoni-sommelier/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sergio-landoni-sommelier</a>
-          </div>
-        </div>
-      </div>
-    </section>
+  <p style="margin-top:14px; font-size:14px; color:var(--muted);">
+    Sommelier de Territorio · Patagonia Argentina
+  </p>
+
+  <hr style="border:0; border-top:1px solid var(--line); margin:14px 0;" />
+
+  <p style="font-size:14px;">
+    Trabajo en proyectos vinculados al vino neuquino,
+    experiencias de degustación privadas y articulaciones territoriales
+    que integran identidad, cultura y estrategia.
+  </p>
+
+  <div class="cta" style="margin-top:14px;">
+    <a class="btn" href="mailto:contacto@sergiolandoni.com.ar">
+      contacto@sergiolandoni.com.ar
+    </a>
+
+    <a class="btn"
+       href="https://www.linkedin.com/in/sergio-landoni-sommelier/"
+       target="_blank"
+       rel="noopener noreferrer">
+      LinkedIn
+    </a>
+  </div>
+</div>
+</div>
+</section>
 
   <!-- BLOG (Destacados) -->
 <section id="blog" aria-label="Blog">
@@ -815,9 +872,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   </main>
 
-  <footer>
-    © 2026 Sergio Landoni · Sommelier de Territorio · Patagonia Argentina
-  </footer>
+<footer>
+  © 2026 Sergio Landoni · Sommelier de Territorio · Patagonia Argentina<br/>
+  <a href="mailto:contacto@sergiolandoni.com.ar">contacto@sergiolandoni.com.ar</a> ·
+  <a href="https://www.linkedin.com/in/sergio-landoni-sommelier/" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+  <a href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html" target="_blank" rel="noopener noreferrer" hreflang="en">English</a>
+</footer>
 
   <script>
     const form = document.getElementById("contact-form");
