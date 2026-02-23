@@ -27,8 +27,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preload" as="image" href="/hero.jpg" fetchpriority="high" />
 
   <!-- Icons (estos sí suelen vivir en assets/img) -->
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+<link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -273,18 +273,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     @media (max-width: 760px){ .hero-grid{grid-template-columns:1fr} }
 
-    .card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:20px;
-    }
-    .card:hover{
-      transform: translateY(-4px);
-      box-shadow: 0 15px 35px rgba(0,0,0,0.10);
-    }
+ .card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:20px;
+}
 
+@media (hover: hover) and (pointer: fine){
+  .card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.10);
+  }
+}
     .kicker{
       display:inline-flex; gap:8px; align-items:center;
       font-size:13px; color:var(--accent);
@@ -498,13 +500,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </p>
 
       <div class="cta" style="margin-top:16px;">
-        <a class="btn primary" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html" target="_blank" rel="noopener noreferrer">
+        <a class="btn primary" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html">>
           Regiones del vino en Neuquén
         </a>
 
-        <a class="btn" href="blog.html">
-          Blog · Crónicas de territorio
-        </a>
+      <a class="btn" href="#blog">
+  Lecturas destacadas
+</a>
 
         <a class="btn" href="#sobre-mi">
           Experiencias y asesoramiento
