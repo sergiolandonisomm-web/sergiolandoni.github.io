@@ -51,175 +51,359 @@
   <meta name="twitter:description" content="Artículos sobre vino neuquino y patagónico, territorio, gastronomía, turismo y cultura." />
   <meta name="twitter:image" content="https://sergiolandoni.com.ar/hero.jpg" />
 
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebPage",
-        "@id": "https://sergiolandoni.com.ar/blog.html#webpage",
-        "url": "https://sergiolandoni.com.ar/blog.html",
-        "name": "Blog · Sergio Landoni | Vino neuquino, territorio y Patagonia",
-        "description": "Blog de Sergio Landoni, Sommelier de Territorio. Artículos sobre vino neuquino y patagónico, regiones vitivinícolas, bodegas, territorio, gastronomía, turismo y cultura, escritos desde San Martín de los Andes.",
-        "inLanguage": "es-AR",
-        "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
-        "about": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" }
-      },
-      {
-        "@type": "Blog",
-        "@id": "https://sergiolandoni.com.ar/blog.html#blog",
-        "name": "Blog · Sergio Landoni",
-        "url": "https://sergiolandoni.com.ar/blog.html",
-        "inLanguage": "es-AR",
-        "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
-        "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
-        "mainEntityOfPage": { "@id": "https://sergiolandoni.com.ar/blog.html#webpage" }
+ <!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://sergiolandoni.com.ar/#website",
+      "url": "https://sergiolandoni.com.ar/",
+      "name": "Sergio Landoni | Sommelier de Territorio",
+      "inLanguage": "es-AR",
+      "publisher": {
+        "@id": "https://sergiolandoni.com.ar/#organization"
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://sergiolandoni.com.ar/#organization",
+      "name": "Sergio Landoni | Sommelier de Territorio",
+      "url": "https://sergiolandoni.com.ar/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://sergiolandoni.com.ar/#logo",
+        "url": "https://sergiolandoni.com.ar/logo.jpg"
+      },
+      "image": {
+        "@id": "https://sergiolandoni.com.ar/#logo"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sergiolandoni.com.ar/#sergio-landoni",
+      "name": "Sergio Landoni",
+      "alternateName": "Sommelier de Territorio",
+      "jobTitle": "Sommelier de Territorio",
+      "url": "https://sergiolandoni.com.ar/",
+      "sameAs": [
+        "https://www.instagram.com/sergiolandoni.somm/",
+        "https://www.linkedin.com/in/sergio-landoni-sommelier/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Martín de los Andes",
+        "addressRegion": "Neuquén",
+        "addressCountry": "AR"
+      },
+      "description": "Sergio Landoni es Sommelier de Territorio, con base en San Martín de los Andes, Neuquén, Patagonia Argentina. Escribe sobre vino neuquino, vino patagónico, territorio, gastronomía y cultura."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sergiolandoni.com.ar/blog.html#webpage",
+      "url": "https://sergiolandoni.com.ar/blog.html",
+      "name": "Blog | Sergio Landoni",
+      "description": "Blog de Sergio Landoni, Sommelier de Territorio. Artículos sobre vino neuquino y patagónico, regiones vitivinícolas, bodegas, territorio, gastronomía, turismo y cultura.",
+      "inLanguage": "es-AR",
+      "isPartOf": {
+        "@id": "https://sergiolandoni.com.ar/#website"
+      },
+      "about": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      },
+      "mainEntity": {
+        "@id": "https://sergiolandoni.com.ar/blog.html#blog"
+      }
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://sergiolandoni.com.ar/blog.html#blog",
+      "name": "Blog de Sergio Landoni",
+      "url": "https://sergiolandoni.com.ar/blog.html",
+      "inLanguage": "es-AR",
+      "author": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      },
+      "publisher": {
+        "@id": "https://sergiolandoni.com.ar/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://sergiolandoni.com.ar/blog.html#webpage"
+      },
+      "description": "Artículos sobre vino neuquino, vino patagónico, territorio, gastronomía, turismo y cultura desde San Martín de los Andes."
+    }
+  ]
+}
+</script>
 
   <style>
-    :root{
-      --bg:#fafafa;
-      --card:#ffffff;
-      --text:#111827;
-      --muted:#374151;
-      --line:#e5e7eb;
-      --accent:#0f766e;
-      --accent-hover:#134e4a;
-      --radius:14px;
-      --shadow: 0 10px 30px rgba(0,0,0,.06);
-      --max: 980px;
-      --transition: all .25s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.7;
-    }
-    a{color:inherit; text-decoration:none}
-    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
-    a, .btn, .card{transition:var(--transition)}
+  :root{
+    --bg:#fafafa;
+    --card:#ffffff;
+    --text:#111827;
+    --muted:#374151;
+    --line:#e5e7eb;
+    --accent:#0f766e;
+    --accent-hover:#134e4a;
+    --radius:14px;
+    --shadow: 0 10px 30px rgba(0,0,0,.06);
+    --max: 980px;
+    --transition: all .25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-    header{
-      position:sticky; top:0; z-index:50;
-      background:rgba(250,250,250,.92);
-      backdrop-filter: blur(10px);
-      border-bottom:1px solid var(--line);
-    }
-    .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:14px 0;
-      gap:16px;
-    }
-    .brand{display:flex; align-items:center; gap:12px; min-width:220px}
-    .brand-logo{
-      width:40px; height:40px; border-radius:10px;
-      border:1px solid var(--line);
-      background:#fff; object-fit:contain; display:block;
-    }
-    .brand-text{display:flex; flex-direction:column; gap:2px}
-    .brand-text strong{font-size:16px; letter-spacing:.2px}
-    .brand-text span{font-size:13px; color:var(--muted)}
-    .menu{display:flex; gap:14px; flex-wrap:wrap; align-items:center; justify-content:flex-end}
-    .menu a{
-      font-size:14px; color:var(--muted);
-      padding:8px 10px; border-radius:10px;
-      border:1px solid transparent;
-    }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+
+  body{
+    margin:0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+  }
+
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+  a, .btn, .card{transition:var(--transition)}
+
+  header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(250,250,250,.92);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+
+  .nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 0;
+    gap:16px;
+  }
+
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    min-width:220px;
+  }
+
+  .brand-logo{
+    width:40px;
+    height:40px;
+    border-radius:10px;
+    border:1px solid var(--line);
+    background:#fff;
+    object-fit:contain;
+    display:block;
+  }
+
+  .brand-text{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+  }
+
+  .brand-text strong{
+    font-size:16px;
+    letter-spacing:.2px;
+  }
+
+  .brand-text span{
+    font-size:13px;
+    color:var(--muted);
+  }
+
+  .menu{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:flex-end;
+  }
+
+  .menu a{
+    font-size:14px;
+    color:var(--muted);
+    padding:8px 10px;
+    border-radius:10px;
+    border:1px solid transparent;
+  }
+
+  main{padding:18px 0 46px}
+
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:20px;
+  }
+
+  .kicker{
+    display:inline-flex;
+    gap:8px;
+    align-items:center;
+    font-size:13px;
+    color:var(--accent);
+    background:rgba(15,118,110,.08);
+    border:1px solid rgba(15,118,110,.12);
+    padding:6px 10px;
+    border-radius:999px;
+    margin-bottom:12px;
+  }
+
+  h1{
+    margin:0 0 10px;
+    font-size:30px;
+    line-height:1.2;
+  }
+
+  h2{
+    margin:0 0 10px;
+    font-size:20px;
+    line-height:1.25;
+  }
+
+  h3{
+    margin:0 0 8px;
+    font-size:18px;
+  }
+
+  p{
+    margin:10px 0;
+    color:var(--muted);
+  }
+
+  .note{
+    font-size:13px;
+    color:var(--muted);
+  }
+
+  .list{
+    display:grid;
+    gap:12px;
+    margin-top:14px;
+  }
+
+  article.post{
+    padding:14px;
+    border:1px solid var(--line);
+    border-radius:12px;
+    background:#fff;
+  }
+
+  .meta{
+    font-size:13px;
+    color:var(--muted);
+    margin-top:6px;
+  }
+
+  .tags{
+    margin-bottom:10px;
+  }
+
+  .tag{
+    display:inline-block;
+    font-size:12px;
+    color:var(--accent);
+    background:rgba(15,118,110,.08);
+    border:1px solid rgba(15,118,110,.12);
+    padding:4px 8px;
+    border-radius:999px;
+    margin-right:8px;
+    margin-bottom:6px;
+  }
+article.post h3 a:hover{
+  color:var(--accent);
+}
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 14px;
+    border-radius:12px;
+    font-size:14px;
+    border:1px solid var(--line);
+    background:#fff;
+    color:var(--text);
+    cursor:pointer;
+    line-height:1.2;
+  }
+
+  .btn.primary{
+    background:var(--accent);
+    border-color:var(--accent);
+    color:#fff;
+    font-weight:600;
+    letter-spacing:.3px;
+  }
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:22px 0 28px;
+    color:var(--muted);
+    font-size:13px;
+    text-align:center;
+  }
+
+  @media (hover:hover) and (pointer:fine){
     .menu a:hover{
       background:#fff;
       border-color:var(--line);
       color:var(--accent);
     }
 
-    main{padding:18px 0 46px}
-    .card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:20px;
-    }
     .card:hover{
       transform: translateY(-4px);
       box-shadow: 0 15px 35px rgba(0,0,0,0.10);
     }
-    .kicker{
-      display:inline-flex; gap:8px; align-items:center;
-      font-size:13px; color:var(--accent);
-      background:rgba(15,118,110,.08);
-      border:1px solid rgba(15,118,110,.12);
-      padding:6px 10px; border-radius:999px;
-      margin-bottom:12px;
-    }
-    h1{margin:0 0 10px; font-size:30px; line-height:1.2}
-    h2{margin:0 0 10px; font-size:20px; line-height:1.25}
-    h3{margin:0 0 8px; font-size:18px}
-    p{margin:10px 0; color:var(--muted)}
 
-    .list{display:grid; gap:12px; margin-top:14px}
-    article.post{
-      padding:14px;
-      border:1px solid var(--line);
-      border-radius:12px;
-      background:#fff;
-    }
     article.post:hover{
       border-color:#cbd5e1;
     }
-    .meta{font-size:13px; color:var(--muted); margin-top:6px}
-    .tags{margin-bottom:10px}
-    .tag{
-      display:inline-block;
-      font-size:12px;
-      color:var(--accent);
-      background:rgba(15,118,110,.08);
-      border:1px solid rgba(15,118,110,.12);
-      padding:4px 8px;
-      border-radius:999px;
-      margin-right:8px;
-      margin-bottom:6px;
+
+    .btn:hover{
+      border-color:#cbd5e1;
     }
 
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:10px 14px;
-      border-radius:12px;
-      font-size:14px;
-      border:1px solid var(--line);
-      background:#fff;
-      color:var(--text);
-      cursor:pointer;
-      line-height:1.2;
-    }
-    .btn:hover{border-color:#cbd5e1}
-    .btn.primary{
-      background:var(--accent);
-      border-color:var(--accent);
-      color:#fff;
-      font-weight:600;
-      letter-spacing:.3px;
-    }
     .btn.primary:hover{
       background:var(--accent-hover);
       border-color:var(--accent-hover);
       transform: scale(1.02);
     }
-    footer{
-      border-top:1px solid var(--line);
-      padding:22px 0 28px;
-      color:var(--muted);
-      font-size:13px;
-      text-align:center;
+  }
+
+  @media (max-width:720px){
+    .nav{
+      flex-direction:column;
+      align-items:flex-start;
     }
-  </style>
+
+    .menu{
+      width:100%;
+      justify-content:flex-start;
+    }
+  }
+
+  @media (max-width:600px){
+    h1{
+      font-size:28px;
+      line-height:1.2;
+    }
+
+    h2{
+      font-size:19px;
+    }
+
+    h3{
+      font-size:17px;
+    }
+  }
+</style>
 </head>
 
 <body>
@@ -249,7 +433,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </header>
 
   <main class="wrap">
-  <section class="card" aria-label="Encabezado del blog">
+<section class="card" aria-label="Encabezado del blog">
   <div class="kicker">Vino · Territorio · Patagonia</div>
   <h1>Blog</h1>
   <p>
@@ -259,11 +443,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p class="note">
     Una mirada desde el territorio sobre el vino neuquino, sus regiones, sus protagonistas y su proyección dentro de la Patagonia vitivinícola.
   </p>
+
+  <p class="note">
+    Lecturas clave:
+    <a href="/zonas-vitivinicolas-neuquen.html">zonas vitivinícolas de Neuquén</a>,
+    <a href="/referentes-vino-neuquen.html">referentes del vino neuquino</a>,
+    <a href="/sommelier-de-territorio.html">Sommelier de Territorio</a> y
+    <a href="/vino-neuquino-gastronomia-experiencias-territorio.html">vino neuquino y gastronomía regional</a>.
+  </p>
+
   <p style="margin-top:14px">
     <a class="btn" href="/">← Volver al inicio</a>
   </p>
 </section>
-
     <section class="card" style="margin-top:18px" aria-label="Listado de artículos">
       <h2>Artículos sobre vino neuquino y Patagonia</h2>
 
@@ -292,7 +484,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </p>
 
     <p>
-      <a class="btn primary" href="/vino-neuquino-gastronomia-experiencias-territorio.html">Leer</a>
+      <a class="btn primary" href="/vino-neuquino-gastronomia-experiencias-territorio.html" aria-label="Leer artículo sobre vino neuquino, gastronomía regional y experiencias de territorio">Leer</a>
     </p>
   </article>
 
@@ -319,7 +511,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </p>
 
     <p>
-      <a class="btn primary" href="/vino-patagonico-regiones-y-paisajes.html">Leer</a>
+      <a class="btn primary" href="/vino-patagonico-regiones-y-paisajes.html" aria-label="Leer artículo sobre vinos de la Patagonia, identidad, clima y territorio">Leer</a>
     </p>
   </article>
 
@@ -346,7 +538,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </p>
 
     <p>
-      <a class="btn primary" href="/referentes-vino-neuquen.html">Leer</a>
+      <a class="btn primary" href="/referentes-vino-neuquen.html" aria-label="Leer artículo sobre referentes del vino neuquino">Leer</a>
     </p>
   </article>
 
@@ -373,7 +565,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </p>
 
     <p>
-      <a class="btn primary" href="/neuquen-wine-paris-2026.html">Leer</a>
+      <a class="btn primary" href="/neuquen-wine-paris-2026.html" aria-label="Leer artículo sobre Neuquén en Wine Paris 2026">Leer</a>
     </p>
   </article>
 
@@ -400,7 +592,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </p>
 
     <p>
-      <a class="btn primary" href="/wine-bar-michel-rolland-bariloche.html">Leer</a>
+      <a class="btn primary" href="/wine-bar-michel-rolland-bariloche.html" aria-label="Leer artículo sobre el Wine Bar de Michel Rolland en Bariloche">Leer</a>
     </p>
   </article>
 
@@ -427,34 +619,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </p>
 
     <p>
-      <a class="btn primary" href="/zonas-vitivinicolas-neuquen.html">Leer</a>
+      <a class="btn primary" href="/zonas-vitivinicolas-neuquen.html" aria-label="Leer artículo sobre las seis zonas vitivinícolas de Neuquén">Leer</a>
     </p>
   </article>
 
-  <!-- Zonas vitivinícolas (English) -->
-  <article class="post" id="neuquen-wine-regions">
-    <div class="tags">
-      <span class="tag">Neuquén</span>
-      <span class="tag">Wine Regions</span>
-      <span class="tag">Patagonia</span>
-    </div>
+ <!-- Zonas vitivinícolas (English) -->
+<article class="post" id="neuquen-wine-regions">
+  <div class="tags">
+    <span class="tag">Neuquén</span>
+    <span class="tag">Wine Regions</span>
+    <span class="tag">Patagonia</span>
+    <span class="tag">English</span>
+  </div>
 
-    <h3>
-      <a href="/neuquen-wine-regions-patagonia.html">
-        Neuquén wine regions: a guide to Patagonia’s emerging wine territory
-      </a>
-    </h3>
+  <h3>
+    <a href="/neuquen-wine-regions-patagonia.html">
+      Neuquén wine regions: a guide to Patagonia’s emerging wine territory
+    </a>
+  </h3>
 
     <div class="meta">
       <time datetime="2026-01-29">29 January 2026</time>
     </div>
 
     <p>
-      A clear guide to the five wine regions of Neuquén and the landscapes shaping Patagonia’s emerging wine identity.
-    </p>
+  A clear guide to the six wine regions of Neuquén and the landscapes shaping Patagonia’s emerging wine identity.
+</p>
 
     <p>
-      <a class="btn primary" href="/neuquen-wine-regions-patagonia.html">Read</a>
+      <a class="btn primary" href="/neuquen-wine-regions-patagonia.html" aria-label="Read article about Neuquén wine regions in English">Read</a>
     </p>
   </article>
 
@@ -481,7 +674,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </p>
 
     <p>
-      <a class="btn primary" href="/sommelier-de-territorio.html">Leer</a>
+     <a class="btn primary" href="/sommelier-de-territorio.html" aria-label="Leer artículo sobre Sommelier de Territorio">Leer</a>
     </p>
   </article>
 
