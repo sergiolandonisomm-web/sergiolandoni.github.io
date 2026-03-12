@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="es-AR">
 <head>
@@ -24,9 +23,11 @@
   <link rel="alternate" href="https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html" hreflang="es-AR" />
   <link rel="alternate" href="https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html" hreflang="x-default" />
 
+  <!-- Icons -->
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
 
+  <!-- Preload hero -->
   <link rel="preload" as="image" href="/assets/img/norte-neuquino-atardecer-huinganco.webp" fetchpriority="high" />
 
   <!-- Open Graph -->
@@ -38,6 +39,9 @@
   <meta property="og:site_name" content="Sergio Landoni · Sommelier de Territorio" />
   <meta property="og:image" content="https://sergiolandoni.com.ar/assets/img/norte-neuquino-atardecer-huinganco.webp" />
   <meta property="og:image:alt" content="Atardecer en el Norte Neuquino con paisaje de montaña" />
+  <meta property="og:image:type" content="image/webp" />
+  <meta property="og:image:width" content="900" />
+  <meta property="og:image:height" content="488" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -81,6 +85,11 @@
         "alternateName": "Sommelier de Territorio",
         "jobTitle": "Sommelier de Territorio",
         "url": "https://sergiolandoni.com.ar/",
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://sergiolandoni.com.ar/#portrait",
+          "url": "https://sergiolandoni.com.ar/retrato.jpg"
+        },
         "sameAs": [
           "https://www.instagram.com/sergiolandoni.somm/",
           "https://www.linkedin.com/in/sergio-landoni-sommelier/"
@@ -90,14 +99,15 @@
           "addressLocality": "San Martín de los Andes",
           "addressRegion": "Neuquén",
           "addressCountry": "AR"
-        }
+        },
+        "description": "Sergio Landoni es Sommelier de Territorio, con base en San Martín de los Andes, Neuquén, Patagonia Argentina. Especialista en vino neuquino, vino patagónico, gastronomía regional, comunicación del vino y territorio."
       },
       {
         "@type": "WebPage",
         "@id": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html#webpage",
         "url": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html",
         "name": "El Norte Neuquino, territorio, paisaje y vino",
-        "description": "Un artículo sobre el Norte Neuquino, su geografía, su identidad cultural y su potencial para la vitivinicultura.",
+        "description": "Una lectura territorial del Norte Neuquino desde la geografía, la cultura, la gastronomía y su potencial para el vino.",
         "inLanguage": "es-AR",
         "isPartOf": {
           "@id": "https://sergiolandoni.com.ar/#website"
@@ -105,9 +115,84 @@
         "about": {
           "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
         },
+        "primaryImageOfPage": {
+          "@id": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html#img-hero"
+        },
+        "breadcrumb": {
+          "@id": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html#breadcrumb"
+        },
         "mainEntity": {
           "@id": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html#article"
         }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html#img-hero",
+        "url": "https://sergiolandoni.com.ar/assets/img/norte-neuquino-atardecer-huinganco.webp",
+        "width": 900,
+        "height": 488,
+        "inLanguage": "es-AR",
+        "description": "Atardecer en el Norte Neuquino con paisaje de montaña."
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html#img-domuyo",
+        "url": "https://sergiolandoni.com.ar/assets/img/volcan-domuyo-norte-neuquino.webp",
+        "width": 1280,
+        "height": 720,
+        "inLanguage": "es-AR",
+        "description": "Volcán Domuyo en el Norte Neuquino."
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html#img-domuyo-nevado",
+        "url": "https://sergiolandoni.com.ar/assets/img/norte-neuquino-domuyo-nevado.webp",
+        "width": 1536,
+        "height": 1024,
+        "inLanguage": "es-AR",
+        "description": "Puesto rural en el Norte Neuquino con el volcán Domuyo nevado."
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html#img-rio-neuquen",
+        "url": "https://sergiolandoni.com.ar/assets/img/naciente-rio-neuquen-cordillera.webp",
+        "width": 1280,
+        "height": 720,
+        "inLanguage": "es-AR",
+        "description": "Naciente del río Neuquén en la Región Norte."
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html#img-trashumancia",
+        "url": "https://sergiolandoni.com.ar/assets/img/trashumancia-crianceros-norte-neuquino.webp",
+        "width": 1080,
+        "height": 720,
+        "inLanguage": "es-AR",
+        "description": "Trashumancia en el Norte Neuquino."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://sergiolandoni.com.ar/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://sergiolandoni.com.ar/blog.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "El Norte Neuquino, territorio, paisaje y vino",
+            "item": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html"
+          }
+        ]
       },
       {
         "@type": "BlogPosting",
@@ -128,334 +213,303 @@
           "@id": "https://sergiolandoni.com.ar/#organization"
         },
         "image": [
-          "https://sergiolandoni.com.ar/assets/img/norte-neuquino-atardecer-huinganco.webp",
-          "https://sergiolandoni.com.ar/assets/img/volcan-domuyo-norte-neuquino.webp",
-          "https://sergiolandoni.com.ar/assets/img/norte-neuquino-domuyo-nevado.webp",
-          "https://sergiolandoni.com.ar/assets/img/naciente-rio-neuquen-cordillera.webp",
-          "https://sergiolandoni.com.ar/assets/img/villa-del-nahueve-norte-neuquino.webp",
-          "https://sergiolandoni.com.ar/assets/img/rio-nahueve-valle-norte-neuquino.webp",
-          "https://sergiolandoni.com.ar/assets/img/trashumancia-crianceros-norte-neuquino.webp"
+          { "@id": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html#img-hero" },
+          { "@id": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html#img-domuyo" },
+          { "@id": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html#img-domuyo-nevado" },
+          { "@id": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html#img-rio-neuquen" },
+          { "@id": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html#img-trashumancia" }
+        ],
+        "articleSection": [
+          "Vino",
+          "Territorio",
+          "Neuquén",
+          "Patagonia",
+          "Norte Neuquino"
         ],
         "keywords": [
           "Norte Neuquino",
           "vino neuquino",
           "vino patagónico",
           "territorio y vino",
-          "Domuyo",
           "Alto Neuquén",
+          "Domuyo",
           "trashumancia",
-          "Guillermo Corona"
+          "Guillermo Corona",
+          "Sommelier de Territorio"
         ],
-        "articleSection": [
-          "Neuquén",
-          "Patagonia",
-          "Territorio",
-          "Vino"
-        ]
+        "timeRequired": "PT7M",
+        "url": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html"
       }
     ]
   }
   </script>
 
   <style>
-    :root{
-      --max:1060px;
-      --radius:14px;
-      --shadow:0 10px 30px rgba(0,0,0,.06);
-      --bg:#fafafa;
-      --card:#ffffff;
-      --text:#111827;
-      --muted:#374151;
-      --line:#e5e7eb;
-      --accent:#0f766e;
-      --accent-hover:#134e4a;
-      --transition:all .25s cubic-bezier(0.4,0,0.2,1);
+    :root {
+      --max: 1060px;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      --bg: #fafafa;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #374151;
+      --line: #e5e7eb;
+      --accent: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease, opacity 0.2s ease;
+    }
+    a:hover { color: var(--accent); }
+    .inline-link { text-decoration: underline; text-underline-offset: 3px; }
+    .inline-link:hover { opacity: 0.85; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 18px; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(250, 250, 250, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 16px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 220px;
+    }
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: #fff;
+      object-fit: contain;
+      display: block;
+    }
+    .brand-text strong { font-size: 16px; }
+    .brand-text span { font-size: 13px; color: var(--muted); }
+
+    .menu {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: var(--muted);
     }
 
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
+    main { padding: 22px 0 44px; }
 
-    body{
-      margin:0;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.7;
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card:hover { transform: translateY(-2px); }
+
+    .kicker {
+      font-size: 13px;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
     }
 
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
-    a,.btn,.card{transition:var(--transition)}
+    h1 {
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin: 0 0 10px;
+      font-size: clamp(1.75rem, 3.2vw, 2.4rem);
+    }
+    h2 { margin: 22px 0 10px; font-size: 1.35rem; }
+    h3 { margin: 16px 0 8px; font-size: 1.1rem; }
+    p { margin: 0 0 14px; }
 
-    header{
-      position:sticky;
-      top:0;
-      z-index:50;
-      background:rgba(250,250,250,.92);
-      backdrop-filter:blur(10px);
-      border-bottom:1px solid var(--line);
+    .subhead {
+      font-size: 1.03rem;
+      color: var(--muted);
+      margin-bottom: 16px;
+      max-width: 900px;
     }
 
-    .nav{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:14px 0;
-      gap:16px;
+    .note { font-size: 13px; color: var(--muted); }
+    .hr { height: 1px; background: var(--line); margin: 18px 0; }
+
+    .hero-media {
+      margin: 14px 0 16px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+    .hero-media img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      min-width:220px;
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .back-link:hover { color: var(--accent); }
+
+    nav.toc {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 16px 0;
+      background: #fff;
+    }
+    nav.toc h2 {
+      margin: 0 0 10px;
+      font-size: 1.05rem;
+    }
+    nav.toc ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+    nav.toc li { margin: 6px 0; }
+
+    .callout {
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+      padding: 14px 16px;
+      background: #fff;
+      margin: 16px 0;
     }
 
-    .brand-logo{
-      width:40px;
-      height:40px;
-      border-radius:10px;
-      border:1px solid var(--line);
-      background:#fff;
-      object-fit:contain;
-      display:block;
+    .section-media {
+      margin: 18px 0 16px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .section-media img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .section-caption {
+      padding: 10px 14px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      background: #fff;
     }
 
-    .brand-text{
-      display:flex;
-      flex-direction:column;
-      gap:2px;
+    .back-to-top {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 60;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 14px;
+      border-radius: 999px;
+      background: rgba(15, 118, 110, 0.96);
+      color: #fff;
+      border: none;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+      font-size: 14px;
+      line-height: 1;
+      text-decoration: none;
+      transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+    }
+    .back-to-top:hover {
+      color: #fff;
+      background: rgba(15, 118, 110, 1);
+      transform: translateY(-2px);
+    }
+    .back-to-top:focus-visible {
+      outline: 3px solid rgba(15, 118, 110, 0.22);
+      outline-offset: 3px;
     }
 
-    .brand-text strong{font-size:16px;letter-spacing:.2px}
-    .brand-text span{font-size:13px;color:var(--muted)}
-
-    .menu{
-      display:flex;
-      gap:14px;
-      flex-wrap:wrap;
-      align-items:center;
-      justify-content:flex-end;
+    .btn-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--text);
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+    .btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(15, 118, 110, 0.35);
+      color: var(--accent);
+    }
+    .btn.primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .btn.primary:hover {
+      color: #fff;
+      background: #0d6d66;
+      border-color: #0d6d66;
     }
 
-    .menu a{
-      font-size:14px;
-      color:var(--muted);
-      padding:8px 10px;
-      border-radius:10px;
-      border:1px solid transparent;
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 22px 0 28px;
+      color: var(--muted);
+      font-size: 13px;
     }
 
-    main{padding:22px 0 44px}
-
-    .card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:22px;
-    }
-
-    .back-link{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      margin-bottom:14px;
-      font-size:14px;
-      color:var(--muted);
-    }
-
-    .kicker{
-      display:inline-flex;
-      gap:8px;
-      align-items:center;
-      font-size:13px;
-      color:var(--accent);
-      background:rgba(15,118,110,.08);
-      border:1px solid rgba(15,118,110,.12);
-      padding:6px 10px;
-      border-radius:999px;
-      margin-bottom:12px;
-    }
-
-    h1{
-      margin:0 0 10px;
-      font-size:clamp(1.95rem,3vw,2.6rem);
-      line-height:1.12;
-      letter-spacing:-.45px;
-    }
-
-    h2{margin:26px 0 10px;font-size:1.35rem;line-height:1.25}
-    h3{margin:18px 0 8px;font-size:1.08rem}
-    p{margin:0 0 14px;color:var(--muted)}
-
-    .note{font-size:13px;color:var(--muted)}
-    .subhead{
-      font-size:1.03rem;
-      color:var(--muted);
-      max-width:900px;
-      margin:0 0 18px;
-    }
-
-    .hr{height:1px;background:var(--line);margin:20px 0}
-
-    .hero-media{
-      margin:14px 0 18px;
-      border-radius:var(--radius);
-      overflow:hidden;
-      border:1px solid var(--line);
-      box-shadow:var(--shadow);
-    }
-
-    .hero-media img,
-    .section-media img{
-      width:100%;
-      height:auto;
-      display:block;
-    }
-
-    .toc{
-      border:1px solid var(--line);
-      border-radius:12px;
-      padding:14px 16px;
-      margin:18px 0;
-      background:#fff;
-    }
-
-    .toc h2{
-      margin:0 0 10px;
-      font-size:1.05rem;
-    }
-
-    .toc ul{
-      margin:0;
-      padding-left:18px;
-      color:var(--muted);
-    }
-
-    .toc li{margin:6px 0}
-
-    .callout{
-      border:1px solid var(--line);
-      border-left:4px solid var(--accent);
-      border-radius:12px;
-      padding:14px 16px;
-      background:#fff;
-      margin:16px 0;
-    }
-
-    .section-media{
-      margin:18px 0 16px;
-      border-radius:var(--radius);
-      overflow:hidden;
-      border:1px solid var(--line);
-      background:#fff;
-      box-shadow:var(--shadow);
-    }
-
-    .section-caption{
-      padding:10px 14px;
-      font-size:13px;
-      color:var(--muted);
-      border-top:1px solid var(--line);
-      background:#fff;
-    }
-
-    .btn-row{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      margin-top:18px;
-    }
-
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      padding:10px 14px;
-      border-radius:12px;
-      font-size:14px;
-      border:1px solid var(--line);
-      background:#fff;
-      color:var(--text);
-      line-height:1.2;
-    }
-
-    .btn.primary{
-      background:var(--accent);
-      border-color:var(--accent);
-      color:#fff;
-      font-weight:600;
-      letter-spacing:.2px;
-    }
-
-    .inline-link{
-      text-decoration:underline;
-      text-underline-offset:3px;
-    }
-
-    .back-to-top{
-      position:fixed;
-      right:18px;
-      bottom:18px;
-      z-index:60;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      padding:12px 14px;
-      border-radius:999px;
-      background:#0f766e;
-      color:#fff;
-      text-decoration:none;
-      box-shadow:0 10px 24px rgba(0,0,0,.16);
-    }
-
-    footer{
-      border-top:1px solid var(--line);
-      padding:22px 0 28px;
-      color:var(--muted);
-      font-size:13px;
-    }
-
-    @media (hover:hover) and (pointer:fine){
-      .menu a:hover{
-        background:#fff;
-        border-color:var(--line);
-        color:var(--accent);
+    @media (max-width: 760px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
       }
-
-      .card:hover{
-        transform:translateY(-3px);
-        box-shadow:0 15px 35px rgba(0,0,0,.10);
-      }
-
-      .btn:hover{border-color:#cbd5e1}
-      .btn.primary:hover{
-        background:var(--accent-hover);
-        border-color:var(--accent-hover);
-      }
-
-      .back-link:hover{color:var(--accent)}
-    }
-
-    @media (max-width:760px){
-      .nav{
-        flex-direction:column;
-        align-items:flex-start;
-      }
-
-      .menu{
-        width:100%;
-        justify-content:flex-start;
+      .menu {
+        gap: 12px;
       }
     }
 
-    @media (max-width:640px){
-      .back-to-top{
-        right:14px;
-        bottom:14px;
-        padding:11px 13px;
-        font-size:13px;
+    @media (max-width: 640px) {
+      .back-to-top {
+        right: 14px;
+        bottom: 14px;
+        padding: 11px 13px;
+        font-size: 13px;
       }
     }
   </style>
@@ -471,7 +525,7 @@
     <div class="wrap">
       <div class="nav">
         <a class="brand" href="/#inicio" aria-label="Ir al inicio">
-          <img class="brand-logo" src="/logo.jpg" alt="Logo Sergio Landoni" width="40" height="40" />
+          <img class="brand-logo" src="/logo.jpg" alt="Logo Sergio Landoni" width="40" height="40" decoding="async" />
           <div class="brand-text">
             <strong>Sergio Landoni</strong>
             <span>Sommelier de Territorio · Patagonia Argentina</span>
@@ -492,7 +546,7 @@
     <article class="card">
       <a class="back-link" href="/blog.html" aria-label="Volver al blog">← Volver al blog</a>
 
-      <div class="kicker">Neuquén · Territorio · Patagonia</div>
+      <div class="kicker">Neuquén · Territorio · Vino · Patagonia</div>
 
       <h1>El Norte Neuquino: cuando el territorio empieza a hablar de vino</h1>
 
@@ -502,7 +556,7 @@
 
       <p>
         <strong>Por Sergio Landoni</strong>,
-        <a class="inline-link" href="/sommelier-de-territorio.html">Sommelier de Territorio</a>
+        <a href="https://sergiolandoni.com.ar/#sobre-mi" class="inline-link">Sommelier de Territorio</a>
       </p>
 
       <p class="note">
@@ -516,10 +570,20 @@
           alt="Atardecer en el Norte Neuquino con paisaje de montaña"
           width="900"
           height="488"
+          fetchpriority="high"
           loading="eager"
           decoding="async"
-          fetchpriority="high"
         />
+      </div>
+
+      <div class="callout">
+        <p>
+          Este artículo dialoga con otros contenidos del sitio sobre
+          <a class="inline-link" href="/zonas-vitivinicolas-neuquen.html">las zonas vitivinícolas de Neuquén</a>,
+          <a class="inline-link" href="/guia-vino-neuquino.html">la guía del vino neuquino</a>
+          y
+          <a class="inline-link" href="/vino-neuquino-gastronomia-experiencias-territorio.html">vino neuquino y gastronomía</a>.
+        </p>
       </div>
 
       <nav class="toc" id="indice" aria-label="Índice del artículo">
@@ -580,7 +644,7 @@
         </p>
 
         <div class="callout">
-          <p style="margin-bottom:0;">
+          <p>
             “Muchas evaluaciones se quedan solo en la suma térmica. Pero hay otras variables que también cuentan, el clima del lugar, la disponibilidad de agua y ciertos niveles de humedad que pueden generar condiciones muy interesantes.”
           </p>
         </div>
@@ -665,34 +729,6 @@
           Es un modelo de turismo de naturaleza, paisaje y cultura que cada vez atrae más visitantes.
         </p>
       </section>
-
-      <figure class="section-media" aria-label="Villa del Nahueve">
-        <img
-          src="/assets/img/villa-del-nahueve-norte-neuquino.webp"
-          alt="Vista del valle y del pueblo de Villa del Nahueve"
-          loading="lazy"
-          decoding="async"
-          width="1200"
-          height="675"
-        />
-        <figcaption class="section-caption">
-          Valles habitados, pequeños pueblos y paisaje de montaña: una escena coherente con la idea de un turismo de naturaleza y territorio.
-        </figcaption>
-      </figure>
-
-      <figure class="section-media" aria-label="Río Nahueve">
-        <img
-          src="/assets/img/rio-nahueve-valle-norte-neuquino.webp"
-          alt="Río Nahueve en el valle del Norte Neuquino"
-          loading="lazy"
-          decoding="async"
-          width="1000"
-          height="750"
-        />
-        <figcaption class="section-caption">
-          Los cursos de agua cordilleranos dan forma a un paisaje fértil dentro de un marco general de estepa y montaña.
-        </figcaption>
-      </figure>
 
       <div class="hr" aria-hidden="true"></div>
 
@@ -788,6 +824,7 @@
         <li><a class="inline-link" href="/zonas-vitivinicolas-neuquen.html">Las zonas vitivinícolas de Neuquén</a></li>
         <li><a class="inline-link" href="/vino-neuquino-gastronomia-experiencias-territorio.html">Vino neuquino y gastronomía, experiencias de territorio</a></li>
         <li><a class="inline-link" href="/sommelier-de-territorio.html">Sommelier de Territorio: cuando el vino se cuenta desde el lugar</a></li>
+        <li><a class="inline-link" href="/blog.html">Volver al blog</a></li>
       </ul>
 
       <div class="btn-row">
@@ -796,7 +833,7 @@
       </div>
 
       <p class="note" style="margin-top:18px;">
-        Enlace directo:
+        Enlace directo sugerido:
         <a class="inline-link" href="https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html">sergiolandoni.com.ar/norte-neuquino-territorio-vino.html</a>
       </p>
     </article>
@@ -804,7 +841,7 @@
 
   <footer>
     <div class="wrap">
-      © Sergio Landoni · Sommelier de Territorio
+      <div>© Sergio Landoni · Sommelier de Territorio</div>
     </div>
   </footer>
 
