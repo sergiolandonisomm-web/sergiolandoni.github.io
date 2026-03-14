@@ -58,7 +58,8 @@
   <meta name="twitter:description" content="Historia, terroir, sanidad de las uvas, variedades, zonas vitivinícolas y gastronomía patagónica para entender el vino neuquino desde el territorio." />
   <meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/vinedo-aereo-neuquen.webp" />
   <meta name="twitter:image:alt" content="Vista aérea de viñedo patagónico en Neuquén, entre estepa, álamos y canales de riego" />
-<!-- Schema.org -->
+
+  <!-- Schema.org -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -130,9 +131,14 @@
       "breadcrumb": {
         "@id": "https://sergiolandoni.com.ar/guia-vino-neuquino.html#breadcrumb"
       },
-      "mainEntity": {
-        "@id": "https://sergiolandoni.com.ar/guia-vino-neuquino.html#article"
-      }
+      "mainEntity": [
+        {
+          "@id": "https://sergiolandoni.com.ar/guia-vino-neuquino.html#article"
+        },
+        {
+          "@id": "https://sergiolandoni.com.ar/guia-vino-neuquino.html#faq"
+        }
+      ]
     },
     {
       "@type": "ImageObject",
@@ -232,6 +238,16 @@
           "name": "Patagonia Argentina"
         }
       ],
+      "mentions": [
+        {
+          "@type": "Place",
+          "name": "Provincia del Neuquén"
+        },
+        {
+          "@type": "Place",
+          "name": "Patagonia Argentina"
+        }
+      ],
       "author": {
         "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
       },
@@ -251,10 +267,41 @@
       ],
       "timeRequired": "PT9M",
       "url": "https://sergiolandoni.com.ar/guia-vino-neuquino.html"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sergiolandoni.com.ar/guia-vino-neuquino.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué caracteriza al vino neuquino?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El vino neuquino se caracteriza por su clima continental seco, gran amplitud térmica, excelente sanidad de las uvas, suelos de buen drenaje y una expresión territorial marcada por la frescura y la nitidez de la fruta."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuáles son las principales zonas vitivinícolas de Neuquén?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Entre las principales zonas vitivinícolas de Neuquén se destacan San Patricio del Chañar, la Confluencia, la ribera del río Limay, la Comarca Petrolera, el Norte Neuquino y nuevas áreas emergentes de la cordillera."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué variedades se destacan en el vino neuquino?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Entre las variedades más destacadas del vino neuquino se encuentran Malbec, Pinot Noir, Merlot, Cabernet Franc, Cabernet Sauvignon, Sauvignon Blanc y Chardonnay."
+          }
+        }
+      ]
     }
   ]
 }
 </script>
+
 
 
   <style>
