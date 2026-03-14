@@ -351,7 +351,7 @@
 
 .hero img{
   width:100%;
-  height:380px;
+  height:340px;
   object-fit:cover;
   display:block;
 }
@@ -472,62 +472,70 @@
       line-height:1.2;
     }
 
-    .btn.primary{
-      background:var(--accent);
-      border-color:var(--accent);
-      color:#fff;
-      font-weight:600;
-      letter-spacing:.2px;
-    }
+.btn.primary{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:#fff;
+  font-weight:600;
+  letter-spacing:.2px;
+}
 
-    footer{
-      border-top:1px solid var(--line);
-      padding:22px 0 28px;
-      color:var(--muted);
-      font-size:13px;
-      text-align:center;
-    }
+/* Navegación interna del blog */
+.blog-nav{
+  margin-top:14px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
 
-    @media (hover:hover) and (pointer:fine){
-      .menu a:hover{
-        background:#fff;
-        border-color:var(--line);
-        color:var(--accent);
-      }
+footer{
+  border-top:1px solid var(--line);
+  padding:22px 0 28px;
+  color:var(--muted);
+  font-size:13px;
+  text-align:center;
+}
 
-      .card:hover{
-        transform:translateY(-4px);
-        box-shadow:0 15px 35px rgba(0,0,0,.10);
-      }
+@media (hover:hover) and (pointer:fine){
+  .menu a:hover{
+    background:#fff;
+    border-color:var(--line);
+    color:var(--accent);
+  }
 
-      article.post:hover{
-        border-color:#cbd5e1;
-      }
+  .card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+  }
 
-      .btn:hover{
-        border-color:#cbd5e1;
-      }
+  article.post:hover{
+    border-color:#cbd5e1;
+  }
 
-      .btn.primary:hover{
-        background:var(--accent-hover);
-        border-color:var(--accent-hover);
-        transform:scale(1.02);
-      }
-    }
+  .btn:hover{
+    border-color:#cbd5e1;
+  }
 
-    @media (max-width:720px){
-      .nav{
-        flex-direction:column;
-        align-items:flex-start;
-      }
+  .btn.primary:hover{
+    background:var(--accent-hover);
+    border-color:var(--accent-hover);
+    transform:scale(1.02);
+  }
+}
 
-      .menu{
-        width:100%;
-        justify-content:flex-start;
-      }
-    }
+@media (max-width:720px){
+  .nav{
+    flex-direction:column;
+    align-items:flex-start;
+  }
 
- @media (max-width:600px){
+  .menu{
+    width:100%;
+    justify-content:flex-start;
+  }
+}
+
+@media (max-width:600px){
   h1{
     font-size:28px;
     line-height:1.2;
@@ -580,7 +588,7 @@
     </div>
 </header>
 
-<main class="wrap">
+<main id="contenido" class="wrap">
 
   <section class="hero" aria-label="Imagen del viñedo en Patagonia">
     <img
@@ -595,7 +603,7 @@
   <section class="card" aria-label="Encabezado del blog">
     <div class="kicker">Vino · Territorio · Patagonia</div>
 
-    <h1>Blog</h1>
+    <h1>Blog sobre vino neuquino y Patagonia</h1>
 
     <p>
       Artículos y reflexiones sobre <strong>vino neuquino</strong> y <strong>vino patagónico</strong>,
@@ -604,13 +612,22 @@
     </p>
 
     <p class="note">
-      Una mirada editorial desde el territorio sobre el vino neuquino,
-      sus regiones, sus protagonistas y su proyección dentro de la Patagonia vitivinícola.
-    </p>
+  Una mirada editorial desde el territorio sobre el vino neuquino,
+  sus regiones, sus protagonistas y su proyección dentro de la Patagonia vitivinícola.
+</p>
 
-    <p style="margin-top:14px">
-      <a class="btn" href="/">← Volver al inicio</a>
-    </p>
+<div class="blog-nav" style="margin-top:14px; display:flex; flex-wrap:wrap; gap:8px;">
+  <a class="btn" href="#regiones-territorios">Regiones</a>
+  <a class="btn" href="#vino-neuquino">Vino neuquino</a>
+  <a class="btn" href="#gastronomia-experiencias">Gastronomía</a>
+  <a class="btn" href="#referentes-protagonistas">Referentes</a>
+  <a class="btn" href="#mirada-profesional">Mirada profesional</a>
+  <a class="btn" href="#english-readers">English</a>
+</div>
+
+<p style="margin-top:14px">
+  <a class="btn" href="/">← Volver al inicio</a>
+</p>
 
   </section>
     <section class="card" style="margin-top:18px" aria-label="Listado de artículos por categorías">
