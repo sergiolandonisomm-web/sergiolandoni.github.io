@@ -435,6 +435,14 @@ header{
   display:block
 }
 
+#blog .hero-media{
+  margin-bottom:18px;
+}
+
+#blog .card{
+  margin-top:0;
+}
+
 .hero-grid{
   display:grid;
   grid-template-columns:1.2fr .8fr;
@@ -445,7 +453,6 @@ header{
 @media (max-width:760px){
   .hero-grid{grid-template-columns:1fr}
 }
-
 .card{
   background:var(--card);
   border:1px solid var(--line);
@@ -584,7 +591,7 @@ section{
 .post-list{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:16px;
+ gap:18px;
 }
 
 .post{
@@ -990,6 +997,18 @@ footer{
 
 <!-- BLOG -->
 <section id="blog" aria-label="Blog">
+
+  <div class="hero-media">
+    <img
+      src="/assets/img/racimos-uvas.webp"
+      alt="Racimos de uva en viñedos de la Patagonia · vino neuquino y vino patagónico"
+      width="1600"
+      height="900"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+
   <div class="card">
     <h2>Blog · Vino patagónico, territorio y cultura</h2>
 
