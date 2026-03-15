@@ -59,7 +59,7 @@
   <meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/vinedo-aereo-neuquen.webp" />
   <meta name="twitter:image:alt" content="Vista aérea de viñedo patagónico en Neuquén, entre estepa, álamos y canales de riego" />
 
-  <!-- Schema.org -->
+<!-- SCHEMA SEO OPTIMIZADO · Guía del vino neuquino -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -113,6 +113,12 @@
       "description": "Sergio Landoni es Sommelier de Territorio, con base en San Martín de los Andes, Neuquén, Patagonia Argentina. Especialista en vino neuquino, vino patagónico, gastronomía regional, comunicación del vino y territorio."
     },
     {
+      "@type": "DefinedTermSet",
+      "@id": "https://sergiolandoni.com.ar/#conceptos-vino-patagonico",
+      "name": "Conceptos del vino patagónico",
+      "url": "https://sergiolandoni.com.ar/"
+    },
+    {
       "@type": "WebPage",
       "@id": "https://sergiolandoni.com.ar/guia-vino-neuquino.html#webpage",
       "url": "https://sergiolandoni.com.ar/guia-vino-neuquino.html",
@@ -122,9 +128,14 @@
       "isPartOf": {
         "@id": "https://sergiolandoni.com.ar/#website"
       },
-      "about": {
-        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
-      },
+      "about": [
+        {
+          "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+        },
+        {
+          "@id": "https://sergiolandoni.com.ar/guia-vino-neuquino.html#definedterm-vino-neuquino"
+        }
+      ],
       "primaryImageOfPage": {
         "@id": "https://sergiolandoni.com.ar/guia-vino-neuquino.html#img-hero"
       },
@@ -137,6 +148,9 @@
         },
         {
           "@id": "https://sergiolandoni.com.ar/guia-vino-neuquino.html#faq"
+        },
+        {
+          "@id": "https://sergiolandoni.com.ar/guia-vino-neuquino.html#definedterm-vino-neuquino"
         }
       ]
     },
@@ -144,6 +158,7 @@
       "@type": "ImageObject",
       "@id": "https://sergiolandoni.com.ar/guia-vino-neuquino.html#img-hero",
       "url": "https://sergiolandoni.com.ar/assets/img/vinedo-aereo-neuquen.webp",
+      "contentUrl": "https://sergiolandoni.com.ar/assets/img/vinedo-aereo-neuquen.webp",
       "width": 1920,
       "height": 1080,
       "inLanguage": "es-AR",
@@ -153,6 +168,7 @@
       "@type": "ImageObject",
       "@id": "https://sergiolandoni.com.ar/guia-vino-neuquino.html#img-soil",
       "url": "https://sergiolandoni.com.ar/assets/img/suelo-vinedo-neuquen.webp",
+      "contentUrl": "https://sergiolandoni.com.ar/assets/img/suelo-vinedo-neuquen.webp",
       "width": 1536,
       "height": 1024,
       "inLanguage": "es-AR",
@@ -162,6 +178,7 @@
       "@type": "ImageObject",
       "@id": "https://sergiolandoni.com.ar/guia-vino-neuquino.html#img-norte",
       "url": "https://sergiolandoni.com.ar/assets/img/norte-neuquen-rio.webp",
+      "contentUrl": "https://sergiolandoni.com.ar/assets/img/norte-neuquen-rio.webp",
       "width": 1024,
       "height": 650,
       "inLanguage": "es-AR",
@@ -226,8 +243,7 @@
       ],
       "about": [
         {
-          "@type": "Thing",
-          "name": "Vino neuquino"
+          "@id": "https://sergiolandoni.com.ar/guia-vino-neuquino.html#definedterm-vino-neuquino"
         },
         {
           "@type": "Place",
@@ -246,6 +262,9 @@
         {
           "@type": "Place",
           "name": "Patagonia Argentina"
+        },
+        {
+          "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#definedterm-sommelier-de-territorio"
         }
       ],
       "author": {
@@ -297,11 +316,45 @@
           }
         }
       ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://sergiolandoni.com.ar/guia-vino-neuquino.html#definedterm-vino-neuquino",
+      "name": "Vino neuquino",
+      "description": "El vino neuquino es el conjunto de vinos producidos en la provincia del Neuquén, en la Patagonia argentina. Se caracteriza por su clima continental seco, gran amplitud térmica, sanidad de las uvas, manejo preciso del agua y una identidad vitivinícola vinculada al paisaje patagónico.",
+      "url": "https://sergiolandoni.com.ar/guia-vino-neuquino.html",
+      "inDefinedTermSet": {
+        "@id": "https://sergiolandoni.com.ar/#conceptos-vino-patagonico"
+      },
+      "subjectOf": {
+        "@id": "https://sergiolandoni.com.ar/guia-vino-neuquino.html#webpage"
+      },
+      "author": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#definedterm-sommelier-de-territorio",
+      "name": "Sommelier de Territorio",
+      "description": "El Sommelier de Territorio es un profesional del vino que interpreta, comunica y vincula los vinos con el paisaje, la cultura, la gastronomía y las comunidades del lugar donde se producen.",
+      "url": "https://sergiolandoni.com.ar/sommelier-de-territorio.html",
+      "inDefinedTermSet": {
+        "@id": "https://sergiolandoni.com.ar/#conceptos-vino-patagonico"
+      },
+      "subjectOf": {
+        "@type": "WebPage",
+        "@id": "https://sergiolandoni.com.ar/sommelier-de-territorio.html#webpage",
+        "url": "https://sergiolandoni.com.ar/sommelier-de-territorio.html",
+        "name": "Sommelier de Territorio: cuando el vino se cuenta desde el lugar"
+      },
+      "author": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      }
     }
   ]
 }
 </script>
-
 
 
   <style>
@@ -581,9 +634,9 @@
         />
       </div>
 
-      <p>
-        El vino neuquino forma parte de la gran región vitivinícola de la Patagonia argentina, pero posee una identidad propia marcada por el clima continental seco, la amplitud térmica, el viento, los suelos de buen drenaje y el manejo preciso del agua.
-      </p>
+     <p>
+El <strong>vino neuquino</strong> es una de las expresiones más singulares del <strong>vino patagónico</strong> en Argentina. Forma parte de la gran región vitivinícola de la Patagonia, pero posee una identidad propia marcada por el clima continental seco, la amplitud térmica, el viento, los suelos de buen drenaje y el manejo preciso del agua.
+</p>>
 
       <p>
         En las últimas décadas, Neuquén se consolidó como una de las provincias más dinámicas del sur argentino en materia vitivinícola. Sus vinos combinan pureza frutal, frescura natural y una expresión territorial cada vez más definida, con perfiles que cambian según la zona, la escala del proyecto y la lectura del lugar.
@@ -634,7 +687,7 @@
 
       <div class="hr" aria-hidden="true"></div>
 
-      <h2 id="terroir">El terroir neuquino</h2>
+     <h2 id="terroir">El terroir del vino neuquino</h2>
 
       <p>
         El carácter del vino neuquino está profundamente ligado a su entorno. La provincia reúne condiciones especialmente favorables para la vitivinicultura: clima seco, escasas precipitaciones, fuerte amplitud térmica entre el día y la noche, muchas horas de sol y la presencia constante del viento patagónico.
