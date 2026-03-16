@@ -28,7 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
 
 <!-- Preload hero (performance / LCP) -->
-<link rel="preload" as="image" href="/assets/img/zonas-vitivinicolas-neuquen.jpg" fetchpriority="high" />
+<link rel="preload" as="image" href="/assets/img/cosecha-neuquen-2.webp" fetchpriority="high" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="article" />
@@ -38,15 +38,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:locale" content="es_AR" />
 <meta property="og:site_name" content="Sergio Landoni · Sommelier de Territorio" />
 
-<meta property="og:image" content="https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg" />
-<meta property="og:image:alt" content="Mapa de las zonas vitivinícolas de Neuquén en la Patagonia argentina" />
-<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image" content="https://sergiolandoni.com.ar/assets/img/cosecha-neuquen-2.webp" />
+<meta property="og:image:alt" content="Cosecha en viñedos de Neuquén, Patagonia Argentina" />
+<meta property="og:image:type" content="image/webp" />
 <meta property="og:image:width" content="1600" />
 <meta property="og:image:height" content="900" />
 
 <meta property="article:author" content="Sergio Landoni" />
 <meta property="article:published_time" content="2026-01-29" />
-<meta property="article:modified_time" content="2026-03-15" />
+<meta property="article:modified_time" content="2026-03-16" />
 <meta property="article:section" content="Vino" />
 <meta property="article:tag" content="vino neuquino" />
 <meta property="article:tag" content="vino patagónico" />
@@ -57,8 +57,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Zonas vitivinícolas de Neuquén | Las seis regiones del vino neuquino" />
 <meta name="twitter:description" content="Guía clara de las seis zonas vitivinícolas de Neuquén y la diversidad territorial del vino neuquino." />
-<meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg" />
-<meta name="twitter:image:alt" content="Mapa de las zonas vitivinícolas de Neuquén en la Patagonia argentina" />
+<meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/cosecha-neuquen-2.webp" />
+<meta name="twitter:image:alt" content="Cosecha en viñedos de Neuquén, Patagonia Argentina" />
 
 <!-- Schema.org | Zonas vitivinícolas de Neuquén -->
 <script type="application/ld+json">
@@ -161,13 +161,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {
       "@type": "ImageObject",
       "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#img-hero",
-      "url": "https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg",
-      "contentUrl": "https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg",
+      "url": "https://sergiolandoni.com.ar/assets/img/cosecha-neuquen-2.webp",
+      "contentUrl": "https://sergiolandoni.com.ar/assets/img/cosecha-neuquen-2.webp",
       "width": 1600,
       "height": 900,
       "inLanguage": "es-AR",
-      "caption": "Zonas vitivinícolas de Neuquén, Patagonia Argentina.",
-      "description": "Imagen principal del artículo sobre las zonas vitivinícolas de Neuquén."
+      "caption": "Cosecha en viñedos de Neuquén, Patagonia Argentina.",
+      "description": "Imagen principal del artículo con escena de cosecha en viñedos neuquinos."
     },
     {
       "@type": "ImageObject",
@@ -216,7 +216,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "articleBody": "Neuquén se ha consolidado como la provincia líder del vino patagónico. Este artículo propone una lectura territorial de sus seis zonas vitivinícolas: San Patricio del Chañar, la Confluencia, la ribera del río Limay, la Comarca Petrolera, el Norte Neuquino – Alto Neuquén y la Cordillera Neuquina.",
       "inLanguage": "es-AR",
       "datePublished": "2026-01-29",
-      "dateModified": "2026-03-15",
+      "dateModified": "2026-03-16",
       "author": {
         "@id": "https://sergiolandoni.com.ar/#person"
       },
@@ -231,7 +231,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           "@id": "https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html#img-map"
         }
       ],
-      "thumbnailUrl": "https://sergiolandoni.com.ar/assets/img/zonas-vitivinicolas-neuquen.jpg",
+      "thumbnailUrl": "https://sergiolandoni.com.ar/assets/img/cosecha-neuquen-2.webp",
       "articleSection": [
         "Vino",
         "Territorio",
@@ -561,7 +561,36 @@ p{margin:0 0 14px;}
   height:auto;
   display:block;
 }
+/* IMAGENES DENTRO DEL ARTICULO */
 
+.inline-photo{
+  margin:20px 0;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+
+.inline-photo img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.inline-photo figcaption{
+  padding:10px 14px;
+  font-size:13px;
+  color:var(--muted);
+  border-top:1px solid var(--line);
+  background:#fff;
+}
+
+/* leve aire visual entre secciones con imagen */
+
+.inline-photo + p{
+  margin-top:16px;
+}
 /* INDICE */
 
 nav.toc{
@@ -650,7 +679,7 @@ footer{
 }
 </style>
 
-  <main class="wrap">
+  <main id="top" class="wrap">
     <article class="card">
       <div class="kicker">Neuquén · Vino · Territorio</div>
 
@@ -674,20 +703,20 @@ footer{
 
 <p class="note">
   Publicado: <time datetime="2026-01-29">29 de enero de 2026</time> ·
-  Actualizado: <time datetime="2026-03-10">10 de marzo de 2026</time>
+ Actualizado: <time datetime="2026-03-16">16 de marzo de 2026</time>
 </p>
 
-      <div class="hero-media" aria-label="Imagen del artículo">
-        <img
-          src="/assets/img/zonas-vitivinicolas-neuquen.jpg"
-          alt="Zonas vitivinícolas de Neuquén, Patagonia Argentina"
-          width="1600"
-          height="900"
-          fetchpriority="high"
-          loading="eager"
-          decoding="async"
-        />
-      </div>
+     <div class="hero-media" aria-label="Imagen del artículo">
+  <img
+    src="/assets/img/cosecha-neuquen-2.webp"
+    alt="Cosecha en viñedos de Neuquén, Patagonia Argentina"
+    width="1600"
+    height="900"
+    fetchpriority="high"
+    loading="eager"
+    decoding="async"
+  />
+</div>
 
    <p>
   Neuquén se ha consolidado como la provincia líder del vino patagónico. Hoy concentra el 75,6% de la elaboración de vinos y mostos de la Patagonia argentina, un dato que confirma su peso productivo, su madurez vitivinícola y su lugar central dentro del mapa del vino del sur.
@@ -848,7 +877,17 @@ footer{
   variedades como el <strong>Pinot Noir</strong> logran aquí vinos de gran tensión, frescura natural, fruta definida y taninos finos.
   Hoy el <strong>Pinot Noir patagónico</strong> encuentra en San Patricio del Chañar uno de sus puntos de referencia más consistentes dentro del mapa argentino.
   </p>
-
+<figure class="inline-photo">
+  <img
+    src="/assets/img/cosecha-neuquen-1.webp"
+    alt="Trabajo de cosecha en viñedos de Neuquén"
+    width="1600"
+    height="900"
+    loading="lazy"
+    decoding="async"
+  />
+  <figcaption>Trabajo de cosecha en viñedos neuquinos.</figcaption>
+</figure>
       <p>
         Pinot Noir, Merlot y Cabernet Franc encuentran muy buenas condiciones. El Malbec también está presente y se expresa con un perfil propio:
         más firme, con taninos marcados y carácter patagónico.
@@ -925,7 +964,17 @@ footer{
         También aparecen muy buenas versiones de <strong>Cabernet Franc</strong> y <strong>Pinot Noir</strong>,
         siempre desde una lógica de <strong>sutileza y equilibrio</strong>.
       </p>
-
+<figure class="inline-photo">
+  <img
+    src="/assets/img/racimo-blanco-neuquen.webp"
+    alt="Racimo de uva blanca en viñedos de Neuquén"
+    width="1600"
+    height="900"
+    loading="lazy"
+    decoding="async"
+  />
+  <figcaption>Uva blanca en viñedos de Neuquén.</figcaption>
+</figure>
   <h3 id="ribera-neuquen">Subzona · Ribera del río Neuquén (Centenario)</h3>
 
 <p>
@@ -1045,7 +1094,17 @@ tanto dentro de la ciudad como en su ribera productiva.
   demostrando la viabilidad técnica de la vitivinicultura en plena meseta y actuando como catalizadores
   para el desarrollo de nuevos emprendimientos en la zona.
 </p>
-
+<figure class="inline-photo">
+  <img
+    src="/assets/img/cosecha-neuquen-2.webp"
+    alt="Trabajo en viñedos de Neuquén durante la cosecha"
+    width="1600"
+    height="900"
+    loading="lazy"
+    decoding="async"
+  />
+  <figcaption>Trabajo de viñedo y cosecha en Neuquén.</figcaption>
+</figure>
 <p>
   Son vinos que evocan <strong>jarilla</strong>, viento y <strong>estepa</strong>, sin caer en la rusticidad.
   Vinos con voz propia dentro del mapa vitivinícola neuquino.
@@ -1239,7 +1298,7 @@ tanto dentro de la ciudad como en su ribera productiva.
 
    <div class="hr" aria-hidden="true"></div>
 
-<<h3>Seguir leyendo</h3>
+<h3>Seguir leyendo</h3>
 <ul>
   <li>
     <a class="inline-link" href="/guia-vino-neuquino.html">
