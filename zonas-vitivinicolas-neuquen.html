@@ -687,6 +687,37 @@ footer{
   color:var(--muted);
   font-size:13px;
 }
+   /* Ajustes de lectura en móviles */
+
+@media (max-width: 600px){
+
+  .card{
+    padding:16px;
+  }
+
+  h1{
+    font-size:1.8rem;
+  }
+
+  .nav{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+  }
+
+  nav.toc{
+    padding:12px 14px;
+  }
+
+  nav.toc ul{
+    padding-left:16px;
+  }
+
+  nav.toc li{
+    margin:8px 0;
+  }
+
+}
 </style>
 </head>
 
@@ -707,7 +738,7 @@ footer{
   Un recorrido por los territorios que explican el vino neuquino: meseta, ribera, estepa, precordillera y cordillera patagónica.
 </p>
 <p class="intro">
-  Neuquén concentra más del 75% de la producción vitivinícola de la Patagonia argentina.
+  Neuquén concentra más del 75% de la producción vitivinícola de la Patagonia argentina y hoy se ha consolidado como uno de los territorios más dinámicos del vino argentino.
   Pero su verdadero interés no está solo en el volumen, sino en la diversidad de paisajes que
   dan origen a sus vinos. Desde San Patricio del Chañar hasta el Norte Neuquino y los
   viñedos experimentales de la cordillera, cada zona expresa de manera distinta el carácter
@@ -725,17 +756,17 @@ footer{
  Actualizado: <time datetime="2026-03-16">16 de marzo de 2026</time>
 </p>
 
-<figure class="inline-photo">
+<div class="hero-media" aria-label="Imagen principal del artículo">
   <img
-    src="/assets/img/bodega-familia-schroeder.webp"
-    alt="Bodega Familia Schroeder en San Patricio del Chañar, Neuquén"
+    src="/assets/img/cosecha-neuquen-2.webp"
+    alt="Cosecha en viñedos de Neuquén, Patagonia Argentina"
     width="1600"
     height="900"
-    loading="lazy"
+    fetchpriority="high"
+    loading="eager"
     decoding="async"
   />
-  <figcaption>Bodega Familia Schroeder, referencia emblemática de San Patricio del Chañar.</figcaption>
-</figure>
+</div>
 
    <p>
   Neuquén se ha consolidado como la provincia líder del vino patagónico. Hoy concentra el 75,6% de la elaboración de vinos y mostos de la Patagonia argentina, un dato que confirma su peso productivo, su madurez vitivinícola y su lugar central dentro del mapa del vino del sur.
@@ -911,14 +942,14 @@ footer{
   </p>
 <figure class="inline-photo">
   <img
-    src="/assets/img/cosecha-neuquen-1.webp"
-    alt="Trabajo de cosecha en viñedos de Neuquén"
+    src="/assets/img/bodega-familia-schroeder.webp"
+    alt="Bodega Familia Schroeder en San Patricio del Chañar, Neuquén"
     width="1600"
     height="900"
     loading="lazy"
     decoding="async"
   />
-  <figcaption>Trabajo de cosecha en viñedos neuquinos.</figcaption>
+  <figcaption>Bodega Familia Schroeder, referencia emblemática de San Patricio del Chañar.</figcaption>
 </figure>
       <p>
         Pinot Noir, Merlot y Cabernet Franc encuentran muy buenas condiciones. El Malbec también está presente y se expresa con un perfil propio:
@@ -1189,7 +1220,22 @@ tanto dentro de la ciudad como en su ribera productiva.
   La bodega trabaja con uvas provenientes de parrales antiguos y con viñedos en distintos puntos del valle,
   mostrando cómo el mismo varietal cambia según el lugar donde nace.
 </p>
-
+    <p>
+  La vendimia sigue siendo uno de los momentos más significativos del calendario vitivinícola del norte neuquino.
+</p>
+<figure class="inline-photo">
+  <img
+    src="/assets/img/bodega-des-de-la-torre-vendimia.webp"
+    alt="Celebración de la vendimia neuquina 2026 en Bodega Des de la Torre, Chos Malal, Norte Neuquino, Patagonia Argentina"
+    width="1600"
+    height="900"
+    loading="lazy"
+    decoding="async"
+  />
+  <figcaption>
+    Celebración de la vendimia neuquina 2026 en <strong>Bodega Des de la Torre</strong>, Chos Malal, en el corazón del Norte Neuquino.
+  </figcaption>
+</figure>
 <p>
   Una de las líneas que mejor expresa esa idea es la <strong>uva Criolla</strong>.
   Con plantas que en algunos casos superan los <strong>100 o 150 años</strong>, la Criolla no se usa para impactar,
@@ -1252,7 +1298,12 @@ tanto dentro de la ciudad como en su ribera productiva.
   Por ahora se trata de proyectos pequeños, pero juntos muestran algo interesante: el mapa del vino neuquino
   todavía no está cerrado. <strong>Sigue creciendo.</strong>
 </p>
-
+<p>
+  Sigo con especial interés el desarrollo de estos primeros viñedos cordilleranos.
+  Me entusiasma especialmente pensar en lo que puede suceder en lugares como
+  <strong>San Martín de los Andes</strong>. El día que podamos descorchar un vino nacido aquí,
+  en plena cordillera neuquina, será algo para celebrar.
+</p>
 <p>
   Estas <strong>zonas vitivinícolas de Neuquén</strong> muestran cómo el vino cambia según el lugar:
   meseta, ribera, estepa o precordillera. Cada territorio aporta una lectura distinta
