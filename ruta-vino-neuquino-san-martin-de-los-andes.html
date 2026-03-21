@@ -347,54 +347,52 @@
 
 <style>
 :root{
-  --max: 980px;
-  --radius: 16px;
-  --shadow: 0 10px 30px rgba(0,0,0,.06);
-  --bg: #fafafa;
+  --max: 900px;
+  --radius: 18px;
+  --shadow: 0 10px 30px rgba(0,0,0,.05);
+  --bg: #f7f7f5;
   --card: #ffffff;
-  --text: #111827;
-  --muted: #4b5563;
+  --text: #172026;
+  --muted: #5f6b76;
   --line: #e5e7eb;
   --accent: #0f766e;
 }
 
-*{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
 
 body{
   margin:0;
   font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   background:var(--bg);
   color:var(--text);
-  line-height:1.75;
+  line-height:1.78;
 }
 
 a{
   color:inherit;
   text-decoration:none;
-  transition:color .2s ease,opacity .2s ease;
+  transition:color .2s ease, opacity .2s ease;
 }
 
-a:hover{color:var(--accent);}
+a:hover{color:var(--accent)}
 
 .inline-link{
   text-decoration:underline;
   text-underline-offset:3px;
 }
 
-.inline-link:hover{opacity:.85;}
-
 .wrap{
   max-width:var(--max);
   margin:0 auto;
-  padding:0 20px;
+  padding:0 22px;
 }
 
 header{
   position:sticky;
   top:0;
   z-index:50;
-  background:rgba(250,250,250,.92);
+  background:rgba(247,247,245,.92);
   backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line);
 }
@@ -403,8 +401,8 @@ header{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:14px 0;
   gap:16px;
+  padding:14px 0;
 }
 
 .brand{
@@ -424,8 +422,8 @@ header{
   display:block;
 }
 
-.brand-text strong{font-size:16px;}
-.brand-text span{font-size:13px;color:var(--muted);}
+.brand-text strong{font-size:16px}
+.brand-text span{font-size:13px;color:var(--muted)}
 
 .menu{
   display:flex;
@@ -435,9 +433,14 @@ header{
   color:var(--muted);
 }
 
-.hero-media a:focus-visible,
-.inline-link:focus-visible,
+.menu a,
+.inline-link,
+.brand{
+  outline:none;
+}
+
 .menu a:focus-visible,
+.inline-link:focus-visible,
 .brand:focus-visible{
   outline:2px solid var(--accent);
   outline-offset:3px;
@@ -445,7 +448,7 @@ header{
 }
 
 main{
-  padding:30px 0 56px;
+  padding:34px 0 64px;
 }
 
 .card{
@@ -453,28 +456,29 @@ main{
   border:1px solid var(--line);
   border-radius:var(--radius);
   box-shadow:var(--shadow);
-  padding:30px 30px 36px;
+  padding:34px 34px 42px;
 }
 
 .kicker{
-  font-size:13px;
+  font-size:12px;
   color:var(--muted);
-  letter-spacing:.02em;
   text-transform:uppercase;
-  margin-bottom:10px;
+  letter-spacing:.08em;
+  margin-bottom:14px;
 }
 
 h1{
   line-height:1.12;
   letter-spacing:-.02em;
-  margin:0 0 14px;
-  font-size:clamp(1.85rem,3.4vw,2.65rem);
+  margin:0 0 16px;
+  font-size:clamp(2rem, 4vw, 2.9rem);
 }
 
 h2{
-  margin:52px 0 18px;
-  font-size:1.45rem;
-  line-height:1.25;
+  margin:62px 0 18px;
+  font-size:1.52rem;
+  line-height:1.24;
+  letter-spacing:-.01em;
 }
 
 h3{
@@ -484,8 +488,8 @@ h3{
 }
 
 p{
-  margin:0 0 18px;
-  font-size:1.03rem;
+  margin:0 0 20px;
+  font-size:1.04rem;
 }
 
 ul{
@@ -493,17 +497,16 @@ ul{
 }
 
 .subtitle{
-  font-size:1.08rem;
+  font-size:1.1rem;
   color:var(--muted);
-  margin:0 0 18px;
-  max-width:860px;
+  margin:0 0 22px;
+  max-width:760px;
 }
 
 .intro{
-  font-size:1.06rem;
-  color:var(--text);
-  margin:0 0 20px;
-  max-width:860px;
+  font-size:1.08rem;
+  margin:0 0 22px;
+  max-width:760px;
 }
 
 .note{
@@ -511,63 +514,32 @@ ul{
   color:var(--muted);
 }
 
-.hr{
-  height:1px;
-  background:var(--line);
-  margin:34px 0 26px;
-}
-
 .hero-media{
-  margin:28px 0 34px;
+  margin:30px 0 38px;
   border-radius:var(--radius);
   overflow:hidden;
   border:1px solid var(--line);
+  background:#fff;
 }
 
 .hero-media img,
 .inline-photo img{
+  display:block;
   width:100%;
   height:auto;
-  display:block;
-}
-
-.inline-photo{
-  margin:34px 0 38px;
-  border:1px solid var(--line);
-  border-radius:var(--radius);
-  overflow:hidden;
-  background:#fff;
-  box-shadow:var(--shadow);
-}
-
-.inline-photo figcaption{
-  padding:11px 14px;
-  font-size:13px;
-  color:var(--muted);
-  border-top:1px solid var(--line);
-  background:#fff;
-}
-
-blockquote{
-  margin:36px 0;
-  padding:20px 22px;
-  border-left:4px solid var(--accent);
-  background:#f8fafc;
-  border-radius:12px;
-  color:var(--text);
 }
 
 nav.toc{
   border:1px solid var(--line);
   border-radius:14px;
   padding:18px 18px 16px;
-  margin:26px 0 38px;
-  background:#fff;
+  margin:30px 0 42px;
+  background:#fcfcfb;
 }
 
 nav.toc h2{
   margin:0 0 10px;
-  font-size:1.05rem;
+  font-size:1.03rem;
 }
 
 nav.toc ul{
@@ -580,8 +552,47 @@ nav.toc li{
   margin:8px 0;
 }
 
+.inline-photo{
+  margin:38px 0 42px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+
+.inline-photo figcaption{
+  padding:12px 15px;
+  font-size:13px;
+  color:var(--muted);
+  border-top:1px solid var(--line);
+  background:#fff;
+}
+
+blockquote{
+  margin:42px 0;
+  padding:22px 24px;
+  border-left:4px solid var(--accent);
+  background:#f8fafc;
+  border-radius:12px;
+  color:var(--text);
+}
+
+.hr{
+  height:1px;
+  background:var(--line);
+  margin:38px 0 28px;
+}
+
 .section-space{
-  margin-top:10px;
+  margin-top:8px;
+}
+
+footer{
+  border-top:1px solid var(--line);
+  padding:22px 0 28px;
+  color:var(--muted);
+  font-size:13px;
 }
 
 .back-to-top{
@@ -608,16 +619,9 @@ nav.toc li{
   color:var(--accent);
 }
 
-footer{
-  border-top:1px solid var(--line);
-  padding:22px 0 28px;
-  color:var(--muted);
-  font-size:13px;
-}
-
 @media (max-width: 760px){
   .card{
-    padding:20px 18px 26px;
+    padding:22px 18px 28px;
   }
 
   .nav{
@@ -627,33 +631,33 @@ footer{
   }
 
   main{
-    padding:18px 0 36px;
+    padding:20px 0 40px;
   }
 
   h1{
-    font-size:1.9rem;
+    font-size:2rem;
   }
 
   h2{
-    margin:40px 0 16px;
+    margin:44px 0 16px;
     font-size:1.3rem;
   }
 
   p{
     font-size:1rem;
-    margin-bottom:16px;
+    margin-bottom:18px;
   }
 
   .hero-media{
-    margin:22px 0 28px;
+    margin:22px 0 30px;
   }
 
   .inline-photo{
-    margin:26px 0 30px;
+    margin:30px 0 34px;
   }
 
   nav.toc{
-    margin:22px 0 30px;
+    margin:24px 0 32px;
     padding:14px 15px;
   }
 }
@@ -676,6 +680,7 @@ footer{
         <span>Sommelier de Territorio</span>
       </div>
     </a>
+
     <nav class="menu" aria-label="Navegación principal">
       <a href="/blog.html">Blog</a>
       <a href="/guia-vino-neuquino.html">Vino neuquino</a>
@@ -741,7 +746,7 @@ footer{
     </p>
 
     <p>
-      En ese contexto, el vino encuentra un lugar distinto. No porque cambie en su esencia, sino porque cambia la forma en que se lo vive. Una copa que aparece en el momento justo. En el entorno adecuado. Acompañando una comida, una conversación o un paisaje.
+      En ese contexto, el vino encuentra un lugar distinto. No porque cambie en su esencia, sino porque cambia la forma en que se lo vive. Una copa que aparece en el momento justo, en el entorno adecuado, acompañando una comida, una conversación o un paisaje.
     </p>
 
     <figure class="inline-photo">
@@ -759,7 +764,7 @@ footer{
     </figure>
 
     <p>
-      Esa es la idea central: <strong>el vino neuquino se disfruta en todos lados, pero en San Martín de los Andes sabe mejor</strong>. No por una cuestión técnica, sino por el valor del contexto. Porque el lugar también participa de la copa.
+      Esa es la idea central: <strong>el vino neuquino no solo se visita en origen; también puede vivirse en destino</strong>. Y cuando eso ocurre en San Martín de los Andes, la experiencia gana clima, tiempo y profundidad.
     </p>
 
     <h2 id="escenario-del-vino">San Martín de los Andes como escenario del vino</h2>
@@ -773,7 +778,7 @@ footer{
     </p>
 
     <p>
-      Y en ese viaje, San Martín de los Andes aparece como un escenario natural. Un lugar donde conviven el tiempo, el paisaje y la predisposición a disfrutar. Donde el vino no se explica, se comparte.
+      Y en ese viaje, San Martín de los Andes aparece como un escenario natural. Un lugar donde conviven el tiempo, el paisaje y la predisposición a disfrutar. Donde el vino no se explica: se comparte.
     </p>
 
     <figure class="inline-photo">
@@ -791,7 +796,7 @@ footer{
     </figure>
 
     <blockquote>
-      A veces se piensa que para conocer el vino neuquino hay que ir hasta su origen. Sin embargo, en San Martín de los Andes la experiencia se vuelve más cercana, más enfocada y más conectada con la identidad de cada vino.
+      El vino neuquino nació en su territorio, pero en San Martín de los Andes encuentra una de sus formas más refinadas de ser compartido.
     </blockquote>
 
     <h2 id="experiencia-curada">Una experiencia curada del vino neuquino</h2>
@@ -801,7 +806,7 @@ footer{
     </p>
 
     <p>
-      Lejos del ritmo de la producción, el encuentro se vuelve más claro. Más humano. Espacios gastronómicos, alojamientos y propuestas que integran el vino de manera natural generan momentos donde cada vino encuentra su lugar.
+      Lejos del ritmo de la producción, el encuentro se vuelve más claro y más humano. Espacios gastronómicos, alojamientos y propuestas que integran el vino de manera natural generan momentos donde cada vino encuentra su lugar.
     </p>
 
     <figure class="inline-photo">
@@ -837,11 +842,7 @@ footer{
     </figure>
 
     <p class="section-space">
-      No se trata de recorrer más, sino de elegir mejor. No se trata de sumar, sino de interpretar. Allí está la fuerza de esta <strong>ruta del vino neuquino inversa</strong>: reunir selección, hospitalidad y paisaje en un mismo lugar, sin perder profundidad territorial.
-    </p>
-
-    <p>
-      El origen sigue estando presente. La experiencia en destino no reemplaza al viñedo: lo interpreta, lo acerca y lo vuelve más legible para quien viaja.
+      No se trata de recorrer más, sino de elegir mejor. No se trata de sumar, sino de interpretar. Allí está la fuerza de esta mirada: reunir selección, hospitalidad y paisaje en un mismo lugar, sin perder profundidad territorial.
     </p>
 
     <h2 id="parte-del-viaje">El vino como parte del viaje</h2>
