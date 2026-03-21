@@ -78,37 +78,37 @@
         "@id": "https://sergiolandoni.com.ar/#person"
       }
     },
- {
-  "@type": "Person",
-  "@id": "https://sergiolandoni.com.ar/#person",
-  "name": "Sergio Landoni",
-  "alternateName": "Sommelier de Territorio",
-  "jobTitle": "Sommelier de Territorio",
-  "description": "Sergio Landoni es Sommelier de Territorio, con base en San Martín de los Andes, Neuquén, Patagonia Argentina. Se especializa en vino neuquino, vino patagónico, territorio, gastronomía y comunicación del vino.",
-  "url": "https://sergiolandoni.com.ar/",
-  "mainEntityOfPage": {
-    "@id": "https://sergiolandoni.com.ar/ruta-vino-neuquino-san-martin-de-los-andes.html#webpage"
-  },
-  "image": {
-    "@type": "ImageObject",
-    "@id": "https://sergiolandoni.com.ar/#image-portrait",
-    "url": "https://sergiolandoni.com.ar/retrato.jpg"
-  },
-  "logo": {
-    "@type": "ImageObject",
-    "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg"
-  },
-  "sameAs": [
-    "https://www.instagram.com/sergiolandoni.somm/",
-    "https://www.linkedin.com/in/sergio-landoni-sommelier/"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "San Martín de los Andes",
-    "addressRegion": "Neuquén",
-    "addressCountry": "AR"
-  }
-},
+    {
+      "@type": "Person",
+      "@id": "https://sergiolandoni.com.ar/#person",
+      "name": "Sergio Landoni",
+      "alternateName": "Sommelier de Territorio",
+      "jobTitle": "Sommelier de Territorio",
+      "description": "Sergio Landoni es Sommelier de Territorio, con base en San Martín de los Andes, Neuquén, Patagonia Argentina. Se especializa en vino neuquino, vino patagónico, territorio, gastronomía y comunicación del vino.",
+      "url": "https://sergiolandoni.com.ar/",
+      "mainEntityOfPage": {
+        "@id": "https://sergiolandoni.com.ar/ruta-vino-neuquino-san-martin-de-los-andes.html#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://sergiolandoni.com.ar/#image-portrait",
+        "url": "https://sergiolandoni.com.ar/retrato.jpg"
+      },
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg"
+      },
+      "sameAs": [
+        "https://www.instagram.com/sergiolandoni.somm/",
+        "https://www.linkedin.com/in/sergio-landoni-sommelier/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Martín de los Andes",
+        "addressRegion": "Neuquén",
+        "addressCountry": "AR"
+      }
+    },
     {
       "@type": "Thing",
       "@id": "https://sergiolandoni.com.ar/ruta-vino-neuquino-san-martin-de-los-andes.html#vino-neuquino",
@@ -347,15 +347,15 @@
 
 <style>
 :root{
-  --max:1060px;
-  --radius:14px;
-  --shadow:0 10px 30px rgba(0,0,0,.06);
-  --bg:#fafafa;
-  --card:#ffffff;
-  --text:#111827;
-  --muted:#374151;
-  --line:#e5e7eb;
-  --accent:#0f766e;
+  --max: 980px;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0,0,0,.06);
+  --bg: #fafafa;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #4b5563;
+  --line: #e5e7eb;
+  --accent: #0f766e;
 }
 
 *{box-sizing:border-box;}
@@ -363,10 +363,10 @@ html{scroll-behavior:smooth;}
 
 body{
   margin:0;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   background:var(--bg);
   color:var(--text);
-  line-height:1.65;
+  line-height:1.75;
 }
 
 a{
@@ -387,7 +387,7 @@ a:hover{color:var(--accent);}
 .wrap{
   max-width:var(--max);
   margin:0 auto;
-  padding:0 18px;
+  padding:0 20px;
 }
 
 header{
@@ -435,20 +435,6 @@ header{
   color:var(--muted);
 }
 
-.subtitle{
-  font-size:1.05rem;
-  color:var(--muted);
-  margin:0 0 12px;
-  max-width:900px;
-}
-
-.intro{
-  font-size:1rem;
-  color:var(--text);
-  margin:0 0 16px;
-  max-width:900px;
-}
-
 .hero-media a:focus-visible,
 .inline-link:focus-visible,
 .menu a:focus-visible,
@@ -458,52 +444,81 @@ header{
   border-radius:8px;
 }
 
-main{padding:22px 0 44px;}
+main{
+  padding:30px 0 56px;
+}
 
 .card{
   background:var(--card);
   border:1px solid var(--line);
   border-radius:var(--radius);
   box-shadow:var(--shadow);
-  padding:22px;
-  transition:transform .25s ease,box-shadow .25s ease;
+  padding:30px 30px 36px;
 }
-
-.card:hover{transform:translateY(-2px);}
 
 .kicker{
   font-size:13px;
   color:var(--muted);
   letter-spacing:.02em;
   text-transform:uppercase;
-  margin-bottom:6px;
+  margin-bottom:10px;
 }
 
 h1{
-  line-height:1.15;
+  line-height:1.12;
   letter-spacing:-.02em;
-  margin:0 0 10px;
-  font-size:clamp(1.75rem,3.2vw,2.4rem);
+  margin:0 0 14px;
+  font-size:clamp(1.85rem,3.4vw,2.65rem);
 }
 
-h2{margin:24px 0 10px;font-size:1.35rem;}
-h3{margin:16px 0 8px;font-size:1.1rem;}
-p{margin:0 0 14px;}
+h2{
+  margin:52px 0 18px;
+  font-size:1.45rem;
+  line-height:1.25;
+}
 
-blockquote{
-  margin:18px 0;
-  padding:16px 18px;
-  border-left:4px solid var(--accent);
-  background:#f8fafc;
-  border-radius:10px;
+h3{
+  margin:26px 0 10px;
+  font-size:1.08rem;
+  line-height:1.35;
+}
+
+p{
+  margin:0 0 18px;
+  font-size:1.03rem;
+}
+
+ul{
+  margin:0 0 18px;
+}
+
+.subtitle{
+  font-size:1.08rem;
+  color:var(--muted);
+  margin:0 0 18px;
+  max-width:860px;
+}
+
+.intro{
+  font-size:1.06rem;
   color:var(--text);
+  margin:0 0 20px;
+  max-width:860px;
 }
 
-.note{font-size:13px;color:var(--muted);}
-.hr{height:1px;background:var(--line);margin:18px 0;}
+.note{
+  font-size:13px;
+  color:var(--muted);
+}
+
+.hr{
+  height:1px;
+  background:var(--line);
+  margin:34px 0 26px;
+}
 
 .hero-media{
-  margin:14px 0 16px;
+  margin:28px 0 34px;
   border-radius:var(--radius);
   overflow:hidden;
   border:1px solid var(--line);
@@ -517,7 +532,7 @@ blockquote{
 }
 
 .inline-photo{
-  margin:20px 0;
+  margin:34px 0 38px;
   border:1px solid var(--line);
   border-radius:var(--radius);
   overflow:hidden;
@@ -526,30 +541,48 @@ blockquote{
 }
 
 .inline-photo figcaption{
-  padding:10px 14px;
+  padding:11px 14px;
   font-size:13px;
   color:var(--muted);
   border-top:1px solid var(--line);
   background:#fff;
 }
 
-.inline-photo + p{margin-top:16px;}
-
-.section-breath{
-  margin:28px 0 10px;
+blockquote{
+  margin:36px 0;
+  padding:20px 22px;
+  border-left:4px solid var(--accent);
+  background:#f8fafc;
+  border-radius:12px;
+  color:var(--text);
 }
 
 nav.toc{
   border:1px solid var(--line);
-  border-radius:12px;
-  padding:14px 16px;
-  margin:16px 0;
+  border-radius:14px;
+  padding:18px 18px 16px;
+  margin:26px 0 38px;
   background:#fff;
 }
 
-nav.toc h2{margin:0 0 10px;font-size:1.05rem;}
-nav.toc ul{margin:0;padding-left:18px;color:var(--muted);}
-nav.toc li{margin:6px 0;}
+nav.toc h2{
+  margin:0 0 10px;
+  font-size:1.05rem;
+}
+
+nav.toc ul{
+  margin:0;
+  padding-left:18px;
+  color:var(--muted);
+}
+
+nav.toc li{
+  margin:8px 0;
+}
+
+.section-space{
+  margin-top:10px;
+}
 
 .back-to-top{
   position:fixed;
@@ -570,7 +603,10 @@ nav.toc li{margin:6px 0;}
   transition:transform .2s ease,color .2s ease;
 }
 
-.back-to-top:hover{transform:translateY(-2px);color:var(--accent);}
+.back-to-top:hover{
+  transform:translateY(-2px);
+  color:var(--accent);
+}
 
 footer{
   border-top:1px solid var(--line);
@@ -579,14 +615,47 @@ footer{
   font-size:13px;
 }
 
-@media (max-width: 600px){
-  .card{padding:16px;}
-  h1{font-size:1.8rem;}
-  .nav{flex-direction:column;align-items:flex-start;gap:10px;}
-  nav.toc{padding:12px 14px;}
-  nav.toc ul{padding-left:16px;}
-  nav.toc li{margin:8px 0;}
-  .section-breath{margin:22px 0 8px;}
+@media (max-width: 760px){
+  .card{
+    padding:20px 18px 26px;
+  }
+
+  .nav{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+  }
+
+  main{
+    padding:18px 0 36px;
+  }
+
+  h1{
+    font-size:1.9rem;
+  }
+
+  h2{
+    margin:40px 0 16px;
+    font-size:1.3rem;
+  }
+
+  p{
+    font-size:1rem;
+    margin-bottom:16px;
+  }
+
+  .hero-media{
+    margin:22px 0 28px;
+  }
+
+  .inline-photo{
+    margin:26px 0 30px;
+  }
+
+  nav.toc{
+    margin:22px 0 30px;
+    padding:14px 15px;
+  }
 }
 </style>
 </head>
@@ -755,22 +824,6 @@ footer{
 
     <figure class="inline-photo">
       <img
-        src="/assets/img/paihuen-resort-vino-neuquino-san-martin-de-los-andes.webp"
-        alt="Paihuen Resort de Montaña entre bosque y lago en San Martín de los Andes"
-        width="1099"
-        height="619"
-        loading="lazy"
-        decoding="async"
-      />
-      <figcaption>
-        Paihuen Resort de Montaña: paisaje, calma y hospitalidad para una experiencia del vino neuquino en destino.
-      </figcaption>
-    </figure>
-
-    <div class="section-breath"></div>
-
-    <figure class="inline-photo">
-      <img
         src="/assets/img/vino-neuquino-loi-suites-chapelco-san-martin-de-los-andes.webp"
         alt="Mesa con copas y vista en Loi Suites Chapelco, un entorno premium para vivir el vino neuquino"
         width="700"
@@ -783,45 +836,13 @@ footer{
       </figcaption>
     </figure>
 
-    <p>
+    <p class="section-space">
       No se trata de recorrer más, sino de elegir mejor. No se trata de sumar, sino de interpretar. Allí está la fuerza de esta <strong>ruta del vino neuquino inversa</strong>: reunir selección, hospitalidad y paisaje en un mismo lugar, sin perder profundidad territorial.
     </p>
 
     <p>
-      Y cuando esa experiencia se da en San Martín de los Andes, el paisaje deja de ser fondo y pasa a ser parte activa del relato.
-    </p>
-
-    <figure class="inline-photo">
-      <img
-        src="/assets/img/san-martin-de-los-andes-paisaje-lago-lacar-vino-neuquino.webp"
-        alt="Paisaje de San Martín de los Andes con el Lago Lácar, escenario del vino neuquino"
-        width="2048"
-        height="682"
-        loading="lazy"
-        decoding="async"
-      />
-      <figcaption>
-        San Martín de los Andes: paisaje, escala y atmósfera como parte de la experiencia del vino.
-      </figcaption>
-    </figure>
-
-    <p>
       El origen sigue estando presente. La experiencia en destino no reemplaza al viñedo: lo interpreta, lo acerca y lo vuelve más legible para quien viaja.
     </p>
-
-    <figure class="inline-photo">
-      <img
-        src="/assets/img/uvas-vino-neuquino-patagonia-san-martin-de-los-andes.webp"
-        alt="Uvas del vino patagónico representando el origen del vino neuquino"
-        width="768"
-        height="432"
-        loading="lazy"
-        decoding="async"
-      />
-      <figcaption>
-        El origen sigue presente: la experiencia en destino no reemplaza al viñedo, lo interpreta.
-      </figcaption>
-    </figure>
 
     <h2 id="parte-del-viaje">El vino como parte del viaje</h2>
 
@@ -838,8 +859,7 @@ footer{
     </p>
 
     <p>
-      Porque el vino neuquino se disfruta en todos lados,<br />
-      pero en San Martín de los Andes sabe mejor.
+      Porque el vino neuquino no solo puede visitarse. También puede vivirse. Y en San Martín de los Andes encuentra una escala, una atmósfera y una forma de ser compartido que lo vuelven especialmente expresivo.
     </p>
 
     <section aria-labelledby="faq-title">
