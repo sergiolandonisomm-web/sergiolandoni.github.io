@@ -105,281 +105,317 @@
   }
   </script>
 
-  <style>
-    :root{
-      --bg:#fafafa;
-      --card:#ffffff;
-      --text:#111827;
-      --muted:#374151;
-      --line:#e5e7eb;
-      --accent:#0f766e;
-      --accent-hover:#134e4a;
-      --radius:14px;
-      --shadow:0 10px 30px rgba(0,0,0,.06);
-      --max:920px;
-      --transition:all .25s cubic-bezier(0.4,0,0.2,1);
-    }
+<style>
+:root{
+  --bg:#fafafa;
+  --card:#ffffff;
+  --text:#111827;
+  --muted:#374151;
+  --line:#e5e7eb;
+  --accent:#0f766e;
+  --accent-hover:#134e4a;
+  --radius:14px;
+  --shadow:0 10px 30px rgba(0,0,0,.06);
+  --max:920px;
+  --transition:all .25s cubic-bezier(0.4,0,0.2,1);
+}
 
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
 
-    body{
-      margin:0;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.75;
-    }
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.75;
+}
 
-    a{color:inherit;text-decoration:none}
+a{
+  color:inherit;
+  text-decoration:none;
+}
 
-    .wrap{
-      max-width:var(--max);
-      margin:0 auto;
-      padding:0 18px;
-    }
+.wrap{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:0 18px;
+}
 
-    header{
-      position:sticky;
-      top:0;
-      z-index:50;
-      background:rgba(250,250,250,.92);
-      backdrop-filter:blur(10px);
-      border-bottom:1px solid var(--line);
-    }
+header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(250,250,250,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
 
-    .nav{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      padding:14px 0;
-    }
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:14px 0;
+}
 
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      min-width:220px;
-    }
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:220px;
+}
 
-    .brand-logo{
-      width:40px;
-      height:40px;
-      border-radius:10px;
-      border:1px solid var(--line);
-      background:#fff;
-      object-fit:contain;
-      display:block;
-    }
+.brand-logo{
+  width:40px;
+  height:40px;
+  border-radius:10px;
+  border:1px solid var(--line);
+  background:#fff;
+  object-fit:contain;
+  display:block;
+}
 
-    .brand-text{
-      display:flex;
-      flex-direction:column;
-      gap:2px;
-    }
+.brand-text{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
 
-    .brand-text strong{
-      font-size:16px;
-      letter-spacing:.2px;
-    }
+.brand-text strong{
+  font-size:16px;
+  letter-spacing:.2px;
+}
 
-    .brand-text span{
-      font-size:13px;
-      color:var(--muted);
-    }
+.brand-text span{
+  font-size:13px;
+  color:var(--muted);
+}
 
-    .menu{
-      display:flex;
-      gap:14px;
-      flex-wrap:wrap;
-      align-items:center;
-      justify-content:flex-end;
-    }
+.menu{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:flex-end;
+}
 
-    .menu a{
-      font-size:14px;
-      color:var(--muted);
-      padding:8px 10px;
-      border-radius:10px;
-      border:1px solid transparent;
-      transition:var(--transition);
-    }
+.menu a{
+  font-size:14px;
+  color:var(--muted);
+  padding:8px 10px;
+  border-radius:10px;
+  border:1px solid transparent;
+  transition:var(--transition);
+}
 
-    .menu a:hover{
-      background:#fff;
-      border-color:var(--line);
-      color:var(--accent);
-    }
+.menu a:hover{
+  background:#fff;
+  border-color:var(--line);
+  color:var(--accent);
+}
 
-    main{
-      padding:28px 0 56px;
-    }
+main{
+  padding:28px 0 56px;
+}
 
-    .article-card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:28px;
-    }
+.article-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:28px;
+}
 
-    .kicker{
-      display:inline-flex;
-      gap:8px;
-      align-items:center;
-      font-size:13px;
-      color:var(--accent);
-      background:rgba(15,118,110,.08);
-      border:1px solid rgba(15,118,110,.12);
-      padding:6px 10px;
-      border-radius:999px;
-      margin-bottom:14px;
-    }
+.kicker{
+  display:inline-flex;
+  gap:8px;
+  align-items:center;
+  font-size:13px;
+  color:var(--accent);
+  background:rgba(15,118,110,.08);
+  border:1px solid rgba(15,118,110,.12);
+  padding:6px 10px;
+  border-radius:999px;
+  margin-bottom:14px;
+}
 
-    h1{
-      margin:0 0 12px;
-      font-size:38px;
-      line-height:1.15;
-      letter-spacing:-0.5px;
-    }
+h1{
+  margin:0 0 12px;
+  font-size:38px;
+  line-height:1.15;
+  letter-spacing:-0.5px;
+}
 
-    .lead{
-      font-size:18px;
-      color:var(--muted);
-      margin:0 0 18px;
-    }
+.lead{
+  font-size:18px;
+  color:var(--muted);
+  margin:0 0 18px;
+}
 
-    .meta{
-      font-size:13px;
-      color:var(--muted);
-      margin-bottom:20px;
-    }
+.meta{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:20px;
+}
 
-    .featured{
-      display:block;
-      width:100%;
-      height:auto;
-      border-radius:12px;
-      border:1px solid var(--line);
-      box-shadow:0 10px 30px rgba(0,0,0,.06);
-      margin:18px 0 22px;
-    }
+.featured{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:12px;
+  border:1px solid var(--line);
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+  margin:18px 0 22px;
+}
 
-    h2{
-      margin:28px 0 10px;
-      font-size:24px;
-      line-height:1.25;
-    }
+h2{
+  margin:28px 0 10px;
+  font-size:24px;
+  line-height:1.25;
+}
 
-    p{
-      margin:12px 0;
-      color:var(--muted);
-    }
+p{
+  margin:12px 0;
+  color:var(--muted);
+}
 
-    .highlight{
-      background:rgba(15,118,110,.06);
-      border:1px solid rgba(15,118,110,.12);
-      border-radius:12px;
-      padding:16px;
-      margin:22px 0;
-    }
+.highlight{
+  background:rgba(15,118,110,.06);
+  border:1px solid rgba(15,118,110,.12);
+  border-radius:12px;
+  padding:16px;
+  margin:22px 0;
+}
 
-    .actions{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      margin:24px 0 10px;
-    }
+/* 🔹 BLOQUE NUEVO: separación + nota editorial */
 
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      padding:10px 14px;
-      border-radius:12px;
-      font-size:14px;
-      border:1px solid var(--line);
-      background:#fff;
-      color:var(--text);
-      cursor:pointer;
-      line-height:1.2;
-      min-height:38px;
-      transition:var(--transition);
-    }
+.hr{
+  height:1px;
+  background:var(--line);
+  margin:28px 0;
+}
 
-    .btn.primary{
-      background:var(--accent);
-      border-color:var(--accent);
-      color:#fff;
-      font-weight:600;
-      letter-spacing:.3px;
-    }
+.note{
+  font-size:14px;
+  color:var(--muted);
+  line-height:1.6;
+}
 
-    .btn.outline{
-      background:transparent;
-      border-color:var(--accent);
-      color:var(--accent);
-    }
+/* 🔹 links editoriales (SEO + UX) */
 
-    .btn:hover{
-      border-color:#cbd5e1;
-    }
+.inline-link{
+  color:var(--accent);
+  text-decoration:underline;
+  transition:var(--transition);
+}
 
-    .btn.outline:hover{
-      background:rgba(15,118,110,.08);
-      border-color:var(--accent);
-    }
+.inline-link:hover{
+  color:var(--accent-hover);
+}
 
-    .btn.primary:hover{
-      background:var(--accent-hover);
-      border-color:var(--accent-hover);
-    }
+/* 🔹 botones */
 
-    .related{
-      margin-top:28px;
-      padding-top:22px;
-      border-top:1px solid var(--line);
-    }
+.actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:24px 0 10px;
+}
 
-    .related ul{
-      margin:10px 0 0;
-      padding-left:18px;
-      color:var(--muted);
-    }
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 14px;
+  border-radius:12px;
+  font-size:14px;
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--text);
+  cursor:pointer;
+  line-height:1.2;
+  min-height:38px;
+  transition:var(--transition);
+}
 
-    .related li{
-      margin:8px 0;
-    }
+.btn.primary{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:#fff;
+  font-weight:600;
+  letter-spacing:.3px;
+}
 
-    footer{
-      border-top:1px solid var(--line);
-      padding:22px 0 28px;
-      color:var(--muted);
-      font-size:13px;
-      text-align:center;
-    }
+.btn.outline{
+  background:transparent;
+  border-color:var(--accent);
+  color:var(--accent);
+}
 
-    @media (max-width:700px){
-      h1{
-        font-size:30px;
-        line-height:1.2;
-        letter-spacing:-0.3px;
-      }
+.btn:hover{
+  border-color:#cbd5e1;
+}
 
-      .lead{
-        font-size:16px;
-      }
+.btn.outline:hover{
+  background:rgba(15,118,110,.08);
+}
 
-      .article-card{
-        padding:20px;
-      }
+.btn.primary:hover{
+  background:var(--accent-hover);
+  border-color:var(--accent-hover);
+}
 
-      .actions .btn{
-        width:100%;
-      }
-    }
-  </style>
+/* 🔹 relacionados */
+
+.related{
+  margin-top:28px;
+  padding-top:22px;
+  border-top:1px solid var(--line);
+}
+
+.related ul{
+  margin:10px 0 0;
+  padding-left:18px;
+  color:var(--muted);
+}
+
+.related li{
+  margin:8px 0;
+}
+
+/* 🔹 footer */
+
+footer{
+  border-top:1px solid var(--line);
+  padding:22px 0 28px;
+  color:var(--muted);
+  font-size:13px;
+  text-align:center;
+}
+
+/* 🔹 responsive */
+
+@media (max-width:700px){
+  h1{
+    font-size:30px;
+    line-height:1.2;
+    letter-spacing:-0.3px;
+  }
+
+  .lead{
+    font-size:16px;
+  }
+
+  .article-card{
+    padding:20px;
+  }
+
+  .actions .btn{
+    width:100%;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -484,50 +520,64 @@
         En ese sentido, esta conversación recién empieza. Y vale la pena sostenerla con más lectura, más comunicación y más trabajo articulado entre bodegas, proyectos, territorio, turismo y gastronomía.
       </p>
 
-      <div class="actions">
-        <a
-          class="btn primary"
-          href="https://www.rionegro.com.ar/gastronomia/el-vino-neuquino-amplia-su-mapa-las-razones-de-su-diversidad-y-consolidacion/"
-          target="_blank"
-          rel="noopener noreferrer">
-          Leer nota en Diario Río Negro
-        </a>
+      <<div class="actions">
+  <a
+    class="btn primary"
+    href="https://www.rionegro.com.ar/gastronomia/el-vino-neuquino-amplia-su-mapa-las-razones-de-su-diversidad-y-consolidacion/"
+    target="_blank"
+    rel="noopener noreferrer">
+    Leer nota en Diario Río Negro
+  </a>
 
-        <a
-          class="btn outline"
-          href="/zonas-vitivinicolas-neuquen.html">
-          Leer artículo sobre las zonas vitivinícolas de Neuquén
-        </a>
-      </div>
+  <a
+    class="btn outline"
+    href="/zonas-vitivinicolas-neuquen.html">
+    Leer artículo sobre las zonas vitivinícolas de Neuquén
+  </a>
+</div>
 
-      <section class="related" aria-label="Lecturas relacionadas">
-        <h2 style="margin-top:0;">Lecturas relacionadas</h2>
-        <ul>
-          <li>
-            <a href="/zonas-vitivinicolas-neuquen.html">
-              Las cinco zonas vitivinícolas de Neuquén
-            </a>
-          </li>
-          <li>
-            <a href="/guia-vino-neuquino.html">
-              Guía del vino neuquino: clima, regiones, varietales y gastronomía
-            </a>
-          </li>
-          <li>
-            <a href="/norte-neuquino-territorio-vino.html">
-              El Norte Neuquino: cuando el territorio empieza a hablar de vino
-            </a>
-          </li>
-        </ul>
-      </section>
-    </article>
-  </main>
+<div class="hr" aria-hidden="true"></div>
 
-  <footer>
-    © 2026 Sergio Landoni · Sommelier de Territorio · Patagonia Argentina<br/>
-    <a href="mailto:contacto@sergiolandoni.com.ar">contacto@sergiolandoni.com.ar</a> ·
-    <a href="https://www.linkedin.com/in/sergio-landoni-sommelier/" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
-    <a href="/blog.html">Blog</a>
-  </footer>
+<p class="note">
+  Parte de esta mirada sobre la diversidad territorial del vino neuquino fue retomada también por
+  <a
+    class="inline-link"
+    href="https://www.rionegro.com.ar/gastronomia/el-vino-neuquino-amplia-su-mapa-las-razones-de-su-diversidad-y-consolidacion/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Diario Río Negro
+  </a>, en un artículo reciente sobre la expansión del mapa vitivinícola de la provincia.
+</p>
+
+<section class="related" aria-label="Lecturas relacionadas">
+  <h2 style="margin-top:0;">Lecturas relacionadas</h2>
+  <ul>
+    <li>
+      <a href="/zonas-vitivinicolas-neuquen.html">
+        Las cinco zonas vitivinícolas de Neuquén
+      </a>
+    </li>
+    <li>
+      <a href="/guia-vino-neuquino.html">
+        Guía del vino neuquino: clima, regiones, varietales y gastronomía
+      </a>
+    </li>
+    <li>
+      <a href="/norte-neuquino-territorio-vino.html">
+        El Norte Neuquino: cuando el territorio empieza a hablar de vino
+      </a>
+    </li>
+  </ul>
+</section>
+</article>
+</main>
+
+<footer>
+  © 2026 Sergio Landoni · Sommelier de Territorio · Patagonia Argentina<br/>
+  <a href="mailto:contacto@sergiolandoni.com.ar">contacto@sergiolandoni.com.ar</a> ·
+  <a href="https://www.linkedin.com/in/sergio-landoni-sommelier/" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+  <a href="/blog.html">Blog</a>
+</footer>
 </body>
 </html>
