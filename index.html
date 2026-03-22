@@ -674,6 +674,50 @@ footer{
   font-size:13px;
   text-align:center
 }
+
+/* 🔥 BLOG DESTACADO (3 + 3) */
+
+.post-list{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:18px;
+}
+
+@media (max-width:900px){
+  .post-list{
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+@media (max-width:640px){
+  .post-list{
+    grid-template-columns:1fr;
+  }
+}
+
+#blog .card{
+  padding:24px;
+}
+
+.post{
+  padding:18px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+  transition:transform .25s ease, box-shadow .25s ease;
+  min-height:100%;
+}
+
+.post h3{
+  margin:8px 0 10px;
+  font-size:18px;
+  line-height:1.3;
+}
+
+.post p{
+  font-size:14px;
+  line-height:1.6;
+}
 </style>
   
 </head>
@@ -908,6 +952,7 @@ footer{
 <!-- SOBRE MI -->
 <section id="sobre-mi" aria-label="Sobre mí">
   <div class="grid-2">
+    
     <div class="card">
       <h2>Sobre mí</h2>
 
@@ -916,7 +961,7 @@ footer{
       </p>
 
       <p>
-        Trabajo en la <strong>Patagonia vitivinícola</strong>, con base en <strong>San Martín de los Andes</strong> y foco en la identidad del <strong>vino neuquino</strong>.
+        Trabajo en la <strong>Patagonia vitivinícola</strong>, con base en <strong>San Martín de los Andes</strong>, con foco en la identidad del <strong>vino neuquino</strong>.
       </p>
 
       <p>
@@ -932,14 +977,15 @@ footer{
       </ul>
 
       <p>
-        Creo que la Patagonia, y especialmente Neuquén, tiene mucho más para mostrar. Hay diversidad, calidad y carácter, y un enorme potencial para seguir construyendo valor <strong>desde el origen hacia el mundo</strong>.
+        Creo que la Patagonia, y especialmente Neuquén, tiene mucho más para mostrar: diversidad, calidad y carácter, y un enorme potencial para seguir construyendo valor <strong>desde el origen hacia el mundo</strong>.
       </p>
     </div>
 
-    <div class="card">
+    <div class="card" style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
+      
       <img
         class="portrait"
-        src="/retrato.jpg"
+        src="/assets/img/retrato-sergio-landoni.jpg"
         alt="Sergio Landoni, Sommelier de Territorio en Patagonia Argentina"
         width="1200"
         height="1200"
@@ -947,7 +993,14 @@ footer{
         decoding="async"
       />
 
-      <p style="margin-top:14px; font-size:14px; color:var(--muted);">
+      <p style="margin-top:14px; font-size:14px; color:var(--muted); text-align:center;">
+        Sommelier de Territorio · Patagonia Argentina
+      </p>
+
+    </div>
+
+  </div>
+</section>
         Sommelier de Territorio · Patagonia Argentina
       </p>
 
@@ -980,308 +1033,90 @@ footer{
 </section><!-- /sobre-mi -->
 
 <!-- BLOG -->
-<section id="blog" aria-label="Blog">
-
-  <div class="hero-media">
-    <img
-      src="/assets/img/racimos-uvas.webp"
-      alt="Racimos de uva en viñedos de la Patagonia · vino neuquino y vino patagónico"
-      width="1600"
-      height="900"
-      loading="lazy"
-      decoding="async"
-    />
-  </div>
-
+<section id="blog" aria-label="Artículos destacados">
   <div class="card">
-    <h2>Blog · Vino patagónico, territorio y cultura</h2>
+    <div class="kicker">Blog</div>
+    <h2>Artículos destacados</h2>
 
-    <p>
-      Crónicas, análisis y reflexiones sobre <strong>vino patagónico</strong>, bodegas, territorio,
-      gastronomía y cultura. Un espacio para pensar el vino desde el lugar donde sucede,
-      con una mirada cercana y situada en la Patagonia.
-    </p>
+    <div class="post-list">
 
-    <p class="note">
-      Destacados recientes. El archivo completo de artículos está disponible en
-      <a href="/blog.html">/blog.html</a>.
-    </p>
-
-    <div class="post-list" aria-label="Artículos destacados">
-
-      <!-- Zonas vitivinícolas -->
-      <article class="post" id="zonas-vitivinicolas-neuquen">
-        <div>
-          <span class="tag">Neuquén</span>
-          <span class="tag">Territorio</span>
-          <span class="tag">Vino neuquino</span>
-          <span class="tag">Zonas</span>
-        </div>
-
-        <h3 style="margin-top:10px">
-          <a href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html">
-            Las cinco zonas vitivinícolas de Neuquén
+      <article class="post">
+        <div class="post-kicker">Vino neuquino</div>
+        <h3>
+          <a href="/zonas-vitivinicolas-neuquen.html">
+            Las seis zonas vitivinícolas de Neuquén
           </a>
         </h3>
-
-        <small>Publicado: <time datetime="2026-01-29">29 de enero de 2026</time></small>
-
-        <p class="post-kicker">Guía territorial · Regiones del vino neuquino</p>
-
-        <div class="post-body">
-          <p>
-            Neuquén no es una sola región vitivinícola. Es una provincia con zonas distintas,
-            climas diversos y expresiones muy diferentes del vino según el lugar donde nace.
-          </p>
-
-          <p>
-            <a class="btn" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html">
-              Leer el artículo completo
-            </a>
-          </p>
-        </div>
+        <p>
+          Un recorrido por la diversidad territorial del vino neuquino, desde San Patricio del Chañar hasta nuevas zonas en expansión.
+        </p>
       </article>
 
-      <!-- Norte Neuquino -->
-      <article class="post" id="norte-neuquino-territorio-vino">
-        <div>
-          <span class="tag">Norte Neuquino</span>
-          <span class="tag">Territorio</span>
-          <span class="tag">Patagonia</span>
-          <span class="tag">Vino</span>
-        </div>
-
-        <h3 style="margin-top:10px">
-          <a href="https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html">
+      <article class="post">
+        <div class="post-kicker">Territorio</div>
+        <h3>
+          <a href="/norte-neuquino-territorio-vino.html">
             El Norte Neuquino: cuando el territorio empieza a hablar de vino
           </a>
         </h3>
-
-        <small>Publicado: <time datetime="2026-03-12">12 de marzo de 2026</time></small>
-
-        <p class="post-kicker">Territorio emergente · Geografía, cultura y potencial vitivinícola</p>
-
-        <div class="post-body">
-          <p>
-            Volcanes, ríos de montaña, cultura pastoril, gastronomía e identidad regional.
-            Una lectura del Norte Neuquino desde la geografía y el territorio para pensar
-            su singularidad y su potencial dentro del mapa del vino patagónico.
-          </p>
-
-          <p>
-            <a class="btn" href="https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html">
-              Leer el artículo completo
-            </a>
-          </p>
-        </div>
+        <p>
+          Una mirada sobre identidad, paisaje y proyección en una de las áreas más singulares del mapa neuquino.
+        </p>
       </article>
 
-      <!-- Guía del vino neuquino -->
-      <article class="post" id="guia-vino-neuquino">
-        <div>
-          <span class="tag">Neuquén</span>
-          <span class="tag">Guía</span>
-          <span class="tag">Vino neuquino</span>
-          <span class="tag">Patagonia</span>
-        </div>
-
-        <h3 style="margin-top:10px">
-          <a href="https://sergiolandoni.com.ar/guia-vino-neuquino.html">
-            Guía del vino neuquino: clima, regiones, varietales y gastronomía
+      <article class="post">
+        <div class="post-kicker">Guía</div>
+        <h3>
+          <a href="/guia-vino-neuquino.html">
+            Guía del vino neuquino
           </a>
         </h3>
-
-        <small>Publicado: <time datetime="2026-03-11">11 de marzo de 2026</time></small>
-
-        <p class="post-kicker">Guía territorial · Clima, regiones y gastronomía del vino neuquino</p>
-
-        <div class="post-body">
-          <p>
-            Una guía completa para entender el vino neuquino desde el territorio.
-            Clima, sanidad de las uvas, regiones vitivinícolas, varietales que mejor se adaptan
-            y su relación con la gastronomía patagónica.
-          </p>
-
-          <p>
-            <a class="btn" href="https://sergiolandoni.com.ar/guia-vino-neuquino.html">
-              Leer la guía completa
-            </a>
-          </p>
-        </div>
+        <p>
+          Una introducción clara al presente del vino neuquino, sus estilos, regiones y claves para entender su crecimiento.
+        </p>
       </article>
 
-      <!-- Vino neuquino, gastronomía y territorio -->
-      <article class="post" id="vino-neuquino-gastronomia-experiencias-territorio">
-        <div>
-          <span class="tag">Neuquén</span>
-          <span class="tag">Gastronomía</span>
-          <span class="tag">Territorio</span>
-          <span class="tag">Experiencias</span>
-        </div>
-
-        <h3 style="margin-top:10px">
-          <a href="https://sergiolandoni.com.ar/vino-neuquino-gastronomia-experiencias-territorio.html">
+      <article class="post">
+        <div class="post-kicker">Gastronomía</div>
+        <h3>
+          <a href="/vino-neuquino-gastronomia-experiencias-territorio.html">
             Vino neuquino, gastronomía regional y experiencias de territorio
           </a>
         </h3>
-
-        <small>Publicado: <time datetime="2026-03-06">6 de marzo de 2026</time></small>
-
-        <p class="post-kicker">Enogastronomía · Vino, cocina regional y experiencia de lugar</p>
-
-        <div class="post-body">
-          <p>
-            Una reflexión sobre el vino neuquino cuando se lo piensa junto a la gastronomía regional,
-            el paisaje patagónico, el turismo y la construcción de experiencias con identidad territorial.
-          </p>
-
-          <p>
-            <a class="btn" href="https://sergiolandoni.com.ar/vino-neuquino-gastronomia-experiencias-territorio.html">
-              Leer el artículo completo
-            </a>
-          </p>
-        </div>
+        <p>
+          Cómo se integran vino, cocina, hospitalidad y paisaje en propuestas auténticas con identidad patagónica.
+        </p>
       </article>
 
-      <!-- Vino patagónico -->
-      <article class="post" id="vino-patagonico-regiones-y-paisajes">
-        <div>
-          <span class="tag">Patagonia</span>
-          <span class="tag">Regiones</span>
-          <span class="tag">Territorio</span>
-          <span class="tag">Vino patagónico</span>
-        </div>
-
-        <h3 style="margin-top:10px">
-          <a href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html">
+      <article class="post">
+        <div class="post-kicker">Patagonia</div>
+        <h3>
+          <a href="/vino-patagonico-regiones-y-paisajes.html">
             Cómo se define el vino patagónico: regiones y paisajes de la Patagonia vitivinícola
           </a>
         </h3>
-
-        <small>Publicado: <time datetime="2026-02-17">17 de febrero de 2026</time></small>
-
-        <p class="post-kicker">Patagonia vitivinícola · Regiones, paisajes e identidad</p>
-
-        <div class="post-body">
-          <p>
-            Latitud, viento y frío. Un recorrido claro por las regiones del vino patagónico,
-            sus paisajes y las historias que hoy el mundo empieza a descubrir.
-          </p>
-
-          <p>
-            <a class="btn" href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html">
-              Leer el artículo completo
-            </a>
-
-            <a class="btn"
-               href="https://sergiolandoni.com.ar/patagonian-wine-regions-landscape-argentina.html"
-               hreflang="en">
-              English version
-            </a>
-          </p>
-        </div>
+        <p>
+          Una lectura amplia sobre el vino patagónico, sus regiones, sus paisajes y el valor de la diversidad territorial.
+        </p>
       </article>
 
-      <!-- Referentes -->
-      <article class="post" id="referentes-vino-neuquen">
-        <div>
-          <span class="tag">Neuquén</span>
-          <span class="tag">Referentes</span>
-          <span class="tag">Enólogos</span>
-          <span class="tag">Pioneros</span>
-        </div>
-
-        <h3 style="margin-top:10px">
-          <a href="https://sergiolandoni.com.ar/referentes-vino-neuquen.html">
-            Referentes del vino neuquino: pioneros, enólogos y consultores
+      <article class="post">
+        <div class="post-kicker">Identidad</div>
+        <h3>
+          <a href="/sommelier-de-territorio.html">
+            Sommelier de Territorio: cuando el vino se cuenta desde el lugar
           </a>
         </h3>
-
-        <small>Publicado: <time datetime="2026-02-12">12 de febrero de 2026</time></small>
-
-        <p class="post-kicker">Mapa humano · Protagonistas del vino neuquino</p>
-
-        <div class="post-body">
-          <p>
-            Un mapa humano del vino neuquino: protagonistas, roles e influencias que construyen
-            identidad en una provincia que ya es presente con futuro.
-          </p>
-
-          <p>
-            <a class="btn" href="https://sergiolandoni.com.ar/referentes-vino-neuquen.html">
-              Leer el artículo completo
-            </a>
-          </p>
-        </div>
+        <p>
+          El enfoque que guía mi trabajo: comunicar el vino desde el territorio, la experiencia y el vínculo con su origen.
+        </p>
       </article>
 
     </div>
-
-    <div style="margin-top:18px;">
-      <a class="btn primary" href="/blog.html">Ver todos los artículos</a>
-    </div>
   </div>
-</section><!-- /blog -->
-    <!-- CONTACTO -->
-    <section id="contacto" aria-label="Contacto">
-      <div class="grid-2">
-
-        <div class="card">
-          <h2>Contacto</h2>
-          <p><strong>El vino es diálogo, territorio y encuentro.</strong></p>
-          <p>Si querés conversar sobre proyectos vinculados al vino patagónico, comunicación, eventos o propuestas culturales, este es el espacio.</p>
-
-          <p class="note">
-            Para propuestas institucionales, proyectos vitivinícolas y acciones territoriales:
-            <br/>
-            <a href="mailto:contacto@sergiolandoni.com.ar?subject=Contacto%20desde%20sergiolandoni.com.ar">
-              contacto@sergiolandoni.com.ar
-            </a>
-            <br/>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/sergio-landoni-sommelier/" target="_blank" rel="noopener noreferrer">
-              linkedin.com/in/sergio-landoni-sommelier
-            </a>
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Enviarme un mensaje</h3>
-
-          <form id="contact-form" action="https://formspree.io/f/mpqpknvd" method="POST">
-            <input type="hidden" name="_subject" value="Nuevo mensaje desde sergiolandoni.com.ar" />
-            <input name="_gotcha" type="text" style="display:none" tabindex="-1" autocomplete="off" />
-
-            <div>
-              <label for="nombre">Nombre (obligatorio)</label>
-              <input id="nombre" name="name" type="text" required placeholder="Tu nombre" autocomplete="name" />
-            </div>
-
-            <div>
-              <label for="email">Correo electrónico (obligatorio)</label>
-              <input id="email" name="email" type="email" required placeholder="tu@email.com" autocomplete="email" />
-            </div>
-
-            <div>
-              <label for="mensaje">Mensaje</label>
-              <textarea id="mensaje" name="message" required placeholder="Contame en qué te puedo ayudar"></textarea>
-            </div>
-
-            <button class="btn primary" type="submit">Enviar</button>
-
-            <p id="form-status" class="note" role="status" aria-live="polite" style="margin-top:10px;"></p>
-          </form>
-
-          <p class="note">
-            Si tu navegador bloquea el envío, escribime directo a
-            <a href="mailto:contacto@sergiolandoni.com.ar?subject=Contacto%20desde%20sergiolandoni.com.ar">
-              contacto@sergiolandoni.com.ar
-            </a>.
-          </p>
-        </div>
-
-      </div>
-    </section><!-- /contacto -->
+</section>
+    
+    <-- /contacto -->
 
   </main>
 
