@@ -403,7 +403,7 @@
 }
 </script>
   
- <style>
+<style>
 :root{
   --max:1060px;
   --radius:14px;
@@ -416,32 +416,50 @@
   --accent:#0f766e;
 }
 
-*{box-sizing:border-box;}
+*,
+*::before,
+*::after{
+  box-sizing:border-box;
+}
 
-html{scroll-behavior:smooth;}
+html{
+  scroll-behavior:smooth;
+}
 
 body{
   margin:0;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   background:var(--bg);
   color:var(--text);
   line-height:1.65;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+img{
+  max-width:100%;
+  display:block;
 }
 
 a{
   color:inherit;
   text-decoration:none;
-  transition:color .2s ease,opacity .2s ease;
+  transition:color .2s ease, opacity .2s ease, transform .2s ease;
 }
 
-a:hover{color:var(--accent);}
+a:hover{
+  color:var(--accent);
+}
 
 .inline-link{
   text-decoration:underline;
   text-underline-offset:3px;
 }
 
-.inline-link:hover{opacity:.85;}
+.inline-link:hover{
+  opacity:.85;
+}
 
 .wrap{
   max-width:var(--max);
@@ -456,6 +474,7 @@ header{
   top:0;
   z-index:50;
   background:rgba(250,250,250,.92);
+  -webkit-backdrop-filter:blur(10px);
   backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line);
 }
@@ -464,8 +483,8 @@ header{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:14px 0;
   gap:16px;
+  padding:14px 0;
 }
 
 .brand{
@@ -482,21 +501,33 @@ header{
   border:1px solid var(--line);
   background:#fff;
   object-fit:contain;
-  display:block;
+  flex:0 0 40px;
 }
 
-.brand-text strong{font-size:16px;}
-.brand-text span{font-size:13px;color:var(--muted);}
+.brand-text{
+  display:flex;
+  flex-direction:column;
+  line-height:1.25;
+}
+
+.brand-text strong{
+  font-size:16px;
+}
+
+.brand-text span{
+  font-size:13px;
+  color:var(--muted);
+}
 
 .menu{
   display:flex;
-  gap:16px;
   flex-wrap:wrap;
+  gap:16px;
   font-size:14px;
   color:var(--muted);
 }
 
-/* TITULOS */
+/* TITULOS Y TEXTOS */
 
 .subtitle{
   font-size:1.05rem;
@@ -512,32 +543,6 @@ header{
   max-width:900px;
 }
 
-/* ACCESIBILIDAD */
-
-.map-figure a:focus-visible,
-.inline-link:focus-visible,
-.menu a:focus-visible,
-.brand:focus-visible{
-  outline:2px solid var(--accent);
-  outline-offset:3px;
-  border-radius:8px;
-}
-
-/* CONTENIDO */
-
-main{padding:22px 0 44px;}
-
-.card{
-  background:var(--card);
-  border:1px solid var(--line);
-  border-radius:var(--radius);
-  box-shadow:var(--shadow);
-  padding:22px;
-  transition:transform .25s ease,box-shadow .25s ease;
-}
-
-.card:hover{transform:translateY(-2px);}
-
 .kicker{
   font-size:13px;
   color:var(--muted);
@@ -547,44 +552,96 @@ main{padding:22px 0 44px;}
 }
 
 h1{
-  line-height:1.15;
-  letter-spacing:-.02em;
   margin:0 0 10px;
   font-size:clamp(1.75rem,3.2vw,2.4rem);
+  line-height:1.15;
+  letter-spacing:-.02em;
 }
 
-h2{margin:22px 0 10px;font-size:1.35rem;}
-h3{margin:16px 0 8px;font-size:1.1rem;}
+h2{
+  margin:24px 0 10px;
+  font-size:1.35rem;
+  line-height:1.25;
+}
 
-p{margin:0 0 14px;}
+h3{
+  margin:16px 0 8px;
+  font-size:1.1rem;
+  line-height:1.3;
+}
 
-.geo{margin:6px 0 12px;color:var(--muted);font-size:.95rem;}
-.note{font-size:13px;color:var(--muted);}
+p{
+  margin:0 0 14px;
+}
+
+.geo{
+  margin:6px 0 12px;
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+.note{
+  font-size:13px;
+  color:var(--muted);
+}
 
 .hr{
   height:1px;
+  margin:20px 0;
   background:var(--line);
-  margin:18px 0;
+  border:0;
+}
+
+/* ACCESIBILIDAD */
+
+.map-figure a:focus-visible,
+.inline-link:focus-visible,
+.menu a:focus-visible,
+.brand:focus-visible,
+.back-to-top:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:3px;
+  border-radius:8px;
+}
+
+/* CONTENIDO */
+
+main{
+  padding:22px 0 44px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:22px;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover{
+  transform:translateY(-2px);
 }
 
 /* HERO */
 
 .hero-media{
   margin:14px 0 16px;
+  border:1px solid var(--line);
   border-radius:var(--radius);
   overflow:hidden;
-  border:1px solid var(--line);
+  background:#fff;
 }
 
 .hero-media img{
   width:100%;
   height:auto;
-  display:block;
 }
+
 /* IMAGENES DENTRO DEL ARTICULO */
 
 .inline-photo{
-  margin:20px 0;
+  margin:22px 0;
   border:1px solid var(--line);
   border-radius:var(--radius);
   overflow:hidden;
@@ -595,29 +652,28 @@ p{margin:0 0 14px;}
 .inline-photo img{
   width:100%;
   height:auto;
-  display:block;
 }
 
 .inline-photo figcaption{
   padding:10px 14px;
   font-size:13px;
+  line-height:1.5;
   color:var(--muted);
-  border-top:1px solid var(--line);
   background:#fff;
+  border-top:1px solid var(--line);
 }
-
-/* leve aire visual entre secciones con imagen */
 
 .inline-photo + p{
   margin-top:16px;
 }
+
 /* INDICE */
 
 nav.toc{
+  margin:16px 0 18px;
+  padding:14px 16px;
   border:1px solid var(--line);
   border-radius:12px;
-  padding:14px 16px;
-  margin:16px 0;
   background:#fff;
 }
 
@@ -632,12 +688,18 @@ nav.toc ul{
   color:var(--muted);
 }
 
-nav.toc li{margin:6px 0;}
+nav.toc li{
+  margin:6px 0;
+}
+
+nav.toc a{
+  text-decoration:none;
+}
 
 /* MAPA */
 
 .map-figure{
-  margin:18px 0 10px;
+  margin:18px 0 12px;
   border:1px solid var(--line);
   border-radius:var(--radius);
   overflow:hidden;
@@ -645,23 +707,27 @@ nav.toc li{margin:6px 0;}
   box-shadow:var(--shadow);
 }
 
-.map-figure a{display:block;}
+.map-figure a{
+  display:block;
+}
 
 .map-figure img{
   width:100%;
   height:auto;
-  display:block;
 }
 
 .map-caption{
   padding:10px 14px;
   font-size:13px;
+  line-height:1.5;
   color:var(--muted);
-  border-top:1px solid var(--line);
   background:#fff;
+  border-top:1px solid var(--line);
 }
 
-.map-caption strong{color:var(--text);}
+.map-caption strong{
+  color:var(--text);
+}
 
 /* BOTON VOLVER ARRIBA */
 
@@ -669,19 +735,19 @@ nav.toc li{margin:6px 0;}
   position:fixed;
   right:18px;
   bottom:18px;
-  width:46px;
-  height:46px;
-  border-radius:999px;
-  border:1px solid var(--line);
-  background:rgba(255,255,255,.96);
-  color:var(--text);
+  z-index:80;
   display:flex;
   align-items:center;
   justify-content:center;
+  width:46px;
+  height:46px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:rgba(255,255,255,.96);
+  color:var(--text);
   font-size:20px;
   box-shadow:var(--shadow);
-  z-index:80;
-  transition:transform .2s ease,color .2s ease;
+  transition:transform .2s ease, color .2s ease, background .2s ease;
 }
 
 .back-to-top:hover{
@@ -692,14 +758,35 @@ nav.toc li{margin:6px 0;}
 /* FOOTER */
 
 footer{
-  border-top:1px solid var(--line);
   padding:22px 0 28px;
+  border-top:1px solid var(--line);
   color:var(--muted);
   font-size:13px;
+  line-height:1.6;
 }
-   /* Ajustes de lectura en móviles */
+
+/* RESPONSIVE */
+
+@media (max-width: 760px){
+  .nav{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+  }
+
+  .menu{
+    gap:12px;
+  }
+}
 
 @media (max-width: 600px){
+  .wrap{
+    padding:0 16px;
+  }
+
+  main{
+    padding:18px 0 38px;
+  }
 
   .card{
     padding:16px;
@@ -707,12 +794,23 @@ footer{
 
   h1{
     font-size:1.8rem;
+    line-height:1.18;
   }
 
-  .nav{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:10px;
+  h2{
+    font-size:1.25rem;
+  }
+
+  .brand{
+    min-width:auto;
+  }
+
+  .brand-text strong{
+    font-size:15px;
+  }
+
+  .brand-text span{
+    font-size:12px;
   }
 
   nav.toc{
@@ -727,6 +825,43 @@ footer{
     margin:8px 0;
   }
 
+  .inline-photo,
+  .map-figure,
+  .hero-media{
+    margin-left:0;
+    margin-right:0;
+  }
+
+  .inline-photo figcaption,
+  .map-caption{
+    padding:10px 12px;
+    font-size:12.5px;
+  }
+
+  .back-to-top{
+    width:44px;
+    height:44px;
+    right:14px;
+    bottom:14px;
+    font-size:18px;
+  }
+
+  footer{
+    font-size:12.5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  html{
+    scroll-behavior:auto;
+  }
+
+  *,
+  *::before,
+  *::after{
+    animation:none !important;
+    transition:none !important;
+  }
 }
 </style>
 </head>
@@ -1325,6 +1460,26 @@ tanto dentro de la ciudad como en su ribera productiva.
   donde ya se han realizado ensayos vitícolas.
 </p>
 
+<figure class="inline-photo">
+  <img
+    src="/assets/img/vinedos-loma-redonda-san-martin-andes.webp"
+    alt="Racimos en viñedos de Loma Redonda, San Martín de los Andes, con paisaje cordillerano de fondo"
+    width="1600"
+    height="1200"
+    loading="lazy"
+    decoding="async"
+  />
+  <figcaption>
+    Viñedos de <strong>Loma Redonda</strong>, en San Martín de los Andes: una de las primeras expresiones vitícolas de la cordillera neuquina.
+  </figcaption>
+</figure>
+
+<p>
+  La imagen de estos viñedos en plena cordillera ayuda a entender algo fundamental:
+  en esta zona el vino todavía está en una etapa inicial, pero ya existe un paisaje vitícola real,
+  visible y profundamente ligado a San Martín de los Andes.
+</p>
+
 <p>
   Son lugares más fríos, con temporadas de crecimiento más cortas y riesgo de heladas. Pero justamente por eso
   despiertan interés: si estas experiencias prosperan, podrían dar vinos de <strong>gran frescura natural</strong>,
@@ -1335,12 +1490,14 @@ tanto dentro de la ciudad como en su ribera productiva.
   Por ahora se trata de proyectos pequeños, pero juntos muestran algo interesante: el mapa del vino neuquino
   todavía no está cerrado. <strong>Sigue creciendo.</strong>
 </p>
+
 <p>
   Sigo con especial interés el desarrollo de estos primeros viñedos cordilleranos.
   Me entusiasma especialmente pensar en lo que puede suceder en lugares como
   <strong>San Martín de los Andes</strong>. El día que podamos descorchar un vino nacido aquí,
   en plena cordillera neuquina, será algo para celebrar.
 </p>
+
 <p>
   Estas <strong>zonas vitivinícolas de Neuquén</strong> muestran cómo el vino cambia según el lugar:
   meseta, ribera, estepa o precordillera. Cada territorio aporta una lectura distinta
@@ -1348,7 +1505,6 @@ tanto dentro de la ciudad como en su ribera productiva.
 </p>
 
 <div class="hr" aria-hidden="true"></div>
-
 <h2 id="cierre">Cierre</h2>
 
 <p>
