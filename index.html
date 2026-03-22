@@ -566,9 +566,9 @@ header{
 
 .grid-2{
   display:grid;
-  grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);
+  grid-template-columns:minmax(320px,1fr) minmax(360px,1.05fr);
   gap:18px;
-  align-items:start;
+  align-items:stretch;
 }
 
 .card{
@@ -788,10 +788,23 @@ textarea{
   resize:vertical;
 }
 
-/* CONTACTO ELEGANTE */
+/* CONTACTO */
+
+#contacto .grid-2{
+  grid-template-columns:minmax(320px,.95fr) minmax(380px,1.05fr);
+  align-items:stretch;
+}
 
 #contacto .card{
   padding:24px;
+  height:100%;
+}
+
+#contacto .grid-2 > .card:first-child,
+#contacto .grid-2 > .card:last-child{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
 
 #contacto h2{
@@ -804,8 +817,12 @@ textarea{
 }
 
 #contacto form{
-  display:grid;
   gap:12px;
+}
+
+#contacto input,
+#contacto textarea{
+  width:100%;
 }
 
 #contacto textarea{
@@ -814,10 +831,6 @@ textarea{
 
 #contacto .note{
   margin-top:12px;
-}
-
-#contacto .grid-2{
-  align-items:center;
 }
 
 /* WHATSAPP */
@@ -894,14 +907,12 @@ textarea{
     grid-template-columns:1fr;
   }
 
+  #contacto .grid-2{
+    grid-template-columns:1fr;
+  }
+
   .post-list{
     grid-template-columns:repeat(2, 1fr);
-  }
-}
-
-@media (max-width:760px){
-  .hero-grid{
-    grid-template-columns:1fr;
   }
 }
 
@@ -1334,22 +1345,21 @@ textarea{
   <div class="grid-2">
     
     <div class="card">
-      <div class="kicker">Contacto</div>
-      <h2>¿Te interesa trabajar una propuesta con identidad territorial?</h2>
+  <div class="kicker">Contacto</div>
+  <h2>Propuestas con identidad territorial</h2>
 
-      <p>
-        Si te interesa desarrollar una propuesta, una experiencia o una asesoría vinculada al vino patagónico, escribime.
-      </p>
+  <p>
+    Si querés desarrollar una experiencia, una asesoría o una acción vinculada al vino patagónico, escribime.
+  </p>
 
-      <p>
-        Trabajo desde <strong>San Martín de los Andes</strong> en proyectos donde el vino, el territorio, la gastronomía y la identidad regional se encuentran.
-      </p>
+  <p>
+    Trabajo desde <strong>San Martín de los Andes</strong>, articulando vino, territorio y gastronomía en proyectos con identidad.
+  </p>
 
-      <p class="note">
-        También podés escribirme directamente a
-        <a href="mailto:contacto@sergiolandoni.com.ar"><strong>contacto@sergiolandoni.com.ar</strong></a>
-      </p>
-    </div>
+  <p class="note" style="margin-top:16px;">
+    <a href="mailto:contacto@sergiolandoni.com.ar"><strong>contacto@sergiolandoni.com.ar</strong></a>
+  </p>
+</div>
 
     <div class="card">
       <form id="contact-form" action="https://formspree.io/f/xeokgkzr" method="POST">
