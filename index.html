@@ -441,21 +441,26 @@ html{scroll-behavior:smooth}
 
 body{
   margin:0;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   background:var(--bg);
   color:var(--text);
   line-height:1.7;
 }
 
-a{color:inherit;text-decoration:none}
+a{
+  color:inherit;
+  text-decoration:none;
+}
 
 .wrap{
   max-width:var(--max);
   margin:0 auto;
-  padding:0 18px
+  padding:0 18px;
 }
 
-a,.btn,.card,input,textarea{transition:var(--transition)}
+a,.btn,.card,input,textarea{
+  transition:var(--transition);
+}
 
 header{
   position:sticky;
@@ -478,7 +483,7 @@ header{
   display:flex;
   align-items:center;
   gap:12px;
-  min-width:220px
+  min-width:220px;
 }
 
 .brand-logo{
@@ -488,13 +493,13 @@ header{
   border:1px solid var(--line);
   background:#fff;
   object-fit:contain;
-  display:block
+  display:block;
 }
 
 .brand-text{
   display:flex;
   flex-direction:column;
-  gap:2px
+  gap:2px;
 }
 
 .brand-text strong{
@@ -503,7 +508,7 @@ header{
 
 .brand-text span{
   font-size:13px;
-  color:var(--muted)
+  color:var(--muted);
 }
 
 .menu{
@@ -511,7 +516,7 @@ header{
   gap:14px;
   flex-wrap:wrap;
   align-items:center;
-  justify-content:flex-end
+  justify-content:flex-end;
 }
 
 .menu a{
@@ -524,24 +529,24 @@ header{
 .menu a:hover{
   background:#fff;
   border:1px solid var(--line);
-  color:var(--accent)
+  color:var(--accent);
 }
 
 .hero{
-  padding:30px 0 18px
+  padding:30px 0 18px;
 }
 
 .hero-media{
   margin-bottom:28px;
   border-radius:18px;
   overflow:hidden;
-  box-shadow:0 20px 50px rgba(0,0,0,.08)
+  box-shadow:0 20px 50px rgba(0,0,0,.08);
 }
 
 .hero-media img{
   width:100%;
   height:auto;
-  display:block
+  display:block;
 }
 
 .hero-grid{
@@ -550,8 +555,11 @@ header{
   gap:18px;
 }
 
-@media (max-width:760px){
-  .hero-grid{grid-template-columns:1fr}
+.grid-2{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:18px;
+  align-items:start;
 }
 
 .card{
@@ -559,7 +567,7 @@ header{
   border:1px solid var(--line);
   border-radius:var(--radius);
   box-shadow:var(--shadow);
-  padding:20px
+  padding:20px;
 }
 
 .kicker{
@@ -570,7 +578,7 @@ header{
   padding:6px 10px;
   border-radius:999px;
   display:inline-block;
-  margin-bottom:12px
+  margin-bottom:12px;
 }
 
 h1{
@@ -582,11 +590,18 @@ h1{
 h2{
   margin:0 0 10px;
   font-size:22px;
+  line-height:1.25;
+}
+
+h3{
+  margin:8px 0 10px;
+  font-size:18px;
+  line-height:1.3;
 }
 
 p{
   margin:10px 0;
-  color:var(--muted)
+  color:var(--muted);
 }
 
 .cta{
@@ -604,7 +619,10 @@ p{
   font-size:14px;
   border:1px solid var(--line);
   background:#fff;
+  color:var(--text);
   cursor:pointer;
+  line-height:1.2;
+  min-height:42px;
 }
 
 .btn.primary{
@@ -613,14 +631,23 @@ p{
   color:#fff;
 }
 
+.btn.primary:hover{
+  background:var(--accent-hover);
+  border-color:var(--accent-hover);
+}
+
 .btn.outline{
   background:transparent;
   border-color:var(--accent);
-  color:var(--accent)
+  color:var(--accent);
+}
+
+.btn.outline:hover{
+  background:rgba(15,118,110,.06);
 }
 
 main{
-  padding:10px 0 44px
+  padding:10px 0 44px;
 }
 
 section{
@@ -633,7 +660,21 @@ section{
   color:var(--muted);
 }
 
-/* 🔥 BLOQUE PRENSA (integrado correctamente) */
+.portrait{
+  display:block;
+  width:100%;
+  max-width:360px;
+  height:auto;
+  aspect-ratio:1 / 1;
+  object-fit:cover;
+  object-position:center;
+  border-radius:var(--radius);
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+  margin:0 auto;
+}
+
+/* PRENSA DESTACADA */
 
 .prensa-destacada .card{
   padding:24px;
@@ -653,46 +694,12 @@ section{
   min-width:220px;
 }
 
-@media (max-width:640px){
-  .prensa-destacada .card{
-    padding:20px;
-  }
-
-  .prensa-destacada .btn{
-    width:100%;
-  }
-
-  h1{
-    font-size:30px;
-  }
-}
-
-footer{
-  border-top:1px solid var(--line);
-  padding:22px 0 28px;
-  color:var(--muted);
-  font-size:13px;
-  text-align:center
-}
-
-/* 🔥 BLOG DESTACADO (3 + 3) */
+/* BLOG DESTACADO (3 + 3) */
 
 .post-list{
   display:grid;
   grid-template-columns:repeat(3, 1fr);
   gap:18px;
-}
-
-@media (max-width:900px){
-  .post-list{
-    grid-template-columns:repeat(2, 1fr);
-  }
-}
-
-@media (max-width:640px){
-  .post-list{
-    grid-template-columns:1fr;
-  }
 }
 
 #blog .card{
@@ -704,23 +711,146 @@ footer{
   border:1px solid var(--line);
   border-radius:12px;
   background:#fff;
-  transition:transform .25s ease, box-shadow .25s ease;
   min-height:100%;
+  transition:transform .25s ease, box-shadow .25s ease;
 }
 
-.post h3{
-  margin:8px 0 10px;
-  font-size:18px;
-  line-height:1.3;
+.post:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 30px rgba(0,0,0,.10);
 }
 
 .post p{
   font-size:14px;
   line-height:1.6;
 }
-  .post:hover{
-  transform:translateY(-4px);
-  box-shadow:0 12px 30px rgba(0,0,0,.10);
+
+.post small{
+  color:var(--muted);
+}
+
+.post-kicker{
+  margin:6px 0 2px;
+  font-size:13px;
+  color:var(--accent);
+  letter-spacing:.2px;
+}
+
+.post h3 a{
+  color:var(--text);
+  text-decoration:none;
+}
+
+.post h3 a:hover{
+  color:var(--accent);
+}
+
+/* FORMULARIO */
+
+form{
+  display:grid;
+  gap:10px;
+}
+
+label{
+  font-size:13px;
+  color:var(--muted);
+}
+
+input,textarea{
+  width:100%;
+  font:inherit;
+  padding:10px 12px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+  outline:none;
+}
+
+input:focus,textarea:focus{
+  border-color:rgba(15,118,110,.5);
+  box-shadow:0 0 0 3px rgba(15,118,110,.12);
+}
+
+textarea{
+  min-height:120px;
+  resize:vertical;
+}
+
+/* WHATSAPP */
+
+.whatsapp-btn{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  width:56px;
+  height:56px;
+  border-radius:999px;
+  background:#25D366;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+  z-index:999;
+}
+
+.whatsapp-btn:hover{
+  transform:scale(1.05);
+}
+
+/* FOOTER */
+
+footer{
+  border-top:1px solid var(--line);
+  padding:22px 0 28px;
+  color:var(--muted);
+  font-size:13px;
+  text-align:center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:900px){
+  .post-list{
+    grid-template-columns:repeat(2, 1fr);
+  }
+
+  .grid-2{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width:760px){
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width:640px){
+  .post-list{
+    grid-template-columns:1fr;
+  }
+
+  .prensa-destacada .card{
+    padding:20px;
+  }
+
+  .prensa-destacada .btn{
+    width:100%;
+  }
+
+  .whatsapp-btn{
+    width:50px;
+    height:50px;
+    right:18px;
+    bottom:18px;
+  }
+}
+
+@media (max-width:600px){
+  h1{
+    font-size:30px;
+  }
 }
 </style>
   
@@ -952,7 +1082,6 @@ footer{
     </div>
 
   </div>
-</section>
 <!-- SOBRE MI -->
 <section id="sobre-mi" aria-label="Sobre mí">
   <div class="grid-2">
@@ -986,13 +1115,12 @@ footer{
     </div>
 
     <div class="card" style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      
       <img
         class="portrait"
-        src="/assets/img/retrato-sergio-landoni.jpg"
+        src="/assets/img/retrato-sergio-landoni.webp"
         alt="Sergio Landoni, Sommelier de Territorio en Patagonia Argentina"
-        width="1200"
-        height="1200"
+        width="800"
+        height="800"
         loading="lazy"
         decoding="async"
       />
@@ -1001,23 +1129,16 @@ footer{
         Sommelier de Territorio · Patagonia Argentina
       </p>
 
-    </div>
+      <hr style="border:0; border-top:1px solid var(--line); margin:14px 0; width:100%;" />
 
-  </div>
-</section>
-        Sommelier de Territorio · Patagonia Argentina
-      </p>
-
-      <hr style="border:0; border-top:1px solid var(--line); margin:14px 0;" />
-
-      <p style="font-size:15px; line-height:1.6; color:var(--muted); margin-top:16px;">
+      <p style="font-size:15px; line-height:1.6; color:var(--muted); margin-top:0; text-align:center;">
         Consultoría estratégica y comunicación del vino con <strong>identidad territorial</strong>.
         Desde <strong>San Martín de los Andes</strong>, conectando el vino patagónico con nuevos públicos y mercados.
       </p>
 
-      <div style="display:flex; gap:10px; margin-top:22px; flex-wrap:wrap;">
+      <div style="display:flex; gap:10px; margin-top:22px; flex-wrap:wrap; width:100%; justify-content:center;">
         <a class="btn outline"
-           style="flex:1; font-size:13.5px;"
+           style="flex:1; min-width:220px; font-size:13.5px;"
            href="mailto:contacto@sergiolandoni.com.ar"
            aria-label="Enviar correo electrónico">
           contacto@sergiolandoni.com.ar
@@ -1033,20 +1154,21 @@ footer{
         </a>
       </div>
     </div>
+
   </div>
 </section><!-- /sobre-mi -->
 
 <!-- BLOG -->
 <section id="blog" aria-label="Artículos destacados">
   <div class="card">
-  <div class="kicker">Contenido</div>
-<h2>Vino, territorio y Patagonia</h2>
+    <div class="kicker">Contenido</div>
+    <h2>Vino, territorio y Patagonia</h2>
 
-<p style="margin-top:-4px; margin-bottom:16px;">
-  El vino neuquino empieza a entenderse mejor cuando se lo mira desde el territorio.
-</p>
+    <p style="margin-top:-4px; margin-bottom:16px;">
+      El vino neuquino empieza a entenderse mejor cuando se lo mira desde el territorio.
+    </p>
 
-<div class="post-list">
+    <div class="post-list">
 
       <article class="post" onclick="window.location.href='/zonas-vitivinicolas-neuquen.html'" style="cursor:pointer;">
         <div class="post-kicker">Vino neuquino</div>
@@ -1060,7 +1182,7 @@ footer{
         </p>
       </article>
 
-      <article class="post">
+      <article class="post" onclick="window.location.href='/norte-neuquino-territorio-vino.html'" style="cursor:pointer;">
         <div class="post-kicker">Territorio</div>
         <h3>
           <a href="/norte-neuquino-territorio-vino.html">
@@ -1072,7 +1194,7 @@ footer{
         </p>
       </article>
 
-      <article class="post">
+      <article class="post" onclick="window.location.href='/guia-vino-neuquino.html'" style="cursor:pointer;">
         <div class="post-kicker">Guía</div>
         <h3>
           <a href="/guia-vino-neuquino.html">
@@ -1084,7 +1206,7 @@ footer{
         </p>
       </article>
 
-      <article class="post">
+      <article class="post" onclick="window.location.href='/vino-neuquino-gastronomia-experiencias-territorio.html'" style="cursor:pointer;">
         <div class="post-kicker">Gastronomía</div>
         <h3>
           <a href="/vino-neuquino-gastronomia-experiencias-territorio.html">
@@ -1096,7 +1218,7 @@ footer{
         </p>
       </article>
 
-      <article class="post">
+      <article class="post" onclick="window.location.href='/vino-patagonico-regiones-y-paisajes.html'" style="cursor:pointer;">
         <div class="post-kicker">Patagonia</div>
         <h3>
           <a href="/vino-patagonico-regiones-y-paisajes.html">
@@ -1108,7 +1230,7 @@ footer{
         </p>
       </article>
 
-      <article class="post">
+      <article class="post" onclick="window.location.href='/sommelier-de-territorio.html'" style="cursor:pointer;">
         <div class="post-kicker">Identidad</div>
         <h3>
           <a href="/sommelier-de-territorio.html">
@@ -1123,10 +1245,33 @@ footer{
     </div>
   </div>
 </section>
-    
-    <-- /contacto -->
 
-  </main>
+<!-- CONTACTO -->
+<section id="contacto" aria-label="Contacto">
+  <div class="card">
+    <h2>Contacto</h2>
+
+    <p>
+      Consultoría estratégica, comunicación del vino, experiencias y proyectos con identidad territorial desde San Martín de los Andes.
+    </p>
+
+    <form id="contact-form" action="https://formspree.io/f/xeokgkzr" method="POST">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit" class="btn primary">Enviar mensaje</button>
+      <p id="form-status" class="note"></p>
+    </form>
+  </div>
+</section><!-- /contacto -->
+
+</main>
 
 <footer>
   © 2026 Sergio Landoni · Sommelier de Territorio · Patagonia Argentina<br/>
@@ -1135,47 +1280,47 @@ footer{
   <a href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html" target="_blank" rel="noopener noreferrer" hreflang="en">English</a>
 </footer>
 
-  <script>
-    const form = document.getElementById("contact-form");
-    const statusEl = document.getElementById("form-status");
+<script>
+  const form = document.getElementById("contact-form");
+  const statusEl = document.getElementById("form-status");
 
-    if (form) {
-      form.addEventListener("submit", async (e) => {
-        e.preventDefault();
-        if (statusEl) statusEl.textContent = "Enviando...";
+  if (form) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (statusEl) statusEl.textContent = "Enviando...";
 
-        try {
-          const res = await fetch(form.action, {
-            method: "POST",
-            body: new FormData(form),
-            headers: { "Accept": "application/json" }
-          });
+      try {
+        const res = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: { "Accept": "application/json" }
+        });
 
-          if (res.ok) {
-            form.reset();
-            if (statusEl) statusEl.textContent = "¡Listo! Mensaje enviado. Gracias.";
-          } else {
-            if (statusEl) statusEl.textContent = "No se pudo enviar. Probá de nuevo o escribime por mail.";
-          }
-        } catch (err) {
-          if (statusEl) statusEl.textContent = "Error de conexión. Probá de nuevo o escribime por mail.";
+        if (res.ok) {
+          form.reset();
+          if (statusEl) statusEl.textContent = "¡Listo! Mensaje enviado. Gracias.";
+        } else {
+          if (statusEl) statusEl.textContent = "No se pudo enviar. Probá de nuevo o escribime por mail.";
         }
-      });
-    }
- </script>
+      } catch (err) {
+        if (statusEl) statusEl.textContent = "Error de conexión. Probá de nuevo o escribime por mail.";
+      }
+    });
+  }
+</script>
 
 <!-- Botón WhatsApp -->
-<a href="https://wa.me/5492944668508?text=Hola%20Sergio%2C%20te%20escribo%20desde%20tu%20sitio%20web."
-   target="_blank"
-   rel="noopener noreferrer"
-   aria-label="Escribirme por WhatsApp"
-   title="WhatsApp"
-   class="whatsapp-btn">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32" fill="white">
-<path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.64.86 5.08 2.32 7.06L4 29l7.16-2.26A11.93 11.93 0 0016 27c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm0 21.8c-1.93 0-3.81-.52-5.46-1.51l-.39-.23-4.25 1.34 1.38-4.14-.26-.42A9.75 9.75 0 016.2 15c0-5.41 4.39-9.8 9.8-9.8s9.8 4.39 9.8 9.8-4.39 9.8-9.8 9.8zm5.36-7.36c-.29-.14-1.72-.85-1.99-.94-.27-.1-.46-.14-.66.14-.19.29-.76.94-.93 1.13-.17.19-.34.21-.63.07-.29-.14-1.22-.45-2.32-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.12-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.14-.66-1.59-.9-2.18-.24-.58-.49-.5-.66-.51h-.56c-.19 0-.51.07-.77.36-.26.29-1.01.98-1.01 2.38s1.03 2.76 1.17 2.95c.14.19 2.02 3.09 4.89 4.33.68.29 1.21.46 1.62.59.68.21 1.3.18 1.79.11.55-.08 1.72-.7 1.97-1.37.24-.68.24-1.26.17-1.37-.07-.11-.26-.18-.55-.32z"/>
-</svg>
-
+<a
+  href="https://wa.me/5492944668508?text=Hola%20Sergio%2C%20te%20escribo%20desde%20tu%20sitio%20web."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Escribirme por WhatsApp"
+  title="WhatsApp"
+  class="whatsapp-btn"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32" fill="white" aria-hidden="true">
+    <path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.64.86 5.08 2.32 7.06L4 29l7.16-2.26A11.93 11.93 0 0016 27c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm0 21.8c-1.93 0-3.81-.52-5.46-1.51l-.39-.23-4.25 1.34 1.38-4.14-.26-.42A9.75 9.75 0 016.2 15c0-5.41 4.39-9.8 9.8-9.8s9.8 4.39 9.8 9.8-4.39 9.8-9.8 9.8zm5.36-7.36c-.29-.14-1.72-.85-1.99-.94-.27-.1-.46-.14-.66.14-.19.29-.76.94-.93 1.13-.17.19-.34.21-.63.07-.29-.14-1.22-.45-2.32-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.12-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.14-.66-1.59-.9-2.18-.24-.58-.49-.5-.66-.51h-.56c-.19 0-.51.07-.77.36-.26.29-1.01.98-1.01 2.38s1.03 2.76 1.17 2.95c.14.19 2.02 3.09 4.89 4.33.68.29 1.21.46 1.62.59.68.21 1.3.18 1.79.11.55-.08 1.72-.7 1.97-1.37.24-.68.24-1.26.17-1.37-.07-.11-.26-.18-.55-.32z"/>
+  </svg>
 </a>
 
 </body>
