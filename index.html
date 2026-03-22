@@ -813,6 +813,34 @@ footer{
   }
 }
 
+/* PRENSA DESTACADA */
+.prensa-destacada .card{
+  padding:24px;
+}
+
+.prensa-destacada h2{
+  margin-bottom:8px;
+}
+
+.prensa-destacada .note{
+  font-size:13px;
+  color:var(--muted);
+}
+
+.prensa-destacada .btn{
+  min-width:220px;
+}
+
+@media (max-width:640px){
+  .prensa-destacada .card{
+    padding:20px;
+  }
+
+  .prensa-destacada .btn{
+    width:100%;
+  }
+}
+
 </style>
   
 </head>
@@ -910,6 +938,10 @@ footer{
     Blog sobre vino patagónico
   </a>
 
+  <a class="btn outline" href="#prensa">
+    Publicación en Diario Río Negro
+  </a>
+
   <a class="btn" href="#sobre-mi">
   Servicios y asesoría
 </a>
@@ -995,7 +1027,51 @@ footer{
 
 </div><!-- /hero-grid -->
 </section><!-- /inicio -->
+<section id="prensa" class="prensa-destacada" style="margin-top:28px;">
+  <div class="card">
 
+    <div class="kicker">Publicación · Diario Río Negro</div>
+
+    <h2>El vino neuquino amplía su mapa</h2>
+
+    <img 
+      src="/assets/img/vino-neuquino-rio-negro-sergio-landoni.webp"
+      alt="El vino neuquino amplía su mapa - nota en Diario Río Negro por Sergio Landoni"
+      width="1200"
+      height="675"
+      loading="lazy"
+      decoding="async"
+      style="display:block; width:100%; height:auto; border-radius:12px; margin:12px 0;"
+    />
+
+    <p>
+      Una mirada sobre la evolución del vino neuquino y la diversidad de sus territorios, desde el polo productivo del Chañar hasta nuevas zonas en expansión.
+    </p>
+
+    <p class="note">
+      Publicación firmada por Sergio Landoni, Sommelier de Territorio, en Diario Río Negro.
+    </p>
+
+    <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+
+      <a 
+        href="https://www.rionegro.com.ar/gastronomia/el-vino-neuquino-amplia-su-mapa-las-razones-de-su-diversidad-y-consolidacion/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="btn primary">
+        Leer nota en Diario Río Negro
+      </a>
+
+      <a 
+        href="/zonas-vitivinicolas-neuquen.html" 
+        class="btn outline">
+        Leer análisis completo en mi sitio
+      </a>
+
+    </div>
+
+  </div>
+</section>
 <!-- SOBRE MI -->
 <section id="sobre-mi" aria-label="Sobre mí">
   <div class="grid-2">
