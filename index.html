@@ -718,6 +718,10 @@ footer{
   font-size:14px;
   line-height:1.6;
 }
+  .post:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 30px rgba(0,0,0,.10);
+}
 </style>
   
 </head>
@@ -1035,12 +1039,16 @@ footer{
 <!-- BLOG -->
 <section id="blog" aria-label="Artículos destacados">
   <div class="card">
-    <div class="kicker">Blog</div>
-    <h2>Artículos destacados</h2>
+  <div class="kicker">Contenido</div>
+<h2>Vino, territorio y Patagonia</h2>
 
-    <div class="post-list">
+<p style="margin-top:-4px; margin-bottom:16px;">
+  El vino neuquino empieza a entenderse mejor cuando se lo mira desde el territorio.
+</p>
 
-      <article class="post">
+<div class="post-list">
+
+      <article class="post" onclick="window.location.href='/zonas-vitivinicolas-neuquen.html'" style="cursor:pointer;">
         <div class="post-kicker">Vino neuquino</div>
         <h3>
           <a href="/zonas-vitivinicolas-neuquen.html">
