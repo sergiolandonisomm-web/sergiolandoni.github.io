@@ -556,7 +556,6 @@ header{
   align-items:start;
 }
 
-/* mejora equilibrio entre columnas */
 .hero-grid > .card:first-child{
   padding:24px;
 }
@@ -565,7 +564,6 @@ header{
   max-width:420px;
 }
 
-/* SOBRE MI */
 .grid-2{
   display:grid;
   grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);
@@ -573,20 +571,6 @@ header{
   align-items:start;
 }
 
-/* RESPONSIVE */
-@media (max-width:900px){
-  .hero-grid{
-    grid-template-columns:1fr;
-  }
-
-  .grid-2{
-    grid-template-columns:1fr;
-  }
-
-  .hero-grid > .card:last-child{
-    max-width:100%;
-  }
-}
 .card{
   background:var(--card);
   border:1px solid var(--line);
@@ -610,6 +594,7 @@ h1{
   margin:0 0 12px;
   font-size:38px;
   line-height:1.15;
+  letter-spacing:-0.5px;
 }
 
 h2{
@@ -654,6 +639,7 @@ p{
   background:var(--accent);
   border-color:var(--accent);
   color:#fff;
+  font-weight:500;
 }
 
 .btn.primary:hover{
@@ -719,7 +705,7 @@ section{
   min-width:220px;
 }
 
-/* BLOG DESTACADO (3 + 3) */
+/* BLOG DESTACADO */
 
 .post-list{
   display:grid;
@@ -802,25 +788,59 @@ textarea{
   resize:vertical;
 }
 
+/* CONTACTO ELEGANTE */
+
+#contacto .card{
+  padding:24px;
+}
+
+#contacto h2{
+  max-width:520px;
+}
+
+#contacto p{
+  font-size:15px;
+  line-height:1.6;
+}
+
+#contacto form{
+  display:grid;
+  gap:12px;
+}
+
+#contacto textarea{
+  min-height:140px;
+}
+
+#contacto .note{
+  margin-top:12px;
+}
+
+#contacto .grid-2{
+  align-items:center;
+}
+
 /* WHATSAPP */
 
 .whatsapp-btn{
   position:fixed;
   right:22px;
   bottom:22px;
-  width:56px;
-  height:56px;
+  width:52px;
+  height:52px;
   border-radius:999px;
   background:#25D366;
   display:flex;
   align-items:center;
   justify-content:center;
-  box-shadow:0 10px 25px rgba(0,0,0,.25);
+  box-shadow:0 8px 18px rgba(0,0,0,.18);
   z-index:999;
+  opacity:.95;
 }
 
 .whatsapp-btn:hover{
   transform:scale(1.05);
+  opacity:1;
 }
 
 /* FOOTER */
@@ -855,20 +875,27 @@ textarea{
   color:var(--accent);
 }
 
-@media (max-width:640px){
-  .footer-links{
-    gap:6px;
-  }
+.footer-links span{
+  opacity:.5;
 }
+
 /* RESPONSIVE */
 
 @media (max-width:900px){
-  .post-list{
-    grid-template-columns:repeat(2, 1fr);
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero-grid > .card:last-child{
+    max-width:100%;
   }
 
   .grid-2{
     grid-template-columns:1fr;
+  }
+
+  .post-list{
+    grid-template-columns:repeat(2, 1fr);
   }
 }
 
@@ -897,11 +924,19 @@ textarea{
     right:18px;
     bottom:18px;
   }
+
+  .footer-links{
+    gap:6px;
+  }
 }
 
 @media (max-width:600px){
   h1{
     font-size:30px;
+  }
+
+  #contacto h2{
+    font-size:20px;
   }
 }
 </style>
@@ -1300,29 +1335,45 @@ textarea{
 
 <!-- CONTACTO -->
 <section id="contacto" aria-label="Contacto">
-  <div class="card">
-    <h2>Contacto</h2>
+  <div class="grid-2">
+    
+    <div class="card">
+      <div class="kicker">Contacto</div>
+      <h2>¿Te interesa trabajar una propuesta con identidad territorial?</h2>
 
-    <p>
-      Consultoría estratégica, comunicación del vino, experiencias y proyectos con identidad territorial desde San Martín de los Andes.
-    </p>
+      <p>
+        Si te interesa desarrollar una propuesta, una experiencia o una asesoría vinculada al vino patagónico, escribime.
+      </p>
 
-    <form id="contact-form" action="https://formspree.io/f/xeokgkzr" method="POST">
-      <label for="name">Nombre</label>
-      <input type="text" id="name" name="name" required />
+      <p>
+        Trabajo desde <strong>San Martín de los Andes</strong> en proyectos donde el vino, el territorio, la gastronomía y la identidad regional se encuentran.
+      </p>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
+      <p class="note">
+        También podés escribirme directamente a
+        <a href="mailto:contacto@sergiolandoni.com.ar"><strong>contacto@sergiolandoni.com.ar</strong></a>
+      </p>
+    </div>
 
-      <label for="message">Mensaje</label>
-      <textarea id="message" name="message" required></textarea>
+    <div class="card">
+      <form id="contact-form" action="https://formspree.io/f/xeokgkzr" method="POST">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required />
 
-      <button type="submit" class="btn primary">Enviar mensaje</button>
-      <p id="form-status" class="note"></p>
-    </form>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="btn primary">Enviar mensaje</button>
+        <p id="form-status" class="note"></p>
+      </form>
+    </div>
+
   </div>
-</section><!-- /contacto -->
-
+</section> <!-- /contacto -->
+  
 </main>
 
 <footer class="site-footer">
