@@ -551,13 +551,21 @@ header{
 
 .hero-grid{
   display:grid;
-  grid-template-columns:minmax(0,1.45fr) minmax(300px,.75fr);
-  gap:18px;
-  align-items:start;
+  grid-template-columns:1.2fr 0.8fr;
+  gap:22px;
+  align-items:center;
 }
 
 .hero-grid > .card:first-child{
-  padding:24px;
+  padding:28px;
+}
+
+.hero-grid > .card:first-child h1{
+  margin-bottom:8px;
+}
+
+.hero-grid > .card:first-child p{
+  max-width:520px;
 }
 
 .hero-grid > .card:last-child{
@@ -674,11 +682,10 @@ section{
 .portrait{
   display:block;
   width:100%;
-  max-width:420px; /* podés subir un poco */
+  max-width:380px;
   height:auto;
   object-fit:cover;
-  object-position:center;
-  border-radius:var(--radius);
+  border-radius:14px;
   border:1px solid var(--line);
   box-shadow:var(--shadow);
   margin:0 auto;
@@ -998,36 +1005,35 @@ textarea{
 <!-- CARD 1 -->
 <div class="card">
   <div class="kicker">Sommelier de Territorio · Patagonia</div>
- <h1>Sergio Landoni — Sommelier de Territorio</h1>
+<h1>Sergio Landoni — Sommelier de Territorio</h1>
 
 <p style="font-size:16px; margin-top:10px;">
-  El vino se entiende mejor cuando se lo mira desde el territorio.
+  Cuento el vino desde el territorio.
 </p>
+
 <p class="note" style="margin-top:8px;">
   Comunicación, experiencias y consultoría en torno al <strong>vino neuquino</strong> y al <strong>vino patagónico</strong>, con foco en Neuquén.
 </p>
 
-  <hr style="border:0; border-top:1px solid var(--line); margin:14px 0;" />
+<hr style="border:0; border-top:1px solid var(--line); margin:14px 0;" />
 
-  <h2 style="font-size:18px; margin:0 0 8px;">Vino, territorio y cultura</h2>
+<h2 style="font-size:18px; margin:0 0 8px;">Vino, territorio y cultura</h2>
 
-  <p>
-    El vino se entiende mejor cuando se cuenta desde el lugar donde nace.<br/>
-    El paisaje, el clima y el trabajo de quienes lo hacen posible.<br/>
-    La identidad profunda de cada región.
-  </p>
+<p>
+  El vino se entiende mejor cuando se cuenta desde el lugar donde nace: el paisaje, el clima y el trabajo de quienes lo hacen posible.
+</p>
 
-  <p>
-    Trabajo desde la Patagonia, con base en San Martín de los Andes y foco en Neuquén, integrando comunicación, territorio y estrategia para posicionar el vino como expresión cultural y motor de desarrollo.
-  </p>
+<p>
+  Trabajo en la Patagonia, desde <strong>San Martín de los Andes</strong>, con foco en Neuquén, integrando comunicación, territorio y estrategia para posicionar el vino como expresión cultural y motor de desarrollo.
+</p>
 
-  <p>
-    Mi enfoque combina experiencia profesional y vida en territorio, conectando vino, gastronomía y paisaje en una misma narrativa.
-  </p>
+<p>
+  Mi enfoque combina experiencia profesional y vida en territorio, conectando vino, gastronomía y paisaje en una narrativa concreta, construida desde la experiencia y no desde la teoría.
+</p>
 
-  <p style="margin-top:12px;">
-    <em>Mi mirada nace en el territorio y se proyecta al mundo.</em>
-  </p>
+<p style="margin-top:12px;">
+  <em>Una mirada que nace en el territorio y se proyecta al mundo.</em>
+</p>
 <!-- BODEGA CUTRAL CO (REUBICADO Y MÁS DISCRETO) -->
 <hr style="margin:16px 0; border:0; border-top:1px solid var(--line);" />
 
@@ -1083,33 +1089,46 @@ textarea{
 
 <!-- CARD 2 -->
 <div class="card">
-  <h2 style="font-size:18px; margin-bottom:14px;">Proyectos y experiencias</h2>
+  <h2 style="font-size:18px; margin-bottom:14px;">Proyectos y experiencia</h2>
+
+  <p class="note" style="margin-bottom:14px;">
+  Esta forma de entender el vino se traduce en proyectos concretos, donde el territorio, la gastronomía y las personas se integran en experiencias reales.
+</p>
 
   <!-- VINO A LA MONTAÑA -->
   <div style="border:1px solid rgba(15,118,110,.20); background:rgba(15,118,110,.06); border-radius:12px; padding:14px; margin-bottom:16px;">
-    <h3 style="margin:0 0 8px; font-size:16px;">Vino a la Montaña</h3>
+    
+    <h3 style="margin:0 0 6px; font-size:16px;">Vino a la Montaña</h3>
+
+    <p style="font-size:13px; margin:0 0 8px;">
+      <em>Co-creador · Dirección conceptual</em>
+    </p>
 
     <p style="margin:0 0 10px;">
-      Soy co-creador e impulsor de la idea original de <strong>Vino a la Montaña</strong>, una feria de vinos patagónicos
-      que se desarrolla en <strong>San Martín de los Andes</strong>.
+      Impulso <strong>Vino a la Montaña</strong>, una feria de vinos patagónicos que se desarrolla en <strong>San Martín de los Andes</strong>, concebida como un espacio de encuentro real entre productores, territorio, turismo y cultura.
     </p>
 
     <p style="margin:0 0 12px;">
-      Un proyecto pensado desde el territorio como espacio de encuentro real entre productores, vino, turismo y cultura,
-      actualmente en proceso de consolidación de la edición 2026.
+      El proyecto se encuentra en proceso de consolidación de su edición 2026, con foco en posicionar al vino neuquino en un contexto de experiencia.
     </p>
 
     <a class="btn primary"
        href="https://www.vinoalamontana.com.ar"
        target="_blank"
        rel="noopener noreferrer">
-      Visitar vinoalamontana.com.ar
+      Conocer el proyecto
     </a>
+
   </div>
 
   <!-- EXPERIENCIAS -->
   <div style="border-top:1px solid var(--line); padding-top:16px; margin-top:16px;">
+    
     <h3 style="margin:0 0 6px; font-size:16px;">Experiencias y desarrollo territorial</h3>
+
+    <p style="font-size:13px; margin:0 0 8px;">
+      <em>Diseño de experiencias · Curaduría · Comunicación</em>
+    </p>
 
     <p>
       Diseño <strong>degustaciones, presentaciones y acciones estratégicas</strong> vinculadas al vino patagónico en distintos contextos.
@@ -1118,6 +1137,7 @@ textarea{
     <p>
       Articulo <strong>bodegas, proyectos gastronómicos e instituciones</strong>, construyendo experiencias que fortalecen identidad, posicionamiento y proyección del vino regional.
     </p>
+
   </div>
 
   <div class="note" style="margin-top:14px; text-align:center;">
@@ -1125,42 +1145,45 @@ textarea{
   </div>
 
 </div><!-- /CARD 2 -->
-
-</div><!-- /hero-grid -->
-</section><!-- /inicio -->
  
 <!-- SOBRE MI -->
 <section id="sobre-mi" aria-label="Sobre mí">
   <div class="grid-2">
     
     <div class="card">
-      <h2>Sobre mí</h2>
+   <h2>Sobre mí</h2>
 
-      <p>
-        Soy <strong>Sergio Landoni</strong>, <strong>Sommelier de Territorio</strong>. Mi trabajo consiste en conectar el origen del <strong>vino patagónico</strong> con quienes buscan autenticidad, construyendo puentes entre el viñedo, el mercado y el consumidor final.
-      </p>
+<p>
+  Soy <strong>Sergio Landoni</strong>, <strong>Sommelier de Territorio</strong>. Trabajo conectando el origen del <strong>vino patagónico</strong> con quienes buscan autenticidad, construyendo puentes entre el viñedo, el mercado y el consumidor final.
+</p>
 
-      <p>
-        Trabajo en la <strong>Patagonia vitivinícola</strong>, desde <strong>San Martín de los Andes</strong>, con foco en la identidad del <strong>vino neuquino</strong>.
-      </p>
+<p>
+  Trabajo en la <strong>Patagonia vitivinícola</strong>, desde <strong>San Martín de los Andes</strong>, con foco en la identidad del <strong>vino neuquino</strong>.
+</p>
 
-      <p>
-        Estoy donde sucede el vino: en los viñedos, en las bodegas y en los <strong>proyectos gastronómicos</strong>. Conozco a los productores, a los equipos de cocina y sala, y al público que busca experiencias auténticas para descubrir vinos que nacen de un territorio real.
-      </p>
+<p>
+  Estoy donde sucede el vino: en los viñedos, en las bodegas y en los <strong>proyectos gastronómicos</strong>. Conozco a los productores, a los equipos de cocina y sala, y al público que busca experiencias auténticas para descubrir vinos que nacen de un territorio real.
+</p>
 
-      <p><strong>¿Qué aporto a la cadena de valor?</strong></p>
+<p>
+  Mi trabajo consiste en integrar <strong>vino, territorio y cultura</strong> en experiencias concretas, donde el relato se construye desde el lugar y no desde la teoría.
+</p>
 
-      <ul style="margin-top:6px; margin-bottom:10px; padding-left:18px; color:var(--muted);">
-        <li><strong>Identidad</strong> — construcción de posicionamiento y relato para bodegas.</li>
-        <li><strong>Vinculación</strong> — articulación entre territorio, gastronomía y cultura.</li>
-        <li><strong>Proyección</strong> — conexión con redes de importadores en <strong>Europa</strong> y <strong>Canadá</strong>.</li>
-      </ul>
+<p><strong>¿Qué aporto a la cadena de valor?</strong></p>
 
-      <p>
-        Creo que la Patagonia, y especialmente Neuquén, tiene mucho más para mostrar: diversidad, calidad y carácter, y un enorme potencial para seguir construyendo valor <strong>desde el origen hacia el mundo</strong>.
-      </p>
-    </div>
+<ul style="margin-top:6px; margin-bottom:10px; padding-left:18px; color:var(--muted);">
+  <li><strong>Identidad</strong> — construcción de posicionamiento y relato para bodegas.</li>
+  <li><strong>Vinculación</strong> — articulación entre territorio, gastronomía y cultura.</li>
+  <li><strong>Proyección</strong> — conexión con redes de importadores en <strong>Europa</strong> y <strong>Canadá</strong>.</li>
+</ul>
 
+<p>
+  Creo que la Patagonia, y especialmente Neuquén, tiene mucho más para mostrar: diversidad, calidad y carácter, y un enorme potencial para seguir construyendo valor <strong>desde el origen hacia el mundo</strong>.
+</p>
+
+<p style="margin-top:10px;">
+  Esa mirada es la que guía cada uno de los proyectos en los que trabajo.
+</p>
     <div class="card" style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
       <img
         class="portrait"
