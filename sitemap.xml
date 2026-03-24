@@ -4,7 +4,7 @@
   <!-- Home -->
   <url>
     <loc>https://sergiolandoni.com.ar/</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,12 +12,12 @@
   <!-- Blog index -->
   <url>
     <loc>https://sergiolandoni.com.ar/blog.html</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Artículos -->
+  <!-- Artículos principales -->
   <url>
     <loc>https://sergiolandoni.com.ar/sommelier-de-territorio.html</loc>
     <lastmod>2026-03-22</lastmod>
@@ -32,6 +32,15 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- NUEVO: Vendimia -->
+  <url>
+    <loc>https://sergiolandoni.com.ar/vendimia-neuquina-2026-vino-territorio-neuquen.html</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Resto -->
   <url>
     <loc>https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html</loc>
     <lastmod>2026-03-22</lastmod>
