@@ -46,26 +46,71 @@
   <meta name="twitter:image" content="https://sergiolandoni.com.ar/hero.jpg" />
   <meta name="twitter:image:alt" content="Patagonian wine landscape and territory in Neuquén, Argentina" />
 
-  <!-- SCHEMA remains the same (you can update description if needed) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://sergiolandoni.com.ar/en/#website",
-        "url": "https://sergiolandoni.com.ar/en/",
-        "name": "Sergio Landoni | Territory-Based Sommelier",
-        "description": "Official website of Sergio Landoni, territory-based sommelier in Patagonia Argentina specializing in Neuquén wines, Patagonian wine identity, gastronomy and wine tourism experiences.",
-        "inLanguage": "en",
-        "publisher": {
-          "@id": "https://sergiolandoni.com.ar/en/#organization"
-        }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "Person",
+      "@id": "https://sergiolandoni.com.ar/en/#person",
+      "name": "Sergio Landoni",
+      "url": "https://sergiolandoni.com.ar/en/",
+      "image": "https://sergiolandoni.com.ar/assets/img/retrato-sergio-landoni.webp",
+      "jobTitle": "Territory-Based Sommelier",
+      "description": "Territory-based sommelier in Patagonia Argentina specializing in Neuquén wines, wine tourism, gastronomy and territorial storytelling.",
+      "address": {
+        "@type": "Place",
+        "addressLocality": "San Martín de los Andes",
+        "addressRegion": "Neuquén",
+        "addressCountry": "Argentina"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/sergio-landoni-sommelier/"
+      ]
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://sergiolandoni.com.ar/en/#organization",
+      "name": "Sergio Landoni",
+      "url": "https://sergiolandoni.com.ar/en/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sergiolandoni.com.ar/logo.jpg"
       }
-      <!-- ... (el resto del schema se mantiene igual que en tu versión original) ... -->
-    ]
-  }
-  </script>
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://sergiolandoni.com.ar/en/#website",
+      "url": "https://sergiolandoni.com.ar/en/",
+      "name": "Sergio Landoni | Territory-Based Sommelier",
+      "description": "Official website of Sergio Landoni, territory-based sommelier in Patagonia Argentina specializing in Neuquén wines and Patagonian wine identity.",
+      "publisher": {
+        "@id": "https://sergiolandoni.com.ar/en/#organization"
+      },
+      "inLanguage": "en"
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://sergiolandoni.com.ar/en/#webpage",
+      "url": "https://sergiolandoni.com.ar/en/",
+      "name": "Territory-Based Sommelier in Patagonia Argentina",
+      "isPartOf": {
+        "@id": "https://sergiolandoni.com.ar/en/#website"
+      },
+      "about": {
+        "@id": "https://sergiolandoni.com.ar/en/#person"
+      },
+      "description": "Territory-based sommelier based in Patagonia Argentina, focused on Neuquén wine regions, wine tourism and authentic wine experiences.",
+      "inLanguage": "en"
+    }
+
+  ]
+}
+</script>
 
 <style>
 /* Tu CSS completo se mantiene exactamente igual */
@@ -739,25 +784,55 @@ textarea{
       </div>
     </section>
 
-    <!-- BLOG -->
-    <section id="blog" aria-label="Featured articles">
-      <div class="card">
-        <div class="kicker">Content & Insights</div>
-        <h2>Neuquén & Patagonian Wine from the Territory</h2>
-        <p style="margin-top:-4px; margin-bottom:16px;">
-          Understanding Neuquén wines through their unique landscapes and cool-climate character.
+   <section id="blog" aria-label="Featured articles">
+  <div class="card">
+    <div class="kicker">Content & Insights</div>
+    <h2>Neuquén & Patagonian Wine from the Territory</h2>
+    <p style="margin-top:-4px; margin-bottom:16px;">
+      Understanding Neuquén wines through their landscapes, identity, and cool-climate character.
+    </p>
+
+    <div class="post-list">
+
+      <article class="post" onclick="window.location.href='/neuquen-wine-regions-patagonia.html'" style="cursor:pointer;">
+        <div class="post-kicker">Neuquén Wine Regions</div>
+        <h3>
+          <a href="/neuquen-wine-regions-patagonia.html">
+            The Six Wine Regions of Neuquén, Patagonia
+          </a>
+        </h3>
+        <p>
+          A territorial journey through the diversity of Neuquén wine regions, from San Patricio del Chañar to emerging areas.
         </p>
-        <div class="post-list">
-          <!-- Los posts se mantienen iguales, solo con pequeños ajustes en títulos si querés -->
-          <article class="post" onclick="window.location.href='/neuquen-wine-regions-patagonia.html'" style="cursor:pointer;">
-            <div class="post-kicker">Neuquén Wine Regions</div>
-            <h3><a href="/neuquen-wine-regions-patagonia.html">The Six Wine Regions of Neuquén, Patagonia</a></h3>
-            <p>A territorial journey through the diversity of Neuquén wine regions, from San Patricio del Chañar to emerging areas.</p>
-          </article>
-          <!-- ... resto de posts iguales ... -->
-        </div>
-      </div>
-    </section>
+      </article>
+
+      <article class="post" onclick="window.location.href='/norte-neuquino-territorio-vino.html'" style="cursor:pointer;">
+        <div class="post-kicker">Northern Neuquén</div>
+        <h3>
+          <a href="/norte-neuquino-territorio-vino.html">
+            Northern Neuquén: When Territory Begins to Speak Through Wine
+          </a>
+        </h3>
+        <p>
+          Landscape, identity, and future potential in one of the most singular areas of the Neuquén wine map.
+        </p>
+      </article>
+
+      <article class="post" onclick="window.location.href='/sommelier-de-territorio.html'" style="cursor:pointer;">
+        <div class="post-kicker">Identity</div>
+        <h3>
+          <a href="/sommelier-de-territorio.html">
+            What Is a Territory-Based Sommelier?
+          </a>
+        </h3>
+        <p>
+          A different way of understanding wine — through place, experience, and connection to origin.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
 
     <!-- CONTACT -->
     <section id="contacto" aria-label="Contact">
