@@ -46,68 +46,350 @@
   <meta name="twitter:image" content="https://sergiolandoni.com.ar/hero.jpg" />
   <meta name="twitter:image:alt" content="Patagonian wine landscape and territory in Neuquén, Argentina" />
 
-  <script type="application/ld+json">
+ <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
-
-    {
-      "@type": "Person",
-      "@id": "https://sergiolandoni.com.ar/en/#person",
-      "name": "Sergio Landoni",
-      "url": "https://sergiolandoni.com.ar/en/",
-      "image": "https://sergiolandoni.com.ar/assets/img/retrato-sergio-landoni.webp",
-      "jobTitle": "Territory-Based Sommelier",
-      "description": "Territory-based sommelier in Patagonia Argentina specializing in Neuquén wines, wine tourism, gastronomy and territorial storytelling.",
-      "address": {
-        "@type": "Place",
-        "addressLocality": "San Martín de los Andes",
-        "addressRegion": "Neuquén",
-        "addressCountry": "Argentina"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/sergio-landoni-sommelier/"
-      ]
-    },
-
-    {
-      "@type": "Organization",
-      "@id": "https://sergiolandoni.com.ar/en/#organization",
-      "name": "Sergio Landoni",
-      "url": "https://sergiolandoni.com.ar/en/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://sergiolandoni.com.ar/logo.jpg"
-      }
-    },
-
     {
       "@type": "WebSite",
       "@id": "https://sergiolandoni.com.ar/en/#website",
       "url": "https://sergiolandoni.com.ar/en/",
       "name": "Sergio Landoni | Territory-Based Sommelier",
-      "description": "Official website of Sergio Landoni, territory-based sommelier in Patagonia Argentina specializing in Neuquén wines and Patagonian wine identity.",
+      "description": "Official website of Sergio Landoni, a territory-based sommelier in Patagonia Argentina, specializing in Neuquén wines, Patagonian wine identity, gastronomy, territory, and wine communication.",
+      "inLanguage": "en",
       "publisher": {
         "@id": "https://sergiolandoni.com.ar/en/#organization"
-      },
-      "inLanguage": "en"
+      }
     },
-
+    {
+      "@type": "Organization",
+      "@id": "https://sergiolandoni.com.ar/en/#organization",
+      "name": "Sergio Landoni | Territory-Based Sommelier",
+      "url": "https://sergiolandoni.com.ar/en/",
+      "logo": {
+        "@id": "https://sergiolandoni.com.ar/en/#image-logo"
+      },
+      "image": {
+        "@id": "https://sergiolandoni.com.ar/en/#image-portrait"
+      },
+      "sameAs": [
+        "https://www.instagram.com/sergiolandoni.somm/",
+        "https://www.linkedin.com/in/sergio-landoni-sommelier/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "telephone": "+5492944668508",
+        "email": "contacto@sergiolandoni.com.ar",
+        "areaServed": "AR",
+        "availableLanguage": [
+          "es",
+          "en"
+        ]
+      }
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://sergiolandoni.com.ar/en/#brand",
+      "name": "Territory-Based Sommelier",
+      "url": "https://sergiolandoni.com.ar/en/",
+      "logo": {
+        "@id": "https://sergiolandoni.com.ar/en/#image-logo"
+      }
+    },
     {
       "@type": "WebPage",
       "@id": "https://sergiolandoni.com.ar/en/#webpage",
       "url": "https://sergiolandoni.com.ar/en/",
-      "name": "Territory-Based Sommelier in Patagonia Argentina",
+      "name": "Sergio Landoni | Territory-Based Sommelier in Patagonia",
+      "description": "Sergio Landoni, a territory-based sommelier in San Martín de los Andes, Patagonia Argentina. Communication, experiences, and strategic positioning focused on Neuquén wines and Patagonian wine identity.",
       "isPartOf": {
         "@id": "https://sergiolandoni.com.ar/en/#website"
       },
       "about": {
-        "@id": "https://sergiolandoni.com.ar/en/#person"
+        "@id": "https://sergiolandoni.com.ar/en/#sergio-landoni"
       },
-      "description": "Territory-based sommelier based in Patagonia Argentina, focused on Neuquén wine regions, wine tourism and authentic wine experiences.",
+      "mainEntity": {
+        "@id": "https://sergiolandoni.com.ar/en/#sergio-landoni"
+      },
+      "author": {
+        "@id": "https://sergiolandoni.com.ar/en/#sergio-landoni"
+      },
+      "publisher": {
+        "@id": "https://sergiolandoni.com.ar/en/#organization"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://sergiolandoni.com.ar/en/#image-hero"
+      },
+      "breadcrumb": {
+        "@id": "https://sergiolandoni.com.ar/en/#breadcrumb"
+      },
+      "hasPart": [
+        {
+          "@type": "WebPage",
+          "@id": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html",
+          "url": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html",
+          "name": "The Six Wine Regions of Neuquén, Patagonia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://sergiolandoni.com.ar/patagonian-wine-regions-landscape-argentina.html",
+          "url": "https://sergiolandoni.com.ar/patagonian-wine-regions-landscape-argentina.html",
+          "name": "Patagonian Wine Regions, Landscape, and Identity in Argentina"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html",
+          "url": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html",
+          "name": "Territory-Based Sommelier: When Wine Is Told from the Place It Comes From"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "NewsArticle",
+          "@id": "https://www.rionegro.com.ar/gastronomia/el-vino-neuquino-amplia-su-mapa-las-razones-de-su-diversidad-y-consolidacion/#article",
+          "headline": "El vino neuquino amplía su mapa: las razones de su diversidad y consolidación",
+          "url": "https://www.rionegro.com.ar/gastronomia/el-vino-neuquino-amplia-su-mapa-las-razones-de-su-diversidad-y-consolidacion/"
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://es.wikipedia.org/wiki/Vino_de_Neuqu%C3%A9n#creativework",
+          "name": "Vino de Neuquén",
+          "url": "https://es.wikipedia.org/wiki/Vino_de_Neuqu%C3%A9n"
+        }
+      ],
       "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sergiolandoni.com.ar/en/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://sergiolandoni.com.ar/en/"
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://sergiolandoni.com.ar/en/#image-hero",
+      "url": "https://sergiolandoni.com.ar/hero.jpg",
+      "contentUrl": "https://sergiolandoni.com.ar/hero.jpg",
+      "width": 1600,
+      "height": 900,
+      "caption": "Wine, territory, and culture from Patagonia",
+      "description": "Main image of the website of Sergio Landoni, a territory-based sommelier in Patagonia Argentina.",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://sergiolandoni.com.ar/en/#image-portrait",
+      "url": "https://sergiolandoni.com.ar/retrato.jpg",
+      "contentUrl": "https://sergiolandoni.com.ar/retrato.jpg",
+      "width": 1200,
+      "height": 1200,
+      "caption": "Portrait of Sergio Landoni",
+      "description": "Portrait of Sergio Landoni, Territory-Based Sommelier.",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://sergiolandoni.com.ar/en/#image-logo",
+      "url": "https://sergiolandoni.com.ar/logo.jpg",
+      "contentUrl": "https://sergiolandoni.com.ar/logo.jpg",
+      "description": "Logo of Sergio Landoni.",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://sergiolandoni.com.ar/en/#business",
+      "name": "Sergio Landoni | Territory-Based Sommelier",
+      "alternateName": "Territory-Based Sommelier",
+      "url": "https://sergiolandoni.com.ar/en/",
+      "image": {
+        "@id": "https://sergiolandoni.com.ar/en/#image-portrait"
+      },
+      "logo": {
+        "@id": "https://sergiolandoni.com.ar/en/#image-logo"
+      },
+      "brand": {
+        "@id": "https://sergiolandoni.com.ar/en/#brand"
+      },
+      "description": "Consulting, communication, experiences, and strategic positioning connected to Patagonian wine, with a focus on Neuquén wine, territorial identity, and the integration of wine, gastronomy, tourism, and culture.",
+      "telephone": "+5492944668508",
+      "email": "contacto@sergiolandoni.com.ar",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Martín de los Andes",
+        "addressRegion": "Neuquén",
+        "addressCountry": "AR"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "San Martín de los Andes"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Neuquén"
+        },
+        {
+          "@type": "Place",
+          "name": "Patagonia Argentina"
+        },
+        {
+          "@type": "Country",
+          "name": "Argentina"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/sergiolandoni.somm/",
+        "https://www.linkedin.com/in/sergio-landoni-sommelier/"
+      ],
+      "founder": {
+        "@id": "https://sergiolandoni.com.ar/en/#sergio-landoni"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "@id": "https://sergiolandoni.com.ar/en/#offer-catalog",
+        "name": "Territory-Based Sommelier Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Guided tastings of Patagonian wines",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Guided tastings of Patagonian wines",
+              "serviceType": "Guided wine tastings",
+              "description": "Guided tastings and presentations of Patagonian wines for private audiences, events, and thematic experiences."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Consulting for wineries and restaurants",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Consulting for wineries and restaurants",
+              "serviceType": "Consulting",
+              "description": "Consulting in positioning, communication, territorial narrative, and project development connected to wine."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Wine, gastronomy, and territory-based experiences",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wine, gastronomy, and territory-based experiences",
+              "serviceType": "Experience design",
+              "description": "Design and development of experiences that integrate wine, gastronomy, landscape, and regional identity."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.aasommeliers.com.ar/#organization",
+      "name": "Asociación Argentina de Sommeliers",
+      "url": "https://www.aasommeliers.com.ar/"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sergiolandoni.com.ar/en/#sergio-landoni",
+      "name": "Sergio Landoni",
+      "alternateName": "Territory-Based Sommelier",
+      "jobTitle": "Territory-Based Sommelier",
+      "description": "Sergio Landoni is a territory-based sommelier specializing in Neuquén wine, Patagonian wine, wine communication, wine tourism, and gastronomic experiences in Patagonia Argentina.",
+      "url": "https://sergiolandoni.com.ar/en/",
+      "mainEntityOfPage": {
+        "@id": "https://sergiolandoni.com.ar/en/#webpage"
+      },
+      "image": {
+        "@id": "https://sergiolandoni.com.ar/en/#image-portrait"
+      },
+      "email": "contacto@sergiolandoni.com.ar",
+      "telephone": "+5492944668508",
+      "sameAs": [
+        "https://www.instagram.com/sergiolandoni.somm/",
+        "https://www.linkedin.com/in/sergio-landoni-sommelier/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Martín de los Andes",
+        "addressRegion": "Neuquén",
+        "addressCountry": "AR"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "San Martín de los Andes, Neuquén, Patagonia Argentina"
+      },
+      "worksFor": {
+        "@id": "https://sergiolandoni.com.ar/en/#business"
+      },
+      "memberOf": {
+        "@id": "https://www.aasommeliers.com.ar/#organization"
+      },
+      "knowsAbout": [
+        "Territory-Based Sommelier",
+        "Neuquén wine",
+        "Patagonian wine",
+        "Patagonia wine regions",
+        "Wine tourism in Patagonia",
+        "Wine communication",
+        "Regional gastronomy",
+        "Wine and food experiences",
+        "Territorial identity"
+      ],
+      "knowsLanguage": [
+        {
+          "@type": "Language",
+          "name": "Spanish"
+        },
+        {
+          "@type": "Language",
+          "name": "English"
+        }
+      ],
+      "subjectOf": [
+        {
+          "@type": "WebPage",
+          "url": "https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html",
+          "name": "The Six Wine Regions of Neuquén, Patagonia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://sergiolandoni.com.ar/patagonian-wine-regions-landscape-argentina.html",
+          "name": "Patagonian Wine Regions, Landscape, and Identity in Argentina"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html",
+          "name": "Territory-Based Sommelier: When Wine Is Told from the Place It Comes From"
+        },
+        {
+          "@type": "NewsArticle",
+          "url": "https://www.rionegro.com.ar/gastronomia/el-vino-neuquino-amplia-su-mapa-las-razones-de-su-diversidad-y-consolidacion/",
+          "headline": "El vino neuquino amplía su mapa: las razones de su diversidad y consolidación",
+          "datePublished": "2026-03-21",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Diario Río Negro"
+          }
+        },
+        {
+          "@type": "CreativeWork",
+          "url": "https://es.wikipedia.org/wiki/Vino_de_Neuqu%C3%A9n",
+          "name": "Vino de Neuquén",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Wikipedia"
+          }
+        }
+      ]
     }
-
   ]
 }
 </script>
@@ -580,120 +862,143 @@ textarea{
 
   <main class="wrap">
     <!-- HOME -->
-    <section id="inicio" class="hero" aria-label="Home">
-      <div class="hero-media" aria-label="Patagonia wine landscape">
-        <img
-          src="/hero.jpg"
-          alt="Patagonian wine landscape in Neuquén, Argentina"
-          width="1600"
-          height="900"
-          loading="eager"
-          decoding="async"
-          fetchpriority="high"
-        />
+<section id="inicio" class="hero" aria-label="Home">
+  <div class="hero-media" aria-label="Patagonia wine landscape">
+    <img
+      src="/hero.jpg"
+      alt="Patagonian wine landscape in Neuquén, Argentina"
+      width="1600"
+      height="900"
+      loading="eager"
+      decoding="async"
+      fetchpriority="high"
+    />
+  </div>
+
+  <div class="hero-grid">
+
+    <div class="card">
+      <div class="kicker">Territory-Based Sommelier · Patagonia Argentina</div>
+      <h1>Patagonian Wine, Told from the Territory</h1>
+
+      <p style="font-size:15px; margin-top:6px; color:var(--muted);">
+        A unique perspective on wine — one that begins in the landscape, the climate, and the people who shape it.
+      </p>
+
+      <p class="note" style="margin-top:8px;">
+        Based in <strong>San Martín de los Andes</strong>, Patagonia Argentina, with a strong focus on <strong>Neuquén wine regions</strong> and the unique identity of <strong>Patagonian wines</strong>.
+      </p>
+
+      <hr style="border:0; border-top:1px solid var(--line); margin:14px 0;" />
+
+      <h2 style="font-size:18px; margin:0 0 8px;">Wine, Territory &amp; Authentic Experiences</h2>
+
+      <p>
+        I believe wine is best understood when told directly from its place of origin — the landscapes, the extreme climate, and the people who shape it.
+      </p>
+
+      <p>
+        My work connects vineyards, producers, gastronomy and international audiences through real presence in the territory and meaningful storytelling.
+      </p>
+
+      <p>
+        This grounded approach helps position Neuquén and Patagonia as distinctive cool-climate wine regions on the global stage.
+      </p>
+
+      <p style="margin-top:12px;">
+        <em>A perspective born in Patagonia, shared with the world.</em>
+      </p>
+
+      <hr style="margin:16px 0; border:0; border-top:1px solid var(--line);" />
+
+      <h3 style="margin-bottom:6px;">Bodega Cutral Co</h3>
+
+      <p style="font-size:14px; line-height:1.55;">
+        <em>Head Sommelier · Wine Tourism Development &amp; Communication</em>
+      </p>
+
+      <p style="font-size:14px; line-height:1.55;">
+        I collaborate with <a href="https://bodegacutralco.com.ar" target="_blank" rel="noopener noreferrer"><strong>Bodega Cutral Co</strong></a> in Neuquén, helping develop its wine tourism identity through team training, storytelling and strategic communication.
+      </p>
+
+      <div class="cta" style="margin-top:18px;">
+        <a class="btn primary" href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html">
+          Explore Neuquén Wine Regions
+        </a>
+        <a class="btn" href="/en/territory-based-sommelier.html">
+          What is a Territory-Based Sommelier?
+        </a>
+        <a class="btn" href="https://sergiolandoni.com.ar/patagonian-wine-regions-landscape-argentina.html">
+          Patagonian Wine Regions and Landscape
+        </a>
+        <a class="btn" href="/en/blog.html">
+          Blog &amp; Articles
+        </a>
+        <a class="btn outline" href="#prensa">
+          Press
+        </a>
+        <a class="btn" href="#sobre-mi">
+          Services &amp; Consulting
+        </a>
+        <a class="btn" href="#contacto">
+          Get in Touch
+        </a>
       </div>
-      <div class="hero-grid">
-        <!-- CARD 1 -->
-        <div class="card">
-          <div class="kicker">Territory-Based Sommelier · Patagonia Argentina</div>
-          <h1>Patagonian Wine, Told from the Territory</h1>
-          <p style="font-size:15px; margin-top:6px; color:var(--muted);">
-            A unique perspective on wine — one that begins in the landscape, the climate, and the people who shape it.
-          </p>
-          <p class="note" style="margin-top:8px;">
-  Based in <strong>San Martín de los Andes</strong>, Patagonia Argentina, with a strong focus on <strong>Neuquén wine regions</strong> and the unique identity of <strong>Patagonian wines</strong>.
-</p>
-          <hr style="border:0; border-top:1px solid var(--line); margin:14px 0;" />
-          <h2 style="font-size:18px; margin:0 0 8px;">Wine, Territory & Authentic Experiences</h2>
-          <p>
-            I believe wine is best understood when told directly from its place of origin — the landscapes, the extreme climate, and the people who shape it.
-          </p>
-          <p>
-            My work connects vineyards, producers, gastronomy and international audiences through real presence in the territory and meaningful storytelling.
-          </p>
-          <p>
-            This grounded approach helps position Neuquén and Patagonia as distinctive cool-climate wine regions on the global stage.
-          </p>
-          <p style="margin-top:12px;">
-            <em>A perspective born in Patagonia, shared with the world.</em>
-          </p>
-          <hr style="margin:16px 0; border:0; border-top:1px solid var(--line);" />
-          <h3 style="margin-bottom:6px;">Bodega Cutral Co</h3>
-          <p style="font-size:14px; line-height:1.55;">
-            <em>Head Sommelier · Wine Tourism Development & Communication</em>
-          </p>
-          <p style="font-size:14px; line-height:1.55;">
-            I collaborate with <a href="https://bodegacutralco.com.ar" target="_blank" rel="noopener noreferrer"><strong>Bodega Cutral Co</strong></a> in Neuquén, helping develop its wine tourism identity through team training, storytelling and strategic communication.
-          </p>
-<div class="cta" style="margin-top:18px;">
-  <a class="btn primary" href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html">
-    Explore Neuquén Wine Regions
-  </a>
-  <a class="btn" href="/en/territory-based-sommelier.html">
-    What is a Territory-Based Sommelier?
-  </a>
-  <a class="btn" href="https://sergiolandoni.com.ar/patagonian-wine-regions-landscape-argentina.html">
-    Patagonian Wine Regions and Landscape
-  </a>
-  <a class="btn" href="/en/blog.html">
-    Blog & Articles
-  </a>
-  <a class="btn outline" href="#prensa">
-    Press
-  </a>
-  <a class="btn" href="#sobre-mi">
-    Services & Consulting
-  </a>
-  <a class="btn" href="#contacto">
-    Get in Touch
-  </a>
-</div>
-        <!-- CARD 2 -->
-        <div class="card">
-          <h2 style="font-size:18px; margin-bottom:14px;">Projects & Experience</h2>
-          <p class="note" style="margin-bottom:14px;">
-            Real projects where territory, gastronomy, and people create meaningful wine experiences.
-          </p>
+    </div>
 
-          <!-- VINO A LA MONTAÑA -->
-          <div style="border:1px solid rgba(15,118,110,.20); background:rgba(15,118,110,.06); border-radius:12px; padding:14px; margin-bottom:16px;">
-            <h3 style="margin:0 0 6px; font-size:16px;">Vino a la Montaña</h3>
-            <p style="font-size:13px; margin:0 0 8px;">
-              <em>Co-creator · Concept Direction</em>
-            </p>
-            <p style="margin:0 0 10px;">
-              I co-create <strong>Vino a la Montaña</strong>, a unique Patagonian wine event held in <strong>San Martín de los Andes</strong>.
-            </p>
-            <p style="margin:0 0 12px;">
-              More than an event — it is a platform to experience Patagonian wines at their source, connecting producers, landscape, gastronomy and culture.
-            </p>
-          <p style="margin:0 0 12px;">
-  The project continues to evolve, strengthening Patagonia’s voice in the global wine conversation.
-</p>
-            <a class="btn primary"
-               href="https://www.vinoalamontana.com.ar"
-               target="_blank"
-               rel="noopener noreferrer">
-              Discover Vino a la Montaña
-            </a>
-          </div>
+    <div class="card">
+      <h2 style="font-size:18px; margin-bottom:14px;">Projects &amp; Experience</h2>
 
-          <div style="border-top:1px solid var(--line); padding-top:16px; margin-top:16px;">
-            <h3 style="margin:0 0 6px; font-size:16px;">Experiences & Territory Development</h3>
-            <p style="font-size:13px; margin:0 0 8px;">
-              <em>Experience Design · Curation · Strategic Communication</em>
-            </p>
-            <p>
-              I design wine tastings, immersive experiences and strategic projects that connect wineries, gastronomy and institutions with the true identity of Patagonian wines.
-            </p>
-          </div>
-          <div class="note" style="margin-top:14px; text-align:center;">
-            <em>Patagonia Argentina · National and International Projection</em>
-          </div>
-        </div>
+      <p class="note" style="margin-bottom:14px;">
+        Real projects where territory, gastronomy, and people create meaningful wine experiences.
+      </p>
+
+      <div style="border:1px solid rgba(15,118,110,.20); background:rgba(15,118,110,.06); border-radius:12px; padding:14px; margin-bottom:16px;">
+        <h3 style="margin:0 0 6px; font-size:16px;">Vino a la Montaña</h3>
+
+        <p style="font-size:13px; margin:0 0 8px;">
+          <em>Co-creator · Concept Direction</em>
+        </p>
+
+        <p style="margin:0 0 10px;">
+          I co-create <strong>Vino a la Montaña</strong>, a unique Patagonian wine event held in <strong>San Martín de los Andes</strong>.
+        </p>
+
+        <p style="margin:0 0 12px;">
+          More than an event — it is a platform to experience Patagonian wines at their source, connecting producers, landscape, gastronomy and culture.
+        </p>
+
+        <p style="margin:0 0 12px;">
+          The project continues to evolve, strengthening Patagonia’s voice in the global wine conversation.
+        </p>
+
+        <a class="btn primary"
+           href="https://www.vinoalamontana.com.ar"
+           target="_blank"
+           rel="noopener noreferrer">
+          Discover Vino a la Montaña
+        </a>
       </div>
-    </section>
 
+      <div style="border-top:1px solid var(--line); padding-top:16px; margin-top:16px;">
+        <h3 style="margin:0 0 6px; font-size:16px;">Experiences &amp; Territory Development</h3>
+
+        <p style="font-size:13px; margin:0 0 8px;">
+          <em>Experience Design · Curation · Strategic Communication</em>
+        </p>
+
+        <p>
+          I design wine tastings, immersive experiences and strategic projects that connect wineries, gastronomy and institutions with the true identity of Patagonian wines.
+        </p>
+      </div>
+
+      <div class="note" style="margin-top:14px; text-align:center;">
+        <em>Patagonia Argentina · National and International Projection</em>
+      </div>
+    </div>
+
+  </div>
+</section>
     <!-- ABOUT -->
     <section id="sobre-mi" aria-label="About">
       <div class="grid-2">
