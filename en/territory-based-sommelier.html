@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KBXTSQSK');</script>
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KBXTSQSK');
+  </script>
   <!-- End Google Tag Manager -->
 
   <meta charset="utf-8" />
@@ -25,7 +27,6 @@
   <link rel="alternate" href="https://sergiolandoni.com.ar/sommelier-de-territorio.html" hreflang="es-ar" />
   <link rel="alternate" href="https://sergiolandoni.com.ar/en/territory-based-sommelier.html" hreflang="en" />
   <link rel="alternate" href="https://sergiolandoni.com.ar/sommelier-de-territorio.html" hreflang="x-default" />
-  <meta property="og:url" content="https://sergiolandoni.com.ar/en/territory-based-sommelier.html" />
 
   <!-- Icons -->
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
@@ -52,7 +53,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Territory-based Sommelier in Patagonia | Sergio Landoni" />
-  <meta name="twitter:description" content="A territory-based approach to wine in Patagonia, connecting landscape, producers, gastronomy and identity from the place where wine is born." /> />
+  <meta name="twitter:description" content="A territory-based approach to wine in Patagonia, connecting landscape, producers, gastronomy and identity from the place where wine is born." />
   <meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/sergio-sillon.jpeg" />
   <meta name="twitter:image:alt" content="Sergio Landoni, Territory-based Sommelier in Patagonia" />
 
@@ -74,7 +75,7 @@
         "@id": "https://sergiolandoni.com.ar/blog.html#blog",
         "name": "Blog · Sergio Landoni",
         "url": "https://sergiolandoni.com.ar/blog.html",
-        "inLanguage": "en",
+        "inLanguage": "es-AR",
         "publisher": { "@id": "https://sergiolandoni.com.ar/#business" }
       },
       {
@@ -83,7 +84,10 @@
         "name": "Sergio Landoni",
         "url": "https://sergiolandoni.com.ar/",
         "jobTitle": "Territory-based Sommelier",
-        "image": { "@type": "ImageObject", "url": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG" },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG"
+        },
         "sameAs": [
           "https://www.linkedin.com/in/sergio-landoni-sommelier/",
           "https://www.instagram.com/sergiolandoni.somm/"
@@ -94,8 +98,14 @@
         "@id": "https://sergiolandoni.com.ar/#business",
         "name": "Sergio Landoni · Territory-based Sommelier",
         "url": "https://sergiolandoni.com.ar/",
-        "logo": { "@type": "ImageObject", "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg" },
-        "image": { "@type": "ImageObject", "url": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG" },
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg"
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG"
+        },
         "email": "mailto:contacto@sergiolandoni.com.ar",
         "telephone": "+54 9 294 4668508",
         "areaServed": [
@@ -108,7 +118,7 @@
         "@type": "WebPage",
         "@id": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html#webpage",
         "url": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html",
-        "name": "Territory-based Sommelier: Telling the Story of Wine from its Source in Patagonia",
+        "name": "Territory-based Sommelier in Patagonia",
         "inLanguage": "en",
         "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
         "about": { "@id": "https://sergiolandoni.com.ar/#author" },
@@ -165,42 +175,51 @@
       --line:#e5e7eb;
       --accent:#0f766e;
       --radius:14px;
-      --shadow: 0 10px 30px rgba(0,0,0,.06);
-      --max: 1060px;
+      --shadow:0 10px 30px rgba(0,0,0,.06);
+      --max:1060px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
       background:var(--bg);
       color:var(--text);
       line-height:1.7;
     }
-    a{color:inherit; text-decoration:none; transition: color .2s ease, opacity .2s ease;}
+    a{color:inherit; text-decoration:none; transition:color .2s ease, opacity .2s ease;}
     a:hover{color:var(--accent)}
-    .inline-link{ text-decoration: underline; text-underline-offset: 3px; }
+    .inline-link{text-decoration:underline; text-underline-offset:3px;}
     .inline-link:hover{opacity:.85}
     .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
 
     header{
-      position:sticky; top:0; z-index:50;
+      position:sticky;
+      top:0;
+      z-index:50;
       background:rgba(250,250,250,.92);
-      backdrop-filter: blur(10px);
+      backdrop-filter:blur(10px);
       border-bottom:1px solid var(--line);
     }
     .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:14px 0; gap:16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:14px 0;
+      gap:16px;
     }
     .brand{display:flex; align-items:center; gap:12px; min-width:220px}
     .brand-logo{
-      width:40px;height:40px;border-radius:10px;
+      width:40px;
+      height:40px;
+      border-radius:10px;
       border:1px solid var(--line);
-      background:#fff;object-fit:contain; display:block;
+      background:#fff;
+      object-fit:contain;
+      display:block;
     }
     .brand-text strong{font-size:16px}
-    .brand-text span{font-size:13px;color:var(--muted)}
+    .brand-text span{font-size:13px; color:var(--muted)}
     .menu{display:flex; gap:16px; flex-wrap:wrap; font-size:14px; color:var(--muted)}
 
     main{padding:22px 0 44px}
@@ -219,9 +238,21 @@
       text-transform:uppercase;
       margin-bottom:6px;
     }
-    h1{line-height:1.15; letter-spacing:-0.02em; margin:0 0 10px; font-size:clamp(1.75rem,3.2vw,2.4rem)}
+    h1{
+      line-height:1.15;
+      letter-spacing:-0.02em;
+      margin:0 0 10px;
+      font-size:clamp(1.75rem,3.2vw,2.4rem);
+    }
     h2{margin:22px 0 10px; font-size:1.35rem}
     p{margin:0 0 14px}
+
+    .subtitle{
+      font-size:1.05rem;
+      color:var(--muted);
+      margin:-2px 0 14px;
+      max-width:760px;
+    }
 
     .hero-media{
       margin:14px 0 16px;
@@ -238,8 +269,8 @@
       margin:6px 0 0;
     }
 
-    .hr{height:1px;background:var(--line);margin:18px 0}
-    .note{font-size:13px;color:var(--muted)}
+    .hr{height:1px; background:var(--line); margin:18px 0}
+    .note{font-size:13px; color:var(--muted)}
 
     .callout{
       border:1px solid var(--line);
@@ -272,8 +303,10 @@
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBXTSQSK"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBXTSQSK"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <header>
@@ -304,9 +337,10 @@
       <div class="kicker">Patagonia · Territory · Wine</div>
 
       <h1>Territory-based Sommelier in Patagonia</h1>
-<p class="subtitle">
-  Telling the story of wine from its source, through landscape, people, gastronomy and place.
-</p>
+      <p class="subtitle">
+        Telling the story of wine from its source, through landscape, people, gastronomy and place.
+      </p>
+
       <p>
         <strong>By Sergio Landoni</strong>,
         <a href="https://sergiolandoni.com.ar/en/#sobre-mi" class="inline-link">Territory-based Sommelier</a>
@@ -330,7 +364,7 @@
       </div>
 
       <p>
-       Wine does not begin in the glass. It begins in the place.
+        Wine does not begin in the glass. It begins in the place.
       </p>
 
       <p>
@@ -365,10 +399,7 @@
 
       <p>
         Telling the story of wine from its place explains why a wine tastes the way it does, and why it belongs to a specific dish, a certain table, or a particular moment of the year.
-        That coherence between regional cuisine and local wine is what defines a complete experience,
-        <a class="inline-link" href="https://sergiolandoni.com.ar/vino-regional-patagonia-gastronomia.html">
-          as I explore in this reflection on wine and gastronomy rooted in territory
-        </a>.
+        That coherence between regional cuisine and local wine is what defines a complete experience.
       </p>
 
       <p>
@@ -389,10 +420,7 @@
       </p>
 
       <p>
-        This broader perspective can also be seen in the growing visibility of
-        <a href="/sommeliers-patagonia.html" class="inline-link">
-          sommeliers in Patagonia
-        </a>,
+        This broader perspective can also be seen in the growing visibility of sommeliers in Patagonia,
         where the territory is increasingly taking a central role in the way wine is interpreted and shared.
       </p>
 
@@ -413,36 +441,28 @@
       </p>
 
       <p>
-        This growth and diversification are already being recognized on global platforms like Wikipedia, where Neuquén’s viticulture is described as an expanding frontier, with new regions emerging far beyond its historical core.
-        <a class="inline-link" href="https://es.wikipedia.org/wiki/Vino_de_Neuqu%C3%A9n" target="_blank" rel="noopener">
-          Wine of Neuquén
-        </a>
-        and
-        <a class="inline-link" href="https://es.wikipedia.org/wiki/Vitivinicultura_en_la_provincia_del_Neuqu%C3%A9n" target="_blank" rel="noopener">
-          viticulture in the province of Neuquén
-        </a>
-        reflect that evolution in real time.
+        This growth and diversification are already being recognized on global platforms, where Neuquén’s viticulture is understood as an expanding frontier, with new regions emerging far beyond its historical core.
       </p>
 
       <p>
         This way of understanding wine also aligns with the kind of origin-driven, context-aware perspective that is increasingly relevant in international evaluation environments such as the <strong>International Wine & Spirit Competition (IWSC)</strong>, where typicity, identity, and place matter more than ever.
       </p>
 
-  <div class="related" aria-label="Related reading">
-  <h3>Related reading</h3>
-  <ul>
-    <li>
-      <a class="inline-link" href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html">
-        The wine regions of Neuquén
-      </a>
-    </li>
-    <li>
-      <a class="inline-link" href="https://sergiolandoni.com.ar/patagonian-wine-regions-landscape-argentina.html">
-        Defining Patagonian wine: regions and landscapes
-      </a>
-    </li>
-  </ul>
-</div>
+      <div class="related" aria-label="Related reading">
+        <h3>Related reading</h3>
+        <ul>
+          <li>
+            <a class="inline-link" href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html">
+              The wine regions of Neuquén
+            </a>
+          </li>
+          <li>
+            <a class="inline-link" href="https://sergiolandoni.com.ar/patagonian-wine-regions-landscape-argentina.html">
+              Defining Patagonian wine: regions and landscapes
+            </a>
+          </li>
+        </ul>
+      </div>
 
       <div class="hr" aria-hidden="true"></div>
 
