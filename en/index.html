@@ -436,7 +436,6 @@
 </script>
 
 <style>
-/* Tu CSS completo se mantiene exactamente igual */
 :root{
   --bg:#fafafa;
   --card:#ffffff;
@@ -547,9 +546,10 @@ header{
 }
 .hero-grid{
   display:grid;
-  grid-template-columns:1.2fr 0.8fr;
+  grid-template-columns:minmax(0,1.08fr) minmax(320px,0.92fr);
   gap:22px;
-  align-items:center;
+  align-items:stretch;
+  margin-top:22px;
 }
 .hero-grid > .card:first-child{
   padding:28px;
@@ -558,23 +558,25 @@ header{
   margin-bottom:8px;
 }
 .hero-grid > .card:first-child p{
-  max-width:520px;
+  max-width:560px;
 }
 .hero-grid > .card:last-child{
-  max-width:420px;
+  max-width:none;
+  height:100%;
 }
 .grid-2{
   display:grid;
-  grid-template-columns:minmax(320px,1fr) minmax(360px,1.05fr);
+  grid-template-columns:minmax(320px,1fr) minmax(420px,1.08fr);
   gap:18px;
   align-items:stretch;
+  margin-top:18px;
 }
 .card{
   background:var(--card);
   border:1px solid var(--line);
   border-radius:var(--radius);
   box-shadow:var(--shadow);
-  padding:20px;
+  padding:26px;
 }
 .kicker{
   font-size:13px;
@@ -598,13 +600,19 @@ h2{
   line-height:1.25;
 }
 h3{
-  margin:8px 0 10px;
+  margin:8px 0 6px;
   font-size:18px;
   line-height:1.3;
 }
 p{
   margin:10px 0;
   color:var(--muted);
+}
+.card p{
+  margin-bottom:12px;
+}
+.card p:last-child{
+  margin-bottom:0;
 }
 .cta{
   display:grid;
@@ -620,10 +628,11 @@ p{
   font-size:14px;
   border:1px solid var(--line);
   background:#fff;
-  color:var(--text);
+  color:#111827;
   cursor:pointer;
   line-height:1.2;
   min-height:42px;
+  margin-top:6px;
 }
 .btn.primary{
   background:var(--accent);
@@ -647,17 +656,29 @@ main{
   padding:10px 0 44px;
 }
 section{
-  margin-top:18px;
+  margin-top:40px;
   scroll-margin-top:84px;
+}
+section:first-of-type{
+  margin-top:24px;
 }
 .note{
   font-size:13px;
   color:var(--muted);
 }
+.intro .card{
+  max-width:none !important;
+  margin:28px 0 0;
+  padding:28px 34px;
+  line-height:1.65;
+}
+.intro p{
+  max-width:720px;
+}
 .portrait{
   display:block;
   width:100%;
-  max-width:520px;
+  max-width:100%;
   height:auto;
   object-fit:cover;
   border-radius:14px;
@@ -665,8 +686,24 @@ section{
   box-shadow:var(--shadow);
   margin:0 auto;
 }
+.portrait-figure{
+  width:100%;
+  max-width:440px;
+  margin:0 auto;
+}
+.portrait-caption{
+  margin-top:14px;
+  font-size:13px;
+  color:var(--muted);
+  text-align:center;
+  line-height:1.5;
+}
+#sobre-mi .card{
+  padding:26px;
+}
 .prensa-destacada .card{
-  padding:24px;
+  max-width:none !important;
+  padding:30px 34px;
 }
 .prensa-destacada img{
   display:block;
@@ -675,7 +712,7 @@ section{
   border-radius:12px;
   border:1px solid var(--line);
   box-shadow:0 10px 30px rgba(0,0,0,.06);
-  margin:12px 0;
+  margin:16px auto 6px;
 }
 .prensa-destacada .btn{
   min-width:220px;
@@ -832,6 +869,7 @@ textarea{
   }
   .hero-grid > .card:last-child{
     max-width:100%;
+    height:auto;
   }
   .grid-2{
     grid-template-columns:1fr;
@@ -841,6 +879,20 @@ textarea{
   }
   .post-list{
     grid-template-columns:repeat(2, 1fr);
+  }
+}
+@media (max-width:768px){
+  section{
+    margin-top:32px;
+  }
+  .card{
+    padding:22px;
+  }
+  .intro .card{
+    padding:24px;
+  }
+  .prensa-destacada .card{
+    padding:24px;
   }
 }
 @media (max-width:640px){
@@ -871,7 +923,7 @@ textarea{
     font-size:20px;
   }
 }
-</style>
+</style>>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -992,62 +1044,59 @@ textarea{
     </div>
   </div>
 
-  <div class="card">
-    <h2 style="font-size:18px; margin-bottom:14px;">Projects &amp; Experience</h2>
+<div class="card" style="padding:24px;">
+  <h2 style="font-size:20px; margin-bottom:12px;">Projects &amp; Experience</h2>
 
-    <p class="note" style="margin-bottom:14px;">
-      Real projects where territory, gastronomy and people create meaningful wine experiences.
+  <p class="note" style="margin-bottom:16px;">
+    Real projects where territory, gastronomy and people come together to shape meaningful wine experiences.
+  </p>
+
+  <div style="border:1px solid rgba(15,118,110,.20); background:rgba(15,118,110,.06); border-radius:12px; padding:16px; margin-bottom:18px;">
+    <h3 style="margin:0 0 6px; font-size:16px;">Vino a la Montaña</h3>
+
+    <p style="font-size:13px; margin:0 0 10px;">
+      <em>Co-creator · Concept Direction</em>
     </p>
 
-    <div style="border:1px solid rgba(15,118,110,.20); background:rgba(15,118,110,.06); border-radius:12px; padding:14px; margin-bottom:16px;">
-      <h3 style="margin:0 0 6px; font-size:16px;">Vino a la Montaña</h3>
+    <p style="margin:0 0 10px;">
+      I co-create <strong>Vino a la Montaña</strong>, a distinctive Patagonian wine event held in <strong>San Martín de los Andes</strong>.
+    </p>
 
-      <p style="font-size:13px; margin:0 0 8px;">
-        <em>Co-creator · Concept Direction</em>
-      </p>
+    <p style="margin:0 0 12px;">
+      More than an event, it is a platform to experience Patagonian wines at their source, connecting producers, landscape, gastronomy and culture.
+    </p>
 
-      <p style="margin:0 0 10px;">
-        I co-create <strong>Vino a la Montaña</strong>, a unique Patagonian wine event held in <strong>San Martín de los Andes</strong>.
-      </p>
+    <p style="margin:0 0 14px;">
+      The project continues to evolve, strengthening Patagonia’s voice in the broader wine conversation.
+    </p>
 
-      <p style="margin:0 0 12px;">
-        More than an event, it is a platform to experience Patagonian wines at their source, connecting producers, landscape, gastronomy and culture.
-      </p>
-
-      <p style="margin:0 0 12px;">
-        The project continues to evolve, strengthening Patagonia’s voice in the global wine conversation.
-      </p>
-
-      <a class="btn primary"
-         href="https://www.vinoalamontana.com.ar"
-         target="_blank"
-         rel="noopener noreferrer">
-        Discover Vino a la Montaña
-      </a>
-    </div>
-
-    <div style="border-top:1px solid var(--line); padding-top:16px; margin-top:16px;">
-      <h3 style="margin:0 0 6px; font-size:16px;">Experiences &amp; Territory Development</h3>
-
-      <p style="font-size:13px; margin:0 0 8px;">
-        <em>Experience Design · Curation · Strategic Communication</em>
-      </p>
-
-      <p>
-        I design wine tastings, immersive experiences and strategic projects that connect wineries, gastronomy and institutions with the true identity of Patagonian wines.
-      </p>
-    </div>
-
-    <div class="note" style="margin-top:14px; text-align:center;">
-      <em>Patagonia Argentina · National and International Projection</em>
-    </div>
+    <a class="btn primary"
+       href="https://www.vinoalamontana.com.ar"
+       target="_blank"
+       rel="noopener noreferrer">
+      Discover Vino a la Montaña
+    </a>
   </div>
 
+  <div style="border-top:1px solid var(--line); padding-top:16px;">
+    <h3 style="margin:0 0 6px; font-size:16px;">Experiences &amp; Territory Development</h3>
+
+    <p style="font-size:13px; margin:0 0 10px;">
+      <em>Experience Design · Curation · Strategic Communication</em>
+    </p>
+
+    <p style="margin:0;">
+      I design wine tastings, immersive experiences and strategic projects that connect wineries, gastronomy and institutions with the true identity of Patagonian wines.
+    </p>
+  </div>
+
+  <div class="note" style="margin-top:16px; text-align:center;">
+    <em>Patagonia Argentina · National and International Projection</em>
+  </div>
 </div>
-</section>
 
 <section class="intro" aria-label="Introduction">
-  <div class="card" style="max-width:800px; margin:28px auto 0; padding:0 18px;">
+  <div class="card" style="max-width:none; margin:28px 0 0; padding:24px 28px;">
 
     <p>Wine does not begin in the glass. It begins in the place.</p>
 
@@ -1104,6 +1153,65 @@ textarea{
       </p>
     </div>
 
+    <div class="card" style="display:flex; align-items:center; justify-content:center; padding:28px;">
+      <figure class="portrait-figure">
+        <img 
+          src="/assets/img/retrato-sergio-landoni.webp" 
+          alt="Sergio Landoni, Territory-Based Sommelier in Patagonia Argentina"
+          class="portrait"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption class="portrait-caption">
+          Sergio Landoni · Territory-Based Sommelier<br>
+          San Martín de los Andes, Patagonia Argentina
+        </figcaption>
+      </figure>
+    </div>
+
+  </div>
+</section>>
+
+<!-- ABOUT -->
+<section id="sobre-mi" aria-label="About">
+  <div class="grid-2">
+
+    <div class="card">
+      <h2>About Sergio Landoni</h2>
+
+      <p>
+        I am <strong>Sergio Landoni</strong>, a <strong>territory-based sommelier</strong> working from Patagonia, Argentina.
+      </p>
+
+      <p>
+        My work focuses on understanding and communicating wine from its place of origin — connecting <strong>Neuquén and Patagonian wines</strong> with international audiences, professionals and the wine trade.
+      </p>
+
+      <p>
+        Rather than approaching wine only from a technical perspective, I work directly within the territory, alongside wineries, producers and gastronomy, interpreting wine through landscape, climate and cultural context.
+      </p>
+
+      <p>
+        I specialise in the <strong>Neuquén wine region</strong>, one of Argentina’s most distinctive cool-climate areas, contributing to its positioning within the global wine conversation.
+      </p>
+
+      <p>
+        I work from within Patagonia, building a direct connection between producers, gastronomy and the broader wine conversation, helping communicate these wines with clarity and authenticity.
+      </p>
+
+      <p><strong>What I offer</strong></p>
+
+      <ul style="margin-top:6px; margin-bottom:10px; padding-left:18px; color:var(--muted);">
+        <li><strong>Territorial identity</strong> — positioning and storytelling rooted in place.</li>
+        <li><strong>Connection</strong> — linking wine, gastronomy, tourism and culture.</li>
+        <li><strong>International projection</strong> — bridging Patagonia with global wine audiences.</li>
+      </ul>
+
+      <p>
+        My approach helps communicate Patagonia not only as a wine region, but as a distinctive origin defined by freshness, precision and identity.
+      </p>
+    </div>
+
     <div class="card" style="display:flex; align-items:center; justify-content:center;">
       <img 
         src="/assets/img/retrato-sergio-landoni.webp" 
@@ -1119,17 +1227,17 @@ textarea{
 
 <!-- PRESS -->
 <section id="prensa" class="prensa-destacada" aria-label="Press">
-  <div class="card" style="max-width:900px; margin:0 auto; text-align:center;">
+  <div class="card" style="max-width:none; margin:0; text-align:center; padding:28px;">
 
     <div class="kicker">Press · Diario Río Negro</div>
     <h2>Press &amp; Recognition</h2>
 
-    <p>
+    <p style="max-width:760px; margin:0 auto 14px;">
       The evolution of Neuquén as a wine region and its growing diversity has been featured in specialised media.
     </p>
 
-    <img
-      src="/assets/img/vino-neuquino-rio-negro-sergio-landoni.webp"
+    <img 
+      src="/assets/img/vino-neuquino-rio-negro-sergio-landoni.webp" 
       alt="Article about Neuquén wine region in Diario Río Negro"
       width="1200"
       height="675"
@@ -1143,10 +1251,10 @@ textarea{
       Diario Río Negro
     </p>
 
-    <a
-      class="btn primary"
-      href="https://www.rionegro.com.ar/gastronomia/el-vino-neuquino-amplia-su-mapa-las-razones-de-su-diversidad-y-consolidacion/"
-      target="_blank"
+    <a 
+      class="btn primary" 
+      href="https://www.rionegro.com.ar/gastronomia/el-vino-neuquino-amplia-su-mapa-las-razones-de-su-diversidad-y-consolidacion/" 
+      target="_blank" 
       rel="noopener noreferrer"
     >
       Read the article
@@ -1154,7 +1262,7 @@ textarea{
 
   </div>
 </section>
-
+    
 <!-- BLOG -->
 <section id="blog" aria-label="Blog">
   <div class="card">
