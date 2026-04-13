@@ -1518,17 +1518,29 @@ textarea{
         const res = await fetch(form.action, {
           method: "POST",
           body: new FormData(form),
-          headers: { "Accept": "application/json" }
+          headers: {
+            "Accept": "application/json"
+          }
         });
+
+        const data = await res.json().catch(() => null);
 
         if (res.ok) {
           form.reset();
           if (statusEl) statusEl.textContent = "¡Listo! Mensaje enviado. Gracias.";
-        } else {
-          if (statusEl) statusEl.textContent = "No se pudo enviar. Probá de nuevo o escribime por mail.";
+          return;
         }
+
+        if (data && data.errors && Array.isArray(data.errors)) {
+          statusEl.textContent = data.errors.map(err => err.message).join(" | ");
+        } else if (data && data.error) {
+          statusEl.textContent = data.error;
+        } else {
+          statusEl.textContent = "No se pudo enviar. Revisá la configuración de Formspree.";
+        }
+
       } catch (err) {
-        if (statusEl) statusEl.textContent = "Error de conexión. Probá de nuevo o escribime por mail.";
+        statusEl.textContent = "Error de conexión. Probá de nuevo o escribime por mail.";
       }
     });
   }
