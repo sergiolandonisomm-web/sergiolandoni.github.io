@@ -4,7 +4,7 @@
   <!-- Home -->
   <url>
     <loc>https://sergiolandoni.com.ar/</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,12 +12,20 @@
   <!-- Blog index -->
   <url>
     <loc>https://sergiolandoni.com.ar/blog.html</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Artículo NUEVO (CLAVE) -->
+  <!-- Artículo NUEVO Lago Puelo (CLAVE) -->
+  <url>
+    <loc>https://sergiolandoni.com.ar/vino-lago-puelo-patagonia-comarca-andina.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Artículo fuerte -->
   <url>
     <loc>https://sergiolandoni.com.ar/vino-neuquino-identidad-propia.html</loc>
     <lastmod>2026-04-13</lastmod>
