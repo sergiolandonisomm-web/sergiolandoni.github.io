@@ -244,14 +244,17 @@
       "worksFor": {
         "@id": "https://sergiolandoni.com.ar/en/#organization"
       },
-   "affiliation": [
-  {
-    "@type": "Organization",
-    "name": "Winexperts Patagonia",
-    "roleName": "Regional Ambassador"
-  }
-],
-      "knows": [
+      "affiliation": [
+        {
+          "@type": "OrganizationRole",
+          "roleName": "Regional Ambassador",
+          "memberOf": {
+            "@type": "Organization",
+            "name": "Winexperts Patagonia"
+          }
+        }
+      ],
+      "knowsAbout": [
         "Patagonian wines",
         "Neuquén wine region",
         "Wine experiences in Patagonia",
