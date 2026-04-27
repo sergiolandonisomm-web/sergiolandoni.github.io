@@ -1,1 +1,1316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=j.async||true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KBXTSQSK');
+  </script>
+  <!-- End Google Tag Manager -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="format-detection" content="telephone=no" />
 
+<title>Patagonia Wine Experiences | Neuquén | Sergio Landoni</title>
+
+<meta name="description" content="Curated small-group wine experiences in Patagonia. Discover Neuquén wines through regional gastronomy, landscape and territory-driven storytelling, with an evolving international perspective through WSET." />
+
+<meta name="author" content="Sergio Landoni" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<meta name="theme-color" content="#0f766e" />
+
+<link rel="canonical" href="https://sergiolandoni.com.ar/en/" />
+<link rel="alternate" href="https://sergiolandoni.com.ar/" hreflang="es-AR" />
+<link rel="alternate" href="https://sergiolandoni.com.ar/en/" hreflang="en-GB" />
+<link rel="alternate" href="https://sergiolandoni.com.ar/" hreflang="x-default" />
+
+<!-- Performance: preload hero -->
+<link rel="preload" as="image" href="/hero.jpg" fetchpriority="high" />
+
+<!-- Icons -->
+<link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Sergio Landoni | Territory-Based Sommelier" />
+<meta property="og:title" content="Patagonia Wine Experiences | Sergio Landoni" />
+<meta property="og:description" content="Curated wine experiences in Patagonia, connecting Neuquén wines, cool-climate identity, gastronomy and landscape." />
+<meta property="og:url" content="https://sergiolandoni.com.ar/en/" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:image" content="https://sergiolandoni.com.ar/hero.jpg" />
+<meta property="og:image:alt" content="Patagonian vineyards in Neuquén with Andes landscape and desert light" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1600" />
+<meta property="og:image:height" content="900" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Patagonia Wine Experiences | Sergio Landoni" />
+<meta name="twitter:description" content="Curated wine experiences in Patagonia, connecting Neuquén wines, cool-climate identity, gastronomy and landscape." />
+<meta name="twitter:image" content="https://sergiolandoni.com.ar/hero.jpg" />
+<meta name="twitter:image:alt" content="Patagonian vineyards in Neuquén with Andes landscape and desert light" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "WebSite",
+      "@id": "https://sergiolandoni.com.ar/en/#website",
+      "url": "https://sergiolandoni.com.ar/en/",
+      "name": "Sergio Landoni | Territory-Based Sommelier",
+      "description": "Official website of Sergio Landoni, a territory-based sommelier from Patagonia, Argentina, specialising in Neuquén and Patagonian wines, wine communication, curated tastings and place-driven experiences.",
+      "inLanguage": "en-GB",
+      "publisher": {
+        "@id": "https://sergiolandoni.com.ar/en/#organization"
+      }
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://sergiolandoni.com.ar/en/#organization",
+      "name": "Sergio Landoni | Territory-Based Sommelier",
+      "url": "https://sergiolandoni.com.ar/en/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg",
+        "contentUrl": "https://sergiolandoni.com.ar/assets/img/logo.jpg"
+      },
+      "image": {
+        "@id": "https://sergiolandoni.com.ar/en/#image-portrait"
+      },
+      "sameAs": [
+        "https://www.instagram.com/sergiolandoni.somm/",
+        "https://www.linkedin.com/in/sergio-landoni-sommelier/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "business inquiries",
+        "telephone": "+54 9 294 466-8508",
+        "email": "contacto@sergiolandoni.com.ar",
+        "areaServed": [
+          { "@type": "Country", "name": "United Kingdom" },
+          { "@type": "Country", "name": "Germany" },
+          { "@type": "Country", "name": "France" },
+          { "@type": "Country", "name": "Spain" },
+          { "@type": "Country", "name": "Italy" },
+          { "@type": "Place", "name": "Patagonia Argentina" }
+        ],
+        "availableLanguage": ["es", "en-GB"]
+      }
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://sergiolandoni.com.ar/en/#webpage",
+      "url": "https://sergiolandoni.com.ar/en/",
+      "name": "Patagonia Wine Experiences | Sergio Landoni | Neuquén Argentina",
+      "description": "Curated wine experiences, wine communication and territory-based insight from Patagonia, focused on Neuquén wines, gastronomy, landscape and cool-climate identity.",
+      "isPartOf": {
+        "@id": "https://sergiolandoni.com.ar/en/#website"
+      },
+      "about": {
+        "@id": "https://sergiolandoni.com.ar/en/#sergio-landoni"
+      },
+      "mainEntity": {
+        "@id": "https://sergiolandoni.com.ar/en/#sergio-landoni"
+      },
+      "author": {
+        "@id": "https://sergiolandoni.com.ar/en/#sergio-landoni"
+      },
+      "publisher": {
+        "@id": "https://sergiolandoni.com.ar/en/#organization"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://sergiolandoni.com.ar/en/#image-hero"
+      },
+      "breadcrumb": {
+        "@id": "https://sergiolandoni.com.ar/en/#breadcrumb"
+      },
+      "inLanguage": "en-GB"
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sergiolandoni.com.ar/en/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://sergiolandoni.com.ar/en/"
+        }
+      ]
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://sergiolandoni.com.ar/en/#image-hero",
+      "url": "https://sergiolandoni.com.ar/hero.jpg",
+      "contentUrl": "https://sergiolandoni.com.ar/hero.jpg",
+      "width": 1600,
+      "height": 900,
+      "caption": "Patagonian vineyards in Neuquén",
+      "inLanguage": "en-GB"
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://sergiolandoni.com.ar/en/#image-portrait",
+      "url": "https://sergiolandoni.com.ar/retrato.jpg",
+      "contentUrl": "https://sergiolandoni.com.ar/retrato.jpg",
+      "width": 1200,
+      "height": 1200
+    },
+
+    {
+      "@type": ["LocalBusiness", "ProfessionalService"],
+      "@id": "https://sergiolandoni.com.ar/en/#business",
+      "name": "Sergio Landoni | Territory-Based Sommelier",
+      "url": "https://sergiolandoni.com.ar/en/",
+      "image": {
+        "@id": "https://sergiolandoni.com.ar/en/#image-portrait"
+      },
+      "description": "Professional wine services from Patagonia, including curated tastings, wine communication, consulting and place-driven experiences focused on Neuquén and Patagonian wines.",
+      "telephone": "+54 9 294 466-8508",
+      "email": "contacto@sergiolandoni.com.ar",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Martín de los Andes",
+        "addressRegion": "Neuquén",
+        "addressCountry": "AR"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "Patagonia Argentina" },
+        { "@type": "Country", "name": "United Kingdom" },
+        { "@type": "Country", "name": "Germany" },
+        { "@type": "Country", "name": "France" },
+        { "@type": "Country", "name": "Spain" },
+        { "@type": "Country", "name": "Italy" }
+      ]
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://sergiolandoni.com.ar/en/#wine-experience",
+      "name": "Patagonia Wine Territory Experience",
+      "serviceType": "Curated small-group wine experience",
+      "description": "Curated small-group wine experiences in Patagonia, exploring Neuquén and Patagonian wines through regional gastronomy, landscape, mountain hospitality and territory-driven storytelling.",
+      "provider": {
+        "@id": "https://sergiolandoni.com.ar/en/#business"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "San Martín de los Andes, Neuquén, Patagonia Argentina"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "International travellers, wine enthusiasts and private groups"
+      },
+      "availableLanguage": ["en-GB", "es"],
+      "url": "https://sergiolandoni.com.ar/en/#contacto",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/LimitedAvailability",
+        "url": "https://sergiolandoni.com.ar/en/#contacto",
+        "description": "Private experiences by reservation for small groups."
+      }
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://sergiolandoni.com.ar/en/#sergio-landoni",
+      "name": "Sergio Landoni",
+      "jobTitle": "Sommelier, Wine Communicator, Writer",
+      "description": "Territory-based sommelier specialising in Neuquén and Patagonian wines, curated wine experiences, wine communication and gastronomy-driven storytelling from Patagonia, Argentina, with an evolving international perspective through WSET.",
+      "url": "https://sergiolandoni.com.ar/en/",
+      "image": {
+        "@id": "https://sergiolandoni.com.ar/en/#image-portrait"
+      },
+      "email": "contacto@sergiolandoni.com.ar",
+      "telephone": "+54 9 294 466-8508",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Martín de los Andes",
+        "addressRegion": "Neuquén",
+        "addressCountry": "AR"
+      },
+      "worksFor": {
+        "@id": "https://sergiolandoni.com.ar/en/#organization"
+      },
+      "affiliation": [
+        {
+          "@type": "OrganizationRole",
+          "roleName": "Regional Ambassador",
+          "memberOf": {
+            "@type": "Organization",
+            "name": "Winexperts Patagonia"
+          }
+        }
+      ],
+      "knowsAbout": [
+        "Patagonian wines",
+        "Neuquén wine region",
+        "Wine experiences in Patagonia",
+        "Wine tourism in Patagonia",
+        "Wine and gastronomy pairing",
+        "Territory-based wine communication",
+        "Patagonian wine identity",
+        "Cool-climate wines",
+        "Argentine wine regions",
+        "Place-driven wine storytelling",
+        "International wine education",
+        "WSET wine education"
+      ]
+    }
+
+  ]
+}
+</script>
+  
+<style>
+:root{
+  --bg:#fafafa;
+  --card:#ffffff;
+  --text:#111827;
+  --muted:#374151;
+  --line:#e5e7eb;
+  --accent:#0f766e;
+  --accent-hover:#134e4a;
+  --radius:14px;
+  --shadow:0 10px 30px rgba(0,0,0,.06);
+  --max:1060px;
+  --transition:all .25s cubic-bezier(0.4,0,0.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+}
+a{
+  color:inherit;
+  text-decoration:none;
+}
+.wrap{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:0 18px;
+}
+a,.btn,.card,input,textarea{
+  transition:var(--transition);
+}
+header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(250,250,250,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 0;
+  gap:16px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:220px;
+}
+.brand-logo{
+  width:40px;
+  height:40px;
+  border-radius:10px;
+  border:1px solid var(--line);
+  background:#fff;
+  object-fit:contain;
+  display:block;
+}
+.brand-text{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+.brand-text strong{
+  font-size:16px;
+}
+.brand-text span{
+  font-size:13px;
+  color:var(--muted);
+}
+.menu{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:flex-end;
+}
+.menu a{
+  font-size:14px;
+  color:var(--muted);
+  padding:8px 10px;
+  border-radius:10px;
+}
+.menu a:hover{
+  background:#fff;
+  border:1px solid var(--line);
+  color:var(--accent);
+}
+.hero{
+  padding:30px 0 18px;
+}
+.hero-media{
+  margin-bottom:28px;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
+.hero-media img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.08fr) minmax(320px,0.92fr);
+  gap:22px;
+  align-items:stretch;
+  margin-top:22px;
+}
+.hero-grid > .card:first-child{
+  padding:28px;
+}
+.hero-grid > .card:first-child h1{
+  margin-bottom:8px;
+}
+.hero-grid > .card:first-child p{
+  max-width:560px;
+}
+.hero-grid > .card:last-child{
+  max-width:none;
+  height:100%;
+}
+.grid-2{
+  display:grid;
+  grid-template-columns:minmax(320px,1fr) minmax(420px,1.08fr);
+  gap:18px;
+  align-items:stretch;
+  margin-top:18px;
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:26px;
+}
+.kicker{
+  font-size:13px;
+  color:var(--accent);
+  background:rgba(15,118,110,.08);
+  border:1px solid rgba(15,118,110,.12);
+  padding:6px 10px;
+  border-radius:999px;
+  display:inline-block;
+  margin-bottom:12px;
+}
+h1{
+  margin:0 0 12px;
+  font-size:38px;
+  line-height:1.15;
+  letter-spacing:-0.5px;
+}
+h2{
+  margin:0 0 10px;
+  font-size:22px;
+  line-height:1.25;
+}
+h3{
+  margin:8px 0 6px;
+  font-size:18px;
+  line-height:1.3;
+}
+p{
+  margin:10px 0;
+  color:var(--muted);
+}
+.card p{
+  margin-bottom:12px;
+}
+.card p:last-child{
+  margin-bottom:0;
+}
+.cta{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 14px;
+  border-radius:12px;
+  font-size:14px;
+  border:1px solid var(--line);
+  background:#fff;
+  color:#111827;
+  cursor:pointer;
+  line-height:1.2;
+  min-height:42px;
+  margin-top:6px;
+}
+.btn.primary{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:#fff;
+  font-weight:500;
+}
+.btn.primary:hover{
+  background:var(--accent-hover);
+  border-color:var(--accent-hover);
+}
+.btn.outline{
+  background:transparent;
+  border-color:var(--accent);
+  color:var(--accent);
+}
+.btn.outline:hover{
+  background:rgba(15,118,110,.06);
+}
+main{
+  padding:10px 0 44px;
+}
+section{
+  margin-top:40px;
+  scroll-margin-top:84px;
+}
+section:first-of-type{
+  margin-top:24px;
+}
+.note{
+  font-size:13px;
+  color:var(--muted);
+}
+.intro .card{
+  max-width:none !important;
+  margin:28px 0 0;
+  padding:22px 28px;
+  line-height:1.6;
+}
+.intro p{
+  max-width:none;
+  margin:8px 0;
+}
+.portrait{
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:auto;
+  object-fit:cover;
+  border-radius:14px;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+  margin:0 auto;
+}
+.portrait-figure{
+  width:100%;
+  max-width:440px;
+  margin:0 auto;
+}
+.portrait-caption{
+  margin-top:14px;
+  font-size:13px;
+  color:var(--muted);
+  text-align:center;
+  line-height:1.5;
+}
+#sobre-mi .card{
+  padding:26px;
+}
+.prensa-destacada .card{
+  max-width:none !important;
+  padding:30px 34px;
+}
+.prensa-destacada img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:12px;
+  border:1px solid var(--line);
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+  margin:16px auto 6px;
+}
+.prensa-destacada .btn{
+  min-width:220px;
+}
+.post-list{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:18px;
+}
+#blog .card{
+  padding:24px;
+}
+.post{
+  padding:18px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+  min-height:100%;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.post:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 30px rgba(0,0,0,.10);
+}
+.post p{
+  font-size:14px;
+  line-height:1.6;
+}
+.post small{
+  color:var(--muted);
+}
+.post-kicker{
+  margin:6px 0 2px;
+  font-size:13px;
+  color:var(--accent);
+  letter-spacing:.2px;
+}
+.post h3 a{
+  color:var(--text);
+  text-decoration:none;
+}
+.post h3 a:hover{
+  color:var(--accent);
+}
+form{
+  display:grid;
+  gap:10px;
+}
+label{
+  font-size:13px;
+  color:var(--muted);
+}
+input,textarea{
+  width:100%;
+  font:inherit;
+  padding:10px 12px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+  outline:none;
+}
+input:focus,textarea:focus{
+  border-color:rgba(15,118,110,.5);
+  box-shadow:0 0 0 3px rgba(15,118,110,.12);
+}
+textarea{
+  min-height:120px;
+  resize:vertical;
+}
+#contacto .grid-2{
+  grid-template-columns:minmax(320px,.95fr) minmax(380px,1.05fr);
+  align-items:stretch;
+}
+#contacto .card{
+  padding:24px;
+  height:100%;
+}
+#contacto .grid-2 > .card:first-child,
+#contacto .grid-2 > .card:last-child{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+#contacto h2{
+  max-width:520px;
+}
+#contacto p{
+  font-size:15px;
+  line-height:1.6;
+}
+#contacto form{
+  gap:12px;
+}
+#contacto input,
+#contacto textarea{
+  width:100%;
+}
+#contacto textarea{
+  min-height:140px;
+}
+#contacto .note{
+  margin-top:12px;
+}
+.whatsapp-btn{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  width:52px;
+  height:52px;
+  border-radius:999px;
+  background:#25D366;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 8px 18px rgba(0,0,0,.18);
+  z-index:999;
+  opacity:.95;
+}
+.whatsapp-btn:hover{
+  transform:scale(1.05);
+  opacity:1;
+}
+.site-footer{
+  border-top:1px solid var(--line);
+  padding:26px 0 34px;
+  color:var(--muted);
+  font-size:13px;
+  text-align:center;
+}
+.footer-name{
+  margin:0 0 8px;
+  font-size:13px;
+  color:var(--muted);
+}
+.footer-links{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.footer-links a{
+  color:var(--muted);
+}
+.footer-links a:hover{
+  color:var(--accent);
+}
+.footer-links span{
+  opacity:.5;
+}
+@media (max-width:900px){
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+  .hero-grid > .card:last-child{
+    max-width:100%;
+    height:auto;
+  }
+  .grid-2{
+    grid-template-columns:1fr;
+  }
+  #contacto .grid-2{
+    grid-template-columns:1fr;
+  }
+  .post-list{
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+@media (max-width:768px){
+  section{
+    margin-top:32px;
+  }
+  .card{
+    padding:22px;
+  }
+  .intro .card{
+    padding:24px;
+  }
+  .prensa-destacada .card{
+    padding:24px;
+  }
+}
+@media (max-width:640px){
+  .post-list{
+    grid-template-columns:1fr;
+  }
+  .prensa-destacada .card{
+    padding:20px;
+  }
+  .prensa-destacada .btn{
+    width:100%;
+  }
+  .whatsapp-btn{
+    width:50px;
+    height:50px;
+    right:18px;
+    bottom:18px;
+  }
+  .footer-links{
+    gap:6px;
+  }
+}
+@media (max-width:600px){
+  h1{
+    font-size:30px;
+  }
+  #contacto h2{
+    font-size:20px;
+  }
+}
+</style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBXTSQSK"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="#inicio" aria-label="Go to home">
+          <img class="brand-logo" src="/logo.jpg" alt="Sergio Landoni logo" width="40" height="40" />
+         <div class="brand-text">
+  <strong>Sergio Landoni</strong>
+  <span>Sommelier · Wine Communicator · Writer</span>
+</div>
+        </a>
+        <nav class="menu" aria-label="Main menu">
+          <a href="#inicio">Home</a>
+          <a href="#sobre-mi"></a>
+          <a href="/en/blog.html">Blog</a>
+          <a href="#contacto">Contact</a>
+          <a href="/" hreflang="es-ar">ES</a>
+          <a href="/en/" hreflang="en"><strong>EN</strong></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HOME -->
+<section id="inicio" class="hero" aria-label="Home">
+  <div class="hero-media" aria-label="Patagonia wine landscape">
+    <img
+      src="/hero.jpg"
+      alt="Patagonian wine landscape in Neuquén, Argentina"
+      width="1600"
+      height="900"
+      loading="eager"
+      decoding="async"
+      fetchpriority="high"
+    />
+  </div>
+
+<div class="hero-grid">
+
+  <div class="card">
+    <div class="kicker">Sommelier · Wine Communicator · Writer · Patagonia Argentina</div>
+
+   <h1>Patagonian Wine from Neuquén, Told from the Territory</h1>
+
+<p style="font-size:15px; margin-top:6px; color:var(--muted);">
+  Neuquén and Patagonia offer a distinctive cool-climate expression of Argentine wine, defined by freshness, balance and elegance shaped by wind, desert and Andean water.
+</p>
+
+<p class="note" style="margin-top:8px;">
+  Based in <strong>San Martín de los Andes</strong>, I work directly within the territory, connecting producers, landscape and international wine audiences seeking fresher, more precise styles.
+</p>
+
+<p style="font-size:14px; margin-top:8px; color:var(--muted);">
+  A perspective rooted in place, supported by an evolving international framework through WSET.
+</p>
+
+<hr style="border:0; border-top:1px solid var(--line); margin:14px 0;" />
+
+<h2 style="font-size:18px; margin:0 0 8px;">Wine, Territory &amp; Authentic Experiences</h2>
+
+<p>
+  I believe wine is best understood when told directly from its place of origin: the landscape, the climate and the people who shape it.
+</p>
+
+<p>
+  My work connects vineyards, producers, gastronomy and international audiences through real presence in the territory and meaningful storytelling.
+</p>
+
+<p>
+  This approach helps position Neuquén and Patagonia as distinctive cool-climate wine regions, offering wines with freshness, moderate alcohol and a strong sense of place.
+</p>
+
+<p>
+  It also opens the door to curated small-group wine experiences in Patagonia, where Patagonian wines are explored in dialogue with regional gastronomy, mountain hospitality and carefully selected settings.
+</p>
+
+<p style="margin-top:8px;">
+  <a href="#contacto" style="text-decoration:underline;">Enquire about private experiences</a>
+</p>
+
+<p>
+  These experiences are not designed as tours, but as a way to understand wine through the place where it truly belongs.
+</p>
+
+<p style="margin-top:12px;">
+  <em>Not defined in the cellar, but shaped in the territory.</em>
+</p>
+
+<hr style="margin:16px 0; border:0; border-top:1px solid var(--line);" />
+
+<h3 style="margin-bottom:6px;">Start a project</h3>
+
+<p style="font-size:14px; line-height:1.55;">
+  I offer guided tastings, consulting and collaborative projects focused on Patagonian and Neuquén wines, all developed directly from the territory, connecting landscape, producers and gastronomy with international wine audiences.
+</p>
+<h3 style="margin-bottom:6px;">Bodega Cutral Co</h3>
+
+<p style="font-size:14px; line-height:1.55;">
+  <em>Head Sommelier · Wine Tourism Development &amp; Communication</em>
+</p>
+
+<p style="font-size:14px; line-height:1.55;">
+  I collaborate with <a href="https://bodegacutralco.com.ar" target="_blank" rel="noopener noreferrer"><strong>Bodega Cutral Co</strong></a> in Neuquén, helping develop its wine tourism identity through team training, storytelling and strategic communication.
+</p>
+
+<div class="cta" style="margin-top:18px;">
+
+  <a class="btn primary" href="https://sergiolandoni.com.ar/patagonian-wine-regions-landscape-argentina.html">
+    Patagonian Wine, Explained from the Territory
+  </a>
+
+  <a class="btn" href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html">
+    Neuquén Wine Regions
+  </a>
+
+  <a class="btn" href="/en/territory-based-sommelier.html">
+    Territory-Based Sommelier
+  </a>
+
+  <a class="btn outline" href="#prensa">
+    Press
+  </a>
+
+  <a class="btn" href="#contacto">
+    Work with me
+  </a>
+
+</div>
+</div>
+
+<div class="card" style="padding:24px;">
+  <h2 style="font-size:20px; margin-bottom:12px;">Projects &amp; Experience</h2>
+
+  <p class="note" style="margin-bottom:16px;">
+    Real projects where territory, gastronomy and people come together to shape meaningful wine experiences.
+  </p>
+
+  <div style="border:1px solid rgba(15,118,110,.20); background:rgba(15,118,110,.06); border-radius:12px; padding:16px; margin-bottom:18px;">
+    <h3 style="margin:0 0 6px; font-size:16px;">Vino a la Montaña</h3>
+
+    <p style="font-size:13px; margin:0 0 10px;">
+      <em>Co-creator · Concept Direction</em>
+    </p>
+
+    <p style="margin:0 0 10px;">
+      I co-create <strong>Vino a la Montaña</strong>, a distinctive Patagonian wine event held in <strong>San Martín de los Andes</strong>.
+    </p>
+
+    <p style="margin:0 0 12px;">
+      More than an event, it is a platform to experience Patagonian wines at their source, connecting producers, landscape, gastronomy and culture.
+    </p>
+
+    <p style="margin:0 0 14px;">
+      The project continues to evolve, strengthening Patagonia’s voice in the broader wine conversation.
+    </p>
+
+    <a class="btn primary"
+       href="https://www.vinoalamontana.com.ar"
+       target="_blank"
+       rel="noopener noreferrer">
+      Discover Vino a la Montaña
+    </a>
+  </div>
+
+  <div style="border-top:1px solid var(--line); padding-top:16px;">
+    <h3 style="margin:0 0 6px; font-size:16px;">Experiences and Territory Development</h3>
+
+    <p style="font-size:13px; margin:0 0 10px;">
+      <em>Experience Design · Curation · Strategic Communication</em>
+    </p>
+
+    <p style="margin:0 0 10px;">
+      I design guided tastings, immersive wine experiences and strategic wine and hospitality projects that connect wineries, gastronomy and institutions with the authentic identity of Patagonian wines.
+    </p>
+
+    <p style="margin:0 0 10px;">
+      This includes curated small-group experiences in San Martín de los Andes, where Patagonian wines are explored alongside regional gastronomy, refined cuisine and the atmosphere of the mountain landscape.
+    </p>
+
+    <p style="margin:0 0 10px;">
+      Each project is developed from within the territory, integrating landscape, local culture and hospitality to create experiences that are both meaningful and relevant.
+    </p>
+
+    <p style="margin:0;">
+      This approach allows Patagonia to be communicated not simply as a wine region, but as a distinctive origin with a clear identity, able to stand out in both national and international contexts.
+    </p>
+  </div>
+
+  <div class="note" style="margin-top:16px; text-align:center;">
+    <em>Patagonia Argentina. A distinctive origin with genuine global appeal.</em>
+  </div>
+</div>
+
+</div>
+</section>
+<section class="intro" aria-label="Introduction">
+  <div class="card" style="max-width:none; margin:28px 0 0; padding:22px 28px;">
+<h2 style="font-size:18px; margin-bottom:10px; font-weight:600;">
+  Wine begins in the place
+</h2>
+
+<p>
+  Wine is defined long before it reaches the glass.
+</p>
+
+<p>
+  In Patagonia, climate and conditions define the wine. Wind, cool nights and dry conditions create expressions of remarkable freshness, balance and precision.
+</p>
+
+<p>
+  In Patagonia, certain grape varieties find a particularly clear and distinctive expression. 
+  <strong>Pinot Noir</strong> stands out for its delicacy, vibrant red fruit, bright acidity and a long, refined finish. 
+  <strong>Malbec</strong> expresses itself differently here, more floral and elegant, with balance and finesse replacing opulence and weight.
+</p>
+
+<p>
+  <strong>Merlot</strong> achieves a balanced, consistent and poised expression, while <strong>Cabernet Franc</strong> often stands out, praised for its aromatic precision, herbal character and structural definition.
+</p>
+
+<p>
+  Natural acidity is one of the defining features across the region. White wines tend to be aromatic, fresh and focused, prioritising clarity and tension over richness or tropical notes.
+</p>
+
+<p>
+  These wines pair naturally with Patagonian gastronomy, where freshness, high-quality local produce and a strong sense of place define the table.
+</p>
+
+<p>
+  The grapes benefit from exceptional sanitary conditions, supported by a dry climate, constant winds and very low disease pressure.
+</p>
+
+
+<h3 style="font-size:17px; margin-top:18px;">
+  Why this matters today
+</h3>
+
+<p>
+  Global wine consumption is shifting towards freshness, balance and drinkability.
+  Patagonia, and particularly Neuquén, naturally respond to this change with wines defined by precision, elegance and a strong sense of place.
+</p>
+
+<p>
+  These wines are gaining relevance in international markets, offering a fresher, more precise alternative to heavier styles and aligning with a global shift towards balance and drinkability.
+</p>
+
+<p>
+  My work focuses on understanding and communicating this connection, not from theory, but directly from the territory itself. I collaborate with wineries, gastronomy and hospitality projects, translating real experiences into clear and authentic narratives.
+</p>
+
+<p>
+  With deep knowledge of Neuquén’s six distinctive wine regions and Patagonia’s cool-climate expressions, I communicate the identity of these wines to international audiences from within the region itself.
+</p>
+
+<p>
+  Based in San Martín de los Andes, Neuquén, I specialise in Patagonian wines, with a particular focus on the Neuquén wine region, one of Argentina’s most distinctive cool-climate areas.
+</p>
+
+<p>
+  As a territory-based sommelier, I work from origin, helping position Patagonian wines through content, experiences and strategic communication rooted in place.
+</p>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="sobre-mi" aria-label="About">
+  <div class="grid-2">
+
+   <div class="card">
+  <h2>About</h2>
+
+  <p>
+    I am Sergio Landoni, a territory-based sommelier working from Patagonia, Argentina.
+  </p>
+
+  <p>
+    Based in San Martín de los Andes, in southern Neuquén, my work focuses on understanding wine as an expression of place — shaped by climate, landscape, people and culture.
+  </p>
+
+  <p>
+    My approach is not built from theory alone, but from experience. I live in the territory, visit vineyards, work alongside producers and collaborate with restaurants, developing a deep connection with Patagonian wine, with a strong focus on Neuquén.
+  </p>
+
+  <p>
+    I design wine experiences, tastings and strategic projects where wine is understood in relation to regional identity and gastronomy. I also work in consultancy, helping wineries and hospitality projects position their wines through authenticity and origin-driven storytelling.
+  </p>
+
+  <p>
+    I am the creator of Vino a la Montaña, a wine event that brings together Patagonian wineries in San Martín de los Andes, connecting wine, landscape and gastronomy in a unique setting.
+  </p>
+
+  <p>
+    My work also includes communication and content focused on Patagonia wine, contributing to its growing presence in national and international contexts.
+  </p>
+
+  <p>
+  I am currently part of Winexperts Patagonia as a regional ambassador, within an international network focused on wine education, certification and connecting wine with new audiences and markets.
+  </p>
+
+  <p>
+    I believe in a simple idea: wine is better understood when it is told from the place where it is born.
+  </p>
+</div>
+
+<div class="card" style="display:flex; align-items:center; justify-content:center; padding:28px;">
+  <figure class="portrait-figure">
+   <img
+  class="portrait"
+  src="/assets/img/retrato-sergio-landoni.webp"
+  alt="Sergio Landoni, Sommelier de Territorio en Patagonia Argentina"
+  width="800"
+  height="800"
+  loading="lazy"
+  decoding="async"
+  style="max-width: 460px; width: 100%;"
+/>
+    <figcaption class="portrait-caption">
+      Sergio Landoni · Territory-Based Sommelier<br>
+      San Martín de los Andes, Patagonia Argentina
+    </figcaption>
+  </figure>
+</div>
+
+</div>
+</section>
+<section aria-label="Patagonian Wine Context" style="margin-top:24px;">
+  <div class="card" style="max-width:900px; margin:0 auto 24px; padding:22px 28px;">
+
+    <h2 style="font-size:18px; margin-bottom:10px; font-weight:600;">
+      Patagonia as a Wine Region
+    </h2>
+
+    <p>
+      Patagonia is increasingly recognised as one of the most distinctive wine regions in the Southern Hemisphere, defined by its cool climate, dry conditions and strong sense of terroir.
+    </p>
+
+    <p>
+      The region spans several provinces, including Neuquén, Río Negro and Chubut, each contributing to a diverse yet coherent wine identity shaped by wind, latitude and Andean water.
+    </p>
+
+    <p>
+      As highlighted by <strong>Wines of Patagonia</strong>, this southern region produces wines with natural freshness, moderate alcohol levels and a clear sense of place, qualities that align with a global shift towards more balanced and drinkable styles.
+    </p>
+
+    <p>
+      Rather than being defined by a single grape variety, Patagonia stands out for its diversity and precision, with each location expressing itself through subtle but meaningful differences.
+    </p>
+
+    <p>
+      Understanding Patagonia requires looking beyond the glass and recognising the landscape, climate and people behind each wine.
+    </p>
+
+    <div class="cta" style="margin-top:16px;">
+      <a class="btn" href="https://sergiolandoni.com.ar/patagonian-wine-regions-landscape-argentina.html">
+        Patagonian Wine, Explained from the Territory
+      </a>
+
+      <a class="btn" href="https://sergiolandoni.com.ar/neuquen-wine-regions-patagonia.html">
+        Neuquén Wine Regions in Argentine Patagonia
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRESS -->
+<section id="prensa" class="prensa-destacada" aria-label="Press">
+  <div class="card" style="max-width:none; margin:0; text-align:center; padding:28px;">
+
+    <div class="kicker">Press · Diario Río Negro</div>
+    <h2>Press &amp; Recognition</h2>
+
+    <p style="max-width:760px; margin:0 auto 14px;">
+      The evolution of Neuquén as a wine region and its growing diversity has been featured in specialised media.
+    </p>
+
+    <img
+      src="/assets/img/vino-neuquino-rio-negro-sergio-landoni.webp"
+      alt="Article about Neuquén wine region in Diario Río Negro"
+      width="1200"
+      height="675"
+      loading="lazy"
+      decoding="async"
+      style="display:block; width:100%; max-width:820px; height:auto; border-radius:12px; margin:14px auto;"
+    />
+
+    <p style="margin-top:12px;">
+      <strong>“El vino neuquino amplía su mapa: las razones de su diversidad y consolidación”</strong><br>
+      Diario Río Negro
+    </p>
+
+    <a
+      class="btn primary"
+      href="https://www.rionegro.com.ar/gastronomia/el-vino-neuquino-amplia-su-mapa-las-razones-de-su-diversidad-y-consolidacion/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Read the article
+    </a>
+
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" aria-label="Blog">
+  <div class="card">
+
+    <h2>Insights on Patagonian Wine & Territory</h2>
+
+    <p class="note" style="margin-bottom:18px;">
+      Articles exploring Neuquén wine regions, Patagonian identity, and the relationship between wine, landscape and gastronomy.
+    </p>
+
+    <div class="post-list">
+
+      <article class="post">
+        <div class="post-kicker">Neuquén · Patagonia</div>
+        <h3>
+          <a href="/neuquen-wine-regions-patagonia.html">
+            The Six Wine Regions of Neuquén
+          </a>
+        </h3>
+        <p>
+          Understanding the diversity of Neuquén through its six distinct wine regions and their unique expressions.
+        </p>
+      </article>
+
+      <article class="post">
+        <div class="post-kicker">Patagonia · Landscape</div>
+        <h3>
+          <a href="/patagonian-wine-regions-landscape-argentina.html">
+            Patagonian Wine Regions and Identity
+          </a>
+        </h3>
+        <p>
+          How landscape, climate and culture shape the identity of Patagonian wines.
+        </p>
+      </article>
+
+      <article class="post">
+        <div class="post-kicker">Concept · Territory</div>
+        <h3>
+          <a href="/en/territory-based-sommelier.html">
+            Territory-Based Sommelier
+          </a>
+        </h3>
+        <p>
+          A perspective where wine is understood and communicated from its place of origin.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+    
+    <!-- CONTACT -->
+    <section id="contacto" aria-label="Contact">
+      <div class="grid-2">
+        <div class="card">
+          <div class="kicker">Let's Connect</div>
+          <h2>Projects Rooted in Patagonian Identity</h2>
+          <p>
+            Interested in developing wine experiences, consulting, communication strategy or events focused on Neuquén and Patagonian wines?
+          </p>
+          <p>
+            I work from <strong>San Martín de los Andes</strong>, creating authentic connections between territory, wine and gastronomy.
+          </p>
+          <p class="note" style="margin-top:16px;">
+            <a href="mailto:contacto@sergiolandoni.com.ar"><strong>contacto@sergiolandoni.com.ar</strong></a>
+          </p>
+        </div>
+        <div class="card">
+          <form id="contact-form" action="https://formspree.io/f/mpqpknvd" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+           <button type="submit" class="btn primary">Send Message</button>
+
+<p style="font-size:13px; margin-top:10px; text-align:center; opacity:0.8;">
+  Or email me directly at <strong>contacto@sergiolandoni.com.ar</strong>
+</p>
+
+<p id="form-status" class="note"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-name">© 2026 Sergio Landoni · Territory-Based Sommelier · Patagonia Argentina</p>
+      <div class="footer-links">
+        <a href="mailto:contacto@sergiolandoni.com.ar">contacto@sergiolandoni.com.ar</a>
+        <span>·</span>
+        <a href="https://www.linkedin.com/in/sergio-landoni-sommelier/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span>·</span>
+        <a href="/" hreflang="es-ar"><strong>ES</strong></a>
+        <span>·</span>
+        <a href="/en/" hreflang="en">EN</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp button -->
+  <a href="https://wa.me/5492944668508?text=Hello%20Sergio%2C%20I%20am%20writing%20to%20you%20from%20your%20website." 
+     target="_blank" rel="noopener noreferrer" aria-label="Write to me on WhatsApp" class="whatsapp-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32" fill="white" aria-hidden="true">
+      <path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.64.86 5.08 2.32 7.06L4 29l7.16-2.26A11.93 11.93 0 0016 27c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm0 21.8c-1.93 0-3.81-.52-5.46-1.51l-.39-.23-4.25 1.34 1.38-4.14-.26-.42A9.75 9.75 0 016.2 15c0-5.41 4.39-9.8 9.8-9.8s9.8 4.39 9.8 9.8-4.39 9.8-9.8 9.8zm5.36-7.36c-.29-.14-1.72-.85-1.99-.94-.27-.1-.46-.14-.66.14-.19.29-.76.94-.93 1.13-.17.19-.34.21-.63.07-.29-.14-1.22-.45-2.32-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.12-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.14-.66-1.59-.9-2.18-.24-.58-.49-.5-.66-.51h-.56c-.19 0-.51.07-.77.36-.26.29-1.01.98-1.01 2.38s1.03 2.76 1.17 2.95c.14.19 2.02 3.09 4.89 4.33.68.29 1.21.46 1.62.59.68.21 1.3.18 1.79.11.55-.08 1.72-.7 1.97-1.37.24-.68.24-1.26.17-1.37-.07-.11-.26-.18-.55-.32z"/>
+    </svg>
+  </a>
+
+  <script>
+    const form = document.getElementById("contact-form");
+    const statusEl = document.getElementById("form-status");
+    if (form) {
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        if (statusEl) statusEl.textContent = "Sending...";
+        try {
+          const res = await fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: { "Accept": "application/json" }
+          });
+          if (res.ok) {
+            form.reset();
+            if (statusEl) statusEl.textContent = "Thank you! I’ve received your message and will get back to you shortly.";
+          } else {
+            if (statusEl) statusEl.textContent = "Something went wrong. Please try again or contact me directly at contacto@sergiolandoni.com.ar";
+          }
+        } catch (err) {
+          if (statusEl) statusEl.textContent = "Connection error. Please email me directly.";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
