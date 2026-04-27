@@ -841,16 +841,16 @@ textarea{
           <img class="brand-logo" src="/logo.jpg" alt="Sergio Landoni logo" width="40" height="40" />
          <div class="brand-text">
   <strong>Sergio Landoni</strong>
-  <span>Sommelier · Wine Communicator · Writer</span>
+  <span>Territory-Based Sommelier · Patagonia Argentina</span>
 </div>
         </a>
         <nav class="menu" aria-label="Main menu">
           <a href="#inicio">Home</a>
-          <a href="#sobre-mi"></a>
+          <a href="#sobre-mi">About</a>
           <a href="/en/blog.html">Blog</a>
           <a href="#contacto">Contact</a>
           <a href="/" hreflang="es-ar">ES</a>
-          <a href="/en/" hreflang="en"><strong>EN</strong></a>
+          <a href="/en/" hreflang="en-GB"><strong>EN</strong></a>
         </nav>
       </div>
     </div>
@@ -874,9 +874,13 @@ textarea{
 <div class="hero-grid">
 
   <div class="card">
-    <div class="kicker">Sommelier · Wine Communicator · Writer · Patagonia Argentina</div>
+    <div class="kicker">Territory-Based Sommelier · Patagonia Argentina</div>
 
-   <h1>Patagonian Wine from Neuquén, Told from the Territory</h1>
+ <h1>Patagonian Wine from Neuquén, Told from the Territory</h1>
+
+<p style="font-size:14px; margin-top:6px;">
+  Neuquén Wine Ambassador · Patagonia Argentina
+</p>
 
 <p style="font-size:15px; margin-top:6px; color:var(--muted);">
   Neuquén and Patagonia offer a distinctive cool-climate expression of Argentine wine, defined by freshness, balance and elegance shaped by wind, desert and Andean water.
@@ -887,7 +891,7 @@ textarea{
 </p>
 
 <p style="font-size:14px; margin-top:8px; color:var(--muted);">
-  A perspective rooted in place, supported by an evolving international framework through WSET.
+  A perspective rooted in place, with an evolving international approach through WSET.
 </p>
 
 <hr style="border:0; border-top:1px solid var(--line); margin:14px 0;" />
@@ -1102,66 +1106,69 @@ textarea{
 <section id="sobre-mi" aria-label="About">
   <div class="grid-2">
 
-   <div class="card">
-<h2>About</h2>
+    <!-- TEXTO -->
+    <div class="card">
+      <h2>About</h2>
 
-<p>
-  I am Sergio Landoni, a territory-based sommelier working from Patagonia, Argentina.
-</p>
+      <p>
+        I am Sergio Landoni, a territory-based sommelier working from Patagonia, Argentina.
+      </p>
 
-<p>
-  In 2026, I was appointed as Neuquén Wine Ambassador, a recognition of my work in communicating, connecting and positioning Patagonian wines within national and international contexts.
-</p>
+      <p>
+        In 2026, I was appointed as Neuquén Wine Ambassador, a recognition of my work in advocating, connecting, and positioning Patagonian wines within national and international contexts.
+      </p>
 
-<p>
-  Based in San Martín de los Andes, in southern Neuquén, my work focuses on understanding wine as an expression of place, shaped by climate, landscape, people and culture.
-</p>
+      <p>
+        Based in San Martín de los Andes, in southern Neuquén, my work focuses on understanding wine as an expression of place, shaped by climate, landscape, people and culture.
+      </p>
 
-<p>
-  My approach is not built from theory alone, but from experience. I live in the territory, visit vineyards, work alongside producers and collaborate with restaurants, developing a deep connection with Patagonian wine, with a strong focus on Neuquén.
-</p>
+      <p>
+        My approach is not built from theory alone, but from experience. I live in the territory, visit vineyards, work alongside producers and collaborate with restaurants, developing a deep connection with Patagonian wine, with a strong focus on Neuquén.
+      </p>
 
-<p>
-  I design wine experiences, tastings and strategic projects where wine is understood in relation to regional identity and gastronomy. I also work in consultancy, helping wineries and hospitality projects position their wines through authenticity and origin-driven storytelling.
-</p>
+      <p>
+        I design wine experiences, tastings and strategic projects where wine is understood in relation to regional identity and gastronomy. I also work in consultancy, helping wineries and hospitality projects position their wines through authenticity and origin-driven storytelling.
+      </p>
 
-<p>
-  I am the creator of <strong>Vino a la Montaña</strong>, a wine event that brings together Patagonian wineries in San Martín de los Andes, connecting wine, landscape and gastronomy in a distinctive setting.
-</p>
+      <p>
+        I am the creator of <strong>Vino a la Montaña</strong>, a wine event that brings together Patagonian wineries in San Martín de los Andes, connecting wine, landscape and gastronomy in a distinctive setting.
+      </p>
 
-<p>
-  My work also includes communication and content focused on Patagonian wine, contributing to its growing presence in national and international contexts.
-</p>
+      <p>
+        My work also includes communication and content focused on Patagonian wine, contributing to its growing presence in national and international contexts.
+      </p>
 
-<p>
-  I am currently part of <strong>Winexperts Patagonia</strong> as a regional ambassador, within an international network focused on wine education, certification and connecting wine with new audiences and markets.
-</p>
+      <p>
+        I am currently part of <strong>Winexperts Patagonia</strong> as a regional ambassador, within an international network focused on wine education, certification and connecting wine with new audiences and markets.
+      </p>
 
-<p>
-  I believe in a simple idea: wine is better understood when it is told from the place where it is born.
-</p>
+      <p>
+        I believe in a simple idea: wine is better understood when it is told from the place where it is born.
+      </p>
+    </div>
 
-<div class="card" style="display:flex; align-items:center; justify-content:center; padding:28px;">
-  <figure class="portrait-figure">
-   <img
-  class="portrait"
-  src="/assets/img/retrato-sergio-landoni.webp"
-  alt="Sergio Landoni, Sommelier de Territorio en Patagonia Argentina"
-  width="800"
-  height="800"
-  loading="lazy"
-  decoding="async"
-  style="max-width: 460px; width: 100%;"
-/>
-   <figcaption class="portrait-caption">
-  Sergio Landoni · Territory-Based Sommelier · Neuquén Wine Ambassador<br>
-  San Martín de los Andes, Patagonia Argentina
-</figcaption>
-  </figure>
-</div>
+    <!-- RETRATO -->
+    <div class="card" style="display:flex; align-items:center; justify-content:center;">
+      <figure class="portrait-figure">
+        <img
+          class="portrait"
+          src="/assets/img/retrato-sergio-landoni.webp"
+          alt="Sergio Landoni, Territory-Based Sommelier and Neuquén Wine Ambassador in Patagonia Argentina"
+          width="800"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption class="portrait-caption">
+          Sergio Landoni · Territory-Based Sommelier · Neuquén Wine Ambassador<br>
+          San Martín de los Andes, Patagonia Argentina
+        </figcaption>
+      </figure>
+    </div>
 
-</div>
+  </div>
 </section>
+
 <section aria-label="Patagonian Wine Context" style="margin-top:24px;">
   <div class="card" style="max-width:900px; margin:0 auto 24px; padding:22px 28px;">
 
@@ -1182,7 +1189,7 @@ textarea{
     </p>
 
     <p>
-      Rather than being defined by a single grape variety, Patagonia stands out for its diversity and precision, with each location expressing itself through subtle but meaningful differences.
+      Rather than being defined by a single grape variety, Patagonia stands out for its diversity and precision, with each location expressing its identity through subtle yet profound nuances.
     </p>
 
     <p>
@@ -1207,7 +1214,7 @@ textarea{
   <div class="card" style="max-width:none; margin:0; text-align:center; padding:28px;">
 
     <div class="kicker">Press · Diario Río Negro</div>
-    <h2>Press &amp; Recognition</h2>
+    <h2>Media Coverage</h2>
 
     <p style="max-width:760px; margin:0 auto 14px;">
       The evolution of Neuquén as a wine region and its growing diversity has been featured in specialised media.
@@ -1300,7 +1307,7 @@ textarea{
           <div class="kicker">Let's Connect</div>
           <h2>Projects Rooted in Patagonian Identity</h2>
           <p>
-            Interested in developing wine experiences, consulting, communication strategy or events focused on Neuquén and Patagonian wines?
+            Looking for a curated wine experience or a strategic partner in Patagonia? Let’s explore how the identity of the territory can shape your project.
           </p>
           <p>
             I work from <strong>San Martín de los Andes</strong>, creating authentic connections between territory, wine and gastronomy.
