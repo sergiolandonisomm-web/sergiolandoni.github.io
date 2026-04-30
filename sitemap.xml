@@ -4,7 +4,7 @@
   <!-- Home -->
   <url>
     <loc>https://sergiolandoni.com.ar/</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,12 +12,20 @@
   <!-- Blog index -->
   <url>
     <loc>https://sergiolandoni.com.ar/blog.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Artículo NUEVO Lago Puelo (CLAVE) -->
+  <!-- NUEVO ARTÍCULO CLAVE -->
+  <url>
+    <loc>https://sergiolandoni.com.ar/vino-y-territorio.html</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Artículo Lago Puelo -->
   <url>
     <loc>https://sergiolandoni.com.ar/vino-lago-puelo-patagonia-comarca-andina.html</loc>
     <lastmod>2026-04-20</lastmod>
