@@ -1493,48 +1493,46 @@ textarea{
     </div>
   </div>
 </section>
-    <!<section id="contacto" class="contact-section">
-  <div class="container">
-    <div class="section-heading">
-      <p class="eyebrow">Contacto</p>
+<section id="contacto" class="section">
+  <div class="wrap">
+    <div class="card">
+
+      <p class="kicker">Contacto</p>
+
       <h2>Conversemos sobre vino, territorio y Patagonia</h2>
+
       <p>
-        Para propuestas, experiencias, asesorías o prensa vinculadas al vino neuquino y patagónico, podés escribirme directamente.
+        Trabajo con bodegas, proyectos, experiencias y contenidos vinculados al vino neuquino y patagónico.
+        Si querés desarrollar una propuesta, una acción territorial o una colaboración, podés escribirme directamente.
       </p>
-    </div>
 
-    <form id="contact-form" class="contact-form" action="https://formspree.io/f/mpqpknvd" method="POST">
-      
-      <div class="form-group">
+      <form id="contact-form" action="https://formspree.io/f/mpqpknvd" method="POST">
+
         <label for="name">Nombre</label>
-        <input type="text" id="name" name="name" required>
-      </div>
+        <input type="text" id="name" name="name" autocomplete="name" required>
 
-      <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-      </div>
+        <input type="email" id="email" name="email" autocomplete="email" required>
 
-      <div class="form-group">
         <label for="message">Mensaje</label>
         <textarea id="message" name="message" rows="6" required></textarea>
-      </div>
 
-      <!-- contexto útil para vos -->
-      <input type="hidden" name="source" value="Landing Sergio Landoni">
+        <input type="hidden" name="source" value="Landing Sergio Landoni">
 
-      <button type="submit" class="btn btn-primary">
-        Enviar mensaje
-      </button>
+        <button type="submit" class="btn primary">
+          Enviar mensaje
+        </button>
 
-      <p id="form-status" class="form-status"></p>
-    </form>
+        <p id="form-status" aria-live="polite"></p>
+
+      </form>
+
+    </div>
   </div>
 </section>
 <!-- /contacto -->
 
 </main>
-
 <footer class="site-footer">
   <div class="wrap">
     <p class="footer-name">© 2026 Sergio Landoni · Sommelier de Territorio · Patagonia Argentina</p>
