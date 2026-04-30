@@ -1493,25 +1493,63 @@ textarea{
     </div>
   </div>
 </section>
-    <!-- /contacto -->
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <p class="footer-name">© 2026 Sergio Landoni · Sommelier de Territorio · Patagonia Argentina</p>
-
-      <div class="footer-links">
-        <a href="mailto:contacto@sergiolandoni.com.ar">contacto@sergiolandoni.com.ar</a>
-        <span>·</span>
-        <a href="https://www.linkedin.com/in/sergio-landoni-sommelier/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <span>·</span>
-       <a href="/" hreflang="es-ar"><strong>ES</strong></a>
-<span>·</span>
-<a href="/en/" rel="alternate" hreflang="en">EN</a>
-      </div>
+    <!<section id="contacto" class="contact-section">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Contacto</p>
+      <h2>Conversemos sobre vino, territorio y Patagonia</h2>
+      <p>
+        Para propuestas, experiencias, asesorías o prensa vinculadas al vino neuquino y patagónico, podés escribirme directamente.
+      </p>
     </div>
-  </footer>
+
+    <form id="contact-form" class="contact-form" action="https://formspree.io/f/mpqpknvd" method="POST">
+      
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+
+      <!-- contexto útil para vos -->
+      <input type="hidden" name="source" value="Landing Sergio Landoni">
+
+      <button type="submit" class="btn btn-primary">
+        Enviar mensaje
+      </button>
+
+      <p id="form-status" class="form-status"></p>
+    </form>
+  </div>
+</section>
+<!-- /contacto -->
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-name">© 2026 Sergio Landoni · Sommelier de Territorio · Patagonia Argentina</p>
+
+    <div class="footer-links">
+      <a href="mailto:contacto@sergiolandoni.com.ar">contacto@sergiolandoni.com.ar</a>
+      <span>·</span>
+      <a href="https://www.linkedin.com/in/sergio-landoni-sommelier/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <span>·</span>
+      <a href="/" hreflang="es-ar"><strong>ES</strong></a>
+      <span>·</span>
+      <a href="/en/" rel="alternate" hreflang="en">EN</a>
+    </div>
+  </div>
+</footer>
 
 <script>
   const form = document.getElementById("contact-form");
@@ -1540,15 +1578,15 @@ textarea{
         }
 
         if (data && data.errors && Array.isArray(data.errors)) {
-          statusEl.textContent = data.errors.map(err => err.message).join(" | ");
+          if (statusEl) statusEl.textContent = data.errors.map(err => err.message).join(" | ");
         } else if (data && data.error) {
-          statusEl.textContent = data.error;
+          if (statusEl) statusEl.textContent = data.error;
         } else {
-          statusEl.textContent = "No se pudo enviar. Revisá la configuración de Formspree.";
+          if (statusEl) statusEl.textContent = "No se pudo enviar. Revisá la configuración de Formspree.";
         }
 
       } catch (err) {
-        statusEl.textContent = "Error de conexión. Probá de nuevo o escribime por mail.";
+        if (statusEl) statusEl.textContent = "Error de conexión. Probá de nuevo o escribime por mail.";
       }
     });
   }
