@@ -22,19 +22,15 @@
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <meta name="theme-color" content="#0f766e" />
 
-  <!-- Canonical + hreflang -->
   <link rel="canonical" href="https://sergiolandoni.com.ar/vino-y-territorio.html" />
   <link rel="alternate" hreflang="es-AR" href="https://sergiolandoni.com.ar/vino-y-territorio.html" />
   <link rel="alternate" hreflang="x-default" href="https://sergiolandoni.com.ar/vino-y-territorio.html" />
 
-  <!-- Icons -->
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
 
-  <!-- Preload hero -->
   <link rel="preload" as="image" href="/assets/img/vino-neuquino-copa-paisaje-patagonia.webp" fetchpriority="high" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="article" />
   <meta property="og:title" content="El precio del vino no está en la copa" />
   <meta property="og:description" content="El precio del vino se construye con contexto, territorio, experiencia y sentido. Una mirada desde la Patagonia y el vino neuquino." />
@@ -47,9 +43,8 @@
   <meta property="og:image:width" content="1600" />
   <meta property="og:image:height" content="900" />
 
-  <!-- Article times -->
-  <meta property="article:published_time" content="2026-04-30" />
-  <meta property="article:modified_time" content="2026-04-30" />
+  <meta property="article:published_time" content="2026-04-30T08:00:00-03:00" />
+  <meta property="article:modified_time" content="2026-04-30T08:00:00-03:00" />
   <meta property="article:author" content="Sergio Landoni" />
   <meta property="article:section" content="Vino, territorio y comunicación" />
   <meta property="article:tag" content="vino neuquino" />
@@ -57,14 +52,12 @@
   <meta property="article:tag" content="precio del vino" />
   <meta property="article:tag" content="territorio" />
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="El precio del vino no está en la copa" />
   <meta name="twitter:description" content="Precio, valor, contexto y territorio: una mirada sobre cómo se construye sentido alrededor del vino." />
   <meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/vino-neuquino-copa-paisaje-patagonia.webp" />
   <meta name="twitter:image:alt" content="Vino neuquino servido en copa frente a un paisaje de montaña en la Patagonia" />
 
-  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -134,7 +127,7 @@
           "@type": "ImageObject",
           "url": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG"
         },
-        "email": "mailto:contacto@sergiolandoni.com.ar",
+        "email": "contacto@sergiolandoni.com.ar",
         "telephone": "+54 9 294 4668508",
         "priceRange": "$$",
         "address": {
@@ -252,8 +245,8 @@
         "alternativeHeadline": "Cómo se construye valor en el vino neuquino desde el territorio, el contexto y la experiencia",
         "description": "Una mirada sobre precio, valor, contexto y territorio en el vino. Por qué un vino no se justifica solo por su calidad, sino por el sentido que logra construir alrededor.",
         "inLanguage": "es-AR",
-        "datePublished": "2026-04-30",
-        "dateModified": "2026-04-30",
+        "datePublished": "2026-04-30T08:00:00-03:00",
+        "dateModified": "2026-04-30T08:00:00-03:00",
         "author": {
           "@id": "https://sergiolandoni.com.ar/#author"
         },
@@ -478,10 +471,20 @@
       background: #fff;
     }
 
+    figure.hero-media {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
     .hero-media img {
       width: 100%;
       height: auto;
       display: block;
+    }
+
+    .hero-media figcaption {
+      padding: 10px 12px;
+      background: #fff;
     }
 
     .portrait-media {
@@ -591,11 +594,11 @@
       </p>
 
       <p class="note">
-        Publicado: <time datetime="2026-04-30">30 de abril de 2026</time> ·
-        Actualizado: <time datetime="2026-04-30">30 de abril de 2026</time>
+        Publicado: <time datetime="2026-04-30T08:00:00-03:00">30 de abril de 2026</time> ·
+        Actualizado: <time datetime="2026-04-30T08:00:00-03:00">30 de abril de 2026</time>
       </p>
 
-      <div class="hero-media" aria-label="Imagen principal del artículo">
+      <figure class="hero-media">
         <img
           src="/assets/img/vino-neuquino-copa-paisaje-patagonia.webp"
           alt="Vino neuquino servido en copa frente a paisaje de montaña en la Patagonia"
@@ -605,11 +608,10 @@
           loading="eager"
           decoding="async"
         />
-      </div>
-
-      <p class="note">
-        Vino, paisaje y experiencia: el valor de una botella empieza a construirse mucho antes de probarla.
-      </p>
+        <figcaption class="note">
+          Vino, paisaje y experiencia: el valor de una botella empieza a construirse mucho antes de probarla.
+        </figcaption>
+      </figure>
 
       <p>
         En el vino hablamos de origen, de variedades, de clima, de cómo se hace.
@@ -671,7 +673,7 @@
         Necesita una escena posible en la cabeza de quien lo va a elegir.
       </p>
 
-      <div class="hero-media portrait-media" aria-label="Sommelier presentando vino neuquino">
+      <figure class="hero-media portrait-media">
         <img
           src="/assets/img/sommelier-territorio-servicio-vino-patagonia.webp"
           alt="Sommelier de territorio presentando vino neuquino en una degustación"
@@ -680,11 +682,10 @@
           loading="lazy"
           decoding="async"
         />
-      </div>
-
-      <p class="note">
-        El servicio no es un detalle: es una forma de interpretar el vino y acercarlo a quien lo elige.
-      </p>
+        <figcaption class="note">
+          El servicio no es un detalle: es una forma de interpretar el vino y acercarlo a quien lo elige.
+        </figcaption>
+      </figure>
 
       <div class="hr" aria-hidden="true"></div>
 
@@ -702,7 +703,7 @@
         Y cuando el precio queda solo, cuesta sostenerlo.
       </p>
 
-      <div class="hero-media" aria-label="Viñedo en Neuquén, Patagonia">
+      <figure class="hero-media">
         <img
           src="/assets/img/neuquen-vinedo-patagonia.webp"
           alt="Viñedo en Neuquén con paisaje patagónico"
@@ -711,11 +712,10 @@
           loading="lazy"
           decoding="async"
         />
-      </div>
-
-      <p class="note">
-        El territorio no es fondo: es parte del sentido que permite comprender el valor de un vino.
-      </p>
+        <figcaption class="note">
+          El territorio no es fondo: es parte del sentido que permite comprender el valor de un vino.
+        </figcaption>
+      </figure>
 
       <h2 id="valor">No es un problema de valor</h2>
       <p>
@@ -755,7 +755,7 @@
         Ahí es donde el precio empieza a cerrar.
       </p>
 
-      <div class="hero-media" aria-label="Vino neuquino y gastronomía regional">
+      <figure class="hero-media">
         <img
           src="/assets/img/vino-neuquino-gastronomia-patagonia-fuego.webp"
           alt="Vino neuquino compartido en mesa con gastronomía regional y fuego en la Patagonia"
@@ -764,11 +764,10 @@
           loading="lazy"
           decoding="async"
         />
-      </div>
-
-      <p class="note">
-        Cuando el vino se cruza con una mesa, un plato, un paisaje y una compañía, el precio deja de ser una cifra aislada.
-      </p>
+        <figcaption class="note">
+          Cuando el vino se cruza con una mesa, un plato, un paisaje y una compañía, el precio deja de ser una cifra aislada.
+        </figcaption>
+      </figure>
 
       <h2 id="neuquen">El caso del vino neuquino</h2>
       <p>
