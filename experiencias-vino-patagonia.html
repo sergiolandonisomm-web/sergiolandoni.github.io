@@ -27,10 +27,10 @@
   <link rel="alternate" href="https://sergiolandoni.com.ar/experiencias-vino-patagonia.html" hreflang="es-AR" />
   <link rel="alternate" href="https://sergiolandoni.com.ar/experiencias-vino-patagonia.html" hreflang="x-default" />
 
-  <link rel="preload" as="image" href="/assets/img/experiencia-vino-patagonia-san-martin-andes.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="./assets/img/experiencia-vino-patagonia-san-martin-andes.webp" fetchpriority="high" />
 
-  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -321,14 +321,8 @@
       color:var(--accent);
     }
 
-    main{
-      padding:24px 0 46px;
-    }
-
-    section{
-      margin-top:20px;
-      scroll-margin-top:84px;
-    }
+    main{padding:24px 0 46px}
+    section{margin-top:20px;scroll-margin-top:84px}
 
     .card{
       background:var(--card);
@@ -400,15 +394,14 @@
       margin-bottom:20px;
     }
 
-    .hero-media img{
+    .hero-media img,
+    .full-image img{
       display:block;
       width:100%;
       height:auto;
     }
 
-    .hero-card{
-      padding:30px;
-    }
+    .hero-card{padding:30px}
 
     .hero-actions{
       display:flex;
@@ -453,19 +446,11 @@
       color:var(--muted);
     }
 
-    .content-card li{
-      margin:6px 0;
-    }
+    .content-card li{margin:6px 0}
 
     .full-image{
       padding:0;
       overflow:hidden;
-    }
-
-    .full-image img{
-      display:block;
-      width:100%;
-      height:auto;
     }
 
     .callout{
@@ -612,17 +597,9 @@
       flex-wrap:wrap;
     }
 
-    .footer-links a{
-      color:var(--muted);
-    }
-
-    .footer-links a:hover{
-      color:var(--accent);
-    }
-
-    .footer-links span{
-      opacity:.5;
-    }
+    .footer-links a{color:var(--muted)}
+    .footer-links a:hover{color:var(--accent)}
+    .footer-links span{opacity:.5}
 
     @media (max-width:900px){
       .grid-2,
@@ -679,7 +656,7 @@
     <div class="wrap">
       <div class="nav">
         <a class="brand" href="/" aria-label="Ir al inicio">
-          <img class="brand-logo" src="/logo.jpg" alt="Logo Sergio Landoni" width="40" height="40" decoding="async" />
+          <img class="brand-logo" src="./logo.jpg" alt="Logo Sergio Landoni" width="40" height="40" decoding="async" />
           <div class="brand-text">
             <strong>Sergio Landoni</strong>
             <span>Sommelier de Territorio · Patagonia Argentina</span>
@@ -705,7 +682,7 @@
     <section id="inicio" class="hero" aria-label="Experiencias de vino en Patagonia">
       <div class="hero-media">
         <img
-          src="/assets/img/experiencia-vino-patagonia-san-martin-andes.webp"
+          src="./assets/img/experiencia-vino-patagonia-san-martin-andes.webp"
           alt="Experiencia de vino en San Martín de los Andes con vista al lago y montaña en Patagonia"
           width="1600"
           height="900"
@@ -743,7 +720,7 @@
         <div class="hero-actions">
           <a class="btn primary" href="#contacto">Consultar por una experiencia</a>
           <a class="btn outline" href="#asesoria">Ver asesoría y proyectos</a>
-          <a class="btn" href="/blog.html">Leer contenidos sobre vino patagónico</a>
+          <a class="btn" href="./blog.html">Leer contenidos sobre vino patagónico</a>
         </div>
       </div>
     </section>
@@ -752,7 +729,7 @@
       <div class="grid-2">
         <div class="card media-card">
           <img
-            src="/assets/img/experiencia-vino-grupo-patagonia.webp"
+            src="./assets/img/experiencia-vino-grupo-patagonia.webp"
             alt="Grupo compartiendo experiencia de vino en Patagonia en ambiente cálido"
             width="800"
             height="600"
@@ -807,7 +784,7 @@
           </p>
 
           <div class="related-links">
-            <a class="btn outline" href="/vino-neuquino-gastronomia-experiencias-territorio.html">
+            <a class="btn outline" href="./vino-neuquino-gastronomia-experiencias-territorio.html">
               Vino neuquino y gastronomía
             </a>
           </div>
@@ -815,7 +792,7 @@
 
         <div class="card media-card">
           <img
-            src="/assets/img/vino-gastronomia-patagonia-picada.webp"
+            src="./assets/img/vino-gastronomia-patagonia-picada.webp"
             alt="Vino patagónico acompañado con picada regional en mesa de madera"
             width="800"
             height="600"
@@ -829,7 +806,7 @@
     <section aria-label="Paisaje de Patagonia">
       <div class="card full-image">
         <img
-          src="/assets/img/paisaje-patagonia-vino-san-martin-andes.webp"
+          src="./assets/img/paisaje-patagonia-vino-san-martin-andes.webp"
           alt="Paisaje de Patagonia con vista al lago en San Martín de los Andes"
           width="1600"
           height="900"
@@ -843,8 +820,8 @@
       <div class="grid-2">
         <div class="card media-card">
           <img
-            src="/assets/img/espacio-vino-patagonia-cata.webp"
-            alt="Espacio de cata y asesoría en vino en Patagonia"
+            src="./assets/img/servicio-vino-experiencia-patagonia.webp"
+            alt="Servicio de vino en experiencia al aire libre en Patagonia"
             width="800"
             height="600"
             loading="lazy"
@@ -928,7 +905,7 @@
     <section aria-label="Servicio de vino en experiencia patagónica">
       <div class="card full-image">
         <img
-          src="/assets/img/servicio-vino-experiencia-patagonia.webp"
+          src="./assets/img/servicio-vino-experiencia-patagonia.webp"
           alt="Servicio de vino en experiencia al aire libre en Patagonia"
           width="1600"
           height="900"
@@ -974,9 +951,9 @@
         </p>
 
         <div class="related-links">
-          <a class="btn outline" href="/sommelier-de-territorio.html">Qué es Sommelier de Territorio</a>
-          <a class="btn outline" href="/zonas-vitivinicolas-neuquen.html">Zonas vitivinícolas de Neuquén</a>
-          <a class="btn outline" href="/vino-patagonico-regiones-y-paisajes.html">Vino patagónico</a>
+          <a class="btn outline" href="./sommelier-de-territorio.html">Qué es Sommelier de Territorio</a>
+          <a class="btn outline" href="./zonas-vitivinicolas-neuquen.html">Zonas vitivinícolas de Neuquén</a>
+          <a class="btn outline" href="./vino-patagonico-regiones-y-paisajes.html">Vino patagónico</a>
         </div>
       </div>
     </section>
