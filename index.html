@@ -161,7 +161,44 @@
       },
       "founder": {
         "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios y experiencias de vino",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://sergiolandoni.com.ar/experiencias-vino-patagonia.html#service"
+            }
+          }
+        ]
       }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://sergiolandoni.com.ar/experiencias-vino-patagonia.html#service",
+      "name": "Experiencias de vino en Patagonia",
+      "url": "https://sergiolandoni.com.ar/experiencias-vino-patagonia.html",
+      "description": "Experiencias de vino en Patagonia, asesoría y comunicación territorial con Sergio Landoni en San Martín de los Andes, Neuquén.",
+      "serviceType": "Experiencias de vino, asesoría y comunicación territorial",
+      "provider": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "San Martín de los Andes"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Neuquén"
+        },
+        {
+          "@type": "Place",
+          "name": "Patagonia Argentina"
+        }
+      ]
     },
     {
       "@type": "Person",
@@ -188,6 +225,12 @@
       "worksFor": {
         "@id": "https://sergiolandoni.com.ar/#business"
       },
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@id": "https://sergiolandoni.com.ar/experiencias-vino-patagonia.html#service"
+        }
+      },
       "award": [
         "Embajador del Vino Neuquino"
       ],
@@ -206,6 +249,7 @@
         "Vino patagónico",
         "Patagonia vitivinícola",
         "Enoturismo en Patagonia",
+        "Experiencias de vino en Patagonia",
         "Comunicación del vino",
         "Identidad territorial"
       ],
@@ -790,12 +834,13 @@ textarea{
           </div>
         </a>
 
-       <nav class="menu" aria-label="Menú principal">
+     <nav class="menu" aria-label="Menú principal">
   <a href="#inicio">Inicio</a>
   <a href="#sobre-mi">Sobre mí</a>
+  <a href="/experiencias-vino-patagonia.html">Experiencias</a>
   <a href="/blog.html">Blog</a>
   <a href="#contacto">Contacto</a>
- <a href="/" hreflang="es-AR"><strong>ES</strong></a>
+  <a href="/" hreflang="es-AR"><strong>ES</strong></a>
   <a href="/en/" hreflang="en-GB">EN</a>
 </nav>
       </div>
@@ -885,7 +930,11 @@ textarea{
             <a class="btn" href="/sommelier-de-territorio.html">
               Qué es Sommelier de Territorio
             </a>
-
+            
+           <a class="btn primary" href="/experiencias-vino-patagonia.html">
+             Experiencias de vino en Patagonia
+            </a>
+            
             <a class="btn" href="/norte-neuquino-territorio-vino.html">
               Norte Neuquino y territorio
             </a>
@@ -954,27 +1003,45 @@ textarea{
           <!-- EXPERIENCIAS -->
           <div style="border-top:1px solid var(--line); padding-top:16px; margin-top:16px;">
 
-            <h3 style="margin:0 0 6px; font-size:16px;">Experiencias y desarrollo territorial</h3>
+          <h3 style="margin:0 0 6px; font-size:16px;">Experiencias y desarrollo territorial</h3>
 
-            <p style="font-size:13px; margin:0 0 8px;">
-              <em>Diseño de experiencias · Curaduría · Comunicación</em>
-            </p>
+<p style="font-size:13px; margin:0 0 8px;">
+  <em>Diseño de experiencias · Curaduría · Comunicación</em>
+</p>
 
-            <p>
-              Diseño <strong>degustaciones, presentaciones y acciones estratégicas</strong> vinculadas al vino patagónico en distintos contextos.
-            </p>
+<p>
+  Diseño <strong>degustaciones, presentaciones y acciones estratégicas</strong> vinculadas al vino patagónico en distintos contextos.
+</p>
 
-            <p>
-              Articulo <strong>bodegas, proyectos gastronómicos e instituciones</strong>, desarrollando experiencias que fortalecen identidad, posicionamiento y proyección del vino regional.
-            </p>
+<p>
+  Articulo <strong>bodegas, proyectos gastronómicos e instituciones</strong>, desarrollando experiencias que fortalecen identidad, posicionamiento y proyección del vino regional.
+</p>
 
-          </div>
+<div style="border-top:1px solid var(--line); padding-top:16px; margin-top:16px;">
 
-          <div class="note" style="margin-top:14px; text-align:center;">
-            <em>Patagonia Argentina · Proyección nacional e internacional</em>
-          </div>
+  <h3 style="margin:0 0 6px; font-size:16px;">Experiencias de vino en Patagonia</h3>
 
-        </div>
+  <p style="font-size:13px; margin:0 0 8px;">
+    <em>Grupos reducidos · Vino · Gastronomía · Territorio</em>
+  </p>
+
+  <p>
+    Propongo experiencias donde el vino neuquino y patagónico se integra con el paisaje, la gastronomía y el ritmo del lugar.
+  </p>
+
+  <p>
+    Encuentros pensados para vivir el vino en Patagonia desde una mirada cercana, territorial y personalizada.
+  </p>
+
+  <a class="btn primary" href="/experiencias-vino-patagonia.html">
+    Ver experiencias de vino
+  </a>
+
+</div>
+
+<div class="note" style="margin-top:14px; text-align:center;">
+  <em>Patagonia Argentina · Proyección nacional e internacional</em>
+</div>
         <!-- /CARD 2 -->
 
       </div>
