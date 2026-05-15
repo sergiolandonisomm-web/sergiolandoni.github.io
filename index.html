@@ -17,7 +17,7 @@
 
 <title>Sergio Landoni | Embajador del Vino Neuquino y Sommelier de Territorio</title>
 
-<meta name="description" content="Embajador del Vino Neuquino y Sommelier de Territorio en Patagonia Argentina. Comunicación, experiencias y desarrollo del vino patagónico desde San Martín de los Andes." />
+<meta name="description" content="Embajador del Vino Neuquino y Sommelier de Territorio en Patagonia Argentina. Vino neuquino, experiencias, territorio y comunicación del vino desde San Martín de los Andes." />
 
 <meta name="author" content="Sergio Landoni" />
 <meta name="robots" content="index,follow,max-image-preview:large" />
@@ -28,13 +28,16 @@
 <link rel="alternate" href="https://sergiolandoni.com.ar/en/" hreflang="en-GB" />
 <link rel="alternate" href="https://sergiolandoni.com.ar/" hreflang="x-default" />
 
+<!-- Open Graph locale -->
+<meta property="og:locale" content="es_AR" />
+<meta property="og:locale:alternate" content="en_GB" />
+
 <!-- Performance: preload hero -->
 <link rel="preload" as="image" href="/hero.jpg" fetchpriority="high" />
 
 <!-- Icons -->
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
-
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Sergio Landoni | Patagonia Wine" />
@@ -77,7 +80,7 @@
       "@type": "WebPage",
       "@id": "https://sergiolandoni.com.ar/#webpage",
       "url": "https://sergiolandoni.com.ar/",
-      "name": "Sergio Landoni | Embajador del Vino Neuquino",
+      "name": "Sergio Landoni | Embajador del Vino Neuquino y Sommelier de Territorio",
       "description": "Sergio Landoni, Embajador del Vino Neuquino y Sommelier de Territorio en San Martín de los Andes, Patagonia Argentina.",
       "isPartOf": {
         "@id": "https://sergiolandoni.com.ar/#website"
@@ -137,7 +140,10 @@
       "contentUrl": "https://sergiolandoni.com.ar/logo.jpg"
     },
     {
-      "@type": "ProfessionalService",
+      "@type": [
+        "ProfessionalService",
+        "LocalBusiness"
+      ],
       "@id": "https://sergiolandoni.com.ar/#business",
       "name": "Sergio Landoni | Sommelier de Territorio",
       "url": "https://sergiolandoni.com.ar/",
@@ -197,6 +203,10 @@
         {
           "@type": "Place",
           "name": "Patagonia Argentina"
+        },
+        {
+          "@type": "Country",
+          "name": "Argentina"
         }
       ]
     },
@@ -247,8 +257,9 @@
         "name": "Embajador del Vino Neuquino",
         "credentialCategory": "Distinción oficial",
         "recognizedBy": {
-          "@type": "Organization",
-          "name": "Provincia del Neuquén"
+          "@type": "GovernmentOrganization",
+          "name": "Provincia del Neuquén",
+          "url": "https://www.neuquen.gov.ar/"
         },
         "dateAwarded": "2026-05-01"
       },
@@ -313,6 +324,23 @@
             "@type": "NewsMediaOrganization",
             "name": "Diario Río Negro",
             "url": "https://www.rionegro.com.ar/"
+          },
+          "inLanguage": "es-AR"
+        },
+        {
+          "@type": "NewsArticle",
+          "headline": "El vino neuquino gana protagonismo con nuevas experiencias y referentes del sector",
+          "url": "https://www.neuqueninforma.gob.ar/noticias/2026/05/14/257664-el-vino-neuquino-gana-protagonismo-con-nuevas-experiencias-y-referentes-del-sector",
+          "description": "Publicación oficial de Neuquén Informa sobre el crecimiento de nuevas experiencias vinculadas al vino neuquino, donde Sergio Landoni es mencionado como Embajador del Vino Neuquino y referente del sector.",
+          "datePublished": "2026-05-14T12:00:00-03:00",
+          "author": {
+            "@type": "Organization",
+            "name": "Neuquén Informa"
+          },
+          "publisher": {
+            "@type": "GovernmentOrganization",
+            "name": "Provincia del Neuquén",
+            "url": "https://www.neuquen.gov.ar/"
           },
           "inLanguage": "es-AR"
         }
