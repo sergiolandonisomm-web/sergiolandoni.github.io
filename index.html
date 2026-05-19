@@ -1101,6 +1101,53 @@ textarea{
     font-size:20px;
   }
 }
+  @media (max-width:640px){
+  header{
+    position:relative;
+  }
+
+  .nav{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+    padding:14px 0 12px;
+  }
+
+  .brand{
+    width:100%;
+    min-width:0;
+  }
+
+  .brand-text strong{
+    font-size:17px;
+  }
+
+  .brand-text span{
+    font-size:13px;
+    line-height:1.35;
+  }
+
+  .menu{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:8px;
+  }
+
+  .menu a{
+    padding:8px 6px;
+    font-size:13px;
+    text-align:center;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:10px;
+  }
+
+  .menu a[href="/"],
+  .menu a[href="/en/"]{
+    font-weight:600;
+  }
+}
 </style>
 
 </head>
