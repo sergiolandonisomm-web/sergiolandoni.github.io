@@ -1162,6 +1162,34 @@ textarea{
     font-weight:600;
   }
 }
+  .lang-switch{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+  padding:10px 8px;
+  font-size:14px;
+}
+
+.lang-switch a{
+  text-decoration:none;
+  color:var(--text);
+  font-weight:500;
+  padding:0;
+  border:0;
+  background:transparent;
+}
+
+.lang-switch a.active{
+  font-weight:700;
+}
+
+.lang-switch span{
+  color:var(--muted);
+}
 </style>
 
 </head>
@@ -1189,8 +1217,12 @@ textarea{
   <a href="/experiencias-vino-patagonia.html">Experiencias</a>
   <a href="/blog.html">Blog</a>
   <a href="#contacto">Contacto</a>
-  <a href="/" hreflang="es-AR"><strong>ES</strong></a>
-  <a href="/en/" hreflang="en-GB">EN</a>
+
+  <div class="lang-switch" aria-label="Selector de idioma">
+    <a href="/" hreflang="es-AR" class="active">ES</a>
+    <span>/</span>
+    <a href="/en/" hreflang="en-GB">EN</a>
+  </div>
 </nav>
       </div>
     </div>
