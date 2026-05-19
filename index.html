@@ -1127,12 +1127,26 @@ textarea{
     line-height:1.35;
   }
 
-  .menu{
-    width:100%;
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:8px;
-  }
+.menu{
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:8px;
+}
+
+.menu a{
+  padding:10px 8px;
+  font-size:14px;
+  text-align:center;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:12px;
+}
+
+.menu a[href="/"],
+.menu a[href="/en/"]{
+  font-weight:600;
+}
 
   .menu a{
     padding:8px 6px;
