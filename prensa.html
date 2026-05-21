@@ -389,6 +389,47 @@
       text-align:center;
     }
 
+.media-logos{
+  margin-top:22px;
+  padding:16px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:#fff;
+  text-align:center;
+}
+
+.media-logos > span{
+  display:block;
+  font-size:12px;
+  color:var(--muted);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  margin-bottom:14px;
+}
+
+.media-logos-row{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:22px;
+  flex-wrap:wrap;
+}
+
+.media-logos-row img{
+  max-height:34px;
+  max-width:150px;
+  width:auto;
+  object-fit:contain;
+  opacity:.78;
+  filter:grayscale(100%);
+  transition:var(--transition);
+}
+
+.media-logos-row img:hover{
+  opacity:1;
+  filter:grayscale(0%);
+}
+    
     @media (hover:hover) and (pointer:fine){
       .menu a:hover{background:#fff;border-color:var(--line);color:var(--accent)}
       .card:hover,.press-card:hover{transform:translateY(-4px);box-shadow:0 15px 35px rgba(0,0,0,.10)}
@@ -477,6 +518,17 @@
         Una selección de publicaciones en medios especializados, prensa regional e instituciones vinculadas al vino,
         el turismo y la gastronomía.
       </p>
+      <div class="media-logos" aria-label="Medios donde aparece Sergio Landoni">
+  <span>Presencia en medios</span>
+
+  <div class="media-logos-row">
+    <img src="/assets/img/prensa/logo-rio-negro.webp" alt="Diario Río Negro" loading="lazy" decoding="async" />
+    <img src="/assets/img/prensa/logo-vinetur.webp" alt="Vinetur" loading="lazy" decoding="async" />
+    <img src="/assets/img/prensa/logo-winexperts.webp" alt="Winexperts Global" loading="lazy" decoding="async" />
+    <img src="/assets/img/prensa/logo-neuquen-informa.webp" alt="Neuquén Informa" loading="lazy" decoding="async" />
+    <img src="/assets/img/prensa/logo-mejor-informado.webp" alt="Mejor Informado" loading="lazy" decoding="async" />
+  </div>
+</div>
     </section>
 
     <section class="press-grid" aria-label="Notas y publicaciones destacadas">
