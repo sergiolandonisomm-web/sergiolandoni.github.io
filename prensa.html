@@ -16,7 +16,7 @@
   <meta name="format-detection" content="telephone=no" />
 
   <title>Prensa y Medios | Sergio Landoni · Embajador del Vino Neuquino</title>
-  <meta name="description" content="Notas, entrevistas, artículos y participaciones de Sergio Landoni en medios especializados, prensa regional e internacional sobre vino neuquino, Patagonia y territorio." />
+  <meta name="description" content="Prensa, artículos, entrevistas, columnas y participaciones de Sergio Landoni, Embajador del Vino Neuquino y Sommelier de Territorio en Patagonia Argentina." />
   <meta name="author" content="Sergio Landoni" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <meta name="theme-color" content="#0f766e" />
@@ -30,17 +30,22 @@
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Sergio Landoni · Sommelier de Territorio" />
   <meta property="og:title" content="Prensa y Medios | Sergio Landoni" />
   <meta property="og:description" content="Cobertura periodística, columnas y participaciones de Sergio Landoni vinculadas al vino neuquino, Patagonia y comunicación del vino desde el territorio." />
   <meta property="og:url" content="https://sergiolandoni.com.ar/prensa.html" />
   <meta property="og:locale" content="es_AR" />
+  <meta property="article:author" content="Sergio Landoni" />
   <meta property="og:image" content="https://sergiolandoni.com.ar/assets/img/prensa/sergio-landoni-prensa-medios.webp" />
   <meta property="og:image:secure_url" content="https://sergiolandoni.com.ar/assets/img/prensa/sergio-landoni-prensa-medios.webp" />
   <meta property="og:image:alt" content="Sergio Landoni, Sommelier de Territorio, en una experiencia de vino en Patagonia Argentina" />
   <meta property="og:image:type" content="image/webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="1600" />
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Prensa y Medios | Sergio Landoni" />
   <meta name="twitter:description" content="Notas, entrevistas, artículos y participaciones sobre vino neuquino, Patagonia y territorio." />
@@ -64,14 +69,25 @@
         "@type":"Person",
         "@id":"https://sergiolandoni.com.ar/#sergio-landoni",
         "name":"Sergio Landoni",
-        "alternateName":["Sommelier de Territorio","Embajador del Vino Neuquino"],
+        "alternateName":["Sommelier de Territorio","Embajador del Vino Neuquino","Sergio Landoni Somm"],
         "jobTitle":["Sommelier de Territorio","Embajador del Vino Neuquino"],
         "url":"https://sergiolandoni.com.ar/",
+        "image":"https://sergiolandoni.com.ar/assets/img/prensa/sergio-landoni-prensa-medios.webp",
         "sameAs":[
           "https://www.instagram.com/sergiolandoni.somm/",
-          "https://www.linkedin.com/in/sergio-landoni-sommelier/"
+          "https://www.linkedin.com/in/sergio-landoni-sommelier/",
+          "https://www.vinetur.com/20260519100938/la-patagonia-del-vino-tiene-otra-historia-para-contar-neuquen.html",
+          "https://www.rionegro.com.ar/gastronomia/quien-es-sergio-landoni-primer-embajador-del-vino-neuquino-distinguido-en-la-fiesta-del-chef-patagonico-4559433/"
         ],
-        "knowsAbout":["Vino neuquino","Vino patagónico","Patagonia vitivinícola","Enoturismo","Comunicación del vino","Identidad territorial"]
+        "knowsAbout":[
+          "Vino neuquino",
+          "Vino patagónico",
+          "Patagonia vitivinícola",
+          "Enoturismo",
+          "Comunicación del vino",
+          "Identidad territorial",
+          "Sommelier de Territorio"
+        ]
       },
       {
         "@type":"ItemList",
@@ -91,16 +107,21 @@
           {
             "@type":"ListItem",
             "position":3,
-            "url":"https://winexpertsglobal.org/la-patagonia-que-se-cuenta-en-copa-una-masterclass-con-sergio-landoni/"
+            "url":"https://www.rionegro.com.ar/estar-bien/60-asi-paso-sergio-landoni-de-las-telecomunicaciones-a-embajador-del-vino-neuquino/"
           },
           {
             "@type":"ListItem",
             "position":4,
-            "url":"https://www.vinetur.com/20260511100468/neuquen-crea-la-figura-del-embajador-del-vino-neuquino-y-apuesta-al-vino-como-identidad-territorial.html"
+            "url":"https://winexpertsglobal.org/la-patagonia-que-se-cuenta-en-copa-una-masterclass-con-sergio-landoni/"
           },
           {
             "@type":"ListItem",
             "position":5,
+            "url":"https://www.vinetur.com/20260511100468/neuquen-crea-la-figura-del-embajador-del-vino-neuquino-y-apuesta-al-vino-como-identidad-territorial.html"
+          },
+          {
+            "@type":"ListItem",
+            "position":6,
             "url":"https://www.neuqueninforma.gob.ar/noticias/2026/05/14/257664-el-vino-neuquino-gana-protagonismo-con-nuevas-experiencias-y-referentes-del-sector"
           }
         ]
@@ -126,6 +147,7 @@
 
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
+
     body{
       margin:0;
       font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
@@ -212,16 +234,26 @@
       overflow:hidden;
       border:1px solid var(--line);
       box-shadow:var(--shadow);
+      background:#f5f5f5;
     }
 
     .hero img{
-  width:100%;
-  height:auto;
-  max-height:620px;
-  object-fit:contain;
-  display:block;
-  background:#f5f5f5;
-}
+      width:100%;
+      height:auto;
+      max-height:620px;
+      object-fit:contain;
+      display:block;
+      background:#f5f5f5;
+    }
+
+    .media-strip{
+      text-align:center;
+      font-size:13px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+      margin:14px 0 0;
+    }
 
     .card{
       background:var(--card);
@@ -331,9 +363,14 @@
       color:#fff;
       background:#25D366;
       box-shadow:0 12px 28px rgba(0,0,0,.22);
-      font-weight:800;
-      font-size:23px;
       border:1px solid rgba(255,255,255,.35);
+    }
+
+    .whatsapp-float svg{
+      width:28px;
+      height:28px;
+      display:block;
+      fill:#fff;
     }
 
     footer{
@@ -367,10 +404,7 @@
       h2{font-size:19px}
       h3{font-size:18px}
       .card{padding:18px}
-      .hero img{
-  height:auto;
-  max-height:420px;
-}
+      .hero img{height:auto;max-height:420px}
       .press-card img{height:260px}
       .whatsapp-float{right:14px;bottom:14px;width:50px;height:50px}
     }
@@ -419,6 +453,8 @@
         decoding="async">
     </section>
 
+    <p class="media-strip">Vinetur · Diario Río Negro · Winexperts Global · Neuquén Informa</p>
+
     <section class="card" aria-label="Prensa y medios">
       <div class="kicker">Prensa · Medios · Autoridad territorial</div>
 
@@ -445,8 +481,7 @@
           <div class="press-meta">Vinetur · Artículo de autor · Mayo 2026</div>
           <h2>La Patagonia del vino tiene otra historia para contar: Neuquén</h2>
           <p>
-            Columna de Sergio Landoni publicada en Vinetur sobre la diversidad territorial del vino neuquino,
-            la Patagonia vitivinícola y las distintas geografías del vino en Neuquén.
+            Una mirada sobre las distintas geografías del vino neuquino y cómo paisaje, clima y cultura empiezan a redefinir la identidad vitivinícola de la Patagonia.
           </p>
           <a class="btn primary" href="https://www.vinetur.com/20260519100938/la-patagonia-del-vino-tiene-otra-historia-para-contar-neuquen.html" target="_blank" rel="noopener noreferrer">
             Leer en Vinetur
@@ -462,11 +497,26 @@
           <div class="press-meta">Diario Río Negro · Perfil · Mayo 2026</div>
           <h2>Quién es Sergio Landoni, primer Embajador del Vino Neuquino</h2>
           <p>
-            Perfil publicado por Diario Río Negro sobre la distinción de Sergio Landoni como primer Embajador del Vino Neuquino
-            durante la Fiesta Nacional del Chef Patagónico.
+            La historia detrás de la distinción de Sergio Landoni como primer Embajador del Vino Neuquino y su trabajo territorial desde San Martín de los Andes.
           </p>
           <a class="btn primary" href="https://www.rionegro.com.ar/gastronomia/quien-es-sergio-landoni-primer-embajador-del-vino-neuquino-distinguido-en-la-fiesta-del-chef-patagonico-4559433/" target="_blank" rel="noopener noreferrer">
             Leer nota
+          </a>
+        </div>
+      </article>
+
+      <article class="press-card">
+        <img src="/assets/img/prensa/sergio-landoni-historia-vino-neuquino.webp"
+             alt="Sergio Landoni en una bodega de Patagonia Argentina"
+             loading="lazy" decoding="async">
+        <div class="press-body">
+          <div class="press-meta">Diario Río Negro · Perfil humano · Mayo 2026</div>
+          <h2>Así pasó Sergio Landoni de las telecomunicaciones al vino neuquino</h2>
+          <p>
+            Un recorrido por la historia personal y profesional de Sergio Landoni, desde el mundo de las telecomunicaciones hasta convertirse en una de las voces del vino neuquino.
+          </p>
+          <a class="btn primary" href="https://www.rionegro.com.ar/estar-bien/60-asi-paso-sergio-landoni-de-las-telecomunicaciones-a-embajador-del-vino-neuquino/" target="_blank" rel="noopener noreferrer">
+            Leer historia
           </a>
         </div>
       </article>
@@ -479,8 +529,7 @@
           <div class="press-meta">Winexperts Global · Masterclass · Mayo 2026</div>
           <h2>La Patagonia que se cuenta en copa: una masterclass con Sergio Landoni</h2>
           <p>
-            Cobertura de Winexperts Global sobre la masterclass de Sergio Landoni dedicada al vino patagónico,
-            la diversidad territorial y el posicionamiento del vino neuquino.
+            Masterclass dedicada a la Patagonia vitivinícola, la diversidad regional y el futuro del vino argentino desde los territorios emergentes.
           </p>
           <a class="btn primary" href="https://winexpertsglobal.org/la-patagonia-que-se-cuenta-en-copa-una-masterclass-con-sergio-landoni/" target="_blank" rel="noopener noreferrer">
             Leer publicación
@@ -496,8 +545,7 @@
           <div class="press-meta">Vinetur · Vino neuquino · Mayo 2026</div>
           <h2>Neuquén crea la figura del Embajador del Vino Neuquino</h2>
           <p>
-            Artículo publicado en Vinetur sobre la incorporación de la figura del Embajador del Vino Neuquino
-            y la apuesta por el vino como identidad territorial.
+            Cobertura sobre la creación de la figura del Embajador del Vino Neuquino y el vino como herramienta de identidad territorial y promoción turística.
           </p>
           <a class="btn primary" href="https://www.vinetur.com/20260511100468/neuquen-crea-la-figura-del-embajador-del-vino-neuquino-y-apuesta-al-vino-como-identidad-territorial.html" target="_blank" rel="noopener noreferrer">
             Leer en Vinetur
@@ -513,8 +561,7 @@
           <div class="press-meta">Neuquén Informa · Gobierno de Neuquén · Mayo 2026</div>
           <h2>El vino neuquino gana protagonismo con nuevas experiencias y referentes del sector</h2>
           <p>
-            Publicación oficial sobre el crecimiento de nuevas experiencias vinculadas al vino neuquino,
-            con mención a Sergio Landoni como Embajador del Vino Neuquino.
+            Publicación institucional sobre nuevas experiencias vinculadas al vino neuquino y el crecimiento del enoturismo en la provincia.
           </p>
           <a class="btn primary" href="https://www.neuqueninforma.gob.ar/noticias/2026/05/14/257664-el-vino-neuquino-gana-protagonismo-con-nuevas-experiencias-y-referentes-del-sector" target="_blank" rel="noopener noreferrer">
             Leer comunicado
@@ -528,18 +575,19 @@
       <div class="kicker">Contacto</div>
       <h2>Consultas de prensa, entrevistas y participación en medios</h2>
       <p>
-        Para entrevistas, notas, charlas o contenidos vinculados al vino neuquino, Patagonia,
-        enoturismo y comunicación del vino desde el territorio.
+        Disponible para entrevistas, columnas, masterclasses, charlas, catas comentadas y contenidos vinculados al vino neuquino, Patagonia, gastronomía, territorio y comunicación del vino.
       </p>
-      <a class="btn primary" href="mailto:contacto@sergiolandoni.com.ar">
-        Escribir a Sergio Landoni
+      <a class="btn primary" href="mailto:contacto@sergiolandoni.com.ar?subject=Consulta%20de%20prensa">
+        Contacto de prensa
       </a>
     </section>
 
   </main>
 
   <a class="whatsapp-float" href="https://wa.me/5492944668508" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
-    <span>☎</span>
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M16.04 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.26.59 4.47 1.72 6.41L3.13 29l6.77-1.78A12.74 12.74 0 0 0 16.04 28.8c7.06 0 12.8-5.74 12.8-12.8s-5.74-12.8-12.8-12.8zm0 23.43c-1.95 0-3.86-.53-5.52-1.54l-.4-.24-4.02 1.06 1.07-3.92-.26-.41A10.55 10.55 0 0 1 5.4 16c0-5.87 4.77-10.64 10.64-10.64S26.68 10.13 26.68 16 21.91 26.63 16.04 26.63zm5.84-7.96c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.27-.19.22-.38.24-.7.08-.32-.16-1.36-.5-2.6-1.6-.96-.86-1.61-1.92-1.8-2.24-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.22-.32.32-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.79-1.01-2.45-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.41-.3.32-1.15 1.12-1.15 2.73s1.18 3.17 1.34 3.39c.16.22 2.32 3.54 5.62 4.96.79.34 1.4.54 1.88.69.79.25 1.5.21 2.07.13.63-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.14-.3-.22-.62-.38z"></path>
+    </svg>
   </a>
 
   <footer>
