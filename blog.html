@@ -27,6 +27,7 @@
 
   <!-- hreflang -->
   <link rel="alternate" hreflang="es-AR" href="https://sergiolandoni.com.ar/blog.html" />
+  <link rel="alternate" hreflang="en-GB" href="https://sergiolandoni.com.ar/en/blog.html" />
   <link rel="alternate" hreflang="x-default" href="https://sergiolandoni.com.ar/blog.html" />
 
   <!-- Icons -->
@@ -34,7 +35,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="blog" />
   <meta property="og:site_name" content="Sergio Landoni · Sommelier de Territorio" />
   <meta property="og:title" content="Vino neuquino y Patagonia | Blog de Sergio Landoni" />
   <meta property="og:description" content="Artículos sobre vino neuquino, vino patagónico, regiones vitivinícolas, territorio, gastronomía, turismo y cultura desde San Martín de los Andes, Patagonia Argentina." />
@@ -53,6 +54,8 @@
   <meta name="twitter:description" content="Artículos sobre vino neuquino, vino patagónico, regiones vitivinícolas, territorio, gastronomía, turismo y cultura desde San Martín de los Andes, Patagonia Argentina." />
   <meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/racimos-uvas.webp" />
   <meta name="twitter:image:alt" content="Racimos de uvas en viñedo de la Patagonia argentina, origen del vino neuquino" />
+  <meta name="twitter:image:width" content="1600" />
+  <meta name="twitter:image:height" content="700" />
 
 <script type="application/ld+json">
 {
@@ -66,8 +69,8 @@
       "description": "Sitio oficial de Sergio Landoni, Sommelier de Territorio en Patagonia Argentina, especializado en vino neuquino, vino patagónico, territorio, gastronomía y cultura.",
       "inLanguage": "es-AR",
       "publisher": {
-        "@id": "https://sergiolandoni.com.ar/#organization"
-      }
+     "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+    }
     },
     {
       "@type": "Organization",
@@ -95,7 +98,10 @@
         "Sommelier de Territorio",
         "Embajador del Vino Neuquino"
       ],
-      "jobTitle": "Sommelier de Territorio",
+      "jobTitle": [
+  "Sommelier de Territorio",
+  "Embajador del Vino Neuquino"
+],
       "url": "https://sergiolandoni.com.ar/",
       "sameAs": [
         "https://www.instagram.com/sergiolandoni.somm/",
@@ -452,10 +458,12 @@
       border:1px solid rgba(255,255,255,.35);
     }
 
-    .whatsapp-float span{
-      display:block;
-      transform:translateY(-1px);
-    }
+    .whatsapp-float svg{
+  width:28px;
+  height:28px;
+  display:block;
+  fill:#fff;
+}
 
     footer{
       border-top:1px solid var(--line);
@@ -511,12 +519,14 @@
           </div>
         </a>
 
-        <nav class="menu" aria-label="Menú principal">
-          <a href="/#inicio">Inicio</a>
-          <a href="/#sobre-mi">Sobre mí</a>
-          <a href="/blog.html" aria-current="page">Blog</a>
-          <a href="/#contacto">Contacto</a>
-        </nav>
+      <nav class="menu" aria-label="Menú principal">
+  <a href="/#inicio">Inicio</a>
+  <a href="/#sobre-mi">Sobre mí</a>
+  <a href="/experiencias-vino-patagonia.html">Experiencias</a>
+  <a href="/blog.html" aria-current="page">Blog</a>
+  <a href="/prensa.html">Prensa</a>
+  <a href="/#contacto">Contacto</a>
+</nav>
       </div>
     </div>
   </header>
@@ -1244,10 +1254,11 @@
     </section>
   </main>
 
-  <!-- Botón flotante de WhatsApp: reemplazar el número si tu enlace definitivo es otro -->
-  <a class="whatsapp-float" href="https://wa.me/5492944590000?text=Hola%20Sergio%2C%20te%20contacto%20desde%20tu%20blog" target="_blank" rel="noopener" aria-label="Contactar a Sergio Landoni por WhatsApp">
-    <span>☎</span>
-  </a>
+  <a class="whatsapp-float" href="https://wa.me/5492944668508?text=Hola%20Sergio%2C%20te%20contacto%20desde%20tu%20blog" target="_blank" rel="noopener noreferrer" aria-label="Contactar a Sergio Landoni por WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M16.04 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.26.59 4.47 1.72 6.41L3.13 29l6.77-1.78A12.74 12.74 0 0 0 16.04 28.8c7.06 0 12.8-5.74 12.8-12.8s-5.74-12.8-12.8-12.8zm0 23.43c-1.95 0-3.86-.53-5.52-1.54l-.4-.24-4.02 1.06 1.07-3.92-.26-.41A10.55 10.55 0 0 1 5.4 16c0-5.87 4.77-10.64 10.64-10.64S26.68 10.13 26.68 16 21.91 26.63 16.04 26.63zm5.84-7.96c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.27-.19.22-.38.24-.7.08-.32-.16-1.36-.5-2.6-1.6-.96-.86-1.61-1.92-1.8-2.24-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.22-.32.32-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.79-1.01-2.45-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.41-.3.32-1.15 1.12-1.15 2.73s1.18 3.17 1.34 3.39c.16.22 2.32 3.54 5.62 4.96.79.34 1.4.54 1.88.69.79.25 1.5.21 2.07.13.63-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.14-.3-.22-.62-.38z"></path>
+  </svg>
+</a>
 
   <footer>
     © 2026 Sergio Landoni · Sommelier de Territorio · Patagonia Argentina
