@@ -392,7 +392,9 @@ header{
 }
 .hero-media img{
   width:100%;
-  height:auto;
+  height:clamp(260px, 34vw, 430px);
+  object-fit:cover;
+  object-position:center center;
   display:block;
 }
 .hero-grid{
@@ -406,7 +408,7 @@ header{
   padding:28px;
 }
 .hero-grid > .card:first-child h1{
-  margin-bottom:8px;
+  margin-bottom:14px;
 }
 .hero-grid > .card:first-child p{
   max-width:560px;
@@ -756,14 +758,18 @@ textarea{
   }
 }
 @media (max-width:640px){
+
+  .hero-media img{
+    height:240px;
+    object-position:center center;
+  }
+
   .post-list{
     grid-template-columns:1fr;
   }
+
   .prensa-destacada .card{
     padding:20px;
-  }
-  .prensa-destacada .btn{
-    width:100%;
   }
   .whatsapp-btn{
     width:50px;
