@@ -762,7 +762,7 @@ textarea{
   .hero-media img{
     height:240px;
     object-fit:cover;
-    object-position:10% center;
+    object-position:center center;
   }
 
   .post-list{
@@ -884,6 +884,8 @@ textarea{
 <!-- HOME -->
 <section id="inicio" class="hero" aria-label="Home">
   <div class="hero-media" aria-label="Patagonia wine landscape">
+  <picture>
+    <source media="(max-width:640px)" srcset="/assets/img/hero-mobile.webp">
     <img
       src="/assets/img/hero.webp"
       alt="Patagonian wine landscape in Neuquén, Argentina"
@@ -893,7 +895,8 @@ textarea{
       decoding="async"
       fetchpriority="high"
     />
-  </div>
+  </picture>
+</div>
 
   <div class="hero-grid">
 
