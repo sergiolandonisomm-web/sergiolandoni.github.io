@@ -1,3 +1,4 @@
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
@@ -34,20 +35,19 @@
 
   <url>
     <loc>https://sergiolandoni.com.ar/prensa.html</loc>
-    <lastmod>2026-05-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
 
-  <!-- Blog index -->
+  <!-- Blog -->
   <url>
     <loc>https://sergiolandoni.com.ar/blog.html</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Blog English -->
   <url>
     <loc>https://sergiolandoni.com.ar/en/blog.html</loc>
     <lastmod>2026-05-08</lastmod>
@@ -61,6 +61,13 @@
     <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://sergiolandoni.com.ar/vinos-neuquen-vinos-negocios-2026.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <url>
@@ -193,3 +200,4 @@
   </url>
 
 </urlset>
+```
