@@ -391,6 +391,28 @@
     figure.hero-media { margin-left: 0; margin-right: 0; }
     .hero-media img { width: 100%; height: auto; display: block; }
     .hero-media figcaption { padding: 10px 12px; background: #fff; }
+   
+    .video-media {
+      margin: 18px 0;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #000;
+    }
+
+    .video-media video {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #000;
+    }
+
+    .video-media figcaption {
+      padding: 10px 12px;
+      background: #fff;
+    }
+
+
 
     nav.toc { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin: 18px 0; background: #fff; }
     nav.toc h2 { margin: 0 0 10px; font-size: 1.05rem; }
@@ -550,6 +572,24 @@
       <p>
         Javier Menajovsky abrió el encuentro como organizador de Vinos &amp; Negocios. Luego, Silvana Cerda realizó la presentación institucional en representación de la provincia. A mí me tocó moderar la actividad, con una idea muy clara desde el primer minuto: había que ayudar a comprender el origen.
       </p>
+      
+      <figure class="video-media">
+        <video
+          controls
+          preload="metadata"
+          playsinline
+          poster="/assets/img/vinos-neuquen-masterclass-vinos-negocios-2026.webp"
+          aria-label="Fragmento de la masterclass Vinos de Neuquén en Expo Vinos & Negocios 2026"
+        >
+          <source src="/assets/video/Vinos-Neuquen-Vinos-Negocios-2026-web.mp4" type="video/mp4" />
+          Tu navegador no puede reproducir este video.
+        </video>
+
+        <figcaption class="note">
+          Fragmento de la masterclass Vinos de Neuquén durante Expo Vinos &amp; Negocios 2026, donde la provincia presentó su diversidad vitivinícola y el vínculo entre vino, territorio y hospitalidad patagónica.
+        </figcaption>
+      </figure>
+
 
       <p>
         Durante la masterclass, Santiago del Pin, enólogo y propietario de Bodega Sudoeste, ayudó a poner en palabras algo que muchas veces cuesta explicar fuera de Neuquén. Con mucha claridad habló de un verdadero privilegio vitivinícola: pocas regiones reúnen al mismo tiempo viento constante, clima seco, gran amplitud térmica, sanidad natural de los viñedos, gran luminosidad, disponibilidad de agua de deshielo y suelos capaces de dar vinos con identidad muy marcada.
