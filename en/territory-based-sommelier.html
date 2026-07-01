@@ -62,23 +62,34 @@
 {
   "@context": "https://schema.org",
   "@graph": [
+
     {
       "@type": "WebSite",
-      "@id": "https://sergiolandoni.com.ar/en/#website",
-      "url": "https://sergiolandoni.com.ar/en/",
-      "name": "Sergio Landoni · Territory-Based Sommelier",
+      "@id": "https://sergiolandoni.com.ar/#website",
+      "url": "https://sergiolandoni.com.ar/",
+      "name": "Sergio Landoni | Territory-Based Sommelier",
+      "description": "Official website of Sergio Landoni, Neuquén Wine Ambassador and Territory-Based Sommelier specialising in Patagonian wine, wine tourism, gastronomy and territory-driven wine communication.",
       "inLanguage": "en-GB",
       "publisher": {
-        "@id": "https://sergiolandoni.com.ar/#author"
+        "@id": "https://sergiolandoni.com.ar/#person"
       }
     },
+
     {
       "@type": "Person",
-      "@id": "https://sergiolandoni.com.ar/#author",
+      "@id": "https://sergiolandoni.com.ar/#person",
       "name": "Sergio Landoni",
-      "url": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html",
-      "jobTitle": "Territory-Based Sommelier",
-      "description": "Territory-based sommelier based in Patagonia, Argentina, specialising in cool-climate wines, wine communication, gastronomy and sense of place through a territory-driven approach.",
+      "alternateName": [
+        "Territory-Based Sommelier",
+        "Neuquén Wine Ambassador"
+      ],
+      "url": "https://sergiolandoni.com.ar/",
+      "jobTitle": [
+        "Neuquén Wine Ambassador",
+        "Territory-Based Sommelier",
+        "Wine Communicator"
+      ],
+      "description": "Neuquén Wine Ambassador and Territory-Based Sommelier based in San Martín de los Andes, Argentine Patagonia, specialising in cool-climate wines, wine communication, gastronomy and territory-driven interpretation.",
       "image": {
         "@type": "ImageObject",
         "url": "https://sergiolandoni.com.ar/assets/img/retrato.JPEG",
@@ -89,39 +100,54 @@
         "https://www.linkedin.com/in/sergio-landoni-sommelier/",
         "https://www.instagram.com/sergiolandoni.somm/"
       ],
-      "hasOccupation": {
-        "@type": "Occupation",
-        "name": "Territory-Based Sommelier"
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Martín de los Andes",
+        "addressRegion": "Neuquén",
+        "addressCountry": "AR"
       },
+      "hasOccupation": [
+        {
+          "@type": "Occupation",
+          "name": "Neuquén Wine Ambassador"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Territory-Based Sommelier"
+        }
+      ],
       "hasCredential": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "Official distinction",
-        "name": "Wine Ambassador of Neuquén Province",
+        "name": "Neuquén Wine Ambassador",
+        "description": "Official distinction granted in 2026 by the Province of Neuquén in recognition of his contribution to the promotion of Neuquén wines and wine tourism.",
         "recognizedBy": {
           "@type": "Organization",
-          "name": "Government of Neuquén Province"
+          "name": "Government of the Province of Neuquén"
         }
       },
       "knowsAbout": [
-        "Territory-based sommelier",
         "Patagonian wine",
         "Neuquén wine",
         "Cool-climate viticulture",
         "Wine communication",
-        "Sense of place in wine",
-        "Wine and gastronomy",
+        "Territory-based wine interpretation",
+        "Wine tourism",
         "Patagonian gastronomy",
+        "Wine and gastronomy",
+        "Neuquén wine region",
         "Río Negro wine",
         "Chubut wine"
       ]
     },
+
     {
       "@type": "ProfessionalService",
       "@id": "https://sergiolandoni.com.ar/en/#service",
-      "name": "Sergio Landoni · Territory-Based Sommelier",
+      "name": "Sergio Landoni | Territory-Based Sommelier",
       "url": "https://sergiolandoni.com.ar/en/",
       "provider": {
-        "@id": "https://sergiolandoni.com.ar/#author"
+        "@id": "https://sergiolandoni.com.ar/#person"
       },
       "logo": {
         "@type": "ImageObject",
@@ -133,7 +159,7 @@
         "width": 1200,
         "height": 1200
       },
-      "description": "Wine communication, guided tastings, consulting and educational services focused on Patagonian wines, gastronomy and territory-driven interpretation.",
+      "description": "Wine consulting, guided tastings, educational activities, wine communication and territory-driven interpretation focused on Patagonian wines and gastronomy.",
       "email": "contacto@sergiolandoni.com.ar",
       "telephone": "+54 9 294 4668508",
       "serviceType": [
@@ -141,6 +167,7 @@
         "Wine education",
         "Wine communication",
         "Guided tastings",
+        "Wine tourism experiences",
         "Territory-based wine interpretation"
       ],
       "areaServed": [
@@ -166,6 +193,7 @@
         }
       ]
     },
+
     {
       "@type": "WebPage",
       "@id": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html#webpage",
@@ -174,10 +202,10 @@
       "description": "Understanding wine through landscape, climate, gastronomy and culture in Patagonia, with a focus on Neuquén and cool-climate wines.",
       "inLanguage": "en-GB",
       "isPartOf": {
-        "@id": "https://sergiolandoni.com.ar/en/#website"
+        "@id": "https://sergiolandoni.com.ar/#website"
       },
       "about": {
-        "@id": "https://sergiolandoni.com.ar/#author"
+        "@id": "https://sergiolandoni.com.ar/#person"
       },
       "primaryImageOfPage": {
         "@id": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html#img-hero"
@@ -186,6 +214,7 @@
         "@id": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html#article"
       }
     },
+
     {
       "@type": "ImageObject",
       "@id": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html#img-hero",
@@ -194,6 +223,7 @@
       "height": 900,
       "inLanguage": "en-GB"
     },
+
     {
       "@type": "Article",
       "@id": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html#article",
@@ -203,14 +233,13 @@
       "headline": "Territory-Based Sommelier in Patagonia",
       "description": "A territory-based perspective on Patagonian wine, connecting landscape, climate, gastronomy and culture to explain freshness, precision and sense of place in Neuquén and Patagonia.",
       "datePublished": "2026-01-23",
-      "dateModified": "2026-05-15",
+      "dateModified": "2026-07-01",
       "inLanguage": "en-GB",
       "author": {
-        "@id": "https://sergiolandoni.com.ar/#author"
+        "@id": "https://sergiolandoni.com.ar/#person"
       },
       "publisher": {
-        "@type": "Person",
-        "@id": "https://sergiolandoni.com.ar/#author"
+        "@id": "https://sergiolandoni.com.ar/#person"
       },
       "image": [
         {
@@ -219,6 +248,7 @@
       ],
       "keywords": [
         "territory-based sommelier",
+        "Neuquén Wine Ambassador",
         "Patagonia wine",
         "Patagonian wine",
         "Neuquén wine",
@@ -226,8 +256,7 @@
         "Wine and territory",
         "Sense of place in wine",
         "Patagonian gastronomy",
-        "Wine communication",
-        "IWSC"
+        "Wine communication"
       ],
       "articleSection": [
         "Wine",
@@ -235,23 +264,10 @@
         "Patagonia",
         "Gastronomy"
       ],
-      "about": [
-        {
-          "@type": "Thing",
-          "name": "Patagonian wine"
-        },
-        {
-          "@type": "Thing",
-          "name": "Neuquén wine"
-        },
-        {
-          "@type": "Thing",
-          "name": "Cool-climate wine"
-        }
-      ],
-      "wordCount": 1700,
-      "timeRequired": "PT7M"
+      "wordCount": 1850,
+      "timeRequired": "PT8M"
     }
+
   ]
 }
 </script>
@@ -471,8 +487,16 @@
 </p>
 
 <p>
-  In Neuquén, wine exists between desert and mountains, wind and forests, arid valleys and Andean water. To the west, the Andes rise into forests, lakes and mountains, the landscapes that shaped Patagonia’s global imagination. To the east, vineyards grow in an arid, wind-shaped environment sustained by water from the mountains.
+  In Neuquén, wine exists between desert and mountains, wind and forests, arid valleys and Andean water. To the west, the Andes rise into forests, lakes and mountains, the landscapes that shaped Patagonia's global imagination. To the east, vineyards grow in an arid, wind-shaped environment sustained by water flowing from the Andes.
 </p>
+
+<div class="callout">
+  <strong>Neuquén Wine Ambassador</strong>
+
+  <p style="margin:8px 0 0;">
+    In 2026, Sergio Landoni was officially appointed <strong>Neuquén Wine Ambassador</strong> by the Province of Neuquén, in recognition of his long-standing work promoting the wines, gastronomy, landscapes and wine identity of Argentine Patagonia.
+  </p>
+</div>
 
 <p>
   Between these worlds, wine has found its place.
@@ -493,7 +517,6 @@
 <p>
   Wine here is not isolated from the table. It grows in dialogue with it.
 </p>
-
 <div class="callout">
   <strong>Key idea</strong>
   <p class="note" style="margin:0;">
@@ -646,7 +669,7 @@
 </p>
 
 <p class="note">
-  Sergio Landoni is a territory-based sommelier based in San Martín de los Andes, Patagonia. His work focuses on connecting wine, landscape, producers and regional identity through place-based interpretation.
+  Sergio Landoni is Neuquén Wine Ambassador and a Territory-Based Sommelier based in San Martín de los Andes, Argentine Patagonia. His work focuses on connecting wine, landscape, gastronomy and regional identity through place-based interpretation.
 </p>
 
 <p class="note">
