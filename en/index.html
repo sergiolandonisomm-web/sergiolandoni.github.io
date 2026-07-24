@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <!-- Google Tag Manager -->
   <script>
@@ -27,23 +27,37 @@
 <link rel="alternate" href="https://sergiolandoni.com.ar/en/" hreflang="en-GB" />
 <link rel="alternate" href="https://sergiolandoni.com.ar/" hreflang="x-default" />
 
-<!-- Performance: preload hero -->
-<link rel="preload" as="image" href="/assets/img/hero.webp" fetchpriority="high" />
+<!-- Performance: preload hero responsive -->
+<link
+  rel="preload"
+  as="image"
+  href="/assets/img/hero-mobile.webp"
+  media="(max-width:640px)"
+  fetchpriority="high"
+/>
+
+<link
+  rel="preload"
+  as="image"
+  href="/assets/img/hero.webp"
+  media="(min-width:641px)"
+  fetchpriority="high"
+/>
 
 <!-- Icons -->
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
 
 <!-- Open Graph -->
-<meta property="og:type" content="profile" />
+<meta property="og:type" content="website" />
 <meta property="og:site_name" content="Sergio Landoni | Territory-Based Sommelier" />
 <meta property="og:title" content="Patagonia Wine Experiences | Neuquén Wine Ambassador | Sergio Landoni" />
 <meta property="og:description" content="Curated wine experiences in Patagonia with a Neuquén Wine Ambassador, connecting cool-climate wines, gastronomy, landscape and territory." />
 <meta property="og:url" content="https://sergiolandoni.com.ar/en/" />
 <meta property="og:locale" content="en_GB" />
-<meta property="og:image" content="https://sergiolandoni.com.ar/assets/img/hero.webp" />
+<meta property="og:image" content="https://sergiolandoni.com.ar/assets/img/hero.jpg" />
 <meta property="og:image:alt" content="Patagonian vineyards in Neuquén with Andes landscape and desert light" />
-<meta property="og:image:type" content="image/webp" />
+<meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="1600" />
 <meta property="og:image:height" content="900" />
 
@@ -73,8 +87,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://sergiolandoni.com.ar/#organization",
-      "name": "Sergio Landoni | Territory-Based Sommelier",
+            "name": "Sergio Landoni | Territory-Based Sommelier",
       "url": "https://sergiolandoni.com.ar/",
       "logo": {
         "@type": "ImageObject",
@@ -229,11 +242,7 @@
         "Sommelier de Territorio",
         "Embajador del Vino Neuquino"
       ],
-      "jobTitle": [
-        "Territory-Based Sommelier",
-        "Neuquén Wine Ambassador",
-        "Wine Communicator"
-      ],
+      "jobTitle": "Territory-Based Sommelier",
       "award": "First official Neuquén Wine Ambassador distinction awarded by the Province of Neuquén, Argentina",
       "description": "Territory-Based Sommelier and Neuquén Wine Ambassador specialising in Neuquén and Patagonian wines, wine communication, curated experiences and gastronomy-driven storytelling from Patagonia, Argentina.",
       "url": "https://sergiolandoni.com.ar/",
@@ -255,8 +264,8 @@
         "addressCountry": "AR"
       },
       "worksFor": {
-        "@id": "https://sergiolandoni.com.ar/#organization"
-      },
+  "@id": "https://sergiolandoni.com.ar/#business"
+},
       "affiliation": [
         {
           "@type": "OrganizationRole",
