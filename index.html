@@ -28,8 +28,22 @@
 <link rel="alternate" href="https://sergiolandoni.com.ar/en/" hreflang="en-GB" />
 <link rel="alternate" href="https://sergiolandoni.com.ar/" hreflang="x-default" />
 
-<!-- Performance: preload hero -->
-<link rel="preload" as="image" href="/assets/img/hero.webp" fetchpriority="high" />
+<!-- Performance: preload hero responsive -->
+<link
+  rel="preload"
+  as="image"
+  href="/assets/img/hero-mobile.webp"
+  media="(max-width:640px)"
+  fetchpriority="high"
+/>
+
+<link
+  rel="preload"
+  as="image"
+  href="/assets/img/hero.webp"
+  media="(min-width:641px)"
+  fetchpriority="high"
+/>
 
 <!-- Icons -->
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
@@ -229,12 +243,7 @@
         "Embajador del Vino Neuquino",
         "Sergio Landoni Somm"
       ],
-      "jobTitle": [
-        "Sommelier de Territorio",
-        "Embajador del Vino Neuquino",
-        "Comunicador de vinos patagónicos",
-        "Referente en vino neuquino"
-      ],
+      "jobTitle": "Sommelier de Territorio",
       "description": "Embajador del Vino Neuquino y Sommelier de Territorio en Patagonia Argentina, especializado en vino neuquino, comunicación del vino, enoturismo, formación y experiencias enogastronómicas.",
       "url": "https://sergiolandoni.com.ar/",
       "image": {
@@ -1333,9 +1342,9 @@ textarea{
 
   <div style="padding:16px; border:1px solid rgba(15,118,110,.16); background:rgba(15,118,110,.05); border-radius:12px; margin-bottom:16px;">
 
-    <h3 style="margin:0 0 8px; font-size:16px;">
-      ¿Qué es un Sommelier de Territorio?
-    </h3>
+    <h2 style="margin:0 0 8px; font-size:16px;">
+  ¿Qué es un Sommelier de Territorio?
+</h2>
 
     <p style="margin:0; font-size:14.5px; line-height:1.65;">
       Un profesional que trabaja desde el lugar donde el vino nace. Que recorre viñedos, conversa con productores y conecta vino, paisaje, gastronomía y cultura desde una experiencia real del territorio.
@@ -1349,9 +1358,9 @@ textarea{
       Proyecto destacado · Vino neuquino
     </p>
 
-    <h3 style="margin:0 0 8px; font-size:16px;">
-      Bodega Cutral Co
-    </h3>
+    <h2 style="margin:0 0 8px; font-size:16px;">
+  Bodega Cutral Co
+</h2>
 
     <p style="margin:0 0 10px; font-size:14.5px; line-height:1.65;">
       Acompaño a <strong>Bodega Cutral Co</strong> en acciones vinculadas al desarrollo enoturístico, la comunicación y la construcción de una identidad propia dentro del vino neuquino.
@@ -1617,23 +1626,32 @@ textarea{
 
   <div style="display:flex; gap:10px; margin-top:22px; flex-wrap:wrap; width:100%; justify-content:center;">
 
-    <a class="btn primary"
-       style="flex:1; min-width:220px; font-size:13.5px;"
-       href="mailto:contacto@sergiolandoni.com.ar"
-       aria-label="Enviar correo electrónico">
-      contacto@sergiolandoni.com.ar
-    </a>
+  <a class="btn primary"
+     style="flex:1; min-width:220px; font-size:13.5px;"
+     href="mailto:contacto@sergiolandoni.com.ar"
+     aria-label="Enviar correo electrónico">
+    contacto@sergiolandoni.com.ar
+  </a>
 
-    <a class="btn primary"
-       style="padding:10px 18px; font-size:13.5px;"
-       href="https://www.linkedin.com/in/sergio-landoni-sommelier/"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Visitar perfil de LinkedIn">
-      LinkedIn
-    </a>
+  <a class="btn primary"
+     style="padding:10px 18px; font-size:13.5px;"
+     href="https://www.linkedin.com/in/sergio-landoni-sommelier/"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Visitar el perfil de Sergio Landoni en LinkedIn">
+    LinkedIn
+  </a>
 
-  </div>
+  <a class="btn primary"
+     style="padding:10px 18px; font-size:13.5px;"
+     href="https://www.instagram.com/sergiolandoni.somm/"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Visitar el perfil de Sergio Landoni en Instagram">
+    Instagram
+  </a>
+
+</div>
 
   <div style="margin-top:24px; padding:18px; background:rgba(15,118,110,.05); border:1px solid rgba(15,118,110,.14); border-radius:12px; width:100%;">
 
@@ -1785,15 +1803,41 @@ textarea{
   San Martín de los Andes · Neuquén · Patagonia Argentina
 </p>
 
-    <div class="footer-links">
-      <a href="mailto:contacto@sergiolandoni.com.ar">contacto@sergiolandoni.com.ar</a>
-      <span>·</span>
-      <a href="https://www.linkedin.com/in/sergio-landoni-sommelier/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <span>·</span>
-      <a href="/" hreflang="es-AR"><strong>ES</strong></a>
-      <span>·</span>
-      <a href="/en/" rel="alternate" hreflang="en-GB">EN</a>
-    </div>
+   <div class="footer-links">
+  <a href="mailto:contacto@sergiolandoni.com.ar">
+    contacto@sergiolandoni.com.ar
+  </a>
+
+  <span>·</span>
+
+  <a
+    href="https://www.linkedin.com/in/sergio-landoni-sommelier/"
+    target="_blank"
+    rel="noopener noreferrer">
+    LinkedIn
+  </a>
+
+  <span>·</span>
+
+  <a
+    href="https://www.instagram.com/sergiolandoni.somm/"
+    target="_blank"
+    rel="noopener noreferrer">
+    Instagram
+  </a>
+
+  <span>·</span>
+
+  <a href="/" hreflang="es-AR">
+    <strong>ES</strong>
+  </a>
+
+  <span>·</span>
+
+  <a href="/en/" rel="alternate" hreflang="en-GB">
+    EN
+  </a>
+</div>
   </div>
 </footer>
 
