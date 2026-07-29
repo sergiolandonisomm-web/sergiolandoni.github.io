@@ -69,8 +69,8 @@
       "description": "Sitio oficial de Sergio Landoni, Sommelier de Territorio en Patagonia Argentina, especializado en vino neuquino, vino patagónico, territorio, gastronomía y cultura.",
       "inLanguage": "es-AR",
       "publisher": {
-     "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
-    }
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      }
     },
     {
       "@type": "Organization",
@@ -99,9 +99,9 @@
         "Embajador del Vino Neuquino"
       ],
       "jobTitle": [
-  "Sommelier de Territorio",
-  "Embajador del Vino Neuquino"
-],
+        "Sommelier de Territorio",
+        "Embajador del Vino Neuquino"
+      ],
       "url": "https://sergiolandoni.com.ar/",
       "sameAs": [
         "https://www.instagram.com/sergiolandoni.somm/",
@@ -179,27 +179,46 @@
         "@id": "https://sergiolandoni.com.ar/blog.html#webpage"
       },
       "blogPost": [
-
-  {
-  "@type": "BlogPosting",
-  "@id": "https://sergiolandoni.com.ar/vinos-neuquen-vinos-negocios-2026.html#article",
-  "url": "https://sergiolandoni.com.ar/vinos-neuquen-vinos-negocios-2026.html",
-  "headline": "Qué dejó Vinos & Negocios 2026 para los vinos de Neuquén y la Patagonia",
-  "datePublished": "2026-06-01",
-  "dateModified": "2026-06-01",
-  "description": "Primera participación de Neuquén en Expo Vinos & Negocios 2026. Crónica, impacto y reflexión sobre los vinos de Patagonia, la diversidad del vino neuquino y una masterclass que ayudó a poner el territorio en la copa.",
-  "image": "https://sergiolandoni.com.ar/assets/img/vinos-neuquen-masterclass-vinos-negocios-2026.webp",
-  "inLanguage": "es-AR",
-  "author": {
-    "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
-  },
-  "publisher": {
-    "@id": "https://sergiolandoni.com.ar/#organization"
-  },
-  "mainEntityOfPage": {
-    "@id": "https://sergiolandoni.com.ar/vinos-neuquen-vinos-negocios-2026.html#webpage"
-  }
-},
+        {
+          "@type": "BlogPosting",
+          "@id": "https://sergiolandoni.com.ar/pinot-noir-neuquen.html#article",
+          "url": "https://sergiolandoni.com.ar/pinot-noir-neuquen.html",
+          "headline": "Pinot Noir de Neuquén: historia, terroir y la variedad que mejor identifica a la provincia",
+          "datePublished": "2026-07-29",
+          "dateModified": "2026-07-29",
+          "description": "Historia, terroir, regiones, estilo y futuro del Pinot Noir de Neuquén. Una investigación sobre la variedad que mejor expresa la identidad vitivinícola de la provincia.",
+          "image": "https://sergiolandoni.com.ar/assets/img/pinot-noir-neuquen-patagonia-argentina.webp",
+          "inLanguage": "es-AR",
+          "author": {
+            "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+          },
+          "publisher": {
+            "@id": "https://sergiolandoni.com.ar/#organization"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://sergiolandoni.com.ar/pinot-noir-neuquen.html#webpage"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://sergiolandoni.com.ar/vinos-neuquen-vinos-negocios-2026.html#article",
+          "url": "https://sergiolandoni.com.ar/vinos-neuquen-vinos-negocios-2026.html",
+          "headline": "Qué dejó Vinos & Negocios 2026 para los vinos de Neuquén y la Patagonia",
+          "datePublished": "2026-06-01",
+          "dateModified": "2026-06-01",
+          "description": "Primera participación de Neuquén en Expo Vinos & Negocios 2026. Crónica, impacto y reflexión sobre los vinos de Patagonia, la diversidad del vino neuquino y una masterclass que ayudó a poner el territorio en la copa.",
+          "image": "https://sergiolandoni.com.ar/assets/img/vinos-neuquen-masterclass-vinos-negocios-2026.webp",
+          "inLanguage": "es-AR",
+          "author": {
+            "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+          },
+          "publisher": {
+            "@id": "https://sergiolandoni.com.ar/#organization"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://sergiolandoni.com.ar/vinos-neuquen-vinos-negocios-2026.html#webpage"
+          }
+        },
         {
           "@type": "BlogPosting",
           "@id": "https://sergiolandoni.com.ar/norte-neuquino-territorio-vino.html#article",
@@ -387,6 +406,16 @@
     .note{font-size:13px;color:var(--muted)}
 
     .blog-nav{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+
+    .card[aria-label="Artículo recomendado"]{
+      border-color:rgba(15,118,110,.28);
+      background:linear-gradient(180deg,#ffffff 0%,#f8fffd 100%);
+    }
+
+    .card[aria-label="Artículo recomendado"] h2{
+      font-size:clamp(25px,4vw,34px);
+      max-width:820px;
+    }
 
     .featured-grid{
       display:grid;
@@ -595,43 +624,46 @@
       </p>
     </section>
 
-    <section class="card" style="margin-top:18px" aria-label="Último artículo publicado">
+    <section class="card" style="margin-top:18px" aria-label="Artículo recomendado">
 
-  <div class="kicker">Último artículo</div>
+      <div class="kicker">Artículo recomendado</div>
 
-  <h2>
-    Qué dejó Vinos &amp; Negocios 2026 para los vinos de Neuquén y la Patagonia
-  </h2>
+      <h2>
+        Pinot Noir de Neuquén: historia, terroir y la variedad que mejor identifica a la provincia
+      </h2>
 
-  <p class="note">
-    Publicado el 1 de junio de 2026
-  </p>
+      <p class="note">
+        Publicado el 29 de julio de 2026 · Investigación y artículo de referencia
+      </p>
 
-  <div class="hero" style="margin-top:16px">
-    <img
-      src="/assets/img/vinos-neuquen-masterclass-vinos-negocios-2026.webp"
-      alt="Masterclass Vinos de Neuquén durante Expo Vinos &amp; Negocios 2026 con representantes de bodegas neuquinas"
-      width="1600"
-      height="900"
-      loading="lazy"
-      decoding="async">
-  </div>
+      <div class="hero" style="margin-top:16px">
+        <img
+          src="/assets/img/pinot-noir-neuquen-patagonia-argentina.webp"
+          alt="Viñedo de Pinot Noir en Neuquén, Patagonia Argentina"
+          width="1600"
+          height="900"
+          loading="lazy"
+          decoding="async">
+      </div>
 
-  <p style="margin-top:18px">
-    La primera participación articulada de Neuquén en Expo Vinos &amp; Negocios 2026 dejó reuniones, contactos y mucho interés por los vinos de Patagonia. Pero también dejó algo más difícil de medir: la sensación de que algo empieza a moverse alrededor del vino neuquino.
-  </p>
+      <p style="margin-top:18px">
+        La historia de una variedad que encontró en Neuquén mucho más que buenas condiciones para crecer:
+        un territorio capaz de darle identidad, frescura y una expresión propia dentro del vino argentino.
+      </p>
 
-  <p>
-    Una lectura desde el territorio sobre la presencia de Neuquén en el principal encuentro profesional del vino argentino, la masterclass “Vinos de Neuquén” y el valor de presentarse como región.
-  </p>
+      <p>
+        Un recorrido por sus orígenes, los viñedos que construyeron conocimiento, las regiones que hoy amplían
+        el mapa provincial y los vinos que convirtieron al Pinot Noir en una de las expresiones más reconocibles
+        de Neuquén.
+      </p>
 
-  <p style="margin-top:18px">
-    <a class="btn primary" href="/vinos-neuquen-vinos-negocios-2026.html">
-      Leer artículo completo
-    </a>
-  </p>
+      <p style="margin-top:18px">
+        <a class="btn primary" href="/pinot-noir-neuquen.html">
+          Leer el artículo completo
+        </a>
+      </p>
 
-</section>
+    </section>
 
     <section class="card" id="destacados" style="margin-top:18px" aria-label="Artículos destacados">
       <div class="kicker">Artículos destacados</div>
@@ -642,25 +674,27 @@
 
       <div class="featured-grid">
         <article class="featured-item">
-          <span class="tag">Vino</span>
-          <h3><a href="/vino-y-territorio.html">El precio del vino no está en la copa</a></h3>
-          <p class="meta"><time datetime="2026-04-30">30 de abril de 2026</time></p>
-          <p>Una reflexión sobre precio, valor, contexto y territorio. Por qué un vino no se justifica solo por su calidad, sino por el sentido que logra construir alrededor.</p>
-          <a class="btn primary" href="/vino-y-territorio.html">Leer artículo</a>
+          <span class="tag">Pinot Noir</span>
+          <h3><a href="/pinot-noir-neuquen.html">Pinot Noir de Neuquén: historia, terroir e identidad</a></h3>
+          <p class="meta"><time datetime="2026-07-29">29 de julio de 2026</time></p>
+          <p>La investigación más completa del sitio sobre la variedad que mejor expresa la identidad vitivinícola de Neuquén, desde los primeros viñedos hasta los nuevos territorios.</p>
+          <a class="btn primary" href="/pinot-noir-neuquen.html">Leer artículo</a>
         </article>
+
         <article class="featured-item">
-          <span class="tag">Vino neuquino</span>
+          <span class="tag">Guía</span>
+          <h3><a href="/guia-vino-neuquino.html">Guía del vino neuquino: clima, regiones, varietales y gastronomía</a></h3>
+          <p class="meta"><time datetime="2026-03-12">12 de marzo de 2026</time></p>
+          <p>Una guía integral para entender el vino neuquino desde el territorio: sus zonas, el clima, las variedades y la relación con la gastronomía provincial.</p>
+          <a class="btn primary" href="/guia-vino-neuquino.html">Leer artículo</a>
+        </article>
+
+        <article class="featured-item">
+          <span class="tag">Identidad</span>
           <h3><a href="/vino-neuquino-identidad-propia.html">El vino neuquino y la construcción de una identidad propia</a></h3>
           <p class="meta"><time datetime="2026-04-13">13 de abril de 2026</time></p>
-          <p>Una columna sobre la consolidación del vino neuquino, su diversidad territorial y la construcción de una identidad propia dentro de la Patagonia argentina.</p>
+          <p>Una reflexión sobre la consolidación del vino neuquino, su diversidad territorial y la construcción de una voz propia dentro de la Patagonia argentina.</p>
           <a class="btn primary" href="/vino-neuquino-identidad-propia.html">Leer artículo</a>
-        </article>
-        <article class="featured-item">
-          <span class="tag">Lago Puelo</span>
-          <h3><a href="/vino-lago-puelo-patagonia-comarca-andina.html">Vino en Lago Puelo: Patagonia, Comarca Andina e identidad propia</a></h3>
-          <p class="meta"><time datetime="2026-04-19">19 de abril de 2026</time></p>
-          <p>Una experiencia en Lago Puelo, en el marco de Puelo Wines, que muestra cómo los vinos de Chubut empiezan a construir identidad desde el lugar, entre productores, paisaje y hospitalidad.</p>
-          <a class="btn primary" href="/vino-lago-puelo-patagonia-comarca-andina.html">Leer artículo</a>
         </article>
       </div>
     </section>
@@ -760,6 +794,33 @@
       <section class="category-block" aria-labelledby="vino-neuquino">
         <h2 id="vino-neuquino">Vino neuquino</h2>
         <div class="list">
+
+          <article class="post" id="pinot-noir-neuquen">
+            <div class="tags">
+              <span class="tag">Pinot Noir</span>
+              <span class="tag">Vino neuquino</span>
+              <span class="tag">Territorio</span>
+              <span class="tag">Artículo de referencia</span>
+            </div>
+
+            <h3>
+              <a href="/pinot-noir-neuquen.html" rel="bookmark">
+                Pinot Noir de Neuquén: historia, terroir y la variedad que mejor identifica a la provincia
+              </a>
+            </h3>
+
+            <div class="meta">
+              <time datetime="2026-07-29">29 de julio de 2026</time>
+            </div>
+
+            <p>
+              Historia, regiones, personas, estilo y futuro del Pinot Noir neuquino. Una investigación desde el territorio sobre la variedad que alcanzó una identidad singular dentro del vino argentino.
+            </p>
+
+            <p>
+              <a class="btn primary" href="/pinot-noir-neuquen.html" aria-label="Leer Pinot Noir de Neuquén: historia, terroir y la variedad que mejor identifica a la provincia">Leer</a>
+            </p>
+          </article>
 
        <article class="post" id="vinos-neuquen-vinos-negocios-2026">
   <div class="tags">
