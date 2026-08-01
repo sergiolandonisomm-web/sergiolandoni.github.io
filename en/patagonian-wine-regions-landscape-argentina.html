@@ -1,15 +1,20 @@
 <!doctype html>
 <html lang="en-GB">
 <head>
+
   <!-- Google Tag Manager -->
   <script>
     (function(w,d,s,l,i){
       w[l]=w[l]||[];
-      w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});
+      w[l].push({
+        'gtm.start':new Date().getTime(),
+        event:'gtm.js'
+      });
+
       var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),
-      dl=l!='dataLayer'?'&l='+l:'';
+          j=d.createElement(s),
+          dl=l!='dataLayer'?'&l='+l:'';
+
       j.async=true;
       j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
       f.parentNode.insertBefore(j,f);
@@ -18,87 +23,424 @@
   <!-- End Google Tag Manager -->
 
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="format-detection" content="telephone=no" />
 
-  <title>Patagonian Wine Explained from the Territory | Regions, Climate and Identity</title>
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  />
 
-  <meta name="description" content="Patagonian wine explained from the territory. A real perspective on Neuquén, Río Negro and Chubut, shaped by wind, desert and Andean water." />
-  <meta name="author" content="Sergio Landoni" />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-  <meta name="theme-color" content="#0f766e" />
+  <meta
+    name="format-detection"
+    content="telephone=no"
+  />
 
-  <!-- Canonical + hreflang -->
-  <link rel="canonical" href="https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html" />
-  <link rel="alternate" hreflang="es-AR" href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html" />
-  <link rel="alternate" hreflang="en-GB" href="https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html" />
-  <link rel="alternate" hreflang="x-default" href="https://sergiolandoni.com.ar/" />
+  <title>Patagonian Wine Explained from the Territory | Sergio Landoni</title>
+
+  <meta
+    name="description"
+    content="A regional perspective on Patagonian wine, explaining how geography, climate, water and local culture shape the wine regions of Neuquén, Río Negro and Chubut."
+  />
+
+  <meta
+    name="author"
+    content="Sergio Landoni"
+  />
+
+  <meta
+    name="robots"
+    content="index,follow,max-image-preview:large"
+  />
+
+  <meta
+    name="theme-color"
+    content="#0f766e"
+  />
+
+  <!-- Canonical and language versions -->
+  <link
+    rel="canonical"
+    href="https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html"
+  />
+
+  <link
+    rel="alternate"
+    href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html"
+    hreflang="es-AR"
+  />
+
+  <link
+    rel="alternate"
+    href="https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html"
+    hreflang="en-GB"
+  />
+
+  <link
+    rel="alternate"
+    href="https://sergiolandoni.com.ar/"
+    hreflang="x-default"
+  />
 
   <!-- Icons -->
-  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
+  <link
+    rel="icon"
+    type="image/x-icon"
+    href="/assets/img/favicon.ico"
+  />
 
-  <!-- Preload hero (LCP) -->
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/assets/img/apple-touch-icon.png"
+  />
+
+  <!-- Hero image preload -->
   <link
     rel="preload"
     as="image"
     href="/assets/img/patagonia-el-hoyo-vinedo-montana.webp"
+    type="image/webp"
     fetchpriority="high"
   />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="article" />
-  <meta property="og:locale" content="en_GB" />
-  <meta property="og:title" content="Patagonian Wine Explained from the Territory" />
-  <meta property="og:description" content="A real perspective on Patagonian wine, explained from the territory. Discover how landscape, wind and water define Neuquén, Río Negro and Chubut." />
-  <meta property="og:url" content="https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html" />
-  <meta property="og:site_name" content="Sergio Landoni · Sommelier de Territorio" />
-  <meta property="og:image" content="https://sergiolandoni.com.ar/assets/img/patagonia-el-hoyo-vinedo-montana.webp" />
-  <meta property="og:image:alt" content="Vineyards in Argentine Patagonia near the Andes, with mountain landscape and desert light" />
-  <meta property="og:image:type" content="image/webp" />
-  <meta property="og:image:width" content="1600" />
-  <meta property="og:image:height" content="900" />
+  <meta
+    property="og:type"
+    content="article"
+  />
 
-  <!-- Article times -->
-  <meta property="article:published_time" content="2026-02-17" />
-  <meta property="article:modified_time" content="2026-05-20" />
-  <meta property="article:author" content="Sergio Landoni" />
-  <meta property="article:section" content="Wine" />
+  <meta
+    property="og:locale"
+    content="en_GB"
+  />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Patagonian Wine Explained from the Territory" />
-  <meta name="twitter:description" content="Patagonian wine explained from the territory. A real perspective shaped by wind, desert and Andean water." />
-  <meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/patagonia-el-hoyo-vinedo-montana.webp" />
-  <meta name="twitter:image:alt" content="Patagonian vineyard landscape near the Andes in Argentina" />
-  <meta name="twitter:url" content="https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html" />
+  <meta
+    property="og:locale:alternate"
+    content="es_AR"
+  />
 
-  <!-- Schema.org (PRO / graph, consistent with your site entities) -->
- <script type="application/ld+json">
+  <meta
+    property="og:site_name"
+    content="Sergio Landoni | Patagonian Wine Writer"
+  />
+
+  <meta
+    property="og:title"
+    content="Patagonian Wine Explained from the Territory"
+  />
+
+  <meta
+    property="og:description"
+    content="A regional perspective on Patagonian wine and the different landscapes, climates and histories shaping Neuquén, Río Negro and Chubut."
+  />
+
+  <meta
+    property="og:url"
+    content="https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html"
+  />
+
+  <meta
+    property="og:image"
+    content="https://sergiolandoni.com.ar/assets/img/patagonia-el-hoyo-vinedo-montana.webp"
+  />
+
+  <meta
+    property="og:image:secure_url"
+    content="https://sergiolandoni.com.ar/assets/img/patagonia-el-hoyo-vinedo-montana.webp"
+  />
+
+  <meta
+    property="og:image:alt"
+    content="Vineyards near the Andes in Argentine Patagonia"
+  />
+
+  <meta
+    property="og:image:type"
+    content="image/webp"
+  />
+
+  <meta
+    property="og:image:width"
+    content="1600"
+  />
+
+  <meta
+    property="og:image:height"
+    content="900"
+  />
+
+  <!-- Article metadata -->
+  <meta
+    property="article:published_time"
+    content="2026-02-17"
+  />
+
+  <meta
+    property="article:modified_time"
+    content="2026-08-01"
+  />
+
+  <meta
+    property="article:author"
+    content="Sergio Landoni"
+  />
+
+  <meta
+    property="article:section"
+    content="Patagonian Wine Regions"
+  />
+
+  <!-- Twitter / X -->
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
+
+  <meta
+    name="twitter:title"
+    content="Patagonian Wine Explained from the Territory"
+  />
+
+  <meta
+    name="twitter:description"
+    content="A regional perspective on the wine regions of Neuquén, Río Negro and Chubut, shaped by geography, climate, water and local culture."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://sergiolandoni.com.ar/assets/img/patagonia-el-hoyo-vinedo-montana.webp"
+  />
+
+  <meta
+    name="twitter:image:alt"
+    content="Patagonian vineyard landscape near the Andes in Argentina"
+  />
+
+ <!-- Schema.org -->
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://sergiolandoni.com.ar/#website",
+      "url": "https://sergiolandoni.com.ar/",
+      "name": "Sergio Landoni | Patagonian Wine Writer",
+      "description": [
+        {
+          "@value": "Sitio oficial de Sergio Landoni, escritor de vinos, Sommelier de Territorio y Embajador del Vino Neuquino, dedicado a las regiones vitivinícolas de la Patagonia.",
+          "@language": "es"
+        },
+        {
+          "@value": "Official website of Sergio Landoni, Patagonian wine writer, Territory-Based Sommelier and Official Neuquén Wine Ambassador, focused on the wine regions of Patagonia.",
+          "@language": "en"
+        }
+      ],
+      "inLanguage": [
+        "es-AR",
+        "en-GB"
+      ],
+      "publisher": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      }
+    },
+    {
       "@type": "WebPage",
       "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#webpage",
       "url": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html",
-      "name": "Patagonian Wine Explained from the Territory",
-      "description": "Patagonian wine explained from the territory. A real perspective on Neuquén, Río Negro and Chubut, shaped by wind, desert and Andean water.",
+      "name": "Patagonian Wine Explained from the Territory | Sergio Landoni",
+      "description": "A regional perspective on Patagonian wine, explaining how geography, climate, water and local culture shape the wine regions of Neuquén, Río Negro and Chubut.",
       "inLanguage": "en-GB",
-      "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
-      "about": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
-      "primaryImageOfPage": { "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#img-hero" },
-      "mainEntity": { "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#blogposting" },
-      "breadcrumb": { "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#breadcrumb" }
+      "isPartOf": {
+        "@id": "https://sergiolandoni.com.ar/#website"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Patagonian wine"
+        },
+        {
+          "@type": "Thing",
+          "name": "Patagonian wine regions"
+        },
+        {
+          "@type": "Thing",
+          "name": "Cool-climate viticulture"
+        },
+        {
+          "@type": "Place",
+          "name": "Argentine Patagonia"
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#article"
+      },
+      "author": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      },
+      "publisher": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#image-hero"
+      },
+      "breadcrumb": {
+        "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#breadcrumb"
+      },
+      "datePublished": "2026-02-17",
+      "dateModified": "2026-08-01"
     },
     {
       "@type": "ImageObject",
-      "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#img-hero",
+      "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#image-hero",
       "url": "https://sergiolandoni.com.ar/assets/img/patagonia-el-hoyo-vinedo-montana.webp",
       "contentUrl": "https://sergiolandoni.com.ar/assets/img/patagonia-el-hoyo-vinedo-montana.webp",
       "width": 1600,
       "height": 900,
+      "caption": "Vineyards near the Andes in Argentine Patagonia",
+      "description": "Patagonian vineyard landscape illustrating the regional diversity of wine production in southern Argentina.",
       "inLanguage": "en-GB"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://sergiolandoni.com.ar/#image-portrait",
+      "url": "https://sergiolandoni.com.ar/assets/img/retrato-sergio-landoni.webp",
+      "contentUrl": "https://sergiolandoni.com.ar/assets/img/retrato-sergio-landoni.webp",
+      "width": 800,
+      "height": 800,
+      "caption": [
+        {
+          "@value": "Sergio Landoni, escritor de vinos, Sommelier de Territorio y Embajador del Vino Neuquino",
+          "@language": "es"
+        },
+        {
+          "@value": "Sergio Landoni, Patagonian wine writer, Territory-Based Sommelier and Official Neuquén Wine Ambassador",
+          "@language": "en"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sergiolandoni.com.ar/#sergio-landoni",
+      "name": "Sergio Landoni",
+      "alternateName": [
+        "Wine Writer",
+        "Patagonian Wine Writer",
+        "Official Neuquén Wine Ambassador",
+        "Neuquén Wine Ambassador",
+        "Embajador del Vino Neuquino",
+        "Territory-Based Sommelier",
+        "Sommelier de Territorio"
+      ],
+      "url": "https://sergiolandoni.com.ar/",
+      "jobTitle": [
+        {
+          "@value": "Escritor de vinos",
+          "@language": "es"
+        },
+        {
+          "@value": "Sommelier de Territorio",
+          "@language": "es"
+        },
+        {
+          "@value": "Embajador del Vino Neuquino",
+          "@language": "es"
+        },
+        {
+          "@value": "Wine Writer",
+          "@language": "en"
+        },
+        {
+          "@value": "Territory-Based Sommelier",
+          "@language": "en"
+        },
+        {
+          "@value": "Official Neuquén Wine Ambassador",
+          "@language": "en"
+        }
+      ],
+      "description": [
+        {
+          "@value": "Sergio Landoni es escritor de vinos, Sommelier de Territorio y primer Embajador oficial del Vino Neuquino. Vive en San Martín de los Andes y escribe sobre las personas, los viñedos y las regiones vitivinícolas de la Patagonia, con especial atención a Neuquén.",
+          "@language": "es"
+        },
+        {
+          "@value": "Sergio Landoni is a Patagonian wine writer, Territory-Based Sommelier and the first Official Neuquén Wine Ambassador. Based in San Martín de los Andes, he writes about the people, vineyards and wine regions shaping Patagonia, with particular attention to Neuquén.",
+          "@language": "en"
+        }
+      ],
+      "image": {
+        "@id": "https://sergiolandoni.com.ar/#image-portrait"
+      },
+      "email": "contacto@sergiolandoni.com.ar",
+      "telephone": "+54 9 294 466-8508",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Martín de los Andes",
+        "addressRegion": "Neuquén",
+        "addressCountry": "AR"
+      },
+      "award": [
+        {
+          "@value": "Primera distinción oficial de Embajador del Vino Neuquino otorgada por la Provincia del Neuquén, Argentina",
+          "@language": "es"
+        },
+        {
+          "@value": "First official Neuquén Wine Ambassador distinction awarded by the Province of Neuquén, Argentina",
+          "@language": "en"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/sergiolandoni.somm/",
+        "https://www.linkedin.com/in/sergio-landoni-sommelier/",
+        "https://www.youtube.com/@PatagonianLifestyle"
+      ],
+      "subjectOf": [
+        {
+          "@type": "Article",
+          "url": "https://www.vinetur.com/20260511100468/neuquen-crea-la-figura-del-embajador-del-vino-neuquino-y-apuesta-al-vino-como-identidad-territorial.html",
+          "name": "Neuquén crea la figura del Embajador del Vino Neuquino"
+        },
+        {
+          "@type": "Article",
+          "url": "https://winexpertsglobal.org/la-patagonia-que-se-cuenta-en-copa-una-masterclass-con-sergio-landoni/",
+          "name": "La Patagonia que se cuenta en copa"
+        }
+      ],
+      "affiliation": [
+        {
+          "@type": "OrganizationRole",
+          "roleName": [
+            {
+              "@value": "Embajador regional",
+              "@language": "es"
+            },
+            {
+              "@value": "Regional Ambassador",
+              "@language": "en"
+            }
+          ],
+          "memberOf": {
+            "@type": "Organization",
+            "name": "Winexperts Patagonia"
+          }
+        }
+      ],
+      "knowsAbout": [
+        "Patagonian wine",
+        "Patagonian wine regions",
+        "Neuquén wine",
+        "Río Negro wine",
+        "Chubut wine",
+        "Neuquén Pinot Noir",
+        "Cool-climate viticulture",
+        "Argentine wine regions",
+        "Wine writing",
+        "Wine communication",
+        "Regional wine identity",
+        "Wine and gastronomy",
+        "Wine tourism in Patagonia",
+        "Territory-based wine communication"
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -113,56 +455,126 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Blog",
+          "name": "Patagonia Journal",
           "item": "https://sergiolandoni.com.ar/en/blog.html"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Patagonian Wine Explained",
+          "name": "Patagonian Wine Explained from the Territory",
           "item": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html"
         }
       ]
     },
     {
-      "@type": "BlogPosting",
-      "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#blogposting",
+      "@type": "Article",
+      "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#article",
+      "url": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html",
       "mainEntityOfPage": {
         "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#webpage"
       },
       "headline": "Patagonian Wine Explained from the Territory",
-      "description": "A comprehensive guide to Argentine Patagonian wine. Explore how latitude, wind, and desert define the wines of Río Negro, Neuquén, and Chubut.",
-      "inLanguage": "en-GB",
+      "alternativeHeadline": "A Regional Perspective on the Wine Regions of Argentine Patagonia",
+      "description": "A regional perspective on Patagonian wine, explaining how geography, climate, water and local culture shape the wines of Neuquén, Río Negro and Chubut.",
       "datePublished": "2026-02-17",
-      "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
-      "publisher": { "@id": "https://sergiolandoni.com.ar/#business" },
-      "image": [
-        {
-          "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#img-hero"
-        }
-      ],
+      "dateModified": "2026-08-01",
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      },
+      "publisher": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      },
+      "image": {
+        "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#image-hero"
+      },
+      "thumbnailUrl": "https://sergiolandoni.com.ar/assets/img/patagonia-el-hoyo-vinedo-montana.webp",
       "articleSection": [
-  "Wine",
-  "Territory",
-  "Patagonia"
-],
+        "Patagonian wine",
+        "Wine regions",
+        "Cool-climate viticulture",
+        "Regional wine identity"
+      ],
       "keywords": [
         "Patagonian wine",
-        "Argentine Patagonia wines",
+        "Argentine Patagonia wine",
+        "Patagonian wine regions",
         "Neuquén wine",
         "Río Negro wine",
         "Chubut wine",
-        "Trevelin",
-        "cool climate wine",
+        "Trevelin wine",
+        "cool-climate viticulture",
         "Andean water",
         "desert viticulture",
-        "windbreaks",
+        "Patagonian windbreaks",
         "Pinot Noir Patagonia",
         "Malbec Patagonia",
-        "Semillón Alto Valle"
+        "Semillón Río Negro"
       ],
-      "isBasedOn": "https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html",
-      "url": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html"
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Patagonian wine"
+        },
+        {
+          "@type": "Thing",
+          "name": "Patagonian wine regions"
+        },
+        {
+          "@type": "Place",
+          "name": "Argentine Patagonia"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "Place",
+          "name": "Neuquén"
+        },
+        {
+          "@type": "Place",
+          "name": "Río Negro"
+        },
+        {
+          "@type": "Place",
+          "name": "Chubut"
+        },
+        {
+          "@type": "Place",
+          "name": "San Patricio del Chañar"
+        },
+        {
+          "@type": "Place",
+          "name": "Alto Valle del Río Negro"
+        },
+        {
+          "@type": "Place",
+          "name": "Trevelin"
+        },
+        {
+          "@type": "Thing",
+          "name": "Pinot Noir"
+        },
+        {
+          "@type": "Thing",
+          "name": "Malbec"
+        },
+        {
+          "@type": "Thing",
+          "name": "Merlot"
+        },
+        {
+          "@type": "Thing",
+          "name": "Chardonnay"
+        },
+        {
+          "@type": "Thing",
+          "name": "Sauvignon Blanc"
+        },
+        {
+          "@type": "Thing",
+          "name": "Semillón"
+        }
+      ]
     }
   ]
 }
@@ -460,185 +872,264 @@
       <span class="tag">Wine regions</span>
     </div>
 
-    <h1>Patagonian Wine, Explained from the Territory</h1>
+  <h1>Patagonian Wine, Explained from the Territory</h1>
 
-    <p class="kicker">
-      A real perspective on Patagonia’s wine regions, from someone who lives and works there
+<p class="kicker">
+  A regional perspective on Patagonia’s wine regions, written from within the region
+</p>
+
+<p class="meta">
+  <strong>By Sergio Landoni</strong> ·
+  Published:
+  <time datetime="2026-02-17">February 17, 2026</time> ·
+  Updated:
+  <time datetime="2026-08-01">August 1, 2026</time> ·
+  Spanish version:
+  <a href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html">
+    Vino patagónico, regiones y paisajes
+  </a>
+</p>
+
+<div class="hero" aria-label="Hero image">
+  <img
+    src="https://sergiolandoni.com.ar/assets/img/patagonia-el-hoyo-vinedo-montana.webp"
+    alt="Vineyards near the Andes in Argentine Patagonia"
+    width="1600"
+    height="900"
+    loading="eager"
+    decoding="async"
+    fetchpriority="high"
+  />
+</div>
+
+</header>
+
+<main>
+  <article>
+
+    <p class="lede">
+      Patagonia is often discussed as a single wine region. In reality, it is a
+      vast collection of landscapes, climates and wine-growing histories.
     </p>
 
-    <p class="meta">
-      <strong>By Sergio Landoni</strong> ·
-      Published:
-      <time datetime="2026-02-17">February 17, 2026</time>
-      · Spanish version:
-      <a href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html">
-        Vino patagónico, regiones y paisajes
-      </a>
+    <p>
+      Neuquén, Río Negro and Chubut share a geographical name, but their vineyards
+      have developed under different conditions and followed very different paths.
+      Understanding those distinctions is essential to understanding the wines.
     </p>
 
-    <div class="hero" aria-label="Hero image">
+    <p>
+      I live and work in Patagonia, visit its vineyards and taste these wines where
+      they are made. That proximity makes it possible to read them within the
+      landscapes, communities and decisions that shaped them.
+    </p>
+
+    <h2>Patagonia on the Global Wine Map</h2>
+
+    <p>
+      Patagonia belongs broadly to the world of cool-climate wine, but it does not
+      behave like Burgundy, coastal California or other regions moderated by
+      maritime influence.
+    </p>
+
+    <p>
+      Much of its viticulture develops in dry conditions, sustained by water
+      descending from the Andes. Latitude, wind, intense sunlight and marked
+      differences between daytime and night-time temperatures influence ripening
+      across the region.
+    </p>
+
+    <p>
+      These conditions can produce wines with moderate alcohol, sustained acidity
+      and clearly defined fruit. The precise result depends on the vineyard and the
+      decisions made there, rather than on a single Patagonian formula.
+    </p>
+
+    <h2>Distinct Wine Regions</h2>
+
+    <p>
+      Patagonia is one geographical name, not one wine region. Its principal
+      wine-producing provinces contribute different histories, scales and
+      interpretations of place.
+    </p>
+
+    <h3>Neuquén</h3>
+
+    <p>
+      Modern viticulture took shape in Neuquén during the late 1990s and early
+      2000s, particularly in San Patricio del Chañar. Vineyards were established
+      with irrigation, orientation and canopy management planned for the dry
+      climate and persistent wind.
+    </p>
+
+    <p>
+      Since then, the province’s wine geography has expanded towards river
+      corridors, the central plateau, northern valleys and the Andean foothills.
+      These areas do not produce a single Neuquén style.
+    </p>
+
+    <p>
+      Pinot Noir can show precise red fruit, fine tannins and sustained acidity.
+      Malbec often develops a firmer, less opulent profile, while Cabernet Franc
+      combines ripe fruit with herbal and spicy notes. Chardonnay and Sauvignon
+      Blanc also perform consistently across several parts of the province.
+    </p>
+
+    <div class="hero" aria-label="Patagonian vineyards with windbreaks">
       <img
-        src="https://sergiolandoni.com.ar/assets/img/patagonia-el-hoyo-vinedo-montana.webp"
-        alt="Vineyards in Argentine Patagonia near the Andes, mountain landscape and desert light"
+        src="https://sergiolandoni.com.ar/assets/img/patagonia-alamos-cortinas-rompeviento.webp"
+        alt="Vine rows protected by poplar windbreaks in Patagonian vineyards"
         width="1600"
         height="900"
-        loading="eager"
+        loading="lazy"
         decoding="async"
-        fetchpriority="high"
       />
     </div>
-  </header>
 
-  <main>
-    <article>
-     <p class="lede">
-Patagonian wines are often explained through climate, latitude or grape varieties.
-But none of those truly explain what defines them.
-</p>
+    <p class="note">
+      Poplar windbreaks protect vines from persistent winds and have become a
+      familiar part of the Patagonian vineyard landscape.
+    </p>
 
-<p>
-To understand these wines, you need to start somewhere else: the place itself.
-Not as a concept, but as a lived experience.
-</p>
+    <h3>Río Negro</h3>
 
-<p>
-I work in Patagonia, I walk these vineyards, I taste these wines where they are made.
-And here, wine is not something you interpret from a distance — it is something you read directly from the landscape.
-</p>
+    <p>
+      Río Negro provides the historical foundation of Patagonian wine. Vines have
+      been cultivated for more than a century across the Upper, Middle and Lower
+      Valleys, supported by irrigation systems connected to the region’s rivers.
+    </p>
 
-      <h2>Patagonia in the global wine map</h2>
-      <p>
-        Patagonia belongs to the world of cool climate wines but does not behave like maritime regions such as Burgundy or coastal California.
-        Its personality comes from desert conditions moderated by latitude and Andean water.
-      </p>
-      <p>
-        Ripeness comes without heaviness, alcohol remains moderate, and freshness appears naturally rather than by design.
-        These wines do not seek power, they seek precision.
-      </p>
+    <p>
+      Old vineyards of Semillón, Malbec and other varieties preserve an important
+      part of that history. Merlot can achieve balance and fine structure, Malbec
+      often becomes aromatic and medium-bodied, while the white wines combine
+      texture, acidity and length.
+    </p>
 
-      <h2>The regions</h2>
-      <p>
-Patagonia is not a single wine region.
-It is a set of territories that share conditions, but express them differently.
-</p>
+    <p>
+      Río Negro’s importance lies not only in vineyard age. Its agricultural
+      culture, established wineries and accumulated local knowledge provide
+      continuity within Patagonia’s changing wine map.
+    </p>
 
-      <h3>Neuquén</h3>
-      <p>
-        Modern viticulture expanded here in the late 1990s and early 2000s, particularly in San Patricio del Chañar.
-        Vineyards were planted with planning from the beginning, orientation, irrigation and canopy management designed for the wind.
-      </p>
-      <p>
-In Neuquén, viticulture is not inherited — it is designed.
-Everything responds to wind, water and light.
-</p>
-      <p>
-        The wines show clarity and consistency. Pinot Noir develops red fruit and fine texture, Malbec becomes linear rather than opulent,
-        Cabernet Franc expresses herbs instead of harsh vegetal notes.
-      </p>
+    <h3>Chubut</h3>
 
-      <div class="hero" aria-label="Patagonian vineyards with windbreaks">
-        <img
-          src="https://sergiolandoni.com.ar/assets/img/patagonia-alamos-cortinas-rompeviento.webp"
-          alt="Vine rows protected by poplar windbreaks in Patagonian vineyards"
-          width="1600"
-          height="900"
-          loading="lazy"
-          decoding="async"
-        />
-      </div>
-      <p class="note">Poplar windbreaks are part of Patagonian viticulture. They protect shoots and shape the landscape.</p>
+    <p>
+      Farther south, Chubut has extended Argentine viticulture into areas with
+      shorter growing seasons, severe frost pressure and conditions close to the
+      limits of commercial wine production.
+    </p>
 
-      <h3>Río Negro</h3>
-      <p>
-        The origin of Patagonian wine lies in the Alto Valle del Río Negro. Vines were planted more than a century ago along river oases and many still remain.
-      </p>
-      <p>
-        Río Negro represents the heritage of Patagonian wine, where old vines of Semillón and Malbec help explain the meaning of elegance.
-        Merlot finds balance, Malbec becomes aromatic and medium-bodied, whites emphasize tension and length rather than volume.
-      </p>
+    <p>
+      Around Trevelin, Sarmiento and other developing areas, careful site selection
+      and precise vineyard management are essential. Production remains limited,
+      but its wines have added another distinct identity to Patagonia.
+    </p>
 
-      <h3>Chubut</h3>
-      <p>
-        Further south, near Trevelin, viticulture becomes frontier. Frost risk, short seasons and slow ripening shape wines of delicacy and precision.
-      </p>
-      <p>
-        Production remains small but increasingly significant. These vineyards show how far wine can go when site selection and patience replace intervention.
-      </p>
+    <div class="hero" aria-label="Frost conditions in Trevelin vineyards">
+      <img
+        src="https://sergiolandoni.com.ar/assets/img/patagonia-trevelin-uvas-hielo.webp"
+        alt="Grapes covered in ice during frost protection in Trevelin, Chubut"
+        width="1600"
+        height="900"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
 
-      <div class="hero" aria-label="Frost conditions in Trevelin vineyards">
-        <img
-          src="https://sergiolandoni.com.ar/assets/img/patagonia-trevelin-uvas-hielo.webp"
-          alt="Grapes covered in ice during frost protection in Trevelin, Chubut"
-          width="1600"
-          height="900"
-          loading="lazy"
-          decoding="async"
-        />
-      </div>
-      <p class="note">Frontier viticulture in Trevelin: frost control allows vines to survive extreme cold nights.</p>
+    <p class="note">
+      Frost management is one of the defining challenges of viticulture around
+      Trevelin, in western Chubut.
+    </p>
 
-      <h2>Varieties and style</h2>
-      <p>Patagonia does not depend on a single grape. Varieties adapt to the environment.</p>
-      <p>
-        Pinot Noir finds natural balance and lift,<br />
-        Malbec moves away from warm-region richness toward floral structure,<br />
-        Merlot becomes poised and proportionate,<br />
-        Chardonnay and Sauvignon Blanc prioritize texture and freshness over tropical fruit.
-      </p>
-      <p>
-        Across all of them appears a shared identity: moderate alcohol, clear acidity, elegant structure.
-      </p>
+    <h2>Varieties and Wine Styles</h2>
 
-      <h2>Landscape and culture</h2>
-      <p>
-        Wine here cannot be separated from territory. Agriculture exists because Andean rivers cross the desert.
-        Towns grew around irrigation canals, and wineries grew with them.
-      </p>
-      <p>
-        This is not inherited tradition, it is constructed culture. People arrived, planted vines, and both changed together.
-        The identity of Patagonian wine lives in that relationship.
-      </p>
+    <p>
+      Patagonia does not depend on a single grape variety. Pinot Noir, Malbec,
+      Merlot, Cabernet Franc, Chardonnay, Sauvignon Blanc and Semillón respond
+      differently across its regions.
+    </p>
 
-    <h2>Meaning</h2>
-<p>
-Patagonia does not try to imitate any other wine region.
-It defines itself through its limits.
-</p>
+    <p>
+      Pinot Noir often finds natural balance and fine texture. Malbec moves away
+      from the broad richness associated with warmer areas and can develop floral
+      aromas, firmer structure and sustained acidity. Merlot remains particularly
+      relevant in Río Negro, while Chardonnay and Sauvignon Blanc frequently
+      combine freshness with texture rather than overt tropical fruit.
+    </p>
 
-<p>
-These wines are shaped less by intervention and more by what the landscape allows.
-They show proportion instead of excess, place instead of style.
-</p>
+    <p>
+      These characteristics should not be treated as a fixed regional style.
+      Vineyard location, water, altitude, soils, growing season and winemaking
+      decisions continue to produce meaningful differences within Patagonia.
+    </p>
 
-<p>
-In Patagonia, you do not try to dominate nature — you learn how far it lets you go.
-</p>
+    <h2>Landscape, Agriculture and Culture</h2>
 
-<p>
-And that is why these wines matter:
-not because of what they resemble,
-but because of what they reveal.
-</p>
+    <p>
+      Wine in Patagonia cannot be separated from the agricultural systems that
+      made cultivation possible. Rivers descending from the Andes cross otherwise
+      dry landscapes, feeding irrigation canals, orchards, vineyards and towns.
+    </p>
 
-<p>
-If you want to go deeper into this territory, you can explore the six specific wine regions of Neuquén:
-<a href="https://sergiolandoni.com.ar/en/neuquen-wine-regions-patagonia.html">
-Neuquén Wine Regions explained
-</a>.
-</p>
+    <p>
+      Río Negro carries the continuity of an established wine culture. Neuquén
+      shows how a modern wine region can expand across contrasting landscapes.
+      Chubut reflects the challenges and possibilities of viticulture farther
+      south.
+    </p>
 
-<p>
-<strong>About the author:</strong> Sergio Landoni is a <em>territory-based sommelier in Patagonia</em> based in San Martín de los Andes, Patagonia,
-focused on communicating wine through place, people and lived experience.
-</p>
-      <hr class="divider" />
+    <p>
+      Regional gastronomy adds another layer of context. Patagonian lamb, mountain
+      trout, smoked products, local cheeses and other foods connect wine to the
+      places where it is produced and served.
+    </p>
 
-      <p class="note">
-        Author: Sergio Landoni, Sommelier de Territorio. Spanish version:
-        <a href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html">Vino patagónico, regiones y paisajes</a>.
-      </p>
-    </article>
-  </main>
+    <h2>A Regional Perspective</h2>
+
+    <p>
+      Patagonia does not need to resemble another wine-producing region. Its
+      interest lies in the differences between its own valleys, plateaus, river
+      corridors and mountain landscapes.
+    </p>
+
+    <p>
+      These wines reflect what each place permits and what growers and winemakers
+      have learned to do within those conditions. Their identity comes from that
+      relationship, not from a single variety or stylistic formula.
+    </p>
+
+    <p>
+      Looking at Patagonia region by region offers a clearer view of its wines and
+      of the people gradually defining its contemporary wine landscape.
+    </p>
+
+    <p>
+      For a closer examination of Neuquén, explore:
+      <a href="https://sergiolandoni.com.ar/en/neuquen-wine-regions-patagonia.html">
+        Neuquén Wine Regions in Argentine Patagonia
+      </a>.
+    </p>
+
+    <p>
+      <strong>About the author:</strong>
+      Sergio Landoni is a Wine Writer, Territory-Based Sommelier and the first
+      Official Neuquén Wine Ambassador. Based in San Martín de los Andes, he writes
+      about the people, vineyards and wine regions shaping Patagonia.
+    </p>
+
+    <hr class="divider" />
+
+    <p class="note">
+      Author: Sergio Landoni · Wine Writer · Territory-Based Sommelier · Official
+      Neuquén Wine Ambassador. Spanish version:
+      <a href="https://sergiolandoni.com.ar/vino-patagonico-regiones-y-paisajes.html">
+        Vino patagónico, regiones y paisajes
+      </a>.
+    </p>
+
+  </article>
+</main>
 
 <footer>
   <small>
@@ -646,12 +1137,13 @@ focused on communicating wine through place, people and lived experience.
     <a href="https://sergiolandoni.com.ar/en/">
       Sergio Landoni
     </a>
-    · Sommelier de Territorio · Argentine Patagonia
+    · Wine Writer · Territory-Based Sommelier · Patagonia Argentina
   </small>
 </footer>
 
 <script>
   document.getElementById('y').textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
