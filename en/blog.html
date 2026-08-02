@@ -1,100 +1,294 @@
- <!doctype html>
+<!doctype html>
 <html lang="en-GB">
 <head>
+
   <!-- Google Tag Manager -->
   <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      w[l].push({
+        'gtm.start':new Date().getTime(),
+        event:'gtm.js'
+      });
+
+      var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),
+          dl=l!='dataLayer'?'&l='+l:'';
+
+      j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KBXTSQSK');
   </script>
   <!-- End Google Tag Manager -->
 
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="format-detection" content="telephone=no" />
 
-  <title>Patagonian Wine Blog | Sergio Landoni · Territory-Based Sommelier</title>
-  <meta name="description" content="English-language articles by Sergio Landoni on Patagonian wine, Neuquén wine regions, landscape, climate and identity, written from within Patagonia Argentina." />
-  <meta name="author" content="Sergio Landoni" />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-  <meta name="theme-color" content="#0f766e" />
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  />
+
+  <meta
+    name="format-detection"
+    content="telephone=no"
+  />
+
+  <title>Patagonian Wine Journal | Sergio Landoni</title>
+
+  <meta
+    name="description"
+    content="Original reporting and regional insight on Patagonian wine, Neuquén wine regions, vineyards, landscape and identity, written from within Patagonia."
+  />
+
+  <meta
+    name="author"
+    content="Sergio Landoni"
+  />
+
+  <meta
+    name="robots"
+    content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+  />
+
+  <meta
+    name="theme-color"
+    content="#0f766e"
+  />
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://sergiolandoni.com.ar/en/blog.html" />
-  <link rel="preload" as="image" href="/assets/img/racimos-uvas.webp" fetchpriority="high" />
+  <link
+    rel="canonical"
+    href="https://sergiolandoni.com.ar/en/blog.html"
+  />
+
+  <!-- Hero image preload -->
+  <link
+    rel="preload"
+    as="image"
+    href="/assets/img/racimos-uvas.webp"
+    type="image/webp"
+    fetchpriority="high"
+  />
 
   <!-- hreflang -->
-  <link rel="alternate" hreflang="en-GB" href="https://sergiolandoni.com.ar/en/blog.html" />
-  <link rel="alternate" hreflang="es-AR" href="https://sergiolandoni.com.ar/blog.html" />
-  <link rel="alternate" hreflang="x-default" href="https://sergiolandoni.com.ar/en/blog.html" />
+  <link
+    rel="alternate"
+    hreflang="en-GB"
+    href="https://sergiolandoni.com.ar/en/blog.html"
+  />
+
+  <link
+    rel="alternate"
+    hreflang="es-AR"
+    href="https://sergiolandoni.com.ar/blog.html"
+  />
+
+  <link
+    rel="alternate"
+    hreflang="x-default"
+    href="https://sergiolandoni.com.ar/en/blog.html"
+  />
 
   <!-- Icons -->
-  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
+  <link
+    rel="icon"
+    type="image/x-icon"
+    href="/assets/img/favicon.ico"
+  />
+
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/assets/img/apple-touch-icon.png"
+  />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Sergio Landoni · Territory-Based Sommelier" />
-  <meta property="og:title" content="Patagonian Wine Blog | Sergio Landoni" />
-  <meta property="og:description" content="English-language articles on Patagonian wine, Neuquén wine regions and cool-climate identity from within Patagonia Argentina." />
-  <meta property="og:url" content="https://sergiolandoni.com.ar/en/blog.html" />
-  <meta property="og:locale" content="en_GB" />
-  <meta property="og:locale:alternate" content="es_AR" />
-  <meta property="og:image" content="https://sergiolandoni.com.ar/assets/img/racimos-uvas.webp" />
-  <meta property="og:image:secure_url" content="https://sergiolandoni.com.ar/assets/img/racimos-uvas.webp" />
-  <meta property="og:image:alt" content="Grapes in a Patagonian vineyard in Argentina" />
-  <meta property="og:image:type" content="image/webp" />
-  <meta property="og:image:width" content="1600" />
-  <meta property="og:image:height" content="700" />
+  <meta
+    property="og:type"
+    content="website"
+  />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Patagonian Wine Blog | Sergio Landoni" />
-  <meta name="twitter:description" content="English-language articles on Patagonian wine, Neuquén wine regions and cool-climate identity from within Patagonia Argentina." />
-  <meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/racimos-uvas.webp" />
-  <meta name="twitter:image:alt" content="Grapes in a Patagonian vineyard in Argentina" />
+  <meta
+    property="og:site_name"
+    content="Sergio Landoni | Patagonian Wine Writer"
+  />
 
- <script type="application/ld+json">
+  <meta
+    property="og:title"
+    content="Patagonian Wine Journal | Sergio Landoni"
+  />
+
+  <meta
+    property="og:description"
+    content="Original reporting and regional insight on Patagonian wine, Neuquén wine regions, vineyards, landscape and identity."
+  />
+
+  <meta
+    property="og:url"
+    content="https://sergiolandoni.com.ar/en/blog.html"
+  />
+
+  <meta
+    property="og:locale"
+    content="en_GB"
+  />
+
+  <meta
+    property="og:locale:alternate"
+    content="es_AR"
+  />
+
+  <meta
+    property="og:image"
+    content="https://sergiolandoni.com.ar/assets/img/racimos-uvas.webp"
+  />
+
+  <meta
+    property="og:image:secure_url"
+    content="https://sergiolandoni.com.ar/assets/img/racimos-uvas.webp"
+  />
+
+  <meta
+    property="og:image:alt"
+    content="Grapes in a Patagonian vineyard in Argentina"
+  />
+
+  <meta
+    property="og:image:type"
+    content="image/webp"
+  />
+
+  <meta
+    property="og:image:width"
+    content="1600"
+  />
+
+  <meta
+    property="og:image:height"
+    content="700"
+  />
+
+  <!-- Twitter / X -->
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
+
+  <meta
+    name="twitter:title"
+    content="Patagonian Wine Journal | Sergio Landoni"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Original reporting and regional insight on Patagonian wine, Neuquén wine regions, vineyards, landscape and identity."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://sergiolandoni.com.ar/assets/img/racimos-uvas.webp"
+  />
+
+  <meta
+    name="twitter:image:alt"
+    content="Grapes in a Patagonian vineyard in Argentina"
+  />
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": "https://sergiolandoni.com.ar/#organization",
+      "name": "Sergio Landoni | Patagonian Wine Writer",
+      "alternateName": "Sergio Landoni Wine Communication",
+      "url": "https://sergiolandoni.com.ar/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://sergiolandoni.com.ar/#logo",
+        "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg",
+        "contentUrl": "https://sergiolandoni.com.ar/assets/img/logo.jpg",
+        "width": 512,
+        "height": 512
+      },
+      "founder": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      },
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "San Martín de los Andes",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Martín de los Andes",
+          "addressRegion": "Neuquén",
+          "addressCountry": "AR"
+        }
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Neuquén"
+        },
+        {
+          "@type": "Place",
+          "name": "Patagonia, Argentina"
+        },
+        {
+          "@type": "Country",
+          "name": "Argentina"
+        }
+      ]
+    },
+    {
       "@type": "WebSite",
       "@id": "https://sergiolandoni.com.ar/#website",
       "url": "https://sergiolandoni.com.ar/",
-      "name": "Sergio Landoni | Sommelier de Territorio",
-      "description": "Official website of Sergio Landoni, Sommelier de Territorio in Argentine Patagonia, focused on Neuquén wine, Patagonian wine, territory, gastronomy and wine communication.",
-      "inLanguage": "en-GB",
+      "name": "Sergio Landoni | Patagonian Wine Writer",
+      "description": "Official website of Sergio Landoni, Patagonian wine writer, Territory-Based Sommelier and Neuquén Wine Ambassador, focused on the people, vineyards and wine regions shaping Patagonia.",
+      "inLanguage": [
+        "es-AR",
+        "en-GB"
+      ],
       "publisher": {
-        "@id": "https://sergiolandoni.com.ar/#person"
+        "@id": "https://sergiolandoni.com.ar/#organization"
       }
     },
     {
       "@type": "Person",
-      "@id": "https://sergiolandoni.com.ar/#person",
+      "@id": "https://sergiolandoni.com.ar/#sergio-landoni",
       "name": "Sergio Landoni",
       "alternateName": [
+        "Patagonian Wine Writer",
+        "Wine Writer",
+        "Neuquén Wine Ambassador",
+        "Official Neuquén Wine Ambassador",
+        "Territory-Based Sommelier",
         "Sommelier de Territorio",
+        "Embajador del Vino Neuquino"
+      ],
+      "url": "https://sergiolandoni.com.ar/",
+      "jobTitle": [
+        "Patagonian Wine Writer",
+        "Neuquén Wine Ambassador",
         "Territory-Based Sommelier"
       ],
-      "jobTitle": [
-        "Sommelier de Territorio",
-        "Territory-Based Sommelier",
-        "Wine communicator",
-        "Specialist in Neuquén and Patagonian wines"
-      ],
-      "description": "Sergio Landoni is a territory-based sommelier based in San Martín de los Andes, Neuquén, Argentine Patagonia. His work focuses on Neuquén wine, Patagonian wine, territory, gastronomy and wine communication.",
-      "url": "https://sergiolandoni.com.ar/",
+      "description": "Sergio Landoni is a Patagonian wine writer, Territory-Based Sommelier and the first Official Neuquén Wine Ambassador. Based in San Martín de los Andes, he writes about the people, vineyards and wine regions shaping Patagonia, with particular attention to Neuquén.",
       "image": {
         "@type": "ImageObject",
         "@id": "https://sergiolandoni.com.ar/#image-portrait",
-        "url": "https://sergiolandoni.com.ar/retrato.jpg"
+        "url": "https://sergiolandoni.com.ar/assets/img/retrato-sergio-landoni.webp",
+        "contentUrl": "https://sergiolandoni.com.ar/assets/img/retrato-sergio-landoni.webp",
+        "width": 800,
+        "height": 800
+      },
+      "worksFor": {
+        "@id": "https://sergiolandoni.com.ar/#organization"
       },
       "sameAs": [
         "https://www.instagram.com/sergiolandoni.somm/",
-        "https://www.linkedin.com/in/sergio-landoni-sommelier/"
+        "https://www.linkedin.com/in/sergio-landoni-sommelier/",
+        "https://www.youtube.com/@PatagonianLifestyle"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -104,34 +298,32 @@
       },
       "knowsAbout": [
         "Patagonian wine",
-        "Neuquén wine region",
-        "cool-climate wines",
-        "wine communication",
-        "territory-based wine storytelling",
-        "Patagonia Argentina",
-        "wine tourism",
-        "Patagonian gastronomy"
+        "Patagonian wine regions",
+        "Neuquén wine",
+        "Río Negro wine",
+        "Chubut wine",
+        "Neuquén Pinot Noir",
+        "Cool-climate viticulture",
+        "Argentine wine regions",
+        "Wine writing",
+        "Wine communication",
+        "Regional wine identity",
+        "Wine and gastronomy",
+        "Wine tourism in Patagonia",
+        "Territory-based wine communication"
       ]
     },
     {
-      "@type": "WebPage",
-      "@id": "https://sergiolandoni.com.ar/en/blog.html#webpage",
-      "url": "https://sergiolandoni.com.ar/en/blog.html",
-      "name": "Patagonian Wine Blog | Sergio Landoni",
-      "description": "English-language articles by Sergio Landoni on Patagonian wine, Neuquén wine regions, landscape and identity.",
+      "@type": "ImageObject",
+      "@id": "https://sergiolandoni.com.ar/en/blog.html#primaryimage",
+      "url": "https://sergiolandoni.com.ar/assets/img/racimos-uvas.webp",
+      "contentUrl": "https://sergiolandoni.com.ar/assets/img/racimos-uvas.webp",
+      "width": 1600,
+      "height": 700,
       "inLanguage": "en-GB",
-      "isPartOf": {
-        "@id": "https://sergiolandoni.com.ar/#website"
-      },
-      "about": {
-        "@id": "https://sergiolandoni.com.ar/#person"
-      },
-      "mainEntity": {
-        "@id": "https://sergiolandoni.com.ar/en/blog.html#blog"
-      },
-      "breadcrumb": {
-        "@id": "https://sergiolandoni.com.ar/en/blog.html#breadcrumb"
-      }
+      "caption": "Grapes in a Patagonian vineyard in Argentina.",
+      "description": "Main image of the Patagonian Wine Journal by Sergio Landoni.",
+      "representativeOfPage": true
     },
     {
       "@type": "BreadcrumbList",
@@ -146,91 +338,211 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Blog",
+          "name": "Journal",
           "item": "https://sergiolandoni.com.ar/en/blog.html"
         }
       ]
     },
     {
-      "@type": "Blog",
-      "@id": "https://sergiolandoni.com.ar/en/blog.html#blog",
-      "name": "Patagonian Wine Blog",
+      "@type": "CollectionPage",
+      "@id": "https://sergiolandoni.com.ar/en/blog.html#webpage",
       "url": "https://sergiolandoni.com.ar/en/blog.html",
+      "name": "Patagonian Wine Journal | Sergio Landoni",
+      "headline": "Patagonian Wine Journal",
+      "description": "Original reporting and regional insight on Patagonian wine, Neuquén wine regions, vineyards, landscape and identity, written from within Patagonia.",
       "inLanguage": "en-GB",
-      "description": "English-language articles on Patagonian wine, Neuquén wine regions and territory-driven wine identity.",
+      "isPartOf": {
+        "@id": "https://sergiolandoni.com.ar/#website"
+      },
       "author": {
-        "@id": "https://sergiolandoni.com.ar/#person"
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
       },
       "publisher": {
-        "@id": "https://sergiolandoni.com.ar/#person"
+        "@id": "https://sergiolandoni.com.ar/#organization"
       },
-      "mainEntityOfPage": {
-        "@id": "https://sergiolandoni.com.ar/en/blog.html#webpage"
+      "primaryImageOfPage": {
+        "@id": "https://sergiolandoni.com.ar/en/blog.html#primaryimage"
       },
-      "blogPost": [
+      "breadcrumb": {
+        "@id": "https://sergiolandoni.com.ar/en/blog.html#breadcrumb"
+      },
+      "about": [
         {
-          "@type": "BlogPosting",
-          "@id": "https://sergiolandoni.com.ar/en/neuquen-pinot-noir.html#article",
-          "url": "https://sergiolandoni.com.ar/en/neuquen-pinot-noir.html",
-          "headline": "Neuquén's Pinot Noir: Patagonia's Emerging Expression of Elegance",
-          "datePublished": "2026-06-30",
-          "dateModified": "2026-06-30",
-          "description": "An in-depth exploration of Neuquén Pinot Noir, examining climate, terroir, gastronomy and the evolving wine landscapes of northern Patagonia.",
-          "image": "https://sergiolandoni.com.ar/assets/img/neuquen-pinot-noir-patagonia-vineyards.webp",
-          "author": {
-            "@id": "https://sergiolandoni.com.ar/#person"
+          "@type": "Thing",
+          "name": "Patagonian wine"
+        },
+        {
+          "@type": "Thing",
+          "name": "Patagonian wine regions"
+        },
+        {
+          "@type": "Thing",
+          "name": "Neuquén wine"
+        },
+        {
+          "@type": "Thing",
+          "name": "Wine writing"
+        },
+        {
+          "@type": "Thing",
+          "name": "Territory-based wine communication"
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://sergiolandoni.com.ar/en/blog.html#journal"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://sergiolandoni.com.ar/en/blog.html#journal",
+      "name": "Patagonian Wine Journal",
+      "description": "A curated collection of original reporting, regional guides and essays on Patagonian wine.",
+      "numberOfItems": 5,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://sergiolandoni.com.ar/en/neuquen-pinot-noir.html#article"
           }
         },
         {
-          "@type": "BlogPosting",
-          "@id": "https://sergiolandoni.com.ar/en/patagonia-wine-stories-territory-based-sommelier.html#article",
-          "url": "https://sergiolandoni.com.ar/en/patagonia-wine-stories-territory-based-sommelier.html",
-          "headline": "Patagonia: Where I Learned That Wine Also Tells Stories",
-          "datePublished": "2026-05-08",
-          "description": "A personal reflection on Patagonia wine, landscape, gastronomy and the idea of understanding wine through place.",
-          "image": "https://sergiolandoni.com.ar/assets/img/racimos-uvas.webp",
-          "author": {
-            "@id": "https://sergiolandoni.com.ar/#person"
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://sergiolandoni.com.ar/en/patagonia-wine-stories-territory-based-sommelier.html#article"
           }
         },
         {
-          "@type": "BlogPosting",
-          "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#article",
-          "url": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html",
-          "headline": "Patagonian Wine Regions: Landscape, Climate and Identity in Southern Argentina",
-          "datePublished": "2026-02-20",
-          "description": "An overview of the Patagonian wine landscape, exploring geography, climate, emerging regions and the people shaping wine in southern Argentina.",
-          "image": "https://sergiolandoni.com.ar/assets/img/racimos-uvas.webp",
-          "author": {
-            "@id": "https://sergiolandoni.com.ar/#person"
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#article"
           }
         },
         {
-          "@type": "BlogPosting",
-          "@id": "https://sergiolandoni.com.ar/en/neuquen-wine-regions-patagonia.html#article",
-          "url": "https://sergiolandoni.com.ar/en/neuquen-wine-regions-patagonia.html",
-          "headline": "Neuquén Wine Regions: A Guide to Patagonia’s Emerging Wine Territory",
-          "datePublished": "2026-01-29",
-          "description": "A clear guide to the six wine regions of Neuquén and the landscapes shaping Patagonia’s emerging wine identity.",
-          "image": "https://sergiolandoni.com.ar/assets/img/guia-vino-neuquino.webp",
-          "author": {
-            "@id": "https://sergiolandoni.com.ar/#person"
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://sergiolandoni.com.ar/en/neuquen-wine-regions-patagonia.html#article"
           }
         },
         {
-          "@type": "BlogPosting",
-          "@id": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html#article",
-          "url": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html",
-          "headline": "Territory-Based Sommelier: Telling the Story of Wine from its Source in Patagonia",
-          "datePublished": "2026-01-23",
-          "dateModified": "2026-04-04",
-          "description": "A way of telling the story of wine from its source, connecting landscape, producers, gastronomy and culture in Patagonia.",
-          "image": "https://sergiolandoni.com.ar/assets/img/sergio-sillon.jpeg",
-          "author": {
-            "@id": "https://sergiolandoni.com.ar/#person"
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html#article"
           }
         }
       ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://sergiolandoni.com.ar/en/neuquen-pinot-noir.html#article",
+      "url": "https://sergiolandoni.com.ar/en/neuquen-pinot-noir.html",
+      "headline": "Neuquén's Pinot Noir: Patagonia's Emerging Expression of Elegance",
+      "description": "An in-depth exploration of Neuquén Pinot Noir, examining climate, terroir, gastronomy and the evolving wine landscapes of northern Patagonia.",
+      "datePublished": "2026-06-30T09:00:00-03:00",
+      "dateModified": "2026-06-30T09:00:00-03:00",
+      "inLanguage": "en-GB",
+      "mainEntityOfPage": "https://sergiolandoni.com.ar/en/neuquen-pinot-noir.html",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://sergiolandoni.com.ar/assets/img/neuquen-pinot-noir-patagonia-vineyards.webp",
+        "contentUrl": "https://sergiolandoni.com.ar/assets/img/neuquen-pinot-noir-patagonia-vineyards.webp"
+      },
+      "author": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      },
+      "publisher": {
+        "@id": "https://sergiolandoni.com.ar/#organization"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://sergiolandoni.com.ar/en/patagonia-wine-stories-territory-based-sommelier.html#article",
+      "url": "https://sergiolandoni.com.ar/en/patagonia-wine-stories-territory-based-sommelier.html",
+      "headline": "Patagonia: Where I Learned That Wine Also Tells Stories",
+      "description": "A personal reflection on Patagonian wine, landscape, gastronomy and the idea of understanding wine through place.",
+      "datePublished": "2026-05-08T09:00:00-03:00",
+      "inLanguage": "en-GB",
+      "mainEntityOfPage": "https://sergiolandoni.com.ar/en/patagonia-wine-stories-territory-based-sommelier.html",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://sergiolandoni.com.ar/assets/img/racimos-uvas.webp",
+        "contentUrl": "https://sergiolandoni.com.ar/assets/img/racimos-uvas.webp"
+      },
+      "author": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      },
+      "publisher": {
+        "@id": "https://sergiolandoni.com.ar/#organization"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html#article",
+      "url": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html",
+      "headline": "Patagonian Wine Regions: Landscape, Climate and Identity in Southern Argentina",
+      "description": "An overview of the Patagonian wine landscape, exploring geography, climate, emerging regions and the people shaping wine in southern Argentina.",
+      "datePublished": "2026-02-20T09:00:00-03:00",
+      "inLanguage": "en-GB",
+      "mainEntityOfPage": "https://sergiolandoni.com.ar/en/patagonian-wine-regions-landscape-argentina.html",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://sergiolandoni.com.ar/assets/img/racimos-uvas.webp",
+        "contentUrl": "https://sergiolandoni.com.ar/assets/img/racimos-uvas.webp"
+      },
+      "author": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      },
+      "publisher": {
+        "@id": "https://sergiolandoni.com.ar/#organization"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://sergiolandoni.com.ar/en/neuquen-wine-regions-patagonia.html#article",
+      "url": "https://sergiolandoni.com.ar/en/neuquen-wine-regions-patagonia.html",
+      "headline": "Neuquén Wine Regions: A Guide to Patagonia’s Emerging Wine Territory",
+      "description": "A clear guide to the six wine regions of Neuquén and the landscapes shaping Patagonia’s emerging wine identity.",
+      "datePublished": "2026-01-29T09:00:00-03:00",
+      "inLanguage": "en-GB",
+      "mainEntityOfPage": "https://sergiolandoni.com.ar/en/neuquen-wine-regions-patagonia.html",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://sergiolandoni.com.ar/assets/img/guia-vino-neuquino.webp",
+        "contentUrl": "https://sergiolandoni.com.ar/assets/img/guia-vino-neuquino.webp"
+      },
+      "author": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      },
+      "publisher": {
+        "@id": "https://sergiolandoni.com.ar/#organization"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html#article",
+      "url": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html",
+      "headline": "Territory-Based Sommelier: Telling the Story of Wine from its Source in Patagonia",
+      "description": "A way of telling the story of wine from its source, connecting landscape, producers, gastronomy and culture in Patagonia.",
+      "datePublished": "2026-01-23T09:00:00-03:00",
+      "dateModified": "2026-04-04T09:00:00-03:00",
+      "inLanguage": "en-GB",
+      "mainEntityOfPage": "https://sergiolandoni.com.ar/en/territory-based-sommelier.html",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://sergiolandoni.com.ar/assets/img/sergio-sillon.jpeg",
+        "contentUrl": "https://sergiolandoni.com.ar/assets/img/sergio-sillon.jpeg"
+      },
+      "author": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      },
+      "publisher": {
+        "@id": "https://sergiolandoni.com.ar/#organization"
+      }
     }
   ]
 }
@@ -567,289 +879,474 @@
       }
     }
   </style>
+ 
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBXTSQSK" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
+<noscript>
+  <iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-KBXTSQSK"
+    height="0"
+    width="0"
+    style="display:none;visibility:hidden"
+    title="Google Tag Manager">
+  </iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-  <header>
-    <div class="wrap">
-      <div class="nav">
-        <a class="brand" href="/en/" aria-label="Back to home">
-          <img class="brand-logo" src="/assets/img/logo.jpg" alt="Sergio Landoni logo" width="40" height="40" />
-          <div class="brand-text">
-            <strong>Sergio Landoni</strong>
-            <span>Territory-Based Sommelier · Patagonia Argentina</span>
-          </div>
+<header>
+  <div class="wrap">
+    <div class="nav">
+
+      <a
+        class="brand"
+        href="/en/"
+        aria-label="Sergio Landoni English homepage">
+
+        <img
+          class="brand-logo"
+          src="/assets/img/logo.jpg"
+          alt="Sergio Landoni logo"
+          width="40"
+          height="40"
+        />
+
+        <div class="brand-text">
+          <strong>Sergio Landoni</strong>
+          <span>Wine Writer · Neuquén Wine Ambassador · Territory-Based Sommelier</span>
+        </div>
+
+      </a>
+
+      <nav
+        class="menu"
+        aria-label="Main navigation">
+
+        <a href="/en/#home">Home</a>
+
+        <a href="/en/#about">About</a>
+
+        <a
+          href="/en/blog.html"
+          aria-current="page">
+          Journal
         </a>
 
-        <nav class="menu" aria-label="Main menu">
-          <a href="/en/#inicio">Home</a>
-          <a href="/en/#sobre-mi">About</a>
-          <a href="/en/blog.html" aria-current="page">Blog</a>
-          <a href="/en/#contacto">Contact</a>
-          <a href="/" hreflang="es-ar">ES</a>
-          <a href="/en/" hreflang="en-GB"><strong>EN</strong></a>
-        </nav>
-      </div>
+        <a href="/en/#conversation">Contact</a>
+
+        <a
+          href="/blog.html"
+          hreflang="es-AR"
+          lang="es">
+          ES
+        </a>
+
+        <a
+          href="/en/blog.html"
+          hreflang="en-GB"
+          lang="en">
+          <strong>EN</strong>
+        </a>
+
+      </nav>
+
     </div>
-  </header>
+  </div>
+</header>
 
-  <main id="content" class="wrap">
+<main id="content" class="wrap">
 
-    <section class="hero" aria-label="Patagonian vineyard image">
-      <img
-        src="/assets/img/racimos-uvas.webp"
-        alt="Grapes in a vineyard in Patagonia Argentina"
-        width="1600"
-        height="700"
-        loading="eager"
-        decoding="async">
+  <section
+    class="hero"
+    aria-label="Patagonian vineyard">
+
+    <img
+      src="/assets/img/racimos-uvas.webp"
+      alt="Grapes growing in a vineyard in Patagonia, Argentina"
+      width="1600"
+      height="700"
+      loading="eager"
+      decoding="async"
+      fetchpriority="high"
+    />
+
+  </section>
+
+  <section
+    class="card"
+    aria-labelledby="journal-title">
+
+    <div class="kicker">
+      Wine · Territory · Patagonia
+    </div>
+
+    <h1 id="journal-title">
+      Patagonian Wine Journal
+    </h1>
+
+    <p>
+      A curated journal exploring <strong>Patagonian wine</strong>,
+      <strong>Neuquén wine regions</strong>, vineyards, landscape and identity
+      through original reporting, regional research and a perspective developed
+      from within <strong>Patagonia Argentina</strong>.
+    </p>
+
+    <p class="note">
+      Written by Sergio Landoni, Wine Writer, Territory-Based Sommelier and
+      Neuquén Wine Ambassador.
+    </p>
+
+    <div class="blog-nav">
+
+      <a
+        class="btn"
+        href="#featured-story">
+        Featured story
+      </a>
+
+      <a
+        class="btn"
+        href="#latest-stories">
+        Latest stories
+      </a>
+
+    </div>
+
+    <p style="margin-top:14px">
+
+      <a
+        class="btn"
+        href="/en/">
+        ← Back to home
+      </a>
+
+    </p>
+
+  </section>
+
+  <section
+    id="featured-story"
+    class="card"
+    style="margin-top:18px"
+    aria-labelledby="featured-story-title">
+
+    <div class="kicker">
+      Featured story
+    </div>
+
+    <h2 id="featured-story-title">
+      Neuquén's Pinot Noir: Patagonia's Emerging Expression of Elegance
+    </h2>
+
+    <p class="note">
+      <time datetime="2026-06-30">
+        Published on 30 June 2026
+      </time>
+    </p>
+
+    <p>
+      An in-depth exploration of Neuquén Pinot Noir, examining climate,
+      terroir, gastronomy and the evolving wine landscapes of northern
+      Patagonia.
+    </p>
+
+    <p>
+
+      <a
+        class="btn primary"
+        href="/en/neuquen-pinot-noir.html"
+        aria-label="Read Neuquén's Pinot Noir: Patagonia's Emerging Expression of Elegance">
+        Read story →
+      </a>
+
+    </p>
+
+  </section>
+
+  <section
+    class="card"
+    style="margin-top:18px"
+    aria-labelledby="journal-stories-title">
+
+    <h2 id="journal-stories-title">
+      Latest stories from the Patagonian Wine Journal
+    </h2>
+
+    <p class="note">
+      Original reporting, regional guides and essays for international readers
+      interested in Patagonia, Neuquén and a place-driven understanding of wine.
+    </p>
+
+    <section
+      class="category-block"
+      aria-labelledby="latest-stories">
+
+      <h2 id="latest-stories">
+        Latest stories
+      </h2>
+
+      <div class="list">
+
+        <!-- 1. PINOT NOIR -->
+
+        <article
+          class="post"
+          id="neuquen-pinot-noir">
+
+          <div class="tags">
+            <span class="tag">Pinot Noir</span>
+            <span class="tag">Neuquén</span>
+            <span class="tag">Patagonia</span>
+            <span class="tag">Wine Territory</span>
+          </div>
+
+          <h3>
+
+            <a
+              href="/en/neuquen-pinot-noir.html"
+              rel="bookmark">
+              Neuquén's Pinot Noir: Patagonia's Emerging Expression of Elegance
+            </a>
+
+          </h3>
+
+          <div class="meta">
+
+            <time datetime="2026-06-30">
+              30 June 2026
+            </time>
+
+          </div>
+
+          <p>
+            An in-depth exploration of Neuquén Pinot Noir, examining climate,
+            terroir, gastronomy and the evolving wine landscapes of northern
+            Patagonia.
+          </p>
+
+          <p>
+
+            <a
+              class="btn primary"
+              href="/en/neuquen-pinot-noir.html"
+              aria-label="Read Neuquén's Pinot Noir: Patagonia's Emerging Expression of Elegance">
+              Read story →
+            </a>
+
+          </p>
+
+        </article>
+
+        <!-- 2. PATAGONIA WINE STORIES -->
+
+        <article
+          class="post"
+          id="patagonia-wine-stories">
+
+          <div class="tags">
+            <span class="tag">Patagonia</span>
+            <span class="tag">Wine Stories</span>
+            <span class="tag">Territory</span>
+            <span class="tag">English</span>
+          </div>
+
+          <h3>
+
+            <a
+              href="/en/patagonia-wine-stories-territory-based-sommelier.html"
+              rel="bookmark">
+              Patagonia: Where I Learned That Wine Also Tells Stories
+            </a>
+
+          </h3>
+
+          <div class="meta">
+
+            <time datetime="2026-05-08">
+              8 May 2026
+            </time>
+
+          </div>
+
+          <p>
+            A personal reflection on Patagonian wine, landscape, gastronomy and
+            the idea of understanding wine through place.
+          </p>
+
+          <p>
+
+            <a
+              class="btn primary"
+              href="/en/patagonia-wine-stories-territory-based-sommelier.html"
+              aria-label="Read Patagonia: Where I Learned That Wine Also Tells Stories">
+              Read story →
+            </a>
+
+          </p>
+
+        </article>
+
+        <!-- 3. PATAGONIAN WINE REGIONS -->
+
+        <article
+          class="post"
+          id="patagonian-wine-regions-landscape">
+
+          <div class="tags">
+            <span class="tag">Patagonia</span>
+            <span class="tag">Wine Regions</span>
+            <span class="tag">Landscape</span>
+            <span class="tag">English</span>
+          </div>
+
+          <h3>
+
+            <a
+              href="/en/patagonian-wine-regions-landscape-argentina.html"
+              rel="bookmark">
+              Patagonian Wine Regions: Landscape, Climate and Identity in Southern Argentina
+            </a>
+
+          </h3>
+
+          <div class="meta">
+
+            <time datetime="2026-02-20">
+              20 February 2026
+            </time>
+
+          </div>
+
+          <p>
+            An overview of the Patagonian wine landscape, exploring geography,
+            climate, emerging regions and the people shaping wine in southern
+            Argentina.
+          </p>
+
+          <p>
+
+            <a
+              class="btn primary"
+              href="/en/patagonian-wine-regions-landscape-argentina.html"
+              aria-label="Read Patagonian Wine Regions: Landscape, Climate and Identity in Southern Argentina">
+              Read story →
+            </a>
+
+          </p>
+
+        </article>
+
+        <!-- 4. NEUQUÉN WINE REGIONS -->
+
+        <article
+          class="post"
+          id="neuquen-wine-regions">
+
+          <div class="tags">
+            <span class="tag">Neuquén</span>
+            <span class="tag">Wine Regions</span>
+            <span class="tag">Patagonia</span>
+            <span class="tag">English</span>
+          </div>
+
+          <h3>
+
+            <a
+              href="/en/neuquen-wine-regions-patagonia.html"
+              rel="bookmark">
+              Neuquén Wine Regions: A Guide to Patagonia’s Emerging Wine Territory
+            </a>
+
+          </h3>
+
+          <div class="meta">
+
+            <time datetime="2026-01-29">
+              29 January 2026
+            </time>
+
+          </div>
+
+          <p>
+            A clear guide to the six wine regions of Neuquén and the landscapes
+            shaping Patagonia’s emerging wine identity.
+          </p>
+
+          <p>
+
+            <a
+              class="btn primary"
+              href="/en/neuquen-wine-regions-patagonia.html"
+              aria-label="Read Neuquén Wine Regions: A Guide to Patagonia’s Emerging Wine Territory">
+              Read story →
+            </a>
+
+          </p>
+
+        </article>
+
+        <!-- 5. TERRITORY-BASED SOMMELIER -->
+
+        <article
+          class="post"
+          id="territory-based-sommelier">
+
+          <div class="tags">
+            <span class="tag">Sommelier</span>
+            <span class="tag">Territory</span>
+            <span class="tag">Patagonia</span>
+            <span class="tag">English</span>
+          </div>
+
+          <h3>
+
+            <a
+              href="/en/territory-based-sommelier.html"
+              rel="bookmark">
+              Territory-Based Sommelier: Telling the Story of Wine from its Source in Patagonia
+            </a>
+
+          </h3>
+
+          <div class="meta">
+
+            <time datetime="2026-01-23">
+              23 January 2026
+            </time>
+
+          </div>
+
+          <p>
+            A way of telling the story of wine from its source, connecting
+            landscape, producers, gastronomy and culture in Patagonia.
+          </p>
+
+          <p>
+
+            <a
+              class="btn primary"
+              href="/en/territory-based-sommelier.html"
+              aria-label="Read Territory-Based Sommelier: Telling the Story of Wine from its Source in Patagonia">
+              Read story →
+            </a>
+
+          </p>
+
+        </article>
+
+      </div>
+
     </section>
 
-   <section class="card" aria-label="Blog header">
-  <div class="kicker">Wine · Territory · Patagonia</div>
-
-  <h1>Patagonian Wine Blog</h1>
-
-  <p>
-    A curated selection of English-language articles on <strong>Patagonian wine</strong>,
-    <strong>Neuquén wine regions</strong>, landscape, climate and identity,
-    written from within <strong>Patagonia Argentina</strong>.
-  </p>
-
-  <p class="note">
-    A territory-based perspective on wine, focused on place, producers and the emerging identity of southern Argentina.
-  </p>
-
-  <div class="blog-nav">
-    <a class="btn" href="#featured-article">Featured</a>
-    <a class="btn" href="#english-readers">Articles</a>
-  </div>
-
-  <p style="margin-top:14px">
-    <a class="btn" href="/en/">← Back to home</a>
-  </p>
-</section>
-
-<section id="featured-article" class="card" style="margin-top:18px" aria-label="Featured article">
-  <div class="kicker">Featured article</div>
-
-  <h2>Neuquén's Pinot Noir: Patagonia's Emerging Expression of Elegance</h2>
-
-  <p class="note">
-    Published on 30 June 2026
-  </p>
-
-  <p>
-    An in-depth exploration of Neuquén Pinot Noir, examining climate, terroir, gastronomy and the evolving wine landscapes of northern Patagonia.
-  </p>
-
-  <p>
-    <a class="btn primary" href="/en/neuquen-pinot-noir.html">
-      Read article
-    </a>
-  </p>
-</section>
-
-<section class="card" style="margin-top:18px" aria-label="English-language articles">
-  <h2>English-language articles on Patagonian wine</h2>
-
-  <p class="note">
-    A growing collection of articles for international readers interested in Patagonia, Neuquén and a place-driven understanding of wine.
-  </p>
-
-  <section class="category-block" aria-labelledby="english-readers">
-    <h2 id="english-readers">Articles</h2>
-
-    <div class="list">
-
-      <!-- 1. PINOT NOIR -->
-
-      <article class="post" id="neuquen-pinot-noir">
-
-        <div class="tags">
-          <span class="tag">Pinot Noir</span>
-          <span class="tag">Neuquén</span>
-          <span class="tag">Patagonia</span>
-          <span class="tag">Wine Territory</span>
-        </div>
-
-        <h3>
-          <a href="/en/neuquen-pinot-noir.html" rel="bookmark">
-            Neuquén's Pinot Noir: Patagonia's Emerging Expression of Elegance
-          </a>
-        </h3>
-
-        <div class="meta">
-          <time datetime="2026-06-30">30 June 2026</time>
-        </div>
-
-        <p>
-          An in-depth exploration of Neuquén Pinot Noir, examining climate, terroir, gastronomy and the evolving wine landscapes of northern Patagonia.
-        </p>
-
-        <p>
-          <a class="btn primary"
-             href="/en/neuquen-pinot-noir.html"
-             aria-label="Read the article Neuquén's Pinot Noir: Patagonia's Emerging Expression of Elegance">
-            Read article
-          </a>
-        </p>
-
-      </article>
-
-      <!-- 2. PATAGONIA WINE STORIES -->
-
-      <article class="post" id="patagonia-wine-stories">
-
-        <div class="tags">
-          <span class="tag">Patagonia</span>
-          <span class="tag">Wine Stories</span>
-          <span class="tag">Territory</span>
-          <span class="tag">English</span>
-        </div>
-
-        <h3>
-          <a href="/en/patagonia-wine-stories-territory-based-sommelier.html" rel="bookmark">
-            Patagonia: Where I Learned That Wine Also Tells Stories
-          </a>
-        </h3>
-
-        <div class="meta">
-          <time datetime="2026-05-08">8 May 2026</time>
-        </div>
-
-        <p>
-          A personal reflection on Patagonia wine, landscape, gastronomy and the idea of understanding wine through place.
-        </p>
-
-        <p>
-          <a class="btn primary"
-             href="/en/patagonia-wine-stories-territory-based-sommelier.html"
-             aria-label="Read the article Patagonia: Where I Learned That Wine Also Tells Stories">
-            Read article
-          </a>
-        </p>
-
-      </article>
-
-      <!-- 3. PATAGONIAN WINE REGIONS -->
-
-      <article class="post" id="patagonian-wine-regions-landscape">
-
-        <div class="tags">
-          <span class="tag">Patagonia</span>
-          <span class="tag">Wine Regions</span>
-          <span class="tag">Landscape</span>
-          <span class="tag">English</span>
-        </div>
-
-        <h3>
-          <a href="/en/patagonian-wine-regions-landscape-argentina.html" rel="bookmark">
-            Patagonian Wine Regions: Landscape, Climate and Identity in Southern Argentina
-          </a>
-        </h3>
-
-        <div class="meta">
-          <time datetime="2026-02-20">20 February 2026</time>
-        </div>
-
-        <p>
-          An overview of the Patagonian wine landscape, exploring geography, climate, emerging regions and the people shaping wine in southern Argentina.
-        </p>
-
-        <p>
-          <a class="btn primary"
-             href="/en/patagonian-wine-regions-landscape-argentina.html"
-             aria-label="Read the article Patagonian Wine Regions: Landscape, Climate and Identity in Southern Argentina">
-            Read article
-          </a>
-        </p>
-
-      </article>
-
-      <!-- 4. NEUQUÉN WINE REGIONS -->
-
-      <article class="post" id="neuquen-wine-regions">
-
-        <div class="tags">
-          <span class="tag">Neuquén</span>
-          <span class="tag">Wine Regions</span>
-          <span class="tag">Patagonia</span>
-          <span class="tag">English</span>
-        </div>
-
-        <h3>
-          <a href="/en/neuquen-wine-regions-patagonia.html" rel="bookmark">
-            Neuquén Wine Regions: A Guide to Patagonia’s Emerging Wine Territory
-          </a>
-        </h3>
-
-        <div class="meta">
-          <time datetime="2026-01-29">29 January 2026</time>
-        </div>
-
-        <p>
-          A clear guide to the six wine regions of Neuquén and the landscapes shaping Patagonia’s emerging wine identity.
-        </p>
-
-        <p>
-          <a class="btn primary"
-             href="/en/neuquen-wine-regions-patagonia.html"
-             aria-label="Read the article Neuquén Wine Regions: A Guide to Patagonia’s Emerging Wine Territory">
-            Read article
-          </a>
-        </p>
-
-      </article>
-
-      <!-- 5. TERRITORY-BASED SOMMELIER -->
-
-      <article class="post" id="territory-based-sommelier">
-
-        <div class="tags">
-          <span class="tag">Sommelier</span>
-          <span class="tag">Territory</span>
-          <span class="tag">Patagonia</span>
-          <span class="tag">English</span>
-        </div>
-
-        <h3>
-          <a href="/en/territory-based-sommelier.html" rel="bookmark">
-            Territory-Based Sommelier: Telling the Story of Wine from its Source in Patagonia
-          </a>
-        </h3>
-
-        <div class="meta">
-          <time datetime="2026-01-23">23 January 2026</time>
-        </div>
-
-        <p>
-          A way of telling the story of wine from its source, connecting landscape, producers, gastronomy and culture in Patagonia.
-        </p>
-
-        <p>
-          <a class="btn primary"
-             href="/en/territory-based-sommelier.html"
-             aria-label="Read the article Territory-Based Sommelier: Telling the Story of Wine from its Source in Patagonia">
-            Read article
-          </a>
-        </p>
-
-           </article>
-
-    </div>
   </section>
-</section>
 
 </main>
 
 <footer>
-  © 2026 Sergio Landoni · Territory-Based Sommelier · Patagonia Argentina
+
+  © 2026 Sergio Landoni · Wine Writer · Territory-Based Sommelier
+
 </footer>
+
 </body>
 </html>
