@@ -2,6 +2,18 @@
 <html lang="en-GB">
 <head>
 
+  <meta charset="utf-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  />
+
+  <meta
+    name="format-detection"
+    content="telephone=no"
+  />
+
   <!-- Google Tag Manager -->
   <script>
     (function(w,d,s,l,i){
@@ -22,23 +34,11 @@
   </script>
   <!-- End Google Tag Manager -->
 
-  <meta charset="utf-8" />
-
-  <meta
-    name="viewport"
-    content="width=device-width,initial-scale=1"
-  />
-
-  <meta
-    name="format-detection"
-    content="telephone=no"
-  />
-
   <title>Sergio Landoni | Patagonia Wine Writer</title>
 
   <meta
     name="description"
-    content="Independent writing on Patagonia’s vineyards, wine regions and people by Sergio Landoni, Neuquén Wine Ambassador and Territory-Based Sommelier."
+    content="Independent writing, regional insight and carefully considered wine experiences across Patagonia by Sergio Landoni, Neuquén Wine Ambassador and Territory-Based Sommelier."
   />
 
   <meta
@@ -56,28 +56,29 @@
     content="#0f766e"
   />
 
-  <!-- Canonical and language versions -->
+  <!-- Canonical -->
   <link
     rel="canonical"
     href="https://sergiolandoni.com.ar/en/"
   />
 
+  <!-- Language versions -->
   <link
     rel="alternate"
-    href="https://sergiolandoni.com.ar/"
-    hreflang="es-AR"
-  />
-
-  <link
-    rel="alternate"
-    href="https://sergiolandoni.com.ar/en/"
     hreflang="en-GB"
+    href="https://sergiolandoni.com.ar/en/"
   />
 
   <link
     rel="alternate"
+    hreflang="es-AR"
     href="https://sergiolandoni.com.ar/"
+  />
+
+  <link
+    rel="alternate"
     hreflang="x-default"
+    href="https://sergiolandoni.com.ar/"
   />
 
   <!-- Hero image preload -->
@@ -130,7 +131,7 @@
 
   <meta
     property="og:description"
-    content="Independent writing and regional insight on the people, vineyards and wine regions shaping Patagonia."
+    content="Independent writing, regional insight and a closer way of discovering Patagonia through its wines, landscapes, gastronomy and people."
   />
 
   <meta
@@ -159,11 +160,6 @@
   />
 
   <meta
-    property="og:image:alt"
-    content="Vineyard landscape in Patagonia, Argentina"
-  />
-
-  <meta
     property="og:image:type"
     content="image/webp"
   />
@@ -176,6 +172,11 @@
   <meta
     property="og:image:height"
     content="900"
+  />
+
+  <meta
+    property="og:image:alt"
+    content="Vineyard landscape in Patagonia, Argentina"
   />
 
   <!-- Twitter / X -->
@@ -191,7 +192,7 @@
 
   <meta
     name="twitter:description"
-    content="Independent writing and regional insight on the people, vineyards and wine regions shaping Patagonia."
+    content="Independent writing, regional insight and a closer way of discovering Patagonia through its wines, landscapes, gastronomy and people."
   />
 
   <meta
@@ -204,221 +205,295 @@
     content="Vineyard landscape in Patagonia, Argentina"
   />
 
-<!-- Structured data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://sergiolandoni.com.ar/#organization",
-      "name": "Sergio Landoni | Patagonian Wine Writer",
-      "alternateName": "Sergio Landoni Wine Communication",
-      "url": "https://sergiolandoni.com.ar/",
-      "logo": {
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://sergiolandoni.com.ar/#organization",
+        "name": "Sergio Landoni | Patagonian Wine Writer",
+        "alternateName": "Sergio Landoni Wine Communication",
+        "url": "https://sergiolandoni.com.ar/",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://sergiolandoni.com.ar/#logo",
+          "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg",
+          "contentUrl": "https://sergiolandoni.com.ar/assets/img/logo.jpg",
+          "width": 512,
+          "height": 512
+        },
+        "founder": {
+          "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+        },
+        "foundingLocation": {
+          "@type": "Place",
+          "name": "San Martín de los Andes",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Martín de los Andes",
+            "addressRegion": "Neuquén",
+            "addressCountry": "AR"
+          }
+        },
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Neuquén"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Río Negro"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Chubut"
+          },
+          {
+            "@type": "Place",
+            "name": "Patagonia, Argentina"
+          },
+          {
+            "@type": "Country",
+            "name": "Argentina"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://sergiolandoni.com.ar/#website",
+        "url": "https://sergiolandoni.com.ar/",
+        "name": "Sergio Landoni | Patagonian Wine Writer",
+        "description": "Official website of Sergio Landoni, Patagonian wine writer, Territory-Based Sommelier and Neuquén Wine Ambassador, focused on the people, vineyards and wine regions shaping Patagonia.",
+        "inLanguage": [
+          "es-AR",
+          "en-GB"
+        ],
+        "publisher": {
+          "@id": "https://sergiolandoni.com.ar/#organization"
+        }
+      },
+      {
         "@type": "ImageObject",
-        "@id": "https://sergiolandoni.com.ar/#logo",
-        "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg",
-        "contentUrl": "https://sergiolandoni.com.ar/assets/img/logo.jpg",
-        "width": 512,
-        "height": 512
+        "@id": "https://sergiolandoni.com.ar/#image-hero",
+        "url": "https://sergiolandoni.com.ar/assets/img/hero.webp",
+        "contentUrl": "https://sergiolandoni.com.ar/assets/img/hero.webp",
+        "width": 1600,
+        "height": 900,
+        "inLanguage": "en-GB",
+        "caption": "Vineyard landscape in Patagonia, Argentina.",
+        "description": "Main image of Sergio Landoni’s English-language website about Patagonian wine.",
+        "representativeOfPage": true
       },
-      "founder": {
-        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      {
+        "@type": "ImageObject",
+        "@id": "https://sergiolandoni.com.ar/#image-portrait",
+        "url": "https://sergiolandoni.com.ar/assets/img/retrato-sergio-landoni.webp",
+        "contentUrl": "https://sergiolandoni.com.ar/assets/img/retrato-sergio-landoni.webp",
+        "width": 800,
+        "height": 800,
+        "inLanguage": "en-GB",
+        "caption": "Sergio Landoni, Patagonian Wine Writer, Neuquén Wine Ambassador and Territory-Based Sommelier."
       },
-      "foundingLocation": {
-        "@type": "Place",
-        "name": "San Martín de los Andes",
+      {
+        "@type": "Person",
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni",
+        "name": "Sergio Landoni",
+        "alternateName": [
+          "Patagonian Wine Writer",
+          "Wine Writer",
+          "Neuquén Wine Ambassador",
+          "Official Neuquén Wine Ambassador",
+          "Territory-Based Sommelier",
+          "Sommelier de Territorio",
+          "Embajador del Vino Neuquino"
+        ],
+        "url": "https://sergiolandoni.com.ar/",
+        "jobTitle": [
+          "Patagonian Wine Writer",
+          "Neuquén Wine Ambassador",
+          "Territory-Based Sommelier"
+        ],
+        "description": "Sergio Landoni is a Patagonian wine writer, Territory-Based Sommelier and the first Official Neuquén Wine Ambassador. Based in San Martín de los Andes, he writes about the people, vineyards and wine regions shaping Patagonia, with particular attention to Neuquén.",
+        "image": {
+          "@id": "https://sergiolandoni.com.ar/#image-portrait"
+        },
+        "worksFor": {
+          "@id": "https://sergiolandoni.com.ar/#organization"
+        },
+        "email": "mailto:contacto@sergiolandoni.com.ar",
+        "telephone": "+54 9 294 466-8508",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "San Martín de los Andes",
           "addressRegion": "Neuquén",
           "addressCountry": "AR"
+        },
+        "award": "First official Neuquén Wine Ambassador distinction awarded by the Province of Neuquén, Argentina.",
+        "sameAs": [
+          "https://www.instagram.com/sergiolandoni.somm/",
+          "https://www.linkedin.com/in/sergio-landoni-sommelier/",
+          "https://www.youtube.com/@PatagonianLifestyle"
+        ],
+        "subjectOf": [
+          {
+            "@type": "CreativeWork",
+            "name": "Neuquén crea la figura del Embajador del Vino Neuquino",
+            "url": "https://www.vinetur.com/20260511100468/neuquen-crea-la-figura-del-embajador-del-vino-neuquino-y-apuesta-al-vino-como-identidad-territorial.html"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "La Patagonia que se cuenta en copa",
+            "url": "https://winexpertsglobal.org/la-patagonia-que-se-cuenta-en-copa-una-masterclass-con-sergio-landoni/"
+          }
+        ],
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Winexperts Patagonia"
+        },
+        "knowsAbout": [
+          "Patagonian wine",
+          "Patagonian wine regions",
+          "Neuquén wine",
+          "Río Negro wine",
+          "Chubut wine",
+          "Neuquén Pinot Noir",
+          "Cool-climate viticulture",
+          "Argentine wine regions",
+          "Wine writing",
+          "Wine communication",
+          "Regional wine identity",
+          "Wine and gastronomy",
+          "Argentine hospitality",
+          "Wine tourism in Patagonia",
+          "Territory-based wine communication"
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://sergiolandoni.com.ar/en/patagonia-wine-experiences.html#service",
+        "name": "Patagonian Wine Experience",
+        "alternateName": "Patagonian Wine Encounters",
+        "url": "https://sergiolandoni.com.ar/en/patagonia-wine-experiences.html",
+        "description": "Individually considered encounters that help visitors discover Patagonia through wine, regional gastronomy, landscape, Argentine hospitality and the people shaping its wine regions.",
+        "serviceType": [
+          "Private Patagonian wine encounters",
+          "Regional wine interpretation",
+          "Wine and gastronomy experiences",
+          "Professional and media wine visits"
+        ],
+        "provider": {
+          "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+        },
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Neuquén"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Río Negro"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Chubut"
+          },
+          {
+            "@type": "Place",
+            "name": "Patagonia, Argentina"
+          }
+        ],
+        "audience": {
+          "@type": "Audience",
+          "audienceType": [
+            "International wine travellers",
+            "Journalists",
+            "Wine importers",
+            "Wine buyers",
+            "Sommeliers",
+            "Wine educators",
+            "Institutions",
+            "Small private groups"
+          ]
+        },
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://sergiolandoni.com.ar/en/patagonia-wine-experiences.html#image-hero",
+          "url": "https://sergiolandoni.com.ar/assets/img/patagonia-luxury-lodge-san-martin-andes.webp",
+          "contentUrl": "https://sergiolandoni.com.ar/assets/img/patagonia-luxury-lodge-san-martin-andes.webp",
+          "width": 1600,
+          "height": 900,
+          "caption": "Mountain lodge surrounded by native forest at sunset in San Martín de los Andes, Patagonia Argentina."
         }
       },
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "Neuquén"
+      {
+        "@type": "WebPage",
+        "@id": "https://sergiolandoni.com.ar/en/#webpage",
+        "url": "https://sergiolandoni.com.ar/en/",
+        "name": "Sergio Landoni | Patagonia Wine Writer",
+        "headline": "Understanding Patagonia Through Its Wines",
+        "description": "Independent writing, regional insight and carefully considered wine experiences across Patagonia by Sergio Landoni, Neuquén Wine Ambassador and Territory-Based Sommelier.",
+        "inLanguage": "en-GB",
+        "isPartOf": {
+          "@id": "https://sergiolandoni.com.ar/#website"
         },
-        {
-          "@type": "Place",
-          "name": "Patagonia, Argentina"
+        "mainEntity": {
+          "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
         },
-        {
-          "@type": "Country",
-          "name": "Argentina"
-        }
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://sergiolandoni.com.ar/#website",
-      "url": "https://sergiolandoni.com.ar/",
-      "name": "Sergio Landoni | Patagonian Wine Writer",
-      "description": "Official website of Sergio Landoni, Patagonian wine writer, Territory-Based Sommelier and Neuquén Wine Ambassador, focused on the people, vineyards and wine regions shaping Patagonia.",
-      "inLanguage": [
-        "es-AR",
-        "en-GB"
-      ],
-      "publisher": {
-        "@id": "https://sergiolandoni.com.ar/#organization"
+        "author": {
+          "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+        },
+        "publisher": {
+          "@id": "https://sergiolandoni.com.ar/#organization"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://sergiolandoni.com.ar/#image-hero"
+        },
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Patagonian wine"
+          },
+          {
+            "@type": "Thing",
+            "name": "Patagonian wine regions"
+          },
+          {
+            "@type": "Thing",
+            "name": "Neuquén wine"
+          },
+          {
+            "@type": "Thing",
+            "name": "Río Negro wine"
+          },
+          {
+            "@type": "Thing",
+            "name": "Chubut wine"
+          },
+          {
+            "@type": "Thing",
+            "name": "Wine writing"
+          },
+          {
+            "@type": "Thing",
+            "name": "Patagonian wine experiences"
+          }
+        ],
+        "mentions": {
+          "@id": "https://sergiolandoni.com.ar/en/patagonia-wine-experiences.html#service"
+        },
+        "significantLink": [
+          "https://sergiolandoni.com.ar/en/blog.html",
+          "https://sergiolandoni.com.ar/en/patagonia-wine-experiences.html",
+          "https://sergiolandoni.com.ar/en/neuquen-wine-regions-patagonia.html",
+          "https://sergiolandoni.com.ar/en/neuquen-pinot-noir.html",
+          "https://sergiolandoni.com.ar/en/territory-based-sommelier.html"
+        ]
       }
-    },
-    {
-      "@type": "ImageObject",
-      "@id": "https://sergiolandoni.com.ar/#image-hero",
-      "url": "https://sergiolandoni.com.ar/assets/img/hero.webp",
-      "contentUrl": "https://sergiolandoni.com.ar/assets/img/hero.webp",
-      "width": 1600,
-      "height": 900,
-      "inLanguage": "en-GB",
-      "caption": "Vineyard landscape in Patagonia, Argentina.",
-      "description": "Main image of Sergio Landoni’s English-language website about Patagonian wine.",
-      "representativeOfPage": true
-    },
-    {
-      "@type": "ImageObject",
-      "@id": "https://sergiolandoni.com.ar/#image-portrait",
-      "url": "https://sergiolandoni.com.ar/assets/img/retrato-sergio-landoni.webp",
-      "contentUrl": "https://sergiolandoni.com.ar/assets/img/retrato-sergio-landoni.webp",
-      "width": 800,
-      "height": 800,
-      "inLanguage": "en-GB",
-      "caption": "Sergio Landoni, Patagonian Wine Writer, Neuquén Wine Ambassador and Territory-Based Sommelier."
-    },
-    {
-      "@type": "Person",
-      "@id": "https://sergiolandoni.com.ar/#sergio-landoni",
-      "name": "Sergio Landoni",
-      "alternateName": [
-        "Patagonian Wine Writer",
-        "Wine Writer",
-        "Neuquén Wine Ambassador",
-        "Official Neuquén Wine Ambassador",
-        "Territory-Based Sommelier",
-        "Sommelier de Territorio",
-        "Embajador del Vino Neuquino"
-      ],
-      "url": "https://sergiolandoni.com.ar/",
-      "jobTitle": [
-        "Patagonian Wine Writer",
-        "Neuquén Wine Ambassador",
-        "Territory-Based Sommelier"
-      ],
-      "description": "Sergio Landoni is a Patagonian wine writer, Territory-Based Sommelier and the first Official Neuquén Wine Ambassador. Based in San Martín de los Andes, he writes about the people, vineyards and wine regions shaping Patagonia, with particular attention to Neuquén.",
-      "image": {
-        "@id": "https://sergiolandoni.com.ar/#image-portrait"
-      },
-      "worksFor": {
-        "@id": "https://sergiolandoni.com.ar/#organization"
-      },
-      "email": "mailto:contacto@sergiolandoni.com.ar",
-      "telephone": "+54 9 294 466-8508",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "San Martín de los Andes",
-        "addressRegion": "Neuquén",
-        "addressCountry": "AR"
-      },
-      "award": "First official Neuquén Wine Ambassador distinction awarded by the Province of Neuquén, Argentina.",
-      "sameAs": [
-        "https://www.instagram.com/sergiolandoni.somm/",
-        "https://www.linkedin.com/in/sergio-landoni-sommelier/",
-        "https://www.youtube.com/@PatagonianLifestyle"
-      ],
-      "subjectOf": [
-        {
-          "@type": "CreativeWork",
-          "name": "Neuquén crea la figura del Embajador del Vino Neuquino",
-          "url": "https://www.vinetur.com/20260511100468/neuquen-crea-la-figura-del-embajador-del-vino-neuquino-y-apuesta-al-vino-como-identidad-territorial.html"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "La Patagonia que se cuenta en copa",
-          "url": "https://winexpertsglobal.org/la-patagonia-que-se-cuenta-en-copa-una-masterclass-con-sergio-landoni/"
-        }
-      ],
-      "affiliation": {
-        "@type": "Organization",
-        "name": "Winexperts Patagonia"
-      },
-      "knowsAbout": [
-        "Patagonian wine",
-        "Patagonian wine regions",
-        "Neuquén wine",
-        "Río Negro wine",
-        "Chubut wine",
-        "Neuquén Pinot Noir",
-        "Cool-climate viticulture",
-        "Argentine wine regions",
-        "Wine writing",
-        "Wine communication",
-        "Regional wine identity",
-        "Wine and gastronomy",
-        "Wine tourism in Patagonia",
-        "Territory-based wine communication"
-      ]
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://sergiolandoni.com.ar/en/#webpage",
-      "url": "https://sergiolandoni.com.ar/en/",
-      "name": "Sergio Landoni | Patagonia Wine Writer",
-      "headline": "Understanding Patagonia Through Its Wines",
-      "description": "Independent writing on Patagonia’s vineyards, wine regions and people by Sergio Landoni, Neuquén Wine Ambassador and Territory-Based Sommelier.",
-      "inLanguage": "en-GB",
-      "isPartOf": {
-        "@id": "https://sergiolandoni.com.ar/#website"
-      },
-      "mainEntity": {
-        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
-      },
-      "author": {
-        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
-      },
-      "publisher": {
-        "@id": "https://sergiolandoni.com.ar/#organization"
-      },
-      "primaryImageOfPage": {
-        "@id": "https://sergiolandoni.com.ar/#image-hero"
-      },
-      "about": [
-        {
-          "@type": "Thing",
-          "name": "Patagonian wine"
-        },
-        {
-          "@type": "Thing",
-          "name": "Patagonian wine regions"
-        },
-        {
-          "@type": "Thing",
-          "name": "Neuquén wine"
-        },
-        {
-          "@type": "Thing",
-          "name": "Río Negro wine"
-        },
-        {
-          "@type": "Thing",
-          "name": "Chubut wine"
-        },
-        {
-          "@type": "Thing",
-          "name": "Wine writing"
-        }
-      ],
-      "significantLink": [
-        "https://sergiolandoni.com.ar/en/blog.html",
-        "https://sergiolandoni.com.ar/en/neuquen-wine-regions-patagonia.html",
-        "https://sergiolandoni.com.ar/en/neuquen-pinot-noir.html",
-        "https://sergiolandoni.com.ar/en/territory-based-sommelier.html"
-      ]
-    }
-  ]
-}
-</script>
+    ]
+  }
+  </script>
 
   <style>
     :root{
@@ -428,15 +503,30 @@
       --muted:#374151;
       --soft:#6b7280;
       --line:#e5e7eb;
+
       --accent:#0f766e;
       --accent-hover:#134e4a;
       --accent-soft:rgba(15,118,110,.07);
+
+      --experience-dark:#173f3a;
+      --experience-soft:#eef4f1;
+
       --radius:14px;
+      --radius-large:20px;
+
       --shadow:0 10px 30px rgba(0,0,0,.06);
       --shadow-soft:0 8px 24px rgba(0,0,0,.045);
+      --shadow-large:0 22px 55px rgba(0,0,0,.10);
+
       --max:1060px;
       --reading:760px;
-      --transition:all .25s cubic-bezier(.4,0,.2,1);
+
+      --transition:
+        color .25s ease,
+        background-color .25s ease,
+        border-color .25s ease,
+        transform .25s ease,
+        box-shadow .25s ease;
     }
 
     *{
@@ -477,6 +567,8 @@
     a,
     .btn,
     .card,
+    .post,
+    .experience-panel,
     input,
     textarea{
       transition:var(--transition);
@@ -724,6 +816,18 @@
       gap:12px;
     }
 
+    .hero-actions{
+      display:flex;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:24px;
+    }
+
+    .hero-actions .btn{
+      margin-top:0;
+    }
+
     .btn{
       display:inline-flex;
       align-items:center;
@@ -827,10 +931,6 @@
       background:#fff;
       border:1px solid var(--line);
       border-radius:12px;
-      transition:
-        transform .25s ease,
-        box-shadow .25s ease,
-        border-color .25s ease;
     }
 
     .post:hover{
@@ -859,6 +959,128 @@
     .post p{
       font-size:14px;
       line-height:1.65;
+    }
+
+    /* Patagonian Wine Experience feature */
+    .experience-panel{
+      position:relative;
+      display:grid;
+      grid-template-columns:minmax(0,1.02fr) minmax(360px,.98fr);
+      min-height:500px;
+      overflow:hidden;
+      color:#fff;
+      background:var(--experience-dark);
+      border-radius:var(--radius-large);
+      box-shadow:var(--shadow-large);
+    }
+
+    .experience-content{
+      position:relative;
+      z-index:2;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      padding:48px;
+    }
+
+    .experience-kicker{
+      display:inline-flex;
+      align-self:flex-start;
+      margin-bottom:16px;
+      padding:6px 10px;
+      font-size:12px;
+      line-height:1.2;
+      font-weight:600;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#d9efea;
+      border:1px solid rgba(255,255,255,.24);
+      border-radius:999px;
+      background:rgba(255,255,255,.08);
+    }
+
+    .experience-panel h2{
+      max-width:520px;
+      margin-bottom:18px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(32px,4vw,48px);
+      line-height:1.08;
+      font-weight:500;
+      letter-spacing:-.6px;
+    }
+
+    .experience-panel p{
+      max-width:580px;
+      color:rgba(255,255,255,.84);
+    }
+
+    .experience-panel .lead{
+      font-size:18px;
+      color:#fff;
+    }
+
+    .experience-panel .btn{
+      margin-top:22px;
+      align-self:flex-start;
+    }
+
+    .experience-panel .btn.primary{
+      color:var(--experience-dark);
+      background:#fff;
+      border-color:#fff;
+      font-weight:600;
+    }
+
+    .experience-panel .btn.primary:hover,
+    .experience-panel .btn.primary:focus-visible{
+      color:#fff;
+      background:transparent;
+      border-color:rgba(255,255,255,.72);
+    }
+
+    .experience-media{
+      position:relative;
+      min-height:500px;
+      overflow:hidden;
+    }
+
+    .experience-media img{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:cover;
+      object-position:center;
+    }
+
+    .experience-media::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(23,63,58,.54) 0%,
+          rgba(23,63,58,.10) 40%,
+          rgba(23,63,58,0) 100%
+        );
+    }
+
+    .experience-note{
+      margin-top:18px;
+      font-size:13px;
+      color:rgba(255,255,255,.72);
+    }
+
+    .experience-inline-link{
+      margin-top:18px;
+      padding-top:18px;
+      border-top:1px solid var(--line);
+    }
+
+    .experience-inline-link p{
+      margin:0;
     }
 
     form{
@@ -955,12 +1177,31 @@
 
     @media (max-width:900px){
       .hero-grid,
-      .grid-2{
+      .grid-2,
+      .experience-panel{
         grid-template-columns:1fr;
       }
 
       .post-list{
         grid-template-columns:repeat(2,1fr);
+      }
+
+      .experience-content{
+        padding:38px;
+      }
+
+      .experience-media{
+        min-height:430px;
+        order:-1;
+      }
+
+      .experience-media::after{
+        background:
+          linear-gradient(
+            180deg,
+            rgba(23,63,58,0) 52%,
+            rgba(23,63,58,.40) 100%
+          );
       }
     }
 
@@ -1010,6 +1251,15 @@
         background:#fff;
         border-color:var(--line);
       }
+
+      .hero-actions{
+        align-items:stretch;
+        flex-direction:column;
+      }
+
+      .hero-actions .btn{
+        width:100%;
+      }
     }
 
     @media (max-width:640px){
@@ -1032,6 +1282,18 @@
 
       .post-list{
         grid-template-columns:1fr;
+      }
+
+      .experience-content{
+        padding:28px 24px 32px;
+      }
+
+      .experience-panel h2{
+        font-size:32px;
+      }
+
+      .experience-media{
+        min-height:320px;
       }
 
       .whatsapp-btn{
@@ -1062,6 +1324,30 @@
       .menu{
         grid-template-columns:repeat(2,1fr);
       }
+
+      .experience-panel{
+        border-radius:16px;
+      }
+
+      .experience-media{
+        min-height:280px;
+      }
+    }
+
+    @media (prefers-reduced-motion:reduce){
+      html{
+        scroll-behavior:auto;
+      }
+
+      a,
+      .btn,
+      .card,
+      .post,
+      .experience-panel,
+      input,
+      textarea{
+        transition:none;
+      }
     }
   </style>
 
@@ -1081,8 +1367,11 @@
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+
   <header>
+
     <div class="wrap">
+
       <div class="nav">
 
         <a
@@ -1096,11 +1385,19 @@
             alt="Sergio Landoni logo"
             width="40"
             height="40"
+            decoding="async"
           />
 
           <div class="brand-text">
-            <strong>Sergio Landoni</strong>
-            <span>Wine Writer · Neuquén Wine Ambassador · Territory-Based Sommelier</span>
+
+            <strong>
+              Sergio Landoni
+            </strong>
+
+            <span>
+              Wine Writer · Neuquén Wine Ambassador · Territory-Based Sommelier
+            </span>
+
           </div>
 
         </a>
@@ -1109,15 +1406,27 @@
           class="menu"
           aria-label="Main navigation">
 
-          <a href="#home">Home</a>
+          <a
+            href="#home"
+            aria-current="page">
+            Home
+          </a>
 
-          <a href="#perspective">Perspective</a>
+          <a href="/en/blog.html">
+            Journal
+          </a>
 
-          <a href="/en/blog.html">Journal</a>
+          <a href="/en/patagonia-wine-experiences.html">
+            Experience
+          </a>
 
-          <a href="#about">About</a>
+          <a href="#about">
+            About
+          </a>
 
-          <a href="#conversation">Contact</a>
+          <a href="#conversation">
+            Contact
+          </a>
 
           <a
             href="/"
@@ -1129,17 +1438,21 @@
           <a
             href="/en/"
             hreflang="en-GB"
-            aria-current="page">
+            lang="en">
             <strong>EN</strong>
           </a>
 
         </nav>
 
       </div>
+
     </div>
+
   </header>
 
+
   <main class="wrap">
+
 
     <!-- HERO -->
     <section
@@ -1198,9 +1511,9 @@
 
           <p>
             For more than three decades, Patagonia has been my home. My first
-            vineyard experiences came in Río Negro, travelling through the Upper,
-            Middle and Lower Valleys, where quality viticulture has shaped the
-            landscape for more than a century.
+            vineyard experiences came in Río Negro, travelling through the
+            Upper, Middle and Lower Valleys, where quality viticulture has
+            shaped the landscape for more than a century.
           </p>
 
           <p>
@@ -1218,18 +1531,29 @@
 
           <p class="editorial-note">
             <em>
-              A long-term perspective on Patagonia, told one vineyard, one region
-              and one story at a time
+              A long-term perspective on Patagonia, told one vineyard, one
+              region and one story at a time
             </em>
           </p>
 
-          <a
-            class="text-link"
-            href="/en/blog.html">
-            Explore the Patagonian Wine Journal
-          </a>
+          <div class="hero-actions">
+
+            <a
+              class="btn primary"
+              href="/en/blog.html">
+              Explore the Journal
+            </a>
+
+            <a
+              class="btn outline"
+              href="/en/patagonia-wine-experiences.html">
+              Discover Patagonian Wine Experience
+            </a>
+
+          </div>
 
         </article>
+
 
         <aside
           class="card"
@@ -1254,15 +1578,15 @@
           <p>
             Río Negro brings the continuity of old vineyards and a wine culture
             built over generations. Neuquén shows how quickly a modern wine
-            region can expand across river valleys, plateaus, northern landscapes
-            and the Andean foothills. Chubut continues to extend the southern
-            limits of viticulture.
+            region can expand across river valleys, plateaus, northern
+            landscapes and the Andean foothills. Chubut continues to extend the
+            southern limits of viticulture.
           </p>
 
           <p>
             General descriptions often miss those differences. Understanding
-            Patagonia requires looking closely at each region, its people and the
-            decisions made in each vineyard.
+            Patagonia requires looking closely at each region, its people and
+            the decisions made in each vineyard.
           </p>
 
           <hr
@@ -1284,9 +1608,10 @@
 
           <p>
             In 2026, I was appointed the first Official Neuquén Wine Ambassador
-            by the Province of Neuquén. The distinction recognises a role focused
-            on strengthening the identity and visibility of the province’s wines,
-            while placing them within the broader context of Patagonia.
+            by the Province of Neuquén. The distinction recognises a role
+            focused on strengthening the identity and visibility of the
+            province’s wines, while placing them within the broader context of
+            Patagonia.
           </p>
 
           <a
@@ -1300,6 +1625,7 @@
       </div>
 
     </section>
+
 
     <!-- REGIONAL PERSPECTIVE -->
     <section
@@ -1348,6 +1674,7 @@
       </div>
 
     </section>
+
 
     <!-- WINE LANDSCAPE -->
     <section
@@ -1405,8 +1732,8 @@
           </p>
 
           <p>
-            Chubut added another set of conditions, with vineyards developing at
-            higher latitudes and under very different growing seasons.
+            Chubut added another set of conditions, with vineyards developing
+            at higher latitudes and under very different growing seasons.
           </p>
 
           <p>
@@ -1421,6 +1748,7 @@
       </div>
 
     </section>
+
 
     <!-- PATAGONIAN WINE JOURNAL -->
     <section
@@ -1441,7 +1769,8 @@
 
           <p>
             Original reporting, regional analysis and field observations on the
-            people, vineyards and places shaping the identity of Patagonian wine.
+            people, vineyards and places shaping the identity of Patagonian
+            wine.
           </p>
 
         </div>
@@ -1589,6 +1918,79 @@
 
     </section>
 
+    <!-- PATAGONIAN WINE EXPERIENCE -->
+    <section
+      id="experience"
+      aria-labelledby="experience-title">
+
+      <div class="experience-panel">
+
+        <div class="experience-content">
+
+          <div class="experience-kicker">
+            Wine · Gastronomy · Landscape · Hospitality
+          </div>
+
+          <h2 id="experience-title">
+            Patagonian Wine Experience
+          </h2>
+
+          <p class="lead">
+            Reading about Patagonia can provide context. Experiencing it brings
+            wine, gastronomy, landscape and people together in a very different
+            way.
+          </p>
+
+          <p>
+            Patagonian Wine Experience offers carefully considered encounters
+            shaped around the interests of each visitor rather than fixed tours
+            or standard packages.
+          </p>
+
+          <p>
+            Some may begin around a table in San Martín de los Andes. Others may
+            continue through selected wine regions of Neuquén, Río Negro or
+            Chubut, depending on the season, the purpose of the visit and what
+            can genuinely be arranged.
+          </p>
+
+          <p>
+            The common thread is always the same: understanding Patagonia
+            through its wines, regional gastronomy, landscapes and the people
+            who give each place its identity.
+          </p>
+
+          <a
+            class="btn primary"
+            href="/en/patagonia-wine-experiences.html">
+            Discover Patagonian Wine Experience
+          </a>
+
+          <p class="experience-note">
+            Private encounters and professional visits are considered
+            individually and by prior arrangement.
+          </p>
+
+        </div>
+
+        <div class="experience-media">
+
+          <img
+            src="/assets/img/patagonia-luxury-lodge-san-martin-andes.webp"
+            alt="Mountain lodge surrounded by native forest at sunset in San Martín de los Andes, Patagonia Argentina"
+            width="1600"
+            height="900"
+            loading="lazy"
+            decoding="async"
+          />
+
+        </div>
+
+      </div>
+
+    </section>
+
+
     <!-- PROFESSIONAL CONNECTIONS -->
     <section
       id="connections"
@@ -1624,10 +2026,26 @@
           </p>
 
           <p>
-            I do not act as an export agent or represent a commercial portfolio.
-            Each introduction is considered individually and begins with a clear
-            interest in Patagonia and its wines.
+            I do not act as an export agent or represent a commercial
+            portfolio. Each introduction is considered individually and begins
+            with a clear interest in Patagonia and its wines.
           </p>
+
+          <div class="experience-inline-link">
+
+            <p>
+              Some of these relationships may also support carefully considered
+              professional visits and private wine encounters across selected
+              parts of Patagonia.
+            </p>
+
+            <a
+              class="text-link"
+              href="/en/patagonia-wine-experiences.html">
+              Learn about Patagonian Wine Experience
+            </a>
+
+          </div>
 
         </article>
 
@@ -1643,14 +2061,14 @@
 
           <p>
             My work brings me into contact with wineries, institutions and
-            regional organisations. Those relationships contribute knowledge and
-            access, but they do not determine editorial judgement.
+            regional organisations. Those relationships contribute knowledge
+            and access, but they do not determine editorial judgement.
           </p>
 
           <p>
-            When an article involves a winery, institution or project with which
-            I have a professional relationship, that connection is acknowledged
-            whenever it is relevant to the reader.
+            When an article involves a winery, institution or project with
+            which I have a professional relationship, that connection is
+            acknowledged whenever it is relevant to the reader.
           </p>
 
           <p>
@@ -1664,7 +2082,8 @@
 
     </section>
 
-       <!-- SELECTED PROJECTS -->
+
+    <!-- SELECTED PROJECTS -->
     <section
       id="collaborations"
       aria-labelledby="collaborations-title">
@@ -1709,8 +2128,9 @@
 
             <p>
               A Patagonian wine event held in San Martín de los Andes, bringing
-              together wineries from Neuquén, Río Negro and Chubut in an experience
-              shaped by wine, regional gastronomy and mountain hospitality.
+              together wineries from Neuquén, Río Negro and Chubut in an
+              experience shaped by wine, regional gastronomy and mountain
+              hospitality.
             </p>
 
             <a
@@ -1756,49 +2176,6 @@
           </article>
 
         </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- PRIVATE WINE ENCOUNTERS -->
-    <section
-      id="private-encounters"
-      aria-labelledby="private-encounters-title">
-
-      <div class="card editorial-card">
-
-        <div class="kicker">
-          By prior arrangement
-        </div>
-
-        <h2 id="private-encounters-title">
-          Private Wine Encounters in San Martín de los Andes
-        </h2>
-
-        <p>
-          From time to time, I receive small private groups interested in
-          understanding the wines of Patagonia through guided tastings,
-          regional gastronomy and a closer look at the places behind them.
-        </p>
-
-        <p>
-          These encounters are arranged individually rather than offered as
-          standard tours or fixed hospitality packages. Each request depends
-          on timing, availability and the purpose of the visit.
-        </p>
-
-        <p>
-          The aim is to place the wines in context and introduce the regions,
-          people and decisions that give them their identity.
-        </p>
-
-        <a
-          class="text-link"
-          href="#conversation">
-          Tell me about your interest in Patagonia
-        </a>
 
       </div>
 
@@ -1867,9 +2244,9 @@
           </p>
 
           <p>
-            Today, my work brings together wine writing, regional communication
-            and a perspective built through sustained contact with Patagonia,
-            its vineyards and its people.
+            Today, my work brings together wine writing, regional communication,
+            professional connections and a perspective built through sustained
+            contact with Patagonia, its vineyards and its people.
           </p>
 
         </article>
@@ -1898,7 +2275,8 @@
 
           <p>
             Every article published on this website follows the same editorial
-            principles, with understanding and context placed ahead of promotion.
+            principles, with understanding and context placed ahead of
+            promotion.
           </p>
 
         </div>
@@ -1947,7 +2325,10 @@
 
               <li>Reduce Patagonia to a single wine region.</li>
 
-              <li>Allow commercial relationships to determine editorial judgement.</li>
+              <li>
+                Allow commercial relationships to determine editorial
+                judgement.
+              </li>
 
               <li>Forget that credibility is built over time.</li>
 
@@ -1999,26 +2380,27 @@
           </h2>
 
           <p>
-            If Patagonia’s wine regions have brought you here, I would be pleased
-            to hear about your interest in the region.
+            If Patagonia’s wine regions have brought you here, I would be
+            pleased to hear about your interest in the region.
           </p>
 
           <p>
-            Whether your focus is on its wines, vineyards, people or emerging
-            regions, every meaningful exchange begins with curiosity about the
-            place.
+            Whether your focus is on its wines, vineyards, people, emerging
+            regions or the possibility of discovering Patagonia in person,
+            every meaningful exchange begins with curiosity about the place.
           </p>
 
           <p>
             I welcome contact from journalists, importers, buyers, educators,
-            wine professionals and institutions seeking a deeper understanding
-            of Patagonia and its evolving wine landscape.
+            wine professionals, institutions and international visitors seeking
+            a deeper understanding of Patagonia and its evolving wine
+            landscape.
           </p>
 
           <p>
-            When relevant, I can also facilitate informed introductions to
-            wineries, producers and regional initiatives contributing to the
-            development of Patagonian wine.
+            When relevant, I can facilitate informed introductions to wineries,
+            producers and regional initiatives, or consider whether a
+            Patagonian Wine Experience may become part of a future journey.
           </p>
 
           <div class="cta">
@@ -2062,12 +2444,12 @@
 
           <p>
             <strong>Languages</strong><br>
-            Spanish · English
+            Spanish · English-language support by prior arrangement
           </p>
 
           <p class="note">
-            I travel regularly across Patagonia, so response times may occasionally
-            vary.
+            I travel regularly across Patagonia, so response times may
+            occasionally vary.
           </p>
 
         </aside>
@@ -2077,6 +2459,7 @@
     </section>
 
 
+    <!-- WHATSAPP -->
     <a
       class="whatsapp-btn"
       href="https://wa.me/5492944668508"
@@ -2102,35 +2485,63 @@
   </main>
 
 
+  <!-- SITE FOOTER -->
   <footer class="site-footer">
 
     <div class="wrap">
 
       <p class="footer-name">
-        © 2026 Sergio Landoni · Wine Writer · Neuquén Wine Ambassador
+        © <span id="year"></span> Sergio Landoni ·
+        Wine Writer · Neuquén Wine Ambassador
       </p>
 
       <div class="footer-links">
 
-        <a href="/en/">Home</a>
+        <a href="/en/">
+          Home
+        </a>
 
         <span>·</span>
 
-        <a href="/en/blog.html">Journal</a>
+        <a href="/en/blog.html">
+          Journal
+        </a>
 
         <span>·</span>
 
-        <a href="/en/privacy.html">Privacy</a>
+        <a href="/en/patagonia-wine-experiences.html">
+          Patagonian Wine Experience
+        </a>
 
         <span>·</span>
 
-        <a href="/" lang="es">Español</a>
+        <a href="/en/privacy.html">
+          Privacy
+        </a>
+
+        <span>·</span>
+
+        <a
+          href="/"
+          hreflang="es-AR"
+          lang="es">
+          Español
+        </a>
 
       </div>
 
     </div>
 
   </footer>
+
+
+  <script>
+    const year = document.getElementById("year");
+
+    if (year) {
+      year.textContent = new Date().getFullYear();
+    }
+  </script>
 
 </body>
 </html>
