@@ -352,7 +352,7 @@
 
 "inLanguage":"es-AR",
 
-"dateModified":"2026-08-06",
+"dateModified":"2026-08-09",
 
 "isPartOf":{
 "@id":"https://sergiolandoni.com.ar/#website"
@@ -962,10 +962,12 @@
   }
 
   .featured-press-card img{
-    width:100%;
-    height:280px;
-    object-fit:cover;
-  }
+  width:100%;
+  height:280px;
+  object-fit:contain;
+  object-position:center;
+  background:#eef1ef;
+}
 
   .featured-press-body{
     display:flex;
@@ -1040,11 +1042,13 @@
   }
 
   .press-item-image img{
-    width:100%;
-    height:135px;
-    object-fit:cover;
-    transition:transform .25s ease;
-  }
+  width:100%;
+  height:135px;
+  object-fit:contain;
+  object-position:center;
+  background:#eef1ef;
+  transition:transform .25s ease;
+}
 
   .press-item-content{
     min-width:0;
@@ -1922,15 +1926,15 @@
         </article>
 
 
-        <!-- Destacada 4 -->
+               <!-- Destacada 4 -->
 
         <article class="featured-press-card">
 
           <img
-            src="/assets/img/prensa/sergio-landoni-embajador-vino-neuquino.webp"
-            alt="Sergio Landoni recibe la distinción como Embajador del Vino Neuquino"
-            width="900"
-            height="1600"
+            src="/assets/img/pinot-noir-neuquen-patagonia-argentina.webp"
+            alt="Pinot Noir de Neuquén, Patagonia Argentina"
+            width="1600"
+            height="900"
             loading="lazy"
             decoding="async"
           />
@@ -1939,41 +1943,42 @@
           <div class="featured-press-body">
 
             <div class="tags">
-              <span class="tag">Perfil</span>
+              <span class="tag tag-author">Artículo de autor</span>
               <span class="tag">Diario Río Negro</span>
-              <span class="tag">Embajador</span>
+              <span class="tag">Pinot Noir</span>
             </div>
 
             <div class="press-meta">
               <strong>Diario Río Negro</strong>
-              <time datetime="2026-05-02">
-                2 de mayo de 2026
+              <time datetime="2026-08-09">
+                9 de agosto de 2026
               </time>
             </div>
 
             <h3>
               <a
-                href="https://www.rionegro.com.ar/gastronomia/quien-es-sergio-landoni-primer-embajador-del-vino-neuquino-distinguido-en-la-fiesta-del-chef-patagonico-4559433/"
+                href="https://www.rionegro.com.ar/gastronomia/pinot-noir-de-neuquen-por-que-hoy-es-el-emblema-de-la-vitivinicultura-provincial-4671810/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Quién es Sergio Landoni, primer Embajador del Vino Neuquino
+                Pinot Noir de Neuquén: por qué hoy es el emblema de la vitivinicultura provincial
               </a>
             </h3>
 
             <p>
-              La historia detrás de la distinción y el trabajo territorial
-              desarrollado desde San Martín de los Andes para vincular vino,
-              gastronomía, turismo e identidad.
+              Un recorrido por la historia del Pinot Noir neuquino y por los
+              distintos lugares donde la variedad fue mostrando expresiones
+              propias, desde San Patricio del Chañar hasta la cordillera y el
+              Alto Neuquén.
             </p>
 
             <a
               class="btn btn-primary"
-              href="https://www.rionegro.com.ar/gastronomia/quien-es-sergio-landoni-primer-embajador-del-vino-neuquino-distinguido-en-la-fiesta-del-chef-patagonico-4559433/"
+              href="https://www.rionegro.com.ar/gastronomia/pinot-noir-de-neuquen-por-que-hoy-es-el-emblema-de-la-vitivinicultura-provincial-4671810/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Leer perfil
+              Leer en Diario Río Negro
             </a>
 
           </div>
@@ -2021,6 +2026,74 @@
 
       <div class="press-list">
 
+        <!-- Artículo Pinot Noir de Neuquén -->
+
+        <article class="press-item">
+
+          <div class="press-item-image">
+
+            <img
+              src="/assets/img/pinot-noir-neuquen-patagonia-argentina.webp"
+              alt="Pinot Noir de Neuquén, Patagonia Argentina"
+              width="1600"
+              height="900"
+              loading="lazy"
+              decoding="async"
+            />
+
+          </div>
+
+
+          <div class="press-item-content">
+
+            <div class="tags">
+              <span class="tag tag-author">Artículo de autor</span>
+              <span class="tag">Pinot Noir</span>
+              <span class="tag">Neuquén</span>
+            </div>
+
+            <div class="press-meta">
+              <strong>Diario Río Negro</strong>
+
+              <time datetime="2026-08-09">
+                9 de agosto de 2026
+              </time>
+            </div>
+
+            <h3>
+              <a
+                href="https://www.rionegro.com.ar/gastronomia/pinot-noir-de-neuquen-por-que-hoy-es-el-emblema-de-la-vitivinicultura-provincial-4671810/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Pinot Noir de Neuquén: por qué hoy es el emblema de la vitivinicultura provincial
+              </a>
+            </h3>
+
+            <p>
+              Una mirada sobre la variedad que mejor permitió conocer las
+              diferencias entre los distintos lugares donde hoy se produce
+              vino en Neuquén.
+            </p>
+
+          </div>
+
+
+          <div class="press-item-action">
+
+            <a
+              class="btn"
+              href="https://www.rionegro.com.ar/gastronomia/pinot-noir-de-neuquen-por-que-hoy-es-el-emblema-de-la-vitivinicultura-provincial-4671810/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Leer artículo
+            </a>
+
+          </div>
+
+        </article>
+        
         <!-- Artículo de autor 1 -->
 
         <article class="press-item">
