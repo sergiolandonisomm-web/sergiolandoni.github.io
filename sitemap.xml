@@ -40,11 +40,11 @@
   </url>
 
   <url>
-    <loc>https://sergiolandoni.com.ar/blog.html</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
+  <loc>https://sergiolandoni.com.ar/blog.html</loc>
+  <lastmod>2026-08-17</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
 
   <!-- Contenido pilar -->
 
@@ -55,6 +55,13 @@
     <priority>0.95</priority>
   </url>
 
+<url>
+  <loc>https://sergiolandoni.com.ar/vino-a-la-montana-ruta-vino-patagonia-san-martin-de-los-andes.html</loc>
+  <lastmod>2026-08-16</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+  
   <url>
   <loc>https://sergiolandoni.com.ar/dia-internacional-pinot-noir-neuquen-2026.html</loc>
   <lastmod>2026-08-14</lastmod>
