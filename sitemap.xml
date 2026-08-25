@@ -39,9 +39,9 @@
     <priority>0.90</priority>
   </url>
 
-  <url>
+ <url>
   <loc>https://sergiolandoni.com.ar/blog.html</loc>
-  <lastmod>2026-08-17</lastmod>
+  <lastmod>2026-08-25</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.90</priority>
 </url>
@@ -54,7 +54,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
-
+  
+  <url>
+  <loc>https://sergiolandoni.com.ar/quesos-y-vinos-de-neuquen.html</loc>
+  <lastmod>2026-08-24</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+</url>
+  
 <url>
   <loc>https://sergiolandoni.com.ar/vino-a-la-montana-ruta-vino-patagonia-san-martin-de-los-andes.html</loc>
   <lastmod>2026-08-16</lastmod>
