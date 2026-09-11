@@ -39,15 +39,14 @@
     <priority>0.90</priority>
   </url>
 
- <url>
-  <loc>https://sergiolandoni.com.ar/blog.html</loc>
-  <lastmod>2026-09-08</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.90</priority>
-</url>
+  <url>
+    <loc>https://sergiolandoni.com.ar/blog.html</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
 
   <!-- Contenido pilar -->
-
   <url>
     <loc>https://sergiolandoni.com.ar/pinot-noir-neuquen.html</loc>
     <lastmod>2026-08-14</lastmod>
@@ -56,33 +55,33 @@
   </url>
 
   <url>
-  <loc>https://sergiolandoni.com.ar/vinos-chubut-patagonia.html</loc>
-  <lastmod>2026-09-08</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-</url>
-  
+    <loc>https://sergiolandoni.com.ar/vinos-chubut-patagonia.html</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
   <url>
-  <loc>https://sergiolandoni.com.ar/quesos-vinos-neuquen.html</loc>
-  <lastmod>2026-08-24</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.85</priority>
-</url>
-  
-<url>
-  <loc>https://sergiolandoni.com.ar/vino-a-la-montana-ruta-vino-patagonia-san-martin-de-los-andes.html</loc>
-  <lastmod>2026-08-16</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-</url>
-  
+    <loc>https://sergiolandoni.com.ar/quesos-vinos-neuquen.html</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
   <url>
-  <loc>https://sergiolandoni.com.ar/dia-internacional-pinot-noir-neuquen-2026.html</loc>
-  <lastmod>2026-08-14</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.90</priority>
-</url>
-  
+    <loc>https://sergiolandoni.com.ar/vino-a-la-montana-ruta-vino-patagonia-san-martin-de-los-andes.html</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://sergiolandoni.com.ar/dia-internacional-pinot-noir-neuquen-2026.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
   <url>
     <loc>https://sergiolandoni.com.ar/guia-vino-neuquino.html</loc>
     <lastmod>2026-07-29</lastmod>
@@ -119,7 +118,6 @@
   </url>
 
   <!-- Artículos principales -->
-
   <url>
     <loc>https://sergiolandoni.com.ar/vinos-neuquen-vinos-negocios-2026.html</loc>
     <lastmod>2026-06-01</lastmod>
@@ -170,7 +168,6 @@
   </url>
 
   <!-- Contenido complementario -->
-
   <url>
     <loc>https://sergiolandoni.com.ar/referentes-vino-neuquen.html</loc>
     <lastmod>2026-03-22</lastmod>
@@ -200,12 +197,18 @@
   </url>
 
   <!-- English -->
-
   <url>
     <loc>https://sergiolandoni.com.ar/en/blog.html</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://sergiolandoni.com.ar/en/chubut-wine-patagonia.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
   </url>
 
   <url>
