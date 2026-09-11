@@ -61,168 +61,269 @@
   <!-- Preload hero (LCP) -->
   <link rel="preload" as="image" href="/assets/img/vinedos-bahia-bustamante-costa-chubut.webp" fetchpriority="high" />
 
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://sergiolandoni.com.ar/#organization",
-        "name": "Sergio Landoni | Patagonian Wine",
-        "alternateName": "Sergio Landoni Wine Communication",
-        "url": "https://sergiolandoni.com.ar/",
-        "logo": {
-          "@type": "ImageObject",
-          "@id": "https://sergiolandoni.com.ar/#logo",
-          "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg",
-          "contentUrl": "https://sergiolandoni.com.ar/assets/img/logo.jpg"
-        },
-        "founder": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://sergiolandoni.com.ar/#website",
-        "url": "https://sergiolandoni.com.ar/",
-        "name": "Sergio Landoni | Patagonian Wine",
-        "description": "Official website of Sergio Landoni, Territory-Based Sommelier and Neuquén Wine Ambassador, focused on Patagonian wine, its people, vineyards and wine regions.",
-        "inLanguage": ["es-AR", "en-GB"],
-        "publisher": { "@id": "https://sergiolandoni.com.ar/#organization" }
-      },
-      {
-        "@type": "Person",
-        "@id": "https://sergiolandoni.com.ar/#sergio-landoni",
-        "name": "Sergio Landoni",
-        "alternateName": [
-          "Neuquén Wine Ambassador",
-          "Official Neuquén Wine Ambassador",
-          "Territory-Based Sommelier",
-          "Sommelier de Territorio",
-          "Embajador del Vino Neuquino"
-        ],
-        "url": "https://sergiolandoni.com.ar/",
-        "jobTitle": ["Neuquén Wine Ambassador", "Territory-Based Sommelier"],
-        "description": "Sergio Landoni is a Territory-Based Sommelier and the first Official Neuquén Wine Ambassador. Based in San Martín de los Andes, his work focuses on Patagonian wine, its people, vineyards and wine regions, with particular attention to Neuquén.",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://sergiolandoni.com.ar/assets/img/retrato-sergio-landoni.webp"
-        },
-        "sameAs": [
-          "https://www.instagram.com/sergiolandoni.somm/",
-          "https://www.linkedin.com/in/sergio-landoni-sommelier/",
-          "https://www.youtube.com/@PatagonianLifestyle"
-        ],
-        "knowsAbout": [
-          "Patagonian wine",
-          "Chubut wine",
-          "Neuquén wine",
-          "Río Negro wine",
-          "Cool-climate viticulture",
-          "Argentine wine regions",
-          "Wine writing",
-          "Territory-based wine communication"
-        ]
-      },
-      {
-        "@type": "Place",
-        "@id": "https://sergiolandoni.com.ar/en/300-acres-edge-of-world.html#chubut",
-        "name": "Chubut",
-        "description": "A Patagonian province in southern Argentina with vineyards scattered from Andean valleys and steppe landscapes to Sarmiento and the Atlantic coast.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressRegion": "Chubut",
-          "addressCountry": "AR"
-        }
-      },
-      {
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://sergiolandoni.com.ar/#organization",
+      "name": "Sergio Landoni | Patagonian Wine",
+      "alternateName": "Sergio Landoni Wine Communication",
+      "url": "https://sergiolandoni.com.ar/",
+      "logo": {
         "@type": "ImageObject",
-        "@id": "https://sergiolandoni.com.ar/en/300-acres-edge-of-world.html#img-hero",
-        "url": "https://sergiolandoni.com.ar/assets/img/vinedos-bahia-bustamante-costa-chubut.webp",
-        "contentUrl": "https://sergiolandoni.com.ar/assets/img/vinedos-bahia-bustamante-costa-chubut.webp",
-        "width": 1280,
-        "height": 900,
-        "inLanguage": "en-GB",
-        "caption": "Vineyards at Bahía Bustamante beside the South Atlantic coast in Chubut, Argentine Patagonia.",
-        "description": "Hero image for an article about Chubut wine and extreme viticulture in Argentine Patagonia."
+        "@id": "https://sergiolandoni.com.ar/#logo",
+        "url": "https://sergiolandoni.com.ar/assets/img/logo.jpg",
+        "contentUrl": "https://sergiolandoni.com.ar/assets/img/logo.jpg"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://sergiolandoni.com.ar/en/300-acres-edge-of-world.html#webpage",
-        "url": "https://sergiolandoni.com.ar/en/300-acres-edge-of-world.html",
-        "name": "300 Acres at the Edge of the World",
-        "headline": "300 Acres at the Edge of the World",
-        "description": "Deep in Argentine Patagonia, Chubut grows wine on just 122 hectares. A journey through frost, rare bottles and vineyards from the Andes to the Atlantic.",
-        "inLanguage": "en-GB",
-        "isPartOf": { "@id": "https://sergiolandoni.com.ar/#website" },
-        "about": { "@id": "https://sergiolandoni.com.ar/en/300-acres-edge-of-world.html#chubut" },
-        "primaryImageOfPage": { "@id": "https://sergiolandoni.com.ar/en/300-acres-edge-of-world.html#img-hero" },
-        "mainEntity": { "@id": "https://sergiolandoni.com.ar/en/300-acres-edge-of-world.html#article" },
-        "breadcrumb": { "@id": "https://sergiolandoni.com.ar/en/300-acres-edge-of-world.html#breadcrumb" }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://sergiolandoni.com.ar/en/300-acres-edge-of-world.html#breadcrumb",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sergiolandoni.com.ar/en/" },
-          { "@type": "ListItem", "position": 2, "name": "Journal", "item": "https://sergiolandoni.com.ar/en/blog.html" },
-          { "@type": "ListItem", "position": 3, "name": "Chubut Wine", "item": "https://sergiolandoni.com.ar/en/300-acres-edge-of-world.html" }
-        ]
-      },
-      {
-        "@type": "BlogPosting",
-        "@id": "https://sergiolandoni.com.ar/en/300-acres-edge-of-world.html#article",
-        "url": "https://sergiolandoni.com.ar/en/300-acres-edge-of-world.html",
-        "mainEntityOfPage": { "@id": "https://sergiolandoni.com.ar/en/300-acres-edge-of-world.html#webpage" },
-        "headline": "300 Acres at the Edge of the World",
-        "alternativeHeadline": "Chubut wine, genuine scarcity and extreme viticulture between the Andes and the Atlantic",
-        "description": "Deep in Argentine Patagonia, Chubut grows wine on just 122 hectares. A journey through frost, rare bottles and vineyards from the Andes to the Atlantic.",
-        "inLanguage": "en-GB",
-        "datePublished": "2026-09-11",
-        "dateModified": "2026-09-11",
-        "author": { "@id": "https://sergiolandoni.com.ar/#sergio-landoni" },
-        "publisher": { "@id": "https://sergiolandoni.com.ar/#organization" },
-        "image": [{ "@id": "https://sergiolandoni.com.ar/en/300-acres-edge-of-world.html#img-hero" }],
-        "thumbnailUrl": "https://sergiolandoni.com.ar/assets/img/vinedos-bahia-bustamante-costa-chubut.webp",
-        "articleSection": ["Wine", "Patagonia", "Chubut", "Cool-climate wine", "Extreme viticulture", "Wine regions"],
-        "keywords": [
-          "Chubut wine",
-          "Patagonia wine",
-          "Argentine Patagonia wine",
-          "Trevelin wine",
-          "Chubut Pinot Noir",
-          "Chubut Chardonnay",
-          "cool-climate wine Argentina",
-          "extreme viticulture",
-          "Otronia",
-          "Casa Yagüe",
-          "Gualjaina wine",
-          "Sarmiento wine",
-          "Patagonian wine regions"
-        ],
-        "about": [
-          { "@id": "https://sergiolandoni.com.ar/en/300-acres-edge-of-world.html#chubut" },
-          { "@type": "Thing", "name": "Chubut wine" },
-          { "@type": "Thing", "name": "Patagonian wine" }
-        ],
-        "mentions": [
-          { "@type": "Place", "name": "Trevelin" },
-          { "@type": "Place", "name": "El Hoyo" },
-          { "@type": "Place", "name": "Lago Puelo" },
-          { "@type": "Place", "name": "Gualjaina" },
-          { "@type": "Place", "name": "Sarmiento" },
-          { "@type": "Place", "name": "Bahía Bustamante" },
-          { "@type": "Organization", "name": "Casa Yagüe" },
-          { "@type": "Organization", "name": "Viñas del Nant y Fall" },
-          { "@type": "Organization", "name": "Cielos de Gualjaina" },
-          { "@type": "Organization", "name": "Viñas de Huancache" },
-          { "@type": "Organization", "name": "Otronia" }
-        ],
-        "wordCount": 1939,
-        "timeRequired": "PT9M"
+      "founder": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sergiolandoni.com.ar/#website",
+      "url": "https://sergiolandoni.com.ar/",
+      "name": "Sergio Landoni | Patagonian Wine",
+      "description": "Official website of Sergio Landoni, Territory-Based Sommelier and Neuquén Wine Ambassador, focused on Patagonian wine, its people, vineyards and wine regions.",
+      "inLanguage": [
+        "es-AR",
+        "en-GB"
+      ],
+      "publisher": {
+        "@id": "https://sergiolandoni.com.ar/#organization"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sergiolandoni.com.ar/#sergio-landoni",
+      "name": "Sergio Landoni",
+      "alternateName": [
+        "Neuquén Wine Ambassador",
+        "Official Neuquén Wine Ambassador",
+        "Territory-Based Sommelier",
+        "Sommelier de Territorio",
+        "Embajador del Vino Neuquino"
+      ],
+      "url": "https://sergiolandoni.com.ar/",
+      "jobTitle": [
+        "Neuquén Wine Ambassador",
+        "Territory-Based Sommelier"
+      ],
+      "description": "Sergio Landoni is a Territory-Based Sommelier and the first Official Neuquén Wine Ambassador. Based in San Martín de los Andes, his work focuses on Patagonian wine, its people, vineyards and wine regions, with particular attention to Neuquén.",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://sergiolandoni.com.ar/#image-portrait",
+        "url": "https://sergiolandoni.com.ar/assets/img/retrato-sergio-landoni.webp",
+        "contentUrl": "https://sergiolandoni.com.ar/assets/img/retrato-sergio-landoni.webp"
+      },
+      "sameAs": [
+        "https://www.instagram.com/sergiolandoni.somm/",
+        "https://www.linkedin.com/in/sergio-landoni-sommelier/",
+        "https://www.youtube.com/@PatagonianLifestyle"
+      ],
+      "knowsAbout": [
+        "Patagonian wine",
+        "Chubut wine",
+        "Neuquén wine",
+        "Río Negro wine",
+        "Cool-climate viticulture",
+        "Argentine wine regions",
+        "Wine writing",
+        "Territory-based wine communication"
+      ]
+    },
+    {
+      "@type": "Place",
+      "@id": "https://sergiolandoni.com.ar/en/chubut-wine-patagonia.html#chubut",
+      "name": "Chubut",
+      "description": "A Patagonian province in southern Argentina with vineyards scattered from Andean valleys and steppe landscapes to Sarmiento and the Atlantic coast.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Chubut",
+        "addressCountry": "AR"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://sergiolandoni.com.ar/en/chubut-wine-patagonia.html#img-hero",
+      "url": "https://sergiolandoni.com.ar/assets/img/vinedos-bahia-bustamante-costa-chubut.webp",
+      "contentUrl": "https://sergiolandoni.com.ar/assets/img/vinedos-bahia-bustamante-costa-chubut.webp",
+      "width": 1280,
+      "height": 900,
+      "inLanguage": "en-GB",
+      "caption": "Vineyards at Bahía Bustamante beside the South Atlantic coast in Chubut, Argentine Patagonia.",
+      "description": "Hero image for an article about Chubut wine and extreme viticulture in Argentine Patagonia."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sergiolandoni.com.ar/en/chubut-wine-patagonia.html#webpage",
+      "url": "https://sergiolandoni.com.ar/en/chubut-wine-patagonia.html",
+      "name": "300 Acres at the Edge of the World",
+      "headline": "300 Acres at the Edge of the World",
+      "description": "Deep in Argentine Patagonia, Chubut grows wine on just 122 hectares. A journey through frost, rare bottles and vineyards from the Andes to the Atlantic.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@id": "https://sergiolandoni.com.ar/#website"
+      },
+      "about": {
+        "@id": "https://sergiolandoni.com.ar/en/chubut-wine-patagonia.html#chubut"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://sergiolandoni.com.ar/en/chubut-wine-patagonia.html#img-hero"
+      },
+      "mainEntity": {
+        "@id": "https://sergiolandoni.com.ar/en/chubut-wine-patagonia.html#article"
+      },
+      "breadcrumb": {
+        "@id": "https://sergiolandoni.com.ar/en/chubut-wine-patagonia.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sergiolandoni.com.ar/en/chubut-wine-patagonia.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://sergiolandoni.com.ar/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Journal",
+          "item": "https://sergiolandoni.com.ar/en/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Chubut Wine",
+          "item": "https://sergiolandoni.com.ar/en/chubut-wine-patagonia.html"
+        }
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://sergiolandoni.com.ar/en/chubut-wine-patagonia.html#article",
+      "url": "https://sergiolandoni.com.ar/en/chubut-wine-patagonia.html",
+      "mainEntityOfPage": {
+        "@id": "https://sergiolandoni.com.ar/en/chubut-wine-patagonia.html#webpage"
+      },
+      "headline": "300 Acres at the Edge of the World",
+      "alternativeHeadline": "Chubut wine, genuine scarcity and extreme viticulture between the Andes and the Atlantic",
+      "description": "Deep in Argentine Patagonia, Chubut grows wine on just 122 hectares. A journey through frost, rare bottles and vineyards from the Andes to the Atlantic.",
+      "inLanguage": "en-GB",
+      "datePublished": "2026-09-11T09:00:00-03:00",
+      "dateModified": "2026-09-11T09:00:00-03:00",
+      "author": {
+        "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+      },
+      "publisher": {
+        "@id": "https://sergiolandoni.com.ar/#organization"
+      },
+      "image": [
+        {
+          "@id": "https://sergiolandoni.com.ar/en/chubut-wine-patagonia.html#img-hero"
+        },
+        "https://sergiolandoni.com.ar/assets/img/casa-yague-vinedos-trevelin-chubut.webp",
+        "https://sergiolandoni.com.ar/assets/img/heladas-vinedos-trevelin-chubut.webp",
+        "https://sergiolandoni.com.ar/assets/img/nant-y-fall-vinedos-trevelin-chubut.webp",
+        "https://sergiolandoni.com.ar/assets/img/bodega-huancache-gualjaina-chubut.webp",
+        "https://sergiolandoni.com.ar/assets/img/vinedo-linaje-lago-puelo-chubut.webp",
+        "https://sergiolandoni.com.ar/assets/img/estancia-las-bardas-vinedo-trelew-chubut.webp"
+      ],
+      "thumbnailUrl": "https://sergiolandoni.com.ar/assets/img/vinedos-bahia-bustamante-costa-chubut.webp",
+      "articleSection": [
+        "Wine",
+        "Patagonia",
+        "Chubut",
+        "Cool-climate wine",
+        "Extreme viticulture",
+        "Wine regions"
+      ],
+      "keywords": [
+        "Chubut wine",
+        "Patagonia wine",
+        "Argentine Patagonia wine",
+        "Trevelin wine",
+        "Chubut Pinot Noir",
+        "Chubut Chardonnay",
+        "cool-climate wine Argentina",
+        "extreme viticulture",
+        "Otronia",
+        "Casa Yagüe",
+        "Gualjaina wine",
+        "Sarmiento wine",
+        "Patagonian wine regions"
+      ],
+      "about": [
+        {
+          "@id": "https://sergiolandoni.com.ar/en/chubut-wine-patagonia.html#chubut"
+        },
+        {
+          "@type": "Thing",
+          "name": "Chubut wine"
+        },
+        {
+          "@type": "Thing",
+          "name": "Patagonian wine"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "Place",
+          "name": "Trevelin"
+        },
+        {
+          "@type": "Place",
+          "name": "El Hoyo"
+        },
+        {
+          "@type": "Place",
+          "name": "Lago Puelo"
+        },
+        {
+          "@type": "Place",
+          "name": "Gualjaina"
+        },
+        {
+          "@type": "Place",
+          "name": "Sarmiento"
+        },
+        {
+          "@type": "Place",
+          "name": "Bahía Bustamante"
+        },
+        {
+          "@type": "Organization",
+          "name": "Casa Yagüe"
+        },
+        {
+          "@type": "Organization",
+          "name": "Viñas del Nant y Fall"
+        },
+        {
+          "@type": "Organization",
+          "name": "Cielos de Gualjaina"
+        },
+        {
+          "@type": "Organization",
+          "name": "Viñas de Huancache"
+        },
+        {
+          "@type": "Organization",
+          "name": "Otronia"
+        }
+      ],
+      "wordCount": 1939,
+      "timeRequired": "PT9M"
+    }
+  ]
+}
+</script>
 
   <style>
     :root{
