@@ -47,6 +47,7 @@
   </url>
 
   <!-- Contenido pilar -->
+
   <url>
     <loc>https://sergiolandoni.com.ar/embajador-vino-funcion-representacion-territorio.html</loc>
     <lastmod>2026-09-18</lastmod>
@@ -85,8 +86,8 @@
   <url>
     <loc>https://sergiolandoni.com.ar/dia-internacional-pinot-noir-neuquen-2026.html</loc>
     <lastmod>2026-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
 
   <url>
@@ -125,6 +126,7 @@
   </url>
 
   <!-- Artículos principales -->
+
   <url>
     <loc>https://sergiolandoni.com.ar/vinos-neuquen-vinos-negocios-2026.html</loc>
     <lastmod>2026-06-01</lastmod>
@@ -175,6 +177,7 @@
   </url>
 
   <!-- Contenido complementario -->
+
   <url>
     <loc>https://sergiolandoni.com.ar/referentes-vino-neuquen.html</loc>
     <lastmod>2026-03-22</lastmod>
@@ -204,6 +207,7 @@
   </url>
 
   <!-- English -->
+
   <url>
     <loc>https://sergiolandoni.com.ar/en/blog.html</loc>
     <lastmod>2026-09-11</lastmod>
