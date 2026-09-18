@@ -41,12 +41,19 @@
 
   <url>
     <loc>https://sergiolandoni.com.ar/blog.html</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <!-- Contenido pilar -->
+  <url>
+    <loc>https://sergiolandoni.com.ar/embajador-vino-funcion-representacion-territorio.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
   <url>
     <loc>https://sergiolandoni.com.ar/pinot-noir-neuquen.html</loc>
     <lastmod>2026-08-14</lastmod>
