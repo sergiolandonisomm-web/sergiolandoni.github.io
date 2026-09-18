@@ -6,3 +6,5 @@ Disallow: /assets/tmp/
 Disallow: /private/
 
 Sitemap: https://sergiolandoni.com.ar/sitemap.xml
+
+LLMS: https://sergiolandoni.com.ar/llms.txt
