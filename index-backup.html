@@ -15,9 +15,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="format-detection" content="telephone=no" />
 
-<title>Sergio Landoni · Sommelier de vinos patagónicos | Embajador del Vino Neuquino</title>
+<title>Sergio Landoni | Embajador del Vino Neuquino</title>
 
-<meta name="description" content="Sergio Landoni, Sommelier de vinos patagónicos y Embajador del Vino Neuquino. Experiencias, consultoría y comunicación territorial para bodegas, restaurantes e instituciones en toda la Argentina." />
+<meta name="description" content="Sergio Landoni, Sommelier de Territorio y Embajador del Vino Neuquino. Experiencias, consultoría y comunicación del vino patagónico en Argentina." />
 
 <meta name="author" content="Sergio Landoni" />
 <meta name="robots" content="index,follow,max-image-preview:large" />
@@ -28,8 +28,22 @@
 <link rel="alternate" href="https://sergiolandoni.com.ar/en/" hreflang="en-GB" />
 <link rel="alternate" href="https://sergiolandoni.com.ar/" hreflang="x-default" />
 
-<!-- Performance: preload hero -->
-<link rel="preload" as="image" href="/assets/img/hero.webp" fetchpriority="high" />
+<!-- Performance: preload hero responsive -->
+<link
+  rel="preload"
+  as="image"
+  href="/assets/img/hero-mobile.webp"
+  media="(max-width:640px)"
+  fetchpriority="high"
+/>
+
+<link
+  rel="preload"
+  as="image"
+  href="/assets/img/hero.webp"
+  media="(min-width:641px)"
+  fetchpriority="high"
+/>
 
 <!-- Icons -->
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
@@ -38,28 +52,29 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Sergio Landoni | Embajador del Vino Neuquino" />
-<meta property="og:title" content="Sergio Landoni · Sommelier de vinos patagónicos | Embajador del Vino Neuquino" />
-<meta property="og:description" content="Experiencias, consultoría y comunicación territorial vinculadas al vino patagónico, para bodegas, restaurantes e instituciones en toda la Argentina." />
+<meta property="og:title" content="Sergio Landoni | Embajador del Vino Neuquino" />
+<meta property="og:description" content="Sommelier de Territorio. Experiencias, consultoría y comunicación del vino patagónico desde Neuquén para Argentina." />
 <meta property="og:url" content="https://sergiolandoni.com.ar/" />
 <meta property="og:locale" content="es_AR" />
 <meta property="og:locale:alternate" content="en_GB" />
-<meta property="og:image" content="https://sergiolandoni.com.ar/assets/img/hero.webp" />
-<meta property="og:image:secure_url" content="https://sergiolandoni.com.ar/assets/img/hero.webp" />
-<meta property="og:image:alt" content="Sergio Landoni, Sommelier de vinos patagónicos y Embajador del Vino Neuquino" />
-<meta property="og:image:type" content="image/webp" />
+
+<meta property="og:image" content="https://sergiolandoni.com.ar/assets/img/hero.jpg" />
+<meta property="og:image:secure_url" content="https://sergiolandoni.com.ar/assets/img/hero.jpg" />
+<meta property="og:image:alt" content="Sergio Landoni, Sommelier de Territorio y Embajador del Vino Neuquino" />
+<meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="1600" />
 <meta property="og:image:height" content="900" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Sergio Landoni · Sommelier de vinos patagónicos | Embajador del Vino Neuquino" />
-<meta name="twitter:description" content="Experiencias, consultoría y comunicación territorial vinculadas al vino patagónico, para bodegas, restaurantes e instituciones en toda la Argentina." />
+<meta name="twitter:title" content="Sergio Landoni | Embajador del Vino Neuquino" />
+<meta name="twitter:description" content="Sommelier de Territorio. Experiencias, consultoría y comunicación del vino patagónico desde Neuquén para Argentina." />
 <meta name="twitter:url" content="https://sergiolandoni.com.ar/" />
-<meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/hero.webp" />
-<meta name="twitter:image:alt" content="Sergio Landoni, Sommelier de vinos patagónicos y Embajador del Vino Neuquino" />
+<meta name="twitter:image" content="https://sergiolandoni.com.ar/assets/img/hero.jpg" />
+<meta name="twitter:image:alt" content="Sergio Landoni, Sommelier de Territorio y Embajador del Vino Neuquino" />
 <meta name="twitter:image:width" content="1600" />
 <meta name="twitter:image:height" content="900" />
-
+  
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -139,6 +154,13 @@
       "contentUrl": "https://sergiolandoni.com.ar/logo.jpg"
     },
     {
+      "@type": "Organization",
+      "@id": "https://sergiolandoni.com.ar/#winexperts-global",
+      "name": "Winexperts Global",
+      "url": "https://winexpertsglobal.org/",
+      "sameAs": "https://winexpertsglobal.org/embajadores/"
+    },
+    {
       "@type": [
         "ProfessionalService",
         "LocalBusiness"
@@ -148,6 +170,9 @@
       "url": "https://sergiolandoni.com.ar/",
       "image": {
         "@id": "https://sergiolandoni.com.ar/#image-portrait"
+      },
+      "logo": {
+        "@id": "https://sergiolandoni.com.ar/#image-logo"
       },
       "description": "Consultoría, comunicación, formación y experiencias vinculadas al vino patagónico, con foco en el vino neuquino, el enoturismo y la identidad territorial.",
       "telephone": "+5492944668508",
@@ -218,12 +243,7 @@
         "Embajador del Vino Neuquino",
         "Sergio Landoni Somm"
       ],
-      "jobTitle": [
-        "Sommelier de Territorio",
-        "Embajador del Vino Neuquino",
-        "Comunicador de vinos patagónicos",
-        "Referente en vino neuquino"
-      ],
+      "jobTitle": "Sommelier de Territorio",
       "description": "Embajador del Vino Neuquino y Sommelier de Territorio en Patagonia Argentina, especializado en vino neuquino, comunicación del vino, enoturismo, formación y experiencias enogastronómicas.",
       "url": "https://sergiolandoni.com.ar/",
       "image": {
@@ -234,9 +254,7 @@
       "sameAs": [
         "https://www.instagram.com/sergiolandoni.somm/",
         "https://www.linkedin.com/in/sergio-landoni-sommelier/",
-        "https://www.rionegro.com.ar/gastronomia/quien-es-sergio-landoni-primer-embajador-del-vino-neuquino-distinguido-en-la-fiesta-del-chef-patagonico-4559433/",
-        "https://www.vinetur.com/20260511100468/neuquen-crea-la-figura-del-embajador-del-vino-neuquino-y-apuesta-al-vino-como-identidad-territorial.html",
-        "https://www.mejorinformado.com/regionales/sergio-landoni-sommelier-lleva-identidad-vino-patagonia-mundo_1778129437"
+        "https://winexpertsglobal.org/embajadores/"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -246,6 +264,9 @@
       },
       "worksFor": {
         "@id": "https://sergiolandoni.com.ar/#business"
+      },
+      "memberOf": {
+        "@id": "https://sergiolandoni.com.ar/#winexperts-global"
       },
       "makesOffer": {
         "@type": "Offer",
@@ -272,43 +293,45 @@
           "url": "https://www.neuquen.gov.ar/"
         }
       },
-      "knowsAbout": [
-        "Vino neuquino",
-        "Vino patagónico",
-        "Patagonia vitivinícola",
-        "Vitivinicultura de Neuquén",
-        "Enoturismo en Patagonia",
-        "Experiencias de vino en Patagonia",
-        "Comunicación del vino",
-        "Identidad territorial",
-        "Sommelier de Territorio",
-        "Gastronomía patagónica",
-        "Gastronomía neuquina",
-        "Turismo del vino",
-        "Enogastronomía patagónica",
-        "Wine storytelling",
-        "Wine communication",
-        "Wine tourism",
-        "Cool climate wines",
-        "Territorial wine identity",
-        "Neuquén wine",
-       "Patagonia wine",
-"Wine tourism in Patagonia"
+     "knowsAbout": [
+  "Vino neuquino",
+  "Vino patagónico",
+  "Patagonia vitivinícola",
+  "Vitivinicultura de Neuquén",
+  "Enoturismo en Patagonia",
+  "Experiencias de vino en Patagonia",
+  "Comunicación del vino",
+  "Escritura sobre vino",
+  "Identidad territorial",
+  "Sommelier de Territorio",
+  "Gastronomía patagónica",
+  "Gastronomía neuquina",
+  "Turismo del vino",
+  "Enogastronomía patagónica",
+  "Wine storytelling",
+  "Wine communication",
+  "Wine writing",
+  "Wine tourism",
+  "Cool climate wines",
+  "Territorial wine identity",
+  "Neuquén wine",
+  "Patagonia wine",
+  "Wine tourism in Patagonia"
 ],
-"subjectOf": [
-  {
-    "@type": "NewsArticle",
-    "headline": "Neuquén celebró el Día del Sommelier junto al Embajador del Vino Neuquino",
-    "url": "https://www.neuqueninforma.gob.ar/noticias/2026/06/17/259333-neuquen-celebro-el-dia-del-sommelier-junto-al-embajador-del-vino-neuquino",
-    "datePublished": "2026-06-17T00:00:00-03:00",
-    "publisher": {
-      "@type": "GovernmentOrganization",
-      "name": "Neuquén Informa",
-      "url": "https://www.neuqueninforma.gob.ar/"
-    },
-    "inLanguage": "es-AR"
-  },
-  {
+      "subjectOf": [
+        {
+          "@type": "NewsArticle",
+          "headline": "Neuquén celebró el Día del Sommelier junto al Embajador del Vino Neuquino",
+          "url": "https://www.neuqueninforma.gob.ar/noticias/2026/06/17/259333-neuquen-celebro-el-dia-del-sommelier-junto-al-embajador-del-vino-neuquino",
+          "datePublished": "2026-06-17T00:00:00-03:00",
+          "publisher": {
+            "@type": "GovernmentOrganization",
+            "name": "Neuquén Informa",
+            "url": "https://www.neuqueninforma.gob.ar/"
+          },
+          "inLanguage": "es-AR"
+        },
+        {
           "@type": "NewsArticle",
           "headline": "En el Festival del Chef, la Provincia actualizó el Sello Gastronómico e incorporó al Embajador del Vino",
           "url": "https://www.neuqueninforma.gob.ar/noticias/2026/05/02/257088-en-el-festival-del-chef-la-provincia-actualizo-el-sello-gastronomico-e-incorporo-al-embajador-del-vino",
@@ -415,57 +438,51 @@
           },
           "inLanguage": "es-AR"
         },
-       {
-  "@type": "Article",
-  "headline": "Neuquén crea la figura del Embajador del Vino Neuquino y apuesta al vino como identidad territorial",
-  "url": "https://www.vinetur.com/20260511100468/neuquen-crea-la-figura-del-embajador-del-vino-neuquino-y-apuesta-al-vino-como-identidad-territorial.html",
-  "description": "Artículo publicado en Vinetur sobre la creación de la figura del Embajador del Vino Neuquino y el posicionamiento del vino como identidad territorial en la provincia del Neuquén.",
-  "datePublished": "2026-05-11T10:04:00-03:00",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Vinetur",
-    "url": "https://www.vinetur.com"
-  },
-  "inLanguage": "es"
-},
-
-{
-  "@type": "Article",
-  "headline": "La Patagonia que se cuenta en copa: una masterclass con Sergio Landoni",
-  "url": "https://winexpertsglobal.org/la-patagonia-que-se-cuenta-en-copa-una-masterclass-con-sergio-landoni/",
-  "description": "Cobertura editorial de Winexperts Global sobre la masterclass de Sergio Landoni dedicada al vino patagónico, la diversidad territorial y el posicionamiento del vino neuquino.",
-  "datePublished": "2026-05-19T12:00:00-03:00",
-  "author": {
-    "@type": "Person",
-    "name": "Alejandra Bidaseca"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Winexperts Global",
-    "url": "https://winexpertsglobal.org/"
-  },
-  "inLanguage": "es"
-},
-
-{
-  "@type": "Article",
-  "headline": "La Patagonia del vino tiene otra historia para contar: Neuquén",
-  "url": "https://www.vinetur.com/20260519100938/la-patagonia-del-vino-tiene-otra-historia-para-contar-neuquen.html",
-  "description": "Artículo de autor de Sergio Landoni publicado en Vinetur sobre la diversidad territorial del vino neuquino, la Patagonia vitivinícola y las distintas geografías del vino en Neuquén.",
-  "datePublished": "2026-05-19T10:09:38-03:00",
-  "author": {
-    "@type": "Person",
-    "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Vinetur",
-    "url": "https://www.vinetur.com"
-  },
-  "inLanguage": "es"
-},
-  
-  
+        {
+          "@type": "Article",
+          "headline": "Neuquén crea la figura del Embajador del Vino Neuquino y apuesta al vino como identidad territorial",
+          "url": "https://www.vinetur.com/20260511100468/neuquen-crea-la-figura-del-embajador-del-vino-neuquino-y-apuesta-al-vino-como-identidad-territorial.html",
+          "description": "Artículo publicado en Vinetur sobre la creación de la figura del Embajador del Vino Neuquino y el posicionamiento del vino como identidad territorial en la provincia del Neuquén.",
+          "datePublished": "2026-05-11T10:04:00-03:00",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Vinetur",
+            "url": "https://www.vinetur.com"
+          },
+          "inLanguage": "es-AR"
+        },
+        {
+          "@type": "Article",
+          "headline": "La Patagonia que se cuenta en copa: una masterclass con Sergio Landoni",
+          "url": "https://winexpertsglobal.org/la-patagonia-que-se-cuenta-en-copa-una-masterclass-con-sergio-landoni/",
+          "description": "Cobertura editorial de Winexperts Global sobre la masterclass de Sergio Landoni dedicada al vino patagónico, la diversidad territorial y el posicionamiento del vino neuquino.",
+          "datePublished": "2026-05-19T12:00:00-03:00",
+          "author": {
+            "@type": "Person",
+            "name": "Alejandra Bidaseca"
+          },
+          "publisher": {
+            "@id": "https://sergiolandoni.com.ar/#winexperts-global"
+          },
+          "inLanguage": "es-AR"
+        },
+        {
+          "@type": "Article",
+          "headline": "La Patagonia del vino tiene otra historia para contar: Neuquén",
+          "url": "https://www.vinetur.com/20260519100938/la-patagonia-del-vino-tiene-otra-historia-para-contar-neuquen.html",
+          "description": "Artículo de autor de Sergio Landoni publicado en Vinetur sobre la diversidad territorial del vino neuquino, la Patagonia vitivinícola y las distintas geografías del vino en Neuquén.",
+          "datePublished": "2026-05-19T10:09:38-03:00",
+          "author": {
+            "@type": "Person",
+            "@id": "https://sergiolandoni.com.ar/#sergio-landoni"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Vinetur",
+            "url": "https://www.vinetur.com"
+          },
+          "inLanguage": "es-AR"
+        },
         {
           "@type": "NewsArticle",
           "headline": "El vino neuquino gana protagonismo con nuevas experiencias y referentes del sector",
@@ -581,29 +598,7 @@
           },
           "inLanguage": "es-AR"
         }
-      ],
-     "citation": [
-  {
-    "@type": "CreativeWork",
-    "name": "Neuquén Informa · incorporación del Embajador del Vino Neuquino",
-    "url": "https://www.neuqueninforma.gob.ar/noticias/2026/05/02/257088-en-el-festival-del-chef-la-provincia-actualizo-el-sello-gastronomico-e-incorporo-al-embajador-del-vino"
-  },
-  {
-    "@type": "CreativeWork",
-    "name": "Diario Río Negro · perfil de Sergio Landoni",
-    "url": "https://www.rionegro.com.ar/gastronomia/quien-es-sergio-landoni-primer-embajador-del-vino-neuquino-distinguido-en-la-fiesta-del-chef-patagonico-4559433/"
-  },
-  {
-    "@type": "CreativeWork",
-    "name": "Vinetur · columna de Sergio Landoni",
-    "url": "https://www.vinetur.com/20260511100468/neuquen-crea-la-figura-del-embajador-del-vino-neuquino-y-apuesta-al-vino-como-identidad-territorial.html"
-  },
-  {
-    "@type": "CreativeWork",
-    "name": "Vinetur · La Patagonia del vino tiene otra historia para contar: Neuquén",
-    "url": "https://www.vinetur.com/20260519100938/la-patagonia-del-vino-tiene-otra-historia-para-contar-neuquen.html"
-  }
-]
+      ]
     }
   ]
 }
@@ -1276,11 +1271,11 @@ textarea{
           </div>
         </a>
 
-    <nav class="menu" aria-label="Menú principal">
+   <nav class="menu" aria-label="Menú principal">
   <a href="#inicio">Inicio</a>
-<a href="#servicios">Servicios</a>
-<a href="#sobre-mi">Sobre mí</a>
-<a href="/experiencias-vino-patagonia.html">Experiencias</a>
+  <a href="/servicios.html">Servicios</a>
+  <a href="#sobre-mi">Sobre mí</a>
+  <a href="/experiencias-vino-patagonia.html">Experiencias</a>
   <a href="/blog.html">Blog</a>
   <a href="/prensa.html">Prensa</a>
   <a href="#contacto">Contacto</a>
@@ -1331,7 +1326,7 @@ textarea{
 </p>
 
 <p>
-  Mi trabajo nace del territorio. De recorrer viñedos, conversar con productores y construir vínculos entre el vino, la gastronomía, el turismo y las personas que le dan identidad a cada lugar.
+ Mi trabajo nace del territorio. De recorrer viñedos, conversar con productores, investigar y escribir sobre la vitivinicultura de Patagonia. Y de construir vínculos entre el vino, la gastronomía, el turismo y las personas que le dan identidad a cada lugar.
 </p>
 
 <p>
@@ -1349,9 +1344,9 @@ textarea{
 
   <div style="padding:16px; border:1px solid rgba(15,118,110,.16); background:rgba(15,118,110,.05); border-radius:12px; margin-bottom:16px;">
 
-    <h3 style="margin:0 0 8px; font-size:16px;">
-      ¿Qué es un Sommelier de Territorio?
-    </h3>
+    <h2 style="margin:0 0 8px; font-size:16px;">
+  ¿Qué es un Sommelier de Territorio?
+</h2>
 
     <p style="margin:0; font-size:14.5px; line-height:1.65;">
       Un profesional que trabaja desde el lugar donde el vino nace. Que recorre viñedos, conversa con productores y conecta vino, paisaje, gastronomía y cultura desde una experiencia real del territorio.
@@ -1365,9 +1360,9 @@ textarea{
       Proyecto destacado · Vino neuquino
     </p>
 
-    <h3 style="margin:0 0 8px; font-size:16px;">
-      Bodega Cutral Co
-    </h3>
+    <h2 style="margin:0 0 8px; font-size:16px;">
+  Bodega Cutral Co
+</h2>
 
     <p style="margin:0 0 10px; font-size:14.5px; line-height:1.65;">
       Acompaño a <strong>Bodega Cutral Co</strong> en acciones vinculadas al desarrollo enoturístico, la comunicación y la construcción de una identidad propia dentro del vino neuquino.
@@ -1390,15 +1385,15 @@ textarea{
     
 <div class="cta" style="margin-top:18px;">
 
-  <a class="btn primary" href="#servicios">
-    Servicios profesionales
-  </a>
+  <a class="btn primary" href="/servicios.html">
+  Servicios profesionales
+</a>
 
   <a class="btn primary" href="/experiencias-vino-patagonia.html">
     Experiencias de vino
   </a>
 
-  <a class="btn" href="#contacto">
+  <a class="btn primary" href="#contacto">
     Conversemos
   </a>
 
@@ -1551,107 +1546,124 @@ textarea{
   </a>
 </div>
 
+<div style="margin-top:14px; text-align:center;">
+  <a class="inline-link" href="/servicios.html">
+    Ver todos los servicios profesionales →
+  </a>
+</div>
+
   </div>
 </section>
   
 <!-- SOBRE MI -->
+
 <section id="sobre-mi" aria-label="Sobre mí">
   <div class="grid-2">
 
-    <div class="card">
-      <h2>Sobre mí</h2>
+<div class="card">
+  <h2>Sobre mí</h2>
 
-      <p>
-        Soy <strong>Sergio Landoni</strong>, <strong>Embajador del Vino Neuquino</strong>, <strong>Sommelier de Territorio</strong> y comunicador especializado en vinos patagónicos.
-      </p>
+  <p>
+    Soy <strong>Sergio Landoni</strong>, <strong>Embajador del Vino Neuquino</strong>, <strong>Sommelier de Territorio</strong> y comunicador especializado en vinos patagónicos.
+  </p>
 
-      <p>
-        Vivo y trabajo desde <strong>San Martín de los Andes</strong>, en el sur de Neuquén. Desde aquí acompaño a bodegas, proyectos turísticos, restaurantes e instituciones en el desarrollo de experiencias, acciones de comunicación y propuestas vinculadas al vino con identidad territorial.
-      </p>
+  <p>
+    Vivo y trabajo desde <strong>San Martín de los Andes</strong>, en el sur de Neuquén. Desde aquí acompaño a bodegas, proyectos turísticos, restaurantes e instituciones en el desarrollo de experiencias, acciones de comunicación y propuestas vinculadas al vino con identidad territorial.
+  </p>
 
-      <div style="margin:18px 0; padding:16px; border-left:4px solid var(--accent); background:rgba(15,118,110,.05); border-radius:10px;">
-        <p style="margin:0; font-size:15px; line-height:1.7; color:var(--text);">
-          En 2026 fui distinguido como <strong>primer Embajador del Vino Neuquino</strong>, una figura incorporada por la Provincia del Neuquén para acompañar y fortalecer la identidad y la proyección del vino neuquino.
-        </p>
-      </div>
+  <div style="margin:18px 0; padding:16px; border-left:4px solid var(--accent); background:rgba(15,118,110,.05); border-radius:10px;">
+    <p style="margin:0; font-size:15px; line-height:1.7; color:var(--text);">
+      En 2026 fui distinguido como <strong>primer Embajador del Vino Neuquino</strong>, una figura incorporada por la Provincia del Neuquén para acompañar y fortalecer la identidad y la proyección del vino neuquino.
+    </p>
+  </div>
 
-      <p>
-        Mi trabajo nace de recorrer viñedos, conversar con productores y participar activamente en el desarrollo del vino patagónico. A lo largo de los años he acompañado proyectos vinculados al enoturismo, la gastronomía, la formación profesional y la comunicación del vino.
-      </p>
+  <p>
+    Mi trabajo nace de recorrer viñedos, conversar con productores y participar activamente en el desarrollo del vino patagónico. A lo largo de los años he acompañado proyectos vinculados al enoturismo, la gastronomía, la formación profesional y la comunicación del vino.
+  </p>
 
-      <p>
-        Soy creador de <strong>Vino a la Montaña</strong>, un encuentro que reúne en San Martín de los Andes a bodegas de toda la Patagonia junto al paisaje, la gastronomía y la cultura de la cordillera.
-      </p>
+  <p>
+    Soy creador de <strong>Vino a la Montaña</strong>, un encuentro que reúne en San Martín de los Andes a bodegas de toda la Patagonia junto al paisaje, la gastronomía y la cultura de la cordillera.
+  </p>
 
-      <p>
-        También participo en medios especializados, charlas, capacitaciones y masterclasses orientadas a ampliar la mirada sobre el vino neuquino y su diversidad territorial.
-      </p>
+  <p>
+    También participo en medios especializados, charlas, capacitaciones y masterclasses orientadas a ampliar la mirada sobre el vino neuquino y su diversidad territorial.
+  </p>
 
-      <p>
-        Actualmente formo parte de <strong>Winexperts Patagonia</strong>, acompañando acciones de formación y difusión del vino desde una mirada regional.
-      </p>
+ <p>
+  Formo parte de <a href="https://winexpertsglobal.org/embajadores/" target="_blank" rel="noopener noreferrer">Winexperts Global</a> como integrante de su red de embajadores, colaborando en acciones de formación y difusión de la cultura del vino desde una mirada regional patagónica.
+</p>
 
-      <p>
-        <a href="/prensa.html" class="inline-link">
-          Ver entrevistas, notas y publicaciones en medios
-        </a>
-      </p>
+  <p>
+    <a href="/prensa.html" class="inline-link">
+      Ver entrevistas, notas y publicaciones en medios
+    </a>
+  </p>
 
-      <p>
-        Creo en algo simple: <strong>cuando un vino logra contar una historia de lugar, ahí aparece algo más profundo que el sabor.</strong>
-      </p>
-    </div>
+  <p>
+    Creo en algo simple: <strong>cuando un vino logra contar una historia de lugar, ahí aparece algo más profundo que el sabor.</strong>
+  </p>
+</div>
 
-    <div class="card" style="display:flex; flex-direction:column; align-items:center; justify-content:flex-start; padding-top:34px;">
-      <img
-        class="portrait"
-        src="/assets/img/retrato-sergio-landoni.webp"
-        alt="Sergio Landoni, Sommelier de vinos patagónicos y Embajador del Vino Neuquino"
-        width="800"
-        height="800"
-        loading="lazy"
-        decoding="async"
-      />
+<div class="card" style="display:flex; flex-direction:column; align-items:center; justify-content:flex-start; padding-top:34px;">
 
-      <p style="margin-top:18px; font-size:14px; color:var(--muted); text-align:center;">
-        Sommelier de vinos patagónicos · Embajador del Vino Neuquino
-      </p>
+  <img
+    class="portrait"
+    src="/assets/img/retrato-sergio-landoni.webp"
+    alt="Sergio Landoni, Sommelier de vinos patagónicos y Embajador del Vino Neuquino"
+    width="800"
+    height="800"
+    loading="lazy"
+    decoding="async"
+  />
 
-      <hr style="border:0; border-top:1px solid var(--line); margin:18px 0; width:100%;" />
+  <p style="margin-top:18px; font-size:14px; color:var(--muted); text-align:center;">
+    Sommelier de vinos patagónicos · Embajador del Vino Neuquino
+  </p>
 
-      <p style="font-size:15px; line-height:1.6; color:var(--muted); margin-top:0; text-align:center;">
-        Consultoría, comunicación territorial y desarrollo de experiencias vinculadas al vino para proyectos de la Patagonia y otras regiones de la Argentina.
-      </p>
+  <hr style="border:0; border-top:1px solid var(--line); margin:18px 0; width:100%;" />
 
-      <div style="display:flex; gap:10px; margin-top:22px; flex-wrap:wrap; width:100%; justify-content:center;">
+  <p style="font-size:15px; line-height:1.6; color:var(--muted); margin-top:0; text-align:center;">
+    Consultoría, comunicación territorial y desarrollo de experiencias vinculadas al vino para proyectos de la Patagonia y otras regiones de la Argentina.
+  </p>
 
-        <a class="btn primary"
-           style="flex:1; min-width:220px; font-size:13.5px;"
-           href="mailto:contacto@sergiolandoni.com.ar"
-           aria-label="Enviar correo electrónico">
-          contacto@sergiolandoni.com.ar
-        </a>
+  <div style="display:flex; gap:10px; margin-top:22px; flex-wrap:wrap; width:100%; justify-content:center;">
 
-        <a class="btn primary"
-           style="padding:10px 18px; font-size:13.5px;"
-           href="https://www.linkedin.com/in/sergio-landoni-sommelier/"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Visitar perfil de LinkedIn">
-          LinkedIn
-        </a>
+  <a class="btn primary"
+     style="flex:1; min-width:220px; font-size:13.5px;"
+     href="mailto:contacto@sergiolandoni.com.ar"
+     aria-label="Enviar correo electrónico">
+    contacto@sergiolandoni.com.ar
+  </a>
 
-      </div>
+  <a class="btn primary"
+     style="padding:10px 18px; font-size:13.5px;"
+     href="https://www.linkedin.com/in/sergio-landoni-sommelier/"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Visitar el perfil de Sergio Landoni en LinkedIn">
+    LinkedIn
+  </a>
 
-      <div style="margin-top:24px; padding:18px; background:rgba(15,118,110,.05); border:1px solid rgba(15,118,110,.14); border-radius:12px; width:100%;">
+  <a class="btn primary"
+     style="padding:10px 18px; font-size:13.5px;"
+     href="https://www.instagram.com/sergiolandoni.somm/"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Visitar el perfil de Sergio Landoni en Instagram">
+    Instagram
+  </a>
 
-        <p style="margin:0 0 8px; font-size:13px; color:var(--accent); letter-spacing:.2px;">
-          Patagonia · Territorio · Comunicación del vino
-        </p>
+</div>
 
-        <p style="margin:0; font-size:14px; line-height:1.75; color:var(--muted); font-style:italic;">
-          Trabajo junto a bodegas, restaurantes, hoteles, instituciones y organizadores de eventos, desarrollando proyectos vinculados al vino en Patagonia y otras regiones de la Argentina.
-        </p>
+  <div style="margin-top:24px; padding:18px; background:rgba(15,118,110,.05); border:1px solid rgba(15,118,110,.14); border-radius:12px; width:100%;">
+
+    <p style="margin:0 0 8px; font-size:13px; color:var(--accent); letter-spacing:.2px;">
+      Patagonia · Territorio · Comunicación del vino
+    </p>
+
+    <p style="margin:0; font-size:14px; line-height:1.75; color:var(--muted); font-style:italic;">
+  Trabajo junto a bodegas, restaurantes, hoteles, instituciones y organizadores de eventos, desarrollando proyectos vinculados al vino en Patagonia y otras regiones de la Argentina.
+</p>
 
       </div>
     </div>
@@ -1659,9 +1671,9 @@ textarea{
 
   </div>
   <!-- /grid-2 -->
+
 </section>
 <!-- /sobre-mi -->
-
 
 <!-- EN MEDIOS -->
 <!-- PRENSA -->
@@ -1793,15 +1805,41 @@ textarea{
   San Martín de los Andes · Neuquén · Patagonia Argentina
 </p>
 
-    <div class="footer-links">
-      <a href="mailto:contacto@sergiolandoni.com.ar">contacto@sergiolandoni.com.ar</a>
-      <span>·</span>
-      <a href="https://www.linkedin.com/in/sergio-landoni-sommelier/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <span>·</span>
-      <a href="/" hreflang="es-AR"><strong>ES</strong></a>
-      <span>·</span>
-      <a href="/en/" rel="alternate" hreflang="en-GB">EN</a>
-    </div>
+   <div class="footer-links">
+  <a href="mailto:contacto@sergiolandoni.com.ar">
+    contacto@sergiolandoni.com.ar
+  </a>
+
+  <span>·</span>
+
+  <a
+    href="https://www.linkedin.com/in/sergio-landoni-sommelier/"
+    target="_blank"
+    rel="noopener noreferrer">
+    LinkedIn
+  </a>
+
+  <span>·</span>
+
+  <a
+    href="https://www.instagram.com/sergiolandoni.somm/"
+    target="_blank"
+    rel="noopener noreferrer">
+    Instagram
+  </a>
+
+  <span>·</span>
+
+  <a href="/" hreflang="es-AR">
+    <strong>ES</strong>
+  </a>
+
+  <span>·</span>
+
+  <a href="/en/" rel="alternate" hreflang="en-GB">
+    EN
+  </a>
+</div>
   </div>
 </footer>
 
