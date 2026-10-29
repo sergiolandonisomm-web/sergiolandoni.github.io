@@ -50,6 +50,9 @@
   </url>
   <url>
     <loc>https://sergiolandoni.com.ar/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/blog.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sergiolandoni.com.ar/en/blog.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/blog.html" />
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
@@ -68,6 +71,9 @@
   </url>
   <url>
     <loc>https://sergiolandoni.com.ar/pinot-noir-neuquen.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/pinot-noir-neuquen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sergiolandoni.com.ar/en/neuquen-pinot-noir.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/pinot-noir-neuquen.html" />
     <lastmod>2026-08-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
@@ -98,6 +104,8 @@
   </url>
   <url>
     <loc>https://sergiolandoni.com.ar/guia-vino-neuquino.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/guia-vino-neuquino.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/guia-vinhos-neuquen.html" />
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
@@ -116,6 +124,9 @@
   </url>
   <url>
     <loc>https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sergiolandoni.com.ar/en/neuquen-wine-regions-patagonia.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/regioes-vitivinicolas-neuquen.html" />
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -170,6 +181,8 @@
   </url>
   <url>
     <loc>https://sergiolandoni.com.ar/referentes-vino-neuquen.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/referentes-vino-neuquen.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/referentes-vinho-neuquen.html" />
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -182,6 +195,8 @@
   </url>
   <url>
     <loc>https://sergiolandoni.com.ar/vino-neuquino-gastronomia-experiencias-territorio.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/vino-neuquino-gastronomia-experiencias-territorio.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/vinhos-neuquen-gastronomia.html" />
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -194,6 +209,9 @@
   </url>
   <url>
     <loc>https://sergiolandoni.com.ar/en/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/blog.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sergiolandoni.com.ar/en/blog.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/blog.html" />
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -218,12 +236,18 @@
   </url>
   <url>
     <loc>https://sergiolandoni.com.ar/en/neuquen-pinot-noir.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/pinot-noir-neuquen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sergiolandoni.com.ar/en/neuquen-pinot-noir.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/pinot-noir-neuquen.html" />
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://sergiolandoni.com.ar/en/neuquen-wine-regions-patagonia.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sergiolandoni.com.ar/en/neuquen-wine-regions-patagonia.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/regioes-vitivinicolas-neuquen.html" />
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -239,5 +263,56 @@
     <lastmod>2026-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://sergiolandoni.com.ar/pt/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/blog.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sergiolandoni.com.ar/en/blog.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/blog.html" />
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://sergiolandoni.com.ar/pt/guia-vinhos-neuquen.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/guia-vino-neuquino.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/guia-vinhos-neuquen.html" />
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://sergiolandoni.com.ar/pt/pinot-noir-neuquen.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/pinot-noir-neuquen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sergiolandoni.com.ar/en/neuquen-pinot-noir.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/pinot-noir-neuquen.html" />
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://sergiolandoni.com.ar/pt/regioes-vitivinicolas-neuquen.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/zonas-vitivinicolas-neuquen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sergiolandoni.com.ar/en/neuquen-wine-regions-patagonia.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/regioes-vitivinicolas-neuquen.html" />
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://sergiolandoni.com.ar/pt/vinhos-neuquen-gastronomia.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/vino-neuquino-gastronomia-experiencias-territorio.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/vinhos-neuquen-gastronomia.html" />
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://sergiolandoni.com.ar/pt/referentes-vinho-neuquen.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/referentes-vino-neuquen.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/referentes-vinho-neuquen.html" />
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
 </urlset>
