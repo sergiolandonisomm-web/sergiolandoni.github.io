@@ -1,23 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Home -->
+<?xml version='1.0' encoding='utf-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://sergiolandoni.com.ar/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sergiolandoni.com.ar/en/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sergiolandoni.com.ar/en/" />
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Home English -->
   <url>
     <loc>https://sergiolandoni.com.ar/en/</loc>
-    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sergiolandoni.com.ar/en/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sergiolandoni.com.ar/en/" />
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- Páginas principales -->
+  <url>
+    <loc>https://sergiolandoni.com.ar/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sergiolandoni.com.ar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sergiolandoni.com.ar/en/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sergiolandoni.com.ar/pt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sergiolandoni.com.ar/en/" />
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
   <url>
     <loc>https://sergiolandoni.com.ar/experiencias-vino-patagonia.html</loc>
     <lastmod>2026-05-05</lastmod>
@@ -42,8 +54,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
-
-  <!-- Contenido pilar -->
   <url>
     <loc>https://sergiolandoni.com.ar/vino-a-la-montana-2026-san-martin-de-los-andes.html</loc>
     <lastmod>2026-10-17</lastmod>
@@ -116,8 +126,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- Artículos principales -->
   <url>
     <loc>https://sergiolandoni.com.ar/vinos-neuquen-vinos-negocios-2026.html</loc>
     <lastmod>2026-06-01</lastmod>
@@ -160,8 +168,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
-
-  <!-- Contenido complementario -->
   <url>
     <loc>https://sergiolandoni.com.ar/referentes-vino-neuquen.html</loc>
     <lastmod>2026-03-22</lastmod>
@@ -186,8 +192,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
-
-  <!-- English -->
   <url>
     <loc>https://sergiolandoni.com.ar/en/blog.html</loc>
     <lastmod>2026-09-11</lastmod>
@@ -236,5 +240,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
-
 </urlset>
