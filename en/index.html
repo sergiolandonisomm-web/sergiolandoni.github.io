@@ -1,4 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en-GB">
 <head>
 <meta charset="utf-8"/>
@@ -29,11 +30,11 @@
 <meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/>
 <meta content="#0f766e" name="theme-color"/>
 <!-- Canonical -->
-<link href="https://sergiolandoni.com.ar/en/" rel="canonical"/>
+<link href="https://sergiolandoni.com.ar/en/" rel="canonical"/><link href="https://sergiolandoni.com.ar/" hreflang="es" rel="alternate"/><link href="https://sergiolandoni.com.ar/en/" hreflang="en" rel="alternate"/><link href="https://sergiolandoni.com.ar/pt/" hreflang="pt-BR" rel="alternate"/><link href="https://sergiolandoni.com.ar/en/" hreflang="x-default" rel="alternate"/>
 <!-- Language versions -->
-<link href="https://sergiolandoni.com.ar/en/" hreflang="en" rel="alternate"/>
-<link href="https://sergiolandoni.com.ar/" hreflang="es" rel="alternate"/>
-<link href="https://sergiolandoni.com.ar/en/" hreflang="x-default" rel="alternate"/>
+
+
+
 <!-- Hero image preload -->
 <link as="image" fetchpriority="high" href="/assets/img/hero-mobile.webp" media="(max-width:640px)" rel="preload" type="image/webp"/>
 <link as="image" fetchpriority="high" href="/assets/img/hero.webp" media="(min-width:641px)" rel="preload" type="image/webp"/>
@@ -47,9 +48,8 @@
 <meta content="Independent writing, regional insight and a closer way of discovering Patagonia through its wines, landscapes, gastronomy and people." property="og:description"/>
 <meta content="https://sergiolandoni.com.ar/en/" property="og:url"/>
 <meta content="en_GB" property="og:locale"/>
-<meta content="es_AR" property="og:locale:alternate"/>
+<meta content="es_AR" property="og:locale:alternate"/><meta content="pt_BR" property="og:locale:alternate"/>
 <meta content="https://sergiolandoni.com.ar/assets/img/hero.jpg" property="og:image"/>
-
 <meta content="image/jpeg" property="og:image:type"/>
 <meta content="1600" property="og:image:width"/>
 <meta content="900" property="og:image:height"/>
@@ -61,8 +61,7 @@
 <meta content="https://sergiolandoni.com.ar/assets/img/hero.jpg" name="twitter:image"/>
 <meta content="Vineyard landscape in Patagonia, Argentina" name="twitter:image:alt"/>
 <!-- Structured data -->
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -77,7 +76,8 @@
       ],
       "inLanguage": [
         "es-AR",
-        "en-GB"
+        "en-GB",
+        "pt-BR"
       ],
       "publisher": {
         "@id": "https://sergiolandoni.com.ar/#business"
@@ -91,7 +91,7 @@
       "headline": "Understanding Patagonia Through Its Wines",
       "description": "Independent writing, regional insight and carefully considered wine experiences across Patagonia by Sergio Landoni, Neuquén Wine Ambassador and Territory-Based Sommelier.",
       "inLanguage": "en-GB",
-      "dateModified": "2026-10-26",
+      "dateModified": "2026-10-29",
       "isPartOf": {
         "@id": "https://sergiolandoni.com.ar/#website"
       },
@@ -550,8 +550,7 @@
       ]
     }
   ]
-}
-</script>
+}</script>
 <style>
     :root{
       --bg:#fafafa;
@@ -1406,7 +1405,40 @@
         transition:none;
       }
     }
-  </style>
+  
+/* Language selector, consistent with Spanish homepage */
+.menu .lang-switch{
+  display:flex;align-items:center;gap:9px;margin-left:7px;
+  padding:4px 5px 4px 11px;border:1px solid var(--line);
+  border-radius:999px;background:#fff;box-shadow:0 2px 9px rgba(17,24,39,.035);
+  white-space:nowrap;
+}
+.lang-icon{width:17px;height:17px;flex:none;color:var(--accent)}
+.lang-options{display:flex;align-items:center;gap:2px}
+.menu .lang-options a{
+  display:flex;align-items:center;justify-content:center;min-width:37px;
+  min-height:32px;padding:6px 9px;border:0;border-radius:999px;
+  background:transparent;color:var(--muted);font-size:12px;font-weight:650;
+  line-height:1;letter-spacing:.035em;text-decoration:none;
+}
+.menu .lang-options a:hover,.menu .lang-options a:focus-visible{
+  color:var(--accent);background:rgba(15,118,110,.08);outline:2px solid transparent;
+}
+.menu .lang-options a[aria-current="page"]{
+  background:var(--accent);color:#fff;
+}
+.menu .lang-options a[aria-current="page"]:focus-visible{
+  outline:2px solid var(--accent-hover);outline-offset:2px;
+}
+@media(max-width:640px){
+  .menu .lang-switch{
+    grid-column:1/-1;width:100%;margin-left:0;justify-content:center;
+    border-radius:12px;padding:7px 12px;gap:14px;
+  }
+  .menu .lang-options a{min-width:58px;min-height:36px;font-size:13px}
+}
+
+</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -1445,13 +1477,9 @@
 <a href="#conversation">
             Contact
           </a>
-<a href="/" hreflang="es-AR" lang="es">
-            ES
-          </a>
-<a href="/en/" hreflang="en-GB" lang="en">
-<strong>EN</strong>
-</a>
-</nav>
+
+
+<div aria-label="Select language" class="lang-switch" role="group"><svg aria-hidden="true" class="lang-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"></path></svg><div class="lang-options"><a aria-label="Español" href="/" hreflang="es" lang="es">ES</a><a aria-current="page" aria-label="English, current language" href="/en/" hreflang="en" lang="en">EN</a><a aria-label="Português do Brasil" href="/pt/" hreflang="pt-BR" lang="pt-BR">PT</a></div></div></nav>
 </div>
 </div>
 </header>
@@ -1666,12 +1694,6 @@
           </p>
 </div>
 <div class="post-list">
-
-
-
-
-
-
 <article class="post">
 <div class="post-kicker">
     Chubut · Wine frontier
@@ -2000,9 +2022,9 @@
             A Long View of Patagonian Wine
           </h2>
 <p>
-            In 2026, I received the Province of Neuquén’s official distinction as its first Neuquén Wine Ambassador, under resolution RESOL-2026-81-E-NEU-MTUR. I am also part of the <a href="https://winexpertsglobal.org/embajadores/" target="_blank" rel="noopener noreferrer">Winexperts Global ambassador network</a>.
+            In 2026, I received the Province of Neuquén’s official distinction as its first Neuquén Wine Ambassador, under resolution RESOL-2026-81-E-NEU-MTUR. I am also part of the <a href="https://winexpertsglobal.org/embajadores/" rel="noopener noreferrer" target="_blank">Winexperts Global ambassador network</a>.
           </p>
-          <p>Patagonia has been my home for three decades. During that
+<p>Patagonia has been my home for three decades. During that
             time, I have watched its wine landscape develop from a small number
             of established vineyards into a group of distinct regions, each
             finding its own identity.
@@ -2187,7 +2209,7 @@
 <a href="/" hreflang="es-AR" lang="es">
           Español
         </a>
-</div>
+<span>·</span><a href="/pt/" hreflang="pt-BR" lang="pt-BR">Português</a></div>
 </div>
 </footer>
 <script>
