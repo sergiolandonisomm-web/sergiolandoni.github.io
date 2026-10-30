@@ -1,0 +1,69 @@
+
+name: IndexNow - Sergio Landoni
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.html'
+      - 'sitemap.xml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notify-indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Esperar publicacion de GitHub Pages
+        run: sleep 120
+
+      - name: Enviar URLs a IndexNow
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import time
+          import urllib.request
+          import xml.etree.ElementTree as ET
+
+          sitemap = "https://sergiolandoni.com.ar/sitemap.xml"
+          key = "f3a81cc68fa145c097c1eda01d095782"
+
+          with urllib.request.urlopen(sitemap, timeout=30) as response:
+              root = ET.fromstring(response.read())
+
+          ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+          urls = [
+              item.text.strip()
+              for item in root.findall(".//sm:url/sm:loc", ns)
+              if item.text and item.text.strip().startswith(
+                  "https://sergiolandoni.com.ar/"
+              )
+          ]
+
+          if not urls:
+              raise RuntimeError("No se encontraron URLs en el sitemap")
+
+          payload = {
+              "host": "sergiolandoni.com.ar",
+              "key": key,
+              "keyLocation": (
+                  "https://sergiolandoni.com.ar/" + key + ".txt"
+              ),
+              "urlList": urls
+          }
+
+          request = urllib.request.Request(
+              "https://api.indexnow.org/indexnow",
+              data=json.dumps(payload).encode("utf-8"),
+              headers={"Content-Type": "application/json; charset=utf-8"},
+              method="POST"
+          )
+
+          with urllib.request.urlopen(request, timeout=30) as response:
+              print("URLs enviadas:", len(urls))
+              print("Respuesta IndexNow:", response.status)
+          PY
