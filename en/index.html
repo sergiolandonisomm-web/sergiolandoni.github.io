@@ -1438,6 +1438,49 @@
   .menu .lang-options a{min-width:58px;min-height:36px;font-size:13px}
 }
 
+
+    /* English homepage hero: visual hierarchy aligned with ES/PT */
+    .hero-grid{
+      grid-template-columns:minmax(0,1.2fr) minmax(320px,.8fr);
+      align-items:start;
+    }
+    .hero-grid > .card{
+      padding:34px;
+    }
+    .hero-grid > .card:last-child{
+      padding-bottom:42px;
+    }
+    .hero-grid > .card:first-child h1{
+      margin-bottom:14px;
+    }
+    .hero-grid > .card:first-child p{
+      max-width:520px;
+    }
+    .hero-role{
+      display:block;
+      margin-top:10px;
+      color:var(--accent);
+      font-size:clamp(18px,2.15vw,25px);
+      font-weight:600;
+      line-height:1.25;
+      letter-spacing:-.3px;
+    }
+    .hero-editorial-title{
+      margin:0 0 16px;
+      font-size:clamp(20px,2.3vw,27px);
+      font-weight:650;
+      line-height:1.3;
+      color:var(--text);
+    }
+    @media(max-width:900px){
+      .hero-grid{grid-template-columns:1fr;}
+    }
+    @media(max-width:640px){
+      .hero-grid > .card{padding:23px;}
+      .hero-role{font-size:19px;}
+      .hero-editorial-title{font-size:21px;}
+    }
+
 </style>
 </head>
 <body>
@@ -1494,9 +1537,9 @@
 </div>
 <div class="hero-grid">
 <article class="card editorial-card">
-<h1 id="home-title">Sergio Landoni</h1>
-<p class="role-line">Neuquén Wine Ambassador · Territory-Based Sommelier · Patagonian Wine Writer</p>
-<p class="lead">Understanding Patagonia Through Its Wines</p>
+<div class="kicker">Neuquén Wine Ambassador · Territory-Based Sommelier</div>
+<h1 id="home-title">Sergio Landoni <span class="hero-role">Patagonian Wine &amp; Its Regions</span></h1>
+<h2 class="hero-editorial-title">Understanding Patagonia Through Its Wines</h2>
 <p class="lead">
             Patagonia is too vast to be understood as a single wine region.
             Its vineyards stretch from historic river valleys to the Andean
