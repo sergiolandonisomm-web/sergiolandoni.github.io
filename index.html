@@ -1170,6 +1170,22 @@ textarea{
   }
   .menu .lang-options a{min-width:58px;min-height:36px;font-size:13px}
 }
+
+/* Armonización visual de portada ES con la versión PT — 31/10/2026 */
+@media (min-width:901px){
+  .hero-grid{grid-template-columns:minmax(0,1.12fr) minmax(320px,.88fr);align-items:stretch;}
+}
+.hero-grid > .card:first-child,
+.hero-grid > .card:last-child{padding:26px;}
+.hero-grid > .card:first-child h1{font-size:clamp(34px,4.2vw,48px);line-height:1.08;letter-spacing:-.9px;margin:0 0 16px;}
+.hero-grid .hero-role{display:block;margin-top:4px;font-size:.48em;font-weight:500;line-height:1.5;letter-spacing:0;color:var(--accent);}
+.hero-grid .hero-editorial-title{font-size:24px;line-height:1.24;letter-spacing:-.25px;margin:0 0 12px;}
+.hero-grid .kicker{line-height:1.25;font-weight:500;}
+@media(max-width:640px){
+  .hero-grid > .card:first-child,.hero-grid > .card:last-child{padding:22px;}
+  .hero-grid > .card:first-child h1{font-size:clamp(32px,8vw,40px);}
+  .hero-grid .hero-editorial-title{font-size:21px;}
+}
 </style>
 </head>
 <body>
@@ -1221,7 +1237,8 @@ textarea{
 <div class="kicker">
   Embajador del Vino Neuquino · Sommelier de Territorio
 </div>
-<h1>Sergio Landoni <span class="hero-role">Sommelier de Territorio y Embajador del Vino Neuquino</span></h1>
+<h1>Sergio Landoni <span class="hero-role">Vinos de Neuquén y la Patagonia</span></h1>
+<h2 class="hero-editorial-title">Los vinos de Neuquén y la Patagonia, desde el territorio</h2>
 <p style="font-size:15px; margin-top:6px; color:var(--muted);">
   Soy Sergio Landoni, Embajador del Vino Neuquino y Sommelier de Territorio. Desde San Martín de los Andes trabajo junto a bodegas, proyectos gastronómicos e instituciones, desarrollando experiencias, contenidos y acciones vinculadas al vino patagónico.
 </p>
