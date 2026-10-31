@@ -1180,7 +1180,7 @@ textarea{
 <div class="wrap">
 <div class="nav">
 <a aria-label="Ir a inicio" class="brand" href="/">
-<img alt="Logo Sergio Landoni" class="brand-logo" height="40" src="/logo.jpg" width="40"/>
+<img alt="Logo Sergio Landoni" class="brand-logo" height="40" src="/assets/img/logo.jpg" width="40"/>
 <div class="brand-text">
 <strong>Sergio Landoni</strong>
 <span>Sommelier de Territorio · Patagonia Argentina</span>
@@ -1585,7 +1585,17 @@ textarea{
 <button class="btn primary" type="submit">
           Enviar mensaje
         </button>
-<p class="note" style="margin-top:12px;">Los datos que ingreses se utilizarán para responder tu consulta. El formulario se procesa mediante Formspree.</p>
+
+<p class="note" style="margin-top:12px;">
+  Los datos que ingreses se utilizarán únicamente
+  para responder tu consulta. El formulario se
+  procesa mediante Formspree.
+  Consultá nuestra
+  <a href="/privacidad.html" class="inline-link">
+    Política de privacidad
+  </a>.
+</p>
+
 <p aria-live="polite" class="note" id="form-status"></p>
 </form>
 </div>
@@ -1602,6 +1612,12 @@ textarea{
   San Martín de los Andes · Neuquén · Patagonia Argentina
 </p>
 <div class="footer-links">
+    
+<a href="/privacidad.html">
+  Política de privacidad
+</a>
+<span>·</span>
+
 <a href="mailto:contacto@sergiolandoni.com.ar">
     contacto@sergiolandoni.com.ar
   </a>
@@ -1655,7 +1671,10 @@ textarea{
         } else if (data && data.error) {
           if (statusEl) statusEl.textContent = data.error;
         } else {
-          if (statusEl) statusEl.textContent = "No se pudo enviar. Revisá la configuración de Formspree.";
+          
+if (statusEl) statusEl.textContent =
+  "No pudimos enviar tu mensaje. Intentá nuevamente o escribinos a contacto@sergiolandoni.com.ar.";
+
         }
 
       } catch (err) {
