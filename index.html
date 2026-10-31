@@ -1643,12 +1643,10 @@ textarea{
 <script>
   const form = document.getElementById("contact-form");
   const statusEl = document.getElementById("form-status");
-
   if (form) {
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
       if (statusEl) statusEl.textContent = "Enviando...";
-
       try {
         const res = await fetch(form.action, {
           method: "POST",
