@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
  <head>
   <meta charset="utf-8"/>
@@ -28,7 +29,254 @@
   <meta content="2026-11-01T00:00:00-03:00" property="article:published_time"/>
   <meta content="2026-11-01T00:00:00-03:00" property="article:modified_time"/>
   <style>
-   :root{--bg:#faf9f7;--paper:#fff;--ink:#202323;--muted:#5f6564;--accent:#0f766e;--line:#e7e5e1;--max:1000px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.76}a{color:#09675f;text-underline-offset:3px}a:hover{color:#06463f}img{display:block;max-width:100%}.wrap{max-width:var(--max);margin:auto;padding:0 22px}.site-header{background:#fff;border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none}.brand img{width:43px;height:43px;object-fit:contain;border-radius:7px}.brand strong{display:block;line-height:1.2}.brand small{color:var(--muted)}.links{display:flex;gap:20px;flex-wrap:wrap;font-size:14px}.links a{text-decoration:none;color:#414747}.article{max-width:840px;margin:30px auto 64px;background:var(--paper);padding:clamp(22px,5vw,60px);border:1px solid var(--line);border-radius:14px}.kicker{text-transform:uppercase;font-size:12px;letter-spacing:.11em;color:var(--accent);font-weight:700}.article h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.2rem,5vw,3.55rem);line-height:1.12;letter-spacing:-.025em;margin:14px 0 18px}.dek{font-size:1.19rem;line-height:1.58;color:#555c5a;margin-bottom:12px}.byline{font-size:13px;color:var(--muted);margin:16px 0 24px}.article h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.5rem,3vw,2rem);line-height:1.25;margin:44px 0 16px}.article p{margin:0 0 18px}.hero,.photo{margin:28px 0 30px}.hero img,.photo img{width:100%;height:auto;border-radius:8px}.photo figcaption,.hero figcaption{font-size:13px;color:var(--muted);margin-top:9px}.lead p:first-child::first-letter{font-family:Georgia,serif;font-size:3.1em;line-height:.8;float:left;margin:9px 7px 0 0;color:var(--accent)}.table-scroll{overflow-x:auto;margin:20px 0 12px}table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}th,td{padding:13px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:#f3f5f3;color:#303936}tbody tr:nth-child(even){background:#fbfbfa}.note{font-size:13px;color:var(--muted)}.author{margin-top:38px;border-top:1px solid var(--line);padding-top:22px;font-size:14px}.author strong{font-size:16px}.method{font-size:12px;color:var(--muted);margin-top:20px}footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:13px}a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}@media(max-width:680px){.nav{align-items:flex-start;flex-direction:column;padding:14px 0}.links{gap:12px}.wrap{padding:0 14px}.article{margin:14px auto 32px;padding:22px 17px}.article h2{margin-top:34px}th,td{padding:10px 8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+   :root {
+      --max: 1060px;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      --bg: #fafafa;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #374151;
+      --line: #e5e7eb;
+      --accent: #0f766e;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease, opacity 0.2s ease;
+    }
+
+    a:hover { color: var(--accent); }
+
+    .inline-link {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .inline-link:hover { opacity: 0.85; }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 18px;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(250, 250, 250, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 220px;
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: #fff;
+      object-fit: contain;
+      display: block;
+    }
+
+    .brand-text strong { font-size: 16px; }
+    .brand-text span {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .menu {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    main { padding: 22px 0 44px; }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+
+    }
+
+
+
+    .kicker {
+      font-size: 13px;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    h1 {
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin: 0 0 10px;
+      font-size: clamp(1.75rem, 3.2vw, 2.4rem);
+    }
+
+    h2 {
+      margin: 22px 0 10px;
+      font-size: 1.35rem;
+    }
+
+    h3 {
+      margin: 16px 0 8px;
+      font-size: 1.1rem;
+    }
+
+    p { margin: 0 0 14px; }
+
+    .note {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .hr {
+      height: 1px;
+      background: var(--line);
+      margin: 18px 0;
+    }
+
+    .hero-media {
+      margin: 14px 0 16px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    nav.toc {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 16px 0;
+      background: #fff;
+    }
+
+    nav.toc h2 {
+      margin: 0 0 10px;
+      font-size: 1.05rem;
+    }
+
+    nav.toc ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    nav.toc li { margin: 6px 0; }
+
+    .article-figure {
+      margin: 18px 0 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .article-figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .article-caption {
+      padding: 10px 14px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .article-caption strong { color: var(--text); }
+
+    ul.read-more {
+      padding-left: 18px;
+      margin-top: 0;
+    }
+
+    ul.read-more li { margin-bottom: 8px; }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      padding: 22px 0 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 720px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .menu {
+        gap: 12px;
+      }
+    }
+    .lang-switch {display:inline-flex;align-items:center;gap:4px;padding:4px;border:1px solid var(--line);border-radius:999px;background:#fff}
+    .lang-switch a {padding:4px 9px;border-radius:999px;font-size:12px;font-weight:600}
+    .lang-switch a[aria-current="page"] {background:var(--accent);color:#fff}
+    a:focus-visible {outline:2px solid var(--accent);outline-offset:3px}
+    h2 {scroll-margin-top:100px}
+    @media (prefers-reduced-motion:reduce) {html{scroll-behavior:auto} a{transition:none}}
+  
+/* Ajustes exclusivos: artigo sobre os vinhos de Neuquén no Brasil */
+.subtitle {font-size:1.08rem;color:var(--muted);max-width:900px;margin:0 0 14px}
+.lead {font-size:1.03rem;line-height:1.75}
+.table-scroll {overflow-x:auto;margin:18px 0 12px;border:1px solid var(--line);border-radius:12px}
+.table-scroll table {width:100%;border-collapse:collapse;min-width:640px;font-size:.95rem}
+.table-scroll th,.table-scroll td {padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.table-scroll th {background:#f3f5f5;font-weight:650}
+.table-scroll tr:last-child td {border-bottom:0}
+.article-figure img {max-height:650px;object-fit:cover}
+.article-figure figcaption {padding:10px 14px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+.author {border-top:1px solid var(--line);padding-top:20px;margin-top:24px}
+.sources,.related {margin-top:24px;padding-top:14px;border-top:1px solid var(--line)}
+.sources ul,.related ul {padding-left:20px}
+.sources li,.related li {margin:7px 0}
+@media(max-width:600px){.card{padding:16px}.wrap{padding:0 16px}}
   </style>
   <script type="application/ld+json">
    {
@@ -206,49 +454,37 @@
   </noscript>
   <header class="site-header">
    <div class="wrap">
-    <nav aria-label="Navega&ccedil;&atilde;o principal" class="nav">
-     <a class="brand" href="/pt/">
-      <img alt="Logotipo Sergio Landoni" height="43" src="/assets/img/logo.jpg" width="43"/>
-      <span>
+    <div class="nav">
+     <a aria-label="P&aacute;gina inicial de Sergio Landoni" class="brand" href="/pt/">
+      <img alt="Logo Sergio Landoni" class="brand-logo" decoding="async" height="40" src="/assets/img/logo.jpg" width="40"/>
+      <div class="brand-text">
        <strong>
         Sergio Landoni
        </strong>
-       <small>
-        Sommelier de Territ&oacute;rio
-       </small>
-      </span>
+       <span>
+        Sommelier de Territ&oacute;rio &middot; Embaixador do Vinho Neuquino
+       </span>
+      </div>
      </a>
-     <div class="links">
+     <nav aria-label="Navega&ccedil;&atilde;o principal" class="menu">
       <a href="/pt/">
        In&iacute;cio
       </a>
       <a href="/pt/#about">
        Sobre mim
       </a>
-      <a href="/pt/#experience">
-       Experi&ecirc;ncias
-      </a>
       <a href="/pt/blog.html">
-       Artigos
+       Blog
       </a>
       <a href="/pt/#conversation">
        Contato
       </a>
-      <a href="/" lang="es">
-       ES
-      </a>
-      <a href="/en/" lang="en">
-       EN
-      </a>
-      <strong aria-current="page">
-       PT
-      </strong>
-     </div>
-    </nav>
+     </nav>
+    </div>
    </div>
   </header>
   <main class="wrap">
-   <article class="article" id="article">
+   <article class="card" id="article">
     <div class="kicker">
      Vinhos de Neuqu&eacute;n &middot; Patag&ocirc;nia &middot; Brasil
     </div>
@@ -265,9 +501,9 @@
      </strong>
      &middot; 1&ordm; de novembro de 2026
     </p>
-    <figure class="hero">
+    <figure class="hero-media">
      <img alt="Mesa com ta&ccedil;as diante do lago e das montanhas em San Mart&iacute;n de los Andes, Patag&ocirc;nia" decoding="async" fetchpriority="high" height="500" src="/assets/img/paisaje-patagonia-vino-san-martin-andes.webp" width="900"/>
-     <figcaption>
+     <figcaption class="article-caption">
       A Patag&ocirc;nia das montanhas e dos lagos, ponto de partida de outra descoberta.
      </figcaption>
     </figure>
@@ -311,9 +547,9 @@
       H&aacute; uma rela&ccedil;&atilde;o direta entre esses dois mundos: a &aacute;gua que desce dos Andes tamb&eacute;m ajuda a tornar poss&iacute;vel a produ&ccedil;&atilde;o de vinho na estepe.
      </p>
     </section>
-    <figure class="photo">
+    <figure class="article-figure">
      <img alt="Vinhedos na estepe de Neuqu&eacute;n, Patag&ocirc;nia argentina" decoding="async" height="1025" loading="lazy" src="/assets/img/vinedo-pinot-noir-neuquen.webp" width="1535"/>
-     <figcaption>
+     <figcaption class="article-caption">
       Os vinhedos de Neuqu&eacute;n mostram outra face da paisagem patag&ocirc;nica.
      </figcaption>
     </figure>
@@ -407,7 +643,7 @@
        <tbody>
         <tr>
          <td>
-          <a href="https://vinomundi.com.br/produto/saurus-pinot-noir/" rel="noopener noreferrer" target="_blank">
+          <a class="inline-link" href="https://vinomundi.com.br/produto/saurus-pinot-noir/" rel="noopener noreferrer" target="_blank">
            Vino Mundi
           </a>
          </td>
@@ -420,7 +656,7 @@
         </tr>
         <tr>
          <td>
-          <a href="https://terruno.com.br/produtos/saurus-pinot-noir-fx5un/" rel="noopener noreferrer" target="_blank">
+          <a class="inline-link" href="https://terruno.com.br/produtos/saurus-pinot-noir-fx5un/" rel="noopener noreferrer" target="_blank">
            Terru&ntilde;o
           </a>
          </td>
@@ -433,7 +669,7 @@
         </tr>
         <tr>
          <td>
-          <a href="https://www.personalvinhos.com/produtos/vinho-saurus-pinot-noir/" rel="noopener noreferrer" target="_blank">
+          <a class="inline-link" href="https://www.personalvinhos.com/produtos/vinho-saurus-pinot-noir/" rel="noopener noreferrer" target="_blank">
            Personal Vinhos
           </a>
          </td>
@@ -446,7 +682,7 @@
         </tr>
         <tr>
          <td>
-          <a href="https://www.personalvinhos.com/argentina" rel="noopener noreferrer" target="_blank">
+          <a class="inline-link" href="https://www.personalvinhos.com/argentina" rel="noopener noreferrer" target="_blank">
            Personal Vinhos &mdash; Argentina
           </a>
          </td>
@@ -459,7 +695,7 @@
         </tr>
         <tr>
          <td>
-          <a href="https://www.winelovers.com.br/marca/secreto-patagonico.html" rel="noopener noreferrer" target="_blank">
+          <a class="inline-link" href="https://www.winelovers.com.br/marca/secreto-patagonico.html" rel="noopener noreferrer" target="_blank">
            Wine Lovers
           </a>
          </td>
@@ -472,7 +708,7 @@
         </tr>
         <tr>
          <td>
-          <a href="https://www.decanter.com.br/produtor/familia-schroeder" rel="noopener noreferrer" target="_blank">
+          <a class="inline-link" href="https://www.decanter.com.br/produtor/familia-schroeder" rel="noopener noreferrer" target="_blank">
            Decanter
           </a>
          </td>
@@ -485,7 +721,7 @@
         </tr>
         <tr>
          <td>
-          <a href="https://lacharbonnade.com.br/produtos/patritti" rel="noopener noreferrer" target="_blank">
+          <a class="inline-link" href="https://lacharbonnade.com.br/produtos/patritti" rel="noopener noreferrer" target="_blank">
            La Charbonnade
           </a>
          </td>
@@ -581,16 +817,11 @@
     </p>
    </article>
   </main>
-  <footer>
+  <footer class="site-footer">
    <div class="wrap">
-    &copy; 2026 Sergio Landoni &middot;
-    <a href="/pt/">
-     In&iacute;cio
-    </a>
-    &middot;
-    <a href="/pt/blog.html">
-     Artigos
-    </a>
+    <div>
+     &copy; Sergio Landoni &middot; Sommelier de Territ&oacute;rio
+    </div>
    </div>
   </footer>
  </body>
