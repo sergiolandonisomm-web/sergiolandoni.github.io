@@ -1244,6 +1244,24 @@
   }
   .menu .lang-options a{min-width:58px;min-height:36px;font-size:13px}
 }
+  
+   /* Publicações internacionais: destaque editorial em largura completa */
+   .pt-international-grid{
+     grid-template-columns:minmax(0,1fr);
+   }
+   .pt-international-grid .pt-article{
+     width:100%;
+   }
+   .pt-international-grid .pt-article-body{
+     padding:clamp(24px,3.5vw,36px);
+   }
+   .pt-international-grid .pt-article h3{
+     max-width:920px;
+     font-size:clamp(1.2rem,2.2vw,1.6rem);
+   }
+   .pt-international-grid .pt-article p{
+     max-width:920px;
+   }
   </style>
  </head>
  <body>
@@ -1351,7 +1369,7 @@
       </p>
      </div>
     </div>
-    <div class="pt-articles">
+    <div class="pt-articles pt-international-grid">
      <article class="pt-article" id="the-buyer-2026">
       <div class="pt-article-body">
        <div class="tags">
@@ -1460,7 +1478,7 @@
      </article>
      <article class="pt-article">
       <a aria-label="Ler: Vinhos de Neuqu&eacute;n: hist&oacute;ria, regi&otilde;es, uvas e vin&iacute;colas da Patag&ocirc;nia" href="/pt/guia-vinhos-neuquen.html">
-       <img alt="Guia de Neuqu&eacute;n: vinhos e paisagens de Neuqu&eacute;n, Patag&ocirc;nia argentina" decoding="async" loading="lazy" src="/assets/img/vinedos-neuquen-patagonia-aereo.webp"/>
+       <img alt="Vinhedo da Patagônia ao pôr do sol, com restaurante e paisagem vitivinícola" decoding="async" loading="lazy" src="/assets/img/patagonia-vineyard-restaurant-sunset.webp"/>
       </a>
       <div class="pt-article-body">
        <div class="tags">
@@ -1506,7 +1524,7 @@
      </article>
      <article class="pt-article">
       <a aria-label="Ler: As seis regi&otilde;es vitivin&iacute;colas de Neuqu&eacute;n" href="/pt/regioes-vitivinicolas-neuquen.html">
-       <img alt="Regi&otilde;es: vinhos e paisagens de Neuqu&eacute;n, Patag&ocirc;nia argentina" decoding="async" loading="lazy" src="/assets/img/vinedos-neuquen-patagonia-aereo.webp"/>
+       <img alt="Vinhedo em Villa del Nahueve, no norte da província de Neuquén" decoding="async" loading="lazy" src="/assets/img/vinedo-villa-del-nahueve-norte-neuquino.webp"/>
       </a>
       <div class="pt-article-body">
        <div class="tags">
