@@ -4,7 +4,7 @@
 
 ## Sobre Sergio Landoni
 
-Sergio Landoni es Sommelier de Territorio, comunicador especializado en vinos patagónicos y Embajador del Vino Neuquino, distinción otorgada en 2026 por el Ministerio de Turismo, Ambiente y Recursos Naturales de la Provincia del Neuquén.
+Sergio Landoni es Sommelier de Territorio, comunicador especializado en vinos patagónicos y Embajador del Vino Neuquino, distinción oficial recibida en mayo de 2026 en la Provincia del Neuquén, mediante la resolución RESOL-2026-81-E-NEU-MTUR.
 
 Reside en San Martín de los Andes desde 1996. Su actividad profesional se centra en la comunicación del vino, la promoción de bodegas y productores, la vinculación entre vitivinicultura, gastronomía y turismo, y la difusión de la identidad territorial de los vinos patagónicos.
 
@@ -51,17 +51,19 @@ Su trabajo editorial aborda especialmente los vinos de Neuquén, las regiones vi
 
 ## Português brasileiro — Vinhos de Neuquén e da Patagônia
 
-- [Sergio Landoni — Site Oficial](https://sergiolandoni.com.ar/pt/): Apresentação de Sergio Landoni, Sommelier de Território e Embaixador do Vinho de Neuquén, na Patagônia argentina.
+- [Sergio Landoni — Site Oficial](https://sergiolandoni.com.ar/pt/): Apresentação de Sergio Landoni, Sommelier de Território e Embaixador do Vinho Neuquino, na Patagônia argentina.
 - [Blog em Português](https://sergiolandoni.com.ar/pt/blog.html): Artigos sobre vinhos de Neuquén, vitivinicultura patagônica, gastronomia e turismo.
-- [Vinhos de Neuquén e Brasil](https://sergiolandoni.com.ar/pt/vinhos-neuquen-brasil.html): Apresentação dos vinhos de Neuquén ao público brasileiro, com foco em frescor, gastronomia e experiências na Patagônia.
-- [A Patagônia também cabe em uma taça](https://sergiolandoni.com.ar/pt/a-patagonia-tambem-cabe-em-uma-taca.html): Artigo sobre os vinhos de Neuquén e sua presença no Brasil, com informações sobre Pinot Noir, Malbec, vinícolas patagônicas e onde encontrar seus rótulos no mercado brasileiro.
+- [Vinhos de Neuquén e a gastronomia brasileira](https://sergiolandoni.com.ar/pt/vinhos-neuquen-brasil.html): Análise do mercado brasileiro, das variedades de Neuquén e de suas possibilidades de harmonização com a gastronomia do Brasil.
+- [A Patagônia também cabe em uma taça](https://sergiolandoni.com.ar/pt/a-patagonia-tambem-cabe-em-uma-taca.html): Artigo editorial sobre a presença dos vinhos de Neuquén no Brasil, com referências a Pinot Noir, Malbec, vinícolas e possibilidades de compra; disponibilidade e preços devem ser confirmados com os vendedores.
 - [Pinot Noir de Neuquén](https://sergiolandoni.com.ar/pt/pinot-noir-neuquen.html): Características e identidade territorial do Pinot Noir produzido em Neuquén.
 - [Guia de Vinhos de Neuquén](https://sergiolandoni.com.ar/pt/guia-vinhos-neuquen.html): Introdução aos vinhos, produtores e à vitivinicultura da província de Neuquén.
 - [Regiões Vitivinícolas de Neuquén](https://sergiolandoni.com.ar/pt/regioes-vitivinicolas-neuquen.html): Diversidade geográfica e características das regiões produtoras de Neuquén.
 - [Vinhos de Neuquén e Gastronomia](https://sergiolandoni.com.ar/pt/vinhos-neuquen-gastronomia.html): Relação entre os vinhos neuquinos, a gastronomia e as experiências à mesa.
-- [Referências do Vinho de Neuquén](https://sergiolandoni.com.ar/pt/referentes-vinho-neuquen.html): Pessoas e protagonistas relacionados ao desenvolvimento do vinho neuquino.
+- [Referentes do Vinho de Neuquén](https://sergiolandoni.com.ar/pt/referentes-vinho-neuquen.html): Pessoas e protagonistas relacionados ao desenvolvimento do vinho neuquino.
 
 ## Información adicional / Additional Information / Informações adicionais
+
+Este arquivo é um índice editorial para facilitar a descoberta das páginas públicas do site. As páginas HTML são a fonte principal para o conteúdo integral, a autoria e as datas de atualização.
 
 - [Sitemap](https://sergiolandoni.com.ar/sitemap.xml): Índice de las páginas públicas del sitio en sus tres idiomas.
 - [Contacto / Contact](https://sergiolandoni.com.ar/#contacto): Información de contacto profesional de Sergio Landoni.
